@@ -1,6 +1,8 @@
 site_name: Braintrust .NET Documentation
 nav:
 - Overview: index.md
+- Guides:
+  - MEAI Integration: guides/meai.md
 # EXAMPLES:START
 # EXAMPLES:END
         
