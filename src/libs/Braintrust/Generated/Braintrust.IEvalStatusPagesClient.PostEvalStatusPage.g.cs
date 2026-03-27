@@ -1,0 +1,51 @@
+#nullable enable
+
+namespace Braintrust
+{
+    public partial interface IEvalStatusPagesClient
+    {
+        /// <summary>
+        /// Create eval_status_page<br/>
+        /// Create a new eval_status_page. If there is an existing eval_status_page with the same name as the one specified in the request, will return the existing eval_status_page unmodified
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.EvalStatusPage> PostEvalStatusPageAsync(
+
+            global::Braintrust.CreateEvalStatusPage request,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create eval_status_page<br/>
+        /// Create a new eval_status_page. If there is an existing eval_status_page with the same name as the one specified in the request, will return the existing eval_status_page unmodified
+        /// </summary>
+        /// <param name="projectId">
+        /// Unique identifier for the project that the eval status page belongs under
+        /// </param>
+        /// <param name="name">
+        /// Name of the eval status page
+        /// </param>
+        /// <param name="description">
+        /// Textual description of the eval status page
+        /// </param>
+        /// <param name="logoUrl">
+        /// URL of the logo to display on the page
+        /// </param>
+        /// <param name="theme">
+        /// The theme for the page
+        /// </param>
+        /// <param name="config">
+        /// Configuration for what data to display
+        /// </param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.EvalStatusPage> PostEvalStatusPageAsync(
+            global::System.Guid projectId,
+            string name,
+            global::Braintrust.EvalStatusPageTheme theme,
+            global::Braintrust.EvalStatusPageConfig config,
+            string? description = default,
+            string? logoUrl = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

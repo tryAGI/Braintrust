@@ -1,0 +1,39 @@
+#nullable enable
+
+namespace Braintrust
+{
+    public partial interface IExperimentsClient
+    {
+        /// <summary>
+        /// Feedback for experiment events<br/>
+        /// Log feedback for a set of experiment events
+        /// </summary>
+        /// <param name="experimentId">
+        /// Experiment id
+        /// </param>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.FeedbackResponseSchema> PostExperimentIdFeedbackAsync(
+            global::System.Guid experimentId,
+
+            global::Braintrust.FeedbackExperimentEventRequest request,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Feedback for experiment events<br/>
+        /// Log feedback for a set of experiment events
+        /// </summary>
+        /// <param name="experimentId">
+        /// Experiment id
+        /// </param>
+        /// <param name="feedback">
+        /// A list of experiment feedback items
+        /// </param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.FeedbackResponseSchema> PostExperimentIdFeedbackAsync(
+            global::System.Guid experimentId,
+            global::System.Collections.Generic.IList<global::Braintrust.FeedbackExperimentItem> feedback,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace Braintrust
+{
+    public partial interface IPromptsClient
+    {
+        /// <summary>
+        /// Create prompt<br/>
+        /// Create a new prompt. If there is an existing prompt in the project with the same slug as the one specified in the request, will return the existing prompt unmodified
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.Prompt> PostPromptAsync(
+
+            global::Braintrust.CreatePrompt request,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create prompt<br/>
+        /// Create a new prompt. If there is an existing prompt in the project with the same slug as the one specified in the request, will return the existing prompt unmodified
+        /// </summary>
+        /// <param name="projectId">
+        /// Unique identifier for the project that the prompt belongs under
+        /// </param>
+        /// <param name="name">
+        /// Name of the prompt
+        /// </param>
+        /// <param name="slug">
+        /// Unique identifier for the prompt
+        /// </param>
+        /// <param name="description">
+        /// Textual description of the prompt
+        /// </param>
+        /// <param name="promptData">
+        /// The prompt, model, and its parameters
+        /// </param>
+        /// <param name="tags">
+        /// A list of tags for the prompt
+        /// </param>
+        /// <param name="functionType"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.Prompt> PostPromptAsync(
+            global::System.Guid projectId,
+            string name,
+            string slug,
+            string? description = default,
+            global::Braintrust.PromptDataNullish? promptData = default,
+            global::System.Collections.Generic.IList<string>? tags = default,
+            global::Braintrust.FunctionTypeEnumNullish? functionType = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

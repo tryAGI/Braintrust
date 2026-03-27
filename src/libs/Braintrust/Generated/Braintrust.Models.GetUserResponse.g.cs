@@ -1,0 +1,46 @@
+
+#nullable enable
+
+namespace Braintrust
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class GetUserResponse
+    {
+        /// <summary>
+        /// A list of user objects
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("objects")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Braintrust.User> Objects { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetUserResponse" /> class.
+        /// </summary>
+        /// <param name="objects">
+        /// A list of user objects
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public GetUserResponse(
+            global::System.Collections.Generic.IList<global::Braintrust.User> objects)
+        {
+            this.Objects = objects ?? throw new global::System.ArgumentNullException(nameof(objects));
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetUserResponse" /> class.
+        /// </summary>
+        public GetUserResponse()
+        {
+        }
+    }
+}

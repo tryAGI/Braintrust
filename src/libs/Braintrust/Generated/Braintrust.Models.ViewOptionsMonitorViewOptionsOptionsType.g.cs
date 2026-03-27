@@ -1,0 +1,51 @@
+
+#nullable enable
+
+namespace Braintrust
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum ViewOptionsMonitorViewOptionsOptionsType
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        Experiment,
+        /// <summary>
+        /// 
+        /// </summary>
+        Project,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class ViewOptionsMonitorViewOptionsOptionsTypeExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this ViewOptionsMonitorViewOptionsOptionsType value)
+        {
+            return value switch
+            {
+                ViewOptionsMonitorViewOptionsOptionsType.Experiment => "experiment",
+                ViewOptionsMonitorViewOptionsOptionsType.Project => "project",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static ViewOptionsMonitorViewOptionsOptionsType? ToEnum(string value)
+        {
+            return value switch
+            {
+                "experiment" => ViewOptionsMonitorViewOptionsOptionsType.Experiment,
+                "project" => ViewOptionsMonitorViewOptionsOptionsType.Project,
+                _ => null,
+            };
+        }
+    }
+}

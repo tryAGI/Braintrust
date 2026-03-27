@@ -1,0 +1,44 @@
+
+#nullable enable
+
+namespace Braintrust
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class ProjectAutomationConfigVariant2ExportDefinitionVariant1
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter))]
+        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1Type Type { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProjectAutomationConfigVariant2ExportDefinitionVariant1" /> class.
+        /// </summary>
+        /// <param name="type"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ProjectAutomationConfigVariant2ExportDefinitionVariant1(
+            global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1Type type)
+        {
+            this.Type = type;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProjectAutomationConfigVariant2ExportDefinitionVariant1" /> class.
+        /// </summary>
+        public ProjectAutomationConfigVariant2ExportDefinitionVariant1()
+        {
+        }
+    }
+}

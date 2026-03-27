@@ -1,0 +1,18 @@
+
+#nullable enable
+
+namespace Braintrust
+{
+    /// <summary>
+    /// Optional experiment-level metadata to store about the evaluation. You can later use this to slice &amp; dice across experiments.
+    /// </summary>
+    public sealed partial class RunEvalMetadata
+    {
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+    }
+}
