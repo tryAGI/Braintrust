@@ -1,4 +1,3 @@
-#pragma warning disable CS3002 // Return type is not CLS-compliant
 using System.Text.Json;
 using Microsoft.Extensions.AI;
 
@@ -16,6 +15,7 @@ public static class BraintrustToolExtensions
     /// <param name="client">The Braintrust client.</param>
     /// <param name="limit">Maximum number of prompts to return (default: 20).</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsListPromptsTool(
         this BraintrustClient client,
         int limit = 20)
@@ -49,6 +49,7 @@ public static class BraintrustToolExtensions
     /// </summary>
     /// <param name="client">The Braintrust client.</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsGetPromptTool(this BraintrustClient client)
     {
         ArgumentNullException.ThrowIfNull(client);
@@ -89,6 +90,7 @@ public static class BraintrustToolExtensions
     /// <param name="client">The Braintrust client.</param>
     /// <param name="limit">Maximum number of projects to return (default: 20).</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsListProjectsTool(
         this BraintrustClient client,
         int limit = 20)
@@ -119,6 +121,7 @@ public static class BraintrustToolExtensions
     /// <param name="client">The Braintrust client.</param>
     /// <param name="limit">Maximum number of experiments to return (default: 20).</param>
     /// <returns>An AIFunction that can be passed to ChatOptions.Tools.</returns>
+    [CLSCompliant(false)]
     public static AIFunction AsListExperimentsTool(
         this BraintrustClient client,
         int limit = 20)
