@@ -3,7 +3,7 @@ set -euo pipefail
 
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
-curl -o openapi.yaml https://raw.githubusercontent.com/braintrustdata/braintrust-openapi/main/openapi/spec.json
+curl --fail --silent --show-error -o openapi.yaml https://raw.githubusercontent.com/braintrustdata/braintrust-openapi/main/openapi/spec.json
 
 # Remove /v1/proxy/{path+} endpoint — generates invalid C# identifiers
 jq 'del(.paths["/v1/proxy/{path+}"])' openapi.yaml > openapi_fixed.yaml && mv openapi_fixed.yaml openapi.yaml
