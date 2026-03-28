@@ -110,13 +110,13 @@ namespace Braintrust
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::System.Text.Json.JsonSerializer.Deserialize(__content_400, typeof(string), JsonSerializerContext) as string;
+                        __value_400 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_400, typeof(string), JsonSerializerContext);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::System.Text.Json.JsonSerializer.Deserialize(__content_400, typeof(string), JsonSerializerContext) as string;
+                        __value_400 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_400, typeof(string), JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -148,13 +148,13 @@ namespace Braintrust
                     if (ReadResponseAsString)
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_401 = global::System.Text.Json.JsonSerializer.Deserialize(__content_401, typeof(string), JsonSerializerContext) as string;
+                        __value_401 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_401, typeof(string), JsonSerializerContext);
                     }
                     else
                     {
                         __content_401 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_401 = global::System.Text.Json.JsonSerializer.Deserialize(__content_401, typeof(string), JsonSerializerContext) as string;
+                        __value_401 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_401, typeof(string), JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -186,13 +186,13 @@ namespace Braintrust
                     if (ReadResponseAsString)
                     {
                         __content_403 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_403 = global::System.Text.Json.JsonSerializer.Deserialize(__content_403, typeof(string), JsonSerializerContext) as string;
+                        __value_403 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_403, typeof(string), JsonSerializerContext);
                     }
                     else
                     {
                         __content_403 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_403 = global::System.Text.Json.JsonSerializer.Deserialize(__content_403, typeof(string), JsonSerializerContext) as string;
+                        __value_403 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_403, typeof(string), JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -224,13 +224,13 @@ namespace Braintrust
                     if (ReadResponseAsString)
                     {
                         __content_429 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_429 = global::System.Text.Json.JsonSerializer.Deserialize(__content_429, typeof(string), JsonSerializerContext) as string;
+                        __value_429 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_429, typeof(string), JsonSerializerContext);
                     }
                     else
                     {
                         __content_429 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_429 = global::System.Text.Json.JsonSerializer.Deserialize(__content_429, typeof(string), JsonSerializerContext) as string;
+                        __value_429 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_429, typeof(string), JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -262,13 +262,13 @@ namespace Braintrust
                     if (ReadResponseAsString)
                     {
                         __content_500 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_500 = global::System.Text.Json.JsonSerializer.Deserialize(__content_500, typeof(string), JsonSerializerContext) as string;
+                        __value_500 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_500, typeof(string), JsonSerializerContext);
                     }
                     else
                     {
                         __content_500 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_500 = global::System.Text.Json.JsonSerializer.Deserialize(__content_500, typeof(string), JsonSerializerContext) as string;
+                        __value_500 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_500, typeof(string), JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)
