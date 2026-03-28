@@ -23,7 +23,7 @@ var client = new BraintrustClient(apiKey); // BRAINTRUST_API_KEY env var
 ## Key Files
 
 - `src/libs/Braintrust/openapi.yaml` — OpenAPI spec (downloaded from braintrustdata/braintrust-openapi)
-- `src/libs/Braintrust/generate.sh` — Downloads spec, removes invalid proxy endpoint, fixes namespace, runs autosdk
+- `src/libs/Braintrust/generate.sh` — Downloads spec, removes invalid proxy endpoint, runs autosdk
 - `src/libs/Braintrust/Generated/` — **Never edit** — auto-generated code (~2000 files)
 - `src/tests/IntegrationTests/Tests.cs` — Test helper with bearer auth
 - `src/tests/IntegrationTests/Examples/` — Example tests (also generate docs)
@@ -31,7 +31,6 @@ var client = new BraintrustClient(apiKey); // BRAINTRUST_API_KEY env var
 ## Spec Notes
 
 - `generate.sh` removes `/v1/proxy/{path+}` endpoint (generates invalid C# identifiers due to `+` in path param)
-- Post-generation `sed` fix: replaces `namespace System` with `namespace Braintrust` in `JsonSerializerContextTypes` (AutoSDK codegen bug)
 - Uses `--exclude-deprecated-operations` flag
 
 ## Sub-client Pattern
