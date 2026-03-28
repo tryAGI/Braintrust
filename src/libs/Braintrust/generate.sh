@@ -18,4 +18,4 @@ autosdk generate openapi.yaml \
   --exclude-deprecated-operations
 
 # Fix namespace in JsonSerializerContextTypes (AutoSDK generates 'System' instead of 'Braintrust')
-sed -i '' 's/namespace System/namespace Braintrust/' Generated/System.JsonSerializerContextTypes.g.cs
+sed 's/namespace System/namespace Braintrust/' Generated/System.JsonSerializerContextTypes.g.cs > Generated/System.JsonSerializerContextTypes.g.cs.tmp && mv Generated/System.JsonSerializerContextTypes.g.cs.tmp Generated/System.JsonSerializerContextTypes.g.cs
