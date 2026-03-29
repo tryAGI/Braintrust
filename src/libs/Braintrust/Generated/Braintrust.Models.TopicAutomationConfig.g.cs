@@ -72,9 +72,6 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="TopicAutomationConfig" /> class.
         /// </summary>
-        /// <param name="eventType">
-        /// The type of automation.
-        /// </param>
         /// <param name="samplingRate">
         /// The sampling rate for topic automation
         /// </param>
@@ -83,6 +80,9 @@ namespace Braintrust
         /// </param>
         /// <param name="topicMapFunctions">
         /// Topic map functions with optional per-topic-map filters
+        /// </param>
+        /// <param name="eventType">
+        /// The type of automation.
         /// </param>
         /// <param name="scope">
         /// Execution scope for topic automation. Defaults to span-level execution.
@@ -109,10 +109,10 @@ namespace Braintrust
             string? btqlFilter,
             global::Braintrust.AnyOf<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>? backfillTimeRange)
         {
+            this.EventType = eventType;
             this.SamplingRate = samplingRate;
             this.FacetFunctions = facetFunctions ?? throw new global::System.ArgumentNullException(nameof(facetFunctions));
             this.TopicMapFunctions = topicMapFunctions ?? throw new global::System.ArgumentNullException(nameof(topicMapFunctions));
-            this.EventType = eventType;
             this.Scope = scope;
             this.DataScope = dataScope;
             this.BtqlFilter = btqlFilter;

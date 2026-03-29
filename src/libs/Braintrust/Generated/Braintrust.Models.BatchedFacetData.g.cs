@@ -44,9 +44,9 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="BatchedFacetData" /> class.
         /// </summary>
+        /// <param name="facets"></param>
         /// <param name="type"></param>
         /// <param name="preprocessor"></param>
-        /// <param name="facets"></param>
         /// <param name="topicMaps">
         /// Topic maps that depend on facets in this batch, keyed by source facet name. Each source facet can have multiple topic maps.
         /// </param>
@@ -59,9 +59,9 @@ namespace Braintrust
             global::Braintrust.AllOf<global::Braintrust.NullableSavedFunctionId?, object>? preprocessor,
             global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataTopicMap>>? topicMaps)
         {
-            this.Facets = facets ?? throw new global::System.ArgumentNullException(nameof(facets));
             this.Type = type;
             this.Preprocessor = preprocessor;
+            this.Facets = facets ?? throw new global::System.ArgumentNullException(nameof(facets));
             this.TopicMaps = topicMaps;
         }
 

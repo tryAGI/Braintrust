@@ -76,11 +76,11 @@ namespace Braintrust
         /// Unique identifier for the project that the project tag belongs under
         /// </param>
         /// <param name="userId"></param>
-        /// <param name="created">
-        /// Date of project tag creation
-        /// </param>
         /// <param name="name">
         /// Name of the project tag
+        /// </param>
+        /// <param name="created">
+        /// Date of project tag creation
         /// </param>
         /// <param name="description">
         /// Textual description of the project tag
@@ -107,8 +107,8 @@ namespace Braintrust
             this.Id = id;
             this.ProjectId = projectId;
             this.UserId = userId;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Created = created;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
             this.Color = color;
             this.Position = position;

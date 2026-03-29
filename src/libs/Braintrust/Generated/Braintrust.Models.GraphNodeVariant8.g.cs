@@ -44,6 +44,7 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="GraphNodeVariant8" /> class.
         /// </summary>
+        /// <param name="prompt"></param>
         /// <param name="description">
         /// The description of the node
         /// </param>
@@ -51,7 +52,6 @@ namespace Braintrust
         /// The position of the node
         /// </param>
         /// <param name="type"></param>
-        /// <param name="prompt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -61,10 +61,10 @@ namespace Braintrust
             global::Braintrust.GraphNodeVariant8Position? position,
             global::Braintrust.GraphNodeVariant8Type type)
         {
-            this.Prompt = prompt;
             this.Description = description;
             this.Position = position;
             this.Type = type;
+            this.Prompt = prompt;
         }
 
         /// <summary>

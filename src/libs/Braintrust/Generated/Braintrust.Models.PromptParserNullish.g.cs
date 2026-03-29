@@ -49,8 +49,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="PromptParserNullish" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="useCot"></param>
+        /// <param name="type"></param>
         /// <param name="choiceScores">
         /// Map of choices to scores (0-1). Used by scorers.
         /// </param>
@@ -70,8 +70,8 @@ namespace Braintrust
             global::System.Collections.Generic.IList<string>? choice,
             bool? allowNoMatch)
         {
-            this.UseCot = useCot;
             this.Type = type;
+            this.UseCot = useCot;
             this.ChoiceScores = choiceScores;
             this.Choice = choice;
             this.AllowNoMatch = allowNoMatch;

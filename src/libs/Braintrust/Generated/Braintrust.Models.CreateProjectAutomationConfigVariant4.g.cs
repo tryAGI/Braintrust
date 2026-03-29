@@ -38,14 +38,14 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectAutomationConfigVariant4" /> class.
         /// </summary>
+        /// <param name="action">
+        /// The action to take when the automation rule is triggered
+        /// </param>
         /// <param name="eventType">
         /// The type of automation.
         /// </param>
         /// <param name="environmentFilter">
         /// Optional list of environment slugs to filter by
-        /// </param>
-        /// <param name="action">
-        /// The action to take when the automation rule is triggered
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,9 +55,9 @@ namespace Braintrust
             global::Braintrust.CreateProjectAutomationConfigVariant4EventType eventType,
             global::System.Collections.Generic.IList<string>? environmentFilter)
         {
-            this.Action = action;
             this.EventType = eventType;
             this.EnvironmentFilter = environmentFilter;
+            this.Action = action;
         }
 
         /// <summary>

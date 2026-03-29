@@ -56,11 +56,11 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the span iframe
         /// </param>
-        /// <param name="description">
-        /// Textual description of the span iframe
-        /// </param>
         /// <param name="url">
         /// URL to embed the project viewer in an iframe
+        /// </param>
+        /// <param name="description">
+        /// Textual description of the span iframe
         /// </param>
         /// <param name="postMessage">
         /// Whether to post messages to the iframe containing the span's data. This is useful when you want to render more data than fits in the URL.
@@ -77,8 +77,8 @@ namespace Braintrust
         {
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Description = description;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.PostMessage = postMessage;
         }
 

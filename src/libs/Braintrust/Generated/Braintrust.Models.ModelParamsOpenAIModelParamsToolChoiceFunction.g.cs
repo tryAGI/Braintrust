@@ -31,8 +31,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ModelParamsOpenAIModelParamsToolChoiceFunction" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="function"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Braintrust
             global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunctionFunction function,
             global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunctionType type)
         {
-            this.Function = function ?? throw new global::System.ArgumentNullException(nameof(function));
             this.Type = type;
+            this.Function = function ?? throw new global::System.ArgumentNullException(nameof(function));
         }
 
         /// <summary>

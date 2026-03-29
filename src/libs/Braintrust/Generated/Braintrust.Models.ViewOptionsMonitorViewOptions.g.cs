@@ -37,8 +37,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ViewOptionsMonitorViewOptions" /> class.
         /// </summary>
-        /// <param name="viewType"></param>
         /// <param name="options"></param>
+        /// <param name="viewType"></param>
         /// <param name="freezeColumns"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -48,8 +48,8 @@ namespace Braintrust
             global::Braintrust.ViewOptionsMonitorViewOptionsViewType viewType,
             bool? freezeColumns)
         {
-            this.Options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             this.ViewType = viewType;
+            this.Options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             this.FreezeColumns = freezeColumns;
         }
 

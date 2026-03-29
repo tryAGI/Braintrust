@@ -39,8 +39,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="TopicMapFunctionAutomationFunctionVariant2Global" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="name"></param>
+        /// <param name="type"></param>
         /// <param name="functionType">
         /// The type of global function. Defaults to 'scorer'.<br/>
         /// Default Value: scorer
@@ -53,8 +53,8 @@ namespace Braintrust
             global::Braintrust.TopicMapFunctionAutomationFunctionVariant2GlobalType type,
             global::Braintrust.FunctionTypeEnum? functionType)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Type = type;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.FunctionType = functionType;
         }
 

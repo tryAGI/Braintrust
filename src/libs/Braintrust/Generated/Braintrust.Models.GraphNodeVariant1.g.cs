@@ -43,6 +43,9 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="GraphNodeVariant1" /> class.
         /// </summary>
+        /// <param name="function">
+        /// Options for identifying a function
+        /// </param>
         /// <param name="description">
         /// The description of the node
         /// </param>
@@ -50,9 +53,6 @@ namespace Braintrust
         /// The position of the node
         /// </param>
         /// <param name="type"></param>
-        /// <param name="function">
-        /// Options for identifying a function
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -62,10 +62,10 @@ namespace Braintrust
             global::Braintrust.GraphNodeVariant1Position? position,
             global::Braintrust.GraphNodeVariant1Type type)
         {
-            this.Function = function ?? throw new global::System.ArgumentNullException(nameof(function));
             this.Description = description;
             this.Position = position;
             this.Type = type;
+            this.Function = function ?? throw new global::System.ArgumentNullException(nameof(function));
         }
 
         /// <summary>

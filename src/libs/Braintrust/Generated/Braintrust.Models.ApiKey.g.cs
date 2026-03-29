@@ -77,13 +77,13 @@ namespace Braintrust
         /// <param name="id">
         /// Unique identifier for the api key
         /// </param>
-        /// <param name="created">
-        /// Date of api key creation
-        /// </param>
         /// <param name="name">
         /// Name of the api key
         /// </param>
         /// <param name="previewName"></param>
+        /// <param name="created">
+        /// Date of api key creation
+        /// </param>
         /// <param name="userId">
         /// Unique identifier for the user
         /// </param>
@@ -114,9 +114,9 @@ namespace Braintrust
             global::System.Guid? orgId)
         {
             this.Id = id;
+            this.Created = created;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.PreviewName = previewName ?? throw new global::System.ArgumentNullException(nameof(previewName));
-            this.Created = created;
             this.UserId = userId;
             this.UserEmail = userEmail;
             this.UserGivenName = userGivenName;

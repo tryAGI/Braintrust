@@ -31,8 +31,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="TopicAutomationDataScopeVariant3" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="experimentId"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Braintrust
             string experimentId,
             global::Braintrust.TopicAutomationDataScopeVariant3Type type)
         {
-            this.ExperimentId = experimentId ?? throw new global::System.ArgumentNullException(nameof(experimentId));
             this.Type = type;
+            this.ExperimentId = experimentId ?? throw new global::System.ArgumentNullException(nameof(experimentId));
         }
 
         /// <summary>

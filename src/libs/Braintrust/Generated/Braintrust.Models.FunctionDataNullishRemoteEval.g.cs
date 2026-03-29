@@ -51,10 +51,10 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionDataNullishRemoteEval" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="endpoint"></param>
         /// <param name="evalName"></param>
         /// <param name="parameters"></param>
+        /// <param name="type"></param>
         /// <param name="parametersVersion">
         /// The version (transaction ID) of the parameters being used
         /// </param>
@@ -68,10 +68,10 @@ namespace Braintrust
             global::Braintrust.FunctionDataNullishRemoteEvalType type,
             string? parametersVersion)
         {
+            this.Type = type;
             this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
             this.EvalName = evalName ?? throw new global::System.ArgumentNullException(nameof(evalName));
             this.Parameters = parameters ?? throw new global::System.ArgumentNullException(nameof(parameters));
-            this.Type = type;
             this.ParametersVersion = parametersVersion;
         }
 

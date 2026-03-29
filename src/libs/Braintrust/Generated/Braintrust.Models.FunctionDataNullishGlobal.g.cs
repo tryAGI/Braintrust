@@ -45,8 +45,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionDataNullishGlobal" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="name"></param>
+        /// <param name="type"></param>
         /// <param name="functionType">
         /// The type of global function. Defaults to 'scorer'.<br/>
         /// Default Value: scorer
@@ -63,8 +63,8 @@ namespace Braintrust
             global::Braintrust.FunctionTypeEnum? functionType,
             global::System.Collections.Generic.Dictionary<string, object?>? config)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Type = type;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.FunctionType = functionType;
             this.Config = config;
         }

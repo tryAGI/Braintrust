@@ -57,14 +57,14 @@ namespace Braintrust
         /// <param name="score">
         /// Average score across all examples
         /// </param>
-        /// <param name="diff">
-        /// Difference in score between the current and comparison experiment
-        /// </param>
         /// <param name="improvements">
         /// Number of improvements in the score
         /// </param>
         /// <param name="regressions">
         /// Number of regressions in the score
+        /// </param>
+        /// <param name="diff">
+        /// Difference in score between the current and comparison experiment
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -78,9 +78,9 @@ namespace Braintrust
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Score = score;
+            this.Diff = diff;
             this.Improvements = improvements;
             this.Regressions = regressions;
-            this.Diff = diff;
         }
 
         /// <summary>

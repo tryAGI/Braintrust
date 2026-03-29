@@ -57,12 +57,12 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="CodeBundleLocationVariant3" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="sandboxSpec"></param>
+        /// <param name="evalName"></param>
+        /// <param name="type"></param>
         /// <param name="entrypoints">
         /// Which entrypoints to execute in the sandbox
         /// </param>
-        /// <param name="evalName"></param>
         /// <param name="parameters">
         /// Parameter values for sandbox eval execution
         /// </param>
@@ -80,10 +80,10 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, object?>? parameters,
             object? evaluatorDefinition)
         {
-            this.SandboxSpec = sandboxSpec;
-            this.EvalName = evalName ?? throw new global::System.ArgumentNullException(nameof(evalName));
             this.Type = type;
+            this.SandboxSpec = sandboxSpec;
             this.Entrypoints = entrypoints;
+            this.EvalName = evalName ?? throw new global::System.ArgumentNullException(nameof(evalName));
             this.Parameters = parameters;
             this.EvaluatorDefinition = evaluatorDefinition;
         }

@@ -43,6 +43,9 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="GraphNodeVariant5" /> class.
         /// </summary>
+        /// <param name="expr">
+        /// A BTQL expression to be evaluated
+        /// </param>
         /// <param name="description">
         /// The description of the node
         /// </param>
@@ -50,9 +53,6 @@ namespace Braintrust
         /// The position of the node
         /// </param>
         /// <param name="type"></param>
-        /// <param name="expr">
-        /// A BTQL expression to be evaluated
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -62,10 +62,10 @@ namespace Braintrust
             global::Braintrust.GraphNodeVariant5Position? position,
             global::Braintrust.GraphNodeVariant5Type type)
         {
-            this.Expr = expr ?? throw new global::System.ArgumentNullException(nameof(expr));
             this.Description = description;
             this.Position = position;
             this.Type = type;
+            this.Expr = expr ?? throw new global::System.ArgumentNullException(nameof(expr));
         }
 
         /// <summary>

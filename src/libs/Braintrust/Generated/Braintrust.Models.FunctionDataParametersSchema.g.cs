@@ -43,8 +43,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionDataParametersSchema" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="properties"></param>
+        /// <param name="type"></param>
         /// <param name="required"></param>
         /// <param name="additionalProperties"></param>
 #if NET7_0_OR_GREATER
@@ -56,8 +56,8 @@ namespace Braintrust
             global::System.Collections.Generic.IList<string>? required,
             bool? additionalProperties)
         {
-            this.Properties = properties ?? throw new global::System.ArgumentNullException(nameof(properties));
             this.Type = type;
+            this.Properties = properties ?? throw new global::System.ArgumentNullException(nameof(properties));
             this.Required = required;
             this.AdditionalProperties = additionalProperties;
         }

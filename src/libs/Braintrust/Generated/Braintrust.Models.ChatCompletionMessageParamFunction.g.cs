@@ -37,8 +37,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ChatCompletionMessageParamFunction" /> class.
         /// </summary>
-        /// <param name="content"></param>
         /// <param name="name"></param>
+        /// <param name="content"></param>
         /// <param name="role"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -48,8 +48,8 @@ namespace Braintrust
             string? content,
             global::Braintrust.ChatCompletionMessageParamFunctionRole role)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Content = content;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Role = role;
         }
 

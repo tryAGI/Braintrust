@@ -67,9 +67,6 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ProjectAutomationConfigVariant2" /> class.
         /// </summary>
-        /// <param name="eventType">
-        /// The type of automation.
-        /// </param>
         /// <param name="exportDefinition">
         /// The definition of what to export
         /// </param>
@@ -83,6 +80,9 @@ namespace Braintrust
         /// Perform the triggered action at most once in this interval of seconds
         /// </param>
         /// <param name="credentials"></param>
+        /// <param name="eventType">
+        /// The type of automation.
+        /// </param>
         /// <param name="batchSize">
         /// The number of rows to export in each batch
         /// </param>
@@ -98,12 +98,12 @@ namespace Braintrust
             global::Braintrust.ProjectAutomationConfigVariant2EventType eventType,
             double? batchSize)
         {
+            this.EventType = eventType;
             this.ExportDefinition = exportDefinition;
             this.ExportPath = exportPath ?? throw new global::System.ArgumentNullException(nameof(exportPath));
             this.Format = format;
             this.IntervalSeconds = intervalSeconds;
             this.Credentials = credentials ?? throw new global::System.ArgumentNullException(nameof(credentials));
-            this.EventType = eventType;
             this.BatchSize = batchSize;
         }
 

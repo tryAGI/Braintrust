@@ -43,10 +43,10 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="PatchOrganizationMembersOutput" /> class.
         /// </summary>
-        /// <param name="status"></param>
         /// <param name="orgId">
         /// The id of the org that was modified.
         /// </param>
+        /// <param name="status"></param>
         /// <param name="sendEmailError">
         /// If invite emails failed to send for some reason, the patch operation will still complete, but we will return an error message here
         /// </param>
@@ -62,8 +62,8 @@ namespace Braintrust
             string? sendEmailError,
             global::System.Collections.Generic.IList<global::Braintrust.PatchOrganizationMembersOutputAddedUser>? addedUsers)
         {
-            this.OrgId = orgId ?? throw new global::System.ArgumentNullException(nameof(orgId));
             this.Status = status;
+            this.OrgId = orgId ?? throw new global::System.ArgumentNullException(nameof(orgId));
             this.SendEmailError = sendEmailError;
             this.AddedUsers = addedUsers;
         }

@@ -37,10 +37,10 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="GroupScope" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="groupBy">
         /// Field path to group by, e.g. metadata.session_id
         /// </param>
+        /// <param name="type"></param>
         /// <param name="idleSeconds">
         /// Optional: trigger after this many seconds of inactivity
         /// </param>
@@ -52,8 +52,8 @@ namespace Braintrust
             global::Braintrust.GroupScopeType type,
             double? idleSeconds)
         {
-            this.GroupBy = groupBy ?? throw new global::System.ArgumentNullException(nameof(groupBy));
             this.Type = type;
+            this.GroupBy = groupBy ?? throw new global::System.ArgumentNullException(nameof(groupBy));
             this.IdleSeconds = idleSeconds;
         }
 

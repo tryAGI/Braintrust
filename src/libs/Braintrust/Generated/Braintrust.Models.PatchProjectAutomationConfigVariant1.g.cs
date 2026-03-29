@@ -46,9 +46,6 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="PatchProjectAutomationConfigVariant1" /> class.
         /// </summary>
-        /// <param name="eventType">
-        /// The type of automation.
-        /// </param>
         /// <param name="btqlFilter">
         /// BTQL filter to identify rows for the automation rule
         /// </param>
@@ -57,6 +54,9 @@ namespace Braintrust
         /// </param>
         /// <param name="action">
         /// The action to take when the automation rule is triggered
+        /// </param>
+        /// <param name="eventType">
+        /// The type of automation.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -67,10 +67,10 @@ namespace Braintrust
             global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2> action,
             global::Braintrust.PatchProjectAutomationConfigVariant1EventType eventType)
         {
+            this.EventType = eventType;
             this.BtqlFilter = btqlFilter ?? throw new global::System.ArgumentNullException(nameof(btqlFilter));
             this.IntervalSeconds = intervalSeconds;
             this.Action = action;
-            this.EventType = eventType;
         }
 
         /// <summary>

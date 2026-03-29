@@ -39,9 +39,9 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="CodeBundleLocationExperiment" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="evalName"></param>
         /// <param name="position"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -50,9 +50,9 @@ namespace Braintrust
             global::Braintrust.AnyOf<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer> position,
             global::Braintrust.CodeBundleLocationExperimentType type)
         {
+            this.Type = type;
             this.EvalName = evalName ?? throw new global::System.ArgumentNullException(nameof(evalName));
             this.Position = position;
-            this.Type = type;
         }
 
         /// <summary>

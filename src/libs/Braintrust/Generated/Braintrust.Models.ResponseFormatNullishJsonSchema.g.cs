@@ -31,8 +31,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ResponseFormatNullishJsonSchema" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="jsonSchema"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Braintrust
             global::Braintrust.ResponseFormatJsonSchema jsonSchema,
             global::Braintrust.ResponseFormatNullishJsonSchemaType type)
         {
-            this.JsonSchema = jsonSchema ?? throw new global::System.ArgumentNullException(nameof(jsonSchema));
             this.Type = type;
+            this.JsonSchema = jsonSchema ?? throw new global::System.ArgumentNullException(nameof(jsonSchema));
         }
 
         /// <summary>

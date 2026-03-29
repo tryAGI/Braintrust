@@ -56,11 +56,11 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FacetData" /> class.
         /// </summary>
-        /// <param name="type"></param>
-        /// <param name="preprocessor"></param>
         /// <param name="prompt">
         /// The prompt to use for LLM extraction. The preprocessed text will be provided as context.
         /// </param>
+        /// <param name="type"></param>
+        /// <param name="preprocessor"></param>
         /// <param name="model">
         /// The model to use for facet extraction
         /// </param>
@@ -81,9 +81,9 @@ namespace Braintrust
             string? embeddingModel,
             string? noMatchPattern)
         {
-            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
             this.Type = type;
             this.Preprocessor = preprocessor;
+            this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
             this.Model = model;
             this.EmbeddingModel = embeddingModel;
             this.NoMatchPattern = noMatchPattern;

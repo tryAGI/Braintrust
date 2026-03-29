@@ -31,11 +31,11 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="PatchProjectAutomationConfigVariant1ActionVariant1" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The type of action to take
-        /// </param>
         /// <param name="url">
         /// The webhook URL to send the request to
+        /// </param>
+        /// <param name="type">
+        /// The type of action to take
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Braintrust
             string url,
             global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1Type type)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Type = type;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

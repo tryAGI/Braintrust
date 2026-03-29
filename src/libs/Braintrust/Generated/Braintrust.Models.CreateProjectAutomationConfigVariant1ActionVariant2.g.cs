@@ -44,14 +44,14 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectAutomationConfigVariant1ActionVariant2" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The type of action to take
-        /// </param>
         /// <param name="workspaceId">
         /// The Slack workspace ID to post to
         /// </param>
         /// <param name="channel">
         /// The Slack channel ID to post to
+        /// </param>
+        /// <param name="type">
+        /// The type of action to take
         /// </param>
         /// <param name="messageTemplate">
         /// Custom message template for the alert
@@ -65,9 +65,9 @@ namespace Braintrust
             global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2Type type,
             string? messageTemplate)
         {
+            this.Type = type;
             this.WorkspaceId = workspaceId ?? throw new global::System.ArgumentNullException(nameof(workspaceId));
             this.Channel = channel ?? throw new global::System.ArgumentNullException(nameof(channel));
-            this.Type = type;
             this.MessageTemplate = messageTemplate;
         }
 

@@ -43,8 +43,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="url"></param>
+        /// <param name="type"></param>
         /// <param name="isDisabled"></param>
         /// <param name="enabledTools">
         /// If omitted, all tools are enabled
@@ -58,8 +58,8 @@ namespace Braintrust
             bool? isDisabled,
             global::System.Collections.Generic.IList<string>? enabledTools)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Type = type;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.IsDisabled = isDisabled;
             this.EnabledTools = enabledTools;
         }

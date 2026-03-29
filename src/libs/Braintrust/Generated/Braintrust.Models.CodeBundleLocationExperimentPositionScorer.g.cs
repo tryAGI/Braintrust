@@ -31,8 +31,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="CodeBundleLocationExperimentPositionScorer" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="index"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Braintrust
             int index,
             global::Braintrust.CodeBundleLocationExperimentPositionScorerType type)
         {
-            this.Index = index;
             this.Type = type;
+            this.Index = index;
         }
 
         /// <summary>

@@ -44,9 +44,9 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionDataNullishCodeData2" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="runtimeContext"></param>
         /// <param name="code"></param>
+        /// <param name="type"></param>
         /// <param name="codeHash">
         /// SHA256 hash of the code, computed at save time
         /// </param>
@@ -59,9 +59,9 @@ namespace Braintrust
             global::Braintrust.FunctionDataNullishCodeDataType2 type,
             string? codeHash)
         {
+            this.Type = type;
             this.RuntimeContext = runtimeContext ?? throw new global::System.ArgumentNullException(nameof(runtimeContext));
             this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
-            this.Type = type;
             this.CodeHash = codeHash;
         }
 

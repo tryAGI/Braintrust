@@ -73,11 +73,11 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ModelParamsAnthropicModelParams" /> class.
         /// </summary>
+        /// <param name="maxTokens"></param>
+        /// <param name="temperature"></param>
         /// <param name="useCache"></param>
         /// <param name="reasoningEnabled"></param>
         /// <param name="reasoningBudget"></param>
-        /// <param name="maxTokens"></param>
-        /// <param name="temperature"></param>
         /// <param name="topP"></param>
         /// <param name="topK"></param>
         /// <param name="stopSequences"></param>
@@ -98,11 +98,11 @@ namespace Braintrust
             global::System.Collections.Generic.IList<string>? stopSequences,
             double? maxTokensToSample)
         {
-            this.MaxTokens = maxTokens;
-            this.Temperature = temperature;
             this.UseCache = useCache;
             this.ReasoningEnabled = reasoningEnabled;
             this.ReasoningBudget = reasoningBudget;
+            this.MaxTokens = maxTokens;
+            this.Temperature = temperature;
             this.TopP = topP;
             this.TopK = topK;
             this.StopSequences = stopSequences;

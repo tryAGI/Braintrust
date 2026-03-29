@@ -78,13 +78,16 @@ namespace Braintrust
         /// <param name="id">
         /// Unique identifier for the service token
         /// </param>
-        /// <param name="created">
-        /// Date of service token creation
-        /// </param>
         /// <param name="name">
         /// Name of the service token
         /// </param>
         /// <param name="previewName"></param>
+        /// <param name="key">
+        /// The raw service token. It will only be exposed this one time
+        /// </param>
+        /// <param name="created">
+        /// Date of service token creation
+        /// </param>
         /// <param name="serviceAccountId">
         /// Unique identifier for the service token
         /// </param>
@@ -96,9 +99,6 @@ namespace Braintrust
         /// </param>
         /// <param name="orgId">
         /// Unique identifier for the organization
-        /// </param>
-        /// <param name="key">
-        /// The raw service token. It will only be exposed this one time
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -115,14 +115,14 @@ namespace Braintrust
             global::System.Guid? orgId)
         {
             this.Id = id;
+            this.Created = created;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.PreviewName = previewName ?? throw new global::System.ArgumentNullException(nameof(previewName));
-            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.Created = created;
             this.ServiceAccountId = serviceAccountId;
             this.ServiceAccountEmail = serviceAccountEmail;
             this.ServiceAccountName = serviceAccountName;
             this.OrgId = orgId;
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
         }
 
         /// <summary>

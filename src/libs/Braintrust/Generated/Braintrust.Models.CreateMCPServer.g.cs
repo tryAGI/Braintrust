@@ -50,11 +50,11 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the MCP server. Within a project, MCP server names are unique
         /// </param>
-        /// <param name="description">
-        /// Textual description of the MCP server
-        /// </param>
         /// <param name="url">
         /// URL of the MCP server endpoint
+        /// </param>
+        /// <param name="description">
+        /// Textual description of the MCP server
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -67,8 +67,8 @@ namespace Braintrust
         {
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Description = description;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

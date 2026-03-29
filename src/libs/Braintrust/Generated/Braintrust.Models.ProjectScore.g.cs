@@ -91,17 +91,17 @@ namespace Braintrust
         /// Unique identifier for the project that the project score belongs under
         /// </param>
         /// <param name="userId"></param>
-        /// <param name="created">
-        /// Date of project score creation
-        /// </param>
         /// <param name="name">
         /// Name of the project score
         /// </param>
-        /// <param name="description">
-        /// Textual description of the project score
-        /// </param>
         /// <param name="scoreType">
         /// The type of the configured score
+        /// </param>
+        /// <param name="created">
+        /// Date of project score creation
+        /// </param>
+        /// <param name="description">
+        /// Textual description of the project score
         /// </param>
         /// <param name="categories"></param>
         /// <param name="config"></param>
@@ -126,10 +126,10 @@ namespace Braintrust
             this.Id = id;
             this.ProjectId = projectId;
             this.UserId = userId;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.ScoreType = scoreType;
             this.Created = created;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
+            this.ScoreType = scoreType;
             this.Categories = categories;
             this.Config = config;
             this.Position = position;

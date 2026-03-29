@@ -80,6 +80,9 @@ namespace Braintrust
         /// <param name="id">
         /// Unique identifier for the role
         /// </param>
+        /// <param name="name">
+        /// Name of the role
+        /// </param>
         /// <param name="orgId">
         /// Unique id for the organization that the role belongs under<br/>
         /// A null org_id indicates a system role, which may be assigned to anybody and inherited by any other role, but cannot be edited.<br/>
@@ -90,9 +93,6 @@ namespace Braintrust
         /// </param>
         /// <param name="created">
         /// Date of role creation
-        /// </param>
-        /// <param name="name">
-        /// Name of the role
         /// </param>
         /// <param name="description">
         /// Textual description of the role
@@ -122,10 +122,10 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::System.Guid>? memberRoles)
         {
             this.Id = id;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.OrgId = orgId;
             this.UserId = userId;
             this.Created = created;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
             this.DeletedAt = deletedAt;
             this.MemberPermissions = memberPermissions;
