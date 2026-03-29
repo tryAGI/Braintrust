@@ -59,7 +59,7 @@ namespace Braintrust
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddRequiredParameter("object_type", objectType.ToValueString())
-                .AddRequiredParameter("object_id", objectId.ToString()) 
+                .AddRequiredParameter("object_id", objectId.ToString()!) 
                 ; 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
