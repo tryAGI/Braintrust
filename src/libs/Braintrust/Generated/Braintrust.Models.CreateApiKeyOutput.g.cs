@@ -84,13 +84,16 @@ namespace Braintrust
         /// <param name="id">
         /// Unique identifier for the api key
         /// </param>
-        /// <param name="created">
-        /// Date of api key creation
-        /// </param>
         /// <param name="name">
         /// Name of the api key
         /// </param>
         /// <param name="previewName"></param>
+        /// <param name="key">
+        /// The raw API key. It will only be exposed this one time
+        /// </param>
+        /// <param name="created">
+        /// Date of api key creation
+        /// </param>
         /// <param name="userId">
         /// Unique identifier for the user
         /// </param>
@@ -105,9 +108,6 @@ namespace Braintrust
         /// </param>
         /// <param name="orgId">
         /// Unique identifier for the organization
-        /// </param>
-        /// <param name="key">
-        /// The raw API key. It will only be exposed this one time
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -125,15 +125,15 @@ namespace Braintrust
             global::System.Guid? orgId)
         {
             this.Id = id;
+            this.Created = created;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.PreviewName = previewName ?? throw new global::System.ArgumentNullException(nameof(previewName));
-            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.Created = created;
             this.UserId = userId;
             this.UserEmail = userEmail;
             this.UserGivenName = userGivenName;
             this.UserFamilyName = userFamilyName;
             this.OrgId = orgId;
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
         }
 
         /// <summary>

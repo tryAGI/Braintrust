@@ -96,6 +96,9 @@ namespace Braintrust
         /// <param name="objectId">
         /// The id of the object the ACL applies to
         /// </param>
+        /// <param name="objectOrgId">
+        /// The organization the ACL's referred object belongs to
+        /// </param>
         /// <param name="userId">
         /// Id of the user the ACL applies to. Exactly one of `user_id` and `group_id` will be provided
         /// </param>
@@ -111,9 +114,6 @@ namespace Braintrust
         /// </param>
         /// <param name="roleId">
         /// Id of the role the ACL grants. Exactly one of `permission` and `role_id` will be provided
-        /// </param>
-        /// <param name="objectOrgId">
-        /// The organization the ACL's referred object belongs to
         /// </param>
         /// <param name="created">
         /// Date of acl creation
@@ -136,12 +136,12 @@ namespace Braintrust
             this.Id = id;
             this.ObjectType = objectType;
             this.ObjectId = objectId;
-            this.ObjectOrgId = objectOrgId;
             this.UserId = userId;
             this.GroupId = groupId;
             this.Permission = permission;
             this.RestrictObjectType = restrictObjectType;
             this.RoleId = roleId;
+            this.ObjectOrgId = objectOrgId;
             this.Created = created;
         }
 

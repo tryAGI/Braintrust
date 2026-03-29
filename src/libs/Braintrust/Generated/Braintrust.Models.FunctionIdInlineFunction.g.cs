@@ -44,8 +44,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionIdInlineFunction" /> class.
         /// </summary>
-        /// <param name="inlinePrompt"></param>
         /// <param name="inlineFunction"></param>
+        /// <param name="inlinePrompt"></param>
         /// <param name="functionType">
         /// The type of global function. Defaults to 'scorer'.<br/>
         /// Default Value: scorer
@@ -62,8 +62,8 @@ namespace Braintrust
             global::Braintrust.FunctionTypeEnum? functionType,
             string? name)
         {
-            this.InlineFunction = inlineFunction ?? throw new global::System.ArgumentNullException(nameof(inlineFunction));
             this.InlinePrompt = inlinePrompt;
+            this.InlineFunction = inlineFunction ?? throw new global::System.ArgumentNullException(nameof(inlineFunction));
             this.FunctionType = functionType;
             this.Name = name;
         }

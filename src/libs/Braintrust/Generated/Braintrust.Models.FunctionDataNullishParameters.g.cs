@@ -38,13 +38,13 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionDataNullishParameters" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="data">
         /// The parameters data
         /// </param>
         /// <param name="schema">
         /// JSON Schema format for parameters
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -53,9 +53,9 @@ namespace Braintrust
             global::Braintrust.FunctionDataNullishParametersSchema schema,
             global::Braintrust.FunctionDataNullishParametersType type)
         {
+            this.Type = type;
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Schema = schema ?? throw new global::System.ArgumentNullException(nameof(schema));
-            this.Type = type;
         }
 
         /// <summary>

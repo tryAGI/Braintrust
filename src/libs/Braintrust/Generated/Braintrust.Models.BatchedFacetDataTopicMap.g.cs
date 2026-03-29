@@ -40,10 +40,10 @@ namespace Braintrust
         /// <param name="functionName">
         /// The name of the topic map function
         /// </param>
+        /// <param name="topicMapData"></param>
         /// <param name="topicMapId">
         /// The id of the topic map function
         /// </param>
-        /// <param name="topicMapData"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -53,8 +53,8 @@ namespace Braintrust
             string? topicMapId)
         {
             this.FunctionName = functionName ?? throw new global::System.ArgumentNullException(nameof(functionName));
-            this.TopicMapData = topicMapData ?? throw new global::System.ArgumentNullException(nameof(topicMapData));
             this.TopicMapId = topicMapId;
+            this.TopicMapData = topicMapData ?? throw new global::System.ArgumentNullException(nameof(topicMapData));
         }
 
         /// <summary>

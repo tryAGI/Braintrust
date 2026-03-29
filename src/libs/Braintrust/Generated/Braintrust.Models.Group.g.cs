@@ -84,14 +84,14 @@ namespace Braintrust
         /// Unique id for the organization that the group belongs under<br/>
         /// It is forbidden to change the org after creating a group
         /// </param>
+        /// <param name="name">
+        /// Name of the group
+        /// </param>
         /// <param name="userId">
         /// Identifies the user who created the group
         /// </param>
         /// <param name="created">
         /// Date of group creation
-        /// </param>
-        /// <param name="name">
-        /// Name of the group
         /// </param>
         /// <param name="description">
         /// Textual description of the group
@@ -122,9 +122,9 @@ namespace Braintrust
         {
             this.Id = id;
             this.OrgId = orgId;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.UserId = userId;
             this.Created = created;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
             this.DeletedAt = deletedAt;
             this.MemberUsers = memberUsers;

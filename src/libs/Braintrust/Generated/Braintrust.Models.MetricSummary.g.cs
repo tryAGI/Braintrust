@@ -67,14 +67,14 @@ namespace Braintrust
         /// <param name="unit">
         /// Unit label for the metric
         /// </param>
-        /// <param name="diff">
-        /// Difference in metric between the current and comparison experiment
-        /// </param>
         /// <param name="improvements">
         /// Number of improvements in the metric
         /// </param>
         /// <param name="regressions">
         /// Number of regressions in the metric
+        /// </param>
+        /// <param name="diff">
+        /// Difference in metric between the current and comparison experiment
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -90,9 +90,9 @@ namespace Braintrust
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Metric = metric;
             this.Unit = unit ?? throw new global::System.ArgumentNullException(nameof(unit));
+            this.Diff = diff;
             this.Improvements = improvements;
             this.Regressions = regressions;
-            this.Diff = diff;
         }
 
         /// <summary>

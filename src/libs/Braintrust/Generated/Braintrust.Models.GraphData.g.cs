@@ -38,9 +38,9 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="GraphData" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="nodes"></param>
         /// <param name="edges"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,9 +49,9 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.GraphEdge> edges,
             global::Braintrust.GraphDataType type)
         {
+            this.Type = type;
             this.Nodes = nodes ?? throw new global::System.ArgumentNullException(nameof(nodes));
             this.Edges = edges ?? throw new global::System.ArgumentNullException(nameof(edges));
-            this.Type = type;
         }
 
         /// <summary>

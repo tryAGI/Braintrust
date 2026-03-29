@@ -37,8 +37,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="TopicMapFunctionAutomationFunctionVariant2Function" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="id"></param>
+        /// <param name="type"></param>
         /// <param name="version">
         /// The version of the function
         /// </param>
@@ -50,8 +50,8 @@ namespace Braintrust
             global::Braintrust.TopicMapFunctionAutomationFunctionVariant2FunctionType type,
             string? version)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Type = type;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Version = version;
         }
 

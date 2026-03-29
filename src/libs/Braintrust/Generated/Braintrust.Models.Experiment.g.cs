@@ -120,6 +120,9 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the experiment. Within a project, experiment names are unique
         /// </param>
+        /// <param name="public">
+        /// Whether or not the experiment is public. Public experiments can be viewed by anybody inside or outside the organization
+        /// </param>
         /// <param name="description">
         /// Textual description of the experiment
         /// </param>
@@ -143,9 +146,6 @@ namespace Braintrust
         /// </param>
         /// <param name="datasetVersion">
         /// Version number of the linked dataset the experiment was run against. This can be used to reproduce the experiment after the dataset has been modified.
-        /// </param>
-        /// <param name="public">
-        /// Whether or not the experiment is public. Public experiments can be viewed by anybody inside or outside the organization
         /// </param>
         /// <param name="userId">
         /// Identifies the user who created the experiment
@@ -179,7 +179,6 @@ namespace Braintrust
             this.Id = id;
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Public = @public;
             this.Description = description;
             this.Created = created;
             this.RepoInfo = repoInfo;
@@ -188,6 +187,7 @@ namespace Braintrust
             this.DeletedAt = deletedAt;
             this.DatasetId = datasetId;
             this.DatasetVersion = datasetVersion;
+            this.Public = @public;
             this.UserId = userId;
             this.Metadata = metadata;
             this.Tags = tags;

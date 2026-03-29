@@ -75,6 +75,12 @@ namespace Braintrust
         /// <param name="projectId">
         /// Unique identifier for the project that the MCP server belongs under
         /// </param>
+        /// <param name="name">
+        /// Name of the MCP server. Within a project, MCP server names are unique
+        /// </param>
+        /// <param name="url">
+        /// URL of the MCP server endpoint
+        /// </param>
         /// <param name="userId">
         /// Identifies the user who created the MCP server
         /// </param>
@@ -84,14 +90,8 @@ namespace Braintrust
         /// <param name="deletedAt">
         /// Date of MCP server deletion, or null if the MCP server is still active
         /// </param>
-        /// <param name="name">
-        /// Name of the MCP server. Within a project, MCP server names are unique
-        /// </param>
         /// <param name="description">
         /// Textual description of the MCP server
-        /// </param>
-        /// <param name="url">
-        /// URL of the MCP server endpoint
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -108,12 +108,12 @@ namespace Braintrust
         {
             this.Id = id;
             this.ProjectId = projectId;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.UserId = userId;
             this.Created = created;
             this.DeletedAt = deletedAt;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

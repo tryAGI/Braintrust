@@ -39,14 +39,14 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ProjectAutomationConfigVariant3" /> class.
         /// </summary>
-        /// <param name="eventType">
-        /// The type of automation.
-        /// </param>
         /// <param name="objectType">
         /// The object type that the retention policy applies to
         /// </param>
         /// <param name="retentionDays">
         /// The number of days to retain the object
+        /// </param>
+        /// <param name="eventType">
+        /// The type of automation.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -56,9 +56,9 @@ namespace Braintrust
             double retentionDays,
             global::Braintrust.ProjectAutomationConfigVariant3EventType eventType)
         {
+            this.EventType = eventType;
             this.ObjectType = objectType;
             this.RetentionDays = retentionDays;
-            this.EventType = eventType;
         }
 
         /// <summary>

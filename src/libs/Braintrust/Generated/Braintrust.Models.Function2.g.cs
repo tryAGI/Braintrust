@@ -132,9 +132,6 @@ namespace Braintrust
         /// <param name="projectId">
         /// Unique identifier for the project that the prompt belongs under
         /// </param>
-        /// <param name="logId">
-        /// A literal 'p' which identifies the object as a project prompt
-        /// </param>
         /// <param name="orgId">
         /// Unique identifier for the organization
         /// </param>
@@ -143,6 +140,10 @@ namespace Braintrust
         /// </param>
         /// <param name="slug">
         /// Unique identifier for the prompt
+        /// </param>
+        /// <param name="functionData"></param>
+        /// <param name="logId">
+        /// A literal 'p' which identifies the object as a project prompt
         /// </param>
         /// <param name="description">
         /// Textual description of the prompt
@@ -160,7 +161,6 @@ namespace Braintrust
         /// User-controlled metadata about the prompt
         /// </param>
         /// <param name="functionType"></param>
-        /// <param name="functionData"></param>
         /// <param name="origin"></param>
         /// <param name="functionSchema">
         /// JSON schema for the function's parameters and return type
@@ -189,17 +189,17 @@ namespace Braintrust
             this.Id = id;
             this.XactId = xactId ?? throw new global::System.ArgumentNullException(nameof(xactId));
             this.ProjectId = projectId;
+            this.LogId = logId;
             this.OrgId = orgId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.FunctionData = functionData;
-            this.LogId = logId;
             this.Description = description;
             this.Created = created;
             this.PromptData = promptData;
             this.Tags = tags;
             this.Metadata = metadata;
             this.FunctionType = functionType;
+            this.FunctionData = functionData;
             this.Origin = origin;
             this.FunctionSchema = functionSchema;
         }

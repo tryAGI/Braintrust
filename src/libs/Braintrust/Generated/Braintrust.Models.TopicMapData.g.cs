@@ -62,13 +62,13 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="TopicMapData" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="sourceFacet">
         /// The facet field name to use as input for classification
         /// </param>
         /// <param name="embeddingModel">
         /// The embedding model to use for embedding facet values
         /// </param>
+        /// <param name="type"></param>
         /// <param name="bundleKey">
         /// Key of the topic map bundle in code_bundles bucket
         /// </param>
@@ -93,9 +93,9 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, string>? topicNames,
             double? distanceThreshold)
         {
+            this.Type = type;
             this.SourceFacet = sourceFacet ?? throw new global::System.ArgumentNullException(nameof(sourceFacet));
             this.EmbeddingModel = embeddingModel ?? throw new global::System.ArgumentNullException(nameof(embeddingModel));
-            this.Type = type;
             this.BundleKey = bundleKey;
             this.ReportKey = reportKey;
             this.TopicNames = topicNames;

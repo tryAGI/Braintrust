@@ -51,11 +51,11 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the project automation
         /// </param>
-        /// <param name="description">
-        /// Textual description of the project automation
-        /// </param>
         /// <param name="config">
         /// The configuration for the automation rule
+        /// </param>
+        /// <param name="description">
+        /// Textual description of the project automation
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -68,8 +68,8 @@ namespace Braintrust
         {
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Config = config;
             this.Description = description;
+            this.Config = config;
         }
 
         /// <summary>

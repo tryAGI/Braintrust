@@ -84,6 +84,9 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the dataset. Within a project, dataset names are unique
         /// </param>
+        /// <param name="urlSlug">
+        /// URL slug for the dataset. used to construct dataset URLs
+        /// </param>
         /// <param name="description">
         /// Textual description of the dataset
         /// </param>
@@ -98,9 +101,6 @@ namespace Braintrust
         /// </param>
         /// <param name="metadata">
         /// User-controlled metadata about the dataset
-        /// </param>
-        /// <param name="urlSlug">
-        /// URL slug for the dataset. used to construct dataset URLs
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -119,12 +119,12 @@ namespace Braintrust
             this.Id = id;
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.UrlSlug = urlSlug ?? throw new global::System.ArgumentNullException(nameof(urlSlug));
             this.Description = description;
             this.Created = created;
             this.DeletedAt = deletedAt;
             this.UserId = userId;
             this.Metadata = metadata;
+            this.UrlSlug = urlSlug ?? throw new global::System.ArgumentNullException(nameof(urlSlug));
         }
 
         /// <summary>

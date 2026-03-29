@@ -170,17 +170,17 @@ namespace Braintrust
         /// <param name="data">
         /// The dataset to use
         /// </param>
-        /// <param name="name">
-        /// The name of the eval to run when multiple evals available
-        /// </param>
-        /// <param name="parameters">
-        /// Values for any parameters used in the eval
-        /// </param>
         /// <param name="task">
         /// The function to evaluate
         /// </param>
         /// <param name="scores">
         /// The functions to score the eval on
+        /// </param>
+        /// <param name="name">
+        /// The name of the eval to run when multiple evals available
+        /// </param>
+        /// <param name="parameters">
+        /// Values for any parameters used in the eval
         /// </param>
         /// <param name="experimentName">
         /// An optional name for the experiment created by this eval. If it conflicts with an existing experiment, it will be suffixed with a unique identifier.
@@ -258,10 +258,10 @@ namespace Braintrust
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Data = data;
-            this.Task = task;
-            this.Scores = scores ?? throw new global::System.ArgumentNullException(nameof(scores));
             this.Name = name;
             this.Parameters = parameters;
+            this.Task = task;
+            this.Scores = scores ?? throw new global::System.ArgumentNullException(nameof(scores));
             this.ExperimentName = experimentName;
             this.Metadata = metadata;
             this.Parent = parent;

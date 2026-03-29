@@ -92,6 +92,7 @@ namespace Braintrust
         /// <param name="slug">
         /// Unique identifier for the prompt
         /// </param>
+        /// <param name="functionData"></param>
         /// <param name="description">
         /// Textual description of the prompt
         /// </param>
@@ -102,7 +103,6 @@ namespace Braintrust
         /// A list of tags for the prompt
         /// </param>
         /// <param name="functionType"></param>
-        /// <param name="functionData"></param>
         /// <param name="origin"></param>
         /// <param name="functionSchema">
         /// JSON schema for the function's parameters and return type
@@ -125,11 +125,11 @@ namespace Braintrust
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.FunctionData = functionData;
             this.Description = description;
             this.PromptData = promptData;
             this.Tags = tags;
             this.FunctionType = functionType;
+            this.FunctionData = functionData;
             this.Origin = origin;
             this.FunctionSchema = functionSchema;
         }

@@ -64,17 +64,17 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the eval status page
         /// </param>
-        /// <param name="description">
-        /// Textual description of the eval status page
-        /// </param>
-        /// <param name="logoUrl">
-        /// URL of the logo to display on the page
-        /// </param>
         /// <param name="theme">
         /// The theme for the page
         /// </param>
         /// <param name="config">
         /// Configuration for what data to display
+        /// </param>
+        /// <param name="description">
+        /// Textual description of the eval status page
+        /// </param>
+        /// <param name="logoUrl">
+        /// URL of the logo to display on the page
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -89,10 +89,10 @@ namespace Braintrust
         {
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Theme = theme;
-            this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
             this.Description = description;
             this.LogoUrl = logoUrl;
+            this.Theme = theme;
+            this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
         }
 
         /// <summary>

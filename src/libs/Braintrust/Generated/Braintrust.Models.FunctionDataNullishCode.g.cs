@@ -32,8 +32,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionDataNullishCode" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="data"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -41,8 +41,8 @@ namespace Braintrust
             global::Braintrust.AnyOf<global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataNullishCodeData2> data,
             global::Braintrust.FunctionDataNullishCodeType type)
         {
-            this.Data = data;
             this.Type = type;
+            this.Data = data;
         }
 
         /// <summary>

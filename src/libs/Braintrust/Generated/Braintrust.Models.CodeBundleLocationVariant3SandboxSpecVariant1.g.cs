@@ -31,10 +31,10 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="CodeBundleLocationVariant3SandboxSpecVariant1" /> class.
         /// </summary>
-        /// <param name="provider"></param>
         /// <param name="snapshotRef">
         /// sandbox snapshot ref
         /// </param>
+        /// <param name="provider"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -42,8 +42,8 @@ namespace Braintrust
             string snapshotRef,
             global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1Provider provider)
         {
-            this.SnapshotRef = snapshotRef ?? throw new global::System.ArgumentNullException(nameof(snapshotRef));
             this.Provider = provider;
+            this.SnapshotRef = snapshotRef ?? throw new global::System.ArgumentNullException(nameof(snapshotRef));
         }
 
         /// <summary>

@@ -71,17 +71,17 @@ namespace Braintrust
         /// <param name="id">
         /// Unique identifier for the AI secret
         /// </param>
-        /// <param name="created">
-        /// Date of AI secret creation
-        /// </param>
-        /// <param name="updatedAt">
-        /// Date of last AI secret update
-        /// </param>
         /// <param name="orgId">
         /// Unique identifier for the organization
         /// </param>
         /// <param name="name">
         /// Name of the AI secret
+        /// </param>
+        /// <param name="created">
+        /// Date of AI secret creation
+        /// </param>
+        /// <param name="updatedAt">
+        /// Date of last AI secret update
         /// </param>
         /// <param name="type"></param>
         /// <param name="metadata"></param>
@@ -100,10 +100,10 @@ namespace Braintrust
             string? previewSecret)
         {
             this.Id = id;
-            this.OrgId = orgId;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Created = created;
             this.UpdatedAt = updatedAt;
+            this.OrgId = orgId;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Type = type;
             this.Metadata = metadata;
             this.PreviewSecret = previewSecret;

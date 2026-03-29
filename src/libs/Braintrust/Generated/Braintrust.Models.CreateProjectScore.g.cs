@@ -64,11 +64,11 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the project score
         /// </param>
-        /// <param name="description">
-        /// Textual description of the project score
-        /// </param>
         /// <param name="scoreType">
         /// The type of the configured score
+        /// </param>
+        /// <param name="description">
+        /// Textual description of the project score
         /// </param>
         /// <param name="categories"></param>
         /// <param name="config"></param>
@@ -85,8 +85,8 @@ namespace Braintrust
         {
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.ScoreType = scoreType;
             this.Description = description;
+            this.ScoreType = scoreType;
             this.Categories = categories;
             this.Config = config;
         }

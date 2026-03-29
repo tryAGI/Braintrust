@@ -89,6 +89,15 @@ namespace Braintrust
         /// <param name="projectId">
         /// Unique identifier for the project that the eval status page belongs under
         /// </param>
+        /// <param name="name">
+        /// Name of the eval status page
+        /// </param>
+        /// <param name="theme">
+        /// The theme for the page
+        /// </param>
+        /// <param name="config">
+        /// Configuration for what data to display
+        /// </param>
         /// <param name="userId">
         /// Identifies the user who created the eval status page
         /// </param>
@@ -98,20 +107,11 @@ namespace Braintrust
         /// <param name="deletedAt">
         /// Date of eval status page deletion, or null if the eval status page is still active
         /// </param>
-        /// <param name="name">
-        /// Name of the eval status page
-        /// </param>
         /// <param name="description">
         /// Textual description of the eval status page
         /// </param>
         /// <param name="logoUrl">
         /// URL of the logo to display on the page
-        /// </param>
-        /// <param name="theme">
-        /// The theme for the page
-        /// </param>
-        /// <param name="config">
-        /// Configuration for what data to display
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -130,14 +130,14 @@ namespace Braintrust
         {
             this.Id = id;
             this.ProjectId = projectId;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Theme = theme;
-            this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
             this.UserId = userId;
             this.Created = created;
             this.DeletedAt = deletedAt;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
             this.LogoUrl = logoUrl;
+            this.Theme = theme;
+            this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
         }
 
         /// <summary>

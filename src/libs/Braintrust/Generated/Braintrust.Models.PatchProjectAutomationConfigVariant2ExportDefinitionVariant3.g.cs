@@ -31,10 +31,10 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="PatchProjectAutomationConfigVariant2ExportDefinitionVariant3" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="btqlQuery">
         /// The BTQL query to export
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -42,8 +42,8 @@ namespace Braintrust
             string btqlQuery,
             global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3Type type)
         {
-            this.BtqlQuery = btqlQuery ?? throw new global::System.ArgumentNullException(nameof(btqlQuery));
             this.Type = type;
+            this.BtqlQuery = btqlQuery ?? throw new global::System.ArgumentNullException(nameof(btqlQuery));
         }
 
         /// <summary>

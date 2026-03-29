@@ -32,8 +32,8 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionDataCode" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="data"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -41,8 +41,8 @@ namespace Braintrust
             global::Braintrust.AnyOf<global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataCodeData2> data,
             global::Braintrust.FunctionDataCodeType type)
         {
-            this.Data = data;
             this.Type = type;
+            this.Data = data;
         }
 
         /// <summary>
