@@ -1,8 +1,9 @@
 # Microsoft.Extensions.AI Integration
 
-The Braintrust SDK provides `AIFunction` tools that can be used with any
-[`Microsoft.Extensions.AI.IChatClient`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.ai.ichatclient)
-to give AI agents access to Braintrust's prompt management and experiment tracking capabilities.
+!!! tip "Cross-SDK comparison"
+    See the [centralized MEAI documentation](https://tryagi.github.io/docs/meai/) for feature matrices and comparisons across all tryAGI SDKs.
+
+The Braintrust SDK provides `AIFunction` tool wrappers compatible with [Microsoft.Extensions.AI](https://learn.microsoft.com/en-us/dotnet/ai/microsoft-extensions-ai). These tools can be used with any `IChatClient` to give AI models access to Braintrust's prompt management and experiment tracking capabilities.
 
 ## Available Tools
 
