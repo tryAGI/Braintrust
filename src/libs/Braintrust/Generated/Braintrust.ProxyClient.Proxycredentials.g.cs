@@ -240,6 +240,7 @@ namespace Braintrust
             global::Braintrust.ProxycredentialsRequestLogging? logging = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.ProxycredentialsRequest
             {
                 Model = model,

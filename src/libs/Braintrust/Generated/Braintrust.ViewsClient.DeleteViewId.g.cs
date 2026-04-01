@@ -399,6 +399,7 @@ namespace Braintrust
             global::System.Guid objectId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.DeleteView
             {
                 ObjectType = objectType,

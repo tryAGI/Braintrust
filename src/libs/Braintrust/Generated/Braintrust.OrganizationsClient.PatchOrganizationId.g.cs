@@ -409,6 +409,7 @@ namespace Braintrust
             global::Braintrust.ImageRenderingMode? imageRenderingMode = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.PatchOrganization
             {
                 Name = name,

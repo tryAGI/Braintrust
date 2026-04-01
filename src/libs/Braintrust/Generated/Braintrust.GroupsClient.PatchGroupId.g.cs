@@ -415,6 +415,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::System.Guid>? removeMemberGroups = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.PatchGroup
             {
                 Description = description,

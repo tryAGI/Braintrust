@@ -395,6 +395,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.InsertProjectLogsEvent> events,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.InsertProjectLogsEventRequest
             {
                 Events = events,

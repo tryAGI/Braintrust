@@ -158,19 +158,19 @@ namespace Braintrust.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataNullishChat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataNullishChat?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataNullishChat).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Chat, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Chat!, typeInfo);
             }
             else if (value.IsCompletion)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataNullishCompletion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataNullishCompletion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataNullishCompletion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Completion, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Completion!, typeInfo);
             }
             else if (value.IsValue3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value3, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value3!, typeInfo);
             }
         }
     }

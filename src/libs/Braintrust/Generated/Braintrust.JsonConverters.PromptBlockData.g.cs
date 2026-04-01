@@ -125,13 +125,13 @@ namespace Braintrust.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataChat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataChat?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataChat).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Chat, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Chat!, typeInfo);
             }
             else if (value.IsCompletion)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataCompletion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataCompletion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataCompletion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Completion, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Completion!, typeInfo);
             }
         }
     }

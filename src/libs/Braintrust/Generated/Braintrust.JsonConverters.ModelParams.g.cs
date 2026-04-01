@@ -259,31 +259,31 @@ namespace Braintrust.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsOpenAIModelParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsOpenAIModelParams?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsOpenAIModelParams).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIModelParams, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OpenAIModelParams!, typeInfo);
             }
             else if (value.IsAnthropicModelParams)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsAnthropicModelParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsAnthropicModelParams?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsAnthropicModelParams).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AnthropicModelParams, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AnthropicModelParams!, typeInfo);
             }
             else if (value.IsGoogleModelParams)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsGoogleModelParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsGoogleModelParams?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsGoogleModelParams).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleModelParams, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GoogleModelParams!, typeInfo);
             }
             else if (value.IsWindowAIModelParams)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsWindowAIModelParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsWindowAIModelParams?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsWindowAIModelParams).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WindowAIModelParams, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WindowAIModelParams!, typeInfo);
             }
             else if (value.IsJsCompletionParams)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsJsCompletionParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsJsCompletionParams?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsJsCompletionParams).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsCompletionParams, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsCompletionParams!, typeInfo);
             }
         }
     }

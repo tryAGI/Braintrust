@@ -124,13 +124,13 @@ namespace Braintrust.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.InvokeParentSpanParentStruct), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.InvokeParentSpanParentStruct?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.InvokeParentSpanParentStruct).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpanParentStruct, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpanParentStruct!, typeInfo);
             }
             else if (value.IsValue2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value2, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value2!, typeInfo);
             }
         }
     }

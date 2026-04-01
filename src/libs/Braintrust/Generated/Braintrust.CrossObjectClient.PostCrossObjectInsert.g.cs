@@ -391,6 +391,7 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.CrossObjectInsertRequestProjectLogs2>? projectLogs = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.CrossObjectInsertRequest
             {
                 Experiment = experiment,
