@@ -413,7 +413,6 @@ namespace Braintrust
             global::Braintrust.CreateFunctionFunctionSchema? functionSchema = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.CreateFunction
             {
                 ProjectId = projectId,

@@ -383,7 +383,6 @@ namespace Braintrust
             global::System.Guid id,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.DeleteServiceToken
             {
                 Id = id,

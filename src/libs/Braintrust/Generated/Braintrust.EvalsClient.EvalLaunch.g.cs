@@ -276,7 +276,6 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? mcpAuth = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.RunEval
             {
                 ProjectId = projectId,

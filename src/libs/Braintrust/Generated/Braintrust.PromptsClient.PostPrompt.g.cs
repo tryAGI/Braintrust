@@ -405,7 +405,6 @@ namespace Braintrust
             global::Braintrust.FunctionTypeEnumNullish? functionType = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.CreatePrompt
             {
                 ProjectId = projectId,

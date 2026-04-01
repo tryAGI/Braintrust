@@ -395,7 +395,6 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.FeedbackExperimentItem> feedback,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.FeedbackExperimentEventRequest
             {
                 Feedback = feedback,
