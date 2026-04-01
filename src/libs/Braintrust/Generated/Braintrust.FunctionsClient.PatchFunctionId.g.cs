@@ -409,7 +409,6 @@ namespace Braintrust
             global::System.Collections.Generic.IList<string>? tags = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.PatchFunction
             {
                 Name = name,

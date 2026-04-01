@@ -419,7 +419,6 @@ namespace Braintrust
             global::System.Guid? userId = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.PatchView
             {
                 ObjectType = objectType,

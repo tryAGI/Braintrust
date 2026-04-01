@@ -411,7 +411,6 @@ namespace Braintrust
             global::Braintrust.EvalStatusPageConfig? config = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.PatchEvalStatusPage
             {
                 Name = name,

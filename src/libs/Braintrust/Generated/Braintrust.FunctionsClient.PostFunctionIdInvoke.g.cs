@@ -245,7 +245,6 @@ namespace Braintrust
             string? version = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Braintrust.InvokeApi
             {
                 Input = input,
