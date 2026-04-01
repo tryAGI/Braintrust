@@ -401,6 +401,7 @@ namespace Braintrust
             string? secret = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.PatchAISecret
             {
                 Name = name,

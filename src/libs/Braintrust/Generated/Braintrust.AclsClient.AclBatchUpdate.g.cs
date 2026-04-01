@@ -383,6 +383,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.AclItem>? removeAcls = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.AclBatchUpdateRequest
             {
                 AddAcls = addAcls,

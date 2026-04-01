@@ -407,6 +407,7 @@ namespace Braintrust
             global::Braintrust.ProjectScoreConfig? config = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.PatchProjectScore
             {
                 Name = name,

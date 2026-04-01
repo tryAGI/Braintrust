@@ -401,6 +401,7 @@ namespace Braintrust
             global::Braintrust.AllOf<global::Braintrust.ProjectSettings, object>? settings = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Braintrust.PatchProject
             {
                 Name = name,
