@@ -47,18 +47,18 @@ namespace Braintrust
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public object? Value3 { get; init; }
+        public object? ViewOptionsVariant3 { get; init; }
 #else
-        public object? Value3 { get; }
+        public object? ViewOptionsVariant3 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value3))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ViewOptionsVariant3))]
 #endif
-        public bool IsValue3 => Value3 != null;
+        public bool IsViewOptionsVariant3 => ViewOptionsVariant3 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -101,19 +101,19 @@ namespace Braintrust
         public ViewOptions(
             global::Braintrust.ViewOptionsMonitorViewOptions? monitorViewOptions,
             global::Braintrust.ViewOptionsTableViewOptions? tableViewOptions,
-            object? value3
+            object? viewOptionsVariant3
             )
         {
             MonitorViewOptions = monitorViewOptions;
             TableViewOptions = tableViewOptions;
-            Value3 = value3;
+            ViewOptionsVariant3 = viewOptionsVariant3;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value3 as object ??
+            ViewOptionsVariant3 as object ??
             TableViewOptions as object ??
             MonitorViewOptions as object 
             ;
@@ -124,7 +124,7 @@ namespace Braintrust
         public override string? ToString() =>
             MonitorViewOptions?.ToString() ??
             TableViewOptions?.ToString() ??
-            Value3?.ToString() 
+            ViewOptionsVariant3?.ToString() 
             ;
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsMonitorViewOptions || IsTableViewOptions || IsValue3;
+            return IsMonitorViewOptions || IsTableViewOptions || IsViewOptionsVariant3;
         }
 
         /// <summary>
@@ -141,7 +141,7 @@ namespace Braintrust
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.ViewOptionsMonitorViewOptions?, TResult>? monitorViewOptions = null,
             global::System.Func<global::Braintrust.ViewOptionsTableViewOptions?, TResult>? tableViewOptions = null,
-            global::System.Func<object?, TResult>? value3 = null,
+            global::System.Func<object?, TResult>? viewOptionsVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -157,9 +157,9 @@ namespace Braintrust
             {
                 return tableViewOptions(TableViewOptions!);
             }
-            else if (IsValue3 && value3 != null)
+            else if (IsViewOptionsVariant3 && viewOptionsVariant3 != null)
             {
-                return value3(Value3!);
+                return viewOptionsVariant3(ViewOptionsVariant3!);
             }
 
             return default(TResult);
@@ -171,7 +171,7 @@ namespace Braintrust
         public void Match(
             global::System.Action<global::Braintrust.ViewOptionsMonitorViewOptions?>? monitorViewOptions = null,
             global::System.Action<global::Braintrust.ViewOptionsTableViewOptions?>? tableViewOptions = null,
-            global::System.Action<object?>? value3 = null,
+            global::System.Action<object?>? viewOptionsVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -187,9 +187,9 @@ namespace Braintrust
             {
                 tableViewOptions?.Invoke(TableViewOptions!);
             }
-            else if (IsValue3)
+            else if (IsViewOptionsVariant3)
             {
-                value3?.Invoke(Value3!);
+                viewOptionsVariant3?.Invoke(ViewOptionsVariant3!);
             }
         }
 
@@ -204,7 +204,7 @@ namespace Braintrust
                 typeof(global::Braintrust.ViewOptionsMonitorViewOptions),
                 TableViewOptions,
                 typeof(global::Braintrust.ViewOptionsTableViewOptions),
-                Value3,
+                ViewOptionsVariant3,
                 typeof(object),
             };
             const int offset = unchecked((int)2166136261);
@@ -224,7 +224,7 @@ namespace Braintrust
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ViewOptionsMonitorViewOptions?>.Default.Equals(MonitorViewOptions, other.MonitorViewOptions) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ViewOptionsTableViewOptions?>.Default.Equals(TableViewOptions, other.TableViewOptions) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(Value3, other.Value3) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ViewOptionsVariant3, other.ViewOptionsVariant3) 
                 ;
         }
 

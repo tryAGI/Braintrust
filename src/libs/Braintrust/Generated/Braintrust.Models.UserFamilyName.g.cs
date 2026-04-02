@@ -13,35 +13,35 @@ namespace Braintrust
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value1 { get; init; }
+        public string? UserFamilyNameVariant1 { get; init; }
 #else
-        public string? Value1 { get; }
+        public string? UserFamilyNameVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserFamilyNameVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsUserFamilyNameVariant1 => UserFamilyNameVariant1 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::System.Collections.Generic.IList<string>? Value2 { get; init; }
+        public global::System.Collections.Generic.IList<string>? UserFamilyNameVariant2 { get; init; }
 #else
-        public global::System.Collections.Generic.IList<string>? Value2 { get; }
+        public global::System.Collections.Generic.IList<string>? UserFamilyNameVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserFamilyNameVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsUserFamilyNameVariant2 => UserFamilyNameVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(UserFamilyName @this) => @this.Value1;
+        public static implicit operator string?(UserFamilyName @this) => @this.UserFamilyNameVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public UserFamilyName(string? value)
         {
-            Value1 = value;
+            UserFamilyNameVariant1 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public UserFamilyName(
-            string? value1,
-            global::System.Collections.Generic.IList<string>? value2
+            string? userFamilyNameVariant1,
+            global::System.Collections.Generic.IList<string>? userFamilyNameVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            UserFamilyNameVariant1 = userFamilyNameVariant1;
+            UserFamilyNameVariant2 = userFamilyNameVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            UserFamilyNameVariant2 as object ??
+            UserFamilyNameVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            UserFamilyNameVariant1?.ToString() ??
+            UserFamilyNameVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2;
+            return IsUserFamilyNameVariant1 || IsUserFamilyNameVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? value1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? value2 = null,
+            global::System.Func<string?, TResult>? userFamilyNameVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? userFamilyNameVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsUserFamilyNameVariant1 && userFamilyNameVariant1 != null)
             {
-                return value1(Value1!);
+                return userFamilyNameVariant1(UserFamilyNameVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsUserFamilyNameVariant2 && userFamilyNameVariant2 != null)
             {
-                return value2(Value2!);
+                return userFamilyNameVariant2(UserFamilyNameVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? value1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? value2 = null,
+            global::System.Action<string?>? userFamilyNameVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>?>? userFamilyNameVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsUserFamilyNameVariant1)
             {
-                value1?.Invoke(Value1!);
+                userFamilyNameVariant1?.Invoke(UserFamilyNameVariant1!);
             }
-            else if (IsValue2)
+            else if (IsUserFamilyNameVariant2)
             {
-                value2?.Invoke(Value2!);
+                userFamilyNameVariant2?.Invoke(UserFamilyNameVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace Braintrust
         {
             var fields = new object?[]
             {
-                Value1,
+                UserFamilyNameVariant1,
                 typeof(string),
-                Value2,
+                UserFamilyNameVariant2,
                 typeof(global::System.Collections.Generic.IList<string>),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace Braintrust
         public bool Equals(UserFamilyName other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(UserFamilyNameVariant1, other.UserFamilyNameVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(UserFamilyNameVariant2, other.UserFamilyNameVariant2) 
                 ;
         }
 

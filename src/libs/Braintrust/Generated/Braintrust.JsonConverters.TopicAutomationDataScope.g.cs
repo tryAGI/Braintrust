@@ -41,10 +41,10 @@ namespace Braintrust.JsonConverters
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
             if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
 
-            global::Braintrust.TopicAutomationDataScopeVariant1? value1 = default;
-            global::Braintrust.TopicAutomationDataScopeVariant2? value2 = default;
-            global::Braintrust.TopicAutomationDataScopeVariant3? value3 = default;
-            object? value4 = default;
+            global::Braintrust.TopicAutomationDataScopeVariant1? topicAutomationDataScopeVariant1 = default;
+            global::Braintrust.TopicAutomationDataScopeVariant2? topicAutomationDataScopeVariant2 = default;
+            global::Braintrust.TopicAutomationDataScopeVariant3? topicAutomationDataScopeVariant3 = default;
+            object? topicAutomationDataScopeVariant4 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -53,7 +53,7 @@ namespace Braintrust.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant1> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant1).Name}");
-                        value1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        topicAutomationDataScopeVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -68,7 +68,7 @@ namespace Braintrust.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant2> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant2).Name}");
-                        value2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        topicAutomationDataScopeVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -83,7 +83,7 @@ namespace Braintrust.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant3> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant3).Name}");
-                        value3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        topicAutomationDataScopeVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -98,7 +98,7 @@ namespace Braintrust.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                        value4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        topicAutomationDataScopeVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -109,13 +109,13 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (value1 == null && value2 == null && value3 == null && value4 == null)
+            if (topicAutomationDataScopeVariant1 == null && topicAutomationDataScopeVariant2 == null && topicAutomationDataScopeVariant3 == null && topicAutomationDataScopeVariant4 == null)
             {
                 try
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant1).Name}");
-                    value1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    topicAutomationDataScopeVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -128,7 +128,7 @@ namespace Braintrust.JsonConverters
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant2).Name}");
-                    value2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    topicAutomationDataScopeVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -141,7 +141,7 @@ namespace Braintrust.JsonConverters
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant3).Name}");
-                    value3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    topicAutomationDataScopeVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -154,7 +154,7 @@ namespace Braintrust.JsonConverters
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                    value4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    topicAutomationDataScopeVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -165,13 +165,13 @@ namespace Braintrust.JsonConverters
             }
 
             var __value = new global::Braintrust.TopicAutomationDataScope(
-                value1,
+                topicAutomationDataScopeVariant1,
 
-                value2,
+                topicAutomationDataScopeVariant2,
 
-                value3,
+                topicAutomationDataScopeVariant3,
 
-                value4
+                topicAutomationDataScopeVariant4
                 );
 
             return __value;
@@ -186,29 +186,29 @@ namespace Braintrust.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsValue1)
+            if (value.IsTopicAutomationDataScopeVariant1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TopicAutomationDataScopeVariant1!, typeInfo);
             }
-            else if (value.IsValue2)
+            else if (value.IsTopicAutomationDataScopeVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TopicAutomationDataScopeVariant2!, typeInfo);
             }
-            else if (value.IsValue3)
+            else if (value.IsTopicAutomationDataScopeVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant3?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TopicAutomationDataScopeVariant3!, typeInfo);
             }
-            else if (value.IsValue4)
+            else if (value.IsTopicAutomationDataScopeVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TopicAutomationDataScopeVariant4!, typeInfo);
             }
         }
     }
