@@ -12,8 +12,7 @@ namespace Braintrust.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -45,9 +44,7 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.InvokeParentSpanParentStruct), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.InvokeParentSpanParentStruct> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.InvokeParentSpanParentStruct).Name}");
-                        spanParentStruct = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        spanParentStruct = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.InvokeParentSpanParentStruct>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -60,9 +57,7 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                        invokeParentVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        invokeParentVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<string>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -77,9 +72,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.InvokeParentSpanParentStruct), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.InvokeParentSpanParentStruct> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.InvokeParentSpanParentStruct).Name}");
-                    spanParentStruct = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    spanParentStruct = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.InvokeParentSpanParentStruct>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -90,9 +83,7 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                    invokeParentVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    invokeParentVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<string>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -117,20 +108,15 @@ namespace Braintrust.JsonConverters
             global::Braintrust.InvokeParent value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsSpanParentStruct)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.InvokeParentSpanParentStruct), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.InvokeParentSpanParentStruct?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.InvokeParentSpanParentStruct).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpanParentStruct!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SpanParentStruct, typeof(global::Braintrust.InvokeParentSpanParentStruct), options);
             }
             else if (value.IsInvokeParentVariant2)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InvokeParentVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InvokeParentVariant2, typeof(string), options);
             }
         }
     }

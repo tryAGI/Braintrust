@@ -12,8 +12,7 @@ namespace Braintrust.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -46,9 +45,7 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataChat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataChat> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataChat).Name}");
-                        chat = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        chat = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.PromptBlockDataChat>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -61,9 +58,7 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataCompletion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataCompletion> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataCompletion).Name}");
-                        completion = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        completion = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.PromptBlockDataCompletion>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -78,9 +73,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataChat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataChat> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataChat).Name}");
-                    chat = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    chat = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.PromptBlockDataChat>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -91,9 +84,7 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataCompletion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataCompletion> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataCompletion).Name}");
-                    completion = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    completion = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.PromptBlockDataCompletion>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -118,20 +109,15 @@ namespace Braintrust.JsonConverters
             global::Braintrust.PromptBlockData value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsChat)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataChat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataChat?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataChat).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Chat!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Chat, typeof(global::Braintrust.PromptBlockDataChat), options);
             }
             else if (value.IsCompletion)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataCompletion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataCompletion?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataCompletion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Completion!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Completion, typeof(global::Braintrust.PromptBlockDataCompletion), options);
             }
         }
     }

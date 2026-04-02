@@ -39,7 +39,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
+        global::System.Text.Json.JsonSerializerOptions JsonSerializerOptions { get; set; }
 
 
         /// <summary>
