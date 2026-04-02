@@ -13,35 +13,35 @@ namespace Braintrust
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public string? Value1 { get; init; }
+        public string? UserEmailVariant1 { get; init; }
 #else
-        public string? Value1 { get; }
+        public string? UserEmailVariant1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserEmailVariant1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsUserEmailVariant1 => UserEmailVariant1 != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::System.Collections.Generic.IList<string>? Value2 { get; init; }
+        public global::System.Collections.Generic.IList<string>? UserEmailVariant2 { get; init; }
 #else
-        public global::System.Collections.Generic.IList<string>? Value2 { get; }
+        public global::System.Collections.Generic.IList<string>? UserEmailVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserEmailVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsUserEmailVariant2 => UserEmailVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,42 +50,42 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator string?(UserEmail @this) => @this.Value1;
+        public static implicit operator string?(UserEmail @this) => @this.UserEmailVariant1;
 
         /// <summary>
         /// 
         /// </summary>
         public UserEmail(string? value)
         {
-            Value1 = value;
+            UserEmailVariant1 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public UserEmail(
-            string? value1,
-            global::System.Collections.Generic.IList<string>? value2
+            string? userEmailVariant1,
+            global::System.Collections.Generic.IList<string>? userEmailVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            UserEmailVariant1 = userEmailVariant1;
+            UserEmailVariant2 = userEmailVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            UserEmailVariant2 as object ??
+            UserEmailVariant1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            UserEmailVariant1?.ToString() ??
+            UserEmailVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -93,15 +93,15 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2;
+            return IsUserEmailVariant1 || IsUserEmailVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? value1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? value2 = null,
+            global::System.Func<string?, TResult>? userEmailVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? userEmailVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -109,13 +109,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsUserEmailVariant1 && userEmailVariant1 != null)
             {
-                return value1(Value1!);
+                return userEmailVariant1(UserEmailVariant1!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsUserEmailVariant2 && userEmailVariant2 != null)
             {
-                return value2(Value2!);
+                return userEmailVariant2(UserEmailVariant2!);
             }
 
             return default(TResult);
@@ -125,8 +125,8 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? value1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? value2 = null,
+            global::System.Action<string?>? userEmailVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>?>? userEmailVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -134,13 +134,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsUserEmailVariant1)
             {
-                value1?.Invoke(Value1!);
+                userEmailVariant1?.Invoke(UserEmailVariant1!);
             }
-            else if (IsValue2)
+            else if (IsUserEmailVariant2)
             {
-                value2?.Invoke(Value2!);
+                userEmailVariant2?.Invoke(UserEmailVariant2!);
             }
         }
 
@@ -151,9 +151,9 @@ namespace Braintrust
         {
             var fields = new object?[]
             {
-                Value1,
+                UserEmailVariant1,
                 typeof(string),
-                Value2,
+                UserEmailVariant2,
                 typeof(global::System.Collections.Generic.IList<string>),
             };
             const int offset = unchecked((int)2166136261);
@@ -171,8 +171,8 @@ namespace Braintrust
         public bool Equals(UserEmail other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(UserEmailVariant1, other.UserEmailVariant1) &&
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(UserEmailVariant2, other.UserEmailVariant2) 
                 ;
         }
 

@@ -13,18 +13,18 @@ namespace Braintrust
         /// Function id
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Braintrust.FunctionIdFunctionId1? Value1 { get; init; }
+        public global::Braintrust.FunctionIdFunctionId1? Id1 { get; init; }
 #else
-        public global::Braintrust.FunctionIdFunctionId1? Value1 { get; }
+        public global::Braintrust.FunctionIdFunctionId1? Id1 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Id1))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsId1 => Id1 != null;
 
         /// <summary>
         /// Project name and slug
@@ -135,14 +135,14 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Braintrust.FunctionIdFunctionId1?(FunctionId @this) => @this.Value1;
+        public static implicit operator global::Braintrust.FunctionIdFunctionId1?(FunctionId @this) => @this.Id1;
 
         /// <summary>
         /// 
         /// </summary>
         public FunctionId(global::Braintrust.FunctionIdFunctionId1? value)
         {
-            Value1 = value;
+            Id1 = value;
         }
 
         /// <summary>
@@ -257,7 +257,7 @@ namespace Braintrust
         /// 
         /// </summary>
         public FunctionId(
-            global::Braintrust.FunctionIdFunctionId1? value1,
+            global::Braintrust.FunctionIdFunctionId1? id1,
             global::Braintrust.FunctionIdProjectSlug? projectSlug,
             global::Braintrust.FunctionIdGlobalFunction? globalFunction,
             global::Braintrust.FunctionIdPromptSessionId? promptSessionId,
@@ -266,7 +266,7 @@ namespace Braintrust
             global::Braintrust.FunctionIdInlinePrompt? inlinePrompt
             )
         {
-            Value1 = value1;
+            Id1 = id1;
             ProjectSlug = projectSlug;
             GlobalFunction = globalFunction;
             PromptSessionId = promptSessionId;
@@ -285,14 +285,14 @@ namespace Braintrust
             PromptSessionId as object ??
             GlobalFunction as object ??
             ProjectSlug as object ??
-            Value1 as object 
+            Id1 as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
+            Id1?.ToString() ??
             ProjectSlug?.ToString() ??
             GlobalFunction?.ToString() ??
             PromptSessionId?.ToString() ??
@@ -306,14 +306,14 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsProjectSlug || IsGlobalFunction || IsPromptSessionId || IsInlineCode || IsInlineFunction || IsInlinePrompt;
+            return IsId1 || IsProjectSlug || IsGlobalFunction || IsPromptSessionId || IsInlineCode || IsInlineFunction || IsInlinePrompt;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.FunctionIdFunctionId1?, TResult>? value1 = null,
+            global::System.Func<global::Braintrust.FunctionIdFunctionId1?, TResult>? id1 = null,
             global::System.Func<global::Braintrust.FunctionIdProjectSlug?, TResult>? projectSlug = null,
             global::System.Func<global::Braintrust.FunctionIdGlobalFunction?, TResult>? globalFunction = null,
             global::System.Func<global::Braintrust.FunctionIdPromptSessionId?, TResult>? promptSessionId = null,
@@ -327,9 +327,9 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsId1 && id1 != null)
             {
-                return value1(Value1!);
+                return id1(Id1!);
             }
             else if (IsProjectSlug && projectSlug != null)
             {
@@ -363,7 +363,7 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.FunctionIdFunctionId1?>? value1 = null,
+            global::System.Action<global::Braintrust.FunctionIdFunctionId1?>? id1 = null,
             global::System.Action<global::Braintrust.FunctionIdProjectSlug?>? projectSlug = null,
             global::System.Action<global::Braintrust.FunctionIdGlobalFunction?>? globalFunction = null,
             global::System.Action<global::Braintrust.FunctionIdPromptSessionId?>? promptSessionId = null,
@@ -377,9 +377,9 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsId1)
             {
-                value1?.Invoke(Value1!);
+                id1?.Invoke(Id1!);
             }
             else if (IsProjectSlug)
             {
@@ -414,7 +414,7 @@ namespace Braintrust
         {
             var fields = new object?[]
             {
-                Value1,
+                Id1,
                 typeof(global::Braintrust.FunctionIdFunctionId1),
                 ProjectSlug,
                 typeof(global::Braintrust.FunctionIdProjectSlug),
@@ -444,7 +444,7 @@ namespace Braintrust
         public bool Equals(FunctionId other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdFunctionId1?>.Default.Equals(Value1, other.Value1) &&
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdFunctionId1?>.Default.Equals(Id1, other.Id1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdProjectSlug?>.Default.Equals(ProjectSlug, other.ProjectSlug) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdGlobalFunction?>.Default.Equals(GlobalFunction, other.GlobalFunction) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdPromptSessionId?>.Default.Equals(PromptSessionId, other.PromptSessionId) &&

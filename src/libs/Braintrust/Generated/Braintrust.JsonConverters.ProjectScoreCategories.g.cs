@@ -81,7 +81,7 @@ namespace Braintrust.JsonConverters
             global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>? categorical = default;
             global::System.Collections.Generic.Dictionary<string, double>? weighted = default;
             global::System.Collections.Generic.IList<string>? minimum = default;
-            object? value4 = default;
+            object? projectScoreCategoriesVariant4 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -142,7 +142,7 @@ namespace Braintrust.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                        value4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        projectScoreCategoriesVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -153,7 +153,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (categorical == null && weighted == null && minimum == null && value4 == null)
+            if (categorical == null && weighted == null && minimum == null && projectScoreCategoriesVariant4 == null)
             {
                 try
                 {
@@ -202,7 +202,7 @@ namespace Braintrust.JsonConverters
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                    value4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    projectScoreCategoriesVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -219,7 +219,7 @@ namespace Braintrust.JsonConverters
 
                 minimum,
 
-                value4
+                projectScoreCategoriesVariant4
                 );
 
             return __value;
@@ -252,11 +252,11 @@ namespace Braintrust.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<string>).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.Minimum!, typeInfo);
             }
-            else if (value.IsValue4)
+            else if (value.IsProjectScoreCategoriesVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ProjectScoreCategoriesVariant4!, typeInfo);
             }
         }
     }

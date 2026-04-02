@@ -54,8 +54,8 @@ namespace Braintrust.JsonConverters
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
 
-            global::System.Guid? value1 = default;
-            global::System.Collections.Generic.IList<global::System.Guid>? value2 = default;
+            global::System.Guid? guid = default;
+            global::System.Collections.Generic.IList<global::System.Guid>? idsVariant2 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -65,7 +65,7 @@ namespace Braintrust.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Guid), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Guid> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Guid).Name}");
-                        value1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        guid = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -82,7 +82,7 @@ namespace Braintrust.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::System.Guid>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::System.Guid>> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::System.Guid>).Name}");
-                        value2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        idsVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -93,14 +93,14 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (value1 == null && value2 == null)
+            if (guid == null && idsVariant2 == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Guid), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Guid> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Guid).Name}");
-                    value1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    guid = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -114,7 +114,7 @@ namespace Braintrust.JsonConverters
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::System.Guid>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::System.Guid>> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::System.Guid>).Name}");
-                    value2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    idsVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -125,9 +125,9 @@ namespace Braintrust.JsonConverters
             }
 
             var __value = new global::Braintrust.Ids(
-                value1,
+                guid,
 
-                value2
+                idsVariant2
                 );
 
             return __value;
@@ -142,17 +142,17 @@ namespace Braintrust.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsValue1)
+            if (value.IsGuid)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Guid), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Guid> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Guid).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Guid!.Value, typeInfo);
             }
-            else if (value.IsValue2)
+            else if (value.IsIdsVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::System.Guid>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::System.Guid>?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::System.Guid>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.IdsVariant2!, typeInfo);
             }
         }
     }

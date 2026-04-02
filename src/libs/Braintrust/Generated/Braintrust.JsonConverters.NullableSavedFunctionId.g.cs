@@ -43,7 +43,7 @@ namespace Braintrust.JsonConverters
 
             global::Braintrust.NullableSavedFunctionIdFunction? function = default;
             global::Braintrust.NullableSavedFunctionIdGlobal? global = default;
-            object? value3 = default;
+            object? nullableSavedFunctionIdVariant3 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -82,7 +82,7 @@ namespace Braintrust.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                        value3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        nullableSavedFunctionIdVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -93,7 +93,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (function == null && global == null && value3 == null)
+            if (function == null && global == null && nullableSavedFunctionIdVariant3 == null)
             {
                 try
                 {
@@ -125,7 +125,7 @@ namespace Braintrust.JsonConverters
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                    value3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    nullableSavedFunctionIdVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -140,7 +140,7 @@ namespace Braintrust.JsonConverters
 
                 global,
 
-                value3
+                nullableSavedFunctionIdVariant3
                 );
 
             return __value;
@@ -167,11 +167,11 @@ namespace Braintrust.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.NullableSavedFunctionIdGlobal).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.Global!, typeInfo);
             }
-            else if (value.IsValue3)
+            else if (value.IsNullableSavedFunctionIdVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.NullableSavedFunctionIdVariant3!, typeInfo);
             }
         }
     }

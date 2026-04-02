@@ -64,18 +64,18 @@ namespace Braintrust
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public object? Value4 { get; init; }
+        public object? ResponseFormatNullishVariant4 { get; init; }
 #else
-        public object? Value4 { get; }
+        public object? ResponseFormatNullishVariant4 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value4))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ResponseFormatNullishVariant4))]
 #endif
-        public bool IsValue4 => Value4 != null;
+        public bool IsResponseFormatNullishVariant4 => ResponseFormatNullishVariant4 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -137,20 +137,20 @@ namespace Braintrust
             global::Braintrust.ResponseFormatNullishJsonObject? jsonObject,
             global::Braintrust.ResponseFormatNullishJsonSchema? jsonSchema,
             global::Braintrust.ResponseFormatNullishText? text,
-            object? value4
+            object? responseFormatNullishVariant4
             )
         {
             JsonObject = jsonObject;
             JsonSchema = jsonSchema;
             Text = text;
-            Value4 = value4;
+            ResponseFormatNullishVariant4 = responseFormatNullishVariant4;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value4 as object ??
+            ResponseFormatNullishVariant4 as object ??
             Text as object ??
             JsonSchema as object ??
             JsonObject as object 
@@ -163,7 +163,7 @@ namespace Braintrust
             JsonObject?.ToString() ??
             JsonSchema?.ToString() ??
             Text?.ToString() ??
-            Value4?.ToString() 
+            ResponseFormatNullishVariant4?.ToString() 
             ;
 
         /// <summary>
@@ -171,7 +171,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsJsonObject || IsJsonSchema || IsText || IsValue4;
+            return IsJsonObject || IsJsonSchema || IsText || IsResponseFormatNullishVariant4;
         }
 
         /// <summary>
@@ -181,7 +181,7 @@ namespace Braintrust
             global::System.Func<global::Braintrust.ResponseFormatNullishJsonObject?, TResult>? jsonObject = null,
             global::System.Func<global::Braintrust.ResponseFormatNullishJsonSchema?, TResult>? jsonSchema = null,
             global::System.Func<global::Braintrust.ResponseFormatNullishText?, TResult>? text = null,
-            global::System.Func<object?, TResult>? value4 = null,
+            global::System.Func<object?, TResult>? responseFormatNullishVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -201,9 +201,9 @@ namespace Braintrust
             {
                 return text(Text!);
             }
-            else if (IsValue4 && value4 != null)
+            else if (IsResponseFormatNullishVariant4 && responseFormatNullishVariant4 != null)
             {
-                return value4(Value4!);
+                return responseFormatNullishVariant4(ResponseFormatNullishVariant4!);
             }
 
             return default(TResult);
@@ -216,7 +216,7 @@ namespace Braintrust
             global::System.Action<global::Braintrust.ResponseFormatNullishJsonObject?>? jsonObject = null,
             global::System.Action<global::Braintrust.ResponseFormatNullishJsonSchema?>? jsonSchema = null,
             global::System.Action<global::Braintrust.ResponseFormatNullishText?>? text = null,
-            global::System.Action<object?>? value4 = null,
+            global::System.Action<object?>? responseFormatNullishVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -236,9 +236,9 @@ namespace Braintrust
             {
                 text?.Invoke(Text!);
             }
-            else if (IsValue4)
+            else if (IsResponseFormatNullishVariant4)
             {
-                value4?.Invoke(Value4!);
+                responseFormatNullishVariant4?.Invoke(ResponseFormatNullishVariant4!);
             }
         }
 
@@ -255,7 +255,7 @@ namespace Braintrust
                 typeof(global::Braintrust.ResponseFormatNullishJsonSchema),
                 Text,
                 typeof(global::Braintrust.ResponseFormatNullishText),
-                Value4,
+                ResponseFormatNullishVariant4,
                 typeof(object),
             };
             const int offset = unchecked((int)2166136261);
@@ -276,7 +276,7 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ResponseFormatNullishJsonObject?>.Default.Equals(JsonObject, other.JsonObject) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ResponseFormatNullishJsonSchema?>.Default.Equals(JsonSchema, other.JsonSchema) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ResponseFormatNullishText?>.Default.Equals(Text, other.Text) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(Value4, other.Value4) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ResponseFormatNullishVariant4, other.ResponseFormatNullishVariant4) 
                 ;
         }
 

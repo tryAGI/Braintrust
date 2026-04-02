@@ -83,7 +83,7 @@ namespace Braintrust.JsonConverters
             global::Braintrust.FacetData? facet = default;
             global::Braintrust.BatchedFacetData? batchedFacet = default;
             global::Braintrust.FunctionDataParameters? parameters = default;
-            global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value9 = default;
+            global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? functionDataVariant9 = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -212,7 +212,7 @@ namespace Braintrust.JsonConverters
                     {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>).Name}");
-                        value9 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        functionDataVariant9 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -223,7 +223,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && value9 == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null)
             {
                 try
                 {
@@ -333,7 +333,7 @@ namespace Braintrust.JsonConverters
                 {
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>).Name}");
-                    value9 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    functionDataVariant9 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -360,7 +360,7 @@ namespace Braintrust.JsonConverters
 
                 parameters,
 
-                value9
+                functionDataVariant9
                 );
 
             return __value;
@@ -423,11 +423,11 @@ namespace Braintrust.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataParameters).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.Parameters!, typeInfo);
             }
-            else if (value.IsValue9)
+            else if (value.IsFunctionDataVariant9)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value9!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionDataVariant9!.Value, typeInfo);
             }
         }
     }

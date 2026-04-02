@@ -149,18 +149,18 @@ namespace Braintrust
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? Value9 { get; init; }
+        public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? FunctionDataVariant9 { get; init; }
 #else
-        public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? Value9 { get; }
+        public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? FunctionDataVariant9 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value9))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionDataVariant9))]
 #endif
-        public bool IsValue9 => Value9 != null;
+        public bool IsFunctionDataVariant9 => FunctionDataVariant9 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -313,14 +313,14 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?(FunctionData @this) => @this.Value9;
+        public static implicit operator global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?(FunctionData @this) => @this.FunctionDataVariant9;
 
         /// <summary>
         /// 
         /// </summary>
         public FunctionData(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value)
         {
-            Value9 = value;
+            FunctionDataVariant9 = value;
         }
 
         /// <summary>
@@ -335,7 +335,7 @@ namespace Braintrust
             global::Braintrust.FacetData? facet,
             global::Braintrust.BatchedFacetData? batchedFacet,
             global::Braintrust.FunctionDataParameters? parameters,
-            global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value9
+            global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? functionDataVariant9
             )
         {
             Prompt = prompt;
@@ -346,14 +346,14 @@ namespace Braintrust
             Facet = facet;
             BatchedFacet = batchedFacet;
             Parameters = parameters;
-            Value9 = value9;
+            FunctionDataVariant9 = functionDataVariant9;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value9 as object ??
+            FunctionDataVariant9 as object ??
             Parameters as object ??
             BatchedFacet as object ??
             Facet as object ??
@@ -376,7 +376,7 @@ namespace Braintrust
             Facet?.ToString() ??
             BatchedFacet?.ToString() ??
             Parameters?.ToString() ??
-            Value9?.ToString() 
+            FunctionDataVariant9?.ToString() 
             ;
 
         /// <summary>
@@ -384,7 +384,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsPrompt || IsCode || IsGraph || IsRemoteEval || IsGlobal || IsFacet || IsBatchedFacet || IsParameters || IsValue9;
+            return IsPrompt || IsCode || IsGraph || IsRemoteEval || IsGlobal || IsFacet || IsBatchedFacet || IsParameters || IsFunctionDataVariant9;
         }
 
         /// <summary>
@@ -399,7 +399,7 @@ namespace Braintrust
             global::System.Func<global::Braintrust.FacetData?, TResult>? facet = null,
             global::System.Func<global::Braintrust.BatchedFacetData?, TResult>? batchedFacet = null,
             global::System.Func<global::Braintrust.FunctionDataParameters?, TResult>? parameters = null,
-            global::System.Func<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?, TResult>? value9 = null,
+            global::System.Func<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?, TResult>? functionDataVariant9 = null,
             bool validate = true)
         {
             if (validate)
@@ -439,9 +439,9 @@ namespace Braintrust
             {
                 return parameters(Parameters!);
             }
-            else if (IsValue9 && value9 != null)
+            else if (IsFunctionDataVariant9 && functionDataVariant9 != null)
             {
-                return value9(Value9!);
+                return functionDataVariant9(FunctionDataVariant9!);
             }
 
             return default(TResult);
@@ -459,7 +459,7 @@ namespace Braintrust
             global::System.Action<global::Braintrust.FacetData?>? facet = null,
             global::System.Action<global::Braintrust.BatchedFacetData?>? batchedFacet = null,
             global::System.Action<global::Braintrust.FunctionDataParameters?>? parameters = null,
-            global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? value9 = null,
+            global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataVariant9 = null,
             bool validate = true)
         {
             if (validate)
@@ -499,9 +499,9 @@ namespace Braintrust
             {
                 parameters?.Invoke(Parameters!);
             }
-            else if (IsValue9)
+            else if (IsFunctionDataVariant9)
             {
-                value9?.Invoke(Value9!);
+                functionDataVariant9?.Invoke(FunctionDataVariant9!);
             }
         }
 
@@ -528,7 +528,7 @@ namespace Braintrust
                 typeof(global::Braintrust.BatchedFacetData),
                 Parameters,
                 typeof(global::Braintrust.FunctionDataParameters),
-                Value9,
+                FunctionDataVariant9,
                 typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>),
             };
             const int offset = unchecked((int)2166136261);
@@ -554,7 +554,7 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FacetData?>.Default.Equals(Facet, other.Facet) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.BatchedFacetData?>.Default.Equals(BatchedFacet, other.BatchedFacet) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataParameters?>.Default.Equals(Parameters, other.Parameters) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>.Default.Equals(Value9, other.Value9) 
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>.Default.Equals(FunctionDataVariant9, other.FunctionDataVariant9) 
                 ;
         }
 

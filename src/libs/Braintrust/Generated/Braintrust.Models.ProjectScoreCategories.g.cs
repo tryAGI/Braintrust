@@ -64,18 +64,18 @@ namespace Braintrust
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public object? Value4 { get; init; }
+        public object? ProjectScoreCategoriesVariant4 { get; init; }
 #else
-        public object? Value4 { get; }
+        public object? ProjectScoreCategoriesVariant4 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value4))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ProjectScoreCategoriesVariant4))]
 #endif
-        public bool IsValue4 => Value4 != null;
+        public bool IsProjectScoreCategoriesVariant4 => ProjectScoreCategoriesVariant4 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -101,20 +101,20 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>? categorical,
             global::System.Collections.Generic.Dictionary<string, double>? weighted,
             global::System.Collections.Generic.IList<string>? minimum,
-            object? value4
+            object? projectScoreCategoriesVariant4
             )
         {
             Categorical = categorical;
             Weighted = weighted;
             Minimum = minimum;
-            Value4 = value4;
+            ProjectScoreCategoriesVariant4 = projectScoreCategoriesVariant4;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value4 as object ??
+            ProjectScoreCategoriesVariant4 as object ??
             Minimum as object ??
             Weighted as object ??
             Categorical as object 
@@ -127,7 +127,7 @@ namespace Braintrust
             Categorical?.ToString() ??
             Weighted?.ToString() ??
             Minimum?.ToString() ??
-            Value4?.ToString() 
+            ProjectScoreCategoriesVariant4?.ToString() 
             ;
 
         /// <summary>
@@ -135,7 +135,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsCategorical || IsWeighted || IsMinimum || IsValue4;
+            return IsCategorical || IsWeighted || IsMinimum || IsProjectScoreCategoriesVariant4;
         }
 
         /// <summary>
@@ -145,7 +145,7 @@ namespace Braintrust
             global::System.Func<global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>?, TResult>? categorical = null,
             global::System.Func<global::System.Collections.Generic.Dictionary<string, double>?, TResult>? weighted = null,
             global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? minimum = null,
-            global::System.Func<object?, TResult>? value4 = null,
+            global::System.Func<object?, TResult>? projectScoreCategoriesVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -165,9 +165,9 @@ namespace Braintrust
             {
                 return minimum(Minimum!);
             }
-            else if (IsValue4 && value4 != null)
+            else if (IsProjectScoreCategoriesVariant4 && projectScoreCategoriesVariant4 != null)
             {
-                return value4(Value4!);
+                return projectScoreCategoriesVariant4(ProjectScoreCategoriesVariant4!);
             }
 
             return default(TResult);
@@ -180,7 +180,7 @@ namespace Braintrust
             global::System.Action<global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>?>? categorical = null,
             global::System.Action<global::System.Collections.Generic.Dictionary<string, double>?>? weighted = null,
             global::System.Action<global::System.Collections.Generic.IList<string>?>? minimum = null,
-            global::System.Action<object?>? value4 = null,
+            global::System.Action<object?>? projectScoreCategoriesVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -200,9 +200,9 @@ namespace Braintrust
             {
                 minimum?.Invoke(Minimum!);
             }
-            else if (IsValue4)
+            else if (IsProjectScoreCategoriesVariant4)
             {
-                value4?.Invoke(Value4!);
+                projectScoreCategoriesVariant4?.Invoke(ProjectScoreCategoriesVariant4!);
             }
         }
 
@@ -219,7 +219,7 @@ namespace Braintrust
                 typeof(global::System.Collections.Generic.Dictionary<string, double>),
                 Minimum,
                 typeof(global::System.Collections.Generic.IList<string>),
-                Value4,
+                ProjectScoreCategoriesVariant4,
                 typeof(object),
             };
             const int offset = unchecked((int)2166136261);
@@ -240,7 +240,7 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>?>.Default.Equals(Categorical, other.Categorical) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, double>?>.Default.Equals(Weighted, other.Weighted) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(Minimum, other.Minimum) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(Value4, other.Value4) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ProjectScoreCategoriesVariant4, other.ProjectScoreCategoriesVariant4) 
                 ;
         }
 
