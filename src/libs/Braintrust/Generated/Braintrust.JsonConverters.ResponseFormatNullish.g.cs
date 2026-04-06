@@ -12,7 +12,8 @@ namespace Braintrust.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -50,7 +51,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        jsonObject = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ResponseFormatNullishJsonObject>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishJsonObject), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishJsonObject> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishJsonObject).Name}");
+                        jsonObject = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -63,7 +66,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        jsonSchema = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ResponseFormatNullishJsonSchema>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishJsonSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishJsonSchema> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishJsonSchema).Name}");
+                        jsonSchema = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -76,7 +81,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        text = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ResponseFormatNullishText>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishText> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishText).Name}");
+                        text = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -89,7 +96,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        responseFormatNullishVariant4 = global::System.Text.Json.JsonSerializer.Deserialize<object>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
+                        responseFormatNullishVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -104,7 +113,9 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
-                    jsonObject = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ResponseFormatNullishJsonObject>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishJsonObject), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishJsonObject> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishJsonObject).Name}");
+                    jsonObject = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -115,7 +126,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    jsonSchema = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ResponseFormatNullishJsonSchema>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishJsonSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishJsonSchema> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishJsonSchema).Name}");
+                    jsonSchema = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -126,7 +139,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    text = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ResponseFormatNullishText>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishText> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishText).Name}");
+                    text = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -137,7 +152,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    responseFormatNullishVariant4 = global::System.Text.Json.JsonSerializer.Deserialize<object>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
+                    responseFormatNullishVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -166,23 +183,32 @@ namespace Braintrust.JsonConverters
             global::Braintrust.ResponseFormatNullish value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsJsonObject)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonObject, typeof(global::Braintrust.ResponseFormatNullishJsonObject), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishJsonObject), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishJsonObject?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishJsonObject).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonObject!, typeInfo);
             }
             else if (value.IsJsonSchema)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonSchema, typeof(global::Braintrust.ResponseFormatNullishJsonSchema), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishJsonSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishJsonSchema?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishJsonSchema).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonSchema!, typeInfo);
             }
             else if (value.IsText)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text, typeof(global::Braintrust.ResponseFormatNullishText), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ResponseFormatNullishText), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ResponseFormatNullishText?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ResponseFormatNullishText).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
             }
             else if (value.IsResponseFormatNullishVariant4)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ResponseFormatNullishVariant4, typeof(object), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ResponseFormatNullishVariant4!, typeInfo);
             }
         }
     }
