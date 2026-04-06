@@ -12,7 +12,8 @@ namespace Braintrust.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -78,7 +79,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        system = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamSystem>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamSystem), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamSystem> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamSystem).Name}");
+                        system = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -91,7 +94,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        user = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamUser>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamUser), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamUser> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamUser).Name}");
+                        user = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -104,7 +109,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        assistant = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamAssistant>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamAssistant), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamAssistant> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamAssistant).Name}");
+                        assistant = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -117,7 +124,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        tool = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamTool>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamTool), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamTool> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamTool).Name}");
+                        tool = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -130,7 +139,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        function = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamFunction>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamFunction), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamFunction> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamFunction).Name}");
+                        function = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -143,7 +154,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        developer = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamDeveloper>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamDeveloper), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamDeveloper> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamDeveloper).Name}");
+                        developer = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -156,7 +169,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        fallback = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamFallback>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamFallback), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamFallback> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamFallback).Name}");
+                        fallback = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -171,7 +186,9 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
-                    system = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamSystem>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamSystem), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamSystem> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamSystem).Name}");
+                    system = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -182,7 +199,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    user = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamUser>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamUser), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamUser> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamUser).Name}");
+                    user = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -193,7 +212,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    assistant = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamAssistant>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamAssistant), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamAssistant> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamAssistant).Name}");
+                    assistant = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -204,7 +225,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    tool = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamTool>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamTool), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamTool> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamTool).Name}");
+                    tool = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -215,7 +238,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    function = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamFunction>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamFunction), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamFunction> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamFunction).Name}");
+                    function = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -226,7 +251,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    developer = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamDeveloper>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamDeveloper), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamDeveloper> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamDeveloper).Name}");
+                    developer = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -237,7 +264,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    fallback = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.ChatCompletionMessageParamFallback>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamFallback), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamFallback> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamFallback).Name}");
+                    fallback = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -272,35 +301,50 @@ namespace Braintrust.JsonConverters
             global::Braintrust.ChatCompletionMessageParam value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsSystem)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.System, typeof(global::Braintrust.ChatCompletionMessageParamSystem), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamSystem), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamSystem?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamSystem).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.System!, typeInfo);
             }
             else if (value.IsUser)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.User, typeof(global::Braintrust.ChatCompletionMessageParamUser), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamUser), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamUser?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamUser).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.User!, typeInfo);
             }
             else if (value.IsAssistant)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Assistant, typeof(global::Braintrust.ChatCompletionMessageParamAssistant), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamAssistant), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamAssistant?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamAssistant).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Assistant!, typeInfo);
             }
             else if (value.IsTool)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Tool, typeof(global::Braintrust.ChatCompletionMessageParamTool), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamTool), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamTool?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamTool).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Tool!, typeInfo);
             }
             else if (value.IsFunction)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Function, typeof(global::Braintrust.ChatCompletionMessageParamFunction), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamFunction), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamFunction?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamFunction).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Function!, typeInfo);
             }
             else if (value.IsDeveloper)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Developer, typeof(global::Braintrust.ChatCompletionMessageParamDeveloper), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamDeveloper), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamDeveloper?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamDeveloper).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Developer!, typeInfo);
             }
             else if (value.IsFallback)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Fallback, typeof(global::Braintrust.ChatCompletionMessageParamFallback), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionMessageParamFallback), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionMessageParamFallback?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionMessageParamFallback).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Fallback!, typeInfo);
             }
         }
     }

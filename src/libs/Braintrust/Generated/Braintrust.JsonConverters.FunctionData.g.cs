@@ -12,7 +12,8 @@ namespace Braintrust.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -89,7 +90,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        prompt = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataPrompt>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataPrompt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataPrompt> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataPrompt).Name}");
+                        prompt = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -102,7 +105,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        code = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataCode>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataCode> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataCode).Name}");
+                        code = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -115,7 +120,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        graph = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.GraphData>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphData> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphData).Name}");
+                        graph = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -128,7 +135,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        remoteEval = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataRemoteEval>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataRemoteEval), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataRemoteEval> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataRemoteEval).Name}");
+                        remoteEval = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -141,7 +150,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        global = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataGlobal>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataGlobal), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataGlobal> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataGlobal).Name}");
+                        global = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -154,7 +165,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        facet = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FacetData>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FacetData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FacetData> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FacetData).Name}");
+                        facet = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -167,7 +180,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        batchedFacet = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.BatchedFacetData>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.BatchedFacetData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.BatchedFacetData> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.BatchedFacetData).Name}");
+                        batchedFacet = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -180,7 +195,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        parameters = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataParameters>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataParameters), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataParameters> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataParameters).Name}");
+                        parameters = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -193,7 +210,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        functionDataVariant9 = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>).Name}");
+                        functionDataVariant9 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -208,7 +227,9 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
-                    prompt = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataPrompt>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataPrompt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataPrompt> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataPrompt).Name}");
+                    prompt = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -219,7 +240,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    code = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataCode>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataCode> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataCode).Name}");
+                    code = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -230,7 +253,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    graph = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.GraphData>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphData> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphData).Name}");
+                    graph = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -241,7 +266,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    remoteEval = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataRemoteEval>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataRemoteEval), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataRemoteEval> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataRemoteEval).Name}");
+                    remoteEval = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -252,7 +279,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    global = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataGlobal>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataGlobal), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataGlobal> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataGlobal).Name}");
+                    global = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -263,7 +292,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    facet = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FacetData>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FacetData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FacetData> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FacetData).Name}");
+                    facet = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -274,7 +305,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    batchedFacet = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.BatchedFacetData>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.BatchedFacetData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.BatchedFacetData> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.BatchedFacetData).Name}");
+                    batchedFacet = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -285,7 +318,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    parameters = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.FunctionDataParameters>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataParameters), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataParameters> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataParameters).Name}");
+                    parameters = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -296,7 +331,9 @@ namespace Braintrust.JsonConverters
 
                 try
                 {
-                    functionDataVariant9 = global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>).Name}");
+                    functionDataVariant9 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -335,43 +372,62 @@ namespace Braintrust.JsonConverters
             global::Braintrust.FunctionData value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsPrompt)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Prompt, typeof(global::Braintrust.FunctionDataPrompt), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataPrompt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataPrompt?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataPrompt).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Prompt!, typeInfo);
             }
             else if (value.IsCode)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Code, typeof(global::Braintrust.FunctionDataCode), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataCode?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataCode).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Code!, typeInfo);
             }
             else if (value.IsGraph)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Graph, typeof(global::Braintrust.GraphData), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphData?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphData).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Graph!, typeInfo);
             }
             else if (value.IsRemoteEval)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RemoteEval, typeof(global::Braintrust.FunctionDataRemoteEval), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataRemoteEval), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataRemoteEval?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataRemoteEval).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RemoteEval!, typeInfo);
             }
             else if (value.IsGlobal)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Global, typeof(global::Braintrust.FunctionDataGlobal), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataGlobal), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataGlobal?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataGlobal).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Global!, typeInfo);
             }
             else if (value.IsFacet)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Facet, typeof(global::Braintrust.FacetData), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FacetData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FacetData?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FacetData).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Facet!, typeInfo);
             }
             else if (value.IsBatchedFacet)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BatchedFacet, typeof(global::Braintrust.BatchedFacetData), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.BatchedFacetData), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.BatchedFacetData?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.BatchedFacetData).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BatchedFacet!, typeInfo);
             }
             else if (value.IsParameters)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Parameters, typeof(global::Braintrust.FunctionDataParameters), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataParameters), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataParameters?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataParameters).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Parameters!, typeInfo);
             }
             else if (value.IsFunctionDataVariant9)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionDataVariant9, typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FunctionDataVariant9!.Value, typeInfo);
             }
         }
     }
