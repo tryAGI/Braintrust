@@ -54,6 +54,12 @@ namespace Braintrust
         public global::System.Guid? UserId { get; set; }
 
         /// <summary>
+        /// A list of tags for the dataset
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
+
+        /// <summary>
         /// User-controlled metadata about the dataset
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
@@ -99,6 +105,9 @@ namespace Braintrust
         /// <param name="userId">
         /// Identifies the user who created the dataset
         /// </param>
+        /// <param name="tags">
+        /// A list of tags for the dataset
+        /// </param>
         /// <param name="metadata">
         /// User-controlled metadata about the dataset
         /// </param>
@@ -114,6 +123,7 @@ namespace Braintrust
             global::System.DateTime? created,
             global::System.DateTime? deletedAt,
             global::System.Guid? userId,
+            global::System.Collections.Generic.IList<string>? tags,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata)
         {
             this.Id = id;
@@ -123,6 +133,7 @@ namespace Braintrust
             this.Created = created;
             this.DeletedAt = deletedAt;
             this.UserId = userId;
+            this.Tags = tags;
             this.Metadata = metadata;
             this.UrlSlug = urlSlug ?? throw new global::System.ArgumentNullException(nameof(urlSlug));
         }

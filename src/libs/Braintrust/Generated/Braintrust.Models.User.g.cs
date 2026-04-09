@@ -46,6 +46,12 @@ namespace Braintrust
         public global::System.DateTime? Created { get; set; }
 
         /// <summary>
+        /// Unix timestamp in milliseconds of the user's last activity, when available
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("last_active_at")]
+        public double? LastActiveAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -72,6 +78,9 @@ namespace Braintrust
         /// <param name="created">
         /// Date of user creation
         /// </param>
+        /// <param name="lastActiveAt">
+        /// Unix timestamp in milliseconds of the user's last activity, when available
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -81,7 +90,8 @@ namespace Braintrust
             string? familyName,
             string? email,
             string? avatarUrl,
-            global::System.DateTime? created)
+            global::System.DateTime? created,
+            double? lastActiveAt)
         {
             this.Id = id;
             this.GivenName = givenName;
@@ -89,6 +99,7 @@ namespace Braintrust
             this.Email = email;
             this.AvatarUrl = avatarUrl;
             this.Created = created;
+            this.LastActiveAt = lastActiveAt;
         }
 
         /// <summary>

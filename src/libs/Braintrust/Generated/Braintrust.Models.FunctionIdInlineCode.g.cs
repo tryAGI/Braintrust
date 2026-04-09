@@ -23,6 +23,13 @@ namespace Braintrust
         public required string Code { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("function_type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionTypeEnum?, object>))]
+        public global::Braintrust.AllOf<global::Braintrust.FunctionTypeEnum?, object>? FunctionType { get; set; }
+
+        /// <summary>
         /// The name of the inline code function
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
@@ -41,6 +48,7 @@ namespace Braintrust
         /// <param name="code">
         /// The inline code to execute
         /// </param>
+        /// <param name="functionType"></param>
         /// <param name="name">
         /// The name of the inline code function
         /// </param>
@@ -50,10 +58,12 @@ namespace Braintrust
         public FunctionIdInlineCode(
             global::Braintrust.FunctionIdInlineCodeInlineContext inlineContext,
             string code,
+            global::Braintrust.AllOf<global::Braintrust.FunctionTypeEnum?, object>? functionType,
             string? name)
         {
             this.InlineContext = inlineContext ?? throw new global::System.ArgumentNullException(nameof(inlineContext));
             this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
+            this.FunctionType = functionType;
             this.Name = name;
         }
 

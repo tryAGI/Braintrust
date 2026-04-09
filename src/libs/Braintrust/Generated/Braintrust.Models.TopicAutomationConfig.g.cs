@@ -57,7 +57,19 @@ namespace Braintrust
         public string? BtqlFilter { get; set; }
 
         /// <summary>
-        /// Optional default time range for backfill operations.
+        /// How often to recompute topic maps
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rerun_seconds")]
+        public double? RerunSeconds { get; set; }
+
+        /// <summary>
+        /// How much recent history to relabel after a new topic map version becomes active
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("relabel_overlap_seconds")]
+        public double? RelabelOverlapSeconds { get; set; }
+
+        /// <summary>
+        /// Topic window used for classification coverage and initial backfill.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backfill_time_range")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>))]
@@ -93,8 +105,14 @@ namespace Braintrust
         /// <param name="btqlFilter">
         /// Optional BTQL filter applied before topic automation.
         /// </param>
+        /// <param name="rerunSeconds">
+        /// How often to recompute topic maps
+        /// </param>
+        /// <param name="relabelOverlapSeconds">
+        /// How much recent history to relabel after a new topic map version becomes active
+        /// </param>
         /// <param name="backfillTimeRange">
-        /// Optional default time range for backfill operations.
+        /// Topic window used for classification coverage and initial backfill.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -107,6 +125,8 @@ namespace Braintrust
             global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? scope,
             global::Braintrust.TopicAutomationDataScope? dataScope,
             string? btqlFilter,
+            double? rerunSeconds,
+            double? relabelOverlapSeconds,
             global::Braintrust.AnyOf<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>? backfillTimeRange)
         {
             this.EventType = eventType;
@@ -116,6 +136,8 @@ namespace Braintrust
             this.Scope = scope;
             this.DataScope = dataScope;
             this.BtqlFilter = btqlFilter;
+            this.RerunSeconds = rerunSeconds;
+            this.RelabelOverlapSeconds = relabelOverlapSeconds;
             this.BackfillTimeRange = backfillTimeRange;
         }
 
