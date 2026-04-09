@@ -6,6 +6,7 @@ namespace Braintrust
     public sealed partial class BraintrustClient
     {
         /// <inheritdoc cref="BraintrustClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Braintrust.EndPointAuthorization}?, bool)"/>
+
         public BraintrustClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class ProjectsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_DeleteProjectIdSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_DeleteProjectIdSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_DeleteProjectIdSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_DeleteProjectIdSecurityRequirement0,
+                s_DeleteProjectIdSecurityRequirement1,
+            };
         partial void PrepareDeleteProjectIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid projectId);
@@ -40,9 +68,15 @@ namespace Braintrust
                 httpClient: HttpClient,
                 projectId: ref projectId);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteProjectIdSecurityRequirements,
+                operationName: "DeleteProjectIdAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: $"/v1/project/{projectId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -52,7 +86,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

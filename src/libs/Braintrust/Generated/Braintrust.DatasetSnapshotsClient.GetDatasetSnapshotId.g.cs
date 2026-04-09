@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class DatasetSnapshotsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetDatasetSnapshotIdSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetDatasetSnapshotIdSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_GetDatasetSnapshotIdSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_GetDatasetSnapshotIdSecurityRequirement0,
+                s_GetDatasetSnapshotIdSecurityRequirement1,
+            };
         partial void PrepareGetDatasetSnapshotIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid datasetSnapshotId);
@@ -40,9 +68,15 @@ namespace Braintrust
                 httpClient: HttpClient,
                 datasetSnapshotId: ref datasetSnapshotId);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetDatasetSnapshotIdSecurityRequirements,
+                operationName: "GetDatasetSnapshotIdAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: $"/v1/dataset_snapshot/{datasetSnapshotId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -52,7 +86,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class ExperimentsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetExperimentSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetExperimentSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_GetExperimentSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_GetExperimentSecurityRequirement0,
+                s_GetExperimentSecurityRequirement1,
+            };
         partial void PrepareGetExperimentArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
@@ -92,6 +120,12 @@ namespace Braintrust
                 projectId: ref projectId,
                 orgName: ref orgName);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetExperimentSecurityRequirements,
+                operationName: "GetExperimentAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: "/v1/experiment",
                 baseUri: HttpClient.BaseAddress); 
@@ -104,7 +138,7 @@ namespace Braintrust
                 .AddOptionalParameter("project_name", projectName)
                 .AddOptionalParameter("project_id", projectId?.ToString())
                 .AddOptionalParameter("org_name", orgName) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -114,7 +148,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class ServiceTokensClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PutServiceTokenSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PutServiceTokenSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_PutServiceTokenSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_PutServiceTokenSecurityRequirement0,
+                s_PutServiceTokenSecurityRequirement1,
+            };
         partial void PreparePutServiceTokenArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Braintrust.PutServiceTokenRequest request);
@@ -41,9 +69,15 @@ namespace Braintrust
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_PutServiceTokenSecurityRequirements,
+                operationName: "PutServiceTokenAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: "/v1/service_token",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Put,
@@ -53,7 +87,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class AiSecretsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PatchAiSecretIdSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PatchAiSecretIdSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_PatchAiSecretIdSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_PatchAiSecretIdSecurityRequirement0,
+                s_PatchAiSecretIdSecurityRequirement1,
+            };
         partial void PreparePatchAiSecretIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid aiSecretId,
@@ -48,9 +76,15 @@ namespace Braintrust
                 aiSecretId: ref aiSecretId,
                 request: request);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_PatchAiSecretIdSecurityRequirements,
+                operationName: "PatchAiSecretIdAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: $"/v1/ai_secret/{aiSecretId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -60,7 +94,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

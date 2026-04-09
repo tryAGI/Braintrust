@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class AiSecretsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetAiSecretSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetAiSecretSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_GetAiSecretSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_GetAiSecretSecurityRequirement0,
+                s_GetAiSecretSecurityRequirement1,
+            };
         partial void PrepareGetAiSecretArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
@@ -82,6 +110,12 @@ namespace Braintrust
                 orgName: ref orgName,
                 aiSecretType: ref aiSecretType);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetAiSecretSecurityRequirements,
+                operationName: "GetAiSecretAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: "/v1/ai_secret",
                 baseUri: HttpClient.BaseAddress); 
@@ -93,7 +127,7 @@ namespace Braintrust
                 .AddOptionalParameter("ai_secret_name", aiSecretName)
                 .AddOptionalParameter("org_name", orgName)
                 .AddOptionalParameter("ai_secret_type", aiSecretType?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -103,7 +137,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
