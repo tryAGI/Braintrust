@@ -12,7 +12,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://api.braintrust.dev";
+        public const string DefaultBaseUrl = "https://api.braintrust.dev/";
 
         private bool _disposeHttpClient = true;
 

@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class UsersClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetUserSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetUserSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_GetUserSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_GetUserSecurityRequirement0,
+                s_GetUserSecurityRequirement1,
+            };
         partial void PrepareGetUserArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
@@ -91,6 +119,12 @@ namespace Braintrust
                 email: ref email,
                 orgName: ref orgName);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetUserSecurityRequirements,
+                operationName: "GetUserAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: "/v1/user",
                 baseUri: HttpClient.BaseAddress); 
@@ -103,7 +137,7 @@ namespace Braintrust
                 .AddOptionalParameter("family_name", familyName?.ToString())
                 .AddOptionalParameter("email", email?.ToString())
                 .AddOptionalParameter("org_name", orgName) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -113,7 +147,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class McpServersClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetMcpServerSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetMcpServerSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_GetMcpServerSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_GetMcpServerSecurityRequirement0,
+                s_GetMcpServerSecurityRequirement1,
+            };
         partial void PrepareGetMcpServerArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
@@ -77,6 +105,12 @@ namespace Braintrust
                 mcpServerName: ref mcpServerName,
                 orgName: ref orgName);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetMcpServerSecurityRequirements,
+                operationName: "GetMcpServerAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: "/v1/mcp_server",
                 baseUri: HttpClient.BaseAddress); 
@@ -87,7 +121,7 @@ namespace Braintrust
                 .AddOptionalParameter("ids", ids?.ToString())
                 .AddOptionalParameter("mcp_server_name", mcpServerName)
                 .AddOptionalParameter("org_name", orgName) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -97,7 +131,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

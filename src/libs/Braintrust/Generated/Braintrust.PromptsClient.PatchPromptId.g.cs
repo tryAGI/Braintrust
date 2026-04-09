@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class PromptsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PatchPromptIdSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PatchPromptIdSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_PatchPromptIdSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_PatchPromptIdSecurityRequirement0,
+                s_PatchPromptIdSecurityRequirement1,
+            };
         partial void PreparePatchPromptIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid promptId,
@@ -48,9 +76,15 @@ namespace Braintrust
                 promptId: ref promptId,
                 request: request);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_PatchPromptIdSecurityRequirements,
+                operationName: "PatchPromptIdAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: $"/v1/prompt/{promptId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -60,7 +94,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

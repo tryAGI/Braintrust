@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class ProjectScoresClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PutProjectScoreSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PutProjectScoreSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_PutProjectScoreSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_PutProjectScoreSecurityRequirement0,
+                s_PutProjectScoreSecurityRequirement1,
+            };
         partial void PreparePutProjectScoreArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Braintrust.CreateProjectScore request);
@@ -41,9 +69,15 @@ namespace Braintrust
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_PutProjectScoreSecurityRequirements,
+                operationName: "PutProjectScoreAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: "/v1/project_score",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Put,
@@ -53,7 +87,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

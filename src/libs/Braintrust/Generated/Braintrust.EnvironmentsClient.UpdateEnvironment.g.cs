@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class EnvironmentsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_UpdateEnvironmentSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_UpdateEnvironmentSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_UpdateEnvironmentSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_UpdateEnvironmentSecurityRequirement0,
+                s_UpdateEnvironmentSecurityRequirement1,
+            };
         partial void PrepareUpdateEnvironmentArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid environmentId,
@@ -45,9 +73,15 @@ namespace Braintrust
                 environmentId: ref environmentId,
                 request: request);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_UpdateEnvironmentSecurityRequirements,
+                operationName: "UpdateEnvironmentAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: $"/environment/{environmentId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -57,7 +91,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

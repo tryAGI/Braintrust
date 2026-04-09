@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class EnvVarsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetEnvVarSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_GetEnvVarSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_GetEnvVarSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_GetEnvVarSecurityRequirement0,
+                s_GetEnvVarSecurityRequirement1,
+            };
         partial void PrepareGetEnvVarArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? limit,
@@ -68,6 +96,12 @@ namespace Braintrust
                 objectType: ref objectType,
                 objectId: ref objectId);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetEnvVarSecurityRequirements,
+                operationName: "GetEnvVarAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: "/v1/env_var",
                 baseUri: HttpClient.BaseAddress); 
@@ -77,7 +111,7 @@ namespace Braintrust
                 .AddOptionalParameter("env_var_name", envVarName)
                 .AddOptionalParameter("object_type", objectType?.ToValueString())
                 .AddOptionalParameter("object_id", objectId?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -87,7 +121,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

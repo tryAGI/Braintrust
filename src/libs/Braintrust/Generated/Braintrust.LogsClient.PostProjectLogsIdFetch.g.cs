@@ -5,6 +5,34 @@ namespace Braintrust
 {
     public partial class LogsClient
     {
+
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PostProjectLogsIdFetchSecurityRequirement0 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                {                    new global::Braintrust.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PostProjectLogsIdFetchSecurityRequirement1 =
+            new global::Braintrust.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
+                { 
+                },
+            };
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_PostProjectLogsIdFetchSecurityRequirements =
+            new global::Braintrust.EndPointSecurityRequirement[]
+            {                s_PostProjectLogsIdFetchSecurityRequirement0,
+                s_PostProjectLogsIdFetchSecurityRequirement1,
+            };
         partial void PreparePostProjectLogsIdFetchArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid projectId,
@@ -48,9 +76,15 @@ namespace Braintrust
                 projectId: ref projectId,
                 request: request);
 
+
+            var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_PostProjectLogsIdFetchSecurityRequirements,
+                operationName: "PostProjectLogsIdFetchAsync");
+
             var __pathBuilder = new global::Braintrust.PathBuilder(
                 path: $"/v1/project_logs/{projectId}/fetch",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -60,7 +94,7 @@ namespace Braintrust
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
