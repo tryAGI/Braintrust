@@ -29,6 +29,12 @@ namespace Braintrust
         public string? Description { get; set; }
 
         /// <summary>
+        /// A list of tags for the dataset
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<string>? Tags { get; set; }
+
+        /// <summary>
         /// User-controlled metadata about the dataset
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
@@ -52,6 +58,9 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the dataset
         /// </param>
+        /// <param name="tags">
+        /// A list of tags for the dataset
+        /// </param>
         /// <param name="metadata">
         /// User-controlled metadata about the dataset
         /// </param>
@@ -62,11 +71,13 @@ namespace Braintrust
             global::System.Guid projectId,
             string name,
             string? description,
+            global::System.Collections.Generic.IList<string>? tags,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata)
         {
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
+            this.Tags = tags;
             this.Metadata = metadata;
         }
 

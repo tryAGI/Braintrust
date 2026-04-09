@@ -42,6 +42,7 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("version")) __score3++;
             var __score4 = 0;
             if (__jsonProps.Contains("code")) __score4++;
+            if (__jsonProps.Contains("function_type")) __score4++;
             if (__jsonProps.Contains("inline_context")) __score4++;
             if (__jsonProps.Contains("name")) __score4++;
             var __score5 = 0;

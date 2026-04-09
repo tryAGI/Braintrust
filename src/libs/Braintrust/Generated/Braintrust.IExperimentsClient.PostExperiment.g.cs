@@ -40,6 +40,12 @@ namespace Braintrust
         /// <param name="datasetVersion">
         /// Version number of the linked dataset the experiment was run against. This can be used to reproduce the experiment after the dataset has been modified.
         /// </param>
+        /// <param name="parametersId">
+        /// Identifier of the linked saved parameters object, or null if the experiment is not linked to saved parameters
+        /// </param>
+        /// <param name="parametersVersion">
+        /// Version number of the linked saved parameters object the experiment was run against.
+        /// </param>
         /// <param name="public">
         /// Whether or not the experiment is public. Public experiments can be viewed by anybody inside or outside the organization
         /// </param>
@@ -62,6 +68,8 @@ namespace Braintrust
             global::System.Guid? baseExpId = default,
             global::System.Guid? datasetId = default,
             string? datasetVersion = default,
+            global::System.Guid? parametersId = default,
+            string? parametersVersion = default,
             bool? @public = default,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
             global::System.Collections.Generic.IList<string>? tags = default,

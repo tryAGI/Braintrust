@@ -70,6 +70,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public DatasetSnapshotsClient DatasetSnapshots { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public DatasetsClient Datasets { get; }
 
         /// <summary>

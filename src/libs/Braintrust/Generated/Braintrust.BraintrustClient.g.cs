@@ -87,6 +87,15 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public DatasetSnapshotsClient DatasetSnapshots => new DatasetSnapshotsClient(HttpClient, authorizations: Authorizations)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContext = JsonSerializerContext,
+        };
+
+        /// <summary>
+        /// 
+        /// </summary>
         public DatasetsClient Datasets => new DatasetsClient(HttpClient, authorizations: Authorizations)
         {
             ReadResponseAsString = ReadResponseAsString,

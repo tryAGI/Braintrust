@@ -48,6 +48,12 @@ namespace Braintrust
         public global::System.Collections.Generic.Dictionary<string, string>? TopicNames { get; set; }
 
         /// <summary>
+        /// Clustering and naming settings used to generate this topic map
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("generation_settings")]
+        public global::Braintrust.TopicMapGenerationSettings? GenerationSettings { get; set; }
+
+        /// <summary>
         /// Maximum distance to nearest centroid. If exceeded, returns no_match.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("distance_threshold")]
@@ -78,6 +84,9 @@ namespace Braintrust
         /// <param name="topicNames">
         /// Mapping from topic_id to topic name
         /// </param>
+        /// <param name="generationSettings">
+        /// Clustering and naming settings used to generate this topic map
+        /// </param>
         /// <param name="distanceThreshold">
         /// Maximum distance to nearest centroid. If exceeded, returns no_match.
         /// </param>
@@ -91,6 +100,7 @@ namespace Braintrust
             string? bundleKey,
             string? reportKey,
             global::System.Collections.Generic.Dictionary<string, string>? topicNames,
+            global::Braintrust.TopicMapGenerationSettings? generationSettings,
             double? distanceThreshold)
         {
             this.Type = type;
@@ -99,6 +109,7 @@ namespace Braintrust
             this.BundleKey = bundleKey;
             this.ReportKey = reportKey;
             this.TopicNames = topicNames;
+            this.GenerationSettings = generationSettings;
             this.DistanceThreshold = distanceThreshold;
         }
 

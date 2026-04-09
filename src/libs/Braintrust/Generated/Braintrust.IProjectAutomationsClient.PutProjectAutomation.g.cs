@@ -36,7 +36,7 @@ namespace Braintrust
         global::System.Threading.Tasks.Task<global::Braintrust.ProjectAutomation> PutProjectAutomationAsync(
             global::System.Guid projectId,
             string name,
-            global::Braintrust.AnyOf<global::Braintrust.CreateProjectAutomationConfigVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2, global::Braintrust.CreateProjectAutomationConfigVariant3, global::Braintrust.CreateProjectAutomationConfigVariant4, global::Braintrust.TopicAutomationConfig> config,
+            global::Braintrust.OneOf<global::Braintrust.CreateProjectAutomationConfigVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2, global::Braintrust.CreateProjectAutomationConfigVariant3, global::Braintrust.CreateProjectAutomationConfigVariant4, global::Braintrust.TopicAutomationConfig> config,
             string? description = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -382,6 +382,9 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the dataset
         /// </param>
+        /// <param name="tags">
+        /// A list of tags for the dataset
+        /// </param>
         /// <param name="metadata">
         /// User-controlled metadata about the dataset
         /// </param>
@@ -391,6 +394,7 @@ namespace Braintrust
             global::System.Guid projectId,
             string name,
             string? description = default,
+            global::System.Collections.Generic.IList<string>? tags = default,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -399,6 +403,7 @@ namespace Braintrust
                 ProjectId = projectId,
                 Name = name,
                 Description = description,
+                Tags = tags,
                 Metadata = metadata,
             };
 

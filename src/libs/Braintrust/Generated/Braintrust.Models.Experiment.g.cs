@@ -78,6 +78,18 @@ namespace Braintrust
         public string? DatasetVersion { get; set; }
 
         /// <summary>
+        /// Identifier of the linked saved parameters object, or null if the experiment is not linked to saved parameters
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("parameters_id")]
+        public global::System.Guid? ParametersId { get; set; }
+
+        /// <summary>
+        /// Version number of the linked saved parameters object the experiment was run against.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("parameters_version")]
+        public string? ParametersVersion { get; set; }
+
+        /// <summary>
         /// Whether or not the experiment is public. Public experiments can be viewed by anybody inside or outside the organization
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("public")]
@@ -147,6 +159,12 @@ namespace Braintrust
         /// <param name="datasetVersion">
         /// Version number of the linked dataset the experiment was run against. This can be used to reproduce the experiment after the dataset has been modified.
         /// </param>
+        /// <param name="parametersId">
+        /// Identifier of the linked saved parameters object, or null if the experiment is not linked to saved parameters
+        /// </param>
+        /// <param name="parametersVersion">
+        /// Version number of the linked saved parameters object the experiment was run against.
+        /// </param>
         /// <param name="userId">
         /// Identifies the user who created the experiment
         /// </param>
@@ -172,6 +190,8 @@ namespace Braintrust
             global::System.DateTime? deletedAt,
             global::System.Guid? datasetId,
             string? datasetVersion,
+            global::System.Guid? parametersId,
+            string? parametersVersion,
             global::System.Guid? userId,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata,
             global::System.Collections.Generic.IList<string>? tags)
@@ -187,6 +207,8 @@ namespace Braintrust
             this.DeletedAt = deletedAt;
             this.DatasetId = datasetId;
             this.DatasetVersion = datasetVersion;
+            this.ParametersId = parametersId;
+            this.ParametersVersion = parametersVersion;
             this.Public = @public;
             this.UserId = userId;
             this.Metadata = metadata;
