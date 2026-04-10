@@ -12,12 +12,14 @@ namespace Braintrust
         /// Project id
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.Project> PatchProjectIdAsync(
             global::System.Guid projectId,
 
             global::Braintrust.PatchProject request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Partially update project<br/>
@@ -32,6 +34,7 @@ namespace Braintrust
         /// <param name="description"></param>
         /// <param name="userId"></param>
         /// <param name="settings"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.Project> PatchProjectIdAsync(
@@ -40,6 +43,7 @@ namespace Braintrust
             string? description = default,
             string? userId = default,
             global::Braintrust.AllOf<global::Braintrust.ProjectSettings, object>? settings = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

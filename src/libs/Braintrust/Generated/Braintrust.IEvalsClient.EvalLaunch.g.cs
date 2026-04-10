@@ -9,11 +9,13 @@ namespace Braintrust
         /// Launch an evaluation. This is the API-equivalent of the `Eval` function that is built into the Braintrust SDK. In the Eval API, you provide pointers to a dataset, task function, and scoring functions. The API will then run the evaluation, create an experiment, and return the results along with a link to the experiment. To learn more about evals, see the [Evals guide](https://www.braintrust.dev/docs/evaluate).
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.SummarizeExperimentResponse> EvalLaunchAsync(
 
             global::Braintrust.RunEval request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Launch an eval<br/>
@@ -83,6 +85,7 @@ namespace Braintrust
         /// Optional tags that will be added to the experiment.
         /// </param>
         /// <param name="mcpAuth"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.SummarizeExperimentResponse> EvalLaunchAsync(
@@ -109,6 +112,7 @@ namespace Braintrust
             string? extraMessages = default,
             global::System.Collections.Generic.IList<string>? tags = default,
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? mcpAuth = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

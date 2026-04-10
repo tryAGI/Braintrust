@@ -12,12 +12,14 @@ namespace Braintrust
         /// Project id
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.InsertEventsResponse> PostProjectLogsIdInsertAsync(
             global::System.Guid projectId,
 
             global::Braintrust.InsertProjectLogsEventRequest request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Insert project logs events<br/>
@@ -29,11 +31,13 @@ namespace Braintrust
         /// <param name="events">
         /// A list of project logs events to insert
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.InsertEventsResponse> PostProjectLogsIdInsertAsync(
             global::System.Guid projectId,
             global::System.Collections.Generic.IList<global::Braintrust.InsertProjectLogsEvent> events,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

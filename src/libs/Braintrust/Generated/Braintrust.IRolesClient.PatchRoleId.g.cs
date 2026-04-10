@@ -12,12 +12,14 @@ namespace Braintrust
         /// Role id
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.Role> PatchRoleIdAsync(
             global::System.Guid roleId,
 
             global::Braintrust.PatchRole request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Partially update role<br/>
@@ -44,6 +46,7 @@ namespace Braintrust
         /// <param name="removeMemberRoles">
         /// A list of role IDs to remove from the role's inheriting-from set
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.Role> PatchRoleIdAsync(
@@ -54,6 +57,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.PatchRoleRemoveMemberPermission>? removeMemberPermissions = default,
             global::System.Collections.Generic.IList<global::System.Guid>? addMemberRoles = default,
             global::System.Collections.Generic.IList<global::System.Guid>? removeMemberRoles = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -33,6 +33,9 @@ namespace Braintrust
 #if DEBUG
             = true;
 #endif
+
+        /// <inheritdoc/>
+        public global::Braintrust.AutoSDKClientOptions Options { get; }
         /// <summary>
         /// 
         /// </summary>
@@ -42,7 +45,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public AclsClient Acls => new AclsClient(HttpClient, authorizations: Authorizations)
+        public AclsClient Acls => new AclsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -51,7 +54,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public AiSecretsClient AiSecrets => new AiSecretsClient(HttpClient, authorizations: Authorizations)
+        public AiSecretsClient AiSecrets => new AiSecretsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -60,7 +63,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ApiKeysClient ApiKeys => new ApiKeysClient(HttpClient, authorizations: Authorizations)
+        public ApiKeysClient ApiKeys => new ApiKeysClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -69,7 +72,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public CorsClient Cors => new CorsClient(HttpClient, authorizations: Authorizations)
+        public CorsClient Cors => new CorsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -78,7 +81,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public CrossObjectClient CrossObject => new CrossObjectClient(HttpClient, authorizations: Authorizations)
+        public CrossObjectClient CrossObject => new CrossObjectClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -87,7 +90,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public DatasetSnapshotsClient DatasetSnapshots => new DatasetSnapshotsClient(HttpClient, authorizations: Authorizations)
+        public DatasetSnapshotsClient DatasetSnapshots => new DatasetSnapshotsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -96,7 +99,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public DatasetsClient Datasets => new DatasetsClient(HttpClient, authorizations: Authorizations)
+        public DatasetsClient Datasets => new DatasetsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -105,7 +108,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public EnvVarsClient EnvVars => new EnvVarsClient(HttpClient, authorizations: Authorizations)
+        public EnvVarsClient EnvVars => new EnvVarsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -114,7 +117,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, authorizations: Authorizations)
+        public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -123,7 +126,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public EvalStatusPagesClient EvalStatusPages => new EvalStatusPagesClient(HttpClient, authorizations: Authorizations)
+        public EvalStatusPagesClient EvalStatusPages => new EvalStatusPagesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -132,7 +135,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public EvalsClient Evals => new EvalsClient(HttpClient, authorizations: Authorizations)
+        public EvalsClient Evals => new EvalsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -141,7 +144,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ExperimentsClient Experiments => new ExperimentsClient(HttpClient, authorizations: Authorizations)
+        public ExperimentsClient Experiments => new ExperimentsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -150,7 +153,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public FunctionsClient Functions => new FunctionsClient(HttpClient, authorizations: Authorizations)
+        public FunctionsClient Functions => new FunctionsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -159,7 +162,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public GroupsClient Groups => new GroupsClient(HttpClient, authorizations: Authorizations)
+        public GroupsClient Groups => new GroupsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -168,7 +171,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public LogsClient Logs => new LogsClient(HttpClient, authorizations: Authorizations)
+        public LogsClient Logs => new LogsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -177,7 +180,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public McpServersClient McpServers => new McpServersClient(HttpClient, authorizations: Authorizations)
+        public McpServersClient McpServers => new McpServersClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -186,7 +189,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, authorizations: Authorizations)
+        public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -195,7 +198,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public OtherClient Other => new OtherClient(HttpClient, authorizations: Authorizations)
+        public OtherClient Other => new OtherClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -204,7 +207,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ProjectAutomationsClient ProjectAutomations => new ProjectAutomationsClient(HttpClient, authorizations: Authorizations)
+        public ProjectAutomationsClient ProjectAutomations => new ProjectAutomationsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -213,7 +216,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ProjectScoresClient ProjectScores => new ProjectScoresClient(HttpClient, authorizations: Authorizations)
+        public ProjectScoresClient ProjectScores => new ProjectScoresClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -222,7 +225,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ProjectTagsClient ProjectTags => new ProjectTagsClient(HttpClient, authorizations: Authorizations)
+        public ProjectTagsClient ProjectTags => new ProjectTagsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -231,7 +234,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations)
+        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -240,7 +243,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public PromptsClient Prompts => new PromptsClient(HttpClient, authorizations: Authorizations)
+        public PromptsClient Prompts => new PromptsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -249,7 +252,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ProxyClient Proxy => new ProxyClient(HttpClient, authorizations: Authorizations)
+        public ProxyClient Proxy => new ProxyClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -258,7 +261,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public RolesClient Roles => new RolesClient(HttpClient, authorizations: Authorizations)
+        public RolesClient Roles => new RolesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -267,7 +270,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ServiceTokensClient ServiceTokens => new ServiceTokensClient(HttpClient, authorizations: Authorizations)
+        public ServiceTokensClient ServiceTokens => new ServiceTokensClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -276,7 +279,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public SpanIframesClient SpanIframes => new SpanIframesClient(HttpClient, authorizations: Authorizations)
+        public SpanIframesClient SpanIframes => new SpanIframesClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -285,7 +288,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public UsersClient Users => new UsersClient(HttpClient, authorizations: Authorizations)
+        public UsersClient Users => new UsersClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -294,7 +297,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public ViewsClient Views => new ViewsClient(HttpClient, authorizations: Authorizations)
+        public ViewsClient Views => new ViewsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -313,11 +316,37 @@ namespace Braintrust
             global::System.Net.Http.HttpClient? httpClient = null,
             global::System.Uri? baseUri = null,
             global::System.Collections.Generic.List<global::Braintrust.EndPointAuthorization>? authorizations = null,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri,
+                authorizations,
+                options: null,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
+        /// Creates a new instance of the BraintrustClient.
+        /// If no httpClient is provided, a new one will be created.
+        /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="baseUri">The base URL for the API. If not provided, the default baseUri from OpenAPI spec will be used.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public BraintrustClient(
+            global::System.Net.Http.HttpClient? httpClient = null,
+            global::System.Uri? baseUri = null,
+            global::System.Collections.Generic.List<global::Braintrust.EndPointAuthorization>? authorizations = null,
+            global::Braintrust.AutoSDKClientOptions? options = null,
             bool disposeHttpClient = true)
         {
+
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
             HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Braintrust.EndPointAuthorization>();
+            Options = options ?? new global::Braintrust.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
 
             Initialized(HttpClient);

@@ -9,11 +9,13 @@ namespace Braintrust
         /// Create a new function. If there is an existing function in the project with the same slug as the one specified in the request, will return the existing function unmodified
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.Function2> PostFunctionAsync(
 
             global::Braintrust.CreateFunction request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create function<br/>
@@ -43,6 +45,7 @@ namespace Braintrust
         /// <param name="functionSchema">
         /// JSON schema for the function's parameters and return type
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.Function2> PostFunctionAsync(
@@ -56,6 +59,7 @@ namespace Braintrust
             global::Braintrust.FunctionTypeEnumNullish? functionType = default,
             global::Braintrust.CreateFunctionOrigin? origin = default,
             global::Braintrust.CreateFunctionFunctionSchema? functionSchema = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -9,11 +9,13 @@ namespace Braintrust
         /// Create a new env_var. If there is an existing env_var with the same name as the one specified in the request, will return the existing env_var unmodified
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.EnvVar> PostEnvVarAsync(
 
             global::Braintrust.PostEnvVarRequest request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create env_var<br/>
@@ -37,6 +39,7 @@ namespace Braintrust
         /// <param name="secretType">
         /// Optional classification for the secret (for example, the AI provider name)
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.EnvVar> PostEnvVarAsync(
@@ -46,6 +49,7 @@ namespace Braintrust
             string? value = default,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
             string? secretType = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

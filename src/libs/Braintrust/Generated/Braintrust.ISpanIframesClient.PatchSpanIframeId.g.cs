@@ -12,12 +12,14 @@ namespace Braintrust
         /// SpanIframe id
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.SpanIFrame> PatchSpanIframeIdAsync(
             global::System.Guid spanIframeId,
 
             global::Braintrust.PatchSpanIFrame request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Partially update span_iframe<br/>
@@ -38,6 +40,7 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the span iframe
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.SpanIFrame> PatchSpanIframeIdAsync(
@@ -46,6 +49,7 @@ namespace Braintrust
             string? url = default,
             bool? postMessage = default,
             string? description = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
