@@ -9,11 +9,13 @@ namespace Braintrust
         /// Modify organization membership
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.PatchOrganizationMembersOutput> PatchOrganizationMembersAsync(
 
             global::Braintrust.PatchOrganizationMembers request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Modify organization membership<br/>
@@ -31,6 +33,7 @@ namespace Braintrust
         /// <param name="orgId">
         /// For nearly all users, this parameter should be unnecessary. But in the rare case that your API key belongs to multiple organizations, or in case you want to explicitly assert the organization you are modifying, you may specify the id of the organization.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.PatchOrganizationMembersOutput> PatchOrganizationMembersAsync(
@@ -38,6 +41,7 @@ namespace Braintrust
             global::Braintrust.PatchOrganizationMembersRemoveUsers? removeUsers = default,
             string? orgName = default,
             string? orgId = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

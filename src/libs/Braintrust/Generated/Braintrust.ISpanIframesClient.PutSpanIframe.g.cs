@@ -9,11 +9,13 @@ namespace Braintrust
         /// Create or replace span_iframe. If there is an existing span_iframe with the same name as the one specified in the request, will replace the existing span_iframe with the provided fields
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.SpanIFrame> PutSpanIframeAsync(
 
             global::Braintrust.CreateSpanIFrame request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create or replace span_iframe<br/>
@@ -34,6 +36,7 @@ namespace Braintrust
         /// <param name="postMessage">
         /// Whether to post messages to the iframe containing the span's data. This is useful when you want to render more data than fits in the URL.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.SpanIFrame> PutSpanIframeAsync(
@@ -42,6 +45,7 @@ namespace Braintrust
             string url,
             string? description = default,
             bool? postMessage = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

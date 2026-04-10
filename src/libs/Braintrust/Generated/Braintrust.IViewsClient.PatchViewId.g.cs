@@ -12,12 +12,14 @@ namespace Braintrust
         /// View id
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.View> PatchViewIdAsync(
             global::System.Guid viewId,
 
             global::Braintrust.PatchView request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Partially update view<br/>
@@ -47,6 +49,7 @@ namespace Braintrust
         /// <param name="userId">
         /// Identifies the user who created the view
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.View> PatchViewIdAsync(
@@ -58,6 +61,7 @@ namespace Braintrust
             global::Braintrust.ViewData? viewData = default,
             global::Braintrust.ViewOptions? options = default,
             global::System.Guid? userId = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

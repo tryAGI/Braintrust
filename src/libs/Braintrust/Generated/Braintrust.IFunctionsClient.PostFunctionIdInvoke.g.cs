@@ -12,12 +12,14 @@ namespace Braintrust
         /// Function id
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<string> PostFunctionIdInvokeAsync(
             global::System.Guid functionId,
 
             global::Braintrust.InvokeApi request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Invoke function<br/>
@@ -62,6 +64,7 @@ namespace Braintrust
         /// <param name="version">
         /// The version of the function
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<string> PostFunctionIdInvokeAsync(
@@ -78,6 +81,7 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.InvokeApiMcpAuth2>? mcpAuth = default,
             global::System.Collections.Generic.Dictionary<string, object?>? overrides = default,
             string? version = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

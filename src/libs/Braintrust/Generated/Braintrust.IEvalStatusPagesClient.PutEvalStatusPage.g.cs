@@ -9,11 +9,13 @@ namespace Braintrust
         /// Create or replace eval_status_page. If there is an existing eval_status_page with the same name as the one specified in the request, will replace the existing eval_status_page with the provided fields
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.EvalStatusPage> PutEvalStatusPageAsync(
 
             global::Braintrust.CreateEvalStatusPage request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create or replace eval_status_page<br/>
@@ -37,6 +39,7 @@ namespace Braintrust
         /// <param name="config">
         /// Configuration for what data to display
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.EvalStatusPage> PutEvalStatusPageAsync(
@@ -46,6 +49,7 @@ namespace Braintrust
             global::Braintrust.EvalStatusPageConfig config,
             string? description = default,
             string? logoUrl = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

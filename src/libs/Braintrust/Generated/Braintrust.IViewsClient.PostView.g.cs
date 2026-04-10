@@ -9,11 +9,13 @@ namespace Braintrust
         /// Create a new view. If there is an existing view with the same name as the one specified in the request, will return the existing view unmodified
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.View> PostViewAsync(
 
             global::Braintrust.CreateView request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create view<br/>
@@ -43,6 +45,7 @@ namespace Braintrust
         /// <param name="deletedAt">
         /// Date of role deletion, or null if the role is still active
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.View> PostViewAsync(
@@ -54,6 +57,7 @@ namespace Braintrust
             global::Braintrust.ViewOptions? options = default,
             global::System.Guid? userId = default,
             global::System.DateTime? deletedAt = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

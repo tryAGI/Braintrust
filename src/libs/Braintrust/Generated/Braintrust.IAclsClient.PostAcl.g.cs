@@ -9,11 +9,13 @@ namespace Braintrust
         /// Create a new acl. If there is an existing acl with the same contents as the one specified in the request, will return the existing acl unmodified
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.Acl> PostAclAsync(
 
             global::Braintrust.AclItem request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create acl<br/>
@@ -41,6 +43,7 @@ namespace Braintrust
         /// <param name="roleId">
         /// Id of the role the ACL grants. Exactly one of `permission` and `role_id` will be provided
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.Acl> PostAclAsync(
@@ -51,6 +54,7 @@ namespace Braintrust
             global::Braintrust.Permission? permission = default,
             global::Braintrust.AclObjectType? restrictObjectType = default,
             global::System.Guid? roleId = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

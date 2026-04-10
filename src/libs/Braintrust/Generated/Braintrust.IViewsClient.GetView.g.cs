@@ -34,6 +34,7 @@ namespace Braintrust
         /// <param name="objectId">
         /// The id of the object the ACL applies to
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Braintrust.GetViewResponse> GetViewAsync(
@@ -45,6 +46,7 @@ namespace Braintrust
             global::Braintrust.Ids? ids = default,
             string? viewName = default,
             global::Braintrust.ViewType? viewType = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
