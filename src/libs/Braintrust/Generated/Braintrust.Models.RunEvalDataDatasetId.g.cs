@@ -16,6 +16,18 @@ namespace Braintrust
         public required string DatasetId { get; set; }
 
         /// <summary>
+        /// The version of the dataset to evaluate
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dataset_version")]
+        public string? DatasetVersion { get; set; }
+
+        /// <summary>
+        /// The environment tag that resolves to the dataset version to evaluate
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dataset_environment")]
+        public string? DatasetEnvironment { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_internal_btql")]
@@ -31,15 +43,25 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="RunEvalDataDatasetId" /> class.
         /// </summary>
         /// <param name="datasetId"></param>
+        /// <param name="datasetVersion">
+        /// The version of the dataset to evaluate
+        /// </param>
+        /// <param name="datasetEnvironment">
+        /// The environment tag that resolves to the dataset version to evaluate
+        /// </param>
         /// <param name="internalBtql"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RunEvalDataDatasetId(
             string datasetId,
+            string? datasetVersion,
+            string? datasetEnvironment,
             global::System.Collections.Generic.Dictionary<string, object?>? internalBtql)
         {
             this.DatasetId = datasetId ?? throw new global::System.ArgumentNullException(nameof(datasetId));
+            this.DatasetVersion = datasetVersion;
+            this.DatasetEnvironment = datasetEnvironment;
             this.InternalBtql = internalBtql;
         }
 

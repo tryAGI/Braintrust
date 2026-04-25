@@ -53,6 +53,12 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("topicMapReportKey")]
+        public string? TopicMapReportKey { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("chartHeight")]
         public double? ChartHeight { get; set; }
 
@@ -109,6 +115,12 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cluster")]
+        public string? Cluster { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("freezeColumns")]
         public bool? FreezeColumns { get; set; }
 
@@ -128,6 +140,7 @@ namespace Braintrust
         /// <param name="rowHeight"></param>
         /// <param name="tallGroupRows"></param>
         /// <param name="layout"></param>
+        /// <param name="topicMapReportKey"></param>
         /// <param name="chartHeight"></param>
         /// <param name="excludedMeasures"></param>
         /// <param name="yMetric"></param>
@@ -139,6 +152,7 @@ namespace Braintrust
         /// <param name="chartAnnotations"></param>
         /// <param name="timeRangeFilter"></param>
         /// <param name="queryShape"></param>
+        /// <param name="cluster"></param>
         /// <param name="freezeColumns"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -151,6 +165,7 @@ namespace Braintrust
             string? rowHeight,
             bool? tallGroupRows,
             string? layout,
+            string? topicMapReportKey,
             double? chartHeight,
             global::System.Collections.Generic.IList<global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasure>? excludedMeasures,
             global::Braintrust.ViewOptionsTableViewOptionsYMetric? yMetric,
@@ -160,6 +175,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.ViewOptionsTableViewOptionsChartAnnotation>? chartAnnotations,
             global::Braintrust.AnyOf<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>? timeRangeFilter,
             global::Braintrust.ViewOptionsTableViewOptionsQueryShape? queryShape,
+            string? cluster,
             bool? freezeColumns)
         {
             this.ColumnVisibility = columnVisibility;
@@ -169,6 +185,7 @@ namespace Braintrust
             this.RowHeight = rowHeight;
             this.TallGroupRows = tallGroupRows;
             this.Layout = layout;
+            this.TopicMapReportKey = topicMapReportKey;
             this.ChartHeight = chartHeight;
             this.ExcludedMeasures = excludedMeasures;
             this.YMetric = yMetric;
@@ -178,6 +195,7 @@ namespace Braintrust
             this.ChartAnnotations = chartAnnotations;
             this.TimeRangeFilter = timeRangeFilter;
             this.QueryShape = queryShape;
+            this.Cluster = cluster;
             this.FreezeColumns = freezeColumns;
         }
 

@@ -95,11 +95,6 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public EvalStatusPagesClient EvalStatusPages { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public EvalsClient Evals { get; }
 
         /// <summary>

@@ -50,6 +50,7 @@ namespace Braintrust.JsonConverters
             var __score1 = 0;
             if (__jsonProps.Contains("chartAnnotations")) __score1++;
             if (__jsonProps.Contains("chartHeight")) __score1++;
+            if (__jsonProps.Contains("cluster")) __score1++;
             if (__jsonProps.Contains("columnOrder")) __score1++;
             if (__jsonProps.Contains("columnSizing")) __score1++;
             if (__jsonProps.Contains("columnVisibility")) __score1++;
@@ -64,6 +65,7 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("symbolGrouping.value")) __score1++;
             if (__jsonProps.Contains("tallGroupRows")) __score1++;
             if (__jsonProps.Contains("timeRangeFilter")) __score1++;
+            if (__jsonProps.Contains("topicMapReportKey")) __score1++;
             if (__jsonProps.Contains("xAxis")) __score1++;
             if (__jsonProps.Contains("xAxis.type")) __score1++;
             if (__jsonProps.Contains("xAxis.value")) __score1++;

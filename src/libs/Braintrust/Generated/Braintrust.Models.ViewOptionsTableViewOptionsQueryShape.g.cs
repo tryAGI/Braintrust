@@ -15,6 +15,10 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        Topics,
+        /// <summary>
+        /// 
+        /// </summary>
         Traces,
     }
 
@@ -31,6 +35,7 @@ namespace Braintrust
             return value switch
             {
                 ViewOptionsTableViewOptionsQueryShape.Spans => "spans",
+                ViewOptionsTableViewOptionsQueryShape.Topics => "topics",
                 ViewOptionsTableViewOptionsQueryShape.Traces => "traces",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -43,6 +48,7 @@ namespace Braintrust
             return value switch
             {
                 "spans" => ViewOptionsTableViewOptionsQueryShape.Spans,
+                "topics" => ViewOptionsTableViewOptionsQueryShape.Topics,
                 "traces" => ViewOptionsTableViewOptionsQueryShape.Traces,
                 _ => null,
             };

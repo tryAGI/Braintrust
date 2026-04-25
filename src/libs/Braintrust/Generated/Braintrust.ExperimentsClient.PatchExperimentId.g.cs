@@ -619,6 +619,9 @@ namespace Braintrust
         /// <param name="datasetVersion">
         /// Version number of the linked dataset the experiment was run against. This can be used to reproduce the experiment after the dataset has been modified.
         /// </param>
+        /// <param name="internalMetadata">
+        /// Braintrust-controlled metadata about the experiment.
+        /// </param>
         /// <param name="parametersId">
         /// Identifier of the linked saved parameters object, or null if the experiment is not linked to saved parameters
         /// </param>
@@ -645,6 +648,7 @@ namespace Braintrust
             global::System.Guid? baseExpId = default,
             global::System.Guid? datasetId = default,
             string? datasetVersion = default,
+            global::Braintrust.PatchExperimentInternalMetadata? internalMetadata = default,
             global::System.Guid? parametersId = default,
             string? parametersVersion = default,
             bool? @public = default,
@@ -661,6 +665,7 @@ namespace Braintrust
                 BaseExpId = baseExpId,
                 DatasetId = datasetId,
                 DatasetVersion = datasetVersion,
+                InternalMetadata = internalMetadata,
                 ParametersId = parametersId,
                 ParametersVersion = parametersVersion,
                 Public = @public,

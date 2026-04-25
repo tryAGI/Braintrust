@@ -52,6 +52,12 @@ namespace Braintrust
         public string? DatasetVersion { get; set; }
 
         /// <summary>
+        /// Braintrust-controlled metadata about the experiment.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("internal_metadata")]
+        public global::Braintrust.CreateExperimentInternalMetadata? InternalMetadata { get; set; }
+
+        /// <summary>
         /// Identifier of the linked saved parameters object, or null if the experiment is not linked to saved parameters
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parameters_id")]
@@ -117,6 +123,9 @@ namespace Braintrust
         /// <param name="datasetVersion">
         /// Version number of the linked dataset the experiment was run against. This can be used to reproduce the experiment after the dataset has been modified.
         /// </param>
+        /// <param name="internalMetadata">
+        /// Braintrust-controlled metadata about the experiment.
+        /// </param>
         /// <param name="parametersId">
         /// Identifier of the linked saved parameters object, or null if the experiment is not linked to saved parameters
         /// </param>
@@ -146,6 +155,7 @@ namespace Braintrust
             global::System.Guid? baseExpId,
             global::System.Guid? datasetId,
             string? datasetVersion,
+            global::Braintrust.CreateExperimentInternalMetadata? internalMetadata,
             global::System.Guid? parametersId,
             string? parametersVersion,
             bool? @public,
@@ -160,6 +170,7 @@ namespace Braintrust
             this.BaseExpId = baseExpId;
             this.DatasetId = datasetId;
             this.DatasetVersion = datasetVersion;
+            this.InternalMetadata = internalMetadata;
             this.ParametersId = parametersId;
             this.ParametersVersion = parametersVersion;
             this.Public = @public;
