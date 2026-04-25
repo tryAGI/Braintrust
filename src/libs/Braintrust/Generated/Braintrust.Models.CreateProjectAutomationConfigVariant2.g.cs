@@ -24,6 +24,13 @@ namespace Braintrust
         public required global::Braintrust.OneOf<global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3> ExportDefinition { get; set; }
 
         /// <summary>
+        /// Execution scope for export automation. Defaults to span-level execution.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>))]
+        public global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? Scope { get; set; }
+
+        /// <summary>
         /// The path to export the results to. It should include the storage protocol and prefix, e.g. s3://bucket-name/path/to/export
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("export_path")]
@@ -49,8 +56,9 @@ namespace Braintrust
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("credentials")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Braintrust.CreateProjectAutomationConfigVariant2Credentials Credentials { get; set; }
+        public required global::Braintrust.OneOf<global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2> Credentials { get; set; }
 
         /// <summary>
         /// The number of rows to export in each batch
@@ -83,6 +91,9 @@ namespace Braintrust
         /// <param name="eventType">
         /// The type of automation.
         /// </param>
+        /// <param name="scope">
+        /// Execution scope for export automation. Defaults to span-level execution.
+        /// </param>
         /// <param name="batchSize">
         /// The number of rows to export in each batch
         /// </param>
@@ -94,16 +105,18 @@ namespace Braintrust
             string exportPath,
             global::Braintrust.CreateProjectAutomationConfigVariant2Format format,
             double intervalSeconds,
-            global::Braintrust.CreateProjectAutomationConfigVariant2Credentials credentials,
+            global::Braintrust.OneOf<global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2> credentials,
             global::Braintrust.CreateProjectAutomationConfigVariant2EventType eventType,
+            global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? scope,
             double? batchSize)
         {
             this.EventType = eventType;
             this.ExportDefinition = exportDefinition;
+            this.Scope = scope;
             this.ExportPath = exportPath ?? throw new global::System.ArgumentNullException(nameof(exportPath));
             this.Format = format;
             this.IntervalSeconds = intervalSeconds;
-            this.Credentials = credentials ?? throw new global::System.ArgumentNullException(nameof(credentials));
+            this.Credentials = credentials;
             this.BatchSize = batchSize;
         }
 

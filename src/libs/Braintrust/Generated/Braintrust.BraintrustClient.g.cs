@@ -126,15 +126,6 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public EvalStatusPagesClient EvalStatusPages => new EvalStatusPagesClient(HttpClient, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContext = JsonSerializerContext,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
         public EvalsClient Evals => new EvalsClient(HttpClient, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
