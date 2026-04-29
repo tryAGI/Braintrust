@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchRoleIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    roleId: roleId,
+                    roleId: roleId!,
                     request: request);
 
                 return __httpRequest;

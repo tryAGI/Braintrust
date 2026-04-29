@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsExperimentIdFeedbackRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId);
+                    experimentId: experimentId!);
 
                 return __httpRequest;
             }

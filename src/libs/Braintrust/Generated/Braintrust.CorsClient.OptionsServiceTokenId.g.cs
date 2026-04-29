@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsServiceTokenIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    serviceTokenId: serviceTokenId);
+                    serviceTokenId: serviceTokenId!);
 
                 return __httpRequest;
             }

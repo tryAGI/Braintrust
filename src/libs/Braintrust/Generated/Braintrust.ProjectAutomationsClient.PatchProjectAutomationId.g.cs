@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchProjectAutomationIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectAutomationId: projectAutomationId,
+                    projectAutomationId: projectAutomationId!,
                     request: request);
 
                 return __httpRequest;

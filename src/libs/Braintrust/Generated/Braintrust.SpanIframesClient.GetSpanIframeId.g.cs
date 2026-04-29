@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareGetSpanIframeIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    spanIframeId: spanIframeId);
+                    spanIframeId: spanIframeId!);
 
                 return __httpRequest;
             }

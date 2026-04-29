@@ -145,7 +145,7 @@ namespace Braintrust
                 PrepareGetExperimentIdSummarizeRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId,
+                    experimentId: experimentId!,
                     summarizeScores: summarizeScores,
                     comparisonExperimentId: comparisonExperimentId);
 

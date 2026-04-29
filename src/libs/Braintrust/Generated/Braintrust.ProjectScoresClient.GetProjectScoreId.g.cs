@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareGetProjectScoreIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectScoreId: projectScoreId);
+                    projectScoreId: projectScoreId!);
 
                 return __httpRequest;
             }

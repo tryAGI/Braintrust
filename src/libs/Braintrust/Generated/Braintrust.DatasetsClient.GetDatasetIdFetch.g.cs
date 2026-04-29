@@ -177,7 +177,7 @@ namespace Braintrust
                 PrepareGetDatasetIdFetchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetId: datasetId,
+                    datasetId: datasetId!,
                     limit: limit,
                     maxXactId: maxXactId,
                     maxRootSpanId: maxRootSpanId,

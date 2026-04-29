@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareGetUserIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    userId: userId);
+                    userId: userId!);
 
                 return __httpRequest;
             }

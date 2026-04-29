@@ -177,7 +177,7 @@ namespace Braintrust
                 PrepareGetProjectLogsIdFetchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     limit: limit,
                     maxXactId: maxXactId,
                     maxRootSpanId: maxRootSpanId,

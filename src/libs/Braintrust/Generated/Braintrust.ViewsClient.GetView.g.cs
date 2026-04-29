@@ -203,8 +203,8 @@ namespace Braintrust
                     ids: ids,
                     viewName: viewName,
                     viewType: viewType,
-                    objectType: objectType,
-                    objectId: objectId);
+                    objectType: objectType!,
+                    objectId: objectId!);
 
                 return __httpRequest;
             }

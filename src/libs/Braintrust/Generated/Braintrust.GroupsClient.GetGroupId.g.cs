@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareGetGroupIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    groupId: groupId);
+                    groupId: groupId!);
 
                 return __httpRequest;
             }

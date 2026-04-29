@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareGetEnvVarIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    envVarId: envVarId);
+                    envVarId: envVarId!);
 
                 return __httpRequest;
             }

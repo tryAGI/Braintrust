@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsViewIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    viewId: viewId);
+                    viewId: viewId!);
 
                 return __httpRequest;
             }

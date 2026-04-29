@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsUserIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    userId: userId);
+                    userId: userId!);
 
                 return __httpRequest;
             }

@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareDeleteDatasetIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetId: datasetId);
+                    datasetId: datasetId!);
 
                 return __httpRequest;
             }

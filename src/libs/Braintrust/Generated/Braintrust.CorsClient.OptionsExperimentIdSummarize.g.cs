@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsExperimentIdSummarizeRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId);
+                    experimentId: experimentId!);
 
                 return __httpRequest;
             }

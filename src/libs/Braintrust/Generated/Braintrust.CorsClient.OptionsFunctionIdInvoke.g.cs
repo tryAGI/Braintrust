@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsFunctionIdInvokeRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    functionId: functionId);
+                    functionId: functionId!);
 
                 return __httpRequest;
             }

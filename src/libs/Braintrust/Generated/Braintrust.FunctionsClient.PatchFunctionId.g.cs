@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchFunctionIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    functionId: functionId,
+                    functionId: functionId!,
                     request: request);
 
                 return __httpRequest;

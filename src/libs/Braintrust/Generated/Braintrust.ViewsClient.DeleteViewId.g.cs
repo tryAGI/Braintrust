@@ -150,7 +150,7 @@ namespace Braintrust
                 PrepareDeleteViewIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    viewId: viewId,
+                    viewId: viewId!,
                     request: request);
 
                 return __httpRequest;

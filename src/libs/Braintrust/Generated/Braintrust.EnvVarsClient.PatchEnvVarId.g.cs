@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchEnvVarIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    envVarId: envVarId,
+                    envVarId: envVarId!,
                     request: request);
 
                 return __httpRequest;

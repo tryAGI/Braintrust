@@ -147,7 +147,7 @@ namespace Braintrust
                 PrepareUpdateEnvironmentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    environmentId: environmentId,
+                    environmentId: environmentId!,
                     request: request);
 
                 return __httpRequest;

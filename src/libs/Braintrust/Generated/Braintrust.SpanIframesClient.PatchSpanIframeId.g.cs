@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchSpanIframeIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    spanIframeId: spanIframeId,
+                    spanIframeId: spanIframeId!,
                     request: request);
 
                 return __httpRequest;
