@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareGetServiceTokenIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    serviceTokenId: serviceTokenId);
+                    serviceTokenId: serviceTokenId!);
 
                 return __httpRequest;
             }

@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsAclIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    aclId: aclId);
+                    aclId: aclId!);
 
                 return __httpRequest;
             }

@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareDeleteRoleIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    roleId: roleId);
+                    roleId: roleId!);
 
                 return __httpRequest;
             }

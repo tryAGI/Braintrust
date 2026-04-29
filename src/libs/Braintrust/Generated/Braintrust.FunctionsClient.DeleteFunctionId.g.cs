@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareDeleteFunctionIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    functionId: functionId);
+                    functionId: functionId!);
 
                 return __httpRequest;
             }

@@ -156,7 +156,7 @@ namespace Braintrust
                 PrepareGetFunctionIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    functionId: functionId,
+                    functionId: functionId!,
                     version: version,
                     environment: environment);
 

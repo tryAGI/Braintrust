@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareGetDatasetSnapshotIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetSnapshotId: datasetSnapshotId);
+                    datasetSnapshotId: datasetSnapshotId!);
 
                 return __httpRequest;
             }

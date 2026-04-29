@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchAiSecretIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    aiSecretId: aiSecretId,
+                    aiSecretId: aiSecretId!,
                     request: request);
 
                 return __httpRequest;

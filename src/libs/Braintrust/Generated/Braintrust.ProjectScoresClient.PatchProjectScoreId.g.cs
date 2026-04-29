@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchProjectScoreIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectScoreId: projectScoreId,
+                    projectScoreId: projectScoreId!,
                     request: request);
 
                 return __httpRequest;

@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsDatasetIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetId: datasetId);
+                    datasetId: datasetId!);
 
                 return __httpRequest;
             }

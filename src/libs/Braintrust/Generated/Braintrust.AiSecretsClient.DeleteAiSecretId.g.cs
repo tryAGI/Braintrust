@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareDeleteAiSecretIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    aiSecretId: aiSecretId);
+                    aiSecretId: aiSecretId!);
 
                 return __httpRequest;
             }

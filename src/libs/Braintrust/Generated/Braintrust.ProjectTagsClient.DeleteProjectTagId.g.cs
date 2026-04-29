@@ -136,7 +136,7 @@ namespace Braintrust
                 PrepareDeleteProjectTagIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectTagId: projectTagId);
+                    projectTagId: projectTagId!);
 
                 return __httpRequest;
             }

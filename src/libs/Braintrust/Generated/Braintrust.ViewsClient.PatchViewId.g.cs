@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchViewIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    viewId: viewId,
+                    viewId: viewId!,
                     request: request);
 
                 return __httpRequest;

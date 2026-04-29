@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsProjectTagIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectTagId: projectTagId);
+                    projectTagId: projectTagId!);
 
                 return __httpRequest;
             }

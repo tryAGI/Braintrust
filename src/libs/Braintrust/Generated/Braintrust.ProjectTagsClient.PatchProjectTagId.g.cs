@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchProjectTagIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectTagId: projectTagId,
+                    projectTagId: projectTagId!,
                     request: request);
 
                 return __httpRequest;

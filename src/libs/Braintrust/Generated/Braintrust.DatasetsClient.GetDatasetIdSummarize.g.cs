@@ -137,7 +137,7 @@ namespace Braintrust
                 PrepareGetDatasetIdSummarizeRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetId: datasetId,
+                    datasetId: datasetId!,
                     summarizeData: summarizeData);
 
                 return __httpRequest;

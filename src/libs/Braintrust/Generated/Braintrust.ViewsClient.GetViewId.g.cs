@@ -154,9 +154,9 @@ namespace Braintrust
                 PrepareGetViewIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    viewId: viewId,
-                    objectType: objectType,
-                    objectId: objectId);
+                    viewId: viewId!,
+                    objectType: objectType!,
+                    objectId: objectId!);
 
                 return __httpRequest;
             }

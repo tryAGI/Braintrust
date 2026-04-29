@@ -79,7 +79,7 @@ namespace Braintrust
                 PrepareOptionsProjectAutomationIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectAutomationId: projectAutomationId);
+                    projectAutomationId: projectAutomationId!);
 
                 return __httpRequest;
             }

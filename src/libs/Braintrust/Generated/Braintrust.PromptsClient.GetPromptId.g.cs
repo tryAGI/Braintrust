@@ -156,7 +156,7 @@ namespace Braintrust
                 PrepareGetPromptIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptId: promptId,
+                    promptId: promptId!,
                     version: version,
                     environment: environment);
 

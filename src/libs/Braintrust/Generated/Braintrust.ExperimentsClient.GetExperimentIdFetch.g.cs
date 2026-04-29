@@ -177,7 +177,7 @@ namespace Braintrust
                 PrepareGetExperimentIdFetchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId,
+                    experimentId: experimentId!,
                     limit: limit,
                     maxXactId: maxXactId,
                     maxRootSpanId: maxRootSpanId,

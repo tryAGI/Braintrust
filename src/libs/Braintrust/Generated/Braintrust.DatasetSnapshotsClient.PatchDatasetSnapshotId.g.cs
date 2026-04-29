@@ -150,7 +150,7 @@ namespace Braintrust
                 PreparePatchDatasetSnapshotIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetSnapshotId: datasetSnapshotId,
+                    datasetSnapshotId: datasetSnapshotId!,
                     request: request);
 
                 return __httpRequest;
