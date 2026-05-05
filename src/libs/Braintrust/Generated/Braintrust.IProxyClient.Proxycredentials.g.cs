@@ -21,6 +21,19 @@ namespace Braintrust
         /// Create temporary credential<br/>
         /// Create a temporary credential which can access the proxy for a limited time. The temporary credential will be allowed to make requests on behalf of the Braintrust API key (or model provider API key) provided in the `Authorization` header. See [docs](/docs/deploy/ai-proxy#create-temporary-credentials) for code examples.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.ProxycredentialsResponse>> ProxycredentialsAsResponseAsync(
+
+            global::Braintrust.ProxycredentialsRequest request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create temporary credential<br/>
+        /// Create a temporary credential which can access the proxy for a limited time. The temporary credential will be allowed to make requests on behalf of the Braintrust API key (or model provider API key) provided in the `Authorization` header. See [docs](/docs/deploy/ai-proxy#create-temporary-credentials) for code examples.
+        /// </summary>
         /// <param name="model">
         /// Granted model name. Null/undefined to grant usage of all models.
         /// </param>

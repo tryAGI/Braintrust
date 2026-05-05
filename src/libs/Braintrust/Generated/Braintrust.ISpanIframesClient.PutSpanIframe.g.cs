@@ -21,6 +21,19 @@ namespace Braintrust
         /// Create or replace span_iframe<br/>
         /// Create or replace span_iframe. If there is an existing span_iframe with the same name as the one specified in the request, will replace the existing span_iframe with the provided fields
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.SpanIFrame>> PutSpanIframeAsResponseAsync(
+
+            global::Braintrust.CreateSpanIFrame request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create or replace span_iframe<br/>
+        /// Create or replace span_iframe. If there is an existing span_iframe with the same name as the one specified in the request, will replace the existing span_iframe with the provided fields
+        /// </summary>
         /// <param name="projectId">
         /// Unique identifier for the project that the span iframe belongs under
         /// </param>

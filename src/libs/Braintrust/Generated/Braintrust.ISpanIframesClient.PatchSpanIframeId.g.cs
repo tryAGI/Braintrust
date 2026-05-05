@@ -28,6 +28,23 @@ namespace Braintrust
         /// <param name="spanIframeId">
         /// SpanIframe id
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.SpanIFrame>> PatchSpanIframeIdAsResponseAsync(
+            global::System.Guid spanIframeId,
+
+            global::Braintrust.PatchSpanIFrame request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Partially update span_iframe<br/>
+        /// Partially update a span_iframe object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// </summary>
+        /// <param name="spanIframeId">
+        /// SpanIframe id
+        /// </param>
         /// <param name="name">
         /// Name of the span iframe
         /// </param>

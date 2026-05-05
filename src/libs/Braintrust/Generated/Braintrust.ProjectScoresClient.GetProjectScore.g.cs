@@ -113,6 +113,69 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await GetProjectScoreAsResponseAsync(
+                limit: limit,
+                startingAfter: startingAfter,
+                endingBefore: endingBefore,
+                ids: ids,
+                projectScoreName: projectScoreName,
+                projectName: projectName,
+                projectId: projectId,
+                orgName: orgName,
+                scoreType: scoreType,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// List project_scores<br/>
+        /// List out all project_scores. The project_scores are sorted by creation date, with the most recently-created project_scores coming first
+        /// </summary>
+        /// <param name="limit">
+        /// Limit the number of objects to return
+        /// </param>
+        /// <param name="startingAfter">
+        /// Pagination cursor id.<br/>
+        /// For example, if the final item in the last page you fetched had an id of `foo`, pass `starting_after=foo` to fetch the next page. Note: you may only pass one of `starting_after` and `ending_before`
+        /// </param>
+        /// <param name="endingBefore">
+        /// Pagination cursor id.<br/>
+        /// For example, if the initial item in the last page you fetched had an id of `foo`, pass `ending_before=foo` to fetch the previous page. Note: you may only pass one of `starting_after` and `ending_before`
+        /// </param>
+        /// <param name="ids">
+        /// Filter search results to a particular set of object IDs. To specify a list of IDs, include the query param multiple times
+        /// </param>
+        /// <param name="projectScoreName">
+        /// Name of the project_score to search for
+        /// </param>
+        /// <param name="projectName">
+        /// Name of the project to search for
+        /// </param>
+        /// <param name="projectId">
+        /// Project id
+        /// </param>
+        /// <param name="orgName">
+        /// Filter search results to within a particular organization
+        /// </param>
+        /// <param name="scoreType"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.GetProjectScoreResponse>> GetProjectScoreAsResponseAsync(
+            int? limit = default,
+            global::System.Guid? startingAfter = default,
+            global::System.Guid? endingBefore = default,
+            global::Braintrust.Ids? ids = default,
+            string? projectScoreName = default,
+            string? projectName = default,
+            global::System.Guid? projectId = default,
+            string? orgName = default,
+            global::Braintrust.AnyOf<global::Braintrust.ProjectScoreType?, global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>>>? scoreType = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareGetProjectScoreArguments(
@@ -149,9 +212,10 @@ namespace Braintrust
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Braintrust.PathBuilder(
                                 path: "/v1/project_score",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("starting_after", startingAfter?.ToString())
@@ -161,7 +225,7 @@ namespace Braintrust
                                 .AddOptionalParameter("project_name", projectName)
                                 .AddOptionalParameter("project_id", projectId?.ToString())
                                 .AddOptionalParameter("org_name", orgName)
-                                .AddOptionalParameter("score_type", scoreType?.ToString()) 
+                                .AddOptionalParameter("score_type", scoreType?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Braintrust.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -241,6 +305,8 @@ namespace Braintrust
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -251,6 +317,11 @@ namespace Braintrust
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Braintrust.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Braintrust.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -268,6 +339,8 @@ namespace Braintrust
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -277,8 +350,7 @@ namespace Braintrust
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Braintrust.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -287,6 +359,11 @@ namespace Braintrust
                         __attempt < __maxAttempts &&
                         global::Braintrust.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Braintrust.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Braintrust.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Braintrust.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -303,14 +380,15 @@ namespace Braintrust
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Braintrust.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -350,6 +428,8 @@ namespace Braintrust
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -370,6 +450,8 @@ namespace Braintrust
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // The request was unacceptable, often due to missing a required parameter
@@ -584,9 +666,13 @@ namespace Braintrust
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::Braintrust.GetProjectScoreResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Braintrust.GetProjectScoreResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.GetProjectScoreResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Braintrust.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -614,9 +700,13 @@ namespace Braintrust
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::Braintrust.GetProjectScoreResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Braintrust.GetProjectScoreResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.GetProjectScoreResponse>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Braintrust.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
