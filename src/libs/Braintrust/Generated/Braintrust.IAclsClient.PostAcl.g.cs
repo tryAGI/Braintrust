@@ -21,6 +21,19 @@ namespace Braintrust
         /// Create acl<br/>
         /// Create a new acl. If there is an existing acl with the same contents as the one specified in the request, will return the existing acl unmodified
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Acl>> PostAclAsResponseAsync(
+
+            global::Braintrust.AclItem request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create acl<br/>
+        /// Create a new acl. If there is an existing acl with the same contents as the one specified in the request, will return the existing acl unmodified
+        /// </summary>
         /// <param name="objectType">
         /// The object type that the ACL applies to
         /// </param>

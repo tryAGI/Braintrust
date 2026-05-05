@@ -28,6 +28,23 @@ namespace Braintrust
         /// <param name="functionId">
         /// Function id
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<string>> PostFunctionIdInvokeAsResponseAsync(
+            global::System.Guid functionId,
+
+            global::Braintrust.InvokeApi request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Invoke function<br/>
+        /// Invoke a function.
+        /// </summary>
+        /// <param name="functionId">
+        /// Function id
+        /// </param>
         /// <param name="input">
         /// Argument to the function, which can be any JSON serializable value
         /// </param>

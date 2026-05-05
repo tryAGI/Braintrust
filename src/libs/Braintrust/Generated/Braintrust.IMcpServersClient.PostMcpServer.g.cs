@@ -21,6 +21,19 @@ namespace Braintrust
         /// Create mcp_server<br/>
         /// Create a new mcp_server. If there is an existing mcp_server with the same name as the one specified in the request, will return the existing mcp_server unmodified
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.MCPServer>> PostMcpServerAsResponseAsync(
+
+            global::Braintrust.CreateMCPServer request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create mcp_server<br/>
+        /// Create a new mcp_server. If there is an existing mcp_server with the same name as the one specified in the request, will return the existing mcp_server unmodified
+        /// </summary>
         /// <param name="projectId">
         /// Unique identifier for the project that the MCP server belongs under
         /// </param>

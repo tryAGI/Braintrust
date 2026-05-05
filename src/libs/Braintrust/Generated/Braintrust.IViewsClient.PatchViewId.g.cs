@@ -28,6 +28,23 @@ namespace Braintrust
         /// <param name="viewId">
         /// View id
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.View>> PatchViewIdAsResponseAsync(
+            global::System.Guid viewId,
+
+            global::Braintrust.PatchView request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Partially update view<br/>
+        /// Partially update a view object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// </summary>
+        /// <param name="viewId">
+        /// View id
+        /// </param>
         /// <param name="objectType">
         /// The object type that the ACL applies to
         /// </param>

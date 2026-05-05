@@ -21,6 +21,19 @@ namespace Braintrust
         /// Create project<br/>
         /// Create a new project. If there is an existing project with the same name as the one specified in the request, will return the existing project unmodified
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Project>> PostProjectAsResponseAsync(
+
+            global::Braintrust.CreateProject request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create project<br/>
+        /// Create a new project. If there is an existing project with the same name as the one specified in the request, will return the existing project unmodified
+        /// </summary>
         /// <param name="name">
         /// Name of the project
         /// </param>

@@ -134,6 +134,87 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await AclListOrgAsResponseAsync(
+                limit: limit,
+                ids: ids,
+                startingAfter: startingAfter,
+                endingBefore: endingBefore,
+                objectType: objectType,
+                objectId: objectId,
+                userId: userId,
+                groupId: groupId,
+                permission: permission,
+                restrictObjectType: restrictObjectType,
+                roleId: roleId,
+                orgName: orgName,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// List org acls<br/>
+        /// List all acls in the org. This query requires the caller to have `read_acls` permission at the organization level
+        /// </summary>
+        /// <param name="limit">
+        /// Limit the number of objects to return
+        /// </param>
+        /// <param name="ids">
+        /// Filter search results to a particular set of object IDs. To specify a list of IDs, include the query param multiple times
+        /// </param>
+        /// <param name="startingAfter">
+        /// Pagination cursor id.<br/>
+        /// For example, if the final item in the last page you fetched had an id of `foo`, pass `starting_after=foo` to fetch the next page. Note: you may only pass one of `starting_after` and `ending_before`
+        /// </param>
+        /// <param name="endingBefore">
+        /// Pagination cursor id.<br/>
+        /// For example, if the initial item in the last page you fetched had an id of `foo`, pass `ending_before=foo` to fetch the previous page. Note: you may only pass one of `starting_after` and `ending_before`
+        /// </param>
+        /// <param name="objectType">
+        /// The object type that the ACL applies to
+        /// </param>
+        /// <param name="objectId">
+        /// The id of the object the ACL applies to
+        /// </param>
+        /// <param name="userId">
+        /// Id of the user the ACL applies to. Exactly one of `user_id` and `group_id` will be provided
+        /// </param>
+        /// <param name="groupId">
+        /// Id of the group the ACL applies to. Exactly one of `user_id` and `group_id` will be provided
+        /// </param>
+        /// <param name="permission">
+        /// Each permission permits a certain type of operation on an object in the system<br/>
+        /// Permissions can be assigned to to objects on an individual basis, or grouped into roles
+        /// </param>
+        /// <param name="restrictObjectType">
+        /// The object type that the ACL applies to
+        /// </param>
+        /// <param name="roleId">
+        /// Id of the role the ACL grants. Exactly one of `permission` and `role_id` will be provided
+        /// </param>
+        /// <param name="orgName">
+        /// Filter search results to within a particular organization
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Braintrust.Acl>>> AclListOrgAsResponseAsync(
+            int? limit = default,
+            global::Braintrust.Ids? ids = default,
+            global::System.Guid? startingAfter = default,
+            global::System.Guid? endingBefore = default,
+            global::Braintrust.AclListOrgObjectType? objectType = default,
+            global::System.Guid? objectId = default,
+            global::System.Guid? userId = default,
+            global::System.Guid? groupId = default,
+            global::Braintrust.AclListPermission? permission = default,
+            global::Braintrust.AclListRestrictObjectType? restrictObjectType = default,
+            global::System.Guid? roleId = default,
+            string? orgName = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareAclListOrgArguments(
@@ -173,9 +254,10 @@ namespace Braintrust
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Braintrust.PathBuilder(
                                 path: "/v1/acl/list_org",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("ids", ids?.ToString())
@@ -188,7 +270,7 @@ namespace Braintrust
                                 .AddOptionalParameter("permission", permission?.ToValueString())
                                 .AddOptionalParameter("restrict_object_type", restrictObjectType?.ToValueString())
                                 .AddOptionalParameter("role_id", roleId?.ToString())
-                                .AddOptionalParameter("org_name", orgName) 
+                                .AddOptionalParameter("org_name", orgName)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Braintrust.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -271,6 +353,8 @@ namespace Braintrust
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -281,6 +365,11 @@ namespace Braintrust
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Braintrust.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Braintrust.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -298,6 +387,8 @@ namespace Braintrust
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -307,8 +398,7 @@ namespace Braintrust
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Braintrust.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -317,6 +407,11 @@ namespace Braintrust
                         __attempt < __maxAttempts &&
                         global::Braintrust.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Braintrust.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Braintrust.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Braintrust.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -333,14 +428,15 @@ namespace Braintrust
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Braintrust.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -380,6 +476,8 @@ namespace Braintrust
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -400,6 +498,8 @@ namespace Braintrust
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // The request was unacceptable, often due to missing a required parameter
@@ -614,9 +714,13 @@ namespace Braintrust
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        (global::System.Collections.Generic.IList<global::Braintrust.Acl>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Braintrust.Acl>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Braintrust.Acl>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Braintrust.Acl>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Braintrust.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Braintrust.Acl>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Braintrust.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -644,9 +748,13 @@ namespace Braintrust
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        (global::System.Collections.Generic.IList<global::Braintrust.Acl>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Braintrust.Acl>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Braintrust.Acl>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Braintrust.Acl>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Braintrust.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Braintrust.Acl>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Braintrust.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
