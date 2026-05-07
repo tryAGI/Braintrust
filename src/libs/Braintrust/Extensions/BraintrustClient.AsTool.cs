@@ -1,4 +1,3 @@
-using System.Text.Json;
 using Microsoft.Extensions.AI;
 
 namespace Braintrust;
@@ -30,14 +29,14 @@ public static class BraintrustToolExtensions
                     projectName: projectName,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
-                return JsonSerializer.Serialize(response.Objects.Select(p => new
+                return response.Objects.Select(p => new
                 {
                     id = p.Id,
                     name = p.Name,
                     slug = p.Slug,
                     description = p.Description,
                     tags = p.Tags,
-                }));
+                });
             },
             name: "ListPrompts",
             description: "Lists available prompt templates in Braintrust. Optionally filter by project name. Returns prompt IDs, names, slugs, descriptions, and tags.");
@@ -65,10 +64,10 @@ public static class BraintrustToolExtensions
                 var prompt = response.Objects.FirstOrDefault();
                 if (prompt is null)
                 {
-                    return $"No prompt found with slug '{slug}'.";
+                    return (object)$"No prompt found with slug '{slug}'.";
                 }
 
-                return JsonSerializer.Serialize(new
+                return (object)new
                 {
                     id = prompt.Id,
                     name = prompt.Name,
@@ -77,7 +76,7 @@ public static class BraintrustToolExtensions
                     tags = prompt.Tags,
                     function_type = prompt.FunctionType?.ToString(),
                     created = prompt.Created,
-                });
+                };
             },
             name: "GetPrompt",
             description: "Retrieves a specific prompt template from Braintrust by its slug. Returns the prompt's ID, name, description, tags, and metadata.");
@@ -104,11 +103,11 @@ public static class BraintrustToolExtensions
                     limit: limit,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
-                return JsonSerializer.Serialize(response.Objects.Select(p => new
+                return response.Objects.Select(p => new
                 {
                     id = p.Id,
                     name = p.Name,
-                }));
+                });
             },
             name: "ListProjects",
             description: "Lists available projects in Braintrust. Returns project IDs and names.");
@@ -136,12 +135,12 @@ public static class BraintrustToolExtensions
                     projectName: projectName,
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
-                return JsonSerializer.Serialize(response.Objects.Select(e => new
+                return response.Objects.Select(e => new
                 {
                     id = e.Id,
                     name = e.Name,
                     created = e.Created,
-                }));
+                });
             },
             name: "ListExperiments",
             description: "Lists experiments in Braintrust. Optionally filter by project name. Returns experiment IDs, names, and creation dates.");
