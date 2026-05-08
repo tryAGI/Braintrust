@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickGuid(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Guid? value)
+        {
+            value = Guid;
+            return IsGuid;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::System.Guid>? IdsVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IdsVariant2))]
 #endif
         public bool IsIdsVariant2 => IdsVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickIdsVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<global::System.Guid>? value)
+        {
+            value = IdsVariant2;
+            return IsIdsVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -101,7 +127,7 @@ namespace Braintrust
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::System.Guid?, TResult>? guid = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::System.Guid>?, TResult>? idsVariant2 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::System.Guid>, TResult>? idsVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -126,7 +152,31 @@ namespace Braintrust
         /// </summary>
         public void Match(
             global::System.Action<global::System.Guid?>? guid = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::System.Guid>?>? idsVariant2 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<global::System.Guid>>? idsVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsGuid)
+            {
+                guid?.Invoke(Guid!);
+            }
+            else if (IsIdsVariant2)
+            {
+                idsVariant2?.Invoke(IdsVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::System.Guid?>? guid = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::System.Guid>>? idsVariant2 = null,
             bool validate = true)
         {
             if (validate)

@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickOpenAIModelParams(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ModelParamsOpenAIModelParams? value)
+        {
+            value = OpenAIModelParams;
+            return IsOpenAIModelParams;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsAnthropicModelParams? AnthropicModelParams { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AnthropicModelParams))]
 #endif
         public bool IsAnthropicModelParams => AnthropicModelParams != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAnthropicModelParams(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ModelParamsAnthropicModelParams? value)
+        {
+            value = AnthropicModelParams;
+            return IsAnthropicModelParams;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickGoogleModelParams(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ModelParamsGoogleModelParams? value)
+        {
+            value = GoogleModelParams;
+            return IsGoogleModelParams;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsWindowAIModelParams? WindowAIModelParams { get; init; }
 #else
@@ -80,6 +119,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickWindowAIModelParams(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ModelParamsWindowAIModelParams? value)
+        {
+            value = WindowAIModelParams;
+            return IsWindowAIModelParams;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsJsCompletionParams? JsCompletionParams { get; init; }
 #else
@@ -93,6 +145,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsCompletionParams))]
 #endif
         public bool IsJsCompletionParams => JsCompletionParams != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickJsCompletionParams(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ModelParamsJsCompletionParams? value)
+        {
+            value = JsCompletionParams;
+            return IsJsCompletionParams;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -235,11 +300,11 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.ModelParamsOpenAIModelParams?, TResult>? openAIModelParams = null,
-            global::System.Func<global::Braintrust.ModelParamsAnthropicModelParams?, TResult>? anthropicModelParams = null,
-            global::System.Func<global::Braintrust.ModelParamsGoogleModelParams?, TResult>? googleModelParams = null,
-            global::System.Func<global::Braintrust.ModelParamsWindowAIModelParams?, TResult>? windowAIModelParams = null,
-            global::System.Func<global::Braintrust.ModelParamsJsCompletionParams?, TResult>? jsCompletionParams = null,
+            global::System.Func<global::Braintrust.ModelParamsOpenAIModelParams, TResult>? openAIModelParams = null,
+            global::System.Func<global::Braintrust.ModelParamsAnthropicModelParams, TResult>? anthropicModelParams = null,
+            global::System.Func<global::Braintrust.ModelParamsGoogleModelParams, TResult>? googleModelParams = null,
+            global::System.Func<global::Braintrust.ModelParamsWindowAIModelParams, TResult>? windowAIModelParams = null,
+            global::System.Func<global::Braintrust.ModelParamsJsCompletionParams, TResult>? jsCompletionParams = null,
             bool validate = true)
         {
             if (validate)
@@ -275,11 +340,53 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.ModelParamsOpenAIModelParams?>? openAIModelParams = null,
-            global::System.Action<global::Braintrust.ModelParamsAnthropicModelParams?>? anthropicModelParams = null,
-            global::System.Action<global::Braintrust.ModelParamsGoogleModelParams?>? googleModelParams = null,
-            global::System.Action<global::Braintrust.ModelParamsWindowAIModelParams?>? windowAIModelParams = null,
-            global::System.Action<global::Braintrust.ModelParamsJsCompletionParams?>? jsCompletionParams = null,
+            global::System.Action<global::Braintrust.ModelParamsOpenAIModelParams>? openAIModelParams = null,
+
+            global::System.Action<global::Braintrust.ModelParamsAnthropicModelParams>? anthropicModelParams = null,
+
+            global::System.Action<global::Braintrust.ModelParamsGoogleModelParams>? googleModelParams = null,
+
+            global::System.Action<global::Braintrust.ModelParamsWindowAIModelParams>? windowAIModelParams = null,
+
+            global::System.Action<global::Braintrust.ModelParamsJsCompletionParams>? jsCompletionParams = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsOpenAIModelParams)
+            {
+                openAIModelParams?.Invoke(OpenAIModelParams!);
+            }
+            else if (IsAnthropicModelParams)
+            {
+                anthropicModelParams?.Invoke(AnthropicModelParams!);
+            }
+            else if (IsGoogleModelParams)
+            {
+                googleModelParams?.Invoke(GoogleModelParams!);
+            }
+            else if (IsWindowAIModelParams)
+            {
+                windowAIModelParams?.Invoke(WindowAIModelParams!);
+            }
+            else if (IsJsCompletionParams)
+            {
+                jsCompletionParams?.Invoke(JsCompletionParams!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.ModelParamsOpenAIModelParams>? openAIModelParams = null,
+            global::System.Action<global::Braintrust.ModelParamsAnthropicModelParams>? anthropicModelParams = null,
+            global::System.Action<global::Braintrust.ModelParamsGoogleModelParams>? googleModelParams = null,
+            global::System.Action<global::Braintrust.ModelParamsWindowAIModelParams>? windowAIModelParams = null,
+            global::System.Action<global::Braintrust.ModelParamsJsCompletionParams>? jsCompletionParams = null,
             bool validate = true)
         {
             if (validate)

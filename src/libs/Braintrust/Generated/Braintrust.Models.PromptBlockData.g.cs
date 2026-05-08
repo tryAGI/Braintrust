@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickChat(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.PromptBlockDataChat? value)
+        {
+            value = Chat;
+            return IsChat;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PromptBlockDataCompletion? Completion { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Completion))]
 #endif
         public bool IsCompletion => Completion != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCompletion(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.PromptBlockDataCompletion? value)
+        {
+            value = Completion;
+            return IsCompletion;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.PromptBlockDataChat?, TResult>? chat = null,
-            global::System.Func<global::Braintrust.PromptBlockDataCompletion?, TResult>? completion = null,
+            global::System.Func<global::Braintrust.PromptBlockDataChat, TResult>? chat = null,
+            global::System.Func<global::Braintrust.PromptBlockDataCompletion, TResult>? completion = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.PromptBlockDataChat?>? chat = null,
-            global::System.Action<global::Braintrust.PromptBlockDataCompletion?>? completion = null,
+            global::System.Action<global::Braintrust.PromptBlockDataChat>? chat = null,
+
+            global::System.Action<global::Braintrust.PromptBlockDataCompletion>? completion = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsChat)
+            {
+                chat?.Invoke(Chat!);
+            }
+            else if (IsCompletion)
+            {
+                completion?.Invoke(Completion!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.PromptBlockDataChat>? chat = null,
+            global::System.Action<global::Braintrust.PromptBlockDataCompletion>? completion = null,
             bool validate = true)
         {
             if (validate)

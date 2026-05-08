@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPrompt(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataNullishPrompt? value)
+        {
+            value = Prompt;
+            return IsPrompt;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataNullishCode? Code { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Code))]
 #endif
         public bool IsCode => Code != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCode(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataNullishCode? value)
+        {
+            value = Code;
+            return IsCode;
+        }
 
         /// <summary>
         /// This feature is preliminary and unsupported.
@@ -59,6 +85,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Graph))]
 #endif
         public bool IsGraph => Graph != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGraph(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.GraphData? value)
+        {
+            value = Graph;
+            return IsGraph;
+        }
 
         /// <summary>
         /// A remote eval to run
@@ -80,6 +119,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickRemoteEval(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataNullishRemoteEval? value)
+        {
+            value = RemoteEval;
+            return IsRemoteEval;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataNullishGlobal? Global { get; init; }
 #else
@@ -93,6 +145,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Global))]
 #endif
         public bool IsGlobal => Global != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGlobal(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataNullishGlobal? value)
+        {
+            value = Global;
+            return IsGlobal;
+        }
 
         /// <summary>
         /// 
@@ -114,6 +179,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickFacet(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FacetData? value)
+        {
+            value = Facet;
+            return IsFacet;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.BatchedFacetData? BatchedFacet { get; init; }
 #else
@@ -127,6 +205,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BatchedFacet))]
 #endif
         public bool IsBatchedFacet => BatchedFacet != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickBatchedFacet(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.BatchedFacetData? value)
+        {
+            value = BatchedFacet;
+            return IsBatchedFacet;
+        }
 
         /// <summary>
         /// 
@@ -148,6 +239,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickParameters(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataNullishParameters? value)
+        {
+            value = Parameters;
+            return IsParameters;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? FunctionDataNullishVariant9 { get; init; }
 #else
@@ -165,6 +269,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickFunctionDataNullishVariant9(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value)
+        {
+            value = FunctionDataNullishVariant9;
+            return IsFunctionDataNullishVariant9;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? FunctionDataNullishVariant10 { get; init; }
 #else
@@ -178,6 +295,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionDataNullishVariant10))]
 #endif
         public bool IsFunctionDataNullishVariant10 => FunctionDataNullishVariant10 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFunctionDataNullishVariant10(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = FunctionDataNullishVariant10;
+            return IsFunctionDataNullishVariant10;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -412,16 +542,16 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.FunctionDataNullishPrompt?, TResult>? prompt = null,
-            global::System.Func<global::Braintrust.FunctionDataNullishCode?, TResult>? code = null,
-            global::System.Func<global::Braintrust.GraphData?, TResult>? graph = null,
-            global::System.Func<global::Braintrust.FunctionDataNullishRemoteEval?, TResult>? remoteEval = null,
-            global::System.Func<global::Braintrust.FunctionDataNullishGlobal?, TResult>? global = null,
-            global::System.Func<global::Braintrust.FacetData?, TResult>? facet = null,
-            global::System.Func<global::Braintrust.BatchedFacetData?, TResult>? batchedFacet = null,
-            global::System.Func<global::Braintrust.FunctionDataNullishParameters?, TResult>? parameters = null,
+            global::System.Func<global::Braintrust.FunctionDataNullishPrompt, TResult>? prompt = null,
+            global::System.Func<global::Braintrust.FunctionDataNullishCode, TResult>? code = null,
+            global::System.Func<global::Braintrust.GraphData, TResult>? graph = null,
+            global::System.Func<global::Braintrust.FunctionDataNullishRemoteEval, TResult>? remoteEval = null,
+            global::System.Func<global::Braintrust.FunctionDataNullishGlobal, TResult>? global = null,
+            global::System.Func<global::Braintrust.FacetData, TResult>? facet = null,
+            global::System.Func<global::Braintrust.BatchedFacetData, TResult>? batchedFacet = null,
+            global::System.Func<global::Braintrust.FunctionDataNullishParameters, TResult>? parameters = null,
             global::System.Func<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?, TResult>? functionDataNullishVariant9 = null,
-            global::System.Func<object?, TResult>? functionDataNullishVariant10 = null,
+            global::System.Func<object, TResult>? functionDataNullishVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -477,16 +607,88 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.FunctionDataNullishPrompt?>? prompt = null,
-            global::System.Action<global::Braintrust.FunctionDataNullishCode?>? code = null,
-            global::System.Action<global::Braintrust.GraphData?>? graph = null,
-            global::System.Action<global::Braintrust.FunctionDataNullishRemoteEval?>? remoteEval = null,
-            global::System.Action<global::Braintrust.FunctionDataNullishGlobal?>? global = null,
-            global::System.Action<global::Braintrust.FacetData?>? facet = null,
-            global::System.Action<global::Braintrust.BatchedFacetData?>? batchedFacet = null,
-            global::System.Action<global::Braintrust.FunctionDataNullishParameters?>? parameters = null,
+            global::System.Action<global::Braintrust.FunctionDataNullishPrompt>? prompt = null,
+
+            global::System.Action<global::Braintrust.FunctionDataNullishCode>? code = null,
+
+            global::System.Action<global::Braintrust.GraphData>? graph = null,
+
+            global::System.Action<global::Braintrust.FunctionDataNullishRemoteEval>? remoteEval = null,
+
+            global::System.Action<global::Braintrust.FunctionDataNullishGlobal>? global = null,
+
+            global::System.Action<global::Braintrust.FacetData>? facet = null,
+
+            global::System.Action<global::Braintrust.BatchedFacetData>? batchedFacet = null,
+
+            global::System.Action<global::Braintrust.FunctionDataNullishParameters>? parameters = null,
+
             global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataNullishVariant9 = null,
-            global::System.Action<object?>? functionDataNullishVariant10 = null,
+
+            global::System.Action<object>? functionDataNullishVariant10 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPrompt)
+            {
+                prompt?.Invoke(Prompt!);
+            }
+            else if (IsCode)
+            {
+                code?.Invoke(Code!);
+            }
+            else if (IsGraph)
+            {
+                graph?.Invoke(Graph!);
+            }
+            else if (IsRemoteEval)
+            {
+                remoteEval?.Invoke(RemoteEval!);
+            }
+            else if (IsGlobal)
+            {
+                global?.Invoke(Global!);
+            }
+            else if (IsFacet)
+            {
+                facet?.Invoke(Facet!);
+            }
+            else if (IsBatchedFacet)
+            {
+                batchedFacet?.Invoke(BatchedFacet!);
+            }
+            else if (IsParameters)
+            {
+                parameters?.Invoke(Parameters!);
+            }
+            else if (IsFunctionDataNullishVariant9)
+            {
+                functionDataNullishVariant9?.Invoke(FunctionDataNullishVariant9!);
+            }
+            else if (IsFunctionDataNullishVariant10)
+            {
+                functionDataNullishVariant10?.Invoke(FunctionDataNullishVariant10!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.FunctionDataNullishPrompt>? prompt = null,
+            global::System.Action<global::Braintrust.FunctionDataNullishCode>? code = null,
+            global::System.Action<global::Braintrust.GraphData>? graph = null,
+            global::System.Action<global::Braintrust.FunctionDataNullishRemoteEval>? remoteEval = null,
+            global::System.Action<global::Braintrust.FunctionDataNullishGlobal>? global = null,
+            global::System.Action<global::Braintrust.FacetData>? facet = null,
+            global::System.Action<global::Braintrust.BatchedFacetData>? batchedFacet = null,
+            global::System.Action<global::Braintrust.FunctionDataNullishParameters>? parameters = null,
+            global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataNullishVariant9 = null,
+            global::System.Action<object>? functionDataNullishVariant10 = null,
             bool validate = true)
         {
             if (validate)

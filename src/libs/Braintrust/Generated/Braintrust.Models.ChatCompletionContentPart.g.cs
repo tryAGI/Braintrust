@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionContentPartTextWithTitle? value)
+        {
+            value = Text;
+            return IsText;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionContentPartImageWithTitle? ImageUrl { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickImageUrl(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionContentPartImageWithTitle? value)
+        {
+            value = ImageUrl;
+            return IsImageUrl;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionContentPartFileWithTitle? File { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(File))]
 #endif
         public bool IsFile => File != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFile(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionContentPartFileWithTitle? value)
+        {
+            value = File;
+            return IsFile;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -157,9 +196,9 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.ChatCompletionContentPartTextWithTitle?, TResult>? text = null,
-            global::System.Func<global::Braintrust.ChatCompletionContentPartImageWithTitle?, TResult>? imageUrl = null,
-            global::System.Func<global::Braintrust.ChatCompletionContentPartFileWithTitle?, TResult>? file = null,
+            global::System.Func<global::Braintrust.ChatCompletionContentPartTextWithTitle, TResult>? text = null,
+            global::System.Func<global::Braintrust.ChatCompletionContentPartImageWithTitle, TResult>? imageUrl = null,
+            global::System.Func<global::Braintrust.ChatCompletionContentPartFileWithTitle, TResult>? file = null,
             bool validate = true)
         {
             if (validate)
@@ -187,9 +226,39 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.ChatCompletionContentPartTextWithTitle?>? text = null,
-            global::System.Action<global::Braintrust.ChatCompletionContentPartImageWithTitle?>? imageUrl = null,
-            global::System.Action<global::Braintrust.ChatCompletionContentPartFileWithTitle?>? file = null,
+            global::System.Action<global::Braintrust.ChatCompletionContentPartTextWithTitle>? text = null,
+
+            global::System.Action<global::Braintrust.ChatCompletionContentPartImageWithTitle>? imageUrl = null,
+
+            global::System.Action<global::Braintrust.ChatCompletionContentPartFileWithTitle>? file = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+            else if (IsImageUrl)
+            {
+                imageUrl?.Invoke(ImageUrl!);
+            }
+            else if (IsFile)
+            {
+                file?.Invoke(File!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.ChatCompletionContentPartTextWithTitle>? text = null,
+            global::System.Action<global::Braintrust.ChatCompletionContentPartImageWithTitle>? imageUrl = null,
+            global::System.Action<global::Braintrust.ChatCompletionContentPartFileWithTitle>? file = null,
             bool validate = true)
         {
             if (validate)
