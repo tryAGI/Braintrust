@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickTopicAutomationDataScopeVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.TopicAutomationDataScopeVariant1? value)
+        {
+            value = TopicAutomationDataScopeVariant1;
+            return IsTopicAutomationDataScopeVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.TopicAutomationDataScopeVariant2? TopicAutomationDataScopeVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TopicAutomationDataScopeVariant2))]
 #endif
         public bool IsTopicAutomationDataScopeVariant2 => TopicAutomationDataScopeVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTopicAutomationDataScopeVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.TopicAutomationDataScopeVariant2? value)
+        {
+            value = TopicAutomationDataScopeVariant2;
+            return IsTopicAutomationDataScopeVariant2;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickTopicAutomationDataScopeVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.TopicAutomationDataScopeVariant3? value)
+        {
+            value = TopicAutomationDataScopeVariant3;
+            return IsTopicAutomationDataScopeVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? TopicAutomationDataScopeVariant4 { get; init; }
 #else
@@ -76,6 +115,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TopicAutomationDataScopeVariant4))]
 #endif
         public bool IsTopicAutomationDataScopeVariant4 => TopicAutomationDataScopeVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTopicAutomationDataScopeVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = TopicAutomationDataScopeVariant4;
+            return IsTopicAutomationDataScopeVariant4;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -178,10 +230,10 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.TopicAutomationDataScopeVariant1?, TResult>? topicAutomationDataScopeVariant1 = null,
-            global::System.Func<global::Braintrust.TopicAutomationDataScopeVariant2?, TResult>? topicAutomationDataScopeVariant2 = null,
-            global::System.Func<global::Braintrust.TopicAutomationDataScopeVariant3?, TResult>? topicAutomationDataScopeVariant3 = null,
-            global::System.Func<object?, TResult>? topicAutomationDataScopeVariant4 = null,
+            global::System.Func<global::Braintrust.TopicAutomationDataScopeVariant1, TResult>? topicAutomationDataScopeVariant1 = null,
+            global::System.Func<global::Braintrust.TopicAutomationDataScopeVariant2, TResult>? topicAutomationDataScopeVariant2 = null,
+            global::System.Func<global::Braintrust.TopicAutomationDataScopeVariant3, TResult>? topicAutomationDataScopeVariant3 = null,
+            global::System.Func<object, TResult>? topicAutomationDataScopeVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -213,10 +265,46 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant1?>? topicAutomationDataScopeVariant1 = null,
-            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant2?>? topicAutomationDataScopeVariant2 = null,
-            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant3?>? topicAutomationDataScopeVariant3 = null,
-            global::System.Action<object?>? topicAutomationDataScopeVariant4 = null,
+            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant1>? topicAutomationDataScopeVariant1 = null,
+
+            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant2>? topicAutomationDataScopeVariant2 = null,
+
+            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant3>? topicAutomationDataScopeVariant3 = null,
+
+            global::System.Action<object>? topicAutomationDataScopeVariant4 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsTopicAutomationDataScopeVariant1)
+            {
+                topicAutomationDataScopeVariant1?.Invoke(TopicAutomationDataScopeVariant1!);
+            }
+            else if (IsTopicAutomationDataScopeVariant2)
+            {
+                topicAutomationDataScopeVariant2?.Invoke(TopicAutomationDataScopeVariant2!);
+            }
+            else if (IsTopicAutomationDataScopeVariant3)
+            {
+                topicAutomationDataScopeVariant3?.Invoke(TopicAutomationDataScopeVariant3!);
+            }
+            else if (IsTopicAutomationDataScopeVariant4)
+            {
+                topicAutomationDataScopeVariant4?.Invoke(TopicAutomationDataScopeVariant4!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant1>? topicAutomationDataScopeVariant1 = null,
+            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant2>? topicAutomationDataScopeVariant2 = null,
+            global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant3>? topicAutomationDataScopeVariant3 = null,
+            global::System.Action<object>? topicAutomationDataScopeVariant4 = null,
             bool validate = true)
         {
             if (validate)

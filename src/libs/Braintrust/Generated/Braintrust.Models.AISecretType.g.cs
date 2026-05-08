@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAISecretTypeVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = AISecretTypeVariant1;
+            return IsAISecretTypeVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? AISecretTypeVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AISecretTypeVariant2))]
 #endif
         public bool IsAISecretTypeVariant2 => AISecretTypeVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAISecretTypeVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = AISecretTypeVariant2;
+            return IsAISecretTypeVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? aISecretTypeVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? aISecretTypeVariant2 = null,
+            global::System.Func<string, TResult>? aISecretTypeVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? aISecretTypeVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? aISecretTypeVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? aISecretTypeVariant2 = null,
+            global::System.Action<string>? aISecretTypeVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? aISecretTypeVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAISecretTypeVariant1)
+            {
+                aISecretTypeVariant1?.Invoke(AISecretTypeVariant1!);
+            }
+            else if (IsAISecretTypeVariant2)
+            {
+                aISecretTypeVariant2?.Invoke(AISecretTypeVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? aISecretTypeVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? aISecretTypeVariant2 = null,
             bool validate = true)
         {
             if (validate)
