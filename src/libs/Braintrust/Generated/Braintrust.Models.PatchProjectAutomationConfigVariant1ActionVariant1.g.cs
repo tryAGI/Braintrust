@@ -54,5 +54,6 @@ namespace Braintrust
         public PatchProjectAutomationConfigVariant1ActionVariant1()
         {
         }
+
     }
 }

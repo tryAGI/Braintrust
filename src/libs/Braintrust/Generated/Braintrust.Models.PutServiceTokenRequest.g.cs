@@ -65,5 +65,6 @@ namespace Braintrust
         public PutServiceTokenRequest()
         {
         }
+
     }
 }

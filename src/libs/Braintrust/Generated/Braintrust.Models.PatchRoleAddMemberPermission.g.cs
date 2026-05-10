@@ -57,5 +57,6 @@ namespace Braintrust
         public PatchRoleAddMemberPermission()
         {
         }
+
     }
 }

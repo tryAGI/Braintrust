@@ -61,5 +61,6 @@ namespace Braintrust
         public PromptDataToolFunctionVariant2Function()
         {
         }
+
     }
 }

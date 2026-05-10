@@ -75,5 +75,6 @@ namespace Braintrust
         public InvokeParentSpanParentStruct()
         {
         }
+
     }
 }

@@ -40,6 +40,13 @@ namespace Braintrust
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory> PickCategorical() => IsCategorical
+            ? Categorical!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Categorical' but the value was {ToString()}.");
+
+        /// <summary>
         /// For weighted-type project scores, the weights of each score
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Braintrust
             value = Weighted;
             return IsWeighted;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.Dictionary<string, double> PickWeighted() => IsWeighted
+            ? Weighted!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Weighted' but the value was {ToString()}.");
 
         /// <summary>
         /// For minimum-type project scores, the list of included scores
@@ -102,6 +116,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::System.Collections.Generic.IList<string> PickMinimum() => IsMinimum
+            ? Minimum!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Minimum' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? ProjectScoreCategoriesVariant4 { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Braintrust
             value = ProjectScoreCategoriesVariant4;
             return IsProjectScoreCategoriesVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickProjectScoreCategoriesVariant4() => IsProjectScoreCategoriesVariant4
+            ? ProjectScoreCategoriesVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ProjectScoreCategoriesVariant4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

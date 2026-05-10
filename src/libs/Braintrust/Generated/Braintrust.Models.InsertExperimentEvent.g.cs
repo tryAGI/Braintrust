@@ -296,5 +296,6 @@ namespace Braintrust
         public InsertExperimentEvent()
         {
         }
+
     }
 }

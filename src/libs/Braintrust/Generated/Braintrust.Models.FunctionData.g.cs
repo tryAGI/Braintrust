@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.FunctionDataPrompt PickPrompt() => IsPrompt
+            ? Prompt!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Prompt' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataCode? Code { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = Code;
             return IsCode;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionDataCode PickCode() => IsCode
+            ? Code!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Code' but the value was {ToString()}.");
 
         /// <summary>
         /// This feature is preliminary and unsupported.
@@ -98,6 +112,13 @@ namespace Braintrust
             value = Graph;
             return IsGraph;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.GraphData PickGraph() => IsGraph
+            ? Graph!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Graph' but the value was {ToString()}.");
 
         /// <summary>
         /// A remote eval to run
@@ -132,6 +153,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.FunctionDataRemoteEval PickRemoteEval() => IsRemoteEval
+            ? RemoteEval!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RemoteEval' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataGlobal? Global { get; init; }
 #else
@@ -158,6 +186,13 @@ namespace Braintrust
             value = Global;
             return IsGlobal;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionDataGlobal PickGlobal() => IsGlobal
+            ? Global!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -192,6 +227,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.FacetData PickFacet() => IsFacet
+            ? Facet!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Facet' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.BatchedFacetData? BatchedFacet { get; init; }
 #else
@@ -218,6 +260,13 @@ namespace Braintrust
             value = BatchedFacet;
             return IsBatchedFacet;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.BatchedFacetData PickBatchedFacet() => IsBatchedFacet
+            ? BatchedFacet!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BatchedFacet' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -252,6 +301,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.FunctionDataParameters PickParameters() => IsParameters
+            ? Parameters!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Parameters' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? FunctionDataVariant9 { get; init; }
 #else
@@ -278,6 +334,13 @@ namespace Braintrust
             value = FunctionDataVariant9;
             return IsFunctionDataVariant9;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object> PickFunctionDataVariant9() => IsFunctionDataVariant9
+            ? FunctionDataVariant9!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionDataVariant9' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

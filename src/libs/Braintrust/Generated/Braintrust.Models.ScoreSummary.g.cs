@@ -89,5 +89,6 @@ namespace Braintrust
         public ScoreSummary()
         {
         }
+
     }
 }

@@ -97,5 +97,6 @@ namespace Braintrust
         public ProjectSettings()
         {
         }
+
     }
 }

@@ -119,5 +119,6 @@ namespace Braintrust
         public ServiceToken()
         {
         }
+
     }
 }

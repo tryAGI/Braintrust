@@ -118,5 +118,6 @@ namespace Braintrust
         public ProjectLogsEventMetrics()
         {
         }
+
     }
 }

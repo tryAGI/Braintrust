@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ModelParamsOpenAIModelParams PickOpenAIModelParams() => IsOpenAIModelParams
+            ? OpenAIModelParams!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAIModelParams' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsAnthropicModelParams? AnthropicModelParams { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = AnthropicModelParams;
             return IsAnthropicModelParams;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.ModelParamsAnthropicModelParams PickAnthropicModelParams() => IsAnthropicModelParams
+            ? AnthropicModelParams!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AnthropicModelParams' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ModelParamsGoogleModelParams PickGoogleModelParams() => IsGoogleModelParams
+            ? GoogleModelParams!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleModelParams' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsWindowAIModelParams? WindowAIModelParams { get; init; }
 #else
@@ -132,6 +153,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ModelParamsWindowAIModelParams PickWindowAIModelParams() => IsWindowAIModelParams
+            ? WindowAIModelParams!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'WindowAIModelParams' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsJsCompletionParams? JsCompletionParams { get; init; }
 #else
@@ -158,6 +186,13 @@ namespace Braintrust
             value = JsCompletionParams;
             return IsJsCompletionParams;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.ModelParamsJsCompletionParams PickJsCompletionParams() => IsJsCompletionParams
+            ? JsCompletionParams!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsCompletionParams' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

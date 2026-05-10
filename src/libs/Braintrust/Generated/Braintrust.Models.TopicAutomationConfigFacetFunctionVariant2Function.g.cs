@@ -61,5 +61,6 @@ namespace Braintrust
         public TopicAutomationConfigFacetFunctionVariant2Function()
         {
         }
+
     }
 }

@@ -67,5 +67,6 @@ namespace Braintrust
         public PatchProjectAutomationConfigVariant3()
         {
         }
+
     }
 }

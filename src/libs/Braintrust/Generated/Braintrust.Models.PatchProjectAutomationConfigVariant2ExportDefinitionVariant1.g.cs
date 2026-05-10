@@ -40,5 +40,6 @@ namespace Braintrust
         public PatchProjectAutomationConfigVariant2ExportDefinitionVariant1()
         {
         }
+
     }
 }

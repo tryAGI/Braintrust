@@ -77,5 +77,6 @@ namespace Braintrust
         public CreateProjectAutomationConfigVariant1ActionVariant2()
         {
         }
+
     }
 }

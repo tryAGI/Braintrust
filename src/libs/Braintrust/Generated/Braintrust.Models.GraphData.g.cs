@@ -60,5 +60,6 @@ namespace Braintrust
         public GraphData()
         {
         }
+
     }
 }

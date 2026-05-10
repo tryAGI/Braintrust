@@ -95,5 +95,6 @@ namespace Braintrust
         public FacetData()
         {
         }
+
     }
 }

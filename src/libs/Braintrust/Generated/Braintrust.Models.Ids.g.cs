@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::System.Guid PickGuid() => IsGuid
+            ? Guid!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Guid' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::System.Guid>? IdsVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = IdsVariant2;
             return IsIdsVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::System.Guid> PickIdsVariant2() => IsIdsVariant2
+            ? IdsVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'IdsVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

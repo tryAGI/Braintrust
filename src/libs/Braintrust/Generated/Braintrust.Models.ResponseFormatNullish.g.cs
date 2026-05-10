@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ResponseFormatNullishJsonObject PickJsonObject() => IsJsonObject
+            ? JsonObject!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonObject' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ResponseFormatNullishJsonSchema? JsonSchema { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = JsonSchema;
             return IsJsonSchema;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.ResponseFormatNullishJsonSchema PickJsonSchema() => IsJsonSchema
+            ? JsonSchema!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonSchema' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ResponseFormatNullishText PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? ResponseFormatNullishVariant4 { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Braintrust
             value = ResponseFormatNullishVariant4;
             return IsResponseFormatNullishVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickResponseFormatNullishVariant4() => IsResponseFormatNullishVariant4
+            ? ResponseFormatNullishVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ResponseFormatNullishVariant4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

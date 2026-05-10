@@ -52,5 +52,6 @@ namespace Braintrust
         public CrossObjectInsertRequestDataset2()
         {
         }
+
     }
 }

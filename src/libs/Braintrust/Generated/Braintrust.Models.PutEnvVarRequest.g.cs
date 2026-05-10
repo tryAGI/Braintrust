@@ -100,5 +100,6 @@ namespace Braintrust
         public PutEnvVarRequest()
         {
         }
+
     }
 }

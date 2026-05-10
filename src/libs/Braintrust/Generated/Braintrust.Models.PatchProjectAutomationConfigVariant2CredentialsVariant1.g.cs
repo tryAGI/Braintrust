@@ -64,5 +64,6 @@ namespace Braintrust
         public PatchProjectAutomationConfigVariant2CredentialsVariant1()
         {
         }
+
     }
 }

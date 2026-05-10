@@ -147,5 +147,6 @@ namespace Braintrust
         public TopicAutomationConfig()
         {
         }
+
     }
 }
