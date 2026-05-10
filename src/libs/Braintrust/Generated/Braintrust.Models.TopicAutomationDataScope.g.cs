@@ -149,6 +149,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static TopicAutomationDataScope FromTopicAutomationDataScopeVariant1(global::Braintrust.TopicAutomationDataScopeVariant1? value) => new TopicAutomationDataScope(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TopicAutomationDataScope(global::Braintrust.TopicAutomationDataScopeVariant2 value) => new TopicAutomationDataScope((global::Braintrust.TopicAutomationDataScopeVariant2?)value);
 
         /// <summary>
@@ -167,6 +172,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static TopicAutomationDataScope FromTopicAutomationDataScopeVariant2(global::Braintrust.TopicAutomationDataScopeVariant2? value) => new TopicAutomationDataScope(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TopicAutomationDataScope(global::Braintrust.TopicAutomationDataScopeVariant3 value) => new TopicAutomationDataScope((global::Braintrust.TopicAutomationDataScopeVariant3?)value);
 
         /// <summary>
@@ -181,6 +191,11 @@ namespace Braintrust
         {
             TopicAutomationDataScopeVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TopicAutomationDataScope FromTopicAutomationDataScopeVariant3(global::Braintrust.TopicAutomationDataScopeVariant3? value) => new TopicAutomationDataScope(value);
 
         /// <summary>
         /// 

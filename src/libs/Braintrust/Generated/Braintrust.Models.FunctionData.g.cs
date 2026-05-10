@@ -299,6 +299,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionData FromPrompt(global::Braintrust.FunctionDataPrompt? value) => new FunctionData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FunctionDataCode value) => new FunctionData((global::Braintrust.FunctionDataCode?)value);
 
         /// <summary>
@@ -313,6 +318,11 @@ namespace Braintrust
         {
             Code = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionData FromCode(global::Braintrust.FunctionDataCode? value) => new FunctionData(value);
 
         /// <summary>
         /// 
@@ -335,6 +345,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionData FromGraph(global::Braintrust.GraphData? value) => new FunctionData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FunctionDataRemoteEval value) => new FunctionData((global::Braintrust.FunctionDataRemoteEval?)value);
 
         /// <summary>
@@ -349,6 +364,11 @@ namespace Braintrust
         {
             RemoteEval = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionData FromRemoteEval(global::Braintrust.FunctionDataRemoteEval? value) => new FunctionData(value);
 
         /// <summary>
         /// 
@@ -371,6 +391,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionData FromGlobal(global::Braintrust.FunctionDataGlobal? value) => new FunctionData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FacetData value) => new FunctionData((global::Braintrust.FacetData?)value);
 
         /// <summary>
@@ -385,6 +410,11 @@ namespace Braintrust
         {
             Facet = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionData FromFacet(global::Braintrust.FacetData? value) => new FunctionData(value);
 
         /// <summary>
         /// 
@@ -407,6 +437,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionData FromBatchedFacet(global::Braintrust.BatchedFacetData? value) => new FunctionData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FunctionDataParameters value) => new FunctionData((global::Braintrust.FunctionDataParameters?)value);
 
         /// <summary>
@@ -425,6 +460,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionData FromParameters(global::Braintrust.FunctionDataParameters? value) => new FunctionData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionData(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object> value) => new FunctionData((global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?)value);
 
         /// <summary>
@@ -439,6 +479,11 @@ namespace Braintrust
         {
             FunctionDataVariant9 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionData FromFunctionDataVariant9(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value) => new FunctionData(value);
 
         /// <summary>
         /// 

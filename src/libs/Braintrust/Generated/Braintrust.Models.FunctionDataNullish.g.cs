@@ -329,6 +329,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromPrompt(global::Braintrust.FunctionDataNullishPrompt? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.FunctionDataNullishCode value) => new FunctionDataNullish((global::Braintrust.FunctionDataNullishCode?)value);
 
         /// <summary>
@@ -343,6 +348,11 @@ namespace Braintrust
         {
             Code = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromCode(global::Braintrust.FunctionDataNullishCode? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 
@@ -365,6 +375,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromGraph(global::Braintrust.GraphData? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.FunctionDataNullishRemoteEval value) => new FunctionDataNullish((global::Braintrust.FunctionDataNullishRemoteEval?)value);
 
         /// <summary>
@@ -379,6 +394,11 @@ namespace Braintrust
         {
             RemoteEval = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromRemoteEval(global::Braintrust.FunctionDataNullishRemoteEval? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 
@@ -401,6 +421,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromGlobal(global::Braintrust.FunctionDataNullishGlobal? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.FacetData value) => new FunctionDataNullish((global::Braintrust.FacetData?)value);
 
         /// <summary>
@@ -415,6 +440,11 @@ namespace Braintrust
         {
             Facet = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromFacet(global::Braintrust.FacetData? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 
@@ -437,6 +467,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromBatchedFacet(global::Braintrust.BatchedFacetData? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.FunctionDataNullishParameters value) => new FunctionDataNullish((global::Braintrust.FunctionDataNullishParameters?)value);
 
         /// <summary>
@@ -455,6 +490,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromParameters(global::Braintrust.FunctionDataNullishParameters? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object> value) => new FunctionDataNullish((global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?)value);
 
         /// <summary>
@@ -469,6 +509,11 @@ namespace Braintrust
         {
             FunctionDataNullishVariant9 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromFunctionDataNullishVariant9(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 

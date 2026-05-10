@@ -239,6 +239,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionId FromId1(global::Braintrust.FunctionIdFunctionId1? value) => new FunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdProjectSlug value) => new FunctionId((global::Braintrust.FunctionIdProjectSlug?)value);
 
         /// <summary>
@@ -253,6 +258,11 @@ namespace Braintrust
         {
             ProjectSlug = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionId FromProjectSlug(global::Braintrust.FunctionIdProjectSlug? value) => new FunctionId(value);
 
         /// <summary>
         /// 
@@ -275,6 +285,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionId FromGlobalFunction(global::Braintrust.FunctionIdGlobalFunction? value) => new FunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdPromptSessionId value) => new FunctionId((global::Braintrust.FunctionIdPromptSessionId?)value);
 
         /// <summary>
@@ -289,6 +304,11 @@ namespace Braintrust
         {
             PromptSessionId = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionId FromPromptSessionId(global::Braintrust.FunctionIdPromptSessionId? value) => new FunctionId(value);
 
         /// <summary>
         /// 
@@ -311,6 +331,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionId FromInlineCode(global::Braintrust.FunctionIdInlineCode? value) => new FunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdInlineFunction value) => new FunctionId((global::Braintrust.FunctionIdInlineFunction?)value);
 
         /// <summary>
@@ -329,6 +354,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionId FromInlineFunction(global::Braintrust.FunctionIdInlineFunction? value) => new FunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdInlinePrompt value) => new FunctionId((global::Braintrust.FunctionIdInlinePrompt?)value);
 
         /// <summary>
@@ -343,6 +373,11 @@ namespace Braintrust
         {
             InlinePrompt = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionId FromInlinePrompt(global::Braintrust.FunctionIdInlinePrompt? value) => new FunctionId(value);
 
         /// <summary>
         /// 

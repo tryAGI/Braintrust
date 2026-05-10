@@ -119,6 +119,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static SavedFunctionId FromFunction(global::Braintrust.SavedFunctionIdFunction? value) => new SavedFunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SavedFunctionId(global::Braintrust.SavedFunctionIdGlobal value) => new SavedFunctionId((global::Braintrust.SavedFunctionIdGlobal?)value);
 
         /// <summary>
@@ -133,6 +138,11 @@ namespace Braintrust
         {
             Global = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SavedFunctionId FromGlobal(global::Braintrust.SavedFunctionIdGlobal? value) => new SavedFunctionId(value);
 
         /// <summary>
         /// 

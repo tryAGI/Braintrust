@@ -89,6 +89,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static Ids FromGuid(global::System.Guid? value) => new Ids(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Ids(
             global::System.Guid? guid,
             global::System.Collections.Generic.IList<global::System.Guid>? idsVariant2

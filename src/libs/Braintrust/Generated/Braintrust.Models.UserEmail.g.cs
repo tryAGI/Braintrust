@@ -89,6 +89,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static UserEmail FromUserEmailVariant1(string? value) => new UserEmail(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public UserEmail(
             string? userEmailVariant1,
             global::System.Collections.Generic.IList<string>? userEmailVariant2

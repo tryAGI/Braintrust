@@ -239,6 +239,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ChatCompletionMessageParam FromSystem(global::Braintrust.ChatCompletionMessageParamSystem? value) => new ChatCompletionMessageParam(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamUser value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamUser?)value);
 
         /// <summary>
@@ -253,6 +258,11 @@ namespace Braintrust
         {
             User = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatCompletionMessageParam FromUser(global::Braintrust.ChatCompletionMessageParamUser? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
         /// 
@@ -275,6 +285,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ChatCompletionMessageParam FromAssistant(global::Braintrust.ChatCompletionMessageParamAssistant? value) => new ChatCompletionMessageParam(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamTool value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamTool?)value);
 
         /// <summary>
@@ -289,6 +304,11 @@ namespace Braintrust
         {
             Tool = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatCompletionMessageParam FromTool(global::Braintrust.ChatCompletionMessageParamTool? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
         /// 
@@ -311,6 +331,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ChatCompletionMessageParam FromFunction(global::Braintrust.ChatCompletionMessageParamFunction? value) => new ChatCompletionMessageParam(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamDeveloper value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamDeveloper?)value);
 
         /// <summary>
@@ -329,6 +354,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ChatCompletionMessageParam FromDeveloper(global::Braintrust.ChatCompletionMessageParamDeveloper? value) => new ChatCompletionMessageParam(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamFallback value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamFallback?)value);
 
         /// <summary>
@@ -343,6 +373,11 @@ namespace Braintrust
         {
             Fallback = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatCompletionMessageParam FromFallback(global::Braintrust.ChatCompletionMessageParamFallback? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
         /// 

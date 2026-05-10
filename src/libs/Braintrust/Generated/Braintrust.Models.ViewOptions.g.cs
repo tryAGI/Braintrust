@@ -119,6 +119,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ViewOptions FromMonitorViewOptions(global::Braintrust.ViewOptionsMonitorViewOptions? value) => new ViewOptions(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ViewOptions(global::Braintrust.ViewOptionsTableViewOptions value) => new ViewOptions((global::Braintrust.ViewOptionsTableViewOptions?)value);
 
         /// <summary>
@@ -133,6 +138,11 @@ namespace Braintrust
         {
             TableViewOptions = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ViewOptions FromTableViewOptions(global::Braintrust.ViewOptionsTableViewOptions? value) => new ViewOptions(value);
 
         /// <summary>
         /// 

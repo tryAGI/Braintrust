@@ -149,6 +149,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ProjectScoreCategories FromWeighted(global::System.Collections.Generic.Dictionary<string, double>? value) => new ProjectScoreCategories(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public ProjectScoreCategories(
             global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>? categorical,
             global::System.Collections.Generic.Dictionary<string, double>? weighted,
