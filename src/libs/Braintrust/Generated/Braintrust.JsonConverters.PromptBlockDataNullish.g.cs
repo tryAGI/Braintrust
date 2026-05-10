@@ -97,6 +97,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataNullishChat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataNullishChat> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataNullishChat).Name}");
                     chat = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -107,9 +108,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (chat == null && completion == null && promptBlockDataNullishVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataNullishCompletion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataNullishCompletion> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataNullishCompletion).Name}");
                     completion = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -120,9 +125,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (chat == null && completion == null && promptBlockDataNullishVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
                     promptBlockDataNullishVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
