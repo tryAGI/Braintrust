@@ -168,6 +168,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsOpenAIModelParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsOpenAIModelParams> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsOpenAIModelParams).Name}");
                     openAIModelParams = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -178,9 +179,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIModelParams == null && anthropicModelParams == null && googleModelParams == null && windowAIModelParams == null && jsCompletionParams == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsAnthropicModelParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsAnthropicModelParams> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsAnthropicModelParams).Name}");
                     anthropicModelParams = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -191,9 +196,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIModelParams == null && anthropicModelParams == null && googleModelParams == null && windowAIModelParams == null && jsCompletionParams == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsGoogleModelParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsGoogleModelParams> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsGoogleModelParams).Name}");
                     googleModelParams = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -204,9 +213,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIModelParams == null && anthropicModelParams == null && googleModelParams == null && windowAIModelParams == null && jsCompletionParams == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsWindowAIModelParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsWindowAIModelParams> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsWindowAIModelParams).Name}");
                     windowAIModelParams = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -217,9 +230,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (openAIModelParams == null && anthropicModelParams == null && googleModelParams == null && windowAIModelParams == null && jsCompletionParams == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ModelParamsJsCompletionParams), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ModelParamsJsCompletionParams> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ModelParamsJsCompletionParams).Name}");
                     jsCompletionParams = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

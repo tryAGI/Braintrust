@@ -108,7 +108,10 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (userEmailVariant1 == null && userEmailVariant2 == null)
+            {
                 try
                 {
 

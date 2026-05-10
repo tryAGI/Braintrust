@@ -234,6 +234,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphNodeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphNodeVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphNodeVariant1).Name}");
                     graphNodeVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -244,9 +245,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (graphNodeVariant1 == null && graphNodeVariant2 == null && graphNodeVariant3 == null && graphNodeVariant4 == null && graphNodeVariant5 == null && graphNodeVariant6 == null && graphNodeVariant7 == null && graphNodeVariant8 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphNodeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphNodeVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphNodeVariant2).Name}");
                     graphNodeVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -257,9 +262,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (graphNodeVariant1 == null && graphNodeVariant2 == null && graphNodeVariant3 == null && graphNodeVariant4 == null && graphNodeVariant5 == null && graphNodeVariant6 == null && graphNodeVariant7 == null && graphNodeVariant8 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphNodeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphNodeVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphNodeVariant3).Name}");
                     graphNodeVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -270,9 +279,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (graphNodeVariant1 == null && graphNodeVariant2 == null && graphNodeVariant3 == null && graphNodeVariant4 == null && graphNodeVariant5 == null && graphNodeVariant6 == null && graphNodeVariant7 == null && graphNodeVariant8 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphNodeVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphNodeVariant4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphNodeVariant4).Name}");
                     graphNodeVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -283,9 +296,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (graphNodeVariant1 == null && graphNodeVariant2 == null && graphNodeVariant3 == null && graphNodeVariant4 == null && graphNodeVariant5 == null && graphNodeVariant6 == null && graphNodeVariant7 == null && graphNodeVariant8 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphNodeVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphNodeVariant5> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphNodeVariant5).Name}");
                     graphNodeVariant5 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -296,9 +313,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (graphNodeVariant1 == null && graphNodeVariant2 == null && graphNodeVariant3 == null && graphNodeVariant4 == null && graphNodeVariant5 == null && graphNodeVariant6 == null && graphNodeVariant7 == null && graphNodeVariant8 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphNodeVariant6), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphNodeVariant6> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphNodeVariant6).Name}");
                     graphNodeVariant6 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -309,9 +330,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (graphNodeVariant1 == null && graphNodeVariant2 == null && graphNodeVariant3 == null && graphNodeVariant4 == null && graphNodeVariant5 == null && graphNodeVariant6 == null && graphNodeVariant7 == null && graphNodeVariant8 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphNodeVariant7), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphNodeVariant7> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphNodeVariant7).Name}");
                     graphNodeVariant7 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -322,9 +347,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (graphNodeVariant1 == null && graphNodeVariant2 == null && graphNodeVariant3 == null && graphNodeVariant4 == null && graphNodeVariant5 == null && graphNodeVariant6 == null && graphNodeVariant7 == null && graphNodeVariant8 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.GraphNodeVariant8), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.GraphNodeVariant8> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.GraphNodeVariant8).Name}");
                     graphNodeVariant8 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
