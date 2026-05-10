@@ -71,5 +71,6 @@ namespace Braintrust
         public FunctionDataCodeData2()
         {
         }
+
     }
 }

@@ -131,5 +131,6 @@ namespace Braintrust
         public CreateServiceTokenOutput()
         {
         }
+
     }
 }

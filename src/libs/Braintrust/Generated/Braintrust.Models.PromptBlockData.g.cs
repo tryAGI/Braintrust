@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.PromptBlockDataChat PickChat() => IsChat
+            ? Chat!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Chat' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PromptBlockDataCompletion? Completion { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = Completion;
             return IsCompletion;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.PromptBlockDataCompletion PickCompletion() => IsCompletion
+            ? Completion!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Completion' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

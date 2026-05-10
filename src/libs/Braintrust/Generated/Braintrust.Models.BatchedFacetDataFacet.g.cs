@@ -87,5 +87,6 @@ namespace Braintrust
         public BatchedFacetDataFacet()
         {
         }
+
     }
 }

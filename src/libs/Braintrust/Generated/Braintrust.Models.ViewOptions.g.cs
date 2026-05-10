@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ViewOptionsMonitorViewOptions PickMonitorViewOptions() => IsMonitorViewOptions
+            ? MonitorViewOptions!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'MonitorViewOptions' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ViewOptionsTableViewOptions? TableViewOptions { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ViewOptionsTableViewOptions PickTableViewOptions() => IsTableViewOptions
+            ? TableViewOptions!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'TableViewOptions' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? ViewOptionsVariant3 { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Braintrust
             value = ViewOptionsVariant3;
             return IsViewOptionsVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickViewOptionsVariant3() => IsViewOptionsVariant3
+            ? ViewOptionsVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ViewOptionsVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

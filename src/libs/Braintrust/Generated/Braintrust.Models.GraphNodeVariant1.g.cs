@@ -74,5 +74,6 @@ namespace Braintrust
         public GraphNodeVariant1()
         {
         }
+
     }
 }

@@ -94,5 +94,6 @@ namespace Braintrust
         public CodeBundleLocationVariant3()
         {
         }
+
     }
 }

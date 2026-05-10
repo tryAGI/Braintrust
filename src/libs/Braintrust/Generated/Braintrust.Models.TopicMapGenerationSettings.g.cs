@@ -106,5 +106,6 @@ namespace Braintrust
         public TopicMapGenerationSettings()
         {
         }
+
     }
 }

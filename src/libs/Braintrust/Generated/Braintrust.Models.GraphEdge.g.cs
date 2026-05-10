@@ -63,5 +63,6 @@ namespace Braintrust
         public GraphEdge()
         {
         }
+
     }
 }

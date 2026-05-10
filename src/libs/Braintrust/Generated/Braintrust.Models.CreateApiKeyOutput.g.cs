@@ -142,5 +142,6 @@ namespace Braintrust
         public CreateApiKeyOutput()
         {
         }
+
     }
 }

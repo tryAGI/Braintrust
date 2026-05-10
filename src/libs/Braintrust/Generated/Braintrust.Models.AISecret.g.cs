@@ -115,5 +115,6 @@ namespace Braintrust
         public AISecret()
         {
         }
+
     }
 }

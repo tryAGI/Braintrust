@@ -61,5 +61,6 @@ namespace Braintrust
         public PromptDataNullishToolFunctionVariant2Function()
         {
         }
+
     }
 }

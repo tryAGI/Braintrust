@@ -49,5 +49,6 @@ namespace Braintrust
         public PatchOrganizationMembersInviteUsersServiceAccount()
         {
         }
+
     }
 }

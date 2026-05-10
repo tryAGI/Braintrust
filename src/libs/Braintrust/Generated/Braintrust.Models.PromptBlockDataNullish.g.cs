@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.PromptBlockDataNullishChat PickChat() => IsChat
+            ? Chat!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Chat' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PromptBlockDataNullishCompletion? Completion { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.PromptBlockDataNullishCompletion PickCompletion() => IsCompletion
+            ? Completion!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Completion' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? PromptBlockDataNullishVariant3 { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Braintrust
             value = PromptBlockDataNullishVariant3;
             return IsPromptBlockDataNullishVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickPromptBlockDataNullishVariant3() => IsPromptBlockDataNullishVariant3
+            ? PromptBlockDataNullishVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PromptBlockDataNullishVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

@@ -64,5 +64,6 @@ namespace Braintrust
         public OnlineScoreConfigScorerVariant2Global()
         {
         }
+
     }
 }

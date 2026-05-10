@@ -205,5 +205,6 @@ namespace Braintrust
         public ViewOptionsTableViewOptions()
         {
         }
+
     }
 }

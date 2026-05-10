@@ -50,5 +50,6 @@ namespace Braintrust
         public CodeBundleLocationExperimentPositionScorer()
         {
         }
+
     }
 }
