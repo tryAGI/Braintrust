@@ -149,6 +149,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ResponseFormatNullish FromJsonObject(global::Braintrust.ResponseFormatNullishJsonObject? value) => new ResponseFormatNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResponseFormatNullish(global::Braintrust.ResponseFormatNullishJsonSchema value) => new ResponseFormatNullish((global::Braintrust.ResponseFormatNullishJsonSchema?)value);
 
         /// <summary>
@@ -167,6 +172,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ResponseFormatNullish FromJsonSchema(global::Braintrust.ResponseFormatNullishJsonSchema? value) => new ResponseFormatNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResponseFormatNullish(global::Braintrust.ResponseFormatNullishText value) => new ResponseFormatNullish((global::Braintrust.ResponseFormatNullishText?)value);
 
         /// <summary>
@@ -181,6 +191,11 @@ namespace Braintrust
         {
             Text = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResponseFormatNullish FromText(global::Braintrust.ResponseFormatNullishText? value) => new ResponseFormatNullish(value);
 
         /// <summary>
         /// 

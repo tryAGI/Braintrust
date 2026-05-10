@@ -89,6 +89,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static InvokeParent FromSpanParentStruct(global::Braintrust.InvokeParentSpanParentStruct? value) => new InvokeParent(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator InvokeParent(string value) => new InvokeParent((string?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Braintrust
         {
             InvokeParentVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InvokeParent FromInvokeParentVariant2(string? value) => new InvokeParent(value);
 
         /// <summary>
         /// 

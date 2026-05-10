@@ -89,6 +89,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static PromptBlockData FromChat(global::Braintrust.PromptBlockDataChat? value) => new PromptBlockData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptBlockData(global::Braintrust.PromptBlockDataCompletion value) => new PromptBlockData((global::Braintrust.PromptBlockDataCompletion?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Braintrust
         {
             Completion = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptBlockData FromCompletion(global::Braintrust.PromptBlockDataCompletion? value) => new PromptBlockData(value);
 
         /// <summary>
         /// 

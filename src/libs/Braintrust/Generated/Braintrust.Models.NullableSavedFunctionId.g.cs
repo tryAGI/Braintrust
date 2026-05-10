@@ -119,6 +119,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static NullableSavedFunctionId FromFunction(global::Braintrust.NullableSavedFunctionIdFunction? value) => new NullableSavedFunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NullableSavedFunctionId(global::Braintrust.NullableSavedFunctionIdGlobal value) => new NullableSavedFunctionId((global::Braintrust.NullableSavedFunctionIdGlobal?)value);
 
         /// <summary>
@@ -133,6 +138,11 @@ namespace Braintrust
         {
             Global = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NullableSavedFunctionId FromGlobal(global::Braintrust.NullableSavedFunctionIdGlobal? value) => new NullableSavedFunctionId(value);
 
         /// <summary>
         /// 

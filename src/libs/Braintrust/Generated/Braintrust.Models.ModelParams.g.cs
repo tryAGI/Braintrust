@@ -179,6 +179,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ModelParams FromOpenAIModelParams(global::Braintrust.ModelParamsOpenAIModelParams? value) => new ModelParams(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelParams(global::Braintrust.ModelParamsAnthropicModelParams value) => new ModelParams((global::Braintrust.ModelParamsAnthropicModelParams?)value);
 
         /// <summary>
@@ -193,6 +198,11 @@ namespace Braintrust
         {
             AnthropicModelParams = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelParams FromAnthropicModelParams(global::Braintrust.ModelParamsAnthropicModelParams? value) => new ModelParams(value);
 
         /// <summary>
         /// 
@@ -215,6 +225,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ModelParams FromGoogleModelParams(global::Braintrust.ModelParamsGoogleModelParams? value) => new ModelParams(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelParams(global::Braintrust.ModelParamsWindowAIModelParams value) => new ModelParams((global::Braintrust.ModelParamsWindowAIModelParams?)value);
 
         /// <summary>
@@ -233,6 +248,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ModelParams FromWindowAIModelParams(global::Braintrust.ModelParamsWindowAIModelParams? value) => new ModelParams(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelParams(global::Braintrust.ModelParamsJsCompletionParams value) => new ModelParams((global::Braintrust.ModelParamsJsCompletionParams?)value);
 
         /// <summary>
@@ -247,6 +267,11 @@ namespace Braintrust
         {
             JsCompletionParams = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelParams FromJsCompletionParams(global::Braintrust.ModelParamsJsCompletionParams? value) => new ModelParams(value);
 
         /// <summary>
         /// 

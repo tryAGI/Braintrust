@@ -269,6 +269,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static GraphNode FromGraphNodeVariant1(global::Braintrust.GraphNodeVariant1? value) => new GraphNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GraphNode(global::Braintrust.GraphNodeVariant2 value) => new GraphNode((global::Braintrust.GraphNodeVariant2?)value);
 
         /// <summary>
@@ -283,6 +288,11 @@ namespace Braintrust
         {
             GraphNodeVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GraphNode FromGraphNodeVariant2(global::Braintrust.GraphNodeVariant2? value) => new GraphNode(value);
 
         /// <summary>
         /// 
@@ -305,6 +315,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static GraphNode FromGraphNodeVariant3(global::Braintrust.GraphNodeVariant3? value) => new GraphNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GraphNode(global::Braintrust.GraphNodeVariant4 value) => new GraphNode((global::Braintrust.GraphNodeVariant4?)value);
 
         /// <summary>
@@ -319,6 +334,11 @@ namespace Braintrust
         {
             GraphNodeVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GraphNode FromGraphNodeVariant4(global::Braintrust.GraphNodeVariant4? value) => new GraphNode(value);
 
         /// <summary>
         /// 
@@ -341,6 +361,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static GraphNode FromGraphNodeVariant5(global::Braintrust.GraphNodeVariant5? value) => new GraphNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GraphNode(global::Braintrust.GraphNodeVariant6 value) => new GraphNode((global::Braintrust.GraphNodeVariant6?)value);
 
         /// <summary>
@@ -355,6 +380,11 @@ namespace Braintrust
         {
             GraphNodeVariant6 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GraphNode FromGraphNodeVariant6(global::Braintrust.GraphNodeVariant6? value) => new GraphNode(value);
 
         /// <summary>
         /// 
@@ -377,6 +407,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static GraphNode FromGraphNodeVariant7(global::Braintrust.GraphNodeVariant7? value) => new GraphNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GraphNode(global::Braintrust.GraphNodeVariant8 value) => new GraphNode((global::Braintrust.GraphNodeVariant8?)value);
 
         /// <summary>
@@ -391,6 +426,11 @@ namespace Braintrust
         {
             GraphNodeVariant8 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GraphNode FromGraphNodeVariant8(global::Braintrust.GraphNodeVariant8? value) => new GraphNode(value);
 
         /// <summary>
         /// 

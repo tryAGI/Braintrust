@@ -119,6 +119,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static PromptBlockDataNullish FromChat(global::Braintrust.PromptBlockDataNullishChat? value) => new PromptBlockDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptBlockDataNullish(global::Braintrust.PromptBlockDataNullishCompletion value) => new PromptBlockDataNullish((global::Braintrust.PromptBlockDataNullishCompletion?)value);
 
         /// <summary>
@@ -133,6 +138,11 @@ namespace Braintrust
         {
             Completion = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptBlockDataNullish FromCompletion(global::Braintrust.PromptBlockDataNullishCompletion? value) => new PromptBlockDataNullish(value);
 
         /// <summary>
         /// 
