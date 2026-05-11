@@ -160,6 +160,8 @@ namespace Braintrust
                     httpRequestMessage: __httpRequest,
                     request: request);
 
+                global::Braintrust.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 
