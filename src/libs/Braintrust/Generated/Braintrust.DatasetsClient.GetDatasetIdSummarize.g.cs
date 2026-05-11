@@ -169,6 +169,8 @@ namespace Braintrust
                     datasetId: datasetId!,
                     summarizeData: summarizeData);
 
+                global::Braintrust.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 

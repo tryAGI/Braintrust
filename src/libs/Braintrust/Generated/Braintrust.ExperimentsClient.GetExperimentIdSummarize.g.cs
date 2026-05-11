@@ -183,6 +183,8 @@ namespace Braintrust
                     summarizeScores: summarizeScores,
                     comparisonExperimentId: comparisonExperimentId);
 
+                global::Braintrust.AutoSDKHttpRequestOptions.StampAuthorizationOverride(__httpRequest);
+
                 return __httpRequest;
             }
 
