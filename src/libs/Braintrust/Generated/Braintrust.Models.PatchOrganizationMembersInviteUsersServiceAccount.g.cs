@@ -16,7 +16,7 @@ namespace Braintrust
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        /// Omit this field and create the token in the Braintrust UI ([**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens)). If you include this field, the API call will return a 403.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("token_name")]
         public string? TokenName { get; set; }
@@ -31,7 +31,9 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="PatchOrganizationMembersInviteUsersServiceAccount" /> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="tokenName"></param>
+        /// <param name="tokenName">
+        /// Omit this field and create the token in the Braintrust UI ([**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens)). If you include this field, the API call will return a 403.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

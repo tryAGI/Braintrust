@@ -52,7 +52,8 @@ namespace Braintrust
 
         /// <summary>
         /// Modify organization membership<br/>
-        /// Modify organization membership
+        /// Modify organization membership.<br/>
+        /// Organization owners can use this endpoint to create service accounts, but service tokens for those accounts must be created in the Braintrust UI, at [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -75,7 +76,8 @@ namespace Braintrust
         }
         /// <summary>
         /// Modify organization membership<br/>
-        /// Modify organization membership
+        /// Modify organization membership.<br/>
+        /// Organization owners can use this endpoint to create service accounts, but service tokens for those accounts must be created in the Braintrust UI, at [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens).
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -638,7 +640,8 @@ namespace Braintrust
         }
         /// <summary>
         /// Modify organization membership<br/>
-        /// Modify organization membership
+        /// Modify organization membership.<br/>
+        /// Organization owners can use this endpoint to create service accounts, but service tokens for those accounts must be created in the Braintrust UI, at [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens).
         /// </summary>
         /// <param name="inviteUsers">
         /// Users to invite to the organization

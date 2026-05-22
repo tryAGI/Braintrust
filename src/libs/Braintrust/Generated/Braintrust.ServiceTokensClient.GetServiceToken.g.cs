@@ -62,7 +62,8 @@ namespace Braintrust
 
         /// <summary>
         /// List service_tokens<br/>
-        /// List out all service_tokens. The service_tokens are sorted by creation date, with the most recently-created service_tokens coming first
+        /// List out all service tokens. They are sorted by creation date, with the most recently-created tokens coming first.<br/>
+        /// To create service tokens, organization owners can go to [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) in the Braintrust UI.
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -112,7 +113,8 @@ namespace Braintrust
         }
         /// <summary>
         /// List service_tokens<br/>
-        /// List out all service_tokens. The service_tokens are sorted by creation date, with the most recently-created service_tokens coming first
+        /// List out all service tokens. They are sorted by creation date, with the most recently-created tokens coming first.<br/>
+        /// To create service tokens, organization owners can go to [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) in the Braintrust UI.
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
