@@ -49,6 +49,7 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("function_call.name")) __score2++;
             if (__jsonProps.Contains("name")) __score2++;
             if (__jsonProps.Contains("reasoning")) __score2++;
+            if (__jsonProps.Contains("reasoning_signature")) __score2++;
             if (__jsonProps.Contains("role")) __score2++;
             if (__jsonProps.Contains("tool_calls")) __score2++;
             var __score3 = 0;
