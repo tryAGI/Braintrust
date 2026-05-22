@@ -2,7 +2,7 @@
 
 namespace Braintrust
 {
-    public sealed partial class PostServiceTokenRequest
+    public sealed partial class CodeBundleLocationExperimentPositionClassifier
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -34,14 +34,14 @@ namespace Braintrust
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Braintrust.PostServiceTokenRequest? FromJson(
+        public static global::Braintrust.CodeBundleLocationExperimentPositionClassifier? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Braintrust.PostServiceTokenRequest),
-                jsonSerializerContext) as global::Braintrust.PostServiceTokenRequest;
+                typeof(global::Braintrust.CodeBundleLocationExperimentPositionClassifier),
+                jsonSerializerContext) as global::Braintrust.CodeBundleLocationExperimentPositionClassifier;
         }
 
         /// <summary>
@@ -51,11 +51,11 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Braintrust.PostServiceTokenRequest? FromJson(
+        public static global::Braintrust.CodeBundleLocationExperimentPositionClassifier? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.PostServiceTokenRequest>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Braintrust.CodeBundleLocationExperimentPositionClassifier>(
                 json,
                 jsonSerializerOptions);
         }
@@ -63,14 +63,14 @@ namespace Braintrust
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Braintrust.PostServiceTokenRequest?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Braintrust.CodeBundleLocationExperimentPositionClassifier?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Braintrust.PostServiceTokenRequest),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Braintrust.PostServiceTokenRequest;
+                typeof(global::Braintrust.CodeBundleLocationExperimentPositionClassifier),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Braintrust.CodeBundleLocationExperimentPositionClassifier;
         }
 
         /// <summary>
@@ -80,11 +80,11 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Braintrust.PostServiceTokenRequest?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Braintrust.CodeBundleLocationExperimentPositionClassifier?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Braintrust.PostServiceTokenRequest?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Braintrust.CodeBundleLocationExperimentPositionClassifier?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

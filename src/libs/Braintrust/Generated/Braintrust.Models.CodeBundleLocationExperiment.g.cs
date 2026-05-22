@@ -26,9 +26,9 @@ namespace Braintrust
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("position")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer, global::Braintrust.CodeBundleLocationExperimentPositionClassifier>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Braintrust.AnyOf<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer> Position { get; set; }
+        public required global::Braintrust.AnyOf<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer, global::Braintrust.CodeBundleLocationExperimentPositionClassifier> Position { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +47,7 @@ namespace Braintrust
 #endif
         public CodeBundleLocationExperiment(
             string evalName,
-            global::Braintrust.AnyOf<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer> position,
+            global::Braintrust.AnyOf<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer, global::Braintrust.CodeBundleLocationExperimentPositionClassifier> position,
             global::Braintrust.CodeBundleLocationExperimentType type)
         {
             this.Type = type;

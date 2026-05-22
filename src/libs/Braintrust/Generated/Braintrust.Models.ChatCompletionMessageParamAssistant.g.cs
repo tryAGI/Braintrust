@@ -47,6 +47,12 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageReasoning>? Reasoning { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reasoning_signature")]
+        public string? ReasoningSignature { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -61,6 +67,7 @@ namespace Braintrust
         /// <param name="name"></param>
         /// <param name="toolCalls"></param>
         /// <param name="reasoning"></param>
+        /// <param name="reasoningSignature"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -70,7 +77,8 @@ namespace Braintrust
             global::Braintrust.ChatCompletionMessageParamAssistantFunctionCall? functionCall,
             string? name,
             global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageToolCall>? toolCalls,
-            global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageReasoning>? reasoning)
+            global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageReasoning>? reasoning,
+            string? reasoningSignature)
         {
             this.Role = role;
             this.Content = content;
@@ -78,6 +86,7 @@ namespace Braintrust
             this.Name = name;
             this.ToolCalls = toolCalls;
             this.Reasoning = reasoning;
+            this.ReasoningSignature = reasoningSignature;
         }
 
         /// <summary>

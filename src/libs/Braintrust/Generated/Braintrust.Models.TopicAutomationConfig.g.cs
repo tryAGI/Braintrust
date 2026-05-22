@@ -23,6 +23,13 @@ namespace Braintrust
         public required double SamplingRate { get; set; }
 
         /// <summary>
+        /// Optional facet model override for topic automation
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("facet_model")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.TopicAutomationFacetModelJsonConverter))]
+        public global::Braintrust.TopicAutomationFacetModel? FacetModel { get; set; }
+
+        /// <summary>
         /// Facet functions used by the topic automation
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("facet_functions")]
@@ -96,6 +103,9 @@ namespace Braintrust
         /// <param name="eventType">
         /// The type of automation.
         /// </param>
+        /// <param name="facetModel">
+        /// Optional facet model override for topic automation
+        /// </param>
         /// <param name="scope">
         /// Execution scope for topic automation. Defaults to span-level execution.
         /// </param>
@@ -122,6 +132,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>> facetFunctions,
             global::System.Collections.Generic.IList<global::Braintrust.TopicMapFunctionAutomation> topicMapFunctions,
             global::Braintrust.TopicAutomationConfigEventType eventType,
+            global::Braintrust.TopicAutomationFacetModel? facetModel,
             global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? scope,
             global::Braintrust.TopicAutomationDataScope? dataScope,
             string? btqlFilter,
@@ -131,6 +142,7 @@ namespace Braintrust
         {
             this.EventType = eventType;
             this.SamplingRate = samplingRate;
+            this.FacetModel = facetModel;
             this.FacetFunctions = facetFunctions ?? throw new global::System.ArgumentNullException(nameof(facetFunctions));
             this.TopicMapFunctions = topicMapFunctions ?? throw new global::System.ArgumentNullException(nameof(topicMapFunctions));
             this.Scope = scope;
