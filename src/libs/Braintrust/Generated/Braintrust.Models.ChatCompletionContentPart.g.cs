@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ChatCompletionContentPartTextWithTitle PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionContentPartImageWithTitle? ImageUrl { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.ChatCompletionContentPartImageWithTitle PickImageUrl() => IsImageUrl
+            ? ImageUrl!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ImageUrl' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionContentPartFileWithTitle? File { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Braintrust
             value = File;
             return IsFile;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.ChatCompletionContentPartFileWithTitle PickFile() => IsFile
+            ? File!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Braintrust
         {
             Text = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatCompletionContentPart FromText(global::Braintrust.ChatCompletionContentPartTextWithTitle? value) => new ChatCompletionContentPart(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static ChatCompletionContentPart FromImageUrl(global::Braintrust.ChatCompletionContentPartImageWithTitle? value) => new ChatCompletionContentPart(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartFileWithTitle value) => new ChatCompletionContentPart((global::Braintrust.ChatCompletionContentPartFileWithTitle?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Braintrust
         {
             File = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatCompletionContentPart FromFile(global::Braintrust.ChatCompletionContentPartFileWithTitle? value) => new ChatCompletionContentPart(value);
 
         /// <summary>
         /// 

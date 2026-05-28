@@ -79,6 +79,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataChat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataChat> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataChat).Name}");
                     chat = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -89,9 +90,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (chat == null && completion == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataCompletion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataCompletion> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataCompletion).Name}");
                     completion = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

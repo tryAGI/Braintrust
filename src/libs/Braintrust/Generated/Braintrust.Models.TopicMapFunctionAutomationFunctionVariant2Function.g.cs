@@ -61,5 +61,6 @@ namespace Braintrust
         public TopicMapFunctionAutomationFunctionVariant2Function()
         {
         }
+
     }
 }

@@ -44,6 +44,18 @@ namespace Braintrust
         public global::System.DateTime? Created { get; set; }
 
         /// <summary>
+        /// Date of last update to the encrypted secret value itself
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("secret_updated_at")]
+        public global::System.DateTime? SecretUpdatedAt { get; set; }
+
+        /// <summary>
+        /// User id of the last update to the encrypted secret value
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("secret_updated_by_user_id")]
+        public global::System.Guid? SecretUpdatedByUserId { get; set; }
+
+        /// <summary>
         /// Date the environment variable was last used
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("used")]
@@ -54,6 +66,12 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+
+        /// <summary>
+        /// Redacted preview of the stored secret value
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("preview_secret")]
+        public string? PreviewSecret { get; set; }
 
         /// <summary>
         /// Optional classification for the secret (for example, the AI provider name)
@@ -93,11 +111,20 @@ namespace Braintrust
         /// <param name="created">
         /// Date of environment variable creation
         /// </param>
+        /// <param name="secretUpdatedAt">
+        /// Date of last update to the encrypted secret value itself
+        /// </param>
+        /// <param name="secretUpdatedByUserId">
+        /// User id of the last update to the encrypted secret value
+        /// </param>
         /// <param name="used">
         /// Date the environment variable was last used
         /// </param>
         /// <param name="metadata">
         /// Optional metadata associated with the environment variable when managed via the function secrets API
+        /// </param>
+        /// <param name="previewSecret">
+        /// Redacted preview of the stored secret value
         /// </param>
         /// <param name="secretType">
         /// Optional classification for the secret (for example, the AI provider name)
@@ -115,8 +142,11 @@ namespace Braintrust
             global::System.Guid objectId,
             string name,
             global::System.DateTime? created,
+            global::System.DateTime? secretUpdatedAt,
+            global::System.Guid? secretUpdatedByUserId,
             global::System.DateTime? used,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            string? previewSecret,
             string? secretType,
             global::Braintrust.EnvVarSecretCategory? secretCategory)
         {
@@ -125,8 +155,11 @@ namespace Braintrust
             this.ObjectId = objectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Created = created;
+            this.SecretUpdatedAt = secretUpdatedAt;
+            this.SecretUpdatedByUserId = secretUpdatedByUserId;
             this.Used = used;
             this.Metadata = metadata;
+            this.PreviewSecret = previewSecret;
             this.SecretType = secretType;
             this.SecretCategory = secretCategory;
         }
@@ -137,5 +170,6 @@ namespace Braintrust
         public EnvVar()
         {
         }
+
     }
 }

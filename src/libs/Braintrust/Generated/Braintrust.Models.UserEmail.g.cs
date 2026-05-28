@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public string PickUserEmailVariant1() => IsUserEmailVariant1
+            ? UserEmailVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UserEmailVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? UserEmailVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = UserEmailVariant2;
             return IsUserEmailVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<string> PickUserEmailVariant2() => IsUserEmailVariant2
+            ? UserEmailVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UserEmailVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +99,11 @@ namespace Braintrust
         {
             UserEmailVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UserEmail FromUserEmailVariant1(string? value) => new UserEmail(value);
 
         /// <summary>
         /// 

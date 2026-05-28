@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.PromptBlockDataChat PickChat() => IsChat
+            ? Chat!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Chat' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PromptBlockDataCompletion? Completion { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = Completion;
             return IsCompletion;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.PromptBlockDataCompletion PickCompletion() => IsCompletion
+            ? Completion!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Completion' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static PromptBlockData FromChat(global::Braintrust.PromptBlockDataChat? value) => new PromptBlockData(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptBlockData(global::Braintrust.PromptBlockDataCompletion value) => new PromptBlockData((global::Braintrust.PromptBlockDataCompletion?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Braintrust
         {
             Completion = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptBlockData FromCompletion(global::Braintrust.PromptBlockDataCompletion? value) => new PromptBlockData(value);
 
         /// <summary>
         /// 

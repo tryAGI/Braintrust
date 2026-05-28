@@ -112,6 +112,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionContentPartTextWithTitle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionContentPartTextWithTitle> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionContentPartTextWithTitle).Name}");
                     text = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -122,9 +123,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && imageUrl == null && file == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionContentPartImageWithTitle> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionContentPartImageWithTitle).Name}");
                     imageUrl = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -135,9 +140,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (text == null && imageUrl == null && file == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionContentPartFileWithTitle> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionContentPartFileWithTitle).Name}");
                     file = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

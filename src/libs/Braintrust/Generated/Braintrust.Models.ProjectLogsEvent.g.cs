@@ -335,5 +335,6 @@ namespace Braintrust
         public ProjectLogsEvent()
         {
         }
+
     }
 }

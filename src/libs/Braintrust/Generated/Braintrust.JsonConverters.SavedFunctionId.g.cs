@@ -98,6 +98,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.SavedFunctionIdFunction), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.SavedFunctionIdFunction> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.SavedFunctionIdFunction).Name}");
                     function = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -108,9 +109,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (function == null && global == null && savedFunctionIdVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.SavedFunctionIdGlobal), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.SavedFunctionIdGlobal> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.SavedFunctionIdGlobal).Name}");
                     global = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -121,9 +126,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (function == null && global == null && savedFunctionIdVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
                     savedFunctionIdVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

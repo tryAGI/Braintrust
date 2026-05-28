@@ -110,5 +110,6 @@ namespace Braintrust
         public OnlineScoreConfig()
         {
         }
+
     }
 }

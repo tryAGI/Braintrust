@@ -42,5 +42,6 @@ namespace Braintrust
         public GetUserResponse()
         {
         }
+
     }
 }

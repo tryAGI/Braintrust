@@ -21,7 +21,7 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<string>? Emails { get; set; }
 
         /// <summary>
-        /// Service accounts to create
+        /// Service accounts to create. Users with organization-owner permissions can create service accounts via the API, but the service tokens required to authenticate those accounts must be created in the Braintrust UI.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("service_accounts")]
         public global::System.Collections.Generic.IList<global::Braintrust.PatchOrganizationMembersInviteUsersServiceAccount>? ServiceAccounts { get; set; }
@@ -72,7 +72,7 @@ namespace Braintrust
         /// Emails of users to invite
         /// </param>
         /// <param name="serviceAccounts">
-        /// Service accounts to create
+        /// Service accounts to create. Users with organization-owner permissions can create service accounts via the API, but the service tokens required to authenticate those accounts must be created in the Braintrust UI.
         /// </param>
         /// <param name="sendInviteEmails">
         /// If true, send invite emails to the users who wore actually added
@@ -118,5 +118,6 @@ namespace Braintrust
         public PatchOrganizationMembersInviteUsers()
         {
         }
+
     }
 }

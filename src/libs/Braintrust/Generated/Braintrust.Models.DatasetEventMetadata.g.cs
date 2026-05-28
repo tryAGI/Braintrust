@@ -41,5 +41,6 @@ namespace Braintrust
         public DatasetEventMetadata()
         {
         }
+
     }
 }

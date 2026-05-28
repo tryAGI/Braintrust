@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.FunctionDataNullishPrompt PickPrompt() => IsPrompt
+            ? Prompt!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Prompt' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataNullishCode? Code { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = Code;
             return IsCode;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionDataNullishCode PickCode() => IsCode
+            ? Code!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Code' but the value was {ToString()}.");
 
         /// <summary>
         /// This feature is preliminary and unsupported.
@@ -98,6 +112,13 @@ namespace Braintrust
             value = Graph;
             return IsGraph;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.GraphData PickGraph() => IsGraph
+            ? Graph!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Graph' but the value was {ToString()}.");
 
         /// <summary>
         /// A remote eval to run
@@ -132,6 +153,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.FunctionDataNullishRemoteEval PickRemoteEval() => IsRemoteEval
+            ? RemoteEval!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RemoteEval' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataNullishGlobal? Global { get; init; }
 #else
@@ -158,6 +186,13 @@ namespace Braintrust
             value = Global;
             return IsGlobal;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionDataNullishGlobal PickGlobal() => IsGlobal
+            ? Global!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -192,6 +227,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.FacetData PickFacet() => IsFacet
+            ? Facet!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Facet' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.BatchedFacetData? BatchedFacet { get; init; }
 #else
@@ -218,6 +260,13 @@ namespace Braintrust
             value = BatchedFacet;
             return IsBatchedFacet;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.BatchedFacetData PickBatchedFacet() => IsBatchedFacet
+            ? BatchedFacet!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BatchedFacet' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -252,6 +301,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.FunctionDataNullishParameters PickParameters() => IsParameters
+            ? Parameters!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Parameters' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? FunctionDataNullishVariant9 { get; init; }
 #else
@@ -282,6 +338,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object> PickFunctionDataNullishVariant9() => IsFunctionDataNullishVariant9
+            ? FunctionDataNullishVariant9!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionDataNullishVariant9' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? FunctionDataNullishVariant10 { get; init; }
 #else
@@ -308,6 +371,13 @@ namespace Braintrust
             value = FunctionDataNullishVariant10;
             return IsFunctionDataNullishVariant10;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickFunctionDataNullishVariant10() => IsFunctionDataNullishVariant10
+            ? FunctionDataNullishVariant10!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionDataNullishVariant10' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -325,6 +395,11 @@ namespace Braintrust
         {
             Prompt = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromPrompt(global::Braintrust.FunctionDataNullishPrompt? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 
@@ -347,6 +422,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromCode(global::Braintrust.FunctionDataNullishCode? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.GraphData value) => new FunctionDataNullish((global::Braintrust.GraphData?)value);
 
         /// <summary>
@@ -361,6 +441,11 @@ namespace Braintrust
         {
             Graph = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromGraph(global::Braintrust.GraphData? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 
@@ -383,6 +468,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromRemoteEval(global::Braintrust.FunctionDataNullishRemoteEval? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.FunctionDataNullishGlobal value) => new FunctionDataNullish((global::Braintrust.FunctionDataNullishGlobal?)value);
 
         /// <summary>
@@ -397,6 +487,11 @@ namespace Braintrust
         {
             Global = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromGlobal(global::Braintrust.FunctionDataNullishGlobal? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 
@@ -419,6 +514,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromFacet(global::Braintrust.FacetData? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.BatchedFacetData value) => new FunctionDataNullish((global::Braintrust.BatchedFacetData?)value);
 
         /// <summary>
@@ -433,6 +533,11 @@ namespace Braintrust
         {
             BatchedFacet = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromBatchedFacet(global::Braintrust.BatchedFacetData? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 
@@ -455,6 +560,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionDataNullish FromParameters(global::Braintrust.FunctionDataNullishParameters? value) => new FunctionDataNullish(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionDataNullish(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object> value) => new FunctionDataNullish((global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?)value);
 
         /// <summary>
@@ -469,6 +579,11 @@ namespace Braintrust
         {
             FunctionDataNullishVariant9 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionDataNullish FromFunctionDataNullishVariant9(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value) => new FunctionDataNullish(value);
 
         /// <summary>
         /// 

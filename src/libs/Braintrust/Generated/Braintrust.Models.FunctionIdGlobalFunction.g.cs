@@ -56,5 +56,6 @@ namespace Braintrust
         public FunctionIdGlobalFunction()
         {
         }
+
     }
 }

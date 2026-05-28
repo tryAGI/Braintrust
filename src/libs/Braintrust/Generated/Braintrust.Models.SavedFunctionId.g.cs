@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.SavedFunctionIdFunction PickFunction() => IsFunction
+            ? Function!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.SavedFunctionIdGlobal? Global { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.SavedFunctionIdGlobal PickGlobal() => IsGlobal
+            ? Global!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? SavedFunctionIdVariant3 { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Braintrust
             value = SavedFunctionIdVariant3;
             return IsSavedFunctionIdVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickSavedFunctionIdVariant3() => IsSavedFunctionIdVariant3
+            ? SavedFunctionIdVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SavedFunctionIdVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -119,6 +140,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static SavedFunctionId FromFunction(global::Braintrust.SavedFunctionIdFunction? value) => new SavedFunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SavedFunctionId(global::Braintrust.SavedFunctionIdGlobal value) => new SavedFunctionId((global::Braintrust.SavedFunctionIdGlobal?)value);
 
         /// <summary>
@@ -133,6 +159,11 @@ namespace Braintrust
         {
             Global = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SavedFunctionId FromGlobal(global::Braintrust.SavedFunctionIdGlobal? value) => new SavedFunctionId(value);
 
         /// <summary>
         /// 

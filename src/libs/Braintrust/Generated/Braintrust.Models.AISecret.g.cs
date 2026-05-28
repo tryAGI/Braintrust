@@ -28,6 +28,12 @@ namespace Braintrust
         public global::System.DateTime? UpdatedAt { get; set; }
 
         /// <summary>
+        /// Date of last update to the encrypted secret value itself
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("secret_updated_at")]
+        public global::System.DateTime? SecretUpdatedAt { get; set; }
+
+        /// <summary>
         /// Unique identifier for the organization
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("org_id")]
@@ -52,6 +58,12 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+
+        /// <summary>
+        /// User id of the last update to the encrypted secret value
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("secret_updated_by_user_id")]
+        public global::System.Guid? SecretUpdatedByUserId { get; set; }
 
         /// <summary>
         /// 
@@ -83,8 +95,14 @@ namespace Braintrust
         /// <param name="updatedAt">
         /// Date of last AI secret update
         /// </param>
+        /// <param name="secretUpdatedAt">
+        /// Date of last update to the encrypted secret value itself
+        /// </param>
         /// <param name="type"></param>
         /// <param name="metadata"></param>
+        /// <param name="secretUpdatedByUserId">
+        /// User id of the last update to the encrypted secret value
+        /// </param>
         /// <param name="previewSecret"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -95,17 +113,21 @@ namespace Braintrust
             string name,
             global::System.DateTime? created,
             global::System.DateTime? updatedAt,
+            global::System.DateTime? secretUpdatedAt,
             string? type,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            global::System.Guid? secretUpdatedByUserId,
             string? previewSecret)
         {
             this.Id = id;
             this.Created = created;
             this.UpdatedAt = updatedAt;
+            this.SecretUpdatedAt = secretUpdatedAt;
             this.OrgId = orgId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Type = type;
             this.Metadata = metadata;
+            this.SecretUpdatedByUserId = secretUpdatedByUserId;
             this.PreviewSecret = previewSecret;
         }
 
@@ -115,5 +137,6 @@ namespace Braintrust
         public AISecret()
         {
         }
+
     }
 }

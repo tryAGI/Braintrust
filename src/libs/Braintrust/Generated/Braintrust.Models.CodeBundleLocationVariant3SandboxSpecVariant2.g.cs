@@ -40,5 +40,6 @@ namespace Braintrust
         public CodeBundleLocationVariant3SandboxSpecVariant2()
         {
         }
+
     }
 }

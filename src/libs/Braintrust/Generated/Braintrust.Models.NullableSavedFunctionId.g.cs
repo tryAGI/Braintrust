@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.NullableSavedFunctionIdFunction PickFunction() => IsFunction
+            ? Function!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.NullableSavedFunctionIdGlobal? Global { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.NullableSavedFunctionIdGlobal PickGlobal() => IsGlobal
+            ? Global!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? NullableSavedFunctionIdVariant3 { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Braintrust
             value = NullableSavedFunctionIdVariant3;
             return IsNullableSavedFunctionIdVariant3;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickNullableSavedFunctionIdVariant3() => IsNullableSavedFunctionIdVariant3
+            ? NullableSavedFunctionIdVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'NullableSavedFunctionIdVariant3' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -119,6 +140,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static NullableSavedFunctionId FromFunction(global::Braintrust.NullableSavedFunctionIdFunction? value) => new NullableSavedFunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator NullableSavedFunctionId(global::Braintrust.NullableSavedFunctionIdGlobal value) => new NullableSavedFunctionId((global::Braintrust.NullableSavedFunctionIdGlobal?)value);
 
         /// <summary>
@@ -133,6 +159,11 @@ namespace Braintrust
         {
             Global = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static NullableSavedFunctionId FromGlobal(global::Braintrust.NullableSavedFunctionIdGlobal? value) => new NullableSavedFunctionId(value);
 
         /// <summary>
         /// 

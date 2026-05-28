@@ -96,5 +96,6 @@ namespace Braintrust
         public PatchRole()
         {
         }
+
     }
 }

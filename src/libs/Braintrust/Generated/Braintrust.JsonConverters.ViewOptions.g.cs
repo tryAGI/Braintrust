@@ -136,6 +136,7 @@ namespace Braintrust.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ViewOptionsMonitorViewOptions), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ViewOptionsMonitorViewOptions> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ViewOptionsMonitorViewOptions).Name}");
                     monitorViewOptions = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -146,9 +147,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (monitorViewOptions == null && tableViewOptions == null && viewOptionsVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ViewOptionsTableViewOptions), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ViewOptionsTableViewOptions> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ViewOptionsTableViewOptions).Name}");
                     tableViewOptions = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -159,9 +164,13 @@ namespace Braintrust.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (monitorViewOptions == null && tableViewOptions == null && viewOptionsVariant3 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
                     viewOptionsVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

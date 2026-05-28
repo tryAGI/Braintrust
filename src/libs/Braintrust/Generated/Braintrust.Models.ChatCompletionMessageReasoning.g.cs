@@ -48,5 +48,6 @@ namespace Braintrust
         public ChatCompletionMessageReasoning()
         {
         }
+
     }
 }

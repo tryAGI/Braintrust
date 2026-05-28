@@ -66,5 +66,6 @@ namespace Braintrust
         public CreateProjectAutomationConfigVariant4()
         {
         }
+
     }
 }

@@ -54,5 +54,6 @@ namespace Braintrust
         public GraphNodeVariant6Position()
         {
         }
+
     }
 }

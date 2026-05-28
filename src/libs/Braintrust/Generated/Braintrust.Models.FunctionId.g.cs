@@ -40,6 +40,13 @@ namespace Braintrust
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionIdFunctionId1 PickId1() => IsId1
+            ? Id1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Id1' but the value was {ToString()}.");
+
+        /// <summary>
         /// Project name and slug
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -68,6 +75,13 @@ namespace Braintrust
             value = ProjectSlug;
             return IsProjectSlug;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionIdProjectSlug PickProjectSlug() => IsProjectSlug
+            ? ProjectSlug!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ProjectSlug' but the value was {ToString()}.");
 
         /// <summary>
         /// Global function name
@@ -100,6 +114,13 @@ namespace Braintrust
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionIdGlobalFunction PickGlobalFunction() => IsGlobalFunction
+            ? GlobalFunction!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalFunction' but the value was {ToString()}.");
+
+        /// <summary>
         /// Prompt session id
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -128,6 +149,13 @@ namespace Braintrust
             value = PromptSessionId;
             return IsPromptSessionId;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionIdPromptSessionId PickPromptSessionId() => IsPromptSessionId
+            ? PromptSessionId!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PromptSessionId' but the value was {ToString()}.");
 
         /// <summary>
         /// Inline code function
@@ -160,6 +188,13 @@ namespace Braintrust
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionIdInlineCode PickInlineCode() => IsInlineCode
+            ? InlineCode!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InlineCode' but the value was {ToString()}.");
+
+        /// <summary>
         /// Inline function definition
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -190,6 +225,13 @@ namespace Braintrust
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionIdInlineFunction PickInlineFunction() => IsInlineFunction
+            ? InlineFunction!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InlineFunction' but the value was {ToString()}.");
+
+        /// <summary>
         /// Inline prompt definition
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -218,6 +260,13 @@ namespace Braintrust
             value = InlinePrompt;
             return IsInlinePrompt;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.FunctionIdInlinePrompt PickInlinePrompt() => IsInlinePrompt
+            ? InlinePrompt!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InlinePrompt' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -235,6 +284,11 @@ namespace Braintrust
         {
             Id1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionId FromId1(global::Braintrust.FunctionIdFunctionId1? value) => new FunctionId(value);
 
         /// <summary>
         /// 
@@ -257,6 +311,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionId FromProjectSlug(global::Braintrust.FunctionIdProjectSlug? value) => new FunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdGlobalFunction value) => new FunctionId((global::Braintrust.FunctionIdGlobalFunction?)value);
 
         /// <summary>
@@ -271,6 +330,11 @@ namespace Braintrust
         {
             GlobalFunction = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionId FromGlobalFunction(global::Braintrust.FunctionIdGlobalFunction? value) => new FunctionId(value);
 
         /// <summary>
         /// 
@@ -293,6 +357,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionId FromPromptSessionId(global::Braintrust.FunctionIdPromptSessionId? value) => new FunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdInlineCode value) => new FunctionId((global::Braintrust.FunctionIdInlineCode?)value);
 
         /// <summary>
@@ -307,6 +376,11 @@ namespace Braintrust
         {
             InlineCode = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionId FromInlineCode(global::Braintrust.FunctionIdInlineCode? value) => new FunctionId(value);
 
         /// <summary>
         /// 
@@ -329,6 +403,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static FunctionId FromInlineFunction(global::Braintrust.FunctionIdInlineFunction? value) => new FunctionId(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdInlinePrompt value) => new FunctionId((global::Braintrust.FunctionIdInlinePrompt?)value);
 
         /// <summary>
@@ -343,6 +422,11 @@ namespace Braintrust
         {
             InlinePrompt = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FunctionId FromInlinePrompt(global::Braintrust.FunctionIdInlinePrompt? value) => new FunctionId(value);
 
         /// <summary>
         /// 

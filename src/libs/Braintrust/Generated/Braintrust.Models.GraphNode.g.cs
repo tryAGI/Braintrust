@@ -42,6 +42,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.GraphNodeVariant1 PickGraphNodeVariant1() => IsGraphNodeVariant1
+            ? GraphNodeVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GraphNodeVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.GraphNodeVariant2? GraphNodeVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Braintrust
             value = GraphNodeVariant2;
             return IsGraphNodeVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.GraphNodeVariant2 PickGraphNodeVariant2() => IsGraphNodeVariant2
+            ? GraphNodeVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GraphNodeVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.GraphNodeVariant3 PickGraphNodeVariant3() => IsGraphNodeVariant3
+            ? GraphNodeVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GraphNodeVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.GraphNodeVariant4? GraphNodeVariant4 { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Braintrust
             value = GraphNodeVariant4;
             return IsGraphNodeVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.GraphNodeVariant4 PickGraphNodeVariant4() => IsGraphNodeVariant4
+            ? GraphNodeVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GraphNodeVariant4' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -162,6 +190,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.GraphNodeVariant5 PickGraphNodeVariant5() => IsGraphNodeVariant5
+            ? GraphNodeVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GraphNodeVariant5' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.GraphNodeVariant6? GraphNodeVariant6 { get; init; }
 #else
@@ -188,6 +223,13 @@ namespace Braintrust
             value = GraphNodeVariant6;
             return IsGraphNodeVariant6;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.GraphNodeVariant6 PickGraphNodeVariant6() => IsGraphNodeVariant6
+            ? GraphNodeVariant6!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GraphNodeVariant6' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -222,6 +264,13 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public global::Braintrust.GraphNodeVariant7 PickGraphNodeVariant7() => IsGraphNodeVariant7
+            ? GraphNodeVariant7!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GraphNodeVariant7' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.GraphNodeVariant8? GraphNodeVariant8 { get; init; }
 #else
@@ -248,6 +297,13 @@ namespace Braintrust
             value = GraphNodeVariant8;
             return IsGraphNodeVariant8;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.GraphNodeVariant8 PickGraphNodeVariant8() => IsGraphNodeVariant8
+            ? GraphNodeVariant8!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GraphNodeVariant8' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -265,6 +321,11 @@ namespace Braintrust
         {
             GraphNodeVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GraphNode FromGraphNodeVariant1(global::Braintrust.GraphNodeVariant1? value) => new GraphNode(value);
 
         /// <summary>
         /// 
@@ -287,6 +348,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static GraphNode FromGraphNodeVariant2(global::Braintrust.GraphNodeVariant2? value) => new GraphNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GraphNode(global::Braintrust.GraphNodeVariant3 value) => new GraphNode((global::Braintrust.GraphNodeVariant3?)value);
 
         /// <summary>
@@ -301,6 +367,11 @@ namespace Braintrust
         {
             GraphNodeVariant3 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GraphNode FromGraphNodeVariant3(global::Braintrust.GraphNodeVariant3? value) => new GraphNode(value);
 
         /// <summary>
         /// 
@@ -323,6 +394,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static GraphNode FromGraphNodeVariant4(global::Braintrust.GraphNodeVariant4? value) => new GraphNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GraphNode(global::Braintrust.GraphNodeVariant5 value) => new GraphNode((global::Braintrust.GraphNodeVariant5?)value);
 
         /// <summary>
@@ -337,6 +413,11 @@ namespace Braintrust
         {
             GraphNodeVariant5 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GraphNode FromGraphNodeVariant5(global::Braintrust.GraphNodeVariant5? value) => new GraphNode(value);
 
         /// <summary>
         /// 
@@ -359,6 +440,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static GraphNode FromGraphNodeVariant6(global::Braintrust.GraphNodeVariant6? value) => new GraphNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GraphNode(global::Braintrust.GraphNodeVariant7 value) => new GraphNode((global::Braintrust.GraphNodeVariant7?)value);
 
         /// <summary>
@@ -377,6 +463,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public static GraphNode FromGraphNodeVariant7(global::Braintrust.GraphNodeVariant7? value) => new GraphNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator GraphNode(global::Braintrust.GraphNodeVariant8 value) => new GraphNode((global::Braintrust.GraphNodeVariant8?)value);
 
         /// <summary>
@@ -391,6 +482,11 @@ namespace Braintrust
         {
             GraphNodeVariant8 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static GraphNode FromGraphNodeVariant8(global::Braintrust.GraphNodeVariant8? value) => new GraphNode(value);
 
         /// <summary>
         /// 

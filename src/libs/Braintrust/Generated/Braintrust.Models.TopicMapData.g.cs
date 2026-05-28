@@ -54,6 +54,12 @@ namespace Braintrust
         public global::Braintrust.TopicMapGenerationSettings? GenerationSettings { get; set; }
 
         /// <summary>
+        /// Whether new topic generation should ignore the previously saved report during reconciliation. Defaults to false when omitted.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("disable_reconciliation")]
+        public bool? DisableReconciliation { get; set; }
+
+        /// <summary>
         /// Maximum distance to nearest centroid. If exceeded, returns no_match.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("distance_threshold")]
@@ -87,6 +93,9 @@ namespace Braintrust
         /// <param name="generationSettings">
         /// Clustering and naming settings used to generate this topic map
         /// </param>
+        /// <param name="disableReconciliation">
+        /// Whether new topic generation should ignore the previously saved report during reconciliation. Defaults to false when omitted.
+        /// </param>
         /// <param name="distanceThreshold">
         /// Maximum distance to nearest centroid. If exceeded, returns no_match.
         /// </param>
@@ -101,6 +110,7 @@ namespace Braintrust
             string? reportKey,
             global::System.Collections.Generic.Dictionary<string, string>? topicNames,
             global::Braintrust.TopicMapGenerationSettings? generationSettings,
+            bool? disableReconciliation,
             double? distanceThreshold)
         {
             this.Type = type;
@@ -110,6 +120,7 @@ namespace Braintrust
             this.ReportKey = reportKey;
             this.TopicNames = topicNames;
             this.GenerationSettings = generationSettings;
+            this.DisableReconciliation = disableReconciliation;
             this.DistanceThreshold = distanceThreshold;
         }
 
@@ -119,5 +130,6 @@ namespace Braintrust
         public TopicMapData()
         {
         }
+
     }
 }

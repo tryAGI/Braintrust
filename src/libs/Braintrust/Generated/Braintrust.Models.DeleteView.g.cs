@@ -55,5 +55,6 @@ namespace Braintrust
         public DeleteView()
         {
         }
+
     }
 }
