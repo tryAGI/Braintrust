@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickChat(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.PromptBlockDataNullishChat? value)
+        {
+            value = Chat;
+            return IsChat;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PromptBlockDataNullishCompletion? Completion { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickCompletion(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.PromptBlockDataNullishCompletion? value)
+        {
+            value = Completion;
+            return IsCompletion;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? PromptBlockDataNullishVariant3 { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromptBlockDataNullishVariant3))]
 #endif
         public bool IsPromptBlockDataNullishVariant3 => PromptBlockDataNullishVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPromptBlockDataNullishVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = PromptBlockDataNullishVariant3;
+            return IsPromptBlockDataNullishVariant3;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -139,9 +178,9 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.PromptBlockDataNullishChat?, TResult>? chat = null,
-            global::System.Func<global::Braintrust.PromptBlockDataNullishCompletion?, TResult>? completion = null,
-            global::System.Func<object?, TResult>? promptBlockDataNullishVariant3 = null,
+            global::System.Func<global::Braintrust.PromptBlockDataNullishChat, TResult>? chat = null,
+            global::System.Func<global::Braintrust.PromptBlockDataNullishCompletion, TResult>? completion = null,
+            global::System.Func<object, TResult>? promptBlockDataNullishVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -169,9 +208,39 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.PromptBlockDataNullishChat?>? chat = null,
-            global::System.Action<global::Braintrust.PromptBlockDataNullishCompletion?>? completion = null,
-            global::System.Action<object?>? promptBlockDataNullishVariant3 = null,
+            global::System.Action<global::Braintrust.PromptBlockDataNullishChat>? chat = null,
+
+            global::System.Action<global::Braintrust.PromptBlockDataNullishCompletion>? completion = null,
+
+            global::System.Action<object>? promptBlockDataNullishVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsChat)
+            {
+                chat?.Invoke(Chat!);
+            }
+            else if (IsCompletion)
+            {
+                completion?.Invoke(Completion!);
+            }
+            else if (IsPromptBlockDataNullishVariant3)
+            {
+                promptBlockDataNullishVariant3?.Invoke(PromptBlockDataNullishVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.PromptBlockDataNullishChat>? chat = null,
+            global::System.Action<global::Braintrust.PromptBlockDataNullishCompletion>? completion = null,
+            global::System.Action<object>? promptBlockDataNullishVariant3 = null,
             bool validate = true)
         {
             if (validate)

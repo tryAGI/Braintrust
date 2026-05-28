@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickMonitorViewOptions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ViewOptionsMonitorViewOptions? value)
+        {
+            value = MonitorViewOptions;
+            return IsMonitorViewOptions;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ViewOptionsTableViewOptions? TableViewOptions { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickTableViewOptions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ViewOptionsTableViewOptions? value)
+        {
+            value = TableViewOptions;
+            return IsTableViewOptions;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? ViewOptionsVariant3 { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ViewOptionsVariant3))]
 #endif
         public bool IsViewOptionsVariant3 => ViewOptionsVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickViewOptionsVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = ViewOptionsVariant3;
+            return IsViewOptionsVariant3;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -139,9 +178,9 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.ViewOptionsMonitorViewOptions?, TResult>? monitorViewOptions = null,
-            global::System.Func<global::Braintrust.ViewOptionsTableViewOptions?, TResult>? tableViewOptions = null,
-            global::System.Func<object?, TResult>? viewOptionsVariant3 = null,
+            global::System.Func<global::Braintrust.ViewOptionsMonitorViewOptions, TResult>? monitorViewOptions = null,
+            global::System.Func<global::Braintrust.ViewOptionsTableViewOptions, TResult>? tableViewOptions = null,
+            global::System.Func<object, TResult>? viewOptionsVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -169,9 +208,39 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.ViewOptionsMonitorViewOptions?>? monitorViewOptions = null,
-            global::System.Action<global::Braintrust.ViewOptionsTableViewOptions?>? tableViewOptions = null,
-            global::System.Action<object?>? viewOptionsVariant3 = null,
+            global::System.Action<global::Braintrust.ViewOptionsMonitorViewOptions>? monitorViewOptions = null,
+
+            global::System.Action<global::Braintrust.ViewOptionsTableViewOptions>? tableViewOptions = null,
+
+            global::System.Action<object>? viewOptionsVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsMonitorViewOptions)
+            {
+                monitorViewOptions?.Invoke(MonitorViewOptions!);
+            }
+            else if (IsTableViewOptions)
+            {
+                tableViewOptions?.Invoke(TableViewOptions!);
+            }
+            else if (IsViewOptionsVariant3)
+            {
+                viewOptionsVariant3?.Invoke(ViewOptionsVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.ViewOptionsMonitorViewOptions>? monitorViewOptions = null,
+            global::System.Action<global::Braintrust.ViewOptionsTableViewOptions>? tableViewOptions = null,
+            global::System.Action<object>? viewOptionsVariant3 = null,
             bool validate = true)
         {
             if (validate)

@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickFunction(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.SavedFunctionIdFunction? value)
+        {
+            value = Function;
+            return IsFunction;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.SavedFunctionIdGlobal? Global { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickGlobal(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.SavedFunctionIdGlobal? value)
+        {
+            value = Global;
+            return IsGlobal;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public object? SavedFunctionIdVariant3 { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SavedFunctionIdVariant3))]
 #endif
         public bool IsSavedFunctionIdVariant3 => SavedFunctionIdVariant3 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSavedFunctionIdVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = SavedFunctionIdVariant3;
+            return IsSavedFunctionIdVariant3;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -139,9 +178,9 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.SavedFunctionIdFunction?, TResult>? function = null,
-            global::System.Func<global::Braintrust.SavedFunctionIdGlobal?, TResult>? global = null,
-            global::System.Func<object?, TResult>? savedFunctionIdVariant3 = null,
+            global::System.Func<global::Braintrust.SavedFunctionIdFunction, TResult>? function = null,
+            global::System.Func<global::Braintrust.SavedFunctionIdGlobal, TResult>? global = null,
+            global::System.Func<object, TResult>? savedFunctionIdVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -169,9 +208,39 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.SavedFunctionIdFunction?>? function = null,
-            global::System.Action<global::Braintrust.SavedFunctionIdGlobal?>? global = null,
-            global::System.Action<object?>? savedFunctionIdVariant3 = null,
+            global::System.Action<global::Braintrust.SavedFunctionIdFunction>? function = null,
+
+            global::System.Action<global::Braintrust.SavedFunctionIdGlobal>? global = null,
+
+            global::System.Action<object>? savedFunctionIdVariant3 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsFunction)
+            {
+                function?.Invoke(Function!);
+            }
+            else if (IsGlobal)
+            {
+                global?.Invoke(Global!);
+            }
+            else if (IsSavedFunctionIdVariant3)
+            {
+                savedFunctionIdVariant3?.Invoke(SavedFunctionIdVariant3!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.SavedFunctionIdFunction>? function = null,
+            global::System.Action<global::Braintrust.SavedFunctionIdGlobal>? global = null,
+            global::System.Action<object>? savedFunctionIdVariant3 = null,
             bool validate = true)
         {
             if (validate)

@@ -27,6 +27,19 @@ namespace Braintrust
         public bool IsId1 => Id1 != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickId1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionIdFunctionId1? value)
+        {
+            value = Id1;
+            return IsId1;
+        }
+
+        /// <summary>
         /// Project name and slug
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ProjectSlug))]
 #endif
         public bool IsProjectSlug => ProjectSlug != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickProjectSlug(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionIdProjectSlug? value)
+        {
+            value = ProjectSlug;
+            return IsProjectSlug;
+        }
 
         /// <summary>
         /// Global function name
@@ -61,6 +87,19 @@ namespace Braintrust
         public bool IsGlobalFunction => GlobalFunction != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGlobalFunction(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionIdGlobalFunction? value)
+        {
+            value = GlobalFunction;
+            return IsGlobalFunction;
+        }
+
+        /// <summary>
         /// Prompt session id
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -76,6 +115,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromptSessionId))]
 #endif
         public bool IsPromptSessionId => PromptSessionId != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickPromptSessionId(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionIdPromptSessionId? value)
+        {
+            value = PromptSessionId;
+            return IsPromptSessionId;
+        }
 
         /// <summary>
         /// Inline code function
@@ -95,6 +147,19 @@ namespace Braintrust
         public bool IsInlineCode => InlineCode != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInlineCode(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionIdInlineCode? value)
+        {
+            value = InlineCode;
+            return IsInlineCode;
+        }
+
+        /// <summary>
         /// Inline function definition
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -112,6 +177,19 @@ namespace Braintrust
         public bool IsInlineFunction => InlineFunction != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInlineFunction(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionIdInlineFunction? value)
+        {
+            value = InlineFunction;
+            return IsInlineFunction;
+        }
+
+        /// <summary>
         /// Inline prompt definition
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -127,6 +205,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InlinePrompt))]
 #endif
         public bool IsInlinePrompt => InlinePrompt != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickInlinePrompt(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionIdInlinePrompt? value)
+        {
+            value = InlinePrompt;
+            return IsInlinePrompt;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -313,13 +404,13 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.FunctionIdFunctionId1?, TResult>? id1 = null,
-            global::System.Func<global::Braintrust.FunctionIdProjectSlug?, TResult>? projectSlug = null,
-            global::System.Func<global::Braintrust.FunctionIdGlobalFunction?, TResult>? globalFunction = null,
-            global::System.Func<global::Braintrust.FunctionIdPromptSessionId?, TResult>? promptSessionId = null,
-            global::System.Func<global::Braintrust.FunctionIdInlineCode?, TResult>? inlineCode = null,
-            global::System.Func<global::Braintrust.FunctionIdInlineFunction?, TResult>? inlineFunction = null,
-            global::System.Func<global::Braintrust.FunctionIdInlinePrompt?, TResult>? inlinePrompt = null,
+            global::System.Func<global::Braintrust.FunctionIdFunctionId1, TResult>? id1 = null,
+            global::System.Func<global::Braintrust.FunctionIdProjectSlug, TResult>? projectSlug = null,
+            global::System.Func<global::Braintrust.FunctionIdGlobalFunction, TResult>? globalFunction = null,
+            global::System.Func<global::Braintrust.FunctionIdPromptSessionId, TResult>? promptSessionId = null,
+            global::System.Func<global::Braintrust.FunctionIdInlineCode, TResult>? inlineCode = null,
+            global::System.Func<global::Braintrust.FunctionIdInlineFunction, TResult>? inlineFunction = null,
+            global::System.Func<global::Braintrust.FunctionIdInlinePrompt, TResult>? inlinePrompt = null,
             bool validate = true)
         {
             if (validate)
@@ -363,13 +454,67 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.FunctionIdFunctionId1?>? id1 = null,
-            global::System.Action<global::Braintrust.FunctionIdProjectSlug?>? projectSlug = null,
-            global::System.Action<global::Braintrust.FunctionIdGlobalFunction?>? globalFunction = null,
-            global::System.Action<global::Braintrust.FunctionIdPromptSessionId?>? promptSessionId = null,
-            global::System.Action<global::Braintrust.FunctionIdInlineCode?>? inlineCode = null,
-            global::System.Action<global::Braintrust.FunctionIdInlineFunction?>? inlineFunction = null,
-            global::System.Action<global::Braintrust.FunctionIdInlinePrompt?>? inlinePrompt = null,
+            global::System.Action<global::Braintrust.FunctionIdFunctionId1>? id1 = null,
+
+            global::System.Action<global::Braintrust.FunctionIdProjectSlug>? projectSlug = null,
+
+            global::System.Action<global::Braintrust.FunctionIdGlobalFunction>? globalFunction = null,
+
+            global::System.Action<global::Braintrust.FunctionIdPromptSessionId>? promptSessionId = null,
+
+            global::System.Action<global::Braintrust.FunctionIdInlineCode>? inlineCode = null,
+
+            global::System.Action<global::Braintrust.FunctionIdInlineFunction>? inlineFunction = null,
+
+            global::System.Action<global::Braintrust.FunctionIdInlinePrompt>? inlinePrompt = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsId1)
+            {
+                id1?.Invoke(Id1!);
+            }
+            else if (IsProjectSlug)
+            {
+                projectSlug?.Invoke(ProjectSlug!);
+            }
+            else if (IsGlobalFunction)
+            {
+                globalFunction?.Invoke(GlobalFunction!);
+            }
+            else if (IsPromptSessionId)
+            {
+                promptSessionId?.Invoke(PromptSessionId!);
+            }
+            else if (IsInlineCode)
+            {
+                inlineCode?.Invoke(InlineCode!);
+            }
+            else if (IsInlineFunction)
+            {
+                inlineFunction?.Invoke(InlineFunction!);
+            }
+            else if (IsInlinePrompt)
+            {
+                inlinePrompt?.Invoke(InlinePrompt!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.FunctionIdFunctionId1>? id1 = null,
+            global::System.Action<global::Braintrust.FunctionIdProjectSlug>? projectSlug = null,
+            global::System.Action<global::Braintrust.FunctionIdGlobalFunction>? globalFunction = null,
+            global::System.Action<global::Braintrust.FunctionIdPromptSessionId>? promptSessionId = null,
+            global::System.Action<global::Braintrust.FunctionIdInlineCode>? inlineCode = null,
+            global::System.Action<global::Braintrust.FunctionIdInlineFunction>? inlineFunction = null,
+            global::System.Action<global::Braintrust.FunctionIdInlinePrompt>? inlinePrompt = null,
             bool validate = true)
         {
             if (validate)

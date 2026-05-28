@@ -15,4 +15,5 @@ autosdk generate openapi.yaml \
   --clientClassName BraintrustClient \
   --targetFramework net10.0 \
   --output Generated \
+  --auth-env-var BRAINTRUST_API_KEY \
   --exclude-deprecated-operations

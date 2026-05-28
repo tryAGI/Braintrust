@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickUserEmailVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = UserEmailVariant1;
+            return IsUserEmailVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? UserEmailVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserEmailVariant2))]
 #endif
         public bool IsUserEmailVariant2 => UserEmailVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUserEmailVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = UserEmailVariant2;
+            return IsUserEmailVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? userEmailVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? userEmailVariant2 = null,
+            global::System.Func<string, TResult>? userEmailVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? userEmailVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? userEmailVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? userEmailVariant2 = null,
+            global::System.Action<string>? userEmailVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? userEmailVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsUserEmailVariant1)
+            {
+                userEmailVariant1?.Invoke(UserEmailVariant1!);
+            }
+            else if (IsUserEmailVariant2)
+            {
+                userEmailVariant2?.Invoke(UserEmailVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? userEmailVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? userEmailVariant2 = null,
             bool validate = true)
         {
             if (validate)

@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSystem(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionMessageParamSystem? value)
+        {
+            value = System;
+            return IsSystem;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamUser? User { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(User))]
 #endif
         public bool IsUser => User != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUser(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionMessageParamUser? value)
+        {
+            value = User;
+            return IsUser;
+        }
 
         /// <summary>
         /// 
@@ -63,6 +89,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAssistant(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionMessageParamAssistant? value)
+        {
+            value = Assistant;
+            return IsAssistant;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamTool? Tool { get; init; }
 #else
@@ -76,6 +115,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Tool))]
 #endif
         public bool IsTool => Tool != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTool(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionMessageParamTool? value)
+        {
+            value = Tool;
+            return IsTool;
+        }
 
         /// <summary>
         /// 
@@ -97,6 +149,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickFunction(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionMessageParamFunction? value)
+        {
+            value = Function;
+            return IsFunction;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamDeveloper? Developer { get; init; }
 #else
@@ -114,6 +179,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickDeveloper(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionMessageParamDeveloper? value)
+        {
+            value = Developer;
+            return IsDeveloper;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamFallback? Fallback { get; init; }
 #else
@@ -127,6 +205,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Fallback))]
 #endif
         public bool IsFallback => Fallback != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFallback(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionMessageParamFallback? value)
+        {
+            value = Fallback;
+            return IsFallback;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -313,13 +404,13 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.ChatCompletionMessageParamSystem?, TResult>? system = null,
-            global::System.Func<global::Braintrust.ChatCompletionMessageParamUser?, TResult>? user = null,
-            global::System.Func<global::Braintrust.ChatCompletionMessageParamAssistant?, TResult>? assistant = null,
-            global::System.Func<global::Braintrust.ChatCompletionMessageParamTool?, TResult>? tool = null,
-            global::System.Func<global::Braintrust.ChatCompletionMessageParamFunction?, TResult>? function = null,
-            global::System.Func<global::Braintrust.ChatCompletionMessageParamDeveloper?, TResult>? developer = null,
-            global::System.Func<global::Braintrust.ChatCompletionMessageParamFallback?, TResult>? fallback = null,
+            global::System.Func<global::Braintrust.ChatCompletionMessageParamSystem, TResult>? system = null,
+            global::System.Func<global::Braintrust.ChatCompletionMessageParamUser, TResult>? user = null,
+            global::System.Func<global::Braintrust.ChatCompletionMessageParamAssistant, TResult>? assistant = null,
+            global::System.Func<global::Braintrust.ChatCompletionMessageParamTool, TResult>? tool = null,
+            global::System.Func<global::Braintrust.ChatCompletionMessageParamFunction, TResult>? function = null,
+            global::System.Func<global::Braintrust.ChatCompletionMessageParamDeveloper, TResult>? developer = null,
+            global::System.Func<global::Braintrust.ChatCompletionMessageParamFallback, TResult>? fallback = null,
             bool validate = true)
         {
             if (validate)
@@ -363,13 +454,67 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.ChatCompletionMessageParamSystem?>? system = null,
-            global::System.Action<global::Braintrust.ChatCompletionMessageParamUser?>? user = null,
-            global::System.Action<global::Braintrust.ChatCompletionMessageParamAssistant?>? assistant = null,
-            global::System.Action<global::Braintrust.ChatCompletionMessageParamTool?>? tool = null,
-            global::System.Action<global::Braintrust.ChatCompletionMessageParamFunction?>? function = null,
-            global::System.Action<global::Braintrust.ChatCompletionMessageParamDeveloper?>? developer = null,
-            global::System.Action<global::Braintrust.ChatCompletionMessageParamFallback?>? fallback = null,
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamSystem>? system = null,
+
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamUser>? user = null,
+
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamAssistant>? assistant = null,
+
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamTool>? tool = null,
+
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamFunction>? function = null,
+
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamDeveloper>? developer = null,
+
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamFallback>? fallback = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSystem)
+            {
+                system?.Invoke(System!);
+            }
+            else if (IsUser)
+            {
+                user?.Invoke(User!);
+            }
+            else if (IsAssistant)
+            {
+                assistant?.Invoke(Assistant!);
+            }
+            else if (IsTool)
+            {
+                tool?.Invoke(Tool!);
+            }
+            else if (IsFunction)
+            {
+                function?.Invoke(Function!);
+            }
+            else if (IsDeveloper)
+            {
+                developer?.Invoke(Developer!);
+            }
+            else if (IsFallback)
+            {
+                fallback?.Invoke(Fallback!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamSystem>? system = null,
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamUser>? user = null,
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamAssistant>? assistant = null,
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamTool>? tool = null,
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamFunction>? function = null,
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamDeveloper>? developer = null,
+            global::System.Action<global::Braintrust.ChatCompletionMessageParamFallback>? fallback = null,
             bool validate = true)
         {
             if (validate)

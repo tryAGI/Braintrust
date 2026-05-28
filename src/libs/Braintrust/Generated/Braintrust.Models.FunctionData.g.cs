@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPrompt(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataPrompt? value)
+        {
+            value = Prompt;
+            return IsPrompt;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataCode? Code { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Code))]
 #endif
         public bool IsCode => Code != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCode(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataCode? value)
+        {
+            value = Code;
+            return IsCode;
+        }
 
         /// <summary>
         /// This feature is preliminary and unsupported.
@@ -59,6 +85,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Graph))]
 #endif
         public bool IsGraph => Graph != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGraph(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.GraphData? value)
+        {
+            value = Graph;
+            return IsGraph;
+        }
 
         /// <summary>
         /// A remote eval to run
@@ -80,6 +119,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickRemoteEval(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataRemoteEval? value)
+        {
+            value = RemoteEval;
+            return IsRemoteEval;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataGlobal? Global { get; init; }
 #else
@@ -93,6 +145,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Global))]
 #endif
         public bool IsGlobal => Global != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGlobal(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataGlobal? value)
+        {
+            value = Global;
+            return IsGlobal;
+        }
 
         /// <summary>
         /// 
@@ -114,6 +179,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickFacet(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FacetData? value)
+        {
+            value = Facet;
+            return IsFacet;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.BatchedFacetData? BatchedFacet { get; init; }
 #else
@@ -127,6 +205,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BatchedFacet))]
 #endif
         public bool IsBatchedFacet => BatchedFacet != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickBatchedFacet(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.BatchedFacetData? value)
+        {
+            value = BatchedFacet;
+            return IsBatchedFacet;
+        }
 
         /// <summary>
         /// 
@@ -148,6 +239,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickParameters(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.FunctionDataParameters? value)
+        {
+            value = Parameters;
+            return IsParameters;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? FunctionDataVariant9 { get; init; }
 #else
@@ -161,6 +265,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionDataVariant9))]
 #endif
         public bool IsFunctionDataVariant9 => FunctionDataVariant9 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFunctionDataVariant9(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value)
+        {
+            value = FunctionDataVariant9;
+            return IsFunctionDataVariant9;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -391,14 +508,14 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Braintrust.FunctionDataPrompt?, TResult>? prompt = null,
-            global::System.Func<global::Braintrust.FunctionDataCode?, TResult>? code = null,
-            global::System.Func<global::Braintrust.GraphData?, TResult>? graph = null,
-            global::System.Func<global::Braintrust.FunctionDataRemoteEval?, TResult>? remoteEval = null,
-            global::System.Func<global::Braintrust.FunctionDataGlobal?, TResult>? global = null,
-            global::System.Func<global::Braintrust.FacetData?, TResult>? facet = null,
-            global::System.Func<global::Braintrust.BatchedFacetData?, TResult>? batchedFacet = null,
-            global::System.Func<global::Braintrust.FunctionDataParameters?, TResult>? parameters = null,
+            global::System.Func<global::Braintrust.FunctionDataPrompt, TResult>? prompt = null,
+            global::System.Func<global::Braintrust.FunctionDataCode, TResult>? code = null,
+            global::System.Func<global::Braintrust.GraphData, TResult>? graph = null,
+            global::System.Func<global::Braintrust.FunctionDataRemoteEval, TResult>? remoteEval = null,
+            global::System.Func<global::Braintrust.FunctionDataGlobal, TResult>? global = null,
+            global::System.Func<global::Braintrust.FacetData, TResult>? facet = null,
+            global::System.Func<global::Braintrust.BatchedFacetData, TResult>? batchedFacet = null,
+            global::System.Func<global::Braintrust.FunctionDataParameters, TResult>? parameters = null,
             global::System.Func<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?, TResult>? functionDataVariant9 = null,
             bool validate = true)
         {
@@ -451,14 +568,80 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Braintrust.FunctionDataPrompt?>? prompt = null,
-            global::System.Action<global::Braintrust.FunctionDataCode?>? code = null,
-            global::System.Action<global::Braintrust.GraphData?>? graph = null,
-            global::System.Action<global::Braintrust.FunctionDataRemoteEval?>? remoteEval = null,
-            global::System.Action<global::Braintrust.FunctionDataGlobal?>? global = null,
-            global::System.Action<global::Braintrust.FacetData?>? facet = null,
-            global::System.Action<global::Braintrust.BatchedFacetData?>? batchedFacet = null,
-            global::System.Action<global::Braintrust.FunctionDataParameters?>? parameters = null,
+            global::System.Action<global::Braintrust.FunctionDataPrompt>? prompt = null,
+
+            global::System.Action<global::Braintrust.FunctionDataCode>? code = null,
+
+            global::System.Action<global::Braintrust.GraphData>? graph = null,
+
+            global::System.Action<global::Braintrust.FunctionDataRemoteEval>? remoteEval = null,
+
+            global::System.Action<global::Braintrust.FunctionDataGlobal>? global = null,
+
+            global::System.Action<global::Braintrust.FacetData>? facet = null,
+
+            global::System.Action<global::Braintrust.BatchedFacetData>? batchedFacet = null,
+
+            global::System.Action<global::Braintrust.FunctionDataParameters>? parameters = null,
+
+            global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataVariant9 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPrompt)
+            {
+                prompt?.Invoke(Prompt!);
+            }
+            else if (IsCode)
+            {
+                code?.Invoke(Code!);
+            }
+            else if (IsGraph)
+            {
+                graph?.Invoke(Graph!);
+            }
+            else if (IsRemoteEval)
+            {
+                remoteEval?.Invoke(RemoteEval!);
+            }
+            else if (IsGlobal)
+            {
+                global?.Invoke(Global!);
+            }
+            else if (IsFacet)
+            {
+                facet?.Invoke(Facet!);
+            }
+            else if (IsBatchedFacet)
+            {
+                batchedFacet?.Invoke(BatchedFacet!);
+            }
+            else if (IsParameters)
+            {
+                parameters?.Invoke(Parameters!);
+            }
+            else if (IsFunctionDataVariant9)
+            {
+                functionDataVariant9?.Invoke(FunctionDataVariant9!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Braintrust.FunctionDataPrompt>? prompt = null,
+            global::System.Action<global::Braintrust.FunctionDataCode>? code = null,
+            global::System.Action<global::Braintrust.GraphData>? graph = null,
+            global::System.Action<global::Braintrust.FunctionDataRemoteEval>? remoteEval = null,
+            global::System.Action<global::Braintrust.FunctionDataGlobal>? global = null,
+            global::System.Action<global::Braintrust.FacetData>? facet = null,
+            global::System.Action<global::Braintrust.BatchedFacetData>? batchedFacet = null,
+            global::System.Action<global::Braintrust.FunctionDataParameters>? parameters = null,
             global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataVariant9 = null,
             bool validate = true)
         {

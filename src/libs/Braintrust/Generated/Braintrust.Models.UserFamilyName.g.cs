@@ -29,6 +29,19 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickUserFamilyNameVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out string? value)
+        {
+            value = UserFamilyNameVariant1;
+            return IsUserFamilyNameVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? UserFamilyNameVariant2 { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserFamilyNameVariant2))]
 #endif
         public bool IsUserFamilyNameVariant2 => UserFamilyNameVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUserFamilyNameVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::System.Collections.Generic.IList<string>? value)
+        {
+            value = UserFamilyNameVariant2;
+            return IsUserFamilyNameVariant2;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -100,8 +126,8 @@ namespace Braintrust
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<string?, TResult>? userFamilyNameVariant1 = null,
-            global::System.Func<global::System.Collections.Generic.IList<string>?, TResult>? userFamilyNameVariant2 = null,
+            global::System.Func<string, TResult>? userFamilyNameVariant1 = null,
+            global::System.Func<global::System.Collections.Generic.IList<string>, TResult>? userFamilyNameVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -125,8 +151,32 @@ namespace Braintrust
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<string?>? userFamilyNameVariant1 = null,
-            global::System.Action<global::System.Collections.Generic.IList<string>?>? userFamilyNameVariant2 = null,
+            global::System.Action<string>? userFamilyNameVariant1 = null,
+
+            global::System.Action<global::System.Collections.Generic.IList<string>>? userFamilyNameVariant2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsUserFamilyNameVariant1)
+            {
+                userFamilyNameVariant1?.Invoke(UserFamilyNameVariant1!);
+            }
+            else if (IsUserFamilyNameVariant2)
+            {
+                userFamilyNameVariant2?.Invoke(UserFamilyNameVariant2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<string>? userFamilyNameVariant1 = null,
+            global::System.Action<global::System.Collections.Generic.IList<string>>? userFamilyNameVariant2 = null,
             bool validate = true)
         {
             if (validate)
