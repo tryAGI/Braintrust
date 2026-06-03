@@ -16,6 +16,13 @@ namespace Braintrust
         public global::Braintrust.TopicAutomationConfigEventType EventType { get; set; }
 
         /// <summary>
+        /// Whether the automation is active or paused.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter))]
+        public global::Braintrust.AutomationStatus? Status { get; set; }
+
+        /// <summary>
         /// The sampling rate for topic automation
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sampling_rate")]
@@ -103,6 +110,9 @@ namespace Braintrust
         /// <param name="eventType">
         /// The type of automation.
         /// </param>
+        /// <param name="status">
+        /// Whether the automation is active or paused.
+        /// </param>
         /// <param name="facetModel">
         /// Optional facet model override for topic automation
         /// </param>
@@ -132,6 +142,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>> facetFunctions,
             global::System.Collections.Generic.IList<global::Braintrust.TopicMapFunctionAutomation> topicMapFunctions,
             global::Braintrust.TopicAutomationConfigEventType eventType,
+            global::Braintrust.AutomationStatus? status,
             global::Braintrust.TopicAutomationFacetModel? facetModel,
             global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? scope,
             global::Braintrust.TopicAutomationDataScope? dataScope,
@@ -141,6 +152,7 @@ namespace Braintrust
             global::Braintrust.AnyOf<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>? backfillTimeRange)
         {
             this.EventType = eventType;
+            this.Status = status;
             this.SamplingRate = samplingRate;
             this.FacetModel = facetModel;
             this.FacetFunctions = facetFunctions ?? throw new global::System.ArgumentNullException(nameof(facetFunctions));
