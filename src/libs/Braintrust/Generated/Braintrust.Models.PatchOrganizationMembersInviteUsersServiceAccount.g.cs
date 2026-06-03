@@ -16,7 +16,7 @@ namespace Braintrust
         public required string Name { get; set; }
 
         /// <summary>
-        /// Omit this field and create the token in the Braintrust UI ([**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens)). If you include this field, the API call will return a 403.
+        /// Optional name of an initial service token to create for the new service account. When this field is set, the request must be authenticated with a service token that has organization-owner permissions, not a user API key.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("token_name")]
         public string? TokenName { get; set; }
@@ -32,7 +32,7 @@ namespace Braintrust
         /// </summary>
         /// <param name="name"></param>
         /// <param name="tokenName">
-        /// Omit this field and create the token in the Braintrust UI ([**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens)). If you include this field, the API call will return a 403.
+        /// Optional name of an initial service token to create for the new service account. When this field is set, the request must be authenticated with a service token that has organization-owner permissions, not a user API key.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

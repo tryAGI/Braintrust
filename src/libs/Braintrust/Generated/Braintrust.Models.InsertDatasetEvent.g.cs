@@ -54,7 +54,7 @@ namespace Braintrust
         /// Facets for categorization (dictionary from facet id to value)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("facets")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Facets { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string?>? Facets { get; set; }
 
         /// <summary>
         /// Pass `_object_delete=true` to mark the dataset event deleted. Deleted events will not show up in subsequent fetches for this dataset
@@ -196,7 +196,7 @@ namespace Braintrust
             string? id,
             global::System.DateTime? created,
             global::Braintrust.ObjectReferenceNullish? origin,
-            global::System.Collections.Generic.Dictionary<string, object?>? facets,
+            global::System.Collections.Generic.Dictionary<string, string?>? facets,
             bool? objectDelete,
             bool? isMerge,
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? mergePaths,

@@ -3,11 +3,11 @@
 
 namespace Braintrust
 {
-    public partial class EvalsClient
+    public partial class ServiceTokensClient
     {
 
 
-        private static readonly global::Braintrust.EndPointSecurityRequirement s_EvalLaunchSecurityRequirement0 =
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PutServiceTokenSecurityRequirement0 =
             new global::Braintrust.EndPointSecurityRequirement
             {
                 Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
@@ -22,49 +22,49 @@ namespace Braintrust
                 },
             };
 
-        private static readonly global::Braintrust.EndPointSecurityRequirement s_EvalLaunchSecurityRequirement1 =
+        private static readonly global::Braintrust.EndPointSecurityRequirement s_PutServiceTokenSecurityRequirement1 =
             new global::Braintrust.EndPointSecurityRequirement
             {
                 Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
                 { 
                 },
             };
-        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_EvalLaunchSecurityRequirements =
+        private static readonly global::Braintrust.EndPointSecurityRequirement[] s_PutServiceTokenSecurityRequirements =
             new global::Braintrust.EndPointSecurityRequirement[]
-            {                s_EvalLaunchSecurityRequirement0,
-                s_EvalLaunchSecurityRequirement1,
+            {                s_PutServiceTokenSecurityRequirement0,
+                s_PutServiceTokenSecurityRequirement1,
             };
-        partial void PrepareEvalLaunchArguments(
+        partial void PreparePutServiceTokenArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::Braintrust.RunEval request);
-        partial void PrepareEvalLaunchRequest(
+            global::Braintrust.PutServiceTokenRequest request);
+        partial void PreparePutServiceTokenRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::Braintrust.RunEval request);
-        partial void ProcessEvalLaunchResponse(
+            global::Braintrust.PutServiceTokenRequest request);
+        partial void ProcessPutServiceTokenResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessEvalLaunchResponseContent(
+        partial void ProcessPutServiceTokenResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Launch an eval<br/>
-        /// Launch an evaluation. This is the API-equivalent of the `Eval` function that is built into the Braintrust SDK. In the Eval API, you provide pointers to a dataset, task function, and scoring functions. The API will then run the evaluation, create an experiment, and return the results along with a link to the experiment. To learn more about evals, see the [Evals guide](https://www.braintrust.dev/docs/evaluate).
+        /// Create or replace service_token<br/>
+        /// Create or replace service_token. If there is an existing service_token with the same name as the one specified in the request, will replace the existing service_token with the provided fields
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Braintrust.SummarizeExperimentResponse> EvalLaunchAsync(
+        public async global::System.Threading.Tasks.Task<global::Braintrust.CreateServiceTokenOutput> PutServiceTokenAsync(
 
-            global::Braintrust.RunEval request,
+            global::Braintrust.PutServiceTokenRequest request,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await EvalLaunchAsResponseAsync(
+            var __response = await PutServiceTokenAsResponseAsync(
 
                 request: request,
                 requestOptions: requestOptions,
@@ -74,16 +74,16 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Launch an eval<br/>
-        /// Launch an evaluation. This is the API-equivalent of the `Eval` function that is built into the Braintrust SDK. In the Eval API, you provide pointers to a dataset, task function, and scoring functions. The API will then run the evaluation, create an experiment, and return the results along with a link to the experiment. To learn more about evals, see the [Evals guide](https://www.braintrust.dev/docs/evaluate).
+        /// Create or replace service_token<br/>
+        /// Create or replace service_token. If there is an existing service_token with the same name as the one specified in the request, will replace the existing service_token with the provided fields
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.SummarizeExperimentResponse>> EvalLaunchAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.CreateServiceTokenOutput>> PutServiceTokenAsResponseAsync(
 
-            global::Braintrust.RunEval request,
+            global::Braintrust.PutServiceTokenRequest request,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -91,15 +91,15 @@ namespace Braintrust
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareEvalLaunchArguments(
+            PreparePutServiceTokenArguments(
                 httpClient: HttpClient,
                 request: request);
 
 
             var __authorizations = global::Braintrust.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_EvalLaunchSecurityRequirements,
-                operationName: "EvalLaunchAsync");
+                securityRequirements: s_PutServiceTokenSecurityRequirements,
+                operationName: "PutServiceTokenAsync");
 
             using var __timeoutCancellationTokenSource = global::Braintrust.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -113,13 +113,13 @@ namespace Braintrust
             var __maxAttempts = global::Braintrust.AutoSDKRequestOptionsSupport.GetMaxAttempts(
                 clientOptions: Options,
                 requestOptions: requestOptions,
-                supportsRetry: false);
+                supportsRetry: true);
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
 
                             var __pathBuilder = new global::Braintrust.PathBuilder(
-                                path: "/v1/eval",
+                                path: "/v1/service_token",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::Braintrust.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -127,7 +127,7 @@ namespace Braintrust
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Post,
+                    method: global::System.Net.Http.HttpMethod.Put,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -164,7 +164,7 @@ namespace Braintrust
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareEvalLaunchRequest(
+                PreparePutServiceTokenRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     request: request);
@@ -184,10 +184,10 @@ namespace Braintrust
                     await global::Braintrust.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Braintrust.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "EvalLaunch",
-                                methodName: "EvalLaunchAsync",
-                                pathTemplate: "\"/v1/eval\"",
-                                httpMethod: "POST",
+                                operationId: "PutServiceToken",
+                                methodName: "PutServiceTokenAsync",
+                                pathTemplate: "\"/v1/service_token\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -218,10 +218,10 @@ namespace Braintrust
                         await global::Braintrust.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Braintrust.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "EvalLaunch",
-                                methodName: "EvalLaunchAsync",
-                                pathTemplate: "\"/v1/eval\"",
-                                httpMethod: "POST",
+                                operationId: "PutServiceToken",
+                                methodName: "PutServiceTokenAsync",
+                                pathTemplate: "\"/v1/service_token\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: null,
@@ -259,10 +259,10 @@ namespace Braintrust
                         await global::Braintrust.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Braintrust.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "EvalLaunch",
-                                methodName: "EvalLaunchAsync",
-                                pathTemplate: "\"/v1/eval\"",
-                                httpMethod: "POST",
+                                operationId: "PutServiceToken",
+                                methodName: "PutServiceTokenAsync",
+                                pathTemplate: "\"/v1/service_token\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -299,7 +299,7 @@ namespace Braintrust
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessEvalLaunchResponse(
+                ProcessPutServiceTokenResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -307,10 +307,10 @@ namespace Braintrust
                     await global::Braintrust.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Braintrust.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "EvalLaunch",
-                                methodName: "EvalLaunchAsync",
-                                pathTemplate: "\"/v1/eval\"",
-                                httpMethod: "POST",
+                                operationId: "PutServiceToken",
+                                methodName: "PutServiceTokenAsync",
+                                pathTemplate: "\"/v1/service_token\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -329,10 +329,10 @@ namespace Braintrust
                     await global::Braintrust.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Braintrust.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "EvalLaunch",
-                                methodName: "EvalLaunchAsync",
-                                pathTemplate: "\"/v1/eval\"",
-                                httpMethod: "POST",
+                                operationId: "PutServiceToken",
+                                methodName: "PutServiceTokenAsync",
+                                pathTemplate: "\"/v1/service_token\"",
+                                httpMethod: "PUT",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
                                 response: __response,
@@ -346,6 +346,191 @@ namespace Braintrust
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
+                            // The request was unacceptable, often due to missing a required parameter
+                            if ((int)__response.StatusCode == 400)
+                            {
+                                string? __content_400 = null;
+                                global::System.Exception? __exception_400 = null;
+                                string? __value_400 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_400 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_400, typeof(string), JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_400 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_400 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_400, typeof(string), JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_400 = __ex;
+                                }
+
+
+                                throw global::Braintrust.ApiException<string>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_400,
+                                    responseBody: __content_400,
+                                    responseObject: __value_400,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // No valid API key provided
+                            if ((int)__response.StatusCode == 401)
+                            {
+                                string? __content_401 = null;
+                                global::System.Exception? __exception_401 = null;
+                                string? __value_401 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_401 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_401, typeof(string), JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_401 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_401, typeof(string), JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_401 = __ex;
+                                }
+
+
+                                throw global::Braintrust.ApiException<string>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_401,
+                                    responseBody: __content_401,
+                                    responseObject: __value_401,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // The API key doesn’t have permissions to perform the request
+                            if ((int)__response.StatusCode == 403)
+                            {
+                                string? __content_403 = null;
+                                global::System.Exception? __exception_403 = null;
+                                string? __value_403 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_403 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_403, typeof(string), JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_403 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_403, typeof(string), JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_403 = __ex;
+                                }
+
+
+                                throw global::Braintrust.ApiException<string>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_403,
+                                    responseBody: __content_403,
+                                    responseObject: __value_403,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // Too many requests hit the API too quickly. We recommend an exponential backoff of your requests
+                            if ((int)__response.StatusCode == 429)
+                            {
+                                string? __content_429 = null;
+                                global::System.Exception? __exception_429 = null;
+                                string? __value_429 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_429 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_429, typeof(string), JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_429 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_429, typeof(string), JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_429 = __ex;
+                                }
+
+
+                                throw global::Braintrust.ApiException<string>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_429,
+                                    responseBody: __content_429,
+                                    responseObject: __value_429,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            // Something went wrong on Braintrust's end. (These are rare.)
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                string? __value_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_500 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_500, typeof(string), JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_500 = (string?)global::System.Text.Json.JsonSerializer.Deserialize(__content_500, typeof(string), JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+
+                                throw global::Braintrust.ApiException<string>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
+                                    responseObject: __value_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -359,7 +544,7 @@ namespace Braintrust
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessEvalLaunchResponseContent(
+                                ProcessPutServiceTokenResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -368,9 +553,9 @@ namespace Braintrust
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Braintrust.SummarizeExperimentResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Braintrust.CreateServiceTokenOutput.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.SummarizeExperimentResponse>(
+                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.CreateServiceTokenOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Braintrust.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -400,9 +585,9 @@ namespace Braintrust
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Braintrust.SummarizeExperimentResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Braintrust.CreateServiceTokenOutput.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.SummarizeExperimentResponse>(
+                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.CreateServiceTokenOutput>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Braintrust.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -443,131 +628,36 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Launch an eval<br/>
-        /// Launch an evaluation. This is the API-equivalent of the `Eval` function that is built into the Braintrust SDK. In the Eval API, you provide pointers to a dataset, task function, and scoring functions. The API will then run the evaluation, create an experiment, and return the results along with a link to the experiment. To learn more about evals, see the [Evals guide](https://www.braintrust.dev/docs/evaluate).
+        /// Create or replace service_token<br/>
+        /// Create or replace service_token. If there is an existing service_token with the same name as the one specified in the request, will replace the existing service_token with the provided fields
         /// </summary>
-        /// <param name="projectId">
-        /// Unique identifier for the project to run the eval in
-        /// </param>
-        /// <param name="data">
-        /// The dataset to use
-        /// </param>
         /// <param name="name">
-        /// The name of the eval to run when multiple evals available
+        /// Name of the service token. Does not have to be unique
         /// </param>
-        /// <param name="parameters">
-        /// Values for any parameters used in the eval
+        /// <param name="orgName">
+        /// For nearly all users, this parameter should be unnecessary. But in the rare case that your API key belongs to multiple organizations, you may specify the name of the organization the Service token belongs in.
         /// </param>
-        /// <param name="task">
-        /// The function to evaluate
+        /// <param name="serviceAccountId">
+        /// The ID of the service account to which the token should belong. To create a service account, visit [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) in the Braintrust UI or call [`PATCH /v1/organization/members`](https://www.braintrust.dev/docs/api-reference/organizations/modify-organization-membership).
         /// </param>
-        /// <param name="scores">
-        /// The functions to score the eval on
-        /// </param>
-        /// <param name="experimentName">
-        /// An optional name for the experiment created by this eval. If it conflicts with an existing experiment, it will be suffixed with a unique identifier.
-        /// </param>
-        /// <param name="metadata">
-        /// Optional experiment-level metadata to store about the evaluation. You can later use this to slice &amp; dice across experiments.
-        /// </param>
-        /// <param name="parent"></param>
-        /// <param name="stream">
-        /// Whether to stream the results of the eval. If true, the request will return two events: one to indicate the experiment has started, and another upon completion. If false, the request will return the evaluation's summary upon completion.
-        /// </param>
-        /// <param name="trialCount">
-        /// The number of times to run the evaluator per input. This is useful for evaluating applications that have non-deterministic behavior and gives you both a stronger aggregate measure and a sense of the variance in the results.
-        /// </param>
-        /// <param name="isPublic">
-        /// Whether the experiment should be public. Defaults to false.
-        /// </param>
-        /// <param name="timeout">
-        /// The maximum duration, in milliseconds, to run the evaluation. Defaults to undefined, in which case there is no timeout.
-        /// </param>
-        /// <param name="maxConcurrency">
-        /// The maximum number of tasks/scorers that will be run concurrently. Defaults to 10. If null is provided, no max concurrency will be used.<br/>
-        /// Default Value: 10
-        /// </param>
-        /// <param name="baseExperimentName">
-        /// An optional experiment name to use as a base. If specified, the new experiment will be summarized and compared to this experiment.
-        /// </param>
-        /// <param name="baseExperimentId">
-        /// An optional experiment id to use as a base. If specified, the new experiment will be summarized and compared to this experiment.
-        /// </param>
-        /// <param name="gitMetadataSettings">
-        /// Optional settings for collecting git metadata. By default, will collect git metadata fields allowed in org-level settings, excluding diff content unless the org opts in.
-        /// </param>
-        /// <param name="repoInfo"></param>
-        /// <param name="strict">
-        /// If true, throw an error if one of the variables in the prompt is not present in the input
-        /// </param>
-        /// <param name="stopToken">
-        /// The token to stop the run
-        /// </param>
-        /// <param name="extraMessages">
-        /// A template path of extra messages to append to the conversion. These messages will be appended to the end of the conversation, after the last message.
-        /// </param>
-        /// <param name="tags">
-        /// Optional tags that will be added to the experiment.
-        /// </param>
-        /// <param name="mcpAuth"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Braintrust.SummarizeExperimentResponse> EvalLaunchAsync(
-            string projectId,
-            global::Braintrust.AnyOf<global::Braintrust.RunEvalDataDatasetId, global::Braintrust.RunEvalDataProjectDatasetName, global::Braintrust.RunEvalDataDatasetRows> data,
-            global::Braintrust.FunctionId task,
-            global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.FunctionId?, object>> scores,
-            string? name = default,
-            global::System.Collections.Generic.Dictionary<string, object?>? parameters = default,
-            string? experimentName = default,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
-            global::Braintrust.AllOf<global::Braintrust.InvokeParent?, object>? parent = default,
-            bool? stream = default,
-            double? trialCount = default,
-            bool? isPublic = default,
-            double? timeout = default,
-            double? maxConcurrency = default,
-            string? baseExperimentName = default,
-            string? baseExperimentId = default,
-            global::Braintrust.GitMetadataSettings? gitMetadataSettings = default,
-            global::Braintrust.AllOf<global::Braintrust.RepoInfo, object>? repoInfo = default,
-            bool? strict = default,
-            string? stopToken = default,
-            string? extraMessages = default,
-            global::System.Collections.Generic.IList<string>? tags = default,
-            global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? mcpAuth = default,
+        public async global::System.Threading.Tasks.Task<global::Braintrust.CreateServiceTokenOutput> PutServiceTokenAsync(
+            string name,
+            string serviceAccountId,
+            string? orgName = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Braintrust.RunEval
+            var __request = new global::Braintrust.PutServiceTokenRequest
             {
-                ProjectId = projectId,
-                Data = data,
                 Name = name,
-                Parameters = parameters,
-                Task = task,
-                Scores = scores,
-                ExperimentName = experimentName,
-                Metadata = metadata,
-                Parent = parent,
-                Stream = stream,
-                TrialCount = trialCount,
-                IsPublic = isPublic,
-                Timeout = timeout,
-                MaxConcurrency = maxConcurrency,
-                BaseExperimentName = baseExperimentName,
-                BaseExperimentId = baseExperimentId,
-                GitMetadataSettings = gitMetadataSettings,
-                RepoInfo = repoInfo,
-                Strict = strict,
-                StopToken = stopToken,
-                ExtraMessages = extraMessages,
-                Tags = tags,
-                McpAuth = mcpAuth,
+                OrgName = orgName,
+                ServiceAccountId = serviceAccountId,
             };
 
-            return await EvalLaunchAsync(
+            return await PutServiceTokenAsync(
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);
