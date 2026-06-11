@@ -66,6 +66,18 @@ namespace Braintrust
         public double? DistanceThreshold { get; set; }
 
         /// <summary>
+        /// Per-topic-map BTQL filter that was applied when this version was generated. Absent on versions generated before this was recorded.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("btql_filter")]
+        public string? BtqlFilter { get; set; }
+
+        /// <summary>
+        /// Automation-level BTQL filter that was applied when this version was generated. Absent on versions generated before this was recorded.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("automation_btql_filter")]
+        public string? AutomationBtqlFilter { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -99,6 +111,12 @@ namespace Braintrust
         /// <param name="distanceThreshold">
         /// Maximum distance to nearest centroid. If exceeded, returns no_match.
         /// </param>
+        /// <param name="btqlFilter">
+        /// Per-topic-map BTQL filter that was applied when this version was generated. Absent on versions generated before this was recorded.
+        /// </param>
+        /// <param name="automationBtqlFilter">
+        /// Automation-level BTQL filter that was applied when this version was generated. Absent on versions generated before this was recorded.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -111,7 +129,9 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, string>? topicNames,
             global::Braintrust.TopicMapGenerationSettings? generationSettings,
             bool? disableReconciliation,
-            double? distanceThreshold)
+            double? distanceThreshold,
+            string? btqlFilter,
+            string? automationBtqlFilter)
         {
             this.Type = type;
             this.SourceFacet = sourceFacet ?? throw new global::System.ArgumentNullException(nameof(sourceFacet));
@@ -122,6 +142,8 @@ namespace Braintrust
             this.GenerationSettings = generationSettings;
             this.DisableReconciliation = disableReconciliation;
             this.DistanceThreshold = distanceThreshold;
+            this.BtqlFilter = btqlFilter;
+            this.AutomationBtqlFilter = automationBtqlFilter;
         }
 
         /// <summary>
