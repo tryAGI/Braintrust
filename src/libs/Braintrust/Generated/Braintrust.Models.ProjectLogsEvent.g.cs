@@ -170,7 +170,7 @@ namespace Braintrust
         /// Facets for categorization (dictionary from facet id to value)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("facets")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Facets { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string?>? Facets { get; set; }
 
         /// <summary>
         /// Classifications for this event (dictionary from classification name to items)
@@ -297,7 +297,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<object>? comments,
             global::System.Collections.Generic.IList<object>? auditData,
             object? asyncScoringState,
-            global::System.Collections.Generic.Dictionary<string, object?>? facets,
+            global::System.Collections.Generic.Dictionary<string, string?>? facets,
             global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Braintrust.ProjectLogsEventClassification>>? classifications)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

@@ -82,7 +82,7 @@ namespace Braintrust
         /// An optional experiment id to use as a base. If specified, the new experiment will be summarized and compared to this experiment.
         /// </param>
         /// <param name="gitMetadataSettings">
-        /// Optional settings for collecting git metadata. By default, will collect all git metadata fields allowed in org-level settings.
+        /// Optional settings for collecting git metadata. By default, will collect git metadata fields allowed in org-level settings, excluding diff content unless the org opts in.
         /// </param>
         /// <param name="repoInfo"></param>
         /// <param name="strict">

@@ -16,6 +16,13 @@ namespace Braintrust
         public global::Braintrust.ProjectAutomationConfigVariant2EventType EventType { get; set; }
 
         /// <summary>
+        /// Whether the automation is active or paused.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter))]
+        public global::Braintrust.AutomationStatus? Status { get; set; }
+
+        /// <summary>
         /// The definition of what to export
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("export_definition")]
@@ -91,6 +98,9 @@ namespace Braintrust
         /// <param name="eventType">
         /// The type of automation.
         /// </param>
+        /// <param name="status">
+        /// Whether the automation is active or paused.
+        /// </param>
         /// <param name="scope">
         /// Execution scope for export automation. Defaults to span-level execution.
         /// </param>
@@ -107,10 +117,12 @@ namespace Braintrust
             double intervalSeconds,
             global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2> credentials,
             global::Braintrust.ProjectAutomationConfigVariant2EventType eventType,
+            global::Braintrust.AutomationStatus? status,
             global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? scope,
             double? batchSize)
         {
             this.EventType = eventType;
+            this.Status = status;
             this.ExportDefinition = exportDefinition;
             this.Scope = scope;
             this.ExportPath = exportPath ?? throw new global::System.ArgumentNullException(nameof(exportPath));

@@ -63,7 +63,7 @@ namespace Braintrust
         /// <summary>
         /// List api_keys<br/>
         /// List out all API keys. They are sorted by creation date, with the most recently-created keys coming first.<br/>
-        /// To create new API keys, go to [**Settings &gt; API keys**](https://www.braintrust.dev/app/~/configuration/org/api-keys) in the Braintrust UI.
+        /// To create new API keys, visit [**Settings &gt; API keys**](https://www.braintrust.dev/app/~/configuration/org/api-keys) in the Braintrust UI.
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -114,7 +114,7 @@ namespace Braintrust
         /// <summary>
         /// List api_keys<br/>
         /// List out all API keys. They are sorted by creation date, with the most recently-created keys coming first.<br/>
-        /// To create new API keys, go to [**Settings &gt; API keys**](https://www.braintrust.dev/app/~/configuration/org/api-keys) in the Braintrust UI.
+        /// To create new API keys, visit [**Settings &gt; API keys**](https://www.braintrust.dev/app/~/configuration/org/api-keys) in the Braintrust UI.
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

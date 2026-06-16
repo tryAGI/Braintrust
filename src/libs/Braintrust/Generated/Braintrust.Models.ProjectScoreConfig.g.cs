@@ -23,6 +23,12 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("visibility")]
+        public global::Braintrust.ProjectScoreConfigVisibility? Visibility { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("online")]
         public global::Braintrust.OnlineScoreConfig? Online { get; set; }
 
@@ -37,6 +43,7 @@ namespace Braintrust
         /// </summary>
         /// <param name="multiSelect"></param>
         /// <param name="destination"></param>
+        /// <param name="visibility"></param>
         /// <param name="online"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,10 +51,12 @@ namespace Braintrust
         public ProjectScoreConfig(
             bool? multiSelect,
             string? destination,
+            global::Braintrust.ProjectScoreConfigVisibility? visibility,
             global::Braintrust.OnlineScoreConfig? online)
         {
             this.MultiSelect = multiSelect;
             this.Destination = destination;
+            this.Visibility = visibility;
             this.Online = online;
         }
 

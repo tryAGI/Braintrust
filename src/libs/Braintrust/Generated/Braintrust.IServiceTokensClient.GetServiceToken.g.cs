@@ -7,7 +7,7 @@ namespace Braintrust
         /// <summary>
         /// List service_tokens<br/>
         /// List out all service tokens. They are sorted by creation date, with the most recently-created tokens coming first.<br/>
-        /// To create service tokens, organization owners can go to [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) in the Braintrust UI.
+        /// To create a service token, visit [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) as an organization owner, or call [`POST /v1/service_token`](https://www.braintrust.dev/docs/api-reference/servicetokens/create-service_token) and authenticate with a service token that has organization-owner permissions.
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -44,7 +44,7 @@ namespace Braintrust
         /// <summary>
         /// List service_tokens<br/>
         /// List out all service tokens. They are sorted by creation date, with the most recently-created tokens coming first.<br/>
-        /// To create service tokens, organization owners can go to [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) in the Braintrust UI.
+        /// To create a service token, visit [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) as an organization owner, or call [`POST /v1/service_token`](https://www.braintrust.dev/docs/api-reference/servicetokens/create-service_token) and authenticate with a service token that has organization-owner permissions.
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
