@@ -47,7 +47,7 @@ namespace Braintrust
         public bool? SkipLogging { get; set; }
 
         /// <summary>
-        /// The scope at which to run the functions. Defaults to span-level execution. Trace/group scope requires all functions to be facets.
+        /// The scope at which to run the functions. Defaults to span-level execution.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>))]
@@ -81,7 +81,7 @@ namespace Braintrust
         /// Whether to skip adding scorer spans when computing scores
         /// </param>
         /// <param name="scope">
-        /// The scope at which to run the functions. Defaults to span-level execution. Trace/group scope requires all functions to be facets.
+        /// The scope at which to run the functions. Defaults to span-level execution.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

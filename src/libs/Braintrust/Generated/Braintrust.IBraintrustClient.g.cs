@@ -55,6 +55,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public AgentsClient Agents { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public AiSecretsClient AiSecrets { get; }
 
         /// <summary>

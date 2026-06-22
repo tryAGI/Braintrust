@@ -1,0 +1,71 @@
+
+#nullable enable
+
+namespace Braintrust
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class ProjectAutomationConfigVariant5
+    {
+        /// <summary>
+        /// The type of automation.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("event_type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeJsonConverter))]
+        public global::Braintrust.ProjectAutomationConfigVariant5EventType EventType { get; set; }
+
+        /// <summary>
+        /// Optional list of environment slugs to filter by
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("environment_filter")]
+        public global::System.Collections.Generic.IList<string>? EnvironmentFilter { get; set; }
+
+        /// <summary>
+        /// The action to take when the automation rule is triggered
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2> Action { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProjectAutomationConfigVariant5" /> class.
+        /// </summary>
+        /// <param name="action">
+        /// The action to take when the automation rule is triggered
+        /// </param>
+        /// <param name="eventType">
+        /// The type of automation.
+        /// </param>
+        /// <param name="environmentFilter">
+        /// Optional list of environment slugs to filter by
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ProjectAutomationConfigVariant5(
+            global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2> action,
+            global::Braintrust.ProjectAutomationConfigVariant5EventType eventType,
+            global::System.Collections.Generic.IList<string>? environmentFilter)
+        {
+            this.EventType = eventType;
+            this.EnvironmentFilter = environmentFilter;
+            this.Action = action;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProjectAutomationConfigVariant5" /> class.
+        /// </summary>
+        public ProjectAutomationConfigVariant5()
+        {
+        }
+
+    }
+}

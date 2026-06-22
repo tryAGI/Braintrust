@@ -16,18 +16,19 @@ namespace Braintrust
         public global::Braintrust.ProjectAutomationConfigVariant4EventType EventType { get; set; }
 
         /// <summary>
-        /// Optional list of environment slugs to filter by
+        /// The object type that the retention policy applies to
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environment_filter")]
-        public global::System.Collections.Generic.IList<string>? EnvironmentFilter { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("object_type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.RetentionObjectTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Braintrust.RetentionObjectType ObjectType { get; set; }
 
         /// <summary>
-        /// The action to take when the automation rule is triggered
+        /// The number of days to retain the object
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant4ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant4ActionVariant2>))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("retention_days")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant4ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant4ActionVariant2> Action { get; set; }
+        public required double RetentionDays { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,26 +39,26 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ProjectAutomationConfigVariant4" /> class.
         /// </summary>
-        /// <param name="action">
-        /// The action to take when the automation rule is triggered
+        /// <param name="objectType">
+        /// The object type that the retention policy applies to
+        /// </param>
+        /// <param name="retentionDays">
+        /// The number of days to retain the object
         /// </param>
         /// <param name="eventType">
         /// The type of automation.
-        /// </param>
-        /// <param name="environmentFilter">
-        /// Optional list of environment slugs to filter by
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ProjectAutomationConfigVariant4(
-            global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant4ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant4ActionVariant2> action,
-            global::Braintrust.ProjectAutomationConfigVariant4EventType eventType,
-            global::System.Collections.Generic.IList<string>? environmentFilter)
+            global::Braintrust.RetentionObjectType objectType,
+            double retentionDays,
+            global::Braintrust.ProjectAutomationConfigVariant4EventType eventType)
         {
             this.EventType = eventType;
-            this.EnvironmentFilter = environmentFilter;
-            this.Action = action;
+            this.ObjectType = objectType;
+            this.RetentionDays = retentionDays;
         }
 
         /// <summary>

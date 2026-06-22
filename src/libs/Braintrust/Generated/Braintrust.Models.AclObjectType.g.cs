@@ -23,6 +23,10 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        OrgAuditLogs,
+        /// <summary>
+        /// 
+        /// </summary>
         OrgMember,
         /// <summary>
         /// 
@@ -69,6 +73,7 @@ namespace Braintrust
                 AclObjectType.Dataset => "dataset",
                 AclObjectType.Experiment => "experiment",
                 AclObjectType.Group => "group",
+                AclObjectType.OrgAuditLogs => "org_audit_logs",
                 AclObjectType.OrgMember => "org_member",
                 AclObjectType.OrgProject => "org_project",
                 AclObjectType.Organization => "organization",
@@ -90,6 +95,7 @@ namespace Braintrust
                 "dataset" => AclObjectType.Dataset,
                 "experiment" => AclObjectType.Experiment,
                 "group" => AclObjectType.Group,
+                "org_audit_logs" => AclObjectType.OrgAuditLogs,
                 "org_member" => AclObjectType.OrgMember,
                 "org_project" => AclObjectType.OrgProject,
                 "organization" => AclObjectType.Organization,
