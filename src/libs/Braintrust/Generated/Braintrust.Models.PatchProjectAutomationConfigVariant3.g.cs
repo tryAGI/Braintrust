@@ -16,19 +16,53 @@ namespace Braintrust
         public global::Braintrust.PatchProjectAutomationConfigVariant3EventType EventType { get; set; }
 
         /// <summary>
-        /// The object type that the retention policy applies to
+        /// Whether the automation is active or paused.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("object_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.RetentionObjectTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Braintrust.RetentionObjectType ObjectType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter))]
+        public global::Braintrust.AutomationStatus? Status { get; set; }
 
         /// <summary>
-        /// The number of days to retain the object
+        /// The user who submitted the async query
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("retention_days")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("created_by_user_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double RetentionDays { get; set; }
+        public required global::System.Guid CreatedByUserId { get; set; }
+
+        /// <summary>
+        /// The source object type for the async query
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("object_type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Braintrust.PatchProjectAutomationConfigVariant3ObjectType ObjectType { get; set; }
+
+        /// <summary>
+        /// The source object ID for the async query
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("object_id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ObjectId { get; set; }
+
+        /// <summary>
+        /// The SQL query to execute asynchronously
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("query")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Query { get; set; }
+
+        /// <summary>
+        /// The materialized result format
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("format")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatJsonConverter))]
+        public global::Braintrust.PatchProjectAutomationConfigVariant3Format Format { get; set; }
+
+        /// <summary>
+        /// The maximum number of result rows to write per async query batch
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("batch_size")]
+        public int? BatchSize { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,26 +73,51 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="PatchProjectAutomationConfigVariant3" /> class.
         /// </summary>
-        /// <param name="objectType">
-        /// The object type that the retention policy applies to
+        /// <param name="createdByUserId">
+        /// The user who submitted the async query
         /// </param>
-        /// <param name="retentionDays">
-        /// The number of days to retain the object
+        /// <param name="objectType">
+        /// The source object type for the async query
+        /// </param>
+        /// <param name="objectId">
+        /// The source object ID for the async query
+        /// </param>
+        /// <param name="query">
+        /// The SQL query to execute asynchronously
         /// </param>
         /// <param name="eventType">
         /// The type of automation.
+        /// </param>
+        /// <param name="status">
+        /// Whether the automation is active or paused.
+        /// </param>
+        /// <param name="format">
+        /// The materialized result format
+        /// </param>
+        /// <param name="batchSize">
+        /// The maximum number of result rows to write per async query batch
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PatchProjectAutomationConfigVariant3(
-            global::Braintrust.RetentionObjectType objectType,
-            double retentionDays,
-            global::Braintrust.PatchProjectAutomationConfigVariant3EventType eventType)
+            global::System.Guid createdByUserId,
+            global::Braintrust.PatchProjectAutomationConfigVariant3ObjectType objectType,
+            string objectId,
+            string query,
+            global::Braintrust.PatchProjectAutomationConfigVariant3EventType eventType,
+            global::Braintrust.AutomationStatus? status,
+            global::Braintrust.PatchProjectAutomationConfigVariant3Format format,
+            int? batchSize)
         {
             this.EventType = eventType;
+            this.Status = status;
+            this.CreatedByUserId = createdByUserId;
             this.ObjectType = objectType;
-            this.RetentionDays = retentionDays;
+            this.ObjectId = objectId ?? throw new global::System.ArgumentNullException(nameof(objectId));
+            this.Query = query ?? throw new global::System.ArgumentNullException(nameof(query));
+            this.Format = format;
+            this.BatchSize = batchSize;
         }
 
         /// <summary>

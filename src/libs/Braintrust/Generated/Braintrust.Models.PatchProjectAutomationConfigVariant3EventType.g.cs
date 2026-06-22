@@ -11,7 +11,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        Retention,
+        AsyncQuery,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Braintrust
         {
             return value switch
             {
-                PatchProjectAutomationConfigVariant3EventType.Retention => "retention",
+                PatchProjectAutomationConfigVariant3EventType.AsyncQuery => "async_query",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Braintrust
         {
             return value switch
             {
-                "retention" => PatchProjectAutomationConfigVariant3EventType.Retention,
+                "async_query" => PatchProjectAutomationConfigVariant3EventType.AsyncQuery,
                 _ => null,
             };
         }

@@ -11,7 +11,7 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        EnvironmentUpdate,
+        Retention,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Braintrust
         {
             return value switch
             {
-                ProjectAutomationConfigVariant4EventType.EnvironmentUpdate => "environment_update",
+                ProjectAutomationConfigVariant4EventType.Retention => "retention",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Braintrust
         {
             return value switch
             {
-                "environment_update" => ProjectAutomationConfigVariant4EventType.EnvironmentUpdate,
+                "retention" => ProjectAutomationConfigVariant4EventType.Retention,
                 _ => null,
             };
         }
