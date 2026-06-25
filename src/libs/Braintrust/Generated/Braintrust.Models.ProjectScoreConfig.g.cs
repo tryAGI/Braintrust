@@ -39,6 +39,12 @@ namespace Braintrust
         public global::Braintrust.ProjectScoreCondition? Condition { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("object_types")]
+        public global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreConfigObjectType>? ObjectTypes { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -52,6 +58,7 @@ namespace Braintrust
         /// <param name="visibility"></param>
         /// <param name="online"></param>
         /// <param name="condition"></param>
+        /// <param name="objectTypes"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -60,13 +67,15 @@ namespace Braintrust
             string? destination,
             global::Braintrust.ProjectScoreConfigVisibility? visibility,
             global::Braintrust.OnlineScoreConfig? online,
-            global::Braintrust.ProjectScoreCondition? condition)
+            global::Braintrust.ProjectScoreCondition? condition,
+            global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreConfigObjectType>? objectTypes)
         {
             this.MultiSelect = multiSelect;
             this.Destination = destination;
             this.Visibility = visibility;
             this.Online = online;
             this.Condition = condition;
+            this.ObjectTypes = objectTypes;
         }
 
         /// <summary>
