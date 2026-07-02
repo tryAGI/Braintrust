@@ -663,7 +663,7 @@ namespace Braintrust
             global::System.Guid projectAutomationId,
             string? name = default,
             string? description = default,
-            global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2, global::Braintrust.PatchProjectAutomationConfigVariant3, global::Braintrust.PatchProjectAutomationConfigVariant4, global::Braintrust.PatchProjectAutomationConfigVariant5, global::Braintrust.TopicAutomationConfig, object>? config = default,
+            global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2, global::Braintrust.PatchProjectAutomationConfigVariant3, global::Braintrust.PatchProjectAutomationConfigVariant4, global::Braintrust.PatchProjectAutomationConfigVariant5, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig, object>? config = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
