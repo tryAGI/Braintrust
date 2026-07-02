@@ -1160,1739 +1160,1755 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomation? Type283 { get; set; }
+        public global::Braintrust.TopicDigestAutomationConfig? Type283 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant1? Type284 { get; set; }
+        public global::Braintrust.TopicDigestAutomationConfigEventType? Type284 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant1EventType? Type285 { get; set; }
+        public global::Braintrust.TopicDigestAutomationConfigAction? Type285 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2>? Type286 { get; set; }
+        public global::Braintrust.TopicDigestAutomationConfigActionType? Type286 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1? Type287 { get; set; }
+        public global::Braintrust.ProjectAutomation? Type287 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1Type? Type288 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant1? Type288 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2? Type289 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant1EventType? Type289 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2Type? Type290 { get; set; }
+        public global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2>? Type290 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2? Type291 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1? Type291 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2EventType? Type292 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1Type? Type292 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1? Type293 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2? Type293 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1Type? Type294 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2Type? Type294 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2? Type295 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2? Type295 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2Type? Type296 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2EventType? Type296 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3? Type297 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1? Type297 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3Type? Type298 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1Type? Type298 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2Format? Type299 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2? Type299 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2>? Type300 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2Type? Type300 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1? Type301 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3? Type301 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1Type? Type302 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3Type? Type302 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2? Type303 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2Format? Type303 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2Type? Type304 { get; set; }
+        public global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2>? Type304 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant3? Type305 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1? Type305 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant3EventType? Type306 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1Type? Type306 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant3ObjectType? Type307 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2? Type307 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant3Format? Type308 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2Type? Type308 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant4? Type309 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant3? Type309 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant4EventType? Type310 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant3EventType? Type310 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant5? Type311 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant3ObjectType? Type311 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant5EventType? Type312 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant3Format? Type312 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2>? Type313 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant4? Type313 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1? Type314 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant4EventType? Type314 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1Type? Type315 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant5? Type315 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2? Type316 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant5EventType? Type316 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2Type? Type317 { get; set; }
+        public global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2>? Type317 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomation? Type318 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1? Type318 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant1? Type319 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1Type? Type319 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant1EventType? Type320 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2? Type320 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OneOf<global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2>? Type321 { get; set; }
+        public global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2Type? Type321 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1? Type322 { get; set; }
+        public global::Braintrust.CreateProjectAutomation? Type322 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1Type? Type323 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant1? Type323 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2? Type324 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant1EventType? Type324 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2Type? Type325 { get; set; }
+        public global::Braintrust.OneOf<global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2>? Type325 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2? Type326 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1? Type326 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2EventType? Type327 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1Type? Type327 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1? Type328 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2? Type328 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1Type? Type329 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2Type? Type329 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2? Type330 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2? Type330 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2Type? Type331 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2EventType? Type331 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3? Type332 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1? Type332 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3Type? Type333 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1Type? Type333 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2Format? Type334 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2? Type334 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1? Type335 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2Type? Type335 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1Type? Type336 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3? Type336 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2? Type337 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3Type? Type337 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2Type? Type338 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2Format? Type338 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant3? Type339 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1? Type339 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant3EventType? Type340 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1Type? Type340 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant3ObjectType? Type341 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2? Type341 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant3Format? Type342 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2Type? Type342 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant4? Type343 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant3? Type343 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant4EventType? Type344 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant3EventType? Type344 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant5? Type345 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant3ObjectType? Type345 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant5EventType? Type346 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant3Format? Type346 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OneOf<global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2>? Type347 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant4? Type347 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1? Type348 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant4EventType? Type348 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1Type? Type349 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant5? Type349 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2? Type350 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant5EventType? Type350 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2Type? Type351 { get; set; }
+        public global::Braintrust.OneOf<global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2>? Type351 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomation? Type352 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1? Type352 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant1? Type353 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1Type? Type353 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant1EventType? Type354 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2? Type354 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2>? Type355 { get; set; }
+        public global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2Type? Type355 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1? Type356 { get; set; }
+        public global::Braintrust.PatchProjectAutomation? Type356 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1Type? Type357 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant1? Type357 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2? Type358 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant1EventType? Type358 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2Type? Type359 { get; set; }
+        public global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2>? Type359 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2? Type360 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1? Type360 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2EventType? Type361 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1Type? Type361 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1? Type362 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2? Type362 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1Type? Type363 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2Type? Type363 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2? Type364 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2? Type364 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2Type? Type365 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2EventType? Type365 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3? Type366 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1? Type366 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3Type? Type367 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1Type? Type367 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2Format? Type368 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2? Type368 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1? Type369 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2Type? Type369 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1Type? Type370 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3? Type370 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2? Type371 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3Type? Type371 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2Type? Type372 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2Format? Type372 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant3? Type373 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1? Type373 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant3EventType? Type374 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1Type? Type374 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant3ObjectType? Type375 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2? Type375 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant3Format? Type376 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2Type? Type376 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant4? Type377 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant3? Type377 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant4EventType? Type378 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant3EventType? Type378 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant5? Type379 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant3ObjectType? Type379 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant5EventType? Type380 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant3Format? Type380 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2>? Type381 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant4? Type381 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1? Type382 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant4EventType? Type382 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1Type? Type383 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant5? Type383 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2? Type384 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant5EventType? Type384 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2Type? Type385 { get; set; }
+        public global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2>? Type385 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScoreCategory? Type386 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1? Type386 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScoreCategories? Type387 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1Type? Type387 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>? Type388 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2? Type388 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OnlineScoreConfig? Type389 { get; set; }
+        public global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2Type? Type389 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>>? Type390 { get; set; }
+        public global::Braintrust.ProjectScoreCategory? Type390 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>? Type391 { get; set; }
+        public global::Braintrust.ProjectScoreCategories? Type391 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>? Type392 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>? Type392 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OnlineScoreConfigScorerVariant2Function? Type393 { get; set; }
+        public global::Braintrust.OnlineScoreConfig? Type393 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType? Type394 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>>? Type394 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OnlineScoreConfigScorerVariant2Global? Type395 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>? Type395 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OnlineScoreConfigScorerVariant2GlobalType? Type396 { get; set; }
+        public global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>? Type396 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScoreCondition? Type397 { get; set; }
+        public global::Braintrust.OnlineScoreConfigScorerVariant2Function? Type397 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScoreConditionWhen? Type398 { get; set; }
+        public global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType? Type398 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScoreConditionBehavior? Type399 { get; set; }
+        public global::Braintrust.OnlineScoreConfigScorerVariant2Global? Type399 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScoreConfig? Type400 { get; set; }
+        public global::Braintrust.OnlineScoreConfigScorerVariant2GlobalType? Type400 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScoreConfigVisibility? Type401 { get; set; }
+        public global::Braintrust.ProjectScoreCondition? Type401 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreConfigObjectType>? Type402 { get; set; }
+        public global::Braintrust.ProjectScoreConditionWhen? Type402 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScoreConfigObjectType? Type403 { get; set; }
+        public global::Braintrust.ProjectScoreConditionBehavior? Type403 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectScore? Type404 { get; set; }
+        public global::Braintrust.ProjectScoreConfig? Type404 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectScore? Type405 { get; set; }
+        public global::Braintrust.ProjectScoreConfigVisibility? Type405 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectScore? Type406 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreConfigObjectType>? Type406 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProjectTag? Type407 { get; set; }
+        public global::Braintrust.ProjectScoreConfigObjectType? Type407 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateProjectTag? Type408 { get; set; }
+        public global::Braintrust.ProjectScore? Type408 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchProjectTag? Type409 { get; set; }
+        public global::Braintrust.CreateProjectScore? Type409 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.SpanIFrame? Type410 { get; set; }
+        public global::Braintrust.PatchProjectScore? Type410 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateSpanIFrame? Type411 { get; set; }
+        public global::Braintrust.ProjectTag? Type411 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchSpanIFrame? Type412 { get; set; }
+        public global::Braintrust.CreateProjectTag? Type412 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundle? Type413 { get; set; }
+        public global::Braintrust.PatchProjectTag? Type413 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleRuntimeContext? Type414 { get; set; }
+        public global::Braintrust.SpanIFrame? Type414 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleRuntimeContextRuntime? Type415 { get; set; }
+        public global::Braintrust.CreateSpanIFrame? Type415 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<global::Braintrust.CodeBundleLocationExperiment, global::Braintrust.CodeBundleLocationFunction, global::Braintrust.CodeBundleLocationVariant3>? Type416 { get; set; }
+        public global::Braintrust.PatchSpanIFrame? Type416 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationExperiment? Type417 { get; set; }
+        public global::Braintrust.CodeBundle? Type417 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationExperimentType? Type418 { get; set; }
+        public global::Braintrust.CodeBundleRuntimeContext? Type418 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationExperimentPositionVariant1? Type419 { get; set; }
+        public global::Braintrust.CodeBundleRuntimeContextRuntime? Type419 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationExperimentPositionVariant1Type? Type420 { get; set; }
+        public global::Braintrust.AnyOf<global::Braintrust.CodeBundleLocationExperiment, global::Braintrust.CodeBundleLocationFunction, global::Braintrust.CodeBundleLocationVariant3>? Type420 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationExperimentPositionScorer? Type421 { get; set; }
+        public global::Braintrust.CodeBundleLocationExperiment? Type421 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationExperimentPositionScorerType? Type422 { get; set; }
+        public global::Braintrust.CodeBundleLocationExperimentType? Type422 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationExperimentPositionClassifier? Type423 { get; set; }
+        public global::Braintrust.CodeBundleLocationExperimentPositionVariant1? Type423 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationExperimentPositionClassifierType? Type424 { get; set; }
+        public global::Braintrust.CodeBundleLocationExperimentPositionVariant1Type? Type424 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationFunction? Type425 { get; set; }
+        public global::Braintrust.CodeBundleLocationExperimentPositionScorer? Type425 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationFunctionType? Type426 { get; set; }
+        public global::Braintrust.CodeBundleLocationExperimentPositionScorerType? Type426 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationVariant3? Type427 { get; set; }
+        public global::Braintrust.CodeBundleLocationExperimentPositionClassifier? Type427 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationVariant3Type? Type428 { get; set; }
+        public global::Braintrust.CodeBundleLocationExperimentPositionClassifierType? Type428 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.OneOf<global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1, global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2>? Type429 { get; set; }
+        public global::Braintrust.CodeBundleLocationFunction? Type429 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1? Type430 { get; set; }
+        public global::Braintrust.CodeBundleLocationFunctionType? Type430 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1Provider? Type431 { get; set; }
+        public global::Braintrust.CodeBundleLocationVariant3? Type431 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2? Type432 { get; set; }
+        public global::Braintrust.CodeBundleLocationVariant3Type? Type432 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2Provider? Type433 { get; set; }
+        public global::Braintrust.OneOf<global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1, global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2>? Type433 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptBlockData? Type434 { get; set; }
+        public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1? Type434 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptBlockDataChat? Type435 { get; set; }
+        public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1Provider? Type435 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptBlockDataChatType? Type436 { get; set; }
+        public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2? Type436 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptBlockDataCompletion? Type437 { get; set; }
+        public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2Provider? Type437 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptBlockDataCompletionType? Type438 { get; set; }
+        public global::Braintrust.PromptBlockData? Type438 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNode? Type439 { get; set; }
+        public global::Braintrust.PromptBlockDataChat? Type439 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant1? Type440 { get; set; }
+        public global::Braintrust.PromptBlockDataChatType? Type440 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant1Position? Type441 { get; set; }
+        public global::Braintrust.PromptBlockDataCompletion? Type441 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant1Type? Type442 { get; set; }
+        public global::Braintrust.PromptBlockDataCompletionType? Type442 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant2? Type443 { get; set; }
+        public global::Braintrust.GraphNode? Type443 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant2Position? Type444 { get; set; }
+        public global::Braintrust.GraphNodeVariant1? Type444 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant2Type? Type445 { get; set; }
+        public global::Braintrust.GraphNodeVariant1Position? Type445 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant3? Type446 { get; set; }
+        public global::Braintrust.GraphNodeVariant1Type? Type446 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant3Position? Type447 { get; set; }
+        public global::Braintrust.GraphNodeVariant2? Type447 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant3Type? Type448 { get; set; }
+        public global::Braintrust.GraphNodeVariant2Position? Type448 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant4? Type449 { get; set; }
+        public global::Braintrust.GraphNodeVariant2Type? Type449 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant4Position? Type450 { get; set; }
+        public global::Braintrust.GraphNodeVariant3? Type450 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant4Type? Type451 { get; set; }
+        public global::Braintrust.GraphNodeVariant3Position? Type451 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant5? Type452 { get; set; }
+        public global::Braintrust.GraphNodeVariant3Type? Type452 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant5Position? Type453 { get; set; }
+        public global::Braintrust.GraphNodeVariant4? Type453 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant5Type? Type454 { get; set; }
+        public global::Braintrust.GraphNodeVariant4Position? Type454 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant6? Type455 { get; set; }
+        public global::Braintrust.GraphNodeVariant4Type? Type455 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant6Position? Type456 { get; set; }
+        public global::Braintrust.GraphNodeVariant5? Type456 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant6Type? Type457 { get; set; }
+        public global::Braintrust.GraphNodeVariant5Position? Type457 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant7? Type458 { get; set; }
+        public global::Braintrust.GraphNodeVariant5Type? Type458 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant7Position? Type459 { get; set; }
+        public global::Braintrust.GraphNodeVariant6? Type459 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant7Type? Type460 { get; set; }
+        public global::Braintrust.GraphNodeVariant6Position? Type460 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant8? Type461 { get; set; }
+        public global::Braintrust.GraphNodeVariant6Type? Type461 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant8Position? Type462 { get; set; }
+        public global::Braintrust.GraphNodeVariant7? Type462 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphNodeVariant8Type? Type463 { get; set; }
+        public global::Braintrust.GraphNodeVariant7Position? Type463 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphEdge? Type464 { get; set; }
+        public global::Braintrust.GraphNodeVariant7Type? Type464 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphEdgeSource? Type465 { get; set; }
+        public global::Braintrust.GraphNodeVariant8? Type465 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphEdgeTarget? Type466 { get; set; }
+        public global::Braintrust.GraphNodeVariant8Position? Type466 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphEdgePurpose? Type467 { get; set; }
+        public global::Braintrust.GraphNodeVariant8Type? Type467 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphData? Type468 { get; set; }
+        public global::Braintrust.GraphEdge? Type468 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GraphDataType? Type469 { get; set; }
+        public global::Braintrust.GraphEdgeSource? Type469 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.GraphEdge>? Type470 { get; set; }
+        public global::Braintrust.GraphEdgeTarget? Type470 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FacetData? Type471 { get; set; }
+        public global::Braintrust.GraphEdgePurpose? Type471 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FacetDataType? Type472 { get; set; }
+        public global::Braintrust.GraphData? Type472 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.NullableSavedFunctionId?, object>? Type473 { get; set; }
+        public global::Braintrust.GraphDataType? Type473 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.TopicMapGenerationSettings? Type474 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.GraphEdge>? Type474 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.TopicMapGenerationSettingsAlgorithm? Type475 { get; set; }
+        public global::Braintrust.FacetData? Type475 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.TopicMapGenerationSettingsDimensionReduction? Type476 { get; set; }
+        public global::Braintrust.FacetDataType? Type476 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.TopicMapData? Type477 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.NullableSavedFunctionId?, object>? Type477 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.TopicMapDataType? Type478 { get; set; }
+        public global::Braintrust.TopicMapGenerationSettings? Type478 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.BatchedFacetData? Type479 { get; set; }
+        public global::Braintrust.TopicMapGenerationSettingsAlgorithm? Type479 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.BatchedFacetDataType? Type480 { get; set; }
+        public global::Braintrust.TopicMapGenerationSettingsDimensionReduction? Type480 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataFacet>? Type481 { get; set; }
+        public global::Braintrust.TopicMapData? Type481 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.BatchedFacetDataFacet? Type482 { get; set; }
+        public global::Braintrust.TopicMapDataType? Type482 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataTopicMap>>? Type483 { get; set; }
+        public global::Braintrust.BatchedFacetData? Type483 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataTopicMap>? Type484 { get; set; }
+        public global::Braintrust.BatchedFacetDataType? Type484 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.BatchedFacetDataTopicMap? Type485 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataFacet>? Type485 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionData? Type486 { get; set; }
+        public global::Braintrust.BatchedFacetDataFacet? Type486 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataPrompt? Type487 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataTopicMap>>? Type487 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataPromptType? Type488 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataTopicMap>? Type488 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataCode? Type489 { get; set; }
+        public global::Braintrust.BatchedFacetDataTopicMap? Type489 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataCodeType? Type490 { get; set; }
+        public global::Braintrust.FunctionData? Type490 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataCodeData2>? Type491 { get; set; }
+        public global::Braintrust.FunctionDataPrompt? Type491 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>? Type492 { get; set; }
+        public global::Braintrust.FunctionDataPromptType? Type492 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataCodeData? Type493 { get; set; }
+        public global::Braintrust.FunctionDataCode? Type493 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataCodeDataType? Type494 { get; set; }
+        public global::Braintrust.FunctionDataCodeType? Type494 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataCodeData2? Type495 { get; set; }
+        public global::Braintrust.AnyOf<global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataCodeData2>? Type495 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataCodeDataType2? Type496 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>? Type496 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataCodeDataRuntimeContext? Type497 { get; set; }
+        public global::Braintrust.FunctionDataCodeData? Type497 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataCodeDataRuntimeContextRuntime? Type498 { get; set; }
+        public global::Braintrust.FunctionDataCodeDataType? Type498 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataRemoteEval? Type499 { get; set; }
+        public global::Braintrust.FunctionDataCodeData2? Type499 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataRemoteEvalType? Type500 { get; set; }
+        public global::Braintrust.FunctionDataCodeDataType2? Type500 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataGlobal? Type501 { get; set; }
+        public global::Braintrust.FunctionDataCodeDataRuntimeContext? Type501 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataGlobalType? Type502 { get; set; }
+        public global::Braintrust.FunctionDataCodeDataRuntimeContextRuntime? Type502 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataParameters? Type503 { get; set; }
+        public global::Braintrust.FunctionDataRemoteEval? Type503 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataParametersType? Type504 { get; set; }
+        public global::Braintrust.FunctionDataRemoteEvalType? Type504 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataParametersSchema? Type505 { get; set; }
+        public global::Braintrust.FunctionDataGlobal? Type505 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataParametersSchemaType? Type506 { get; set; }
+        public global::Braintrust.FunctionDataGlobalType? Type506 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, object?>>? Type507 { get; set; }
+        public global::Braintrust.FunctionDataParameters? Type507 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? Type508 { get; set; }
+        public global::Braintrust.FunctionDataParametersType? Type508 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.Function2? Type509 { get; set; }
+        public global::Braintrust.FunctionDataParametersSchema? Type509 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionLogId? Type510 { get; set; }
+        public global::Braintrust.FunctionDataParametersSchemaType? Type510 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionOrigin? Type511 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, object?>>? Type511 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionFunctionSchema? Type512 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? Type512 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateFunction? Type513 { get; set; }
+        public global::Braintrust.Function2? Type513 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateFunctionOrigin? Type514 { get; set; }
+        public global::Braintrust.FunctionLogId? Type514 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateFunctionFunctionSchema? Type515 { get; set; }
+        public global::Braintrust.FunctionOrigin? Type515 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullish? Type516 { get; set; }
+        public global::Braintrust.FunctionFunctionSchema? Type516 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishPrompt? Type517 { get; set; }
+        public global::Braintrust.CreateFunction? Type517 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishPromptType? Type518 { get; set; }
+        public global::Braintrust.CreateFunctionOrigin? Type518 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishCode? Type519 { get; set; }
+        public global::Braintrust.CreateFunctionFunctionSchema? Type519 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishCodeType? Type520 { get; set; }
+        public global::Braintrust.FunctionDataNullish? Type520 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataNullishCodeData2>? Type521 { get; set; }
+        public global::Braintrust.FunctionDataNullishPrompt? Type521 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>? Type522 { get; set; }
+        public global::Braintrust.FunctionDataNullishPromptType? Type522 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishCodeData? Type523 { get; set; }
+        public global::Braintrust.FunctionDataNullishCode? Type523 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishCodeDataType? Type524 { get; set; }
+        public global::Braintrust.FunctionDataNullishCodeType? Type524 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishCodeData2? Type525 { get; set; }
+        public global::Braintrust.AnyOf<global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataNullishCodeData2>? Type525 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishCodeDataType2? Type526 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>? Type526 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishCodeDataRuntimeContext? Type527 { get; set; }
+        public global::Braintrust.FunctionDataNullishCodeData? Type527 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishCodeDataRuntimeContextRuntime? Type528 { get; set; }
+        public global::Braintrust.FunctionDataNullishCodeDataType? Type528 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishRemoteEval? Type529 { get; set; }
+        public global::Braintrust.FunctionDataNullishCodeData2? Type529 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishRemoteEvalType? Type530 { get; set; }
+        public global::Braintrust.FunctionDataNullishCodeDataType2? Type530 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishGlobal? Type531 { get; set; }
+        public global::Braintrust.FunctionDataNullishCodeDataRuntimeContext? Type531 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishGlobalType? Type532 { get; set; }
+        public global::Braintrust.FunctionDataNullishCodeDataRuntimeContextRuntime? Type532 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishParameters? Type533 { get; set; }
+        public global::Braintrust.FunctionDataNullishRemoteEval? Type533 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishParametersType? Type534 { get; set; }
+        public global::Braintrust.FunctionDataNullishRemoteEvalType? Type534 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishParametersSchema? Type535 { get; set; }
+        public global::Braintrust.FunctionDataNullishGlobal? Type535 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionDataNullishParametersSchemaType? Type536 { get; set; }
+        public global::Braintrust.FunctionDataNullishGlobalType? Type536 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchFunction? Type537 { get; set; }
+        public global::Braintrust.FunctionDataNullishParameters? Type537 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.InvokeParent? Type538 { get; set; }
+        public global::Braintrust.FunctionDataNullishParametersType? Type538 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.InvokeParentSpanParentStruct? Type539 { get; set; }
+        public global::Braintrust.FunctionDataNullishParametersSchema? Type539 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.InvokeParentSpanParentStructObjectType? Type540 { get; set; }
+        public global::Braintrust.FunctionDataNullishParametersSchemaType? Type540 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.InvokeParentSpanParentStructRowIds? Type541 { get; set; }
+        public global::Braintrust.PatchFunction? Type541 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.StreamingMode? Type542 { get; set; }
+        public global::Braintrust.InvokeParent? Type542 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.InvokeApi? Type543 { get; set; }
+        public global::Braintrust.InvokeParentSpanParentStruct? Type543 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.InvokeApiMcpAuth2>? Type544 { get; set; }
+        public global::Braintrust.InvokeParentSpanParentStructObjectType? Type544 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.InvokeApiMcpAuth2? Type545 { get; set; }
+        public global::Braintrust.InvokeParentSpanParentStructRowIds? Type545 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewDataSearch? Type546 { get; set; }
+        public global::Braintrust.StreamingMode? Type546 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewData? Type547 { get; set; }
+        public global::Braintrust.InvokeApi? Type547 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptions? Type548 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.InvokeApiMcpAuth2>? Type548 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsMonitorViewOptions? Type549 { get; set; }
+        public global::Braintrust.InvokeApiMcpAuth2? Type549 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsMonitorViewOptionsViewType? Type550 { get; set; }
+        public global::Braintrust.ViewDataSearch? Type550 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsMonitorViewOptionsOptions? Type551 { get; set; }
+        public global::Braintrust.ViewData? Type551 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType? Type552 { get; set; }
+        public global::Braintrust.ViewOptions? Type552 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, bool>? Type553 { get; set; }
+        public global::Braintrust.ViewOptionsMonitorViewOptions? Type553 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType? Type554 { get; set; }
+        public global::Braintrust.ViewOptionsMonitorViewOptionsViewType? Type554 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptions? Type555 { get; set; }
+        public global::Braintrust.ViewOptionsMonitorViewOptionsOptions? Type555 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasure>? Type556 { get; set; }
+        public global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType? Type556 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasure? Type557 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, bool>? Type557 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType? Type558 { get; set; }
+        public global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType? Type558 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsYMetric? Type559 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptions? Type559 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsYMetricType? Type560 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasure>? Type560 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsXAxis? Type561 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasure? Type561 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsXAxisType? Type562 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType? Type562 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsSymbolGrouping? Type563 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsYMetric? Type563 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsSymbolGroupingType? Type564 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsYMetricType? Type564 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ViewOptionsTableViewOptionsChartAnnotation>? Type565 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsXAxis? Type565 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsChartAnnotation? Type566 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsXAxisType? Type566 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>? Type567 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsSymbolGrouping? Type567 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter? Type568 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsSymbolGroupingType? Type568 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewOptionsTableViewOptionsQueryShape? Type569 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ViewOptionsTableViewOptionsChartAnnotation>? Type569 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.View? Type570 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsChartAnnotation? Type570 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ViewViewType? Type571 { get; set; }
+        public global::Braintrust.AnyOf<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>? Type571 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateView? Type572 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter? Type572 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateViewViewType? Type573 { get; set; }
+        public global::Braintrust.ViewOptionsTableViewOptionsQueryShape? Type573 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchView? Type574 { get; set; }
+        public global::Braintrust.View? Type574 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchViewViewType? Type575 { get; set; }
+        public global::Braintrust.ViewViewType? Type575 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.DeleteView? Type576 { get; set; }
+        public global::Braintrust.CreateView? Type576 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ImageRenderingMode? Type577 { get; set; }
+        public global::Braintrust.CreateViewViewType? Type577 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.Organization? Type578 { get; set; }
+        public global::Braintrust.PatchView? Type578 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchOrganization? Type579 { get; set; }
+        public global::Braintrust.PatchViewViewType? Type579 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchOrganizationMembersOutput? Type580 { get; set; }
+        public global::Braintrust.DeleteView? Type580 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchOrganizationMembersOutputStatus? Type581 { get; set; }
+        public global::Braintrust.ImageRenderingMode? Type581 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.PatchOrganizationMembersOutputAddedUser>? Type582 { get; set; }
+        public global::Braintrust.Organization? Type582 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchOrganizationMembersOutputAddedUser? Type583 { get; set; }
+        public global::Braintrust.PatchOrganization? Type583 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchOrganizationMembers? Type584 { get; set; }
+        public global::Braintrust.PatchOrganizationMembersOutput? Type584 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchOrganizationMembersInviteUsers? Type585 { get; set; }
+        public global::Braintrust.PatchOrganizationMembersOutputStatus? Type585 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.PatchOrganizationMembersInviteUsersServiceAccount>? Type586 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.PatchOrganizationMembersOutputAddedUser>? Type586 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchOrganizationMembersInviteUsersServiceAccount? Type587 { get; set; }
+        public global::Braintrust.PatchOrganizationMembersOutputAddedUser? Type587 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchOrganizationMembersRemoveUsers? Type588 { get; set; }
+        public global::Braintrust.PatchOrganizationMembers? Type588 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ApiKey? Type589 { get; set; }
+        public global::Braintrust.PatchOrganizationMembersInviteUsers? Type589 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateServiceTokenOutput? Type590 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.PatchOrganizationMembersInviteUsersServiceAccount>? Type590 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ServiceToken? Type591 { get; set; }
+        public global::Braintrust.PatchOrganizationMembersInviteUsersServiceAccount? Type591 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.DeleteServiceToken? Type592 { get; set; }
+        public global::Braintrust.PatchOrganizationMembersRemoveUsers? Type592 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AISecret? Type593 { get; set; }
+        public global::Braintrust.ApiKey? Type593 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateAISecret? Type594 { get; set; }
+        public global::Braintrust.CreateServiceTokenOutput? Type594 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.DeleteAISecret? Type595 { get; set; }
+        public global::Braintrust.ServiceToken? Type595 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchAISecret? Type596 { get; set; }
+        public global::Braintrust.DeleteServiceToken? Type596 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.EnvVar? Type597 { get; set; }
+        public global::Braintrust.AISecret? Type597 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.EnvVarObjectType2? Type598 { get; set; }
+        public global::Braintrust.CreateAISecret? Type598 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.EnvVarSecretCategory? Type599 { get; set; }
+        public global::Braintrust.DeleteAISecret? Type599 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.MCPServer? Type600 { get; set; }
+        public global::Braintrust.PatchAISecret? Type600 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateMCPServer? Type601 { get; set; }
+        public global::Braintrust.EnvVar? Type601 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchMCPServer? Type602 { get; set; }
+        public global::Braintrust.EnvVarObjectType2? Type602 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.DatasetSnapshot? Type603 { get; set; }
+        public global::Braintrust.EnvVarSecretCategory? Type603 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateDatasetSnapshot? Type604 { get; set; }
+        public global::Braintrust.MCPServer? Type604 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchDatasetSnapshot? Type605 { get; set; }
+        public global::Braintrust.CreateMCPServer? Type605 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.Environment? Type606 { get; set; }
+        public global::Braintrust.PatchMCPServer? Type606 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CreateEnvironment? Type607 { get; set; }
+        public global::Braintrust.DatasetSnapshot? Type607 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchEnvironment? Type608 { get; set; }
+        public global::Braintrust.CreateDatasetSnapshot? Type608 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CrossObjectInsertResponse? Type609 { get; set; }
+        public global::Braintrust.PatchDatasetSnapshot? Type609 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.InsertEventsResponse>? Type610 { get; set; }
+        public global::Braintrust.Environment? Type610 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CrossObjectInsertRequest? Type611 { get; set; }
+        public global::Braintrust.CreateEnvironment? Type611 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.CrossObjectInsertRequestExperiment2>? Type612 { get; set; }
+        public global::Braintrust.PatchEnvironment? Type612 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CrossObjectInsertRequestExperiment2? Type613 { get; set; }
+        public global::Braintrust.CrossObjectInsertResponse? Type613 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.CrossObjectInsertRequestDataset2>? Type614 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.InsertEventsResponse>? Type614 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CrossObjectInsertRequestDataset2? Type615 { get; set; }
+        public global::Braintrust.CrossObjectInsertRequest? Type615 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.CrossObjectInsertRequestProjectLogs2>? Type616 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.CrossObjectInsertRequestExperiment2>? Type616 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.CrossObjectInsertRequestProjectLogs2? Type617 { get; set; }
+        public global::Braintrust.CrossObjectInsertRequestExperiment2? Type617 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptData? Type618 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.CrossObjectInsertRequestDataset2>? Type618 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>?>>? Type619 { get; set; }
+        public global::Braintrust.CrossObjectInsertRequestDataset2? Type619 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>?>? Type620 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.CrossObjectInsertRequestProjectLogs2>? Type620 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>? Type621 { get; set; }
+        public global::Braintrust.CrossObjectInsertRequestProjectLogs2? Type621 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataToolFunctionVariant2Function? Type622 { get; set; }
+        public global::Braintrust.PromptData? Type622 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataToolFunctionVariant2FunctionType? Type623 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>?>>? Type623 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataToolFunctionVariant2Global? Type624 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>?>? Type624 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataToolFunctionVariant2GlobalType? Type625 { get; set; }
+        public global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>? Type625 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataTemplateFormat? Type626 { get; set; }
+        public global::Braintrust.PromptDataToolFunctionVariant2Function? Type626 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions? Type627 { get; set; }
+        public global::Braintrust.PromptDataToolFunctionVariant2FunctionType? Type627 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType? Type628 { get; set; }
+        public global::Braintrust.PromptDataToolFunctionVariant2Global? Type628 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers? Type629 { get; set; }
+        public global::Braintrust.PromptDataToolFunctionVariant2GlobalType? Type629 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType? Type630 { get; set; }
+        public global::Braintrust.PromptDataTemplateFormat? Type630 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PromptDataOrigin? Type631 { get; set; }
+        public global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions? Type631 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionId? Type632 { get; set; }
+        public global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType? Type632 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdFunctionId1? Type633 { get; set; }
+        public global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers? Type633 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdProjectSlug? Type634 { get; set; }
+        public global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType? Type634 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdGlobalFunction? Type635 { get; set; }
+        public global::Braintrust.PromptDataOrigin? Type635 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdPromptSessionId? Type636 { get; set; }
+        public global::Braintrust.FunctionId? Type636 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdInlineCode? Type637 { get; set; }
+        public global::Braintrust.FunctionIdFunctionId1? Type637 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdInlineCodeInlineContext? Type638 { get; set; }
+        public global::Braintrust.FunctionIdProjectSlug? Type638 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdInlineCodeInlineContextRuntime? Type639 { get; set; }
+        public global::Braintrust.FunctionIdGlobalFunction? Type639 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.FunctionTypeEnum?, object>? Type640 { get; set; }
+        public global::Braintrust.FunctionIdPromptSessionId? Type640 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdInlineFunction? Type641 { get; set; }
+        public global::Braintrust.FunctionIdInlineCode? Type641 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.FunctionIdInlinePrompt? Type642 { get; set; }
+        public global::Braintrust.FunctionIdInlineCodeInlineContext? Type642 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GitMetadataSettings? Type643 { get; set; }
+        public global::Braintrust.FunctionIdInlineCodeInlineContextRuntime? Type643 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GitMetadataSettingsCollect? Type644 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.FunctionTypeEnum?, object>? Type644 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.GitMetadataSettingsField>? Type645 { get; set; }
+        public global::Braintrust.FunctionIdInlineFunction? Type645 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GitMetadataSettingsField? Type646 { get; set; }
+        public global::Braintrust.FunctionIdInlinePrompt? Type646 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.RunEval? Type647 { get; set; }
+        public global::Braintrust.GitMetadataSettings? Type647 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<global::Braintrust.RunEvalDataDatasetId, global::Braintrust.RunEvalDataProjectDatasetName, global::Braintrust.RunEvalDataDatasetRows>? Type648 { get; set; }
+        public global::Braintrust.GitMetadataSettingsCollect? Type648 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.RunEvalDataDatasetId? Type649 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.GitMetadataSettingsField>? Type649 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.RunEvalDataProjectDatasetName? Type650 { get; set; }
+        public global::Braintrust.GitMetadataSettingsField? Type650 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.RunEvalDataDatasetRows? Type651 { get; set; }
+        public global::Braintrust.RunEval? Type651 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.FunctionId?, object>>? Type652 { get; set; }
+        public global::Braintrust.AnyOf<global::Braintrust.RunEvalDataDatasetId, global::Braintrust.RunEvalDataProjectDatasetName, global::Braintrust.RunEvalDataDatasetRows>? Type652 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.FunctionId?, object>? Type653 { get; set; }
+        public global::Braintrust.RunEvalDataDatasetId? Type653 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.InvokeParent?, object>? Type654 { get; set; }
+        public global::Braintrust.RunEvalDataProjectDatasetName? Type654 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.RepoInfo, object>? Type655 { get; set; }
+        public global::Braintrust.RunEvalDataDatasetRows? Type655 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? Type656 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.FunctionId?, object>>? Type656 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.RunEvalMcpAuth2? Type657 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.FunctionId?, object>? Type657 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PostServiceTokenRequest? Type658 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.InvokeParent?, object>? Type658 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PutServiceTokenRequest? Type659 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.RepoInfo, object>? Type659 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PostEnvVarRequest? Type660 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? Type660 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PostEnvVarRequestObjectType? Type661 { get; set; }
+        public global::Braintrust.RunEvalMcpAuth2? Type661 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PutEnvVarRequest? Type662 { get; set; }
+        public global::Braintrust.PostServiceTokenRequest? Type662 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PutEnvVarRequestObjectType? Type663 { get; set; }
+        public global::Braintrust.PutServiceTokenRequest? Type663 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.PatchEnvVarIdRequest? Type664 { get; set; }
+        public global::Braintrust.PostEnvVarRequest? Type664 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProxycredentialsRequest? Type665 { get; set; }
+        public global::Braintrust.PostEnvVarRequestObjectType? Type665 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProxycredentialsRequestLogging? Type666 { get; set; }
+        public global::Braintrust.PutEnvVarRequest? Type666 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<global::Braintrust.ProjectScoreType?, global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>>>? Type667 { get; set; }
+        public global::Braintrust.PutEnvVarRequestObjectType? Type667 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>>? Type668 { get; set; }
+        public global::Braintrust.PatchEnvVarIdRequest? Type668 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>? Type669 { get; set; }
+        public global::Braintrust.ProxycredentialsRequest? Type669 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.AnyOf<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>? Type670 { get; set; }
+        public global::Braintrust.ProxycredentialsRequestLogging? Type670 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetProjectResponse? Type671 { get; set; }
+        public global::Braintrust.AnyOf<global::Braintrust.ProjectScoreType?, global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>>>? Type671 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Project>? Type672 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>>? Type672 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetExperimentResponse? Type673 { get; set; }
+        public global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>? Type673 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Experiment>? Type674 { get; set; }
+        public global::Braintrust.AnyOf<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>? Type674 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetDatasetResponse? Type675 { get; set; }
+        public global::Braintrust.GetProjectResponse? Type675 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Dataset>? Type676 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Project>? Type676 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetPromptResponse? Type677 { get; set; }
+        public global::Braintrust.GetExperimentResponse? Type677 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Prompt>? Type678 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Experiment>? Type678 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetRoleResponse? Type679 { get; set; }
+        public global::Braintrust.GetDatasetResponse? Type679 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Role>? Type680 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Dataset>? Type680 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetGroupResponse? Type681 { get; set; }
+        public global::Braintrust.GetPromptResponse? Type681 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Group>? Type682 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Prompt>? Type682 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetAclResponse? Type683 { get; set; }
+        public global::Braintrust.GetRoleResponse? Type683 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetUserResponse? Type684 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Role>? Type684 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.User>? Type685 { get; set; }
+        public global::Braintrust.GetGroupResponse? Type685 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetAgentResponse? Type686 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Group>? Type686 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Agent>? Type687 { get; set; }
+        public global::Braintrust.GetAclResponse? Type687 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetProjectAutomationResponse? Type688 { get; set; }
+        public global::Braintrust.GetUserResponse? Type688 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ProjectAutomation>? Type689 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.User>? Type689 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetProjectScoreResponse? Type690 { get; set; }
+        public global::Braintrust.GetAgentResponse? Type690 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ProjectScore>? Type691 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Agent>? Type691 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetProjectTagResponse? Type692 { get; set; }
+        public global::Braintrust.GetProjectAutomationResponse? Type692 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ProjectTag>? Type693 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ProjectAutomation>? Type693 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetSpanIframeResponse? Type694 { get; set; }
+        public global::Braintrust.GetProjectScoreResponse? Type694 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.SpanIFrame>? Type695 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ProjectScore>? Type695 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetFunctionResponse? Type696 { get; set; }
+        public global::Braintrust.GetProjectTagResponse? Type696 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Function2>? Type697 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ProjectTag>? Type697 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetViewResponse? Type698 { get; set; }
+        public global::Braintrust.GetSpanIframeResponse? Type698 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.View>? Type699 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.SpanIFrame>? Type699 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetOrganizationResponse? Type700 { get; set; }
+        public global::Braintrust.GetFunctionResponse? Type700 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Organization>? Type701 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Function2>? Type701 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetApiKeyResponse? Type702 { get; set; }
+        public global::Braintrust.GetViewResponse? Type702 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ApiKey>? Type703 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.View>? Type703 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetServiceTokenResponse? Type704 { get; set; }
+        public global::Braintrust.GetOrganizationResponse? Type704 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.ServiceToken>? Type705 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.Organization>? Type705 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetAiSecretResponse? Type706 { get; set; }
+        public global::Braintrust.GetApiKeyResponse? Type706 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.AISecret>? Type707 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ApiKey>? Type707 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetEnvVarResponse? Type708 { get; set; }
+        public global::Braintrust.GetServiceTokenResponse? Type708 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.EnvVar>? Type709 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.ServiceToken>? Type709 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetMcpServerResponse? Type710 { get; set; }
+        public global::Braintrust.GetAiSecretResponse? Type710 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.MCPServer>? Type711 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.AISecret>? Type711 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.GetDatasetSnapshotResponse? Type712 { get; set; }
+        public global::Braintrust.GetEnvVarResponse? Type712 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.DatasetSnapshot>? Type713 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.EnvVar>? Type713 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ListEnvironmentsResponse? Type714 { get; set; }
+        public global::Braintrust.GetMcpServerResponse? Type714 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.Environment>? Type715 { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.MCPServer>? Type715 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Braintrust.ProxycredentialsResponse? Type716 { get; set; }
+        public global::Braintrust.GetDatasetSnapshotResponse? Type716 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Braintrust.DatasetSnapshot>? Type717 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.ListEnvironmentsResponse? Type718 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Braintrust.Environment>? Type719 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Braintrust.ProxycredentialsResponse? Type720 { get; set; }
 
         /// <summary>
         /// 
