@@ -39,6 +39,12 @@ namespace Braintrust
         public bool? DisableRealtimeQueries { get; set; }
 
         /// <summary>
+        /// If true, use metrics.start rather than created for monitor chart time bucket dimensions.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("monitor_charts_use_metrics_start")]
+        public bool? MonitorChartsUseMetricsStart { get; set; }
+
+        /// <summary>
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_preprocessor")]
@@ -69,6 +75,9 @@ namespace Braintrust
         /// <param name="disableRealtimeQueries">
         /// If true, disable real-time queries for this project. This can improve query performance for high-volume logs.
         /// </param>
+        /// <param name="monitorChartsUseMetricsStart">
+        /// If true, use metrics.start rather than created for monitor chart time bucket dimensions.
+        /// </param>
         /// <param name="defaultPreprocessor">
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
         /// </param>
@@ -81,6 +90,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsSpanFieldOrderItem>? spanFieldOrder,
             global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsRemoteEvalSource>? remoteEvalSources,
             bool? disableRealtimeQueries,
+            bool? monitorChartsUseMetricsStart,
             global::Braintrust.NullableSavedFunctionId? defaultPreprocessor)
         {
             this.ComparisonKey = comparisonKey;
@@ -88,6 +98,7 @@ namespace Braintrust
             this.SpanFieldOrder = spanFieldOrder;
             this.RemoteEvalSources = remoteEvalSources;
             this.DisableRealtimeQueries = disableRealtimeQueries;
+            this.MonitorChartsUseMetricsStart = monitorChartsUseMetricsStart;
             this.DefaultPreprocessor = defaultPreprocessor;
         }
 

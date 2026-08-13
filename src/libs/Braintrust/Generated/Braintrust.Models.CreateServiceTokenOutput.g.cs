@@ -60,6 +60,12 @@ namespace Braintrust
         public global::System.Guid? OrgId { get; set; }
 
         /// <summary>
+        /// Date and time at which the service token expires. If null, the token never expires.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expires_at")]
+        public global::System.DateTime? ExpiresAt { get; set; }
+
+        /// <summary>
         /// The raw service token. It will only be exposed this one time
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("key")]
@@ -100,6 +106,9 @@ namespace Braintrust
         /// <param name="orgId">
         /// Unique identifier for the organization
         /// </param>
+        /// <param name="expiresAt">
+        /// Date and time at which the service token expires. If null, the token never expires.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -112,7 +121,8 @@ namespace Braintrust
             global::System.Guid? serviceAccountId,
             string? serviceAccountEmail,
             string? serviceAccountName,
-            global::System.Guid? orgId)
+            global::System.Guid? orgId,
+            global::System.DateTime? expiresAt)
         {
             this.Id = id;
             this.Created = created;
@@ -122,6 +132,7 @@ namespace Braintrust
             this.ServiceAccountEmail = serviceAccountEmail;
             this.ServiceAccountName = serviceAccountName;
             this.OrgId = orgId;
+            this.ExpiresAt = expiresAt;
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
         }
 

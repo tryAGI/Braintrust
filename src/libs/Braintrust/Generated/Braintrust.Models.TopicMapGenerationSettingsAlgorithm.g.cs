@@ -11,6 +11,10 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        Community,
+        /// <summary>
+        /// 
+        /// </summary>
         Hdbscan,
         /// <summary>
         /// 
@@ -30,6 +34,7 @@ namespace Braintrust
         {
             return value switch
             {
+                TopicMapGenerationSettingsAlgorithm.Community => "community",
                 TopicMapGenerationSettingsAlgorithm.Hdbscan => "hdbscan",
                 TopicMapGenerationSettingsAlgorithm.Kmeans => "kmeans",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -42,6 +47,7 @@ namespace Braintrust
         {
             return value switch
             {
+                "community" => TopicMapGenerationSettingsAlgorithm.Community,
                 "hdbscan" => TopicMapGenerationSettingsAlgorithm.Hdbscan,
                 "kmeans" => TopicMapGenerationSettingsAlgorithm.Kmeans,
                 _ => null,

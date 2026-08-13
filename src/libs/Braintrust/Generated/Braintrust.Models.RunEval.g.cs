@@ -156,6 +156,12 @@ namespace Braintrust
         public global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? McpAuth { get; set; }
 
         /// <summary>
+        /// Name of the AI provider secret to pin this run to.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint_name")]
+        public string? EndpointName { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -228,6 +234,9 @@ namespace Braintrust
         /// Optional tags that will be added to the experiment.
         /// </param>
         /// <param name="mcpAuth"></param>
+        /// <param name="endpointName">
+        /// Name of the AI provider secret to pin this run to.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -254,7 +263,8 @@ namespace Braintrust
             string? stopToken,
             string? extraMessages,
             global::System.Collections.Generic.IList<string>? tags,
-            global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? mcpAuth)
+            global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? mcpAuth,
+            string? endpointName)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Data = data;
@@ -279,6 +289,7 @@ namespace Braintrust
             this.ExtraMessages = extraMessages;
             this.Tags = tags;
             this.McpAuth = mcpAuth;
+            this.EndpointName = endpointName;
         }
 
         /// <summary>

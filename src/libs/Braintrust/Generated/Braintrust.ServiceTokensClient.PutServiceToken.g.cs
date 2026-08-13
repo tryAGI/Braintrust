@@ -640,6 +640,9 @@ namespace Braintrust
         /// <param name="serviceAccountId">
         /// The ID of the service account to which the token should belong. To create a service account, visit [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) in the Braintrust UI or call [`PATCH /v1/organization/members`](https://www.braintrust.dev/docs/api-reference/organizations/modify-organization-membership).
         /// </param>
+        /// <param name="expiresInSeconds">
+        /// Number of seconds from now after which the service token should expire. If omitted, the token never expires.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -647,6 +650,7 @@ namespace Braintrust
             string name,
             string serviceAccountId,
             string? orgName = default,
+            int? expiresInSeconds = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -655,6 +659,7 @@ namespace Braintrust
                 Name = name,
                 OrgName = orgName,
                 ServiceAccountId = serviceAccountId,
+                ExpiresInSeconds = expiresInSeconds,
             };
 
             return await PutServiceTokenAsync(

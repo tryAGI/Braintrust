@@ -37,6 +37,12 @@ namespace Braintrust
         public string? Name { get; set; }
 
         /// <summary>
+        /// Textual description of the view
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
         /// The view definition
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("view_data")]
@@ -76,6 +82,9 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the view
         /// </param>
+        /// <param name="description">
+        /// Textual description of the view
+        /// </param>
         /// <param name="viewData">
         /// The view definition
         /// </param>
@@ -93,6 +102,7 @@ namespace Braintrust
             global::System.Guid objectId,
             global::Braintrust.PatchViewViewType? viewType,
             string? name,
+            string? description,
             global::Braintrust.ViewData? viewData,
             global::Braintrust.ViewOptions? options,
             global::System.Guid? userId)
@@ -101,6 +111,7 @@ namespace Braintrust
             this.ObjectId = objectId;
             this.ViewType = viewType;
             this.Name = name;
+            this.Description = description;
             this.ViewData = viewData;
             this.Options = options;
             this.UserId = userId;

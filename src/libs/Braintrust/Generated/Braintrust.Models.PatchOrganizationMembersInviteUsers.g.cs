@@ -21,7 +21,7 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<string>? Emails { get; set; }
 
         /// <summary>
-        /// Service accounts to create. Any caller permitted to add organization members can create service accounts (but not necessarily their associated tokens).
+        /// Service accounts to create. PATCH /v1/organization/members is the compatibility layer that accepts both plain service-account creation and the narrower token_name create-and-mint carve-out.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("service_accounts")]
         public global::System.Collections.Generic.IList<global::Braintrust.PatchOrganizationMembersInviteUsersServiceAccount>? ServiceAccounts { get; set; }
@@ -72,7 +72,7 @@ namespace Braintrust
         /// Emails of users to invite
         /// </param>
         /// <param name="serviceAccounts">
-        /// Service accounts to create. Any caller permitted to add organization members can create service accounts (but not necessarily their associated tokens).
+        /// Service accounts to create. PATCH /v1/organization/members is the compatibility layer that accepts both plain service-account creation and the narrower token_name create-and-mint carve-out.
         /// </param>
         /// <param name="sendInviteEmails">
         /// If true, send invite emails to the users who wore actually added

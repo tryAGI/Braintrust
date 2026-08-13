@@ -130,6 +130,11 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        public OrgAutomationsClient OrgAutomations { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public OrganizationsClient Organizations { get; }
 
         /// <summary>
@@ -141,6 +146,11 @@ namespace Braintrust
         /// 
         /// </summary>
         public ProjectAutomationsClient ProjectAutomations { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ProjectGroupsClient ProjectGroups { get; }
 
         /// <summary>
         /// 

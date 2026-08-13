@@ -28,6 +28,12 @@ namespace Braintrust
         public string? Position { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint_name")]
+        public string? EndpointName { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -39,17 +45,20 @@ namespace Braintrust
         /// <param name="model"></param>
         /// <param name="params"></param>
         /// <param name="position"></param>
+        /// <param name="endpointName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PromptOptionsNullish(
             string? model,
             global::Braintrust.ModelParams? @params,
-            string? position)
+            string? position,
+            string? endpointName)
         {
             this.Model = model;
             this.Params = @params;
             this.Position = position;
+            this.EndpointName = endpointName;
         }
 
         /// <summary>

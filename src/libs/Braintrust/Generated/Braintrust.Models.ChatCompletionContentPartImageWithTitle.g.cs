@@ -23,6 +23,12 @@ namespace Braintrust
         public global::Braintrust.ChatCompletionContentPartImageWithTitleType Type { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cache_control")]
+        public global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControl? CacheControl { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -33,15 +39,18 @@ namespace Braintrust
         /// </summary>
         /// <param name="imageUrl"></param>
         /// <param name="type"></param>
+        /// <param name="cacheControl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatCompletionContentPartImageWithTitle(
             global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrl imageUrl,
-            global::Braintrust.ChatCompletionContentPartImageWithTitleType type)
+            global::Braintrust.ChatCompletionContentPartImageWithTitleType type,
+            global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControl? cacheControl)
         {
             this.ImageUrl = imageUrl ?? throw new global::System.ArgumentNullException(nameof(imageUrl));
             this.Type = type;
+            this.CacheControl = cacheControl;
         }
 
         /// <summary>

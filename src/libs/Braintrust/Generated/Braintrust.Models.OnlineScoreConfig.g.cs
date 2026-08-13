@@ -9,6 +9,13 @@ namespace Braintrust
     public sealed partial class OnlineScoreConfig
     {
         /// <summary>
+        /// Whether the automation is active or paused.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter))]
+        public global::Braintrust.AutomationStatus? Status { get; set; }
+
+        /// <summary>
         /// The sampling rate for online scoring
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sampling_rate")]
@@ -68,6 +75,9 @@ namespace Braintrust
         /// <param name="scorers">
         /// The list of functions to run for online scoring. Can include scorers, facets, or other function types.
         /// </param>
+        /// <param name="status">
+        /// Whether the automation is active or paused.
+        /// </param>
         /// <param name="btqlFilter">
         /// Filter logs using BTQL
         /// </param>
@@ -89,12 +99,14 @@ namespace Braintrust
         public OnlineScoreConfig(
             double samplingRate,
             global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>> scorers,
+            global::Braintrust.AutomationStatus? status,
             string? btqlFilter,
             bool? applyToRootSpan,
             global::System.Collections.Generic.IList<string>? applyToSpanNames,
             bool? skipLogging,
             global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? scope)
         {
+            this.Status = status;
             this.SamplingRate = samplingRate;
             this.Scorers = scorers ?? throw new global::System.ArgumentNullException(nameof(scorers));
             this.BtqlFilter = btqlFilter;
