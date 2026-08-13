@@ -28,7 +28,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("retention_days")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double RetentionDays { get; set; }
+        public required int RetentionDays { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,7 +53,7 @@ namespace Braintrust
 #endif
         public ProjectAutomationConfigVariant4(
             global::Braintrust.RetentionObjectType objectType,
-            double retentionDays,
+            int retentionDays,
             global::Braintrust.ProjectAutomationConfigVariant4EventType eventType)
         {
             this.EventType = eventType;

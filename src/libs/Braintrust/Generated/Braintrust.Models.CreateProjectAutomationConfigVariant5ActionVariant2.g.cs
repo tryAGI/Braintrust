@@ -36,6 +36,12 @@ namespace Braintrust
         public string? MessageTemplate { get; set; }
 
         /// <summary>
+        /// Instructions for Loop to format content sent to this destination
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("formatting_prompt")]
+        public string? FormattingPrompt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -56,6 +62,9 @@ namespace Braintrust
         /// <param name="messageTemplate">
         /// Custom message template for the alert
         /// </param>
+        /// <param name="formattingPrompt">
+        /// Instructions for Loop to format content sent to this destination
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -63,12 +72,14 @@ namespace Braintrust
             string workspaceId,
             string channel,
             global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2Type type,
-            string? messageTemplate)
+            string? messageTemplate,
+            string? formattingPrompt)
         {
             this.Type = type;
             this.WorkspaceId = workspaceId ?? throw new global::System.ArgumentNullException(nameof(workspaceId));
             this.Channel = channel ?? throw new global::System.ArgumentNullException(nameof(channel));
             this.MessageTemplate = messageTemplate;
+            this.FormattingPrompt = formattingPrompt;
         }
 
         /// <summary>

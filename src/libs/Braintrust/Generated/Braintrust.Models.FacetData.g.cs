@@ -16,11 +16,11 @@ namespace Braintrust
         public global::Braintrust.FacetDataType Type { get; set; }
 
         /// <summary>
-        /// 
+        /// The saved, global, or inline preprocessor to use for facet extraction. If not provided, the project default preprocessor will be used, falling back to the global 'thread' preprocessor.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preprocessor")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.NullableSavedFunctionId?, object>))]
-        public global::Braintrust.AllOf<global::Braintrust.NullableSavedFunctionId?, object>? Preprocessor { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdJsonConverter))]
+        public global::Braintrust.FacetPreprocessorId? Preprocessor { get; set; }
 
         /// <summary>
         /// The prompt to use for LLM extraction. The preprocessed text will be provided as context.
@@ -60,7 +60,9 @@ namespace Braintrust
         /// The prompt to use for LLM extraction. The preprocessed text will be provided as context.
         /// </param>
         /// <param name="type"></param>
-        /// <param name="preprocessor"></param>
+        /// <param name="preprocessor">
+        /// The saved, global, or inline preprocessor to use for facet extraction. If not provided, the project default preprocessor will be used, falling back to the global 'thread' preprocessor.
+        /// </param>
         /// <param name="model">
         /// The model to use for facet extraction
         /// </param>
@@ -76,7 +78,7 @@ namespace Braintrust
         public FacetData(
             string prompt,
             global::Braintrust.FacetDataType type,
-            global::Braintrust.AllOf<global::Braintrust.NullableSavedFunctionId?, object>? preprocessor,
+            global::Braintrust.FacetPreprocessorId? preprocessor,
             string? model,
             string? embeddingModel,
             string? noMatchPattern)

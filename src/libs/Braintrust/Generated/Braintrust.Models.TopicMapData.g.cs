@@ -60,6 +60,13 @@ namespace Braintrust
         public bool? DisableReconciliation { get; set; }
 
         /// <summary>
+        /// How reconciliation carries the previous map forward: "evolve" re-routes new samples into the previous topics before naming; "names_only" keeps the fresh clustering and carries only topic ids/names. Defaults to "names_only" when omitted.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reconcile_mode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.TopicMapDataReconcileModeJsonConverter))]
+        public global::Braintrust.TopicMapDataReconcileMode? ReconcileMode { get; set; }
+
+        /// <summary>
         /// Maximum distance to nearest centroid. If exceeded, returns no_match.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("distance_threshold")]
@@ -108,6 +115,9 @@ namespace Braintrust
         /// <param name="disableReconciliation">
         /// Whether new topic generation should ignore the previously saved report during reconciliation. Defaults to false when omitted.
         /// </param>
+        /// <param name="reconcileMode">
+        /// How reconciliation carries the previous map forward: "evolve" re-routes new samples into the previous topics before naming; "names_only" keeps the fresh clustering and carries only topic ids/names. Defaults to "names_only" when omitted.
+        /// </param>
         /// <param name="distanceThreshold">
         /// Maximum distance to nearest centroid. If exceeded, returns no_match.
         /// </param>
@@ -129,6 +139,7 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, string>? topicNames,
             global::Braintrust.TopicMapGenerationSettings? generationSettings,
             bool? disableReconciliation,
+            global::Braintrust.TopicMapDataReconcileMode? reconcileMode,
             double? distanceThreshold,
             string? btqlFilter,
             string? automationBtqlFilter)
@@ -141,6 +152,7 @@ namespace Braintrust
             this.TopicNames = topicNames;
             this.GenerationSettings = generationSettings;
             this.DisableReconciliation = disableReconciliation;
+            this.ReconcileMode = reconcileMode;
             this.DistanceThreshold = distanceThreshold;
             this.BtqlFilter = btqlFilter;
             this.AutomationBtqlFilter = automationBtqlFilter;

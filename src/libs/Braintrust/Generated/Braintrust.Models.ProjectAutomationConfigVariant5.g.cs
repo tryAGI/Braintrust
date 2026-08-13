@@ -16,6 +16,13 @@ namespace Braintrust
         public global::Braintrust.ProjectAutomationConfigVariant5EventType EventType { get; set; }
 
         /// <summary>
+        /// Whether the automation is active or paused.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter))]
+        public global::Braintrust.AutomationStatus? Status { get; set; }
+
+        /// <summary>
         /// Optional list of environment slugs to filter by
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment_filter")]
@@ -44,6 +51,9 @@ namespace Braintrust
         /// <param name="eventType">
         /// The type of automation.
         /// </param>
+        /// <param name="status">
+        /// Whether the automation is active or paused.
+        /// </param>
         /// <param name="environmentFilter">
         /// Optional list of environment slugs to filter by
         /// </param>
@@ -53,9 +63,11 @@ namespace Braintrust
         public ProjectAutomationConfigVariant5(
             global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2> action,
             global::Braintrust.ProjectAutomationConfigVariant5EventType eventType,
+            global::Braintrust.AutomationStatus? status,
             global::System.Collections.Generic.IList<string>? environmentFilter)
         {
             this.EventType = eventType;
+            this.Status = status;
             this.EnvironmentFilter = environmentFilter;
             this.Action = action;
         }

@@ -643,6 +643,9 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the view
         /// </param>
+        /// <param name="description">
+        /// Textual description of the view
+        /// </param>
         /// <param name="viewData">
         /// The view definition
         /// </param>
@@ -663,6 +666,7 @@ namespace Braintrust
             global::System.Guid objectId,
             global::Braintrust.CreateViewViewType viewType,
             string name,
+            string? description = default,
             global::Braintrust.ViewData? viewData = default,
             global::Braintrust.ViewOptions? options = default,
             global::System.Guid? userId = default,
@@ -676,6 +680,7 @@ namespace Braintrust
                 ObjectId = objectId,
                 ViewType = viewType,
                 Name = name,
+                Description = description,
                 ViewData = viewData,
                 Options = options,
                 UserId = userId,

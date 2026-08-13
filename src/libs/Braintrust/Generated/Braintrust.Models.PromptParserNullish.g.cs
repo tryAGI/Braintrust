@@ -41,6 +41,12 @@ namespace Braintrust
         public bool? AllowNoMatch { get; set; }
 
         /// <summary>
+        /// If true, adds a 'Skip' option. When selected, the scorer returns null.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("allow_skip")]
+        public bool? AllowSkip { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -60,6 +66,9 @@ namespace Braintrust
         /// <param name="allowNoMatch">
         /// If true, adds a 'No match' option. When selected, no tag is deposited.
         /// </param>
+        /// <param name="allowSkip">
+        /// If true, adds a 'Skip' option. When selected, the scorer returns null.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -68,13 +77,15 @@ namespace Braintrust
             global::Braintrust.PromptParserNullishType type,
             global::System.Collections.Generic.Dictionary<string, double>? choiceScores,
             global::System.Collections.Generic.IList<string>? choice,
-            bool? allowNoMatch)
+            bool? allowNoMatch,
+            bool? allowSkip)
         {
             this.Type = type;
             this.UseCot = useCot;
             this.ChoiceScores = choiceScores;
             this.Choice = choice;
             this.AllowNoMatch = allowNoMatch;
+            this.AllowSkip = allowSkip;
         }
 
         /// <summary>

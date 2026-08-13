@@ -58,6 +58,9 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("freezeColumns")) __score1++;
             if (__jsonProps.Contains("grouping")) __score1++;
             if (__jsonProps.Contains("layout")) __score1++;
+            if (__jsonProps.Contains("pointSizeMetric")) __score1++;
+            if (__jsonProps.Contains("pointSizeMetric.type")) __score1++;
+            if (__jsonProps.Contains("pointSizeMetric.value")) __score1++;
             if (__jsonProps.Contains("queryShape")) __score1++;
             if (__jsonProps.Contains("rowHeight")) __score1++;
             if (__jsonProps.Contains("symbolGrouping")) __score1++;

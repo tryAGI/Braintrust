@@ -77,6 +77,12 @@ namespace Braintrust
         public global::System.Collections.Generic.Dictionary<string, object?>? Overrides { get; set; }
 
         /// <summary>
+        /// Name of the AI provider secret to pin this invocation to.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint_name")]
+        public string? EndpointName { get; set; }
+
+        /// <summary>
         /// The version of the function
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
@@ -124,6 +130,9 @@ namespace Braintrust
         /// <param name="overrides">
         /// Partial function definition to merge with the function being invoked. Fields are validated against the function type's schema at runtime. For facets: { preprocessor?, prompt?, model? }. For prompts: { model?, ... }.
         /// </param>
+        /// <param name="endpointName">
+        /// Name of the AI provider secret to pin this invocation to.
+        /// </param>
         /// <param name="version">
         /// The version of the function
         /// </param>
@@ -142,6 +151,7 @@ namespace Braintrust
             bool? strict,
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.InvokeApiMcpAuth2>? mcpAuth,
             global::System.Collections.Generic.Dictionary<string, object?>? overrides,
+            string? endpointName,
             string? version)
         {
             this.Input = input;
@@ -155,6 +165,7 @@ namespace Braintrust
             this.Strict = strict;
             this.McpAuth = mcpAuth;
             this.Overrides = overrides;
+            this.EndpointName = endpointName;
             this.Version = version;
         }
 

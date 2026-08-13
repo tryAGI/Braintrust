@@ -29,7 +29,7 @@ namespace Braintrust
         public string? SendEmailError { get; set; }
 
         /// <summary>
-        /// If service accounts with tokens were created, this will contain the added users with their API keys
+        /// The users who were added by this request. api_key and token_name are only present for the inline service-account create-and-mint compatibility path.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("added_users")]
         public global::System.Collections.Generic.IList<global::Braintrust.PatchOrganizationMembersOutputAddedUser>? AddedUsers { get; set; }
@@ -51,7 +51,7 @@ namespace Braintrust
         /// If invite emails failed to send for some reason, the patch operation will still complete, but we will return an error message here
         /// </param>
         /// <param name="addedUsers">
-        /// If service accounts with tokens were created, this will contain the added users with their API keys
+        /// The users who were added by this request. api_key and token_name are only present for the inline service-account create-and-mint compatibility path.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

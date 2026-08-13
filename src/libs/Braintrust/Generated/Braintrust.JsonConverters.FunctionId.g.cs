@@ -63,6 +63,7 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("inline_prompt.options")) __score5++;
             if (__jsonProps.Contains("inline_prompt.origin")) __score5++;
             if (__jsonProps.Contains("inline_prompt.parser")) __score5++;
+            if (__jsonProps.Contains("inline_prompt.preprocessor")) __score5++;
             if (__jsonProps.Contains("inline_prompt.prompt")) __score5++;
             if (__jsonProps.Contains("inline_prompt.template_format")) __score5++;
             if (__jsonProps.Contains("inline_prompt.tool_functions")) __score5++;
@@ -74,6 +75,7 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("inline_prompt.options")) __score6++;
             if (__jsonProps.Contains("inline_prompt.origin")) __score6++;
             if (__jsonProps.Contains("inline_prompt.parser")) __score6++;
+            if (__jsonProps.Contains("inline_prompt.preprocessor")) __score6++;
             if (__jsonProps.Contains("inline_prompt.prompt")) __score6++;
             if (__jsonProps.Contains("inline_prompt.template_format")) __score6++;
             if (__jsonProps.Contains("inline_prompt.tool_functions")) __score6++;

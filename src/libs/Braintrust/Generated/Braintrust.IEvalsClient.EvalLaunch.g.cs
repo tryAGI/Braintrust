@@ -98,6 +98,9 @@ namespace Braintrust
         /// Optional tags that will be added to the experiment.
         /// </param>
         /// <param name="mcpAuth"></param>
+        /// <param name="endpointName">
+        /// Name of the AI provider secret to pin this run to.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -125,6 +128,7 @@ namespace Braintrust
             string? extraMessages = default,
             global::System.Collections.Generic.IList<string>? tags = default,
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? mcpAuth = default,
+            string? endpointName = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

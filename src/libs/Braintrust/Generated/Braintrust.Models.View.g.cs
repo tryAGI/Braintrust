@@ -46,10 +46,22 @@ namespace Braintrust
         public required string Name { get; set; }
 
         /// <summary>
+        /// Textual description of the view
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
         /// Date of view creation
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         public global::System.DateTime? Created { get; set; }
+
+        /// <summary>
+        /// Date of last view update
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updated_at")]
+        public global::System.DateTime? UpdatedAt { get; set; }
 
         /// <summary>
         /// The view definition
@@ -100,8 +112,14 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the view
         /// </param>
+        /// <param name="description">
+        /// Textual description of the view
+        /// </param>
         /// <param name="created">
         /// Date of view creation
+        /// </param>
+        /// <param name="updatedAt">
+        /// Date of last view update
         /// </param>
         /// <param name="viewData">
         /// The view definition
@@ -124,7 +142,9 @@ namespace Braintrust
             global::System.Guid objectId,
             global::Braintrust.ViewViewType viewType,
             string name,
+            string? description,
             global::System.DateTime? created,
+            global::System.DateTime? updatedAt,
             global::Braintrust.ViewData? viewData,
             global::Braintrust.ViewOptions? options,
             global::System.Guid? userId,
@@ -135,7 +155,9 @@ namespace Braintrust
             this.ObjectId = objectId;
             this.ViewType = viewType;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Description = description;
             this.Created = created;
+            this.UpdatedAt = updatedAt;
             this.ViewData = viewData;
             this.Options = options;
             this.UserId = userId;

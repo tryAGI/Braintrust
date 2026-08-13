@@ -16,6 +16,13 @@ namespace Braintrust
         public global::Braintrust.ChatCompletionContentPartTextCacheControlType Type { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ttl")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlJsonConverter))]
+        public global::Braintrust.ChatCompletionContentPartTextCacheControlTtl? Ttl { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -25,13 +32,16 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="ChatCompletionContentPartTextCacheControl" /> class.
         /// </summary>
         /// <param name="type"></param>
+        /// <param name="ttl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatCompletionContentPartTextCacheControl(
-            global::Braintrust.ChatCompletionContentPartTextCacheControlType type)
+            global::Braintrust.ChatCompletionContentPartTextCacheControlType type,
+            global::Braintrust.ChatCompletionContentPartTextCacheControlTtl? ttl)
         {
             this.Type = type;
+            this.Ttl = ttl;
         }
 
         /// <summary>

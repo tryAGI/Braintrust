@@ -66,6 +66,12 @@ namespace Braintrust
         public global::System.Guid? OrgId { get; set; }
 
         /// <summary>
+        /// Date at which the API key expires. If null, the key never expires.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expires_at")]
+        public global::System.DateTime? ExpiresAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -99,6 +105,9 @@ namespace Braintrust
         /// <param name="orgId">
         /// Unique identifier for the organization
         /// </param>
+        /// <param name="expiresAt">
+        /// Date at which the API key expires. If null, the key never expires.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -111,7 +120,8 @@ namespace Braintrust
             string? userEmail,
             string? userGivenName,
             string? userFamilyName,
-            global::System.Guid? orgId)
+            global::System.Guid? orgId,
+            global::System.DateTime? expiresAt)
         {
             this.Id = id;
             this.Created = created;
@@ -122,6 +132,7 @@ namespace Braintrust
             this.UserGivenName = userGivenName;
             this.UserFamilyName = userFamilyName;
             this.OrgId = orgId;
+            this.ExpiresAt = expiresAt;
         }
 
         /// <summary>

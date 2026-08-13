@@ -23,6 +23,12 @@ namespace Braintrust
         public global::Braintrust.ChatCompletionContentPartFileWithTitleType Type { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cache_control")]
+        public global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControl? CacheControl { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -33,15 +39,18 @@ namespace Braintrust
         /// </summary>
         /// <param name="file"></param>
         /// <param name="type"></param>
+        /// <param name="cacheControl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatCompletionContentPartFileWithTitle(
             global::Braintrust.ChatCompletionContentPartFileFile file,
-            global::Braintrust.ChatCompletionContentPartFileWithTitleType type)
+            global::Braintrust.ChatCompletionContentPartFileWithTitleType type,
+            global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControl? cacheControl)
         {
             this.File = file ?? throw new global::System.ArgumentNullException(nameof(file));
             this.Type = type;
+            this.CacheControl = cacheControl;
         }
 
         /// <summary>

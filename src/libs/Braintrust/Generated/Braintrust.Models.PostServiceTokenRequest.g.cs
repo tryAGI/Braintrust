@@ -29,6 +29,12 @@ namespace Braintrust
         public required string ServiceAccountId { get; set; }
 
         /// <summary>
+        /// Number of seconds from now after which the service token should expire. If omitted, the token never expires.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expires_in_seconds")]
+        public int? ExpiresInSeconds { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -46,17 +52,22 @@ namespace Braintrust
         /// <param name="orgName">
         /// For nearly all users, this parameter should be unnecessary. But in the rare case that your API key belongs to multiple organizations, you may specify the name of the organization the Service token belongs in.
         /// </param>
+        /// <param name="expiresInSeconds">
+        /// Number of seconds from now after which the service token should expire. If omitted, the token never expires.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PostServiceTokenRequest(
             string name,
             string serviceAccountId,
-            string? orgName)
+            string? orgName,
+            int? expiresInSeconds)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.OrgName = orgName;
             this.ServiceAccountId = serviceAccountId ?? throw new global::System.ArgumentNullException(nameof(serviceAccountId));
+            this.ExpiresInSeconds = expiresInSeconds;
         }
 
         /// <summary>

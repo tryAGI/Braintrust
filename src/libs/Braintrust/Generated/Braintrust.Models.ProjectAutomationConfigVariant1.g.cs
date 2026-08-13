@@ -16,6 +16,13 @@ namespace Braintrust
         public global::Braintrust.ProjectAutomationConfigVariant1EventType EventType { get; set; }
 
         /// <summary>
+        /// Whether the automation is active or paused.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter))]
+        public global::Braintrust.AutomationStatus? Status { get; set; }
+
+        /// <summary>
         /// BTQL filter to identify rows for the automation rule
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("btql_filter")]
@@ -58,6 +65,9 @@ namespace Braintrust
         /// <param name="eventType">
         /// The type of automation.
         /// </param>
+        /// <param name="status">
+        /// Whether the automation is active or paused.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -65,9 +75,11 @@ namespace Braintrust
             string btqlFilter,
             double intervalSeconds,
             global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2> action,
-            global::Braintrust.ProjectAutomationConfigVariant1EventType eventType)
+            global::Braintrust.ProjectAutomationConfigVariant1EventType eventType,
+            global::Braintrust.AutomationStatus? status)
         {
             this.EventType = eventType;
+            this.Status = status;
             this.BtqlFilter = btqlFilter ?? throw new global::System.ArgumentNullException(nameof(btqlFilter));
             this.IntervalSeconds = intervalSeconds;
             this.Action = action;

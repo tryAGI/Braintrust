@@ -1,0 +1,80 @@
+#nullable enable
+
+namespace Braintrust
+{
+    public partial interface IProjectGroupsClient
+    {
+        /// <summary>
+        /// List project_groups<br/>
+        /// List out all project_groups. The project_groups are sorted by creation date, with the most recently-created project_groups coming first
+        /// </summary>
+        /// <param name="limit">
+        /// Limit the number of objects to return
+        /// </param>
+        /// <param name="startingAfter">
+        /// Pagination cursor id.<br/>
+        /// For example, if the final item in the last page you fetched had an id of `foo`, pass `starting_after=foo` to fetch the next page. Note: you may only pass one of `starting_after` and `ending_before`
+        /// </param>
+        /// <param name="endingBefore">
+        /// Pagination cursor id.<br/>
+        /// For example, if the initial item in the last page you fetched had an id of `foo`, pass `ending_before=foo` to fetch the previous page. Note: you may only pass one of `starting_after` and `ending_before`
+        /// </param>
+        /// <param name="ids">
+        /// Filter search results to a particular set of object IDs. To specify a list of IDs, include the query param multiple times
+        /// </param>
+        /// <param name="projectGroupName">
+        /// Name of the project_group to search for
+        /// </param>
+        /// <param name="orgName">
+        /// Filter search results to within a particular organization
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.GetProjectGroupResponse> GetProjectGroupAsync(
+            int? limit = default,
+            global::System.Guid? startingAfter = default,
+            global::System.Guid? endingBefore = default,
+            global::Braintrust.Ids? ids = default,
+            string? projectGroupName = default,
+            string? orgName = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// List project_groups<br/>
+        /// List out all project_groups. The project_groups are sorted by creation date, with the most recently-created project_groups coming first
+        /// </summary>
+        /// <param name="limit">
+        /// Limit the number of objects to return
+        /// </param>
+        /// <param name="startingAfter">
+        /// Pagination cursor id.<br/>
+        /// For example, if the final item in the last page you fetched had an id of `foo`, pass `starting_after=foo` to fetch the next page. Note: you may only pass one of `starting_after` and `ending_before`
+        /// </param>
+        /// <param name="endingBefore">
+        /// Pagination cursor id.<br/>
+        /// For example, if the initial item in the last page you fetched had an id of `foo`, pass `ending_before=foo` to fetch the previous page. Note: you may only pass one of `starting_after` and `ending_before`
+        /// </param>
+        /// <param name="ids">
+        /// Filter search results to a particular set of object IDs. To specify a list of IDs, include the query param multiple times
+        /// </param>
+        /// <param name="projectGroupName">
+        /// Name of the project_group to search for
+        /// </param>
+        /// <param name="orgName">
+        /// Filter search results to within a particular organization
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.GetProjectGroupResponse>> GetProjectGroupAsResponseAsync(
+            int? limit = default,
+            global::System.Guid? startingAfter = default,
+            global::System.Guid? endingBefore = default,
+            global::Braintrust.Ids? ids = default,
+            string? projectGroupName = default,
+            string? orgName = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

@@ -87,6 +87,12 @@ namespace Braintrust
         public global::Braintrust.ViewOptionsTableViewOptionsSymbolGrouping? SymbolGrouping { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pointSizeMetric")]
+        public global::Braintrust.ViewOptionsTableViewOptionsPointSizeMetric? PointSizeMetric { get; set; }
+
+        /// <summary>
         /// One of 'avg', 'sum', 'min', 'max', 'median', 'all'
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xAxisAggregation")]
@@ -146,6 +152,7 @@ namespace Braintrust
         /// <param name="yMetric"></param>
         /// <param name="xAxis"></param>
         /// <param name="symbolGrouping"></param>
+        /// <param name="pointSizeMetric"></param>
         /// <param name="xAxisAggregation">
         /// One of 'avg', 'sum', 'min', 'max', 'median', 'all'
         /// </param>
@@ -171,6 +178,7 @@ namespace Braintrust
             global::Braintrust.ViewOptionsTableViewOptionsYMetric? yMetric,
             global::Braintrust.ViewOptionsTableViewOptionsXAxis? xAxis,
             global::Braintrust.ViewOptionsTableViewOptionsSymbolGrouping? symbolGrouping,
+            global::Braintrust.ViewOptionsTableViewOptionsPointSizeMetric? pointSizeMetric,
             string? xAxisAggregation,
             global::System.Collections.Generic.IList<global::Braintrust.ViewOptionsTableViewOptionsChartAnnotation>? chartAnnotations,
             global::Braintrust.AnyOf<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>? timeRangeFilter,
@@ -191,6 +199,7 @@ namespace Braintrust
             this.YMetric = yMetric;
             this.XAxis = xAxis;
             this.SymbolGrouping = symbolGrouping;
+            this.PointSizeMetric = pointSizeMetric;
             this.XAxisAggregation = xAxisAggregation;
             this.ChartAnnotations = chartAnnotations;
             this.TimeRangeFilter = timeRangeFilter;

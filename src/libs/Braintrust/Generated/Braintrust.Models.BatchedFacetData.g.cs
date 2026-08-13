@@ -16,11 +16,11 @@ namespace Braintrust
         public global::Braintrust.BatchedFacetDataType Type { get; set; }
 
         /// <summary>
-        /// 
+        /// The saved, global, or inline preprocessor to use for facet extraction. If not provided, the project default preprocessor will be used, falling back to the global 'thread' preprocessor.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preprocessor")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.NullableSavedFunctionId?, object>))]
-        public global::Braintrust.AllOf<global::Braintrust.NullableSavedFunctionId?, object>? Preprocessor { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdJsonConverter))]
+        public global::Braintrust.FacetPreprocessorId? Preprocessor { get; set; }
 
         /// <summary>
         /// 
@@ -46,7 +46,9 @@ namespace Braintrust
         /// </summary>
         /// <param name="facets"></param>
         /// <param name="type"></param>
-        /// <param name="preprocessor"></param>
+        /// <param name="preprocessor">
+        /// The saved, global, or inline preprocessor to use for facet extraction. If not provided, the project default preprocessor will be used, falling back to the global 'thread' preprocessor.
+        /// </param>
         /// <param name="topicMaps">
         /// Topic maps that depend on facets in this batch, keyed by source facet name. Each source facet can have multiple topic maps.
         /// </param>
@@ -56,7 +58,7 @@ namespace Braintrust
         public BatchedFacetData(
             global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataFacet> facets,
             global::Braintrust.BatchedFacetDataType type,
-            global::Braintrust.AllOf<global::Braintrust.NullableSavedFunctionId?, object>? preprocessor,
+            global::Braintrust.FacetPreprocessorId? preprocessor,
             global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Braintrust.BatchedFacetDataTopicMap>>? topicMaps)
         {
             this.Type = type;

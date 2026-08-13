@@ -78,6 +78,9 @@ namespace Braintrust
         /// <param name="overrides">
         /// Partial function definition to merge with the function being invoked. Fields are validated against the function type's schema at runtime. For facets: { preprocessor?, prompt?, model? }. For prompts: { model?, ... }.
         /// </param>
+        /// <param name="endpointName">
+        /// Name of the AI provider secret to pin this invocation to.
+        /// </param>
         /// <param name="version">
         /// The version of the function
         /// </param>
@@ -97,6 +100,7 @@ namespace Braintrust
             bool? strict = default,
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.InvokeApiMcpAuth2>? mcpAuth = default,
             global::System.Collections.Generic.Dictionary<string, object?>? overrides = default,
+            string? endpointName = default,
             string? version = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
