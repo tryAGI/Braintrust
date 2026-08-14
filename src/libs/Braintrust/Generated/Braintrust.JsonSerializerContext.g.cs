@@ -13,1121 +13,6 @@ namespace Braintrust
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::Braintrust.JsonConverters.ViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListOrgObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListOrgObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListPermissionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListPermissionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListRestrictObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListRestrictObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanAttributesPurposeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanAttributesPurposeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectLogsEventLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectLogsEventLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackExperimentItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackExperimentItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackDatasetItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackDatasetItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptParserNullishTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptParserNullishTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullishNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PermissionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PermissionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AutomationStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TraceScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TraceScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopePlacementJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopePlacementNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.RetentionObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.RetentionObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationFacetModelJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationFacetModelNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataChatTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataChatTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant4TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant4TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant5TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant5TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant6TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant6TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant7TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant7TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant8TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant8TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphEdgePurposeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphEdgePurposeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataReconcileModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataReconcileModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.BatchedFacetDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.BatchedFacetDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataPromptTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataPromptTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.StreamingModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.StreamingModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ImageRenderingModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ImageRenderingModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarSecretCategoryJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarSecretCategoryNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataTemplateFormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataTemplateFormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsCollectJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsCollectNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsFieldJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsFieldNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.IdsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserGivenNameJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserFamilyNameJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserEmailJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AISecretTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreCategoriesJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1?, global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectSettings, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPart>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.Dictionary<string, object?>, string>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunction>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallFunction>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1, global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Function, global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Function, global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant1, global::Braintrust.ProjectAutomationConfigVariant2, global::Braintrust.ProjectAutomationConfigVariant3, global::Braintrust.ProjectAutomationConfigVariant4, global::Braintrust.ProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2, global::Braintrust.CreateProjectAutomationConfigVariant3, global::Braintrust.CreateProjectAutomationConfigVariant4, global::Braintrust.CreateProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2, global::Braintrust.PatchProjectAutomationConfigVariant3, global::Braintrust.PatchProjectAutomationConfigVariant4, global::Braintrust.PatchProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.CodeBundleLocationExperiment, global::Braintrust.CodeBundleLocationFunction, global::Braintrust.CodeBundleLocationVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer, global::Braintrust.CodeBundleLocationExperimentPositionClassifier>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1, global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataCodeData2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.TopicMapData, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataNullishCodeData2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.TopicMapData, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionTypeEnum?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.RunEvalDataDatasetId, global::Braintrust.RunEvalDataProjectDatasetName, global::Braintrust.RunEvalDataDatasetRows>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionId?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.InvokeParent?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.RepoInfo, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ProjectScoreType?, global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>>>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectScoreType?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>),
-
-            typeof(global::Braintrust.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionId), TypeInfoPropertyName = "NullableSavedFunctionId_Braintrust_NullableSavedFunctionId")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionIdFunctionType), TypeInfoPropertyName = "NullableSavedFunctionIdFunctionType_Braintrust_NullableSavedFunctionIdFunctionType")]
@@ -1640,1121 +525,6 @@ namespace Braintrust
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::Braintrust.JsonConverters.ViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListOrgObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListOrgObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListPermissionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListPermissionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListRestrictObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListRestrictObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanAttributesPurposeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanAttributesPurposeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectLogsEventLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectLogsEventLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackExperimentItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackExperimentItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackDatasetItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackDatasetItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptParserNullishTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptParserNullishTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullishNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PermissionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PermissionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AutomationStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TraceScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TraceScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopePlacementJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopePlacementNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.RetentionObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.RetentionObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationFacetModelJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationFacetModelNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataChatTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataChatTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant4TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant4TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant5TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant5TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant6TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant6TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant7TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant7TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant8TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant8TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphEdgePurposeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphEdgePurposeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataReconcileModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataReconcileModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.BatchedFacetDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.BatchedFacetDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataPromptTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataPromptTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.StreamingModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.StreamingModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ImageRenderingModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ImageRenderingModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarSecretCategoryJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarSecretCategoryNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataTemplateFormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataTemplateFormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsCollectJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsCollectNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsFieldJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsFieldNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.IdsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserGivenNameJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserFamilyNameJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserEmailJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AISecretTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreCategoriesJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1?, global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectSettings, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPart>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.Dictionary<string, object?>, string>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunction>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallFunction>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1, global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Function, global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Function, global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant1, global::Braintrust.ProjectAutomationConfigVariant2, global::Braintrust.ProjectAutomationConfigVariant3, global::Braintrust.ProjectAutomationConfigVariant4, global::Braintrust.ProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2, global::Braintrust.CreateProjectAutomationConfigVariant3, global::Braintrust.CreateProjectAutomationConfigVariant4, global::Braintrust.CreateProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2, global::Braintrust.PatchProjectAutomationConfigVariant3, global::Braintrust.PatchProjectAutomationConfigVariant4, global::Braintrust.PatchProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.CodeBundleLocationExperiment, global::Braintrust.CodeBundleLocationFunction, global::Braintrust.CodeBundleLocationVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer, global::Braintrust.CodeBundleLocationExperimentPositionClassifier>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1, global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataCodeData2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.TopicMapData, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataNullishCodeData2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.TopicMapData, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionTypeEnum?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.RunEvalDataDatasetId, global::Braintrust.RunEvalDataProjectDatasetName, global::Braintrust.RunEvalDataDatasetRows>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionId?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.InvokeParent?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.RepoInfo, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ProjectScoreType?, global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>>>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectScoreType?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>),
-
-            typeof(global::Braintrust.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionId), TypeInfoPropertyName = "NullableSavedFunctionId_Braintrust_NullableSavedFunctionId")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionIdFunctionType), TypeInfoPropertyName = "NullableSavedFunctionIdFunctionType_Braintrust_NullableSavedFunctionIdFunctionType")]
@@ -3267,1121 +1037,6 @@ namespace Braintrust
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         Converters = new global::System.Type[]
         {
-            typeof(global::Braintrust.JsonConverters.ViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListOrgObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListOrgObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListPermissionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListPermissionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListRestrictObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AclListRestrictObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanAttributesPurposeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanAttributesPurposeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectLogsEventLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectLogsEventLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackExperimentItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackExperimentItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackDatasetItemSourceJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FeedbackDatasetItemSourceNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptParserNullishTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptParserNullishTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullishNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PermissionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PermissionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AutomationStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AutomationStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SpanScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TraceScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TraceScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopePlacementJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GroupScopePlacementNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.RetentionObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.RetentionObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationFacetModelJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationFacetModelNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataChatTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataChatTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant1TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant1TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant2TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant2TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant3TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant3TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant4TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant4TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant5TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant5TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant6TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant6TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant7TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant7TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant8TypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeVariant8TypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphEdgePurposeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphEdgePurposeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataReconcileModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicMapDataReconcileModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.BatchedFacetDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.BatchedFacetDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataPromptTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataPromptTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionLogIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionLogIdNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.StreamingModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.StreamingModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.CreateViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchViewViewTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchViewViewTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ImageRenderingModeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ImageRenderingModeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectType2JsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarObjectType2NullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarSecretCategoryJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.EnvVarSecretCategoryNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataTemplateFormatJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataTemplateFormatNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsCollectJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsCollectNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsFieldJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GitMetadataSettingsFieldNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeNullableJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.IdsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserGivenNameJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserFamilyNameJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.UserEmailJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AISecretTypeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.NullableSavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.SavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionContentPartJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ChatCompletionMessageParamJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ResponseFormatNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ModelParamsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.TopicAutomationDataScopeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ProjectScoreCategoriesJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.PromptBlockDataJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.GraphNodeJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FacetPreprocessorIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionDataNullishJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.InvokeParentJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.ViewOptionsJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.FunctionIdJsonConverter),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1?, global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectSettings, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPart>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.Dictionary<string, object?>, string>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunction>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallFunction>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1, global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Function, global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Function, global::Braintrust.TopicMapFunctionAutomationFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant1, global::Braintrust.ProjectAutomationConfigVariant2, global::Braintrust.ProjectAutomationConfigVariant3, global::Braintrust.ProjectAutomationConfigVariant4, global::Braintrust.ProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2, global::Braintrust.CreateProjectAutomationConfigVariant3, global::Braintrust.CreateProjectAutomationConfigVariant4, global::Braintrust.CreateProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2, global::Braintrust.PatchProjectAutomationConfigVariant3, global::Braintrust.PatchProjectAutomationConfigVariant4, global::Braintrust.PatchProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2, global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1, global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.CodeBundleLocationExperiment, global::Braintrust.CodeBundleLocationFunction, global::Braintrust.CodeBundleLocationVariant3>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.CodeBundleLocationExperimentPositionVariant1, global::Braintrust.CodeBundleLocationExperimentPositionScorer, global::Braintrust.CodeBundleLocationExperimentPositionClassifier>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1, global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataCodeData2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.TopicMapData, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataNullishCodeData2>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.TopicMapData, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>?>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.PromptDataToolFunctionVariant2Function, global::Braintrust.PromptDataToolFunctionVariant2Global>),
-
-            typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionTypeEnum?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.RunEvalDataDatasetId, global::Braintrust.RunEvalDataProjectDatasetName, global::Braintrust.RunEvalDataDatasetRows>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionId?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.InvokeParent?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.RepoInfo, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ProjectScoreType?, global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.ProjectScoreType?, object>>>),
-
-            typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectScoreType?, object>),
-
-            typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>),
-
-            typeof(global::Braintrust.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionId), TypeInfoPropertyName = "NullableSavedFunctionId_Braintrust_NullableSavedFunctionId")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionIdFunctionType), TypeInfoPropertyName = "NullableSavedFunctionIdFunctionType_Braintrust_NullableSavedFunctionIdFunctionType")]
@@ -4690,13 +1345,7 @@ namespace Braintrust
     /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
-        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
-            SourceGenerationContextChunk0.Default,
-
-            SourceGenerationContextChunk1.Default,
-
-            SourceGenerationContextChunk2.Default
-            );
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
@@ -4726,476 +1375,6 @@ namespace Braintrust
                 DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
                 TypeInfoResolver = Resolver,
             };
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AclObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AclObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AclListOrgObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AclListOrgObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AclListPermissionJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AclListPermissionNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AclListRestrictObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AclListRestrictObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectScoreTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectScoreTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.EnvVarObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.EnvVarObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionTypeEnumJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionTypeEnumNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1JsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1NullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2JsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2NullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SpanTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SpanTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SpanAttributesPurposeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SpanAttributesPurposeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectLogsEventLogIdJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectLogsEventLogIdNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FeedbackExperimentItemSourceJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FeedbackExperimentItemSourceNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FeedbackDatasetItemSourceJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FeedbackDatasetItemSourceNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptParserNullishTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptParserNullishTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionTypeEnumNullishJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionTypeEnumNullishNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptLogIdJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptLogIdNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PermissionJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PermissionNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AutomationStatusJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AutomationStatusNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SpanScopeTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.SpanScopeTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TraceScopeTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TraceScopeTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GroupScopeTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GroupScopeTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GroupScopePlacementJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GroupScopePlacementNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.RetentionObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.RetentionObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationFacetModelJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationFacetModelNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptBlockDataChatTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptBlockDataChatTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant1TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant1TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant2TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant2TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant3TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant3TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant4TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant4TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant5TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant5TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant6TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant6TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant7TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant7TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant8TypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphNodeVariant8TypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphEdgePurposeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphEdgePurposeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphDataTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GraphDataTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FacetDataTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FacetDataTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapDataTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapDataTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapDataReconcileModeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.TopicMapDataReconcileModeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.BatchedFacetDataTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.BatchedFacetDataTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataPromptTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataPromptTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataCodeTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataCodeTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataCodeDataTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataCodeDataTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataCodeDataType2JsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataCodeDataType2NullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataGlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataGlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataParametersTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataParametersTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionLogIdJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionLogIdNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2JsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2NullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.StreamingModeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.StreamingModeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewViewTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ViewViewTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateViewViewTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.CreateViewViewTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchViewViewTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchViewViewTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ImageRenderingModeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.ImageRenderingModeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.EnvVarObjectType2JsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.EnvVarObjectType2NullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.EnvVarSecretCategoryJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.EnvVarSecretCategoryNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataTemplateFormatJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataTemplateFormatNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GitMetadataSettingsCollectJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GitMetadataSettingsCollectNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GitMetadataSettingsFieldJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.GitMetadataSettingsFieldNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeNullableJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeJsonConverter());
-            options.Converters.Add(new global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeNullableJsonConverter());
             options.Converters.Add(new global::Braintrust.JsonConverters.IdsJsonConverter());
             options.Converters.Add(new global::Braintrust.JsonConverters.UserGivenNameJsonConverter());
             options.Converters.Add(new global::Braintrust.JsonConverters.UserFamilyNameJsonConverter());
@@ -5285,7 +1464,3362 @@ namespace Braintrust
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>());
             options.Converters.Add(new global::Braintrust.JsonConverters.UnixTimestampJsonConverter());
 
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
+
             return options;
+        }
+
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Braintrust.ViewType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewType?)
+
+                    || typeToConvert == typeof(global::Braintrust.AclObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.AclObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.AclListOrgObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.AclListOrgObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.AclListPermission)
+
+                    || typeToConvert == typeof(global::Braintrust.AclListPermission?)
+
+                    || typeToConvert == typeof(global::Braintrust.AclListRestrictObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.AclListRestrictObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectScoreType)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectScoreType?)
+
+                    || typeToConvert == typeof(global::Braintrust.EnvVarObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.EnvVarObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionTypeEnum)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionTypeEnum?)
+
+                    || typeToConvert == typeof(global::Braintrust.NullableSavedFunctionIdFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.NullableSavedFunctionIdFunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.NullableSavedFunctionIdGlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.NullableSavedFunctionIdGlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?)
+
+                    || typeToConvert == typeof(global::Braintrust.SpanType)
+
+                    || typeToConvert == typeof(global::Braintrust.SpanType?)
+
+                    || typeToConvert == typeof(global::Braintrust.SpanAttributesPurpose)
+
+                    || typeToConvert == typeof(global::Braintrust.SpanAttributesPurpose?)
+
+                    || typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedFunctionIdFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedFunctionIdFunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedFunctionIdGlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedFunctionIdGlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectLogsEventLogId)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectLogsEventLogId?)
+
+                    || typeToConvert == typeof(global::Braintrust.FeedbackResponseSchemaStatus)
+
+                    || typeToConvert == typeof(global::Braintrust.FeedbackResponseSchemaStatus?)
+
+                    || typeToConvert == typeof(global::Braintrust.FeedbackProjectLogsItemSource)
+
+                    || typeToConvert == typeof(global::Braintrust.FeedbackProjectLogsItemSource?)
+
+                    || typeToConvert == typeof(global::Braintrust.FeedbackExperimentItemSource)
+
+                    || typeToConvert == typeof(global::Braintrust.FeedbackExperimentItemSource?)
+
+                    || typeToConvert == typeof(global::Braintrust.FeedbackDatasetItemSource)
+
+                    || typeToConvert == typeof(global::Braintrust.FeedbackDatasetItemSource?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextCacheControlType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextCacheControlType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextCacheControlTtl)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextCacheControlTtl?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleCacheControlType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleCacheControlType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleCacheControlTtl)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleCacheControlTtl?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlTtl)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlTtl?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageToolCallType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageToolCallType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamSystemRole)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamSystemRole?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamUserRole)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamUserRole?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamAssistantRole)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamAssistantRole?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamToolRole)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamToolRole?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamFunctionRole)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamFunctionRole?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamDeveloperRole)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamDeveloperRole?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamFallbackRole)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamFallbackRole?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishChatType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishChatType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishCompletionType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishCompletionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonSchemaType)
+
+                    || typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonSchemaType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ResponseFormatNullishTextType)
+
+                    || typeToConvert == typeof(global::Braintrust.ResponseFormatNullishTextType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto?)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone?)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired?)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto?)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone?)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsReasoningEffort)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsReasoningEffort?)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsVerbosity)
+
+                    || typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsVerbosity?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptParserNullishType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptParserNullishType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdFunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2FunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2FunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2GlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2GlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishTemplateFormat)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishTemplateFormat?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionTypeEnumNullish)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionTypeEnumNullish?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptLogId)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptLogId?)
+
+                    || typeToConvert == typeof(global::Braintrust.Permission)
+
+                    || typeToConvert == typeof(global::Braintrust.Permission?)
+
+                    || typeToConvert == typeof(global::Braintrust.AutomationStatus)
+
+                    || typeToConvert == typeof(global::Braintrust.AutomationStatus?)
+
+                    || typeToConvert == typeof(global::Braintrust.SpanScopeType)
+
+                    || typeToConvert == typeof(global::Braintrust.SpanScopeType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TraceScopeType)
+
+                    || typeToConvert == typeof(global::Braintrust.TraceScopeType?)
+
+                    || typeToConvert == typeof(global::Braintrust.GroupScopeType)
+
+                    || typeToConvert == typeof(global::Braintrust.GroupScopeType?)
+
+                    || typeToConvert == typeof(global::Braintrust.GroupScopePlacement)
+
+                    || typeToConvert == typeof(global::Braintrust.GroupScopePlacement?)
+
+                    || typeToConvert == typeof(global::Braintrust.RetentionObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.RetentionObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigEventType)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigEventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigProductOrigin)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigProductOrigin?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationType)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationType?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationOutputType)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationOutputType?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionType)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionOperator)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionOperator?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyNoDataBehavior)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyNoDataBehavior?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopHarness)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopHarness?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopReasoningEffort)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopReasoningEffort?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigActionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigActionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigActionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigActionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationFacetModel)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationFacetModel?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapFunctionAutomationFunctionVariant2FunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapFunctionAutomationFunctionVariant2FunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapFunctionAutomationFunctionVariant2GlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapFunctionAutomationFunctionVariant2GlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant3Type)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant3Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationConfigEventType)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationConfigEventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationConfigFacetFunctionVariant2FunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationConfigFacetFunctionVariant2FunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationConfigFacetFunctionVariant2GlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicAutomationConfigFacetFunctionVariant2GlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicDigestAutomationConfigEventType)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicDigestAutomationConfigEventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicDigestAutomationConfigActionType)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicDigestAutomationConfigActionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2Format)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2Format?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3ObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3ObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3Format)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3Format?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant4EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant4EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2Format)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2Format?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3ObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3ObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3Format)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3Format?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant4EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant4EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2Format)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2Format?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3ObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3ObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3Format)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3Format?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant4EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant4EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5EventType)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5EventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.OrgAutomationConfigEventType)
+
+                    || typeToConvert == typeof(global::Braintrust.OrgAutomationConfigEventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateOrgAutomationConfigEventType)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateOrgAutomationConfigEventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchOrgAutomationConfigEventType)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchOrgAutomationConfigEventType?)
+
+                    || typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2GlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2GlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectScoreConditionBehavior)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectScoreConditionBehavior?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectScoreConfigObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectScoreConfigObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleRuntimeContextRuntime)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleRuntimeContextRuntime?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentType)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionScorerType)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionScorerType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionClassifierType)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionClassifierType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationFunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3Type)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1Provider)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1Provider?)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2Provider)
+
+                    || typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2Provider?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataChatType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataChatType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataCompletionType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataCompletionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant3Type)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant3Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant4Type)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant4Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant5Type)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant5Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant6Type)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant6Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant7Type)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant7Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant8Type)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphNodeVariant8Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphEdgePurpose)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphEdgePurpose?)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphDataType)
+
+                    || typeToConvert == typeof(global::Braintrust.GraphDataType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdFunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdGlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdGlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdPreprocessorInlineType)
+
+                    || typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdPreprocessorInlineType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FacetDataType)
+
+                    || typeToConvert == typeof(global::Braintrust.FacetDataType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapGenerationSettingsAlgorithm)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapGenerationSettingsAlgorithm?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapGenerationSettingsDimensionReduction)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapGenerationSettingsDimensionReduction?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapDataType)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapDataType?)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapDataReconcileMode)
+
+                    || typeToConvert == typeof(global::Braintrust.TopicMapDataReconcileMode?)
+
+                    || typeToConvert == typeof(global::Braintrust.BatchedFacetDataType)
+
+                    || typeToConvert == typeof(global::Braintrust.BatchedFacetDataType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataPromptType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataPromptType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataCodeType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataCodeType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataType2)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataType2?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataRuntimeContextRuntime)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataRuntimeContextRuntime?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataRemoteEvalType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataRemoteEvalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataGlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataGlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataParametersType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataParametersType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataParametersSchemaType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataParametersSchemaType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionLogId)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionLogId?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishPromptType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishPromptType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataType2)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataType2?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataRuntimeContextRuntime)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataRuntimeContextRuntime?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishRemoteEvalType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishRemoteEvalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishGlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishGlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersSchemaType)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersSchemaType?)
+
+                    || typeToConvert == typeof(global::Braintrust.InvokeParentSpanParentStructObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.InvokeParentSpanParentStructObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.StreamingMode)
+
+                    || typeToConvert == typeof(global::Braintrust.StreamingMode?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsViewType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsViewType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsYMetricType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsYMetricType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsXAxisType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsXAxisType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsSymbolGroupingType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsSymbolGroupingType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsPointSizeMetricType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsPointSizeMetricType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsQueryShape)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsQueryShape?)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewViewType)
+
+                    || typeToConvert == typeof(global::Braintrust.ViewViewType?)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateViewViewType)
+
+                    || typeToConvert == typeof(global::Braintrust.CreateViewViewType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchViewViewType)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchViewViewType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ImageRenderingMode)
+
+                    || typeToConvert == typeof(global::Braintrust.ImageRenderingMode?)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchOrganizationMembersOutputStatus)
+
+                    || typeToConvert == typeof(global::Braintrust.PatchOrganizationMembersOutputStatus?)
+
+                    || typeToConvert == typeof(global::Braintrust.EnvVarObjectType2)
+
+                    || typeToConvert == typeof(global::Braintrust.EnvVarObjectType2?)
+
+                    || typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory)
+
+                    || typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataToolFunctionVariant2FunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataToolFunctionVariant2FunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataToolFunctionVariant2GlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataToolFunctionVariant2GlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataTemplateFormat)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataTemplateFormat?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType?)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionIdInlineCodeInlineContextRuntime)
+
+                    || typeToConvert == typeof(global::Braintrust.FunctionIdInlineCodeInlineContextRuntime?)
+
+                    || typeToConvert == typeof(global::Braintrust.GitMetadataSettingsCollect)
+
+                    || typeToConvert == typeof(global::Braintrust.GitMetadataSettingsCollect?)
+
+                    || typeToConvert == typeof(global::Braintrust.GitMetadataSettingsField)
+
+                    || typeToConvert == typeof(global::Braintrust.GitMetadataSettingsField?)
+
+                    || typeToConvert == typeof(global::Braintrust.PostEnvVarRequestObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.PostEnvVarRequestObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PutEnvVarRequestObjectType)
+
+                    || typeToConvert == typeof(global::Braintrust.PutEnvVarRequestObjectType?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Braintrust.ViewType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AclObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.AclObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AclObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.AclObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AclListOrgObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.AclListOrgObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AclListOrgObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.AclListOrgObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AclListPermission))
+                {
+                    return new global::Braintrust.JsonConverters.AclListPermissionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AclListPermission?))
+                {
+                    return new global::Braintrust.JsonConverters.AclListPermissionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AclListRestrictObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.AclListRestrictObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AclListRestrictObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.AclListRestrictObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectScoreType))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectScoreTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectScoreType?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectScoreTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.EnvVarObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.EnvVarObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionTypeEnum))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionTypeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionTypeEnum?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionTypeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.NullableSavedFunctionIdFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.NullableSavedFunctionIdFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.NullableSavedFunctionIdFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.NullableSavedFunctionIdGlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.NullableSavedFunctionIdGlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.NullableSavedFunctionIdGlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant1NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanType))
+                {
+                    return new global::Braintrust.JsonConverters.SpanTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanType?))
+                {
+                    return new global::Braintrust.JsonConverters.SpanTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanAttributesPurpose))
+                {
+                    return new global::Braintrust.JsonConverters.SpanAttributesPurposeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanAttributesPurpose?))
+                {
+                    return new global::Braintrust.JsonConverters.SpanAttributesPurposeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedFunctionIdFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedFunctionIdFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.SavedFunctionIdFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedFunctionIdGlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedFunctionIdGlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.SavedFunctionIdGlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectLogsEventLogId))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectLogsEventLogIdJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectLogsEventLogId?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectLogsEventLogIdNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FeedbackResponseSchemaStatus))
+                {
+                    return new global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FeedbackResponseSchemaStatus?))
+                {
+                    return new global::Braintrust.JsonConverters.FeedbackResponseSchemaStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FeedbackProjectLogsItemSource))
+                {
+                    return new global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FeedbackProjectLogsItemSource?))
+                {
+                    return new global::Braintrust.JsonConverters.FeedbackProjectLogsItemSourceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FeedbackExperimentItemSource))
+                {
+                    return new global::Braintrust.JsonConverters.FeedbackExperimentItemSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FeedbackExperimentItemSource?))
+                {
+                    return new global::Braintrust.JsonConverters.FeedbackExperimentItemSourceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FeedbackDatasetItemSource))
+                {
+                    return new global::Braintrust.JsonConverters.FeedbackDatasetItemSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FeedbackDatasetItemSource?))
+                {
+                    return new global::Braintrust.JsonConverters.FeedbackDatasetItemSourceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextCacheControlType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextCacheControlType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextCacheControlTtl))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextCacheControlTtl?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextCacheControlTtlNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleCacheControlType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleCacheControlType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleCacheControlTtl))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartTextWithTitleCacheControlTtl?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartTextWithTitleCacheControlTtlNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailAutoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailLowNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleImageUrlDetailHighNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlTtl))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlTtl?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartFileWithTitleCacheControlTtlNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageToolCallType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageToolCallType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageToolCallTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamSystemRole))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamSystemRole?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamSystemRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamUserRole))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamUserRole?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamUserRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamAssistantRole))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamAssistantRole?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamAssistantRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamToolRole))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamToolRole?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamToolRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamFunctionRole))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamFunctionRole?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamFunctionRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamDeveloperRole))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamDeveloperRole?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamDeveloperRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamFallbackRole))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionMessageParamFallbackRole?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionMessageParamFallbackRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishChatType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishChatType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishChatTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishCompletionType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishCompletionType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.ResponseFormatNullishJsonObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonSchemaType))
+                {
+                    return new global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonSchemaType?))
+                {
+                    return new global::Braintrust.JsonConverters.ResponseFormatNullishJsonSchemaTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ResponseFormatNullishTextType))
+                {
+                    return new global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ResponseFormatNullishTextType?))
+                {
+                    return new global::Braintrust.JsonConverters.ResponseFormatNullishTextTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto?))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceAutoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone?))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceNoneNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired?))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceRequiredNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsToolChoiceFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto?))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallAutoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone?))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsFunctionCallNoneNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsReasoningEffort))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsReasoningEffort?))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsReasoningEffortNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsVerbosity))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ModelParamsOpenAIModelParamsVerbosity?))
+                {
+                    return new global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptParserNullishType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptParserNullishTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptParserNullishType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptParserNullishTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2FunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2FunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2FunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2GlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2GlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishToolFunctionVariant2GlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishTemplateFormat))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishTemplateFormat?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishTemplateFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionTypeEnumNullish))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionTypeEnumNullishJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionTypeEnumNullish?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionTypeEnumNullishNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptLogId))
+                {
+                    return new global::Braintrust.JsonConverters.PromptLogIdJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptLogId?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptLogIdNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.Permission))
+                {
+                    return new global::Braintrust.JsonConverters.PermissionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.Permission?))
+                {
+                    return new global::Braintrust.JsonConverters.PermissionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AutomationStatus))
+                {
+                    return new global::Braintrust.JsonConverters.AutomationStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.AutomationStatus?))
+                {
+                    return new global::Braintrust.JsonConverters.AutomationStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanScopeType))
+                {
+                    return new global::Braintrust.JsonConverters.SpanScopeTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanScopeType?))
+                {
+                    return new global::Braintrust.JsonConverters.SpanScopeTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TraceScopeType))
+                {
+                    return new global::Braintrust.JsonConverters.TraceScopeTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TraceScopeType?))
+                {
+                    return new global::Braintrust.JsonConverters.TraceScopeTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GroupScopeType))
+                {
+                    return new global::Braintrust.JsonConverters.GroupScopeTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GroupScopeType?))
+                {
+                    return new global::Braintrust.JsonConverters.GroupScopeTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GroupScopePlacement))
+                {
+                    return new global::Braintrust.JsonConverters.GroupScopePlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GroupScopePlacement?))
+                {
+                    return new global::Braintrust.JsonConverters.GroupScopePlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.RetentionObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.RetentionObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.RetentionObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.RetentionObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigEventType))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigEventType?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigEventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigProductOrigin))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigProductOrigin?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigProductOriginNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationType))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationType?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationOutputType))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationOutputType?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdCalculationOutputTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionType))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionType?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionOperator))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionOperator?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyNoDataBehavior))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigThresholdPolicyNoDataBehavior?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyNoDataBehaviorNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopHarness))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopHarness?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopReasoningEffort))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopReasoningEffort?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigActionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigActionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigActionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigActionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigActionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationFacetModel))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationFacetModelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationFacetModel?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationFacetModelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapFunctionAutomationFunctionVariant2FunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapFunctionAutomationFunctionVariant2FunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2FunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapFunctionAutomationFunctionVariant2GlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapFunctionAutomationFunctionVariant2GlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapFunctionAutomationFunctionVariant2GlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant3Type))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationDataScopeVariant3Type?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationDataScopeVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationConfigEventType))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationConfigEventType?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationConfigEventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationConfigFacetFunctionVariant2FunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationConfigFacetFunctionVariant2FunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2FunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationConfigFacetFunctionVariant2GlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicAutomationConfigFacetFunctionVariant2GlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicAutomationConfigFacetFunctionVariant2GlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicDigestAutomationConfigEventType))
+                {
+                    return new global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicDigestAutomationConfigEventType?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicDigestAutomationConfigEventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicDigestAutomationConfigActionType))
+                {
+                    return new global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicDigestAutomationConfigActionType?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicDigestAutomationConfigActionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1EventType))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1ActionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant1ActionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2EventType))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2ExportDefinitionVariant3Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2Format))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2Format?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2FormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant2CredentialsVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3EventType))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3ObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3ObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3Format))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant3Format?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant3FormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant4EventType))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant4EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant4EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5EventType))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1EventType))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant1ActionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2EventType))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2Format))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2Format?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2FormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3EventType))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3ObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3ObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3Format))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant3Format?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant3FormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant4EventType))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant4EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant4EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5EventType))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateProjectAutomationConfigVariant5ActionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1EventType))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant1ActionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2EventType))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2ExportDefinitionVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2Format))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2Format?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2FormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant2CredentialsVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant2CredentialsVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3EventType))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3ObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3ObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3ObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3Format))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant3Format?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant3FormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant4EventType))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant4EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant4EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5EventType))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5EventType?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5EventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchProjectAutomationConfigVariant5ActionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.OrgAutomationConfigEventType))
+                {
+                    return new global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.OrgAutomationConfigEventType?))
+                {
+                    return new global::Braintrust.JsonConverters.OrgAutomationConfigEventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateOrgAutomationConfigEventType))
+                {
+                    return new global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateOrgAutomationConfigEventType?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateOrgAutomationConfigEventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchOrgAutomationConfigEventType))
+                {
+                    return new global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchOrgAutomationConfigEventType?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchOrgAutomationConfigEventTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2FunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2GlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2GlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.OnlineScoreConfigScorerVariant2GlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectScoreConditionBehavior))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectScoreConditionBehavior?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectScoreConditionBehaviorNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectScoreConfigObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectScoreConfigObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectScoreConfigObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleRuntimeContextRuntime))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleRuntimeContextRuntime?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleRuntimeContextRuntimeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentType))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentType?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationExperimentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionScorerType))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionScorerType?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionScorerTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionClassifierType))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationExperimentPositionClassifierType?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationExperimentPositionClassifierTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3Type))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3Type?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1Provider))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1Provider?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant1ProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2Provider))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant2Provider?))
+                {
+                    return new global::Braintrust.JsonConverters.CodeBundleLocationVariant3SandboxSpecVariant2ProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataChatType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataChatTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataChatType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataChatTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataCompletionType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataCompletionType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataCompletionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant3Type))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant3Type?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant4Type))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant4TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant4Type?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant4TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant5Type))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant5TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant5Type?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant5TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant6Type))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant6TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant6Type?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant6TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant7Type))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant7TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant7Type?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant7TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant8Type))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant8TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphNodeVariant8Type?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphNodeVariant8TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphEdgePurpose))
+                {
+                    return new global::Braintrust.JsonConverters.GraphEdgePurposeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphEdgePurpose?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphEdgePurposeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphDataType))
+                {
+                    return new global::Braintrust.JsonConverters.GraphDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GraphDataType?))
+                {
+                    return new global::Braintrust.JsonConverters.GraphDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.FacetPreprocessorIdFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdGlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdGlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.FacetPreprocessorIdGlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdPreprocessorInlineType))
+                {
+                    return new global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FacetPreprocessorIdPreprocessorInlineType?))
+                {
+                    return new global::Braintrust.JsonConverters.FacetPreprocessorIdPreprocessorInlineTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FacetDataType))
+                {
+                    return new global::Braintrust.JsonConverters.FacetDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FacetDataType?))
+                {
+                    return new global::Braintrust.JsonConverters.FacetDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapGenerationSettingsAlgorithm))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapGenerationSettingsAlgorithm?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapGenerationSettingsAlgorithmNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapGenerationSettingsDimensionReduction))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapGenerationSettingsDimensionReduction?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapGenerationSettingsDimensionReductionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapDataType))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapDataType?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapDataReconcileMode))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapDataReconcileModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.TopicMapDataReconcileMode?))
+                {
+                    return new global::Braintrust.JsonConverters.TopicMapDataReconcileModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.BatchedFacetDataType))
+                {
+                    return new global::Braintrust.JsonConverters.BatchedFacetDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.BatchedFacetDataType?))
+                {
+                    return new global::Braintrust.JsonConverters.BatchedFacetDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataPromptType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataPromptTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataPromptType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataPromptTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataCodeType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataCodeTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataCodeType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataCodeTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataCodeDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataCodeDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataType2))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataCodeDataType2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataType2?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataCodeDataType2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataRuntimeContextRuntime))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataCodeDataRuntimeContextRuntime?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataCodeDataRuntimeContextRuntimeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataRemoteEvalType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataRemoteEvalType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataRemoteEvalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataGlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataGlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataGlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataGlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataParametersType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataParametersTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataParametersType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataParametersTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataParametersSchemaType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataParametersSchemaType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionLogId))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionLogIdJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionLogId?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionLogIdNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishPromptType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishPromptType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishPromptTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishCodeTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataType2))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataType2?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataType2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataRuntimeContextRuntime))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishCodeDataRuntimeContextRuntime?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishCodeDataRuntimeContextRuntimeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishRemoteEvalType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishRemoteEvalType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishRemoteEvalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishGlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishGlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishGlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishParametersTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersSchemaType))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersSchemaType?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.InvokeParentSpanParentStructObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.InvokeParentSpanParentStructObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.StreamingMode))
+                {
+                    return new global::Braintrust.JsonConverters.StreamingModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.StreamingMode?))
+                {
+                    return new global::Braintrust.JsonConverters.StreamingModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsViewType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsViewType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsViewTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsExcludedMeasureTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsYMetricType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsYMetricType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsYMetricTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsXAxisType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsXAxisType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsXAxisTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsSymbolGroupingType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsSymbolGroupingType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsSymbolGroupingTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsPointSizeMetricType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsPointSizeMetricType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsPointSizeMetricTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsQueryShape))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewOptionsTableViewOptionsQueryShape?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewOptionsTableViewOptionsQueryShapeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewViewType))
+                {
+                    return new global::Braintrust.JsonConverters.ViewViewTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ViewViewType?))
+                {
+                    return new global::Braintrust.JsonConverters.ViewViewTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateViewViewType))
+                {
+                    return new global::Braintrust.JsonConverters.CreateViewViewTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.CreateViewViewType?))
+                {
+                    return new global::Braintrust.JsonConverters.CreateViewViewTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchViewViewType))
+                {
+                    return new global::Braintrust.JsonConverters.PatchViewViewTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchViewViewType?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchViewViewTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ImageRenderingMode))
+                {
+                    return new global::Braintrust.JsonConverters.ImageRenderingModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ImageRenderingMode?))
+                {
+                    return new global::Braintrust.JsonConverters.ImageRenderingModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchOrganizationMembersOutputStatus))
+                {
+                    return new global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PatchOrganizationMembersOutputStatus?))
+                {
+                    return new global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType2))
+                {
+                    return new global::Braintrust.JsonConverters.EnvVarObjectType2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType2?))
+                {
+                    return new global::Braintrust.JsonConverters.EnvVarObjectType2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory))
+                {
+                    return new global::Braintrust.JsonConverters.EnvVarSecretCategoryJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory?))
+                {
+                    return new global::Braintrust.JsonConverters.EnvVarSecretCategoryNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataToolFunctionVariant2FunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataToolFunctionVariant2FunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2FunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataToolFunctionVariant2GlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataToolFunctionVariant2GlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataToolFunctionVariant2GlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataTemplateFormat))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataTemplateFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataTemplateFormat?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataTemplateFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionIdInlineCodeInlineContextRuntime))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.FunctionIdInlineCodeInlineContextRuntime?))
+                {
+                    return new global::Braintrust.JsonConverters.FunctionIdInlineCodeInlineContextRuntimeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GitMetadataSettingsCollect))
+                {
+                    return new global::Braintrust.JsonConverters.GitMetadataSettingsCollectJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GitMetadataSettingsCollect?))
+                {
+                    return new global::Braintrust.JsonConverters.GitMetadataSettingsCollectNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GitMetadataSettingsField))
+                {
+                    return new global::Braintrust.JsonConverters.GitMetadataSettingsFieldJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.GitMetadataSettingsField?))
+                {
+                    return new global::Braintrust.JsonConverters.GitMetadataSettingsFieldNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PostEnvVarRequestObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PostEnvVarRequestObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.PostEnvVarRequestObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PutEnvVarRequestObjectType))
+                {
+                    return new global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PutEnvVarRequestObjectType?))
+                {
+                    return new global::Braintrust.JsonConverters.PutEnvVarRequestObjectTypeNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
+        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
+        {
+            private readonly object _gate = new();
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[3];
+
+            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
+                global::System.Type type,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                for (var index = 0; index < _resolvers.Length; index++)
+                {
+                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
+                    if (typeInfo is not null)
+                    {
+                        return typeInfo;
+                    }
+                }
+
+                return null;
+            }
+
+            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
+            {
+                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
+                if (resolver is not null)
+                {
+                    return resolver;
+                }
+
+                lock (_gate)
+                {
+                    return _resolvers[index] ??= CreateResolver(index);
+                }
+            }
+
+            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
+            {
+                return index switch
+                {
+                    0 => new SourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => new SourceGenerationContextChunk1(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    2 => new SourceGenerationContextChunk2(new global::System.Text.Json.JsonSerializerOptions()),
+                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
+                };
+            }
         }
     }
 }
