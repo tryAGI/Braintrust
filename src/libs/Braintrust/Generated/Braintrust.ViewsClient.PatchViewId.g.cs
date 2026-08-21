@@ -662,6 +662,9 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the view
         /// </param>
+        /// <param name="starred">
+        /// Whether the view is starred in its project
+        /// </param>
         /// <param name="viewData">
         /// The view definition
         /// </param>
@@ -681,6 +684,7 @@ namespace Braintrust
             global::Braintrust.PatchViewViewType? viewType = default,
             string? name = default,
             string? description = default,
+            bool? starred = default,
             global::Braintrust.ViewData? viewData = default,
             global::Braintrust.ViewOptions? options = default,
             global::System.Guid? userId = default,
@@ -694,6 +698,7 @@ namespace Braintrust
                 ViewType = viewType,
                 Name = name,
                 Description = description,
+                Starred = starred,
                 ViewData = viewData,
                 Options = options,
                 UserId = userId,

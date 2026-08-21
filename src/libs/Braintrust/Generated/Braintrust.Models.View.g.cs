@@ -52,6 +52,12 @@ namespace Braintrust
         public string? Description { get; set; }
 
         /// <summary>
+        /// Whether the view is starred in its project
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("starred")]
+        public bool? Starred { get; set; }
+
+        /// <summary>
         /// Date of view creation
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
@@ -115,6 +121,9 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the view
         /// </param>
+        /// <param name="starred">
+        /// Whether the view is starred in its project
+        /// </param>
         /// <param name="created">
         /// Date of view creation
         /// </param>
@@ -143,6 +152,7 @@ namespace Braintrust
             global::Braintrust.ViewViewType viewType,
             string name,
             string? description,
+            bool? starred,
             global::System.DateTime? created,
             global::System.DateTime? updatedAt,
             global::Braintrust.ViewData? viewData,
@@ -156,6 +166,7 @@ namespace Braintrust
             this.ViewType = viewType;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
+            this.Starred = starred;
             this.Created = created;
             this.UpdatedAt = updatedAt;
             this.ViewData = viewData;

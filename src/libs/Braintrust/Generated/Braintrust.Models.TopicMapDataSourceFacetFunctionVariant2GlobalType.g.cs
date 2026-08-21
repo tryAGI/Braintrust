@@ -6,38 +6,38 @@ namespace Braintrust
     /// <summary>
     /// 
     /// </summary>
-    public enum PreprocessorSavedFunctionIdFunctionType
+    public enum TopicMapDataSourceFacetFunctionVariant2GlobalType
     {
         /// <summary>
         /// 
         /// </summary>
-        Function,
+        Global,
     }
 
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class PreprocessorSavedFunctionIdFunctionTypeExtensions
+    public static class TopicMapDataSourceFacetFunctionVariant2GlobalTypeExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this PreprocessorSavedFunctionIdFunctionType value)
+        public static string ToValueString(this TopicMapDataSourceFacetFunctionVariant2GlobalType value)
         {
             return value switch
             {
-                PreprocessorSavedFunctionIdFunctionType.Function => "function",
+                TopicMapDataSourceFacetFunctionVariant2GlobalType.Global => "global",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static PreprocessorSavedFunctionIdFunctionType? ToEnum(string value)
+        public static TopicMapDataSourceFacetFunctionVariant2GlobalType? ToEnum(string value)
         {
             return value switch
             {
-                "function" => PreprocessorSavedFunctionIdFunctionType.Function,
+                "global" => TopicMapDataSourceFacetFunctionVariant2GlobalType.Global,
                 _ => null,
             };
         }

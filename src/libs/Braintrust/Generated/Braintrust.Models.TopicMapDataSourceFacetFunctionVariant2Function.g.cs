@@ -1,0 +1,66 @@
+
+#nullable enable
+
+namespace Braintrust
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class TopicMapDataSourceFacetFunctionVariant2Function
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.TopicMapDataSourceFacetFunctionVariant2FunctionTypeJsonConverter))]
+        public global::Braintrust.TopicMapDataSourceFacetFunctionVariant2FunctionType Type { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// The version of the function
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        public string? Version { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TopicMapDataSourceFacetFunctionVariant2Function" /> class.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
+        /// <param name="version">
+        /// The version of the function
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public TopicMapDataSourceFacetFunctionVariant2Function(
+            string id,
+            global::Braintrust.TopicMapDataSourceFacetFunctionVariant2FunctionType type,
+            string? version)
+        {
+            this.Type = type;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Version = version;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TopicMapDataSourceFacetFunctionVariant2Function" /> class.
+        /// </summary>
+        public TopicMapDataSourceFacetFunctionVariant2Function()
+        {
+        }
+
+    }
+}

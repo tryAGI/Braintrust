@@ -16,11 +16,18 @@ namespace Braintrust
         public global::Braintrust.TopicMapDataType Type { get; set; }
 
         /// <summary>
-        /// The facet field name to use as input for classification
+        /// Materialized facet field name used when source_facet_function is absent
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source_facet")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string SourceFacet { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source_facet_function")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Function, global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Global>?>))]
+        public global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Function, global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Global>?>? SourceFacetFunction { get; set; }
 
         /// <summary>
         /// The embedding model to use for embedding facet values
@@ -94,12 +101,13 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="TopicMapData" /> class.
         /// </summary>
         /// <param name="sourceFacet">
-        /// The facet field name to use as input for classification
+        /// Materialized facet field name used when source_facet_function is absent
         /// </param>
         /// <param name="embeddingModel">
         /// The embedding model to use for embedding facet values
         /// </param>
         /// <param name="type"></param>
+        /// <param name="sourceFacetFunction"></param>
         /// <param name="bundleKey">
         /// Key of the topic map bundle in code_bundles bucket
         /// </param>
@@ -134,6 +142,7 @@ namespace Braintrust
             string sourceFacet,
             string embeddingModel,
             global::Braintrust.TopicMapDataType type,
+            global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Function, global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Global>?>? sourceFacetFunction,
             string? bundleKey,
             string? reportKey,
             global::System.Collections.Generic.Dictionary<string, string>? topicNames,
@@ -146,6 +155,7 @@ namespace Braintrust
         {
             this.Type = type;
             this.SourceFacet = sourceFacet ?? throw new global::System.ArgumentNullException(nameof(sourceFacet));
+            this.SourceFacetFunction = sourceFacetFunction;
             this.EmbeddingModel = embeddingModel ?? throw new global::System.ArgumentNullException(nameof(embeddingModel));
             this.BundleKey = bundleKey;
             this.ReportKey = reportKey;

@@ -6,7 +6,7 @@ namespace Braintrust
     /// <summary>
     /// 
     /// </summary>
-    public enum PreprocessorSavedFunctionIdPreprocessorGlobalType
+    public enum PreprocessorIdPreprocessorGlobalType
     {
         /// <summary>
         /// 
@@ -17,27 +17,27 @@ namespace Braintrust
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class PreprocessorSavedFunctionIdPreprocessorGlobalTypeExtensions
+    public static class PreprocessorIdPreprocessorGlobalTypeExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this PreprocessorSavedFunctionIdPreprocessorGlobalType value)
+        public static string ToValueString(this PreprocessorIdPreprocessorGlobalType value)
         {
             return value switch
             {
-                PreprocessorSavedFunctionIdPreprocessorGlobalType.Global => "global",
+                PreprocessorIdPreprocessorGlobalType.Global => "global",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static PreprocessorSavedFunctionIdPreprocessorGlobalType? ToEnum(string value)
+        public static PreprocessorIdPreprocessorGlobalType? ToEnum(string value)
         {
             return value switch
             {
-                "global" => PreprocessorSavedFunctionIdPreprocessorGlobalType.Global,
+                "global" => PreprocessorIdPreprocessorGlobalType.Global,
                 _ => null,
             };
         }

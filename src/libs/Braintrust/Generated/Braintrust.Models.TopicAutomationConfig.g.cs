@@ -51,7 +51,7 @@ namespace Braintrust
         public required global::System.Collections.Generic.IList<global::Braintrust.TopicMapFunctionAutomation> TopicMapFunctions { get; set; }
 
         /// <summary>
-        /// Execution scope for topic automation. Defaults to span-level execution.
+        /// Execution scope for topic automation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>))]
@@ -117,7 +117,7 @@ namespace Braintrust
         /// Optional facet model override for topic automation
         /// </param>
         /// <param name="scope">
-        /// Execution scope for topic automation. Defaults to span-level execution.
+        /// Execution scope for topic automation.
         /// </param>
         /// <param name="dataScope">
         /// Optional data scope for topic automation.

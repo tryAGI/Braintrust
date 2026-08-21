@@ -11,6 +11,10 @@ namespace Braintrust
         /// <summary>
         /// 
         /// </summary>
+        AiSecret,
+        /// <summary>
+        /// 
+        /// </summary>
         Dataset,
         /// <summary>
         /// 
@@ -20,6 +24,10 @@ namespace Braintrust
         /// 
         /// </summary>
         Group,
+        /// <summary>
+        /// 
+        /// </summary>
+        OrgAiSecret,
         /// <summary>
         /// 
         /// </summary>
@@ -74,9 +82,11 @@ namespace Braintrust
         {
             return value switch
             {
+                AclListRestrictObjectType.AiSecret => "ai_secret",
                 AclListRestrictObjectType.Dataset => "dataset",
                 AclListRestrictObjectType.Experiment => "experiment",
                 AclListRestrictObjectType.Group => "group",
+                AclListRestrictObjectType.OrgAiSecret => "org_ai_secret",
                 AclListRestrictObjectType.OrgAuditLogs => "org_audit_logs",
                 AclListRestrictObjectType.OrgMember => "org_member",
                 AclListRestrictObjectType.OrgProject => "org_project",
@@ -97,9 +107,11 @@ namespace Braintrust
         {
             return value switch
             {
+                "ai_secret" => AclListRestrictObjectType.AiSecret,
                 "dataset" => AclListRestrictObjectType.Dataset,
                 "experiment" => AclListRestrictObjectType.Experiment,
                 "group" => AclListRestrictObjectType.Group,
+                "org_ai_secret" => AclListRestrictObjectType.OrgAiSecret,
                 "org_audit_logs" => AclListRestrictObjectType.OrgAuditLogs,
                 "org_member" => AclListRestrictObjectType.OrgMember,
                 "org_project" => AclListRestrictObjectType.OrgProject,
