@@ -6,14 +6,14 @@ namespace Braintrust
     /// <summary>
     /// 
     /// </summary>
-    public sealed partial class PreprocessorSavedFunctionIdFunction
+    public sealed partial class PreprocessorIdFunction
     {
         /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.PreprocessorSavedFunctionIdFunctionTypeJsonConverter))]
-        public global::Braintrust.PreprocessorSavedFunctionIdFunctionType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.PreprocessorIdFunctionTypeJsonConverter))]
+        public global::Braintrust.PreprocessorIdFunctionType Type { get; set; }
 
         /// <summary>
         /// 
@@ -35,7 +35,7 @@ namespace Braintrust
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PreprocessorSavedFunctionIdFunction" /> class.
+        /// Initializes a new instance of the <see cref="PreprocessorIdFunction" /> class.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="type"></param>
@@ -45,9 +45,9 @@ namespace Braintrust
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public PreprocessorSavedFunctionIdFunction(
+        public PreprocessorIdFunction(
             string id,
-            global::Braintrust.PreprocessorSavedFunctionIdFunctionType type,
+            global::Braintrust.PreprocessorIdFunctionType type,
             string? version)
         {
             this.Type = type;
@@ -56,9 +56,9 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="PreprocessorSavedFunctionIdFunction" /> class.
+        /// Initializes a new instance of the <see cref="PreprocessorIdFunction" /> class.
         /// </summary>
-        public PreprocessorSavedFunctionIdFunction()
+        public PreprocessorIdFunction()
         {
         }
 

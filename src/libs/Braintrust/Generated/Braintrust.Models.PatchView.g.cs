@@ -43,6 +43,12 @@ namespace Braintrust
         public string? Description { get; set; }
 
         /// <summary>
+        /// Whether the view is starred in its project
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("starred")]
+        public bool? Starred { get; set; }
+
+        /// <summary>
         /// The view definition
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("view_data")]
@@ -85,6 +91,9 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the view
         /// </param>
+        /// <param name="starred">
+        /// Whether the view is starred in its project
+        /// </param>
         /// <param name="viewData">
         /// The view definition
         /// </param>
@@ -103,6 +112,7 @@ namespace Braintrust
             global::Braintrust.PatchViewViewType? viewType,
             string? name,
             string? description,
+            bool? starred,
             global::Braintrust.ViewData? viewData,
             global::Braintrust.ViewOptions? options,
             global::System.Guid? userId)
@@ -112,6 +122,7 @@ namespace Braintrust
             this.ViewType = viewType;
             this.Name = name;
             this.Description = description;
+            this.Starred = starred;
             this.ViewData = viewData;
             this.Options = options;
             this.UserId = userId;

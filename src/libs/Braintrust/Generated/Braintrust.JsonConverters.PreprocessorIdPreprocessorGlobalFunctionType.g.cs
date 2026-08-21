@@ -3,10 +3,10 @@
 namespace Braintrust.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType>
+    public sealed class PreprocessorIdPreprocessorGlobalFunctionTypeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionType>
     {
         /// <inheritdoc />
-        public override global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType Read(
+        public override global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionType Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Braintrust.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeExtensions.ToEnum(stringValue) ?? default;
+                        return global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionTypeExtensions.ToEnum(stringValue) ?? default;
                     }
                     
                     break;
@@ -26,11 +26,11 @@ namespace Braintrust.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType)numValue;
+                    return (global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionType)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType);
+                    return default(global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionType);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,12 +42,12 @@ namespace Braintrust.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionType value,
+            global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionType value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            writer.WriteStringValue(global::Braintrust.PreprocessorSavedFunctionIdPreprocessorGlobalFunctionTypeExtensions.ToValueString(value));
+            writer.WriteStringValue(global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionTypeExtensions.ToValueString(value));
         }
     }
 }
