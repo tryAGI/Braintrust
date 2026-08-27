@@ -4,20 +4,20 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InvokeParentSpanParentStructObjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlaygroundLogs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectLogs,
     }

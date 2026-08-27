@@ -9,7 +9,7 @@ namespace Braintrust
     public enum CreateProjectAutomationConfigVariant4EventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Retention,
     }

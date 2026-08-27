@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PatchProjectAutomationConfigVariant2ExportDefinitionVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BtqlQuery,
     }

@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectSettingsSpanFieldOrderItemLayoutVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwoColumn,
     }

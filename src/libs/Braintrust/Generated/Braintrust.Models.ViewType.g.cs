@@ -9,71 +9,71 @@ namespace Braintrust
     public enum ViewType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Classifiers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dataset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Datasets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ForReviewDatasets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ForReviewExperiments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ForReviewProjectLog,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Logs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Monitor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parameters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Playground,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Playgrounds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Projects,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prompts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scorers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tools,
     }

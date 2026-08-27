@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BatchedFacetData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.BatchedFacetDataTypeJsonConverter))]
@@ -23,7 +23,7 @@ namespace Braintrust
         public global::Braintrust.FacetPreprocessorId? Preprocessor { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("facets")]
         [global::System.Text.Json.Serialization.JsonRequired]

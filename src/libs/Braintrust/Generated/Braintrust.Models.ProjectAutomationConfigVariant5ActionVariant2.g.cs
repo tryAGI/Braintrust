@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProjectAutomationConfigVariant5ActionVariant2
     {

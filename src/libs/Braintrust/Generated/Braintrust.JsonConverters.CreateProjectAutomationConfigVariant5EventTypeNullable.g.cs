@@ -20,7 +20,7 @@ namespace Braintrust.JsonConverters
                     {
                         return global::Braintrust.CreateProjectAutomationConfigVariant5EventTypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

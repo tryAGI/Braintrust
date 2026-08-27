@@ -9,19 +9,19 @@ namespace Braintrust
     public enum StreamingMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Json,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parallel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

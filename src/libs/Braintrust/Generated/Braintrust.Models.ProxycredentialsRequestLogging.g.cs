@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class ProxycredentialsRequestLogging
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project_name")]
         [global::System.Text.Json.Serialization.JsonRequired]

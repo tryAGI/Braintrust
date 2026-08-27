@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class RunEvalDataExperimentName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experiment_name")]
         [global::System.Text.Json.Serialization.JsonRequired]

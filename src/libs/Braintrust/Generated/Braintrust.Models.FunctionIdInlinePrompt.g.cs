@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class FunctionIdInlinePrompt
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inline_prompt")]
         [global::System.Text.Json.Serialization.JsonRequired]

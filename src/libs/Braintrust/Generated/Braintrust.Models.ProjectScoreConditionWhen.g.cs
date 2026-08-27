@@ -4,24 +4,24 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProjectScoreConditionWhen
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clauses")]
         public global::System.Collections.Generic.IList<string>? Clauses { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subspan_clauses")]
         public global::System.Collections.Generic.IList<string>? SubspanClauses { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trace_clauses")]
         public global::System.Collections.Generic.IList<string>? TraceClauses { get; set; }

@@ -13,7 +13,7 @@ namespace Braintrust
     public sealed partial class BraintrustClient : global::Braintrust.IBraintrustClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.braintrust.dev/";
 
@@ -40,7 +40,7 @@ namespace Braintrust
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Braintrust.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -50,7 +50,7 @@ namespace Braintrust
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AclsClient Acls => new AclsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -59,7 +59,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentsClient Agents => new AgentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -68,7 +68,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AiSecretsClient AiSecrets => new AiSecretsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -77,7 +77,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiKeysClient ApiKeys => new ApiKeysClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -86,7 +86,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CorsClient Cors => new CorsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -95,7 +95,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CrossObjectClient CrossObject => new CrossObjectClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -104,7 +104,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetSnapshotsClient DatasetSnapshots => new DatasetSnapshotsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -113,7 +113,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetsClient Datasets => new DatasetsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -122,7 +122,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvVarsClient EnvVars => new EnvVarsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -131,7 +131,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -140,7 +140,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EvalsClient Evals => new EvalsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -149,7 +149,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExperimentsClient Experiments => new ExperimentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -158,7 +158,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionsClient Functions => new FunctionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -167,7 +167,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GroupsClient Groups => new GroupsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -176,7 +176,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogsClient Logs => new LogsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -185,7 +185,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public McpServersClient McpServers => new McpServersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -194,7 +194,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OrgAutomationsClient OrgAutomations => new OrgAutomationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -203,7 +203,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -212,7 +212,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OtherClient Other => new OtherClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -221,7 +221,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectAutomationsClient ProjectAutomations => new ProjectAutomationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -230,7 +230,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectGroupsClient ProjectGroups => new ProjectGroupsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -239,7 +239,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectScoresClient ProjectScores => new ProjectScoresClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -248,7 +248,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectTagsClient ProjectTags => new ProjectTagsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -257,7 +257,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -266,7 +266,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptsClient Prompts => new PromptsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -275,7 +275,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProxyClient Proxy => new ProxyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -284,7 +284,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RolesClient Roles => new RolesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -293,7 +293,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ServiceTokensClient ServiceTokens => new ServiceTokensClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -302,7 +302,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpanIframesClient SpanIframes => new SpanIframesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -311,7 +311,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UsersClient Users => new UsersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -320,7 +320,7 @@ namespace Braintrust
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ViewsClient Views => new ViewsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

@@ -9,7 +9,7 @@ namespace Braintrust
     public enum TopicDigestAutomationConfigEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopicDigest,
     }

@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class RunEvalDataDatasetId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataset_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -28,7 +28,7 @@ namespace Braintrust
         public string? DatasetEnvironment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_internal_btql")]
         public global::System.Collections.Generic.Dictionary<string, object?>? InternalBtql { get; set; }

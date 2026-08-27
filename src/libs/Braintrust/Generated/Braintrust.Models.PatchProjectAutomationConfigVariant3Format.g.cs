@@ -9,7 +9,7 @@ namespace Braintrust
     public enum PatchProjectAutomationConfigVariant3Format
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jsonl,
     }

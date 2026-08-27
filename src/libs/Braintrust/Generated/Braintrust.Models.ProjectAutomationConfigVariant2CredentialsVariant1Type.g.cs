@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProjectAutomationConfigVariant2CredentialsVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AwsIam,
     }

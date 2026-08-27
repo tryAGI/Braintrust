@@ -4,20 +4,20 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TopicMapGenerationSettingsDimensionReduction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pca,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Umap,
     }

@@ -4,16 +4,16 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ViewOptionsMonitorViewOptionsOptionsSpanType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Frame,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Range,
     }

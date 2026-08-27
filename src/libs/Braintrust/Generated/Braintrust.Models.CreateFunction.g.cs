@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateFunction
     {
@@ -48,14 +48,14 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<string>? Tags { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("function_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.FunctionTypeEnumNullishJsonConverter))]
         public global::Braintrust.FunctionTypeEnumNullish? FunctionType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("function_data")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.FunctionDataJsonConverter))]
@@ -63,7 +63,7 @@ namespace Braintrust
         public required global::Braintrust.FunctionData FunctionData { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
         public global::Braintrust.CreateFunctionOrigin? Origin { get; set; }

@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WindowedAutomationConfigWindowScheduleVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cron,
     }

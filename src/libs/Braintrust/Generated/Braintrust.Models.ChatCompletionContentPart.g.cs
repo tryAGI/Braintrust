@@ -5,12 +5,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ChatCompletionContentPart : global::System.IEquatable<ChatCompletionContentPart>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionContentPartTextWithTitle? Text { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsText => Text != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickText(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionContentPartTextWithTitle PickText() => IsText
             ? Text!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionContentPartImageWithTitle? ImageUrl { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ImageUrl))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsImageUrl => ImageUrl != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickImageUrl(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionContentPartImageWithTitle PickImageUrl() => IsImageUrl
             ? ImageUrl!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ImageUrl' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionContentPartFileWithTitle? File { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(File))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsFile => File != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFile(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionContentPartFileWithTitle PickFile() => IsFile
             ? File!
             : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartTextWithTitle value) => new ChatCompletionContentPart((global::Braintrust.ChatCompletionContentPartTextWithTitle?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionContentPartTextWithTitle?(ChatCompletionContentPart @this) => @this.Text;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartTextWithTitle? value)
         {
@@ -138,22 +138,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionContentPart FromText(global::Braintrust.ChatCompletionContentPartTextWithTitle? value) => new ChatCompletionContentPart(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartImageWithTitle value) => new ChatCompletionContentPart((global::Braintrust.ChatCompletionContentPartImageWithTitle?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionContentPartImageWithTitle?(ChatCompletionContentPart @this) => @this.ImageUrl;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartImageWithTitle? value)
         {
@@ -161,22 +161,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionContentPart FromImageUrl(global::Braintrust.ChatCompletionContentPartImageWithTitle? value) => new ChatCompletionContentPart(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartFileWithTitle value) => new ChatCompletionContentPart((global::Braintrust.ChatCompletionContentPartFileWithTitle?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionContentPartFileWithTitle?(ChatCompletionContentPart @this) => @this.File;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartFileWithTitle? value)
         {
@@ -184,12 +184,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionContentPart FromFile(global::Braintrust.ChatCompletionContentPartFileWithTitle? value) => new ChatCompletionContentPart(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionContentPart(
             global::Braintrust.ChatCompletionContentPartTextWithTitle? text,
@@ -203,25 +203,25 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             File as object ??
             ImageUrl as object ??
-            Text as object 
+            Text as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Text?.ToString() ??
             ImageUrl?.ToString() ??
-            File?.ToString() 
+            File?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.ChatCompletionContentPartTextWithTitle, TResult>? text = null,
@@ -259,7 +259,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.ChatCompletionContentPartTextWithTitle>? text = null,
@@ -289,7 +289,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.ChatCompletionContentPartTextWithTitle>? text = null,
@@ -317,7 +317,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ChatCompletionContentPart other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionContentPartTextWithTitle?>.Default.Equals(Text, other.Text) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionContentPartImageWithTitle?>.Default.Equals(ImageUrl, other.ImageUrl) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionContentPartFileWithTitle?>.Default.Equals(File, other.File) 
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionContentPartFileWithTitle?>.Default.Equals(File, other.File)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ChatCompletionContentPart obj1, ChatCompletionContentPart obj2)
         {
@@ -360,7 +360,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ChatCompletionContentPart obj1, ChatCompletionContentPart obj2)
         {
@@ -368,7 +368,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

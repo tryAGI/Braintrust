@@ -9,7 +9,7 @@ namespace Braintrust
     public enum ProjectAutomationConfigVariant2EventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BtqlExport,
     }

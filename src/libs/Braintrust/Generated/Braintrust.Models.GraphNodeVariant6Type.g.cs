@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GraphNodeVariant6Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gate,
     }

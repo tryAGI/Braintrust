@@ -9,63 +9,63 @@ namespace Braintrust
     public enum AclListOrgObjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AiSecret,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dataset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Group,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrgAiSecret,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrgAuditLogs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrgMember,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OrgProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Organization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Project,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectLog,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prompt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromptSession,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Role,
     }

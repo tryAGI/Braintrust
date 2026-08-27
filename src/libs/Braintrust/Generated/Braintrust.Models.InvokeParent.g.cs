@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SpanParentStruct))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsSpanParentStruct => SpanParentStruct != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSpanParentStruct(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.InvokeParentSpanParentStruct PickSpanParentStruct() => IsSpanParentStruct
             ? SpanParentStruct!
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InvokeParentVariant2))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsInvokeParentVariant2 => InvokeParentVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInvokeParentVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickInvokeParentVariant2() => IsInvokeParentVariant2
             ? InvokeParentVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InvokeParentVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InvokeParent(global::Braintrust.InvokeParentSpanParentStruct value) => new InvokeParent((global::Braintrust.InvokeParentSpanParentStruct?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.InvokeParentSpanParentStruct?(InvokeParent @this) => @this.SpanParentStruct;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InvokeParent(global::Braintrust.InvokeParentSpanParentStruct? value)
         {
@@ -101,22 +101,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InvokeParent FromSpanParentStruct(global::Braintrust.InvokeParentSpanParentStruct? value) => new InvokeParent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InvokeParent(string value) => new InvokeParent((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(InvokeParent @this) => @this.InvokeParentVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InvokeParent(string? value)
         {
@@ -124,12 +124,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InvokeParent FromInvokeParentVariant2(string? value) => new InvokeParent(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InvokeParent(
             global::Braintrust.InvokeParentSpanParentStruct? spanParentStruct,
@@ -141,23 +141,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             InvokeParentVariant2 as object ??
-            SpanParentStruct as object 
+            SpanParentStruct as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SpanParentStruct?.ToString() ??
-            InvokeParentVariant2?.ToString() 
+            InvokeParentVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.InvokeParentSpanParentStruct, TResult>? spanParentStruct = null,
@@ -190,7 +190,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.InvokeParentSpanParentStruct>? spanParentStruct = null,
@@ -214,7 +214,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.InvokeParentSpanParentStruct>? spanParentStruct = null,
@@ -237,7 +237,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(InvokeParent other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.InvokeParentSpanParentStruct?>.Default.Equals(SpanParentStruct, other.SpanParentStruct) &&
-                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(InvokeParentVariant2, other.InvokeParentVariant2) 
+                global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(InvokeParentVariant2, other.InvokeParentVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(InvokeParent obj1, InvokeParent obj2)
         {
@@ -277,7 +277,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(InvokeParent obj1, InvokeParent obj2)
         {
@@ -285,7 +285,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

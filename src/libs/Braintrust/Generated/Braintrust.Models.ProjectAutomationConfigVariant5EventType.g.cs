@@ -9,7 +9,7 @@ namespace Braintrust
     public enum ProjectAutomationConfigVariant5EventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnvironmentUpdate,
     }

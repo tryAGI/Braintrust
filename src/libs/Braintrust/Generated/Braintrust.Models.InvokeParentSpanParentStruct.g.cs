@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class InvokeParentSpanParentStruct
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("object_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.InvokeParentSpanParentStructObjectTypeJsonConverter))]

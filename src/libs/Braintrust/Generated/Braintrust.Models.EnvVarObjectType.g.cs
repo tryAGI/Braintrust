@@ -9,15 +9,15 @@ namespace Braintrust
     public enum EnvVarObjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Organization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Project,
     }

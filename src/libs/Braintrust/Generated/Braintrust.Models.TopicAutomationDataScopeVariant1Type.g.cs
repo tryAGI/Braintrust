@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TopicAutomationDataScopeVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectLogs,
     }

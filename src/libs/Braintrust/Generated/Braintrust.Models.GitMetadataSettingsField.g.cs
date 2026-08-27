@@ -4,44 +4,44 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GitMetadataSettingsField
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthorEmail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AuthorName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Branch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Commit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommitMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CommitTime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dirty,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitDiff,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tag,
     }

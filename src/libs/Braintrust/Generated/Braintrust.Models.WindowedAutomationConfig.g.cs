@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class WindowedAutomationConfig
     {
@@ -36,7 +36,7 @@ namespace Braintrust
         public global::Braintrust.WindowedAutomationConfigThreshold? Threshold { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("window")]
         [global::System.Text.Json.Serialization.JsonRequired]

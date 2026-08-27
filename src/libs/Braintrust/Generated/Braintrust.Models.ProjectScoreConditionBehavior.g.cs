@@ -9,7 +9,7 @@ namespace Braintrust
     public enum ProjectScoreConditionBehavior
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hidden,
     }

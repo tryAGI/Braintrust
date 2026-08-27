@@ -9,47 +9,47 @@ namespace Braintrust
     public enum SpanType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Automation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Classifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Facet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Llm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preprocessor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Review,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Score,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Task,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tool,
     }

@@ -9,19 +9,19 @@ namespace Braintrust
     public enum CreateProjectAutomationConfigVariant3ObjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dataset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlaygroundLogs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectLogs,
     }

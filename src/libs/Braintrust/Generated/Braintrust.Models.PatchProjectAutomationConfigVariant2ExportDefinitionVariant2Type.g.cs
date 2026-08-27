@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PatchProjectAutomationConfigVariant2ExportDefinitionVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogSpans,
     }

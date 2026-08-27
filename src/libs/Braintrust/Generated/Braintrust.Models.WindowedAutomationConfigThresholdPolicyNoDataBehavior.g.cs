@@ -9,15 +9,15 @@ namespace Braintrust
     public enum WindowedAutomationConfigThresholdPolicyNoDataBehavior
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alert,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KeepLast,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Resolve,
     }

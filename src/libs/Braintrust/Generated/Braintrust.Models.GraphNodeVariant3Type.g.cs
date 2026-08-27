@@ -9,7 +9,7 @@ namespace Braintrust
     public enum GraphNodeVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Output,
     }

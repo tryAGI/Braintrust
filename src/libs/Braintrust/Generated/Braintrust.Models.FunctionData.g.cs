@@ -5,12 +5,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct FunctionData : global::System.IEquatable<FunctionData>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataPrompt? Prompt { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Prompt))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsPrompt => Prompt != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPrompt(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionDataPrompt PickPrompt() => IsPrompt
             ? Prompt!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Prompt' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataCode? Code { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Code))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsCode => Code != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCode(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionDataCode PickCode() => IsCode
             ? Code!
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Graph))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsGraph => Graph != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGraph(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.GraphData PickGraph() => IsGraph
             ? Graph!
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RemoteEval))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsRemoteEval => RemoteEval != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRemoteEval(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionDataRemoteEval PickRemoteEval() => IsRemoteEval
             ? RemoteEval!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RemoteEval' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataGlobal? Global { get; init; }
@@ -167,7 +167,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Global))]
@@ -175,7 +175,7 @@ namespace Braintrust
         public bool IsGlobal => Global != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobal(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionDataGlobal PickGlobal() => IsGlobal
             ? Global!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FacetData? Facet { get; init; }
@@ -204,7 +204,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Facet))]
@@ -212,7 +212,7 @@ namespace Braintrust
         public bool IsFacet => Facet != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFacet(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FacetData PickFacet() => IsFacet
             ? Facet!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Facet' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.BatchedFacetData? BatchedFacet { get; init; }
@@ -241,7 +241,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BatchedFacet))]
@@ -249,7 +249,7 @@ namespace Braintrust
         public bool IsBatchedFacet => BatchedFacet != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBatchedFacet(
 #if NET6_0_OR_GREATER
@@ -262,14 +262,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.BatchedFacetData PickBatchedFacet() => IsBatchedFacet
             ? BatchedFacet!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BatchedFacet' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FunctionDataParameters? Parameters { get; init; }
@@ -278,7 +278,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Parameters))]
@@ -286,7 +286,7 @@ namespace Braintrust
         public bool IsParameters => Parameters != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickParameters(
 #if NET6_0_OR_GREATER
@@ -299,14 +299,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionDataParameters PickParameters() => IsParameters
             ? Parameters!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Parameters' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? FunctionDataVariant9 { get; init; }
@@ -315,7 +315,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionDataVariant9))]
@@ -323,7 +323,7 @@ namespace Braintrust
         public bool IsFunctionDataVariant9 => FunctionDataVariant9 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunctionDataVariant9(
 #if NET6_0_OR_GREATER
@@ -336,23 +336,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object> PickFunctionDataVariant9() => IsFunctionDataVariant9
             ? FunctionDataVariant9!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionDataVariant9' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FunctionDataPrompt value) => new FunctionData((global::Braintrust.FunctionDataPrompt?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionDataPrompt?(FunctionData @this) => @this.Prompt;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.FunctionDataPrompt? value)
         {
@@ -360,22 +360,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromPrompt(global::Braintrust.FunctionDataPrompt? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FunctionDataCode value) => new FunctionData((global::Braintrust.FunctionDataCode?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionDataCode?(FunctionData @this) => @this.Code;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.FunctionDataCode? value)
         {
@@ -383,22 +383,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromCode(global::Braintrust.FunctionDataCode? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.GraphData value) => new FunctionData((global::Braintrust.GraphData?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.GraphData?(FunctionData @this) => @this.Graph;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.GraphData? value)
         {
@@ -406,22 +406,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromGraph(global::Braintrust.GraphData? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FunctionDataRemoteEval value) => new FunctionData((global::Braintrust.FunctionDataRemoteEval?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionDataRemoteEval?(FunctionData @this) => @this.RemoteEval;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.FunctionDataRemoteEval? value)
         {
@@ -429,22 +429,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromRemoteEval(global::Braintrust.FunctionDataRemoteEval? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FunctionDataGlobal value) => new FunctionData((global::Braintrust.FunctionDataGlobal?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionDataGlobal?(FunctionData @this) => @this.Global;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.FunctionDataGlobal? value)
         {
@@ -452,22 +452,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromGlobal(global::Braintrust.FunctionDataGlobal? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FacetData value) => new FunctionData((global::Braintrust.FacetData?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FacetData?(FunctionData @this) => @this.Facet;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.FacetData? value)
         {
@@ -475,22 +475,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromFacet(global::Braintrust.FacetData? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.BatchedFacetData value) => new FunctionData((global::Braintrust.BatchedFacetData?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.BatchedFacetData?(FunctionData @this) => @this.BatchedFacet;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.BatchedFacetData? value)
         {
@@ -498,22 +498,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromBatchedFacet(global::Braintrust.BatchedFacetData? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.FunctionDataParameters value) => new FunctionData((global::Braintrust.FunctionDataParameters?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionDataParameters?(FunctionData @this) => @this.Parameters;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.FunctionDataParameters? value)
         {
@@ -521,22 +521,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromParameters(global::Braintrust.FunctionDataParameters? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionData(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object> value) => new FunctionData((global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?(FunctionData @this) => @this.FunctionDataVariant9;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value)
         {
@@ -544,12 +544,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionData FromFunctionDataVariant9(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? value) => new FunctionData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionData(
             global::Braintrust.FunctionDataPrompt? prompt,
@@ -575,7 +575,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             FunctionDataVariant9 as object ??
@@ -586,11 +586,11 @@ namespace Braintrust
             RemoteEval as object ??
             Graph as object ??
             Code as object ??
-            Prompt as object 
+            Prompt as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Prompt?.ToString() ??
@@ -601,11 +601,11 @@ namespace Braintrust
             Facet?.ToString() ??
             BatchedFacet?.ToString() ??
             Parameters?.ToString() ??
-            FunctionDataVariant9?.ToString() 
+            FunctionDataVariant9?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -613,7 +613,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.FunctionDataPrompt, TResult>? prompt = null,
@@ -673,7 +673,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.FunctionDataPrompt>? prompt = null,
@@ -739,7 +739,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.FunctionDataPrompt>? prompt = null,
@@ -797,7 +797,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -832,7 +832,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(FunctionData other)
         {
@@ -845,12 +845,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FacetData?>.Default.Equals(Facet, other.Facet) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.BatchedFacetData?>.Default.Equals(BatchedFacet, other.BatchedFacet) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataParameters?>.Default.Equals(Parameters, other.Parameters) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>.Default.Equals(FunctionDataVariant9, other.FunctionDataVariant9) 
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>.Default.Equals(FunctionDataVariant9, other.FunctionDataVariant9)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(FunctionData obj1, FunctionData obj2)
         {
@@ -858,7 +858,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(FunctionData obj1, FunctionData obj2)
         {
@@ -866,7 +866,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -5,12 +5,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ResponseFormatNullish : global::System.IEquatable<ResponseFormatNullish>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ResponseFormatNullishJsonObject? JsonObject { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonObject))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsJsonObject => JsonObject != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonObject(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ResponseFormatNullishJsonObject PickJsonObject() => IsJsonObject
             ? JsonObject!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonObject' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ResponseFormatNullishJsonSchema? JsonSchema { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonSchema))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsJsonSchema => JsonSchema != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonSchema(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ResponseFormatNullishJsonSchema PickJsonSchema() => IsJsonSchema
             ? JsonSchema!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonSchema' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ResponseFormatNullishText? Text { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsText => Text != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickText(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ResponseFormatNullishText PickText() => IsText
             ? Text!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? ResponseFormatNullishVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ResponseFormatNullishVariant4))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsResponseFormatNullishVariant4 => ResponseFormatNullishVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickResponseFormatNullishVariant4(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickResponseFormatNullishVariant4() => IsResponseFormatNullishVariant4
             ? ResponseFormatNullishVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ResponseFormatNullishVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResponseFormatNullish(global::Braintrust.ResponseFormatNullishJsonObject value) => new ResponseFormatNullish((global::Braintrust.ResponseFormatNullishJsonObject?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ResponseFormatNullishJsonObject?(ResponseFormatNullish @this) => @this.JsonObject;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResponseFormatNullish(global::Braintrust.ResponseFormatNullishJsonObject? value)
         {
@@ -175,22 +175,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResponseFormatNullish FromJsonObject(global::Braintrust.ResponseFormatNullishJsonObject? value) => new ResponseFormatNullish(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResponseFormatNullish(global::Braintrust.ResponseFormatNullishJsonSchema value) => new ResponseFormatNullish((global::Braintrust.ResponseFormatNullishJsonSchema?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ResponseFormatNullishJsonSchema?(ResponseFormatNullish @this) => @this.JsonSchema;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResponseFormatNullish(global::Braintrust.ResponseFormatNullishJsonSchema? value)
         {
@@ -198,22 +198,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResponseFormatNullish FromJsonSchema(global::Braintrust.ResponseFormatNullishJsonSchema? value) => new ResponseFormatNullish(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResponseFormatNullish(global::Braintrust.ResponseFormatNullishText value) => new ResponseFormatNullish((global::Braintrust.ResponseFormatNullishText?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ResponseFormatNullishText?(ResponseFormatNullish @this) => @this.Text;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResponseFormatNullish(global::Braintrust.ResponseFormatNullishText? value)
         {
@@ -221,12 +221,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResponseFormatNullish FromText(global::Braintrust.ResponseFormatNullishText? value) => new ResponseFormatNullish(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResponseFormatNullish(
             global::Braintrust.ResponseFormatNullishJsonObject? jsonObject,
@@ -242,27 +242,27 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ResponseFormatNullishVariant4 as object ??
             Text as object ??
             JsonSchema as object ??
-            JsonObject as object 
+            JsonObject as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             JsonObject?.ToString() ??
             JsonSchema?.ToString() ??
             Text?.ToString() ??
-            ResponseFormatNullishVariant4?.ToString() 
+            ResponseFormatNullishVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -270,7 +270,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.ResponseFormatNullishJsonObject, TResult>? jsonObject = null,
@@ -305,7 +305,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.ResponseFormatNullishJsonObject>? jsonObject = null,
@@ -341,7 +341,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.ResponseFormatNullishJsonObject>? jsonObject = null,
@@ -374,7 +374,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -399,7 +399,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ResponseFormatNullish other)
         {
@@ -407,12 +407,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ResponseFormatNullishJsonObject?>.Default.Equals(JsonObject, other.JsonObject) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ResponseFormatNullishJsonSchema?>.Default.Equals(JsonSchema, other.JsonSchema) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ResponseFormatNullishText?>.Default.Equals(Text, other.Text) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ResponseFormatNullishVariant4, other.ResponseFormatNullishVariant4) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ResponseFormatNullishVariant4, other.ResponseFormatNullishVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ResponseFormatNullish obj1, ResponseFormatNullish obj2)
         {
@@ -420,7 +420,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ResponseFormatNullish obj1, ResponseFormatNullish obj2)
         {
@@ -428,7 +428,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -5,7 +5,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ProjectScoreCategories : global::System.IEquatable<ProjectScoreCategories>
     {
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Categorical))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsCategorical => Categorical != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCategorical(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory> PickCategorical() => IsCategorical
             ? Categorical!
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Weighted))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsWeighted => Weighted != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWeighted(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.Dictionary<string, double> PickWeighted() => IsWeighted
             ? Weighted!
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Minimum))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsMinimum => Minimum != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMinimum(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickMinimum() => IsMinimum
             ? Minimum!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Minimum' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? ProjectScoreCategoriesVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ProjectScoreCategoriesVariant4))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsProjectScoreCategoriesVariant4 => ProjectScoreCategoriesVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickProjectScoreCategoriesVariant4(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickProjectScoreCategoriesVariant4() => IsProjectScoreCategoriesVariant4
             ? ProjectScoreCategoriesVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ProjectScoreCategoriesVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ProjectScoreCategories(global::System.Collections.Generic.Dictionary<string, double> value) => new ProjectScoreCategories((global::System.Collections.Generic.Dictionary<string, double>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::System.Collections.Generic.Dictionary<string, double>?(ProjectScoreCategories @this) => @this.Weighted;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectScoreCategories(global::System.Collections.Generic.Dictionary<string, double>? value)
         {
@@ -175,12 +175,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ProjectScoreCategories FromWeighted(global::System.Collections.Generic.Dictionary<string, double>? value) => new ProjectScoreCategories(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectScoreCategories(
             global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>? categorical,
@@ -196,27 +196,27 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ProjectScoreCategoriesVariant4 as object ??
             Minimum as object ??
             Weighted as object ??
-            Categorical as object 
+            Categorical as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Categorical?.ToString() ??
             Weighted?.ToString() ??
             Minimum?.ToString() ??
-            ProjectScoreCategoriesVariant4?.ToString() 
+            ProjectScoreCategoriesVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -224,7 +224,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>, TResult>? categorical = null,
@@ -259,7 +259,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>>? categorical = null,
@@ -295,7 +295,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>>? categorical = null,
@@ -328,7 +328,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -353,7 +353,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ProjectScoreCategories other)
         {
@@ -361,12 +361,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>?>.Default.Equals(Categorical, other.Categorical) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, double>?>.Default.Equals(Weighted, other.Weighted) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(Minimum, other.Minimum) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ProjectScoreCategoriesVariant4, other.ProjectScoreCategoriesVariant4) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ProjectScoreCategoriesVariant4, other.ProjectScoreCategoriesVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ProjectScoreCategories obj1, ProjectScoreCategories obj2)
         {
@@ -374,7 +374,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ProjectScoreCategories obj1, ProjectScoreCategories obj2)
         {
@@ -382,7 +382,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

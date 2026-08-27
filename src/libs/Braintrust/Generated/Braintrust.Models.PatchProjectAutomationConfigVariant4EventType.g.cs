@@ -9,7 +9,7 @@ namespace Braintrust
     public enum PatchProjectAutomationConfigVariant4EventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Retention,
     }

@@ -5,12 +5,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ModelParams : global::System.IEquatable<ModelParams>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsOpenAIModelParams? OpenAIModelParams { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OpenAIModelParams))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsOpenAIModelParams => OpenAIModelParams != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOpenAIModelParams(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ModelParamsOpenAIModelParams PickOpenAIModelParams() => IsOpenAIModelParams
             ? OpenAIModelParams!
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAIModelParams' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsAnthropicModelParams? AnthropicModelParams { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AnthropicModelParams))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsAnthropicModelParams => AnthropicModelParams != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAnthropicModelParams(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ModelParamsAnthropicModelParams PickAnthropicModelParams() => IsAnthropicModelParams
             ? AnthropicModelParams!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnthropicModelParams' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsGoogleModelParams? GoogleModelParams { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GoogleModelParams))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsGoogleModelParams => GoogleModelParams != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGoogleModelParams(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ModelParamsGoogleModelParams PickGoogleModelParams() => IsGoogleModelParams
             ? GoogleModelParams!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleModelParams' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsWindowAIModelParams? WindowAIModelParams { get; init; }
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WindowAIModelParams))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsWindowAIModelParams => WindowAIModelParams != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickWindowAIModelParams(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ModelParamsWindowAIModelParams PickWindowAIModelParams() => IsWindowAIModelParams
             ? WindowAIModelParams!
             : throw new global::System.InvalidOperationException($"Expected union variant 'WindowAIModelParams' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ModelParamsJsCompletionParams? JsCompletionParams { get; init; }
@@ -167,7 +167,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsCompletionParams))]
@@ -175,7 +175,7 @@ namespace Braintrust
         public bool IsJsCompletionParams => JsCompletionParams != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsCompletionParams(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ModelParamsJsCompletionParams PickJsCompletionParams() => IsJsCompletionParams
             ? JsCompletionParams!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsCompletionParams' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelParams(global::Braintrust.ModelParamsOpenAIModelParams value) => new ModelParams((global::Braintrust.ModelParamsOpenAIModelParams?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ModelParamsOpenAIModelParams?(ModelParams @this) => @this.OpenAIModelParams;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelParams(global::Braintrust.ModelParamsOpenAIModelParams? value)
         {
@@ -212,22 +212,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelParams FromOpenAIModelParams(global::Braintrust.ModelParamsOpenAIModelParams? value) => new ModelParams(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelParams(global::Braintrust.ModelParamsAnthropicModelParams value) => new ModelParams((global::Braintrust.ModelParamsAnthropicModelParams?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ModelParamsAnthropicModelParams?(ModelParams @this) => @this.AnthropicModelParams;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelParams(global::Braintrust.ModelParamsAnthropicModelParams? value)
         {
@@ -235,22 +235,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelParams FromAnthropicModelParams(global::Braintrust.ModelParamsAnthropicModelParams? value) => new ModelParams(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelParams(global::Braintrust.ModelParamsGoogleModelParams value) => new ModelParams((global::Braintrust.ModelParamsGoogleModelParams?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ModelParamsGoogleModelParams?(ModelParams @this) => @this.GoogleModelParams;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelParams(global::Braintrust.ModelParamsGoogleModelParams? value)
         {
@@ -258,22 +258,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelParams FromGoogleModelParams(global::Braintrust.ModelParamsGoogleModelParams? value) => new ModelParams(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelParams(global::Braintrust.ModelParamsWindowAIModelParams value) => new ModelParams((global::Braintrust.ModelParamsWindowAIModelParams?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ModelParamsWindowAIModelParams?(ModelParams @this) => @this.WindowAIModelParams;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelParams(global::Braintrust.ModelParamsWindowAIModelParams? value)
         {
@@ -281,22 +281,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelParams FromWindowAIModelParams(global::Braintrust.ModelParamsWindowAIModelParams? value) => new ModelParams(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelParams(global::Braintrust.ModelParamsJsCompletionParams value) => new ModelParams((global::Braintrust.ModelParamsJsCompletionParams?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ModelParamsJsCompletionParams?(ModelParams @this) => @this.JsCompletionParams;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelParams(global::Braintrust.ModelParamsJsCompletionParams? value)
         {
@@ -304,12 +304,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelParams FromJsCompletionParams(global::Braintrust.ModelParamsJsCompletionParams? value) => new ModelParams(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelParams(
             global::Braintrust.ModelParamsOpenAIModelParams? openAIModelParams,
@@ -327,29 +327,29 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             JsCompletionParams as object ??
             WindowAIModelParams as object ??
             GoogleModelParams as object ??
             AnthropicModelParams as object ??
-            OpenAIModelParams as object 
+            OpenAIModelParams as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             OpenAIModelParams?.ToString() ??
             AnthropicModelParams?.ToString() ??
             GoogleModelParams?.ToString() ??
             WindowAIModelParams?.ToString() ??
-            JsCompletionParams?.ToString() 
+            JsCompletionParams?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -357,7 +357,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.ModelParamsOpenAIModelParams, TResult>? openAIModelParams = null,
@@ -397,7 +397,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.ModelParamsOpenAIModelParams>? openAIModelParams = null,
@@ -439,7 +439,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.ModelParamsOpenAIModelParams>? openAIModelParams = null,
@@ -477,7 +477,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -504,7 +504,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ModelParams other)
         {
@@ -513,12 +513,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ModelParamsAnthropicModelParams?>.Default.Equals(AnthropicModelParams, other.AnthropicModelParams) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ModelParamsGoogleModelParams?>.Default.Equals(GoogleModelParams, other.GoogleModelParams) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ModelParamsWindowAIModelParams?>.Default.Equals(WindowAIModelParams, other.WindowAIModelParams) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.ModelParamsJsCompletionParams?>.Default.Equals(JsCompletionParams, other.JsCompletionParams) 
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.ModelParamsJsCompletionParams?>.Default.Equals(JsCompletionParams, other.JsCompletionParams)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ModelParams obj1, ModelParams obj2)
         {
@@ -526,7 +526,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ModelParams obj1, ModelParams obj2)
         {
@@ -534,7 +534,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

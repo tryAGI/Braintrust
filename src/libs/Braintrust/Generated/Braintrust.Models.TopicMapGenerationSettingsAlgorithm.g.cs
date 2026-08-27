@@ -4,20 +4,20 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TopicMapGenerationSettingsAlgorithm
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Community,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hdbscan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kmeans,
     }

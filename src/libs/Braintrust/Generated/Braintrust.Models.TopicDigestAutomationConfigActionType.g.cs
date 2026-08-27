@@ -9,7 +9,7 @@ namespace Braintrust
     public enum TopicDigestAutomationConfigActionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slack,
     }

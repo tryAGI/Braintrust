@@ -9,7 +9,7 @@ namespace Braintrust
     public enum PatchProjectAutomationConfigVariant1EventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Logs,
     }

@@ -10,7 +10,7 @@ namespace Braintrust
     public readonly partial struct ViewOptions : global::System.IEquatable<ViewOptions>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ViewOptionsMonitorViewOptions? MonitorViewOptions { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MonitorViewOptions))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsMonitorViewOptions => MonitorViewOptions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMonitorViewOptions(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ViewOptionsMonitorViewOptions PickMonitorViewOptions() => IsMonitorViewOptions
             ? MonitorViewOptions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'MonitorViewOptions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ViewOptionsTableViewOptions? TableViewOptions { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TableViewOptions))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsTableViewOptions => TableViewOptions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTableViewOptions(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ViewOptionsTableViewOptions PickTableViewOptions() => IsTableViewOptions
             ? TableViewOptions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TableViewOptions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? ViewOptionsVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ViewOptionsVariant3))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsViewOptionsVariant3 => ViewOptionsVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickViewOptionsVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickViewOptionsVariant3() => IsViewOptionsVariant3
             ? ViewOptionsVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ViewOptionsVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ViewOptions(global::Braintrust.ViewOptionsMonitorViewOptions value) => new ViewOptions((global::Braintrust.ViewOptionsMonitorViewOptions?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ViewOptionsMonitorViewOptions?(ViewOptions @this) => @this.MonitorViewOptions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ViewOptions(global::Braintrust.ViewOptionsMonitorViewOptions? value)
         {
@@ -138,22 +138,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ViewOptions FromMonitorViewOptions(global::Braintrust.ViewOptionsMonitorViewOptions? value) => new ViewOptions(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ViewOptions(global::Braintrust.ViewOptionsTableViewOptions value) => new ViewOptions((global::Braintrust.ViewOptionsTableViewOptions?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ViewOptionsTableViewOptions?(ViewOptions @this) => @this.TableViewOptions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ViewOptions(global::Braintrust.ViewOptionsTableViewOptions? value)
         {
@@ -161,12 +161,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ViewOptions FromTableViewOptions(global::Braintrust.ViewOptionsTableViewOptions? value) => new ViewOptions(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ViewOptions(
             global::Braintrust.ViewOptionsMonitorViewOptions? monitorViewOptions,
@@ -180,25 +180,25 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ViewOptionsVariant3 as object ??
             TableViewOptions as object ??
-            MonitorViewOptions as object 
+            MonitorViewOptions as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             MonitorViewOptions?.ToString() ??
             TableViewOptions?.ToString() ??
-            ViewOptionsVariant3?.ToString() 
+            ViewOptionsVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -206,7 +206,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.ViewOptionsMonitorViewOptions, TResult>? monitorViewOptions = null,
@@ -236,7 +236,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.ViewOptionsMonitorViewOptions>? monitorViewOptions = null,
@@ -266,7 +266,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.ViewOptionsMonitorViewOptions>? monitorViewOptions = null,
@@ -294,7 +294,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -317,19 +317,19 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ViewOptions other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ViewOptionsMonitorViewOptions?>.Default.Equals(MonitorViewOptions, other.MonitorViewOptions) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ViewOptionsTableViewOptions?>.Default.Equals(TableViewOptions, other.TableViewOptions) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ViewOptionsVariant3, other.ViewOptionsVariant3) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ViewOptionsVariant3, other.ViewOptionsVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ViewOptions obj1, ViewOptions obj2)
         {
@@ -337,7 +337,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ViewOptions obj1, ViewOptions obj2)
         {
@@ -345,7 +345,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {
