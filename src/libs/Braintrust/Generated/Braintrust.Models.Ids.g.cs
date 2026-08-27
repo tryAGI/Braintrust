@@ -10,7 +10,7 @@ namespace Braintrust
     public readonly partial struct Ids : global::System.IEquatable<Ids>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Guid? Guid { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Guid))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsGuid => Guid != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGuid(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Guid PickGuid() => IsGuid
             ? Guid!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Guid' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::System.Guid>? IdsVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(IdsVariant2))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsIdsVariant2 => IdsVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickIdsVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::System.Guid> PickIdsVariant2() => IsIdsVariant2
             ? IdsVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'IdsVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Ids(global::System.Guid value) => new Ids((global::System.Guid?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::System.Guid?(Ids @this) => @this.Guid;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Ids(global::System.Guid? value)
         {
@@ -101,12 +101,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Ids FromGuid(global::System.Guid? value) => new Ids(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Ids(
             global::System.Guid? guid,
@@ -118,23 +118,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             IdsVariant2 as object ??
-            Guid as object 
+            Guid as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Guid?.ToString() ??
-            IdsVariant2?.ToString() 
+            IdsVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::System.Guid?, TResult>? guid = null,
@@ -167,7 +167,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::System.Guid?>? guid = null,
@@ -191,7 +191,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::System.Guid?>? guid = null,
@@ -214,7 +214,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Ids other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::System.Guid?>.Default.Equals(Guid, other.Guid) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::System.Guid>?>.Default.Equals(IdsVariant2, other.IdsVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::System.Guid>?>.Default.Equals(IdsVariant2, other.IdsVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Ids obj1, Ids obj2)
         {
@@ -254,7 +254,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Ids obj1, Ids obj2)
         {
@@ -262,7 +262,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -10,7 +10,7 @@ namespace Braintrust
     public readonly partial struct UserEmail : global::System.IEquatable<UserEmail>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? UserEmailVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserEmailVariant1))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsUserEmailVariant1 => UserEmailVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserEmailVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickUserEmailVariant1() => IsUserEmailVariant1
             ? UserEmailVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserEmailVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? UserEmailVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserEmailVariant2))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsUserEmailVariant2 => UserEmailVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserEmailVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickUserEmailVariant2() => IsUserEmailVariant2
             ? UserEmailVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserEmailVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UserEmail(string value) => new UserEmail((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(UserEmail @this) => @this.UserEmailVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserEmail(string? value)
         {
@@ -101,12 +101,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UserEmail FromUserEmailVariant1(string? value) => new UserEmail(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserEmail(
             string? userEmailVariant1,
@@ -118,23 +118,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UserEmailVariant2 as object ??
-            UserEmailVariant1 as object 
+            UserEmailVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             UserEmailVariant1?.ToString() ??
-            UserEmailVariant2?.ToString() 
+            UserEmailVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? userEmailVariant1 = null,
@@ -167,7 +167,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? userEmailVariant1 = null,
@@ -191,7 +191,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? userEmailVariant1 = null,
@@ -214,7 +214,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(UserEmail other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(UserEmailVariant1, other.UserEmailVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(UserEmailVariant2, other.UserEmailVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(UserEmailVariant2, other.UserEmailVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(UserEmail obj1, UserEmail obj2)
         {
@@ -254,7 +254,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(UserEmail obj1, UserEmail obj2)
         {
@@ -262,7 +262,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

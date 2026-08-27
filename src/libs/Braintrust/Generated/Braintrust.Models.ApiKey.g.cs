@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ApiKey
     {
@@ -29,7 +29,7 @@ namespace Braintrust
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preview_name")]
         [global::System.Text.Json.Serialization.JsonRequired]

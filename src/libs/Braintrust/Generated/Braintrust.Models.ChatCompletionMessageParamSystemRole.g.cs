@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatCompletionMessageParamSystemRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         System,
     }

@@ -4,19 +4,19 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class WindowedAutomationConfigThresholdPolicyCondition
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionTypeJsonConverter))]
         public global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("operator")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigThresholdPolicyConditionOperatorJsonConverter))]
@@ -24,7 +24,7 @@ namespace Braintrust
         public required global::Braintrust.WindowedAutomationConfigThresholdPolicyConditionOperator Operator { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("threshold")]
         [global::System.Text.Json.Serialization.JsonRequired]

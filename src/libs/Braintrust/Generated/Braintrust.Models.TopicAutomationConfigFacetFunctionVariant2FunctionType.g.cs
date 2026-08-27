@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TopicAutomationConfigFacetFunctionVariant2FunctionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }

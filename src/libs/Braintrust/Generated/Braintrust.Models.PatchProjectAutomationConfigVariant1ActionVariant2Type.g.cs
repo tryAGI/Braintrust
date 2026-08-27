@@ -9,7 +9,7 @@ namespace Braintrust
     public enum PatchProjectAutomationConfigVariant1ActionVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slack,
     }

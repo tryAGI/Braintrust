@@ -10,7 +10,7 @@ namespace Braintrust
     public readonly partial struct FacetPreprocessorId : global::System.IEquatable<FacetPreprocessorId>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FacetPreprocessorIdFunction? Function { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Function))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsFunction => Function != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunction(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FacetPreprocessorIdFunction PickFunction() => IsFunction
             ? Function!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FacetPreprocessorIdGlobal? Global { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Global))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsGlobal => Global != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobal(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FacetPreprocessorIdGlobal PickGlobal() => IsGlobal
             ? Global!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.FacetPreprocessorIdPreprocessorInline? PreprocessorInline { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PreprocessorInline))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsPreprocessorInline => PreprocessorInline != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPreprocessorInline(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FacetPreprocessorIdPreprocessorInline PickPreprocessorInline() => IsPreprocessorInline
             ? PreprocessorInline!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorInline' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? FacetPreprocessorIdVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FacetPreprocessorIdVariant4))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsFacetPreprocessorIdVariant4 => FacetPreprocessorIdVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFacetPreprocessorIdVariant4(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickFacetPreprocessorIdVariant4() => IsFacetPreprocessorIdVariant4
             ? FacetPreprocessorIdVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'FacetPreprocessorIdVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FacetPreprocessorId(global::Braintrust.FacetPreprocessorIdFunction value) => new FacetPreprocessorId((global::Braintrust.FacetPreprocessorIdFunction?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FacetPreprocessorIdFunction?(FacetPreprocessorId @this) => @this.Function;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FacetPreprocessorId(global::Braintrust.FacetPreprocessorIdFunction? value)
         {
@@ -175,22 +175,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FacetPreprocessorId FromFunction(global::Braintrust.FacetPreprocessorIdFunction? value) => new FacetPreprocessorId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FacetPreprocessorId(global::Braintrust.FacetPreprocessorIdGlobal value) => new FacetPreprocessorId((global::Braintrust.FacetPreprocessorIdGlobal?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FacetPreprocessorIdGlobal?(FacetPreprocessorId @this) => @this.Global;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FacetPreprocessorId(global::Braintrust.FacetPreprocessorIdGlobal? value)
         {
@@ -198,22 +198,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FacetPreprocessorId FromGlobal(global::Braintrust.FacetPreprocessorIdGlobal? value) => new FacetPreprocessorId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FacetPreprocessorId(global::Braintrust.FacetPreprocessorIdPreprocessorInline value) => new FacetPreprocessorId((global::Braintrust.FacetPreprocessorIdPreprocessorInline?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FacetPreprocessorIdPreprocessorInline?(FacetPreprocessorId @this) => @this.PreprocessorInline;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FacetPreprocessorId(global::Braintrust.FacetPreprocessorIdPreprocessorInline? value)
         {
@@ -221,12 +221,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FacetPreprocessorId FromPreprocessorInline(global::Braintrust.FacetPreprocessorIdPreprocessorInline? value) => new FacetPreprocessorId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FacetPreprocessorId(
             global::Braintrust.FacetPreprocessorIdFunction? function,
@@ -242,27 +242,27 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             FacetPreprocessorIdVariant4 as object ??
             PreprocessorInline as object ??
             Global as object ??
-            Function as object 
+            Function as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Function?.ToString() ??
             Global?.ToString() ??
             PreprocessorInline?.ToString() ??
-            FacetPreprocessorIdVariant4?.ToString() 
+            FacetPreprocessorIdVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -270,7 +270,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.FacetPreprocessorIdFunction, TResult>? function = null,
@@ -305,7 +305,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.FacetPreprocessorIdFunction>? function = null,
@@ -341,7 +341,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.FacetPreprocessorIdFunction>? function = null,
@@ -374,7 +374,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -399,7 +399,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(FacetPreprocessorId other)
         {
@@ -407,12 +407,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FacetPreprocessorIdFunction?>.Default.Equals(Function, other.Function) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FacetPreprocessorIdGlobal?>.Default.Equals(Global, other.Global) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FacetPreprocessorIdPreprocessorInline?>.Default.Equals(PreprocessorInline, other.PreprocessorInline) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(FacetPreprocessorIdVariant4, other.FacetPreprocessorIdVariant4) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(FacetPreprocessorIdVariant4, other.FacetPreprocessorIdVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(FacetPreprocessorId obj1, FacetPreprocessorId obj2)
         {
@@ -420,7 +420,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(FacetPreprocessorId obj1, FacetPreprocessorId obj2)
         {
@@ -428,7 +428,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

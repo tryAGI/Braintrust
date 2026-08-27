@@ -23,7 +23,7 @@ namespace Braintrust
         public required global::System.Guid ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -57,14 +57,14 @@ namespace Braintrust
         public required global::Braintrust.ProjectScoreType ScoreType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("categories")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ProjectScoreCategoriesJsonConverter))]
         public global::Braintrust.ProjectScoreCategories? Categories { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         public global::Braintrust.ProjectScoreConfig? Config { get; set; }

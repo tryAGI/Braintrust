@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OnlineScoreConfigScorerVariant2GlobalType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Global,
     }

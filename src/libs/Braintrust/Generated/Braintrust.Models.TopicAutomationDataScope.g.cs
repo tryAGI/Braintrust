@@ -10,7 +10,7 @@ namespace Braintrust
     public readonly partial struct TopicAutomationDataScope : global::System.IEquatable<TopicAutomationDataScope>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.TopicAutomationDataScopeVariant1? TopicAutomationDataScopeVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TopicAutomationDataScopeVariant1))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsTopicAutomationDataScopeVariant1 => TopicAutomationDataScopeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTopicAutomationDataScopeVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.TopicAutomationDataScopeVariant1 PickTopicAutomationDataScopeVariant1() => IsTopicAutomationDataScopeVariant1
             ? TopicAutomationDataScopeVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TopicAutomationDataScopeVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.TopicAutomationDataScopeVariant2? TopicAutomationDataScopeVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TopicAutomationDataScopeVariant2))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsTopicAutomationDataScopeVariant2 => TopicAutomationDataScopeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTopicAutomationDataScopeVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.TopicAutomationDataScopeVariant2 PickTopicAutomationDataScopeVariant2() => IsTopicAutomationDataScopeVariant2
             ? TopicAutomationDataScopeVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TopicAutomationDataScopeVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.TopicAutomationDataScopeVariant3? TopicAutomationDataScopeVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TopicAutomationDataScopeVariant3))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsTopicAutomationDataScopeVariant3 => TopicAutomationDataScopeVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTopicAutomationDataScopeVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.TopicAutomationDataScopeVariant3 PickTopicAutomationDataScopeVariant3() => IsTopicAutomationDataScopeVariant3
             ? TopicAutomationDataScopeVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TopicAutomationDataScopeVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? TopicAutomationDataScopeVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TopicAutomationDataScopeVariant4))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsTopicAutomationDataScopeVariant4 => TopicAutomationDataScopeVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTopicAutomationDataScopeVariant4(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickTopicAutomationDataScopeVariant4() => IsTopicAutomationDataScopeVariant4
             ? TopicAutomationDataScopeVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TopicAutomationDataScopeVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TopicAutomationDataScope(global::Braintrust.TopicAutomationDataScopeVariant1 value) => new TopicAutomationDataScope((global::Braintrust.TopicAutomationDataScopeVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.TopicAutomationDataScopeVariant1?(TopicAutomationDataScope @this) => @this.TopicAutomationDataScopeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TopicAutomationDataScope(global::Braintrust.TopicAutomationDataScopeVariant1? value)
         {
@@ -175,22 +175,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TopicAutomationDataScope FromTopicAutomationDataScopeVariant1(global::Braintrust.TopicAutomationDataScopeVariant1? value) => new TopicAutomationDataScope(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TopicAutomationDataScope(global::Braintrust.TopicAutomationDataScopeVariant2 value) => new TopicAutomationDataScope((global::Braintrust.TopicAutomationDataScopeVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.TopicAutomationDataScopeVariant2?(TopicAutomationDataScope @this) => @this.TopicAutomationDataScopeVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TopicAutomationDataScope(global::Braintrust.TopicAutomationDataScopeVariant2? value)
         {
@@ -198,22 +198,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TopicAutomationDataScope FromTopicAutomationDataScopeVariant2(global::Braintrust.TopicAutomationDataScopeVariant2? value) => new TopicAutomationDataScope(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TopicAutomationDataScope(global::Braintrust.TopicAutomationDataScopeVariant3 value) => new TopicAutomationDataScope((global::Braintrust.TopicAutomationDataScopeVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.TopicAutomationDataScopeVariant3?(TopicAutomationDataScope @this) => @this.TopicAutomationDataScopeVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TopicAutomationDataScope(global::Braintrust.TopicAutomationDataScopeVariant3? value)
         {
@@ -221,12 +221,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TopicAutomationDataScope FromTopicAutomationDataScopeVariant3(global::Braintrust.TopicAutomationDataScopeVariant3? value) => new TopicAutomationDataScope(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TopicAutomationDataScope(
             global::Braintrust.TopicAutomationDataScopeVariant1? topicAutomationDataScopeVariant1,
@@ -242,27 +242,27 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TopicAutomationDataScopeVariant4 as object ??
             TopicAutomationDataScopeVariant3 as object ??
             TopicAutomationDataScopeVariant2 as object ??
-            TopicAutomationDataScopeVariant1 as object 
+            TopicAutomationDataScopeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             TopicAutomationDataScopeVariant1?.ToString() ??
             TopicAutomationDataScopeVariant2?.ToString() ??
             TopicAutomationDataScopeVariant3?.ToString() ??
-            TopicAutomationDataScopeVariant4?.ToString() 
+            TopicAutomationDataScopeVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -270,7 +270,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.TopicAutomationDataScopeVariant1, TResult>? topicAutomationDataScopeVariant1 = null,
@@ -305,7 +305,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant1>? topicAutomationDataScopeVariant1 = null,
@@ -341,7 +341,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.TopicAutomationDataScopeVariant1>? topicAutomationDataScopeVariant1 = null,
@@ -374,7 +374,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -399,7 +399,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TopicAutomationDataScope other)
         {
@@ -407,12 +407,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.TopicAutomationDataScopeVariant1?>.Default.Equals(TopicAutomationDataScopeVariant1, other.TopicAutomationDataScopeVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.TopicAutomationDataScopeVariant2?>.Default.Equals(TopicAutomationDataScopeVariant2, other.TopicAutomationDataScopeVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.TopicAutomationDataScopeVariant3?>.Default.Equals(TopicAutomationDataScopeVariant3, other.TopicAutomationDataScopeVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(TopicAutomationDataScopeVariant4, other.TopicAutomationDataScopeVariant4) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(TopicAutomationDataScopeVariant4, other.TopicAutomationDataScopeVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TopicAutomationDataScope obj1, TopicAutomationDataScope obj2)
         {
@@ -420,7 +420,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TopicAutomationDataScope obj1, TopicAutomationDataScope obj2)
         {
@@ -428,7 +428,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

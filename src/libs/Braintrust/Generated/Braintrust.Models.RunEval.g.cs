@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RunEval
     {
@@ -63,7 +63,7 @@ namespace Braintrust
         public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parent")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.InvokeParent?, object>))]
@@ -119,7 +119,7 @@ namespace Braintrust
         public global::Braintrust.GitMetadataSettings? GitMetadataSettings { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repo_info")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.RepoInfo, object>))]
@@ -150,7 +150,7 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<string>? Tags { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mcp_auth")]
         public global::System.Collections.Generic.Dictionary<string, global::Braintrust.RunEvalMcpAuth2>? McpAuth { get; set; }

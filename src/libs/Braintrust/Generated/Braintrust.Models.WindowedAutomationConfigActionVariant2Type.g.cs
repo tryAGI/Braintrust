@@ -9,7 +9,7 @@ namespace Braintrust
     public enum WindowedAutomationConfigActionVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slack,
     }

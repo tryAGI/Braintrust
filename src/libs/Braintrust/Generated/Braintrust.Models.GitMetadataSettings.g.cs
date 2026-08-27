@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class GitMetadataSettings
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("collect")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.GitMetadataSettingsCollectJsonConverter))]
@@ -17,7 +17,7 @@ namespace Braintrust
         public required global::Braintrust.GitMetadataSettingsCollect Collect { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fields")]
         public global::System.Collections.Generic.IList<global::Braintrust.GitMetadataSettingsField>? Fields { get; set; }

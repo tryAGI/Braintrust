@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GraphNodeVariant5Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Btql,
     }

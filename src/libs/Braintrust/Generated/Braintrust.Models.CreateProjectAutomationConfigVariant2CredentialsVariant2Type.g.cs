@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateProjectAutomationConfigVariant2CredentialsVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GcpServiceAccount,
     }

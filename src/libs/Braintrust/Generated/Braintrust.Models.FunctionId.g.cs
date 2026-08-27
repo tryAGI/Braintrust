@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Id1))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsId1 => Id1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickId1(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionIdFunctionId1 PickId1() => IsId1
             ? Id1!
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ProjectSlug))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsProjectSlug => ProjectSlug != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickProjectSlug(
 #if NET6_0_OR_GREATER
@@ -77,7 +77,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionIdProjectSlug PickProjectSlug() => IsProjectSlug
             ? ProjectSlug!
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GlobalFunction))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsGlobalFunction => GlobalFunction != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobalFunction(
 #if NET6_0_OR_GREATER
@@ -114,7 +114,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionIdGlobalFunction PickGlobalFunction() => IsGlobalFunction
             ? GlobalFunction!
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromptSessionId))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsPromptSessionId => PromptSessionId != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPromptSessionId(
 #if NET6_0_OR_GREATER
@@ -151,7 +151,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionIdPromptSessionId PickPromptSessionId() => IsPromptSessionId
             ? PromptSessionId!
@@ -167,7 +167,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InlineCode))]
@@ -175,7 +175,7 @@ namespace Braintrust
         public bool IsInlineCode => InlineCode != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInlineCode(
 #if NET6_0_OR_GREATER
@@ -188,7 +188,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionIdInlineCode PickInlineCode() => IsInlineCode
             ? InlineCode!
@@ -204,7 +204,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InlineFunction))]
@@ -212,7 +212,7 @@ namespace Braintrust
         public bool IsInlineFunction => InlineFunction != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInlineFunction(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionIdInlineFunction PickInlineFunction() => IsInlineFunction
             ? InlineFunction!
@@ -241,7 +241,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InlinePrompt))]
@@ -249,7 +249,7 @@ namespace Braintrust
         public bool IsInlinePrompt => InlinePrompt != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInlinePrompt(
 #if NET6_0_OR_GREATER
@@ -262,23 +262,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.FunctionIdInlinePrompt PickInlinePrompt() => IsInlinePrompt
             ? InlinePrompt!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InlinePrompt' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdFunctionId1 value) => new FunctionId((global::Braintrust.FunctionIdFunctionId1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionIdFunctionId1?(FunctionId @this) => @this.Id1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionId(global::Braintrust.FunctionIdFunctionId1? value)
         {
@@ -286,22 +286,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionId FromId1(global::Braintrust.FunctionIdFunctionId1? value) => new FunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdProjectSlug value) => new FunctionId((global::Braintrust.FunctionIdProjectSlug?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionIdProjectSlug?(FunctionId @this) => @this.ProjectSlug;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionId(global::Braintrust.FunctionIdProjectSlug? value)
         {
@@ -309,22 +309,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionId FromProjectSlug(global::Braintrust.FunctionIdProjectSlug? value) => new FunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdGlobalFunction value) => new FunctionId((global::Braintrust.FunctionIdGlobalFunction?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionIdGlobalFunction?(FunctionId @this) => @this.GlobalFunction;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionId(global::Braintrust.FunctionIdGlobalFunction? value)
         {
@@ -332,22 +332,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionId FromGlobalFunction(global::Braintrust.FunctionIdGlobalFunction? value) => new FunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdPromptSessionId value) => new FunctionId((global::Braintrust.FunctionIdPromptSessionId?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionIdPromptSessionId?(FunctionId @this) => @this.PromptSessionId;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionId(global::Braintrust.FunctionIdPromptSessionId? value)
         {
@@ -355,22 +355,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionId FromPromptSessionId(global::Braintrust.FunctionIdPromptSessionId? value) => new FunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdInlineCode value) => new FunctionId((global::Braintrust.FunctionIdInlineCode?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionIdInlineCode?(FunctionId @this) => @this.InlineCode;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionId(global::Braintrust.FunctionIdInlineCode? value)
         {
@@ -378,22 +378,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionId FromInlineCode(global::Braintrust.FunctionIdInlineCode? value) => new FunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdInlineFunction value) => new FunctionId((global::Braintrust.FunctionIdInlineFunction?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionIdInlineFunction?(FunctionId @this) => @this.InlineFunction;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionId(global::Braintrust.FunctionIdInlineFunction? value)
         {
@@ -401,22 +401,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionId FromInlineFunction(global::Braintrust.FunctionIdInlineFunction? value) => new FunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator FunctionId(global::Braintrust.FunctionIdInlinePrompt value) => new FunctionId((global::Braintrust.FunctionIdInlinePrompt?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.FunctionIdInlinePrompt?(FunctionId @this) => @this.InlinePrompt;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionId(global::Braintrust.FunctionIdInlinePrompt? value)
         {
@@ -424,12 +424,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static FunctionId FromInlinePrompt(global::Braintrust.FunctionIdInlinePrompt? value) => new FunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionId(
             global::Braintrust.FunctionIdFunctionId1? id1,
@@ -451,7 +451,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             InlinePrompt as object ??
@@ -460,11 +460,11 @@ namespace Braintrust
             PromptSessionId as object ??
             GlobalFunction as object ??
             ProjectSlug as object ??
-            Id1 as object 
+            Id1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Id1?.ToString() ??
@@ -473,11 +473,11 @@ namespace Braintrust
             PromptSessionId?.ToString() ??
             InlineCode?.ToString() ??
             InlineFunction?.ToString() ??
-            InlinePrompt?.ToString() 
+            InlinePrompt?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -485,7 +485,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.FunctionIdFunctionId1, TResult>? id1 = null,
@@ -535,7 +535,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.FunctionIdFunctionId1>? id1 = null,
@@ -589,7 +589,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.FunctionIdFunctionId1>? id1 = null,
@@ -637,7 +637,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -668,7 +668,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(FunctionId other)
         {
@@ -679,12 +679,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdPromptSessionId?>.Default.Equals(PromptSessionId, other.PromptSessionId) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdInlineCode?>.Default.Equals(InlineCode, other.InlineCode) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdInlineFunction?>.Default.Equals(InlineFunction, other.InlineFunction) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdInlinePrompt?>.Default.Equals(InlinePrompt, other.InlinePrompt) 
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionIdInlinePrompt?>.Default.Equals(InlinePrompt, other.InlinePrompt)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(FunctionId obj1, FunctionId obj2)
         {
@@ -692,7 +692,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(FunctionId obj1, FunctionId obj2)
         {
@@ -700,7 +700,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

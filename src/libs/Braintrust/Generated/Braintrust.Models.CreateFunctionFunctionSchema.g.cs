@@ -9,13 +9,13 @@ namespace Braintrust
     public sealed partial class CreateFunctionFunctionSchema
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parameters")]
         public object? Parameters { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("returns")]
         public object? Returns { get; set; }

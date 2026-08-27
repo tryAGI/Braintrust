@@ -5,12 +5,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct PromptBlockData : global::System.IEquatable<PromptBlockData>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PromptBlockDataChat? Chat { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Chat))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsChat => Chat != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChat(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.PromptBlockDataChat PickChat() => IsChat
             ? Chat!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Chat' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PromptBlockDataCompletion? Completion { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Completion))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsCompletion => Completion != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCompletion(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.PromptBlockDataCompletion PickCompletion() => IsCompletion
             ? Completion!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Completion' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptBlockData(global::Braintrust.PromptBlockDataChat value) => new PromptBlockData((global::Braintrust.PromptBlockDataChat?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.PromptBlockDataChat?(PromptBlockData @this) => @this.Chat;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptBlockData(global::Braintrust.PromptBlockDataChat? value)
         {
@@ -101,22 +101,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptBlockData FromChat(global::Braintrust.PromptBlockDataChat? value) => new PromptBlockData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptBlockData(global::Braintrust.PromptBlockDataCompletion value) => new PromptBlockData((global::Braintrust.PromptBlockDataCompletion?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.PromptBlockDataCompletion?(PromptBlockData @this) => @this.Completion;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptBlockData(global::Braintrust.PromptBlockDataCompletion? value)
         {
@@ -124,12 +124,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptBlockData FromCompletion(global::Braintrust.PromptBlockDataCompletion? value) => new PromptBlockData(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptBlockData(
             global::Braintrust.PromptBlockDataChat? chat,
@@ -141,23 +141,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Completion as object ??
-            Chat as object 
+            Chat as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Chat?.ToString() ??
-            Completion?.ToString() 
+            Completion?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.PromptBlockDataChat, TResult>? chat = null,
@@ -190,7 +190,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.PromptBlockDataChat>? chat = null,
@@ -214,7 +214,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.PromptBlockDataChat>? chat = null,
@@ -237,7 +237,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PromptBlockData other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataChat?>.Default.Equals(Chat, other.Chat) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataCompletion?>.Default.Equals(Completion, other.Completion) 
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataCompletion?>.Default.Equals(Completion, other.Completion)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PromptBlockData obj1, PromptBlockData obj2)
         {
@@ -277,7 +277,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PromptBlockData obj1, PromptBlockData obj2)
         {
@@ -285,7 +285,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

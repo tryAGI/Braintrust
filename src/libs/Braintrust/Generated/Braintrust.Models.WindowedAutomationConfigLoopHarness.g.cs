@@ -4,20 +4,20 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WindowedAutomationConfigLoopHarness
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClaudeCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Codex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Native,
     }

@@ -10,7 +10,7 @@ namespace Braintrust
     public readonly partial struct SavedFunctionId : global::System.IEquatable<SavedFunctionId>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.SavedFunctionIdFunction? Function { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Function))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsFunction => Function != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunction(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.SavedFunctionIdFunction PickFunction() => IsFunction
             ? Function!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.SavedFunctionIdGlobal? Global { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Global))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsGlobal => Global != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGlobal(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.SavedFunctionIdGlobal PickGlobal() => IsGlobal
             ? Global!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? SavedFunctionIdVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SavedFunctionIdVariant3))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsSavedFunctionIdVariant3 => SavedFunctionIdVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSavedFunctionIdVariant3(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickSavedFunctionIdVariant3() => IsSavedFunctionIdVariant3
             ? SavedFunctionIdVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SavedFunctionIdVariant3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SavedFunctionId(global::Braintrust.SavedFunctionIdFunction value) => new SavedFunctionId((global::Braintrust.SavedFunctionIdFunction?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.SavedFunctionIdFunction?(SavedFunctionId @this) => @this.Function;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SavedFunctionId(global::Braintrust.SavedFunctionIdFunction? value)
         {
@@ -138,22 +138,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SavedFunctionId FromFunction(global::Braintrust.SavedFunctionIdFunction? value) => new SavedFunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SavedFunctionId(global::Braintrust.SavedFunctionIdGlobal value) => new SavedFunctionId((global::Braintrust.SavedFunctionIdGlobal?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.SavedFunctionIdGlobal?(SavedFunctionId @this) => @this.Global;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SavedFunctionId(global::Braintrust.SavedFunctionIdGlobal? value)
         {
@@ -161,12 +161,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SavedFunctionId FromGlobal(global::Braintrust.SavedFunctionIdGlobal? value) => new SavedFunctionId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SavedFunctionId(
             global::Braintrust.SavedFunctionIdFunction? function,
@@ -180,25 +180,25 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             SavedFunctionIdVariant3 as object ??
             Global as object ??
-            Function as object 
+            Function as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Function?.ToString() ??
             Global?.ToString() ??
-            SavedFunctionIdVariant3?.ToString() 
+            SavedFunctionIdVariant3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -206,7 +206,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.SavedFunctionIdFunction, TResult>? function = null,
@@ -236,7 +236,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.SavedFunctionIdFunction>? function = null,
@@ -266,7 +266,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.SavedFunctionIdFunction>? function = null,
@@ -294,7 +294,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -317,19 +317,19 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(SavedFunctionId other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.SavedFunctionIdFunction?>.Default.Equals(Function, other.Function) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.SavedFunctionIdGlobal?>.Default.Equals(Global, other.Global) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(SavedFunctionIdVariant3, other.SavedFunctionIdVariant3) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(SavedFunctionIdVariant3, other.SavedFunctionIdVariant3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(SavedFunctionId obj1, SavedFunctionId obj2)
         {
@@ -337,7 +337,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(SavedFunctionId obj1, SavedFunctionId obj2)
         {
@@ -345,7 +345,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

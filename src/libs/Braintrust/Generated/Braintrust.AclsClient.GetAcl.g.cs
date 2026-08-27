@@ -26,7 +26,7 @@ namespace Braintrust
             new global::Braintrust.EndPointSecurityRequirement
             {
                 Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
-                { 
+                {
                 },
             };
         private static readonly global::Braintrust.EndPointSecurityRequirement[] s_GetAclSecurityRequirements =
@@ -286,7 +286,7 @@ namespace Braintrust
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Braintrust.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

@@ -9,15 +9,15 @@ namespace Braintrust
     public enum FeedbackExperimentItemSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Api,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
     }

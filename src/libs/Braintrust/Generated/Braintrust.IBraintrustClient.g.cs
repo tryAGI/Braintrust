@@ -42,163 +42,163 @@ namespace Braintrust
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AclsClient Acls { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentsClient Agents { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AiSecretsClient AiSecrets { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiKeysClient ApiKeys { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CorsClient Cors { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CrossObjectClient CrossObject { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetSnapshotsClient DatasetSnapshots { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetsClient Datasets { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvVarsClient EnvVars { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentsClient Environments { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EvalsClient Evals { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExperimentsClient Experiments { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FunctionsClient Functions { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GroupsClient Groups { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LogsClient Logs { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public McpServersClient McpServers { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OrgAutomationsClient OrgAutomations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OrganizationsClient Organizations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public OtherClient Other { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectAutomationsClient ProjectAutomations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectGroupsClient ProjectGroups { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectScoresClient ProjectScores { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectTagsClient ProjectTags { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptsClient Prompts { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProxyClient Proxy { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RolesClient Roles { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ServiceTokensClient ServiceTokens { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SpanIframesClient SpanIframes { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UsersClient Users { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ViewsClient Views { get; }
 

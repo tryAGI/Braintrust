@@ -9,15 +9,15 @@ namespace Braintrust
     public enum FeedbackProjectLogsItemSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Api,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         External,
     }

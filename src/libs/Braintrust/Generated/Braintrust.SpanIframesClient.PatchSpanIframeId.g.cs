@@ -26,7 +26,7 @@ namespace Braintrust
             new global::Braintrust.EndPointSecurityRequirement
             {
                 Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
-                { 
+                {
                 },
             };
         private static readonly global::Braintrust.EndPointSecurityRequirement[] s_PatchSpanIframeIdSecurityRequirements =
@@ -160,7 +160,7 @@ namespace Braintrust
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(

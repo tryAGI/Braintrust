@@ -5,12 +5,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ChatCompletionMessageParam : global::System.IEquatable<ChatCompletionMessageParam>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamSystem? System { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(System))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsSystem => System != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSystem(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionMessageParamSystem PickSystem() => IsSystem
             ? System!
             : throw new global::System.InvalidOperationException($"Expected union variant 'System' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamUser? User { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(User))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsUser => User != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUser(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionMessageParamUser PickUser() => IsUser
             ? User!
             : throw new global::System.InvalidOperationException($"Expected union variant 'User' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamAssistant? Assistant { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Assistant))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsAssistant => Assistant != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAssistant(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionMessageParamAssistant PickAssistant() => IsAssistant
             ? Assistant!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Assistant' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamTool? Tool { get; init; }
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Tool))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsTool => Tool != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTool(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionMessageParamTool PickTool() => IsTool
             ? Tool!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Tool' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamFunction? Function { get; init; }
@@ -167,7 +167,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Function))]
@@ -175,7 +175,7 @@ namespace Braintrust
         public bool IsFunction => Function != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunction(
 #if NET6_0_OR_GREATER
@@ -188,14 +188,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionMessageParamFunction PickFunction() => IsFunction
             ? Function!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamDeveloper? Developer { get; init; }
@@ -204,7 +204,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Developer))]
@@ -212,7 +212,7 @@ namespace Braintrust
         public bool IsDeveloper => Developer != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDeveloper(
 #if NET6_0_OR_GREATER
@@ -225,14 +225,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionMessageParamDeveloper PickDeveloper() => IsDeveloper
             ? Developer!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Developer' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionMessageParamFallback? Fallback { get; init; }
@@ -241,7 +241,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Fallback))]
@@ -249,7 +249,7 @@ namespace Braintrust
         public bool IsFallback => Fallback != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFallback(
 #if NET6_0_OR_GREATER
@@ -262,23 +262,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.ChatCompletionMessageParamFallback PickFallback() => IsFallback
             ? Fallback!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Fallback' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamSystem value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamSystem?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionMessageParamSystem?(ChatCompletionMessageParam @this) => @this.System;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamSystem? value)
         {
@@ -286,22 +286,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageParam FromSystem(global::Braintrust.ChatCompletionMessageParamSystem? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamUser value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamUser?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionMessageParamUser?(ChatCompletionMessageParam @this) => @this.User;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamUser? value)
         {
@@ -309,22 +309,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageParam FromUser(global::Braintrust.ChatCompletionMessageParamUser? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamAssistant value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamAssistant?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionMessageParamAssistant?(ChatCompletionMessageParam @this) => @this.Assistant;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamAssistant? value)
         {
@@ -332,22 +332,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageParam FromAssistant(global::Braintrust.ChatCompletionMessageParamAssistant? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamTool value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamTool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionMessageParamTool?(ChatCompletionMessageParam @this) => @this.Tool;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamTool? value)
         {
@@ -355,22 +355,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageParam FromTool(global::Braintrust.ChatCompletionMessageParamTool? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamFunction value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamFunction?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionMessageParamFunction?(ChatCompletionMessageParam @this) => @this.Function;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamFunction? value)
         {
@@ -378,22 +378,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageParam FromFunction(global::Braintrust.ChatCompletionMessageParamFunction? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamDeveloper value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamDeveloper?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionMessageParamDeveloper?(ChatCompletionMessageParam @this) => @this.Developer;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamDeveloper? value)
         {
@@ -401,22 +401,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageParam FromDeveloper(global::Braintrust.ChatCompletionMessageParamDeveloper? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamFallback value) => new ChatCompletionMessageParam((global::Braintrust.ChatCompletionMessageParamFallback?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.ChatCompletionMessageParamFallback?(ChatCompletionMessageParam @this) => @this.Fallback;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageParam(global::Braintrust.ChatCompletionMessageParamFallback? value)
         {
@@ -424,12 +424,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageParam FromFallback(global::Braintrust.ChatCompletionMessageParamFallback? value) => new ChatCompletionMessageParam(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageParam(
             global::Braintrust.ChatCompletionMessageParamSystem? system,
@@ -451,7 +451,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Fallback as object ??
@@ -460,11 +460,11 @@ namespace Braintrust
             Tool as object ??
             Assistant as object ??
             User as object ??
-            System as object 
+            System as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             System?.ToString() ??
@@ -473,11 +473,11 @@ namespace Braintrust
             Tool?.ToString() ??
             Function?.ToString() ??
             Developer?.ToString() ??
-            Fallback?.ToString() 
+            Fallback?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -485,7 +485,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.ChatCompletionMessageParamSystem, TResult>? system = null,
@@ -535,7 +535,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.ChatCompletionMessageParamSystem>? system = null,
@@ -589,7 +589,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.ChatCompletionMessageParamSystem>? system = null,
@@ -637,7 +637,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -668,7 +668,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ChatCompletionMessageParam other)
         {
@@ -679,12 +679,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionMessageParamTool?>.Default.Equals(Tool, other.Tool) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionMessageParamFunction?>.Default.Equals(Function, other.Function) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionMessageParamDeveloper?>.Default.Equals(Developer, other.Developer) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionMessageParamFallback?>.Default.Equals(Fallback, other.Fallback) 
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionMessageParamFallback?>.Default.Equals(Fallback, other.Fallback)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ChatCompletionMessageParam obj1, ChatCompletionMessageParam obj2)
         {
@@ -692,7 +692,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ChatCompletionMessageParam obj1, ChatCompletionMessageParam obj2)
         {
@@ -700,7 +700,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

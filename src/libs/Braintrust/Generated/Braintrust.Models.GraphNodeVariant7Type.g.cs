@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GraphNodeVariant7Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aggregator,
     }

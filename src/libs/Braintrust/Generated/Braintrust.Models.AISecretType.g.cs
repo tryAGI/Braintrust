@@ -5,12 +5,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct AISecretType : global::System.IEquatable<AISecretType>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? AISecretTypeVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AISecretTypeVariant1))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsAISecretTypeVariant1 => AISecretTypeVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAISecretTypeVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickAISecretTypeVariant1() => IsAISecretTypeVariant1
             ? AISecretTypeVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AISecretTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? AISecretTypeVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AISecretTypeVariant2))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsAISecretTypeVariant2 => AISecretTypeVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAISecretTypeVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickAISecretTypeVariant2() => IsAISecretTypeVariant2
             ? AISecretTypeVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AISecretTypeVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator AISecretType(string value) => new AISecretType((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(AISecretType @this) => @this.AISecretTypeVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AISecretType(string? value)
         {
@@ -101,12 +101,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static AISecretType FromAISecretTypeVariant1(string? value) => new AISecretType(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AISecretType(
             string? aISecretTypeVariant1,
@@ -118,23 +118,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AISecretTypeVariant2 as object ??
-            AISecretTypeVariant1 as object 
+            AISecretTypeVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AISecretTypeVariant1?.ToString() ??
-            AISecretTypeVariant2?.ToString() 
+            AISecretTypeVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? aISecretTypeVariant1 = null,
@@ -167,7 +167,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? aISecretTypeVariant1 = null,
@@ -191,7 +191,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? aISecretTypeVariant1 = null,
@@ -214,7 +214,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(AISecretType other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(AISecretTypeVariant1, other.AISecretTypeVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(AISecretTypeVariant2, other.AISecretTypeVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(AISecretTypeVariant2, other.AISecretTypeVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(AISecretType obj1, AISecretType obj2)
         {
@@ -254,7 +254,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(AISecretType obj1, AISecretType obj2)
         {
@@ -262,7 +262,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

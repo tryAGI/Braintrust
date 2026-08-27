@@ -4,18 +4,18 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AclBatchUpdateRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("add_acls")]
         public global::System.Collections.Generic.IList<global::Braintrust.AclItem>? AddAcls { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("remove_acls")]
         public global::System.Collections.Generic.IList<global::Braintrust.AclItem>? RemoveAcls { get; set; }

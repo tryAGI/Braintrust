@@ -9,7 +9,7 @@ namespace Braintrust
     public enum WindowedAutomationConfigProductOrigin
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Patterns,
     }

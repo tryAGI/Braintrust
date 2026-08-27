@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CodeBundleLocationVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sandbox,
     }

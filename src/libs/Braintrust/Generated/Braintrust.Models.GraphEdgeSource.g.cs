@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GraphEdgeSource
     {
@@ -16,7 +16,7 @@ namespace Braintrust
         public required string Node { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("variable")]
         [global::System.Text.Json.Serialization.JsonRequired]

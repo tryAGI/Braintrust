@@ -9,7 +9,7 @@ namespace Braintrust
     public enum WindowedAutomationConfigEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Windowed,
     }

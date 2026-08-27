@@ -4,20 +4,20 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ViewOptionsTableViewOptionsQueryShape
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spans,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Topics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Traces,
     }

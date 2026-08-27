@@ -9,15 +9,15 @@ namespace Braintrust
     public enum RetentionObjectType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dataset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProjectLogs,
     }

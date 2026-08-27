@@ -9,31 +9,31 @@ namespace Braintrust
     public enum ProjectScoreType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Categorical,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FreeForm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Maximum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minimum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Online,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slider,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Weighted,
     }

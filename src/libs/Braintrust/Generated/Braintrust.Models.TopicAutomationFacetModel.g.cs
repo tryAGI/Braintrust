@@ -9,15 +9,15 @@ namespace Braintrust
     public enum TopicAutomationFacetModel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrainFacet1,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrainFacet2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrainFacetLatest,
     }

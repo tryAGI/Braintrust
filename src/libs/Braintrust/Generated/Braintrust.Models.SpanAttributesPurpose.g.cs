@@ -9,7 +9,7 @@ namespace Braintrust
     public enum SpanAttributesPurpose
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scorer,
     }

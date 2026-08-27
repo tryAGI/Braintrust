@@ -18,7 +18,7 @@ namespace Braintrust
         /// </summary>
         EnvVar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxProvider,
     }

@@ -10,7 +10,7 @@ namespace Braintrust
     public readonly partial struct PreprocessorId : global::System.IEquatable<PreprocessorId>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PreprocessorIdFunction? Function { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Function))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsFunction => Function != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunction(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.PreprocessorIdFunction PickFunction() => IsFunction
             ? Function!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PreprocessorIdPreprocessorGlobal? PreprocessorGlobal { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PreprocessorGlobal))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsPreprocessorGlobal => PreprocessorGlobal != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPreprocessorGlobal(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.PreprocessorIdPreprocessorGlobal PickPreprocessorGlobal() => IsPreprocessorGlobal
             ? PreprocessorGlobal!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorGlobal' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Braintrust.PreprocessorIdPreprocessorInline? PreprocessorInline { get; init; }
@@ -93,7 +93,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PreprocessorInline))]
@@ -101,7 +101,7 @@ namespace Braintrust
         public bool IsPreprocessorInline => PreprocessorInline != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPreprocessorInline(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Braintrust.PreprocessorIdPreprocessorInline PickPreprocessorInline() => IsPreprocessorInline
             ? PreprocessorInline!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorInline' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public object? PreprocessorIdVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PreprocessorIdVariant4))]
@@ -138,7 +138,7 @@ namespace Braintrust
         public bool IsPreprocessorIdVariant4 => PreprocessorIdVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPreprocessorIdVariant4(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object PickPreprocessorIdVariant4() => IsPreprocessorIdVariant4
             ? PreprocessorIdVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorIdVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PreprocessorId(global::Braintrust.PreprocessorIdFunction value) => new PreprocessorId((global::Braintrust.PreprocessorIdFunction?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.PreprocessorIdFunction?(PreprocessorId @this) => @this.Function;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PreprocessorId(global::Braintrust.PreprocessorIdFunction? value)
         {
@@ -175,22 +175,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PreprocessorId FromFunction(global::Braintrust.PreprocessorIdFunction? value) => new PreprocessorId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PreprocessorId(global::Braintrust.PreprocessorIdPreprocessorGlobal value) => new PreprocessorId((global::Braintrust.PreprocessorIdPreprocessorGlobal?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.PreprocessorIdPreprocessorGlobal?(PreprocessorId @this) => @this.PreprocessorGlobal;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PreprocessorId(global::Braintrust.PreprocessorIdPreprocessorGlobal? value)
         {
@@ -198,22 +198,22 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PreprocessorId FromPreprocessorGlobal(global::Braintrust.PreprocessorIdPreprocessorGlobal? value) => new PreprocessorId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PreprocessorId(global::Braintrust.PreprocessorIdPreprocessorInline value) => new PreprocessorId((global::Braintrust.PreprocessorIdPreprocessorInline?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Braintrust.PreprocessorIdPreprocessorInline?(PreprocessorId @this) => @this.PreprocessorInline;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PreprocessorId(global::Braintrust.PreprocessorIdPreprocessorInline? value)
         {
@@ -221,12 +221,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PreprocessorId FromPreprocessorInline(global::Braintrust.PreprocessorIdPreprocessorInline? value) => new PreprocessorId(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PreprocessorId(
             global::Braintrust.PreprocessorIdFunction? function,
@@ -242,27 +242,27 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             PreprocessorIdVariant4 as object ??
             PreprocessorInline as object ??
             PreprocessorGlobal as object ??
-            Function as object 
+            Function as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Function?.ToString() ??
             PreprocessorGlobal?.ToString() ??
             PreprocessorInline?.ToString() ??
-            PreprocessorIdVariant4?.ToString() 
+            PreprocessorIdVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -270,7 +270,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.PreprocessorIdFunction, TResult>? function = null,
@@ -305,7 +305,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Braintrust.PreprocessorIdFunction>? function = null,
@@ -341,7 +341,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Braintrust.PreprocessorIdFunction>? function = null,
@@ -374,7 +374,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -399,7 +399,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PreprocessorId other)
         {
@@ -407,12 +407,12 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.PreprocessorIdFunction?>.Default.Equals(Function, other.Function) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.PreprocessorIdPreprocessorGlobal?>.Default.Equals(PreprocessorGlobal, other.PreprocessorGlobal) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.PreprocessorIdPreprocessorInline?>.Default.Equals(PreprocessorInline, other.PreprocessorInline) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(PreprocessorIdVariant4, other.PreprocessorIdVariant4) 
+                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(PreprocessorIdVariant4, other.PreprocessorIdVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PreprocessorId obj1, PreprocessorId obj2)
         {
@@ -420,7 +420,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PreprocessorId obj1, PreprocessorId obj2)
         {
@@ -428,7 +428,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FunctionDataCodeDataType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Inline,
     }

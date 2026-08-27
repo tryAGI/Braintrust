@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PromptBlockDataCompletionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completion,
     }

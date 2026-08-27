@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FunctionDataNullishParametersSchemaType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Object,
     }

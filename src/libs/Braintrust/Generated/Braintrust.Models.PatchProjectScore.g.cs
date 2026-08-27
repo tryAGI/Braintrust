@@ -28,14 +28,14 @@ namespace Braintrust
         public global::Braintrust.ProjectScoreType? ScoreType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("categories")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ProjectScoreCategoriesJsonConverter))]
         public global::Braintrust.ProjectScoreCategories? Categories { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         public global::Braintrust.ProjectScoreConfig? Config { get; set; }

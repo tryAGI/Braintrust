@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PromptDataNullishToolFunctionVariant2FunctionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }

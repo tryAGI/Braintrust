@@ -10,47 +10,47 @@ namespace Braintrust
     public enum FunctionTypeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Classifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomView,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Facet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Llm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parameters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preprocessor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sandbox,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scorer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tag,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Task,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tool,
     }

@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BatchedFacetDataTopicMap
     {
@@ -22,7 +22,7 @@ namespace Braintrust
         public string? TopicMapId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("topic_map_data")]
         [global::System.Text.Json.Serialization.JsonRequired]

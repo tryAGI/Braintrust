@@ -9,11 +9,11 @@ namespace Braintrust
     public enum AutomationStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Paused,
     }

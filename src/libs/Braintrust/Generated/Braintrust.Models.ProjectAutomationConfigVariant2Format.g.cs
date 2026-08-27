@@ -9,11 +9,11 @@ namespace Braintrust
     public enum ProjectAutomationConfigVariant2Format
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jsonl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parquet,
     }

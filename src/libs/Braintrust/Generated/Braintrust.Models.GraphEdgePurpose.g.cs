@@ -9,15 +9,15 @@ namespace Braintrust
     public enum GraphEdgePurpose
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Control,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Data,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Messages,
     }

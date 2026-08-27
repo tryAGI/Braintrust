@@ -10,7 +10,7 @@ namespace Braintrust
     public enum PreprocessorIdPreprocessorGlobalFunctionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Preprocessor,
     }

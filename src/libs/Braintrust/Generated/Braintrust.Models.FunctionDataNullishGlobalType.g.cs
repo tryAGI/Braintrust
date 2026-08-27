@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FunctionDataNullishGlobalType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Global,
     }

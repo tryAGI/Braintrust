@@ -9,7 +9,7 @@ namespace Braintrust
     public enum PatchProjectAutomationConfigVariant3EventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AsyncQuery,
     }

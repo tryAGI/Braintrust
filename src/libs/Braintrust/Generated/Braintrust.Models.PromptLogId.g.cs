@@ -9,7 +9,7 @@ namespace Braintrust
     public enum PromptLogId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P,
     }

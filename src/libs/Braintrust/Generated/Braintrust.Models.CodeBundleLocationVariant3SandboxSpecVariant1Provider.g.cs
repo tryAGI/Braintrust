@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CodeBundleLocationVariant3SandboxSpecVariant1Provider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Modal,
     }

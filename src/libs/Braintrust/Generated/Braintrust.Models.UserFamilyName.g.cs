@@ -10,7 +10,7 @@ namespace Braintrust
     public readonly partial struct UserFamilyName : global::System.IEquatable<UserFamilyName>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? UserFamilyNameVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserFamilyNameVariant1))]
@@ -27,7 +27,7 @@ namespace Braintrust
         public bool IsUserFamilyNameVariant1 => UserFamilyNameVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserFamilyNameVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickUserFamilyNameVariant1() => IsUserFamilyNameVariant1
             ? UserFamilyNameVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserFamilyNameVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<string>? UserFamilyNameVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Braintrust
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserFamilyNameVariant2))]
@@ -64,7 +64,7 @@ namespace Braintrust
         public bool IsUserFamilyNameVariant2 => UserFamilyNameVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserFamilyNameVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<string> PickUserFamilyNameVariant2() => IsUserFamilyNameVariant2
             ? UserFamilyNameVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserFamilyNameVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator UserFamilyName(string value) => new UserFamilyName((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(UserFamilyName @this) => @this.UserFamilyNameVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserFamilyName(string? value)
         {
@@ -101,12 +101,12 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static UserFamilyName FromUserFamilyNameVariant1(string? value) => new UserFamilyName(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserFamilyName(
             string? userFamilyNameVariant1,
@@ -118,23 +118,23 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UserFamilyNameVariant2 as object ??
-            UserFamilyNameVariant1 as object 
+            UserFamilyNameVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             UserFamilyNameVariant1?.ToString() ??
-            UserFamilyNameVariant2?.ToString() 
+            UserFamilyNameVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -142,7 +142,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? userFamilyNameVariant1 = null,
@@ -167,7 +167,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? userFamilyNameVariant1 = null,
@@ -191,7 +191,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? userFamilyNameVariant1 = null,
@@ -214,7 +214,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -235,18 +235,18 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(UserFamilyName other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<string?>.Default.Equals(UserFamilyNameVariant1, other.UserFamilyNameVariant1) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(UserFamilyNameVariant2, other.UserFamilyNameVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<string>?>.Default.Equals(UserFamilyNameVariant2, other.UserFamilyNameVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(UserFamilyName obj1, UserFamilyName obj2)
         {
@@ -254,7 +254,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(UserFamilyName obj1, UserFamilyName obj2)
         {
@@ -262,7 +262,7 @@ namespace Braintrust
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

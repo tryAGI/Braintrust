@@ -9,13 +9,13 @@ namespace Braintrust
     public sealed partial class ViewData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("search")]
         public global::Braintrust.ViewDataSearch? Search { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("custom_charts")]
         public object? CustomCharts { get; set; }

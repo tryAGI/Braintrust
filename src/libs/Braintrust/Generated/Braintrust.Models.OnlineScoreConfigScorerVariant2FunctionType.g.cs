@@ -4,12 +4,12 @@
 namespace Braintrust
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OnlineScoreConfigScorerVariant2FunctionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }

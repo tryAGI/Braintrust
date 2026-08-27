@@ -26,7 +26,7 @@ namespace Braintrust
             new global::Braintrust.EndPointSecurityRequirement
             {
                 Authorizations = new global::Braintrust.EndPointAuthorizationRequirement[]
-                { 
+                {
                 },
             };
         private static readonly global::Braintrust.EndPointSecurityRequirement[] s_ProxyautoSecurityRequirements =
@@ -148,7 +148,7 @@ namespace Braintrust
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                             var __httpRequestContentBody = global::System.Text.Json.JsonSerializer.Serialize(request, request.GetType(), JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(

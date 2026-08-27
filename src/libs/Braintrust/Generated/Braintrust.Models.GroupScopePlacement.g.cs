@@ -9,11 +9,11 @@ namespace Braintrust
     public enum GroupScopePlacement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Each,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         First,
     }

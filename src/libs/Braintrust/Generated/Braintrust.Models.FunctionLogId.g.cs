@@ -9,7 +9,7 @@ namespace Braintrust
     public enum FunctionLogId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P,
     }

@@ -9,7 +9,7 @@ namespace Braintrust
     public enum ProjectAutomationConfigVariant5ActionVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webhook,
     }

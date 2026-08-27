@@ -9,7 +9,7 @@ namespace Braintrust
     public enum CreateOrgAutomationConfigEventType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Retention,
     }
