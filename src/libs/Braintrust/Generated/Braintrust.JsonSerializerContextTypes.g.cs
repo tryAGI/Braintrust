@@ -224,7 +224,7 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<object>? Type49 { get; set; }
+        public global::System.Collections.Generic.IList<object?>? Type49 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3237,7 +3237,7 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<object>? ListType6 { get; set; }
+        public global::System.Collections.Generic.List<object?>? ListType6 { get; set; }
         /// <summary>
         ///
         /// </summary>
