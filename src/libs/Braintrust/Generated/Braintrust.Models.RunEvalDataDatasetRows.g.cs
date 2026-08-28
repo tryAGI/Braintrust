@@ -13,7 +13,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<object> Data { get; set; }
+        public required global::System.Collections.Generic.IList<object?> Data { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +29,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RunEvalDataDatasetRows(
-            global::System.Collections.Generic.IList<object> data)
+            global::System.Collections.Generic.IList<object?> data)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
         }
