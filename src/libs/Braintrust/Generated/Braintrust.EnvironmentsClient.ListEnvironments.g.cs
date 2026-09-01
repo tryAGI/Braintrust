@@ -141,7 +141,10 @@ namespace Braintrust
                                 path: "/environment",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("ids", ids?.ToString())
+                                .AddOptionalParameter("ids", ids?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x?.ToString()! },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item.ToString()!),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("name", name)
                                 .AddOptionalParameter("org_name", orgName)
                                 ;
