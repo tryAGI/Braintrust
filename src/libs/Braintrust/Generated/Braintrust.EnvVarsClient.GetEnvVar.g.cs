@@ -170,7 +170,10 @@ namespace Braintrust
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("limit", limit?.ToString())
-                                .AddOptionalParameter("ids", ids?.ToString())
+                                .AddOptionalParameter("ids", ids?.Match(
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x?.ToString()! },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item.ToString()!),
+                validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("env_var_name", envVarName)
                                 .AddOptionalParameter("object_type", objectType?.ToValueString())
                                 .AddOptionalParameter("object_id", objectId?.ToString())
