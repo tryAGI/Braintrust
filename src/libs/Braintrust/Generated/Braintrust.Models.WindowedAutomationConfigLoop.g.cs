@@ -52,6 +52,12 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint_name")]
+        public string? EndpointName { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reasoning_effort")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopReasoningEffortJsonConverter))]
         public global::Braintrust.WindowedAutomationConfigLoopReasoningEffort? ReasoningEffort { get; set; }
@@ -81,6 +87,7 @@ namespace Braintrust
         /// </param>
         /// <param name="harness"></param>
         /// <param name="model"></param>
+        /// <param name="endpointName"></param>
         /// <param name="reasoningEffort"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -92,6 +99,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<string>? autoApproveTools,
             global::Braintrust.WindowedAutomationConfigLoopHarness? harness,
             string? model,
+            string? endpointName,
             global::Braintrust.WindowedAutomationConfigLoopReasoningEffort? reasoningEffort)
         {
             this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
@@ -100,6 +108,7 @@ namespace Braintrust
             this.AutoApproveTools = autoApproveTools;
             this.Harness = harness;
             this.Model = model;
+            this.EndpointName = endpointName;
             this.ReasoningEffort = reasoningEffort;
         }
 

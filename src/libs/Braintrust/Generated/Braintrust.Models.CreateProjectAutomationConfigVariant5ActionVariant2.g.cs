@@ -36,7 +36,12 @@ namespace Braintrust
         public string? MessageTemplate { get; set; }
 
         /// <summary>
-        /// Instructions for Loop to format content sent to this destination
+        /// Publish a Slack mrkdwn digest.<br/>
+        /// Include a complete "*Pattern outcomes*" section with one row for every selected Pattern from the run report, including created, updated, unchanged, failed, skipped, and newly inactive outcomes.<br/>
+        /// Use this row format exactly:<br/>
+        /// • &lt;pattern_url|Pattern title&gt; — `outcome`<br/>
+        /// If a Pattern has no URL, use the plain title instead. Do not use GitHub Markdown tables or code-block tables, because links must remain clickable. Do not omit any selected Pattern. If there are no selected Patterns, say "No pattern outcomes."<br/>
+        /// After the outcome list, include a "*Highlights*" section with one very short paragraph, 2-3 sentences maximum. Summarize what changed or what broadly stands out from this run. Do not introduce new claims beyond the run report.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("formatting_prompt")]
         public string? FormattingPrompt { get; set; }
@@ -63,7 +68,12 @@ namespace Braintrust
         /// Custom message template for the alert
         /// </param>
         /// <param name="formattingPrompt">
-        /// Instructions for Loop to format content sent to this destination
+        /// Publish a Slack mrkdwn digest.<br/>
+        /// Include a complete "*Pattern outcomes*" section with one row for every selected Pattern from the run report, including created, updated, unchanged, failed, skipped, and newly inactive outcomes.<br/>
+        /// Use this row format exactly:<br/>
+        /// • &lt;pattern_url|Pattern title&gt; — `outcome`<br/>
+        /// If a Pattern has no URL, use the plain title instead. Do not use GitHub Markdown tables or code-block tables, because links must remain clickable. Do not omit any selected Pattern. If there are no selected Patterns, say "No pattern outcomes."<br/>
+        /// After the outcome list, include a "*Highlights*" section with one very short paragraph, 2-3 sentences maximum. Summarize what changed or what broadly stands out from this run. Do not introduce new claims beyond the run report.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

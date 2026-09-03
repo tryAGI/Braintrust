@@ -45,6 +45,12 @@ namespace Braintrust
         public bool? MonitorChartsUseMetricsStart { get; set; }
 
         /// <summary>
+        /// If true, hide peer review scores, comments, and aggregate results from reviewers without project update permissions until they submit their own review.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("blind_reviews")]
+        public bool? BlindReviews { get; set; }
+
+        /// <summary>
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_preprocessor")]
@@ -78,6 +84,9 @@ namespace Braintrust
         /// <param name="monitorChartsUseMetricsStart">
         /// If true, use metrics.start rather than created for monitor chart time bucket dimensions.
         /// </param>
+        /// <param name="blindReviews">
+        /// If true, hide peer review scores, comments, and aggregate results from reviewers without project update permissions until they submit their own review.
+        /// </param>
         /// <param name="defaultPreprocessor">
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
         /// </param>
@@ -91,6 +100,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsRemoteEvalSource>? remoteEvalSources,
             bool? disableRealtimeQueries,
             bool? monitorChartsUseMetricsStart,
+            bool? blindReviews,
             global::Braintrust.NullableSavedFunctionId? defaultPreprocessor)
         {
             this.ComparisonKey = comparisonKey;
@@ -99,6 +109,7 @@ namespace Braintrust
             this.RemoteEvalSources = remoteEvalSources;
             this.DisableRealtimeQueries = disableRealtimeQueries;
             this.MonitorChartsUseMetricsStart = monitorChartsUseMetricsStart;
+            this.BlindReviews = blindReviews;
             this.DefaultPreprocessor = defaultPreprocessor;
         }
 
