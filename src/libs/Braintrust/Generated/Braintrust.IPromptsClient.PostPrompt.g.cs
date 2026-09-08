@@ -6,7 +6,7 @@ namespace Braintrust
     {
         /// <summary>
         /// Create prompt<br/>
-        /// Create a new prompt. If there is an existing prompt in the project with the same slug as the one specified in the request, will return the existing prompt unmodified
+        /// Create a new prompt. If there is an existing prompt in the project with the same slug as the one specified in the request, a new version of the prompt will be appended and returned
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -19,7 +19,7 @@ namespace Braintrust
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create prompt<br/>
-        /// Create a new prompt. If there is an existing prompt in the project with the same slug as the one specified in the request, will return the existing prompt unmodified
+        /// Create a new prompt. If there is an existing prompt in the project with the same slug as the one specified in the request, a new version of the prompt will be appended and returned
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -32,7 +32,7 @@ namespace Braintrust
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create prompt<br/>
-        /// Create a new prompt. If there is an existing prompt in the project with the same slug as the one specified in the request, will return the existing prompt unmodified
+        /// Create a new prompt. If there is an existing prompt in the project with the same slug as the one specified in the request, a new version of the prompt will be appended and returned
         /// </summary>
         /// <param name="projectId">
         /// Unique identifier for the project that the prompt belongs under
@@ -53,6 +53,9 @@ namespace Braintrust
         /// A list of tags for the prompt
         /// </param>
         /// <param name="functionType"></param>
+        /// <param name="environmentSlugs">
+        /// A list of environment slugs to assign the prompt to. Each slug must reference an existing environment; if any slug does not exist, the entire request fails and the prompt is not created.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -64,6 +67,7 @@ namespace Braintrust
             global::Braintrust.PromptDataNullish? promptData = default,
             global::System.Collections.Generic.IList<string>? tags = default,
             global::Braintrust.FunctionTypeEnumNullish? functionType = default,
+            global::System.Collections.Generic.IList<string>? environmentSlugs = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

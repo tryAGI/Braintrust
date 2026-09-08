@@ -55,6 +55,12 @@ namespace Braintrust
         public global::Braintrust.FunctionTypeEnumNullish? FunctionType { get; set; }
 
         /// <summary>
+        /// A list of environment slugs to assign the prompt to. Each slug must reference an existing environment; if any slug does not exist, the entire request fails and the prompt is not created.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("environment_slugs")]
+        public global::System.Collections.Generic.IList<string>? EnvironmentSlugs { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -82,6 +88,9 @@ namespace Braintrust
         /// A list of tags for the prompt
         /// </param>
         /// <param name="functionType"></param>
+        /// <param name="environmentSlugs">
+        /// A list of environment slugs to assign the prompt to. Each slug must reference an existing environment; if any slug does not exist, the entire request fails and the prompt is not created.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -92,7 +101,8 @@ namespace Braintrust
             string? description,
             global::Braintrust.PromptDataNullish? promptData,
             global::System.Collections.Generic.IList<string>? tags,
-            global::Braintrust.FunctionTypeEnumNullish? functionType)
+            global::Braintrust.FunctionTypeEnumNullish? functionType,
+            global::System.Collections.Generic.IList<string>? environmentSlugs)
         {
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
@@ -101,6 +111,7 @@ namespace Braintrust
             this.PromptData = promptData;
             this.Tags = tags;
             this.FunctionType = functionType;
+            this.EnvironmentSlugs = environmentSlugs;
         }
 
         /// <summary>
