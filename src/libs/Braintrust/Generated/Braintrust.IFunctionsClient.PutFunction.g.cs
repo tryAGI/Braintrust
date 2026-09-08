@@ -6,7 +6,7 @@ namespace Braintrust
     {
         /// <summary>
         /// Create or replace function<br/>
-        /// Create or replace function. If there is an existing function in the project with the same slug as the one specified in the request, will replace the existing function with the provided fields
+        /// Create or replace function. If there is an existing function in the project with the same slug as the one specified in the request, a new version of the function will be appended and returned
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -19,7 +19,7 @@ namespace Braintrust
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create or replace function<br/>
-        /// Create or replace function. If there is an existing function in the project with the same slug as the one specified in the request, will replace the existing function with the provided fields
+        /// Create or replace function. If there is an existing function in the project with the same slug as the one specified in the request, a new version of the function will be appended and returned
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -32,7 +32,7 @@ namespace Braintrust
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create or replace function<br/>
-        /// Create or replace function. If there is an existing function in the project with the same slug as the one specified in the request, will replace the existing function with the provided fields
+        /// Create or replace function. If there is an existing function in the project with the same slug as the one specified in the request, a new version of the function will be appended and returned
         /// </summary>
         /// <param name="projectId">
         /// Unique identifier for the project that the prompt belongs under
