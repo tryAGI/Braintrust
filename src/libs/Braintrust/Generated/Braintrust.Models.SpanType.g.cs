@@ -35,6 +35,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        Log,
+        /// <summary>
+        ///
+        /// </summary>
         Preprocessor,
         /// <summary>
         ///
@@ -72,6 +76,7 @@ namespace Braintrust
                 SpanType.Facet => "facet",
                 SpanType.Function => "function",
                 SpanType.Llm => "llm",
+                SpanType.Log => "log",
                 SpanType.Preprocessor => "preprocessor",
                 SpanType.Review => "review",
                 SpanType.Score => "score",
@@ -93,6 +98,7 @@ namespace Braintrust
                 "facet" => SpanType.Facet,
                 "function" => SpanType.Function,
                 "llm" => SpanType.Llm,
+                "log" => SpanType.Log,
                 "preprocessor" => SpanType.Preprocessor,
                 "review" => SpanType.Review,
                 "score" => SpanType.Score,
