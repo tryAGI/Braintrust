@@ -34,7 +34,7 @@ namespace Braintrust
         /// <inheritdoc/>
         public global::Braintrust.AutoSDKClientOptions Options { get; }
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Braintrust.SourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Braintrust.ProjectsSourceGenerationContext.Default);
 
         /// <summary>
         ///
