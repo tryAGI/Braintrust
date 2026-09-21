@@ -217,6 +217,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GraphEdgePurpose), TypeInfoPropertyName = "GraphEdgePurpose2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GraphData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GraphDataType), TypeInfoPropertyName = "GraphDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Braintrust.GraphNode>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Braintrust.GraphEdge>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FacetPreprocessorId), TypeInfoPropertyName = "FacetPreprocessorId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FacetPreprocessorIdFunction))]
