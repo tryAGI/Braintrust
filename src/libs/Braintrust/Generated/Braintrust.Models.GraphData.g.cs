@@ -20,7 +20,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("nodes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Nodes { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Braintrust.GraphNode> Nodes { get; set; }
 
         /// <summary>
         ///
@@ -45,7 +45,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GraphData(
-            object nodes,
+            global::System.Collections.Generic.Dictionary<string, global::Braintrust.GraphNode> nodes,
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.GraphEdge> edges,
             global::Braintrust.GraphDataType type)
         {
