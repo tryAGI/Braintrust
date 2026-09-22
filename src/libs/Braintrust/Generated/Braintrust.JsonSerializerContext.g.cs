@@ -106,6 +106,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanType), TypeInfoPropertyName = "SpanType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributesPurpose), TypeInfoPropertyName = "SpanAttributesPurpose2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributesLogLevel), TypeInfoPropertyName = "SpanAttributesLogLevel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ObjectReferenceNullish))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ObjectReferenceNullishObjectType), TypeInfoPropertyName = "ObjectReferenceNullishObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.InsertProjectLogsEvent))]
@@ -216,6 +217,13 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControl))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlType), TypeInfoPropertyName = "ChatCompletionContentPartImageWithTitleCacheControlType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl), TypeInfoPropertyName = "ChatCompletionContentPartImageWithTitleCacheControlTtl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudio))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat), TypeInfoPropertyName = "ChatCompletionContentPartInputAudioWithTitleInputAudioFormat2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType), TypeInfoPropertyName = "ChatCompletionContentPartInputAudioWithTitleType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControl))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType), TypeInfoPropertyName = "ChatCompletionContentPartInputAudioWithTitleCacheControlType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl), TypeInfoPropertyName = "ChatCompletionContentPartInputAudioWithTitleCacheControlTtl2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitle))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType), TypeInfoPropertyName = "ChatCompletionContentPartFileWithTitleType2")]
@@ -442,6 +450,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1Type), TypeInfoPropertyName = "ProjectAutomationConfigVariant5ActionVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant2Type), TypeInfoPropertyName = "ProjectAutomationConfigVariant5ActionVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationRuntimeBlock))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CreateProjectAutomation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CreateProjectAutomationConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CreateProjectAutomationConfigVariant1EventType), TypeInfoPropertyName = "CreateProjectAutomationConfigVariant1EventType2")]
@@ -505,15 +514,6 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant3Format), TypeInfoPropertyName = "PatchProjectAutomationConfigVariant3Format2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant4EventType), TypeInfoPropertyName = "PatchProjectAutomationConfigVariant4EventType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5EventType), TypeInfoPropertyName = "PatchProjectAutomationConfigVariant5EventType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2>), TypeInfoPropertyName = "OneOfPatchProjectAutomationConfigVariant5ActionVariant1PatchProjectAutomationConfigVariant5ActionVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1Type), TypeInfoPropertyName = "PatchProjectAutomationConfigVariant5ActionVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2Type), TypeInfoPropertyName = "PatchProjectAutomationConfigVariant5ActionVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OrgAutomation))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OrgAutomationConfig))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -568,6 +568,15 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>?), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_2c2424cd8ae0cdf5")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object?>), TypeInfoPropertyName = "ListObject_System_Collections_Generic_List_object_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>>), TypeInfoPropertyName = "TopicAutomationConfigFacetFunctionVariant2Global_0de25e7b7f3aebf4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5EventType), TypeInfoPropertyName = "PatchProjectAutomationConfigVariant5EventType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2>), TypeInfoPropertyName = "OneOfPatchProjectAutomationConfigVariant5ActionVariant1PatchProjectAutomationConfigVariant5ActionVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant1Type), TypeInfoPropertyName = "PatchProjectAutomationConfigVariant5ActionVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectAutomationConfigVariant5ActionVariant2Type), TypeInfoPropertyName = "PatchProjectAutomationConfigVariant5ActionVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OrgAutomation))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OrgAutomationConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OrgAutomationConfigEventType), TypeInfoPropertyName = "OrgAutomationConfigEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CreateOrgAutomation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CreateOrgAutomationConfig))]
@@ -957,6 +966,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.ProjectSettings, object>?), TypeInfoPropertyName = "NullableAllOfProjectSettingsObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanType?), TypeInfoPropertyName = "NullableSpanType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributesPurpose?), TypeInfoPropertyName = "NullableSpanAttributesPurpose2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributesLogLevel?), TypeInfoPropertyName = "NullableSpanAttributesLogLevel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ObjectReferenceNullishObjectType?), TypeInfoPropertyName = "NullableObjectReferenceNullishObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectLogsEventLogId?), TypeInfoPropertyName = "NullableProjectLogsEventLogId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FeedbackResponseSchemaStatus?), TypeInfoPropertyName = "NullableFeedbackResponseSchemaStatus2")]
@@ -975,6 +985,10 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleType?), TypeInfoPropertyName = "NullableChatCompletionContentPartImageWithTitleType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlType?), TypeInfoPropertyName = "NullableChatCompletionContentPartImageWithTitleCacheControlType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl?), TypeInfoPropertyName = "NullableChatCompletionContentPartImageWithTitleCacheControlTtl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat?), TypeInfoPropertyName = "NullableChatCompletionContentPartInputAudioWithTitleInputAudioFormat2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType?), TypeInfoPropertyName = "NullableChatCompletionContentPartInputAudioWithTitleType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType?), TypeInfoPropertyName = "NullableChatCompletionContentPartInputAudioWithTitleCacheControlType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl?), TypeInfoPropertyName = "NullableChatCompletionContentPartInputAudioWithTitleCacheControlTtl2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType?), TypeInfoPropertyName = "NullableChatCompletionContentPartFileWithTitleType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlType?), TypeInfoPropertyName = "NullableChatCompletionContentPartFileWithTitleCacheControlType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlTtl?), TypeInfoPropertyName = "NullableChatCompletionContentPartFileWithTitleCacheControlTtl2")]
@@ -1012,20 +1026,6 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PreprocessorId?), TypeInfoPropertyName = "NullablePreprocessorId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PreprocessorIdFunctionType?), TypeInfoPropertyName = "NullablePreprocessorIdFunctionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PreprocessorIdPreprocessorGlobalType?), TypeInfoPropertyName = "NullablePreprocessorIdPreprocessorGlobalType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionType?), TypeInfoPropertyName = "NullablePreprocessorIdPreprocessorGlobalFunctionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PreprocessorIdPreprocessorInlineType?), TypeInfoPropertyName = "NullablePreprocessorIdPreprocessorInlineType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>?), TypeInfoPropertyName = "NullableAnyOfPromptDataNullishToolFunctionVariant2FunctionPromptDataNullishToolFunctionVariant2Global2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2FunctionType?), TypeInfoPropertyName = "NullablePromptDataNullishToolFunctionVariant2FunctionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2GlobalType?), TypeInfoPropertyName = "NullablePromptDataNullishToolFunctionVariant2GlobalType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishTemplateFormat?), TypeInfoPropertyName = "NullablePromptDataNullishTemplateFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType?), TypeInfoPropertyName = "NullablePromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType?), TypeInfoPropertyName = "NullablePromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionTypeEnumNullish?), TypeInfoPropertyName = "NullableFunctionTypeEnumNullish2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptLogId?), TypeInfoPropertyName = "NullablePromptLogId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Permission?), TypeInfoPropertyName = "NullablePermission2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AutomationStatus?), TypeInfoPropertyName = "NullableAutomationStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanScopeType?), TypeInfoPropertyName = "NullableSpanScopeType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.TraceScopeType?), TypeInfoPropertyName = "NullableTraceScopeType2")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1080,6 +1080,20 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>?), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_2c2424cd8ae0cdf5")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object?>), TypeInfoPropertyName = "ListObject_System_Collections_Generic_List_object_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>>), TypeInfoPropertyName = "TopicAutomationConfigFacetFunctionVariant2Global_0de25e7b7f3aebf4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PreprocessorIdPreprocessorGlobalFunctionType?), TypeInfoPropertyName = "NullablePreprocessorIdPreprocessorGlobalFunctionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PreprocessorIdPreprocessorInlineType?), TypeInfoPropertyName = "NullablePreprocessorIdPreprocessorInlineType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>?), TypeInfoPropertyName = "NullableAnyOfPromptDataNullishToolFunctionVariant2FunctionPromptDataNullishToolFunctionVariant2Global2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2FunctionType?), TypeInfoPropertyName = "NullablePromptDataNullishToolFunctionVariant2FunctionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishToolFunctionVariant2GlobalType?), TypeInfoPropertyName = "NullablePromptDataNullishToolFunctionVariant2GlobalType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishTemplateFormat?), TypeInfoPropertyName = "NullablePromptDataNullishTemplateFormat2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType?), TypeInfoPropertyName = "NullablePromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitionsType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType?), TypeInfoPropertyName = "NullablePromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionTypeEnumNullish?), TypeInfoPropertyName = "NullableFunctionTypeEnumNullish2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptLogId?), TypeInfoPropertyName = "NullablePromptLogId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Permission?), TypeInfoPropertyName = "NullablePermission2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AutomationStatus?), TypeInfoPropertyName = "NullableAutomationStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanScopeType?), TypeInfoPropertyName = "NullableSpanScopeType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.TraceScopeType?), TypeInfoPropertyName = "NullableTraceScopeType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GroupScopeType?), TypeInfoPropertyName = "NullableGroupScopeType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GroupScopePlacement?), TypeInfoPropertyName = "NullableGroupScopePlacement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.RetentionObjectType?), TypeInfoPropertyName = "NullableRetentionObjectType2")]
@@ -1574,6 +1588,10 @@ namespace Braintrust
 
                     || typeToConvert == typeof(global::Braintrust.SpanAttributesPurpose?)
 
+                    || typeToConvert == typeof(global::Braintrust.SpanAttributesLogLevel)
+
+                    || typeToConvert == typeof(global::Braintrust.SpanAttributesLogLevel?)
+
                     || typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType)
 
                     || typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType?)
@@ -1653,6 +1671,22 @@ namespace Braintrust
                     || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl)
 
                     || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl?)
 
                     || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType)
 
@@ -2615,6 +2649,16 @@ namespace Braintrust
                     return new global::Braintrust.JsonConverters.SpanAttributesPurposeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::Braintrust.SpanAttributesLogLevel))
+                {
+                    return new global::Braintrust.JsonConverters.SpanAttributesLogLevelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanAttributesLogLevel?))
+                {
+                    return new global::Braintrust.JsonConverters.SpanAttributesLogLevelNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType))
                 {
                     return new global::Braintrust.JsonConverters.ObjectReferenceNullishObjectTypeJsonConverter();
@@ -2813,6 +2857,46 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl?))
                 {
                     return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleInputAudioFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleInputAudioFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleCacheControlTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleCacheControlTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleCacheControlTtlJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleCacheControlTtlNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType))

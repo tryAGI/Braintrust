@@ -45,10 +45,22 @@ namespace Braintrust
         public bool? MonitorChartsUseMetricsStart { get; set; }
 
         /// <summary>
+        /// If true, enable the agent insights dashboard for this project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("coding_agent_insights_dashboard")]
+        public bool? CodingAgentInsightsDashboard { get; set; }
+
+        /// <summary>
         /// If true, hide peer review scores, comments, and aggregate results from reviewers without project update permissions until they submit their own review.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blind_reviews")]
         public bool? BlindReviews { get; set; }
+
+        /// <summary>
+        /// If true, automatically complete a review after every assigned reviewer fills all human review scores visible to them.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("require_all_human_review_scores")]
+        public bool? RequireAllHumanReviewScores { get; set; }
 
         /// <summary>
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
@@ -84,8 +96,14 @@ namespace Braintrust
         /// <param name="monitorChartsUseMetricsStart">
         /// If true, use metrics.start rather than created for monitor chart time bucket dimensions.
         /// </param>
+        /// <param name="codingAgentInsightsDashboard">
+        /// If true, enable the agent insights dashboard for this project.
+        /// </param>
         /// <param name="blindReviews">
         /// If true, hide peer review scores, comments, and aggregate results from reviewers without project update permissions until they submit their own review.
+        /// </param>
+        /// <param name="requireAllHumanReviewScores">
+        /// If true, automatically complete a review after every assigned reviewer fills all human review scores visible to them.
         /// </param>
         /// <param name="defaultPreprocessor">
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
@@ -100,7 +118,9 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsRemoteEvalSource>? remoteEvalSources,
             bool? disableRealtimeQueries,
             bool? monitorChartsUseMetricsStart,
+            bool? codingAgentInsightsDashboard,
             bool? blindReviews,
+            bool? requireAllHumanReviewScores,
             global::Braintrust.NullableSavedFunctionId? defaultPreprocessor)
         {
             this.ComparisonKey = comparisonKey;
@@ -109,7 +129,9 @@ namespace Braintrust
             this.RemoteEvalSources = remoteEvalSources;
             this.DisableRealtimeQueries = disableRealtimeQueries;
             this.MonitorChartsUseMetricsStart = monitorChartsUseMetricsStart;
+            this.CodingAgentInsightsDashboard = codingAgentInsightsDashboard;
             this.BlindReviews = blindReviews;
+            this.RequireAllHumanReviewScores = requireAllHumanReviewScores;
             this.DefaultPreprocessor = defaultPreprocessor;
         }
 

@@ -32,6 +32,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanType), TypeInfoPropertyName = "SpanType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributesPurpose), TypeInfoPropertyName = "SpanAttributesPurpose2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributesLogLevel), TypeInfoPropertyName = "SpanAttributesLogLevel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ObjectReferenceNullish))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ObjectReferenceNullishObjectType), TypeInfoPropertyName = "ObjectReferenceNullishObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.InsertProjectLogsEvent))]
@@ -82,6 +83,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanType?), TypeInfoPropertyName = "NullableSpanType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributesPurpose?), TypeInfoPropertyName = "NullableSpanAttributesPurpose2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SpanAttributesLogLevel?), TypeInfoPropertyName = "NullableSpanAttributesLogLevel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ObjectReferenceNullishObjectType?), TypeInfoPropertyName = "NullableObjectReferenceNullishObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FeedbackProjectLogsItemSource?), TypeInfoPropertyName = "NullableFeedbackProjectLogsItemSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FeedbackExperimentItemSource?), TypeInfoPropertyName = "NullableFeedbackExperimentItemSource2")]
@@ -176,6 +178,10 @@ namespace Braintrust
 
                     || typeToConvert == typeof(global::Braintrust.SpanAttributesPurpose?)
 
+                    || typeToConvert == typeof(global::Braintrust.SpanAttributesLogLevel)
+
+                    || typeToConvert == typeof(global::Braintrust.SpanAttributesLogLevel?)
+
                     || typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType)
 
                     || typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType?)
@@ -215,6 +221,16 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.SpanAttributesPurpose?))
                 {
                     return new global::Braintrust.JsonConverters.SpanAttributesPurposeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanAttributesLogLevel))
+                {
+                    return new global::Braintrust.JsonConverters.SpanAttributesLogLevelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SpanAttributesLogLevel?))
+                {
+                    return new global::Braintrust.JsonConverters.SpanAttributesLogLevelNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.ObjectReferenceNullishObjectType))

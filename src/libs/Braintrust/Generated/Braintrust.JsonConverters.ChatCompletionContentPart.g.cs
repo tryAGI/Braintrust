@@ -52,19 +52,29 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("cache_control")) __score2++;
             if (__jsonProps.Contains("cache_control.ttl")) __score2++;
             if (__jsonProps.Contains("cache_control.type")) __score2++;
-            if (__jsonProps.Contains("file")) __score2++;
-            if (__jsonProps.Contains("file.file_data")) __score2++;
-            if (__jsonProps.Contains("file.file_id")) __score2++;
-            if (__jsonProps.Contains("file.filename")) __score2++;
+            if (__jsonProps.Contains("input_audio")) __score2++;
+            if (__jsonProps.Contains("input_audio.data")) __score2++;
+            if (__jsonProps.Contains("input_audio.format")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
+            var __score3 = 0;
+            if (__jsonProps.Contains("cache_control")) __score3++;
+            if (__jsonProps.Contains("cache_control.ttl")) __score3++;
+            if (__jsonProps.Contains("cache_control.type")) __score3++;
+            if (__jsonProps.Contains("file")) __score3++;
+            if (__jsonProps.Contains("file.file_data")) __score3++;
+            if (__jsonProps.Contains("file.file_id")) __score3++;
+            if (__jsonProps.Contains("file.filename")) __score3++;
+            if (__jsonProps.Contains("type")) __score3++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
+            if (__score3 > __bestScore) { __bestScore = __score3; __bestIndex = 3; }
 
             global::Braintrust.ChatCompletionContentPartTextWithTitle? text = default;
             global::Braintrust.ChatCompletionContentPartImageWithTitle? imageUrl = default;
+            global::Braintrust.ChatCompletionContentPartInputAudioWithTitle? inputAudio = default;
             global::Braintrust.ChatCompletionContentPartFileWithTitle? file = default;
             if (__bestIndex >= 0)
             {
@@ -102,6 +112,21 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionContentPartInputAudioWithTitle> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle).Name}");
+                        inputAudio = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                }
+                else if (__bestIndex == 3)
+                {
+                    try
+                    {
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionContentPartFileWithTitle> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionContentPartFileWithTitle).Name}");
                         file = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -115,7 +140,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (text == null && imageUrl == null && file == null)
+            if (text == null && imageUrl == null && inputAudio == null && file == null)
             {
                 try
                 {
@@ -132,7 +157,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (text == null && imageUrl == null && file == null)
+            if (text == null && imageUrl == null && inputAudio == null && file == null)
             {
                 try
                 {
@@ -149,7 +174,24 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (text == null && imageUrl == null && file == null)
+            if (text == null && imageUrl == null && inputAudio == null && file == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionContentPartInputAudioWithTitle> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle).Name}");
+                    inputAudio = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+            }
+
+            if (text == null && imageUrl == null && inputAudio == null && file == null)
             {
                 try
                 {
@@ -170,6 +212,8 @@ namespace Braintrust.JsonConverters
                 text,
 
                 imageUrl,
+
+                inputAudio,
 
                 file
                 );
@@ -197,6 +241,12 @@ namespace Braintrust.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionContentPartImageWithTitle?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionContentPartImageWithTitle).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.ImageUrl!, typeInfo);
+            }
+            else if (value.IsInputAudio)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ChatCompletionContentPartInputAudioWithTitle?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InputAudio!, typeInfo);
             }
             else if (value.IsFile)
             {

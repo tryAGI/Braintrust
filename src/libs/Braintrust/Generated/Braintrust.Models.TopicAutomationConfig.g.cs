@@ -77,7 +77,7 @@ namespace Braintrust
         public double? RerunSeconds { get; set; }
 
         /// <summary>
-        /// How much recent history to relabel after a new topic map version becomes active
+        /// Deprecated. How much recent history to relabel after a new topic map version becomes active. Data planes v2.15.0 and later ignore this and apply a topic map version after the first only to traces classified once it is active.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("relabel_overlap_seconds")]
         public double? RelabelOverlapSeconds { get; set; }
@@ -129,7 +129,7 @@ namespace Braintrust
         /// How often to recompute topic maps
         /// </param>
         /// <param name="relabelOverlapSeconds">
-        /// How much recent history to relabel after a new topic map version becomes active
+        /// Deprecated. How much recent history to relabel after a new topic map version becomes active. Data planes v2.15.0 and later ignore this and apply a topic map version after the first only to traces classified once it is active.
         /// </param>
         /// <param name="backfillTimeRange">
         /// Topic window used for classification coverage and initial backfill.

@@ -87,6 +87,43 @@ namespace Braintrust
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
+        public global::Braintrust.ChatCompletionContentPartInputAudioWithTitle? InputAudio { get; init; }
+#else
+        public global::Braintrust.ChatCompletionContentPartInputAudioWithTitle? InputAudio { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InputAudio))]
+#endif
+        public bool IsInputAudio => InputAudio != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickInputAudio(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.ChatCompletionContentPartInputAudioWithTitle? value)
+        {
+            value = InputAudio;
+            return IsInputAudio;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Braintrust.ChatCompletionContentPartInputAudioWithTitle PickInputAudio() => IsInputAudio
+            ? InputAudio!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InputAudio' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
         public global::Braintrust.ChatCompletionContentPartFileWithTitle? File { get; init; }
 #else
         public global::Braintrust.ChatCompletionContentPartFileWithTitle? File { get; }
@@ -168,6 +205,29 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle value) => new ChatCompletionContentPart((global::Braintrust.ChatCompletionContentPartInputAudioWithTitle?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Braintrust.ChatCompletionContentPartInputAudioWithTitle?(ChatCompletionContentPart @this) => @this.InputAudio;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle? value)
+        {
+            InputAudio = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static ChatCompletionContentPart FromInputAudio(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle? value) => new ChatCompletionContentPart(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public static implicit operator ChatCompletionContentPart(global::Braintrust.ChatCompletionContentPartFileWithTitle value) => new ChatCompletionContentPart((global::Braintrust.ChatCompletionContentPartFileWithTitle?)value);
 
         /// <summary>
@@ -194,11 +254,13 @@ namespace Braintrust
         public ChatCompletionContentPart(
             global::Braintrust.ChatCompletionContentPartTextWithTitle? text,
             global::Braintrust.ChatCompletionContentPartImageWithTitle? imageUrl,
+            global::Braintrust.ChatCompletionContentPartInputAudioWithTitle? inputAudio,
             global::Braintrust.ChatCompletionContentPartFileWithTitle? file
             )
         {
             Text = text;
             ImageUrl = imageUrl;
+            InputAudio = inputAudio;
             File = file;
         }
 
@@ -207,6 +269,7 @@ namespace Braintrust
         /// </summary>
         public object? Object =>
             File as object ??
+            InputAudio as object ??
             ImageUrl as object ??
             Text as object
             ;
@@ -217,6 +280,7 @@ namespace Braintrust
         public override string? ToString() =>
             Text?.ToString() ??
             ImageUrl?.ToString() ??
+            InputAudio?.ToString() ??
             File?.ToString()
             ;
 
@@ -225,7 +289,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsText || IsImageUrl || IsFile;
+            return IsText || IsImageUrl || IsInputAudio || IsFile;
         }
 
         /// <summary>
@@ -234,6 +298,7 @@ namespace Braintrust
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.ChatCompletionContentPartTextWithTitle, TResult>? text = null,
             global::System.Func<global::Braintrust.ChatCompletionContentPartImageWithTitle, TResult>? imageUrl = null,
+            global::System.Func<global::Braintrust.ChatCompletionContentPartInputAudioWithTitle, TResult>? inputAudio = null,
             global::System.Func<global::Braintrust.ChatCompletionContentPartFileWithTitle, TResult>? file = null,
             bool validate = true)
         {
@@ -249,6 +314,10 @@ namespace Braintrust
             else if (IsImageUrl && imageUrl != null)
             {
                 return imageUrl(ImageUrl!);
+            }
+            else if (IsInputAudio && inputAudio != null)
+            {
+                return inputAudio(InputAudio!);
             }
             else if (IsFile && file != null)
             {
@@ -266,6 +335,8 @@ namespace Braintrust
 
             global::System.Action<global::Braintrust.ChatCompletionContentPartImageWithTitle>? imageUrl = null,
 
+            global::System.Action<global::Braintrust.ChatCompletionContentPartInputAudioWithTitle>? inputAudio = null,
+
             global::System.Action<global::Braintrust.ChatCompletionContentPartFileWithTitle>? file = null,
             bool validate = true)
         {
@@ -281,6 +352,10 @@ namespace Braintrust
             else if (IsImageUrl)
             {
                 imageUrl?.Invoke(ImageUrl!);
+            }
+            else if (IsInputAudio)
+            {
+                inputAudio?.Invoke(InputAudio!);
             }
             else if (IsFile)
             {
@@ -294,6 +369,7 @@ namespace Braintrust
         public void Switch(
             global::System.Action<global::Braintrust.ChatCompletionContentPartTextWithTitle>? text = null,
             global::System.Action<global::Braintrust.ChatCompletionContentPartImageWithTitle>? imageUrl = null,
+            global::System.Action<global::Braintrust.ChatCompletionContentPartInputAudioWithTitle>? inputAudio = null,
             global::System.Action<global::Braintrust.ChatCompletionContentPartFileWithTitle>? file = null,
             bool validate = true)
         {
@@ -309,6 +385,10 @@ namespace Braintrust
             else if (IsImageUrl)
             {
                 imageUrl?.Invoke(ImageUrl!);
+            }
+            else if (IsInputAudio)
+            {
+                inputAudio?.Invoke(InputAudio!);
             }
             else if (IsFile)
             {
@@ -327,6 +407,8 @@ namespace Braintrust
                 typeof(global::Braintrust.ChatCompletionContentPartTextWithTitle),
                 ImageUrl,
                 typeof(global::Braintrust.ChatCompletionContentPartImageWithTitle),
+                InputAudio,
+                typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle),
                 File,
                 typeof(global::Braintrust.ChatCompletionContentPartFileWithTitle),
             };
@@ -347,6 +429,7 @@ namespace Braintrust
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionContentPartTextWithTitle?>.Default.Equals(Text, other.Text) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionContentPartImageWithTitle?>.Default.Equals(ImageUrl, other.ImageUrl) &&
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionContentPartInputAudioWithTitle?>.Default.Equals(InputAudio, other.InputAudio) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ChatCompletionContentPartFileWithTitle?>.Default.Equals(File, other.File)
                 ;
         }

@@ -56,6 +56,12 @@ namespace Braintrust
         public required global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant1, global::Braintrust.ProjectAutomationConfigVariant2, global::Braintrust.ProjectAutomationConfigVariant3, global::Braintrust.ProjectAutomationConfigVariant4, global::Braintrust.ProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig> Config { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("runtime_block")]
+        public global::Braintrust.ProjectAutomationRuntimeBlock? RuntimeBlock { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -85,6 +91,7 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the project automation
         /// </param>
+        /// <param name="runtimeBlock"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -95,7 +102,8 @@ namespace Braintrust
             global::Braintrust.OneOf<global::Braintrust.ProjectAutomationConfigVariant1, global::Braintrust.ProjectAutomationConfigVariant2, global::Braintrust.ProjectAutomationConfigVariant3, global::Braintrust.ProjectAutomationConfigVariant4, global::Braintrust.ProjectAutomationConfigVariant5, global::Braintrust.WindowedAutomationConfig, global::Braintrust.TopicAutomationConfig, global::Braintrust.TopicDigestAutomationConfig> config,
             global::System.Guid? userId,
             global::System.DateTime? created,
-            string? description)
+            string? description,
+            global::Braintrust.ProjectAutomationRuntimeBlock? runtimeBlock)
         {
             this.Id = id;
             this.ProjectId = projectId;
@@ -104,6 +112,7 @@ namespace Braintrust
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
             this.Config = config;
+            this.RuntimeBlock = runtimeBlock;
         }
 
         /// <summary>
