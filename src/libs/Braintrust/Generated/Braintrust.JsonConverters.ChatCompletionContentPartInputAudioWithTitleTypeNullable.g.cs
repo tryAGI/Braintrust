@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace Braintrust.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class ChatCompletionContentPartInputAudioWithTitleTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType?>
+    {
+        /// <inheritdoc />
+        public override global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Braintrust.ChatCompletionContentPartInputAudioWithTitleTypeExtensions.ToEnum(stringValue);
+                    }
+
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleTypeExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

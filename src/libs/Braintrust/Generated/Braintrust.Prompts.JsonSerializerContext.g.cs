@@ -63,6 +63,13 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControl))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlType), TypeInfoPropertyName = "ChatCompletionContentPartImageWithTitleCacheControlType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl), TypeInfoPropertyName = "ChatCompletionContentPartImageWithTitleCacheControlTtl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitle))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudio))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat), TypeInfoPropertyName = "ChatCompletionContentPartInputAudioWithTitleInputAudioFormat2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType), TypeInfoPropertyName = "ChatCompletionContentPartInputAudioWithTitleType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControl))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType), TypeInfoPropertyName = "ChatCompletionContentPartInputAudioWithTitleCacheControlType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl), TypeInfoPropertyName = "ChatCompletionContentPartInputAudioWithTitleCacheControlTtl2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitle))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType), TypeInfoPropertyName = "ChatCompletionContentPartFileWithTitleType2")]
@@ -184,6 +191,10 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleType?), TypeInfoPropertyName = "NullableChatCompletionContentPartImageWithTitleType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlType?), TypeInfoPropertyName = "NullableChatCompletionContentPartImageWithTitleCacheControlType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl?), TypeInfoPropertyName = "NullableChatCompletionContentPartImageWithTitleCacheControlTtl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat?), TypeInfoPropertyName = "NullableChatCompletionContentPartInputAudioWithTitleInputAudioFormat2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType?), TypeInfoPropertyName = "NullableChatCompletionContentPartInputAudioWithTitleType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType?), TypeInfoPropertyName = "NullableChatCompletionContentPartInputAudioWithTitleCacheControlType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl?), TypeInfoPropertyName = "NullableChatCompletionContentPartInputAudioWithTitleCacheControlTtl2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType?), TypeInfoPropertyName = "NullableChatCompletionContentPartFileWithTitleType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlType?), TypeInfoPropertyName = "NullableChatCompletionContentPartFileWithTitleCacheControlType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleCacheControlTtl?), TypeInfoPropertyName = "NullableChatCompletionContentPartFileWithTitleCacheControlTtl2")]
@@ -393,6 +404,22 @@ namespace Braintrust
                     || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl)
 
                     || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType?)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl)
+
+                    || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl?)
 
                     || typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType)
 
@@ -691,6 +718,46 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartImageWithTitleCacheControlTtl?))
                 {
                     return new global::Braintrust.JsonConverters.ChatCompletionContentPartImageWithTitleCacheControlTtlNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleInputAudioFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleInputAudioFormat?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleInputAudioFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleCacheControlTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlType?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleCacheControlTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleCacheControlTtlJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartInputAudioWithTitleCacheControlTtl?))
+                {
+                    return new global::Braintrust.JsonConverters.ChatCompletionContentPartInputAudioWithTitleCacheControlTtlNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.ChatCompletionContentPartFileWithTitleType))

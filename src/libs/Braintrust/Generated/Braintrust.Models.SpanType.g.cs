@@ -43,6 +43,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        Question,
+        /// <summary>
+        ///
+        /// </summary>
         Review,
         /// <summary>
         ///
@@ -78,6 +82,7 @@ namespace Braintrust
                 SpanType.Llm => "llm",
                 SpanType.Log => "log",
                 SpanType.Preprocessor => "preprocessor",
+                SpanType.Question => "question",
                 SpanType.Review => "review",
                 SpanType.Score => "score",
                 SpanType.Task => "task",
@@ -100,6 +105,7 @@ namespace Braintrust
                 "llm" => SpanType.Llm,
                 "log" => SpanType.Log,
                 "preprocessor" => SpanType.Preprocessor,
+                "question" => SpanType.Question,
                 "review" => SpanType.Review,
                 "score" => SpanType.Score,
                 "task" => SpanType.Task,

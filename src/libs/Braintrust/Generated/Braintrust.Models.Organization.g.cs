@@ -59,6 +59,18 @@ namespace Braintrust
         public global::System.DateTime? Created { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("archived_at")]
+        public global::System.DateTime? ArchivedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deleted_at")]
+        public global::System.DateTime? DeletedAt { get; set; }
+
+        /// <summary>
         /// Controls how images are rendered in the UI: 'auto' loads images automatically, 'click_to_load' shows a placeholder until clicked, 'blocked' prevents image loading entirely
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image_rendering_mode")]
@@ -88,6 +100,8 @@ namespace Braintrust
         /// <param name="created">
         /// Date of organization creation
         /// </param>
+        /// <param name="archivedAt"></param>
+        /// <param name="deletedAt"></param>
         /// <param name="imageRenderingMode">
         /// Controls how images are rendered in the UI: 'auto' loads images automatically, 'click_to_load' shows a placeholder until clicked, 'blocked' prevents image loading entirely
         /// </param>
@@ -103,6 +117,8 @@ namespace Braintrust
             string? proxyUrl,
             string? realtimeUrl,
             global::System.DateTime? created,
+            global::System.DateTime? archivedAt,
+            global::System.DateTime? deletedAt,
             global::Braintrust.ImageRenderingMode? imageRenderingMode)
         {
             this.Id = id;
@@ -113,6 +129,8 @@ namespace Braintrust
             this.ProxyUrl = proxyUrl;
             this.RealtimeUrl = realtimeUrl;
             this.Created = created;
+            this.ArchivedAt = archivedAt;
+            this.DeletedAt = deletedAt;
             this.ImageRenderingMode = imageRenderingMode;
         }
 
