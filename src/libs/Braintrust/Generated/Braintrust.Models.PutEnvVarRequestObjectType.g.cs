@@ -15,6 +15,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        McpServer,
+        /// <summary>
+        ///
+        /// </summary>
         Organization,
         /// <summary>
         ///
@@ -35,6 +39,7 @@ namespace Braintrust
             return value switch
             {
                 PutEnvVarRequestObjectType.Function => "function",
+                PutEnvVarRequestObjectType.McpServer => "mcp_server",
                 PutEnvVarRequestObjectType.Organization => "organization",
                 PutEnvVarRequestObjectType.Project => "project",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -48,6 +53,7 @@ namespace Braintrust
             return value switch
             {
                 "function" => PutEnvVarRequestObjectType.Function,
+                "mcp_server" => PutEnvVarRequestObjectType.McpServer,
                 "organization" => PutEnvVarRequestObjectType.Organization,
                 "project" => PutEnvVarRequestObjectType.Project,
                 _ => null,
