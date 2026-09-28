@@ -204,25 +204,25 @@ namespace Braintrust.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TopicAutomationDataScopeVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTopicAutomationDataScopeVariant1(), typeInfo);
             }
             else if (value.IsTopicAutomationDataScopeVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TopicAutomationDataScopeVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTopicAutomationDataScopeVariant2(), typeInfo);
             }
             else if (value.IsTopicAutomationDataScopeVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.TopicAutomationDataScopeVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.TopicAutomationDataScopeVariant3?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.TopicAutomationDataScopeVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TopicAutomationDataScopeVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTopicAutomationDataScopeVariant3(), typeInfo);
             }
             else if (value.IsTopicAutomationDataScopeVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TopicAutomationDataScopeVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTopicAutomationDataScopeVariant4(), typeInfo);
             }
         }
     }

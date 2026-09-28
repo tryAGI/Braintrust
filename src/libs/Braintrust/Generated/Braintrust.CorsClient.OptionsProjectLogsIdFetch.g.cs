@@ -101,7 +101,7 @@ namespace Braintrust
                 PrepareOptionsProjectLogsIdFetchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId!);
+                    projectId: projectId);
 
                 return __httpRequest;
             }
@@ -123,7 +123,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/project_logs/{projectId}/fetch\"",
                                 httpMethod: "OPTIONS",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -157,7 +157,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/project_logs/{projectId}/fetch\"",
                                 httpMethod: "OPTIONS",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -198,7 +198,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/project_logs/{projectId}/fetch\"",
                                 httpMethod: "OPTIONS",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -246,7 +246,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/project_logs/{projectId}/fetch\"",
                                 httpMethod: "OPTIONS",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -268,7 +268,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/project_logs/{projectId}/fetch\"",
                                 httpMethod: "OPTIONS",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

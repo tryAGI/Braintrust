@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public string PickUserGivenNameVariant1() => IsUserGivenNameVariant1
-            ? UserGivenNameVariant1!
+        public string PickUserGivenNameVariant1() => UserGivenNameVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserGivenNameVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickUserGivenNameVariant2() => IsUserGivenNameVariant2
-            ? UserGivenNameVariant2!
+        public global::System.Collections.Generic.IList<string> PickUserGivenNameVariant2() => UserGivenNameVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserGivenNameVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsUserGivenNameVariant1 && userGivenNameVariant1 != null)
+            if (UserGivenNameVariant1 is { } __value0 && userGivenNameVariant1 != null)
             {
-                return userGivenNameVariant1(UserGivenNameVariant1!);
+                return userGivenNameVariant1(__value0);
             }
-            else if (IsUserGivenNameVariant2 && userGivenNameVariant2 != null)
+            else if (UserGivenNameVariant2 is { } __value1 && userGivenNameVariant2 != null)
             {
-                return userGivenNameVariant2(UserGivenNameVariant2!);
+                return userGivenNameVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsUserGivenNameVariant1)
+            if (UserGivenNameVariant1 is { } __value0)
             {
-                userGivenNameVariant1?.Invoke(UserGivenNameVariant1!);
+                userGivenNameVariant1?.Invoke(__value0);
             }
-            else if (IsUserGivenNameVariant2)
+            else if (UserGivenNameVariant2 is { } __value1)
             {
-                userGivenNameVariant2?.Invoke(UserGivenNameVariant2!);
+                userGivenNameVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsUserGivenNameVariant1)
+            if (UserGivenNameVariant1 is { } __value0)
             {
-                userGivenNameVariant1?.Invoke(UserGivenNameVariant1!);
+                userGivenNameVariant1?.Invoke(__value0);
             }
-            else if (IsUserGivenNameVariant2)
+            else if (UserGivenNameVariant2 is { } __value1)
             {
-                userGivenNameVariant2?.Invoke(UserGivenNameVariant2!);
+                userGivenNameVariant2?.Invoke(__value1);
             }
         }
 

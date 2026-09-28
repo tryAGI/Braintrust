@@ -208,25 +208,25 @@ namespace Braintrust.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FacetPreprocessorIdFunction), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FacetPreprocessorIdFunction?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FacetPreprocessorIdFunction).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Function!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFunction(), typeInfo);
             }
             else if (value.IsGlobal)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FacetPreprocessorIdGlobal), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FacetPreprocessorIdGlobal?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FacetPreprocessorIdGlobal).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Global!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGlobal(), typeInfo);
             }
             else if (value.IsPreprocessorInline)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FacetPreprocessorIdPreprocessorInline), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FacetPreprocessorIdPreprocessorInline?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FacetPreprocessorIdPreprocessorInline).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PreprocessorInline!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPreprocessorInline(), typeInfo);
             }
             else if (value.IsFacetPreprocessorIdVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.FacetPreprocessorIdVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFacetPreprocessorIdVariant4(), typeInfo);
             }
         }
     }

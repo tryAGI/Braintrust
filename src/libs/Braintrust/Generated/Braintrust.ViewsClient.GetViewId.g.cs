@@ -146,7 +146,7 @@ namespace Braintrust
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddRequiredParameter("object_type", objectType.ToValueString())
-                                .AddRequiredParameter("object_id", objectId.ToString()!)
+                                .AddRequiredParameter("object_id", objectId.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString()."))
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Braintrust.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -188,9 +188,9 @@ namespace Braintrust
                 PrepareGetViewIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    viewId: viewId!,
-                    objectType: objectType!,
-                    objectId: objectId!);
+                    viewId: viewId,
+                    objectType: objectType,
+                    objectId: objectId);
 
                 return __httpRequest;
             }
@@ -212,7 +212,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/view/{viewId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -246,7 +246,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/view/{viewId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -287,7 +287,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/view/{viewId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -335,7 +335,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/view/{viewId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -357,7 +357,7 @@ namespace Braintrust
                                 pathTemplate: "$\"/v1/view/{viewId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

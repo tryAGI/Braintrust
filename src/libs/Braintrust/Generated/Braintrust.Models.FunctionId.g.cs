@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionIdFunctionId1 PickId1() => IsId1
-            ? Id1!
+        public global::Braintrust.FunctionIdFunctionId1 PickId1() => Id1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Id1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionIdProjectSlug PickProjectSlug() => IsProjectSlug
-            ? ProjectSlug!
+        public global::Braintrust.FunctionIdProjectSlug PickProjectSlug() => ProjectSlug is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ProjectSlug' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionIdGlobalFunction PickGlobalFunction() => IsGlobalFunction
-            ? GlobalFunction!
+        public global::Braintrust.FunctionIdGlobalFunction PickGlobalFunction() => GlobalFunction is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalFunction' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionIdPromptSessionId PickPromptSessionId() => IsPromptSessionId
-            ? PromptSessionId!
+        public global::Braintrust.FunctionIdPromptSessionId PickPromptSessionId() => PromptSessionId is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromptSessionId' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionIdInlineCode PickInlineCode() => IsInlineCode
-            ? InlineCode!
+        public global::Braintrust.FunctionIdInlineCode PickInlineCode() => InlineCode is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InlineCode' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionIdInlineFunction PickInlineFunction() => IsInlineFunction
-            ? InlineFunction!
+        public global::Braintrust.FunctionIdInlineFunction PickInlineFunction() => InlineFunction is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InlineFunction' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionIdInlinePrompt PickInlinePrompt() => IsInlinePrompt
-            ? InlinePrompt!
+        public global::Braintrust.FunctionIdInlinePrompt PickInlinePrompt() => InlinePrompt is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InlinePrompt' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -502,33 +502,33 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsId1 && id1 != null)
+            if (Id1 is { } __value0 && id1 != null)
             {
-                return id1(Id1!);
+                return id1(__value0);
             }
-            else if (IsProjectSlug && projectSlug != null)
+            else if (ProjectSlug is { } __value1 && projectSlug != null)
             {
-                return projectSlug(ProjectSlug!);
+                return projectSlug(__value1);
             }
-            else if (IsGlobalFunction && globalFunction != null)
+            else if (GlobalFunction is { } __value2 && globalFunction != null)
             {
-                return globalFunction(GlobalFunction!);
+                return globalFunction(__value2);
             }
-            else if (IsPromptSessionId && promptSessionId != null)
+            else if (PromptSessionId is { } __value3 && promptSessionId != null)
             {
-                return promptSessionId(PromptSessionId!);
+                return promptSessionId(__value3);
             }
-            else if (IsInlineCode && inlineCode != null)
+            else if (InlineCode is { } __value4 && inlineCode != null)
             {
-                return inlineCode(InlineCode!);
+                return inlineCode(__value4);
             }
-            else if (IsInlineFunction && inlineFunction != null)
+            else if (InlineFunction is { } __value5 && inlineFunction != null)
             {
-                return inlineFunction(InlineFunction!);
+                return inlineFunction(__value5);
             }
-            else if (IsInlinePrompt && inlinePrompt != null)
+            else if (InlinePrompt is { } __value6 && inlinePrompt != null)
             {
-                return inlinePrompt(InlinePrompt!);
+                return inlinePrompt(__value6);
             }
 
             return default(TResult);
@@ -558,33 +558,33 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsId1)
+            if (Id1 is { } __value0)
             {
-                id1?.Invoke(Id1!);
+                id1?.Invoke(__value0);
             }
-            else if (IsProjectSlug)
+            else if (ProjectSlug is { } __value1)
             {
-                projectSlug?.Invoke(ProjectSlug!);
+                projectSlug?.Invoke(__value1);
             }
-            else if (IsGlobalFunction)
+            else if (GlobalFunction is { } __value2)
             {
-                globalFunction?.Invoke(GlobalFunction!);
+                globalFunction?.Invoke(__value2);
             }
-            else if (IsPromptSessionId)
+            else if (PromptSessionId is { } __value3)
             {
-                promptSessionId?.Invoke(PromptSessionId!);
+                promptSessionId?.Invoke(__value3);
             }
-            else if (IsInlineCode)
+            else if (InlineCode is { } __value4)
             {
-                inlineCode?.Invoke(InlineCode!);
+                inlineCode?.Invoke(__value4);
             }
-            else if (IsInlineFunction)
+            else if (InlineFunction is { } __value5)
             {
-                inlineFunction?.Invoke(InlineFunction!);
+                inlineFunction?.Invoke(__value5);
             }
-            else if (IsInlinePrompt)
+            else if (InlinePrompt is { } __value6)
             {
-                inlinePrompt?.Invoke(InlinePrompt!);
+                inlinePrompt?.Invoke(__value6);
             }
         }
 
@@ -606,33 +606,33 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsId1)
+            if (Id1 is { } __value0)
             {
-                id1?.Invoke(Id1!);
+                id1?.Invoke(__value0);
             }
-            else if (IsProjectSlug)
+            else if (ProjectSlug is { } __value1)
             {
-                projectSlug?.Invoke(ProjectSlug!);
+                projectSlug?.Invoke(__value1);
             }
-            else if (IsGlobalFunction)
+            else if (GlobalFunction is { } __value2)
             {
-                globalFunction?.Invoke(GlobalFunction!);
+                globalFunction?.Invoke(__value2);
             }
-            else if (IsPromptSessionId)
+            else if (PromptSessionId is { } __value3)
             {
-                promptSessionId?.Invoke(PromptSessionId!);
+                promptSessionId?.Invoke(__value3);
             }
-            else if (IsInlineCode)
+            else if (InlineCode is { } __value4)
             {
-                inlineCode?.Invoke(InlineCode!);
+                inlineCode?.Invoke(__value4);
             }
-            else if (IsInlineFunction)
+            else if (InlineFunction is { } __value5)
             {
-                inlineFunction?.Invoke(InlineFunction!);
+                inlineFunction?.Invoke(__value5);
             }
-            else if (IsInlinePrompt)
+            else if (InlinePrompt is { } __value6)
             {
-                inlinePrompt?.Invoke(InlinePrompt!);
+                inlinePrompt?.Invoke(__value6);
             }
         }
 

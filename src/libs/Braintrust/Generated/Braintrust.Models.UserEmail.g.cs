@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public string PickUserEmailVariant1() => IsUserEmailVariant1
-            ? UserEmailVariant1!
+        public string PickUserEmailVariant1() => UserEmailVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserEmailVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickUserEmailVariant2() => IsUserEmailVariant2
-            ? UserEmailVariant2!
+        public global::System.Collections.Generic.IList<string> PickUserEmailVariant2() => UserEmailVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserEmailVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsUserEmailVariant1 && userEmailVariant1 != null)
+            if (UserEmailVariant1 is { } __value0 && userEmailVariant1 != null)
             {
-                return userEmailVariant1(UserEmailVariant1!);
+                return userEmailVariant1(__value0);
             }
-            else if (IsUserEmailVariant2 && userEmailVariant2 != null)
+            else if (UserEmailVariant2 is { } __value1 && userEmailVariant2 != null)
             {
-                return userEmailVariant2(UserEmailVariant2!);
+                return userEmailVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsUserEmailVariant1)
+            if (UserEmailVariant1 is { } __value0)
             {
-                userEmailVariant1?.Invoke(UserEmailVariant1!);
+                userEmailVariant1?.Invoke(__value0);
             }
-            else if (IsUserEmailVariant2)
+            else if (UserEmailVariant2 is { } __value1)
             {
-                userEmailVariant2?.Invoke(UserEmailVariant2!);
+                userEmailVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsUserEmailVariant1)
+            if (UserEmailVariant1 is { } __value0)
             {
-                userEmailVariant1?.Invoke(UserEmailVariant1!);
+                userEmailVariant1?.Invoke(__value0);
             }
-            else if (IsUserEmailVariant2)
+            else if (UserEmailVariant2 is { } __value1)
             {
-                userEmailVariant2?.Invoke(UserEmailVariant2!);
+                userEmailVariant2?.Invoke(__value1);
             }
         }
 

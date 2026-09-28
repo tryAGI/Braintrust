@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.NullableSavedFunctionIdFunction PickFunction() => IsFunction
-            ? Function!
+        public global::Braintrust.NullableSavedFunctionIdFunction PickFunction() => Function is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.NullableSavedFunctionIdGlobal PickGlobal() => IsGlobal
-            ? Global!
+        public global::Braintrust.NullableSavedFunctionIdGlobal PickGlobal() => Global is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public object PickNullableSavedFunctionIdVariant3() => IsNullableSavedFunctionIdVariant3
-            ? NullableSavedFunctionIdVariant3!
+        public object PickNullableSavedFunctionIdVariant3() => NullableSavedFunctionIdVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'NullableSavedFunctionIdVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -219,17 +219,17 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction && function != null)
+            if (Function is { } __value0 && function != null)
             {
-                return function(Function!);
+                return function(__value0);
             }
-            else if (IsGlobal && global != null)
+            else if (Global is { } __value1 && global != null)
             {
-                return global(Global!);
+                return global(__value1);
             }
-            else if (IsNullableSavedFunctionIdVariant3 && nullableSavedFunctionIdVariant3 != null)
+            else if (NullableSavedFunctionIdVariant3 is { } __value2 && nullableSavedFunctionIdVariant3 != null)
             {
-                return nullableSavedFunctionIdVariant3(NullableSavedFunctionIdVariant3!);
+                return nullableSavedFunctionIdVariant3(__value2);
             }
 
             return default(TResult);
@@ -251,17 +251,17 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction)
+            if (Function is { } __value0)
             {
-                function?.Invoke(Function!);
+                function?.Invoke(__value0);
             }
-            else if (IsGlobal)
+            else if (Global is { } __value1)
             {
-                global?.Invoke(Global!);
+                global?.Invoke(__value1);
             }
-            else if (IsNullableSavedFunctionIdVariant3)
+            else if (NullableSavedFunctionIdVariant3 is { } __value2)
             {
-                nullableSavedFunctionIdVariant3?.Invoke(NullableSavedFunctionIdVariant3!);
+                nullableSavedFunctionIdVariant3?.Invoke(__value2);
             }
         }
 
@@ -279,17 +279,17 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction)
+            if (Function is { } __value0)
             {
-                function?.Invoke(Function!);
+                function?.Invoke(__value0);
             }
-            else if (IsGlobal)
+            else if (Global is { } __value1)
             {
-                global?.Invoke(Global!);
+                global?.Invoke(__value1);
             }
-            else if (IsNullableSavedFunctionIdVariant3)
+            else if (NullableSavedFunctionIdVariant3 is { } __value2)
             {
-                nullableSavedFunctionIdVariant3?.Invoke(NullableSavedFunctionIdVariant3!);
+                nullableSavedFunctionIdVariant3?.Invoke(__value2);
             }
         }
 

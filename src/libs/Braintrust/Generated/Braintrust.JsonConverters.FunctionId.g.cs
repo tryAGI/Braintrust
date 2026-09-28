@@ -357,43 +357,43 @@ namespace Braintrust.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionIdFunctionId1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionIdFunctionId1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionIdFunctionId1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Id1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickId1(), typeInfo);
             }
             else if (value.IsProjectSlug)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionIdProjectSlug), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionIdProjectSlug?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionIdProjectSlug).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ProjectSlug!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickProjectSlug(), typeInfo);
             }
             else if (value.IsGlobalFunction)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionIdGlobalFunction), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionIdGlobalFunction?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionIdGlobalFunction).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GlobalFunction!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGlobalFunction(), typeInfo);
             }
             else if (value.IsPromptSessionId)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionIdPromptSessionId), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionIdPromptSessionId?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionIdPromptSessionId).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PromptSessionId!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPromptSessionId(), typeInfo);
             }
             else if (value.IsInlineCode)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionIdInlineCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionIdInlineCode?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionIdInlineCode).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InlineCode!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInlineCode(), typeInfo);
             }
             else if (value.IsInlineFunction)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionIdInlineFunction), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionIdInlineFunction?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionIdInlineFunction).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InlineFunction!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInlineFunction(), typeInfo);
             }
             else if (value.IsInlinePrompt)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionIdInlinePrompt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionIdInlinePrompt?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionIdInlinePrompt).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InlinePrompt!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInlinePrompt(), typeInfo);
             }
         }
     }

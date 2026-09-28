@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ScoreObject PickObjectValue() => IsObjectValue
-            ? ObjectValue!
+        public global::Braintrust.ScoreObject PickObjectValue() => ObjectValue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ObjectValue' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.NamedScore PickNamed() => IsNamed
-            ? Named!
+        public global::Braintrust.NamedScore PickNamed() => Named is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Named' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.AnyOf<double?, bool?> PickScoreResultVariant3() => IsScoreResultVariant3
-            ? ScoreResultVariant3!.Value
+        public global::Braintrust.AnyOf<double?, bool?> PickScoreResultVariant3() => ScoreResultVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScoreResultVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Braintrust.NamedScore> PickScoreResultVariant4() => IsScoreResultVariant4
-            ? ScoreResultVariant4!
+        public global::System.Collections.Generic.IList<global::Braintrust.NamedScore> PickScoreResultVariant4() => ScoreResultVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScoreResultVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public object PickScoreResultVariant5() => IsScoreResultVariant5
-            ? ScoreResultVariant5!
+        public object PickScoreResultVariant5() => ScoreResultVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScoreResultVariant5' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -326,25 +326,25 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsObjectValue && objectValue != null)
+            if (ObjectValue is { } __value0 && objectValue != null)
             {
-                return objectValue(ObjectValue!);
+                return objectValue(__value0);
             }
-            else if (IsNamed && named != null)
+            else if (Named is { } __value1 && named != null)
             {
-                return named(Named!);
+                return named(__value1);
             }
-            else if (IsScoreResultVariant3 && scoreResultVariant3 != null)
+            else if (ScoreResultVariant3 is { } __value2 && scoreResultVariant3 != null)
             {
-                return scoreResultVariant3(ScoreResultVariant3!);
+                return scoreResultVariant3(__value2);
             }
-            else if (IsScoreResultVariant4 && scoreResultVariant4 != null)
+            else if (ScoreResultVariant4 is { } __value3 && scoreResultVariant4 != null)
             {
-                return scoreResultVariant4(ScoreResultVariant4!);
+                return scoreResultVariant4(__value3);
             }
-            else if (IsScoreResultVariant5 && scoreResultVariant5 != null)
+            else if (ScoreResultVariant5 is { } __value4 && scoreResultVariant5 != null)
             {
-                return scoreResultVariant5(ScoreResultVariant5!);
+                return scoreResultVariant5(__value4);
             }
 
             return default(TResult);
@@ -370,25 +370,25 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsObjectValue)
+            if (ObjectValue is { } __value0)
             {
-                objectValue?.Invoke(ObjectValue!);
+                objectValue?.Invoke(__value0);
             }
-            else if (IsNamed)
+            else if (Named is { } __value1)
             {
-                named?.Invoke(Named!);
+                named?.Invoke(__value1);
             }
-            else if (IsScoreResultVariant3)
+            else if (ScoreResultVariant3 is { } __value2)
             {
-                scoreResultVariant3?.Invoke(ScoreResultVariant3!);
+                scoreResultVariant3?.Invoke(__value2);
             }
-            else if (IsScoreResultVariant4)
+            else if (ScoreResultVariant4 is { } __value3)
             {
-                scoreResultVariant4?.Invoke(ScoreResultVariant4!);
+                scoreResultVariant4?.Invoke(__value3);
             }
-            else if (IsScoreResultVariant5)
+            else if (ScoreResultVariant5 is { } __value4)
             {
-                scoreResultVariant5?.Invoke(ScoreResultVariant5!);
+                scoreResultVariant5?.Invoke(__value4);
             }
         }
 
@@ -408,25 +408,25 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsObjectValue)
+            if (ObjectValue is { } __value0)
             {
-                objectValue?.Invoke(ObjectValue!);
+                objectValue?.Invoke(__value0);
             }
-            else if (IsNamed)
+            else if (Named is { } __value1)
             {
-                named?.Invoke(Named!);
+                named?.Invoke(__value1);
             }
-            else if (IsScoreResultVariant3)
+            else if (ScoreResultVariant3 is { } __value2)
             {
-                scoreResultVariant3?.Invoke(ScoreResultVariant3!);
+                scoreResultVariant3?.Invoke(__value2);
             }
-            else if (IsScoreResultVariant4)
+            else if (ScoreResultVariant4 is { } __value3)
             {
-                scoreResultVariant4?.Invoke(ScoreResultVariant4!);
+                scoreResultVariant4?.Invoke(__value3);
             }
-            else if (IsScoreResultVariant5)
+            else if (ScoreResultVariant5 is { } __value4)
             {
-                scoreResultVariant5?.Invoke(ScoreResultVariant5!);
+                scoreResultVariant5?.Invoke(__value4);
             }
         }
 

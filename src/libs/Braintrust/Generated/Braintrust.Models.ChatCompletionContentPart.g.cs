@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ChatCompletionContentPartTextWithTitle PickText() => IsText
-            ? Text!
+        public global::Braintrust.ChatCompletionContentPartTextWithTitle PickText() => Text is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ChatCompletionContentPartImageWithTitle PickImageUrl() => IsImageUrl
-            ? ImageUrl!
+        public global::Braintrust.ChatCompletionContentPartImageWithTitle PickImageUrl() => ImageUrl is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ImageUrl' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ChatCompletionContentPartInputAudioWithTitle PickInputAudio() => IsInputAudio
-            ? InputAudio!
+        public global::Braintrust.ChatCompletionContentPartInputAudioWithTitle PickInputAudio() => InputAudio is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InputAudio' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ChatCompletionContentPartFileWithTitle PickFile() => IsFile
-            ? File!
+        public global::Braintrust.ChatCompletionContentPartFileWithTitle PickFile() => File is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'File' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsText && text != null)
+            if (Text is { } __value0 && text != null)
             {
-                return text(Text!);
+                return text(__value0);
             }
-            else if (IsImageUrl && imageUrl != null)
+            else if (ImageUrl is { } __value1 && imageUrl != null)
             {
-                return imageUrl(ImageUrl!);
+                return imageUrl(__value1);
             }
-            else if (IsInputAudio && inputAudio != null)
+            else if (InputAudio is { } __value2 && inputAudio != null)
             {
-                return inputAudio(InputAudio!);
+                return inputAudio(__value2);
             }
-            else if (IsFile && file != null)
+            else if (File is { } __value3 && file != null)
             {
-                return file(File!);
+                return file(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsText)
+            if (Text is { } __value0)
             {
-                text?.Invoke(Text!);
+                text?.Invoke(__value0);
             }
-            else if (IsImageUrl)
+            else if (ImageUrl is { } __value1)
             {
-                imageUrl?.Invoke(ImageUrl!);
+                imageUrl?.Invoke(__value1);
             }
-            else if (IsInputAudio)
+            else if (InputAudio is { } __value2)
             {
-                inputAudio?.Invoke(InputAudio!);
+                inputAudio?.Invoke(__value2);
             }
-            else if (IsFile)
+            else if (File is { } __value3)
             {
-                file?.Invoke(File!);
+                file?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsText)
+            if (Text is { } __value0)
             {
-                text?.Invoke(Text!);
+                text?.Invoke(__value0);
             }
-            else if (IsImageUrl)
+            else if (ImageUrl is { } __value1)
             {
-                imageUrl?.Invoke(ImageUrl!);
+                imageUrl?.Invoke(__value1);
             }
-            else if (IsInputAudio)
+            else if (InputAudio is { } __value2)
             {
-                inputAudio?.Invoke(InputAudio!);
+                inputAudio?.Invoke(__value2);
             }
-            else if (IsFile)
+            else if (File is { } __value3)
             {
-                file?.Invoke(File!);
+                file?.Invoke(__value3);
             }
         }
 

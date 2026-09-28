@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FacetPreprocessorIdFunction PickFunction() => IsFunction
-            ? Function!
+        public global::Braintrust.FacetPreprocessorIdFunction PickFunction() => Function is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FacetPreprocessorIdGlobal PickGlobal() => IsGlobal
-            ? Global!
+        public global::Braintrust.FacetPreprocessorIdGlobal PickGlobal() => Global is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FacetPreprocessorIdPreprocessorInline PickPreprocessorInline() => IsPreprocessorInline
-            ? PreprocessorInline!
+        public global::Braintrust.FacetPreprocessorIdPreprocessorInline PickPreprocessorInline() => PreprocessorInline is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorInline' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public object PickFacetPreprocessorIdVariant4() => IsFacetPreprocessorIdVariant4
-            ? FacetPreprocessorIdVariant4!
+        public object PickFacetPreprocessorIdVariant4() => FacetPreprocessorIdVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FacetPreprocessorIdVariant4' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -284,21 +284,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction && function != null)
+            if (Function is { } __value0 && function != null)
             {
-                return function(Function!);
+                return function(__value0);
             }
-            else if (IsGlobal && global != null)
+            else if (Global is { } __value1 && global != null)
             {
-                return global(Global!);
+                return global(__value1);
             }
-            else if (IsPreprocessorInline && preprocessorInline != null)
+            else if (PreprocessorInline is { } __value2 && preprocessorInline != null)
             {
-                return preprocessorInline(PreprocessorInline!);
+                return preprocessorInline(__value2);
             }
-            else if (IsFacetPreprocessorIdVariant4 && facetPreprocessorIdVariant4 != null)
+            else if (FacetPreprocessorIdVariant4 is { } __value3 && facetPreprocessorIdVariant4 != null)
             {
-                return facetPreprocessorIdVariant4(FacetPreprocessorIdVariant4!);
+                return facetPreprocessorIdVariant4(__value3);
             }
 
             return default(TResult);
@@ -322,21 +322,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction)
+            if (Function is { } __value0)
             {
-                function?.Invoke(Function!);
+                function?.Invoke(__value0);
             }
-            else if (IsGlobal)
+            else if (Global is { } __value1)
             {
-                global?.Invoke(Global!);
+                global?.Invoke(__value1);
             }
-            else if (IsPreprocessorInline)
+            else if (PreprocessorInline is { } __value2)
             {
-                preprocessorInline?.Invoke(PreprocessorInline!);
+                preprocessorInline?.Invoke(__value2);
             }
-            else if (IsFacetPreprocessorIdVariant4)
+            else if (FacetPreprocessorIdVariant4 is { } __value3)
             {
-                facetPreprocessorIdVariant4?.Invoke(FacetPreprocessorIdVariant4!);
+                facetPreprocessorIdVariant4?.Invoke(__value3);
             }
         }
 
@@ -355,21 +355,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction)
+            if (Function is { } __value0)
             {
-                function?.Invoke(Function!);
+                function?.Invoke(__value0);
             }
-            else if (IsGlobal)
+            else if (Global is { } __value1)
             {
-                global?.Invoke(Global!);
+                global?.Invoke(__value1);
             }
-            else if (IsPreprocessorInline)
+            else if (PreprocessorInline is { } __value2)
             {
-                preprocessorInline?.Invoke(PreprocessorInline!);
+                preprocessorInline?.Invoke(__value2);
             }
-            else if (IsFacetPreprocessorIdVariant4)
+            else if (FacetPreprocessorIdVariant4 is { } __value3)
             {
-                facetPreprocessorIdVariant4?.Invoke(FacetPreprocessorIdVariant4!);
+                facetPreprocessorIdVariant4?.Invoke(__value3);
             }
         }
 

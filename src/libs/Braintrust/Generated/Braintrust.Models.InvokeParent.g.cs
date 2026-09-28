@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.InvokeParentSpanParentStruct PickSpanParentStruct() => IsSpanParentStruct
-            ? SpanParentStruct!
+        public global::Braintrust.InvokeParentSpanParentStruct PickSpanParentStruct() => SpanParentStruct is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SpanParentStruct' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public string PickInvokeParentVariant2() => IsInvokeParentVariant2
-            ? InvokeParentVariant2!
+        public string PickInvokeParentVariant2() => InvokeParentVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InvokeParentVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsSpanParentStruct && spanParentStruct != null)
+            if (SpanParentStruct is { } __value0 && spanParentStruct != null)
             {
-                return spanParentStruct(SpanParentStruct!);
+                return spanParentStruct(__value0);
             }
-            else if (IsInvokeParentVariant2 && invokeParentVariant2 != null)
+            else if (InvokeParentVariant2 is { } __value1 && invokeParentVariant2 != null)
             {
-                return invokeParentVariant2(InvokeParentVariant2!);
+                return invokeParentVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsSpanParentStruct)
+            if (SpanParentStruct is { } __value0)
             {
-                spanParentStruct?.Invoke(SpanParentStruct!);
+                spanParentStruct?.Invoke(__value0);
             }
-            else if (IsInvokeParentVariant2)
+            else if (InvokeParentVariant2 is { } __value1)
             {
-                invokeParentVariant2?.Invoke(InvokeParentVariant2!);
+                invokeParentVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsSpanParentStruct)
+            if (SpanParentStruct is { } __value0)
             {
-                spanParentStruct?.Invoke(SpanParentStruct!);
+                spanParentStruct?.Invoke(__value0);
             }
-            else if (IsInvokeParentVariant2)
+            else if (InvokeParentVariant2 is { } __value1)
             {
-                invokeParentVariant2?.Invoke(InvokeParentVariant2!);
+                invokeParentVariant2?.Invoke(__value1);
             }
         }
 
