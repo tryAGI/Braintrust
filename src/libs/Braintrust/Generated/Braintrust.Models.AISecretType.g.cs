@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public string PickAISecretTypeVariant1() => IsAISecretTypeVariant1
-            ? AISecretTypeVariant1!
+        public string PickAISecretTypeVariant1() => AISecretTypeVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AISecretTypeVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<string> PickAISecretTypeVariant2() => IsAISecretTypeVariant2
-            ? AISecretTypeVariant2!
+        public global::System.Collections.Generic.IList<string> PickAISecretTypeVariant2() => AISecretTypeVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AISecretTypeVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -154,13 +154,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsAISecretTypeVariant1 && aISecretTypeVariant1 != null)
+            if (AISecretTypeVariant1 is { } __value0 && aISecretTypeVariant1 != null)
             {
-                return aISecretTypeVariant1(AISecretTypeVariant1!);
+                return aISecretTypeVariant1(__value0);
             }
-            else if (IsAISecretTypeVariant2 && aISecretTypeVariant2 != null)
+            else if (AISecretTypeVariant2 is { } __value1 && aISecretTypeVariant2 != null)
             {
-                return aISecretTypeVariant2(AISecretTypeVariant2!);
+                return aISecretTypeVariant2(__value1);
             }
 
             return default(TResult);
@@ -180,13 +180,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsAISecretTypeVariant1)
+            if (AISecretTypeVariant1 is { } __value0)
             {
-                aISecretTypeVariant1?.Invoke(AISecretTypeVariant1!);
+                aISecretTypeVariant1?.Invoke(__value0);
             }
-            else if (IsAISecretTypeVariant2)
+            else if (AISecretTypeVariant2 is { } __value1)
             {
-                aISecretTypeVariant2?.Invoke(AISecretTypeVariant2!);
+                aISecretTypeVariant2?.Invoke(__value1);
             }
         }
 
@@ -203,13 +203,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsAISecretTypeVariant1)
+            if (AISecretTypeVariant1 is { } __value0)
             {
-                aISecretTypeVariant1?.Invoke(AISecretTypeVariant1!);
+                aISecretTypeVariant1?.Invoke(__value0);
             }
-            else if (IsAISecretTypeVariant2)
+            else if (AISecretTypeVariant2 is { } __value1)
             {
-                aISecretTypeVariant2?.Invoke(AISecretTypeVariant2!);
+                aISecretTypeVariant2?.Invoke(__value1);
             }
         }
 

@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.PromptBlockDataNullishChat PickChat() => IsChat
-            ? Chat!
+        public global::Braintrust.PromptBlockDataNullishChat PickChat() => Chat is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Chat' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.PromptBlockDataNullishCompletion PickCompletion() => IsCompletion
-            ? Completion!
+        public global::Braintrust.PromptBlockDataNullishCompletion PickCompletion() => Completion is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Completion' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public object PickPromptBlockDataNullishVariant3() => IsPromptBlockDataNullishVariant3
-            ? PromptBlockDataNullishVariant3!
+        public object PickPromptBlockDataNullishVariant3() => PromptBlockDataNullishVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromptBlockDataNullishVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -219,17 +219,17 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsChat && chat != null)
+            if (Chat is { } __value0 && chat != null)
             {
-                return chat(Chat!);
+                return chat(__value0);
             }
-            else if (IsCompletion && completion != null)
+            else if (Completion is { } __value1 && completion != null)
             {
-                return completion(Completion!);
+                return completion(__value1);
             }
-            else if (IsPromptBlockDataNullishVariant3 && promptBlockDataNullishVariant3 != null)
+            else if (PromptBlockDataNullishVariant3 is { } __value2 && promptBlockDataNullishVariant3 != null)
             {
-                return promptBlockDataNullishVariant3(PromptBlockDataNullishVariant3!);
+                return promptBlockDataNullishVariant3(__value2);
             }
 
             return default(TResult);
@@ -251,17 +251,17 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsChat)
+            if (Chat is { } __value0)
             {
-                chat?.Invoke(Chat!);
+                chat?.Invoke(__value0);
             }
-            else if (IsCompletion)
+            else if (Completion is { } __value1)
             {
-                completion?.Invoke(Completion!);
+                completion?.Invoke(__value1);
             }
-            else if (IsPromptBlockDataNullishVariant3)
+            else if (PromptBlockDataNullishVariant3 is { } __value2)
             {
-                promptBlockDataNullishVariant3?.Invoke(PromptBlockDataNullishVariant3!);
+                promptBlockDataNullishVariant3?.Invoke(__value2);
             }
         }
 
@@ -279,17 +279,17 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsChat)
+            if (Chat is { } __value0)
             {
-                chat?.Invoke(Chat!);
+                chat?.Invoke(__value0);
             }
-            else if (IsCompletion)
+            else if (Completion is { } __value1)
             {
-                completion?.Invoke(Completion!);
+                completion?.Invoke(__value1);
             }
-            else if (IsPromptBlockDataNullishVariant3)
+            else if (PromptBlockDataNullishVariant3 is { } __value2)
             {
-                promptBlockDataNullishVariant3?.Invoke(PromptBlockDataNullishVariant3!);
+                promptBlockDataNullishVariant3?.Invoke(__value2);
             }
         }
 

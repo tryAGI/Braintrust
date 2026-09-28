@@ -243,31 +243,31 @@ namespace Braintrust.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.ScoreObject), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.ScoreObject?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.ScoreObject).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ObjectValue!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickObjectValue(), typeInfo);
             }
             else if (value.IsNamed)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.NamedScore), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.NamedScore?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.NamedScore).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Named!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickNamed(), typeInfo);
             }
             else if (value.IsScoreResultVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.AnyOf<double?, bool?>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.AnyOf<double?, bool?>> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.AnyOf<double?, bool?>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ScoreResultVariant3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScoreResultVariant3(), typeInfo);
             }
             else if (value.IsScoreResultVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Braintrust.NamedScore>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Braintrust.NamedScore>?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Braintrust.NamedScore>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ScoreResultVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScoreResultVariant4(), typeInfo);
             }
             else if (value.IsScoreResultVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ScoreResultVariant5!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScoreResultVariant5(), typeInfo);
             }
         }
     }

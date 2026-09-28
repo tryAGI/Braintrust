@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.PromptBlockDataChat PickChat() => IsChat
-            ? Chat!
+        public global::Braintrust.PromptBlockDataChat PickChat() => Chat is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Chat' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.PromptBlockDataCompletion PickCompletion() => IsCompletion
-            ? Completion!
+        public global::Braintrust.PromptBlockDataCompletion PickCompletion() => Completion is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Completion' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsChat && chat != null)
+            if (Chat is { } __value0 && chat != null)
             {
-                return chat(Chat!);
+                return chat(__value0);
             }
-            else if (IsCompletion && completion != null)
+            else if (Completion is { } __value1 && completion != null)
             {
-                return completion(Completion!);
+                return completion(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsChat)
+            if (Chat is { } __value0)
             {
-                chat?.Invoke(Chat!);
+                chat?.Invoke(__value0);
             }
-            else if (IsCompletion)
+            else if (Completion is { } __value1)
             {
-                completion?.Invoke(Completion!);
+                completion?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsChat)
+            if (Chat is { } __value0)
             {
-                chat?.Invoke(Chat!);
+                chat?.Invoke(__value0);
             }
-            else if (IsCompletion)
+            else if (Completion is { } __value1)
             {
-                completion?.Invoke(Completion!);
+                completion?.Invoke(__value1);
             }
         }
 

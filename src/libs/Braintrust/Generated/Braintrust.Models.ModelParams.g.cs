@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ModelParamsOpenAIModelParams PickOpenAIModelParams() => IsOpenAIModelParams
-            ? OpenAIModelParams!
+        public global::Braintrust.ModelParamsOpenAIModelParams PickOpenAIModelParams() => OpenAIModelParams is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'OpenAIModelParams' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ModelParamsAnthropicModelParams PickAnthropicModelParams() => IsAnthropicModelParams
-            ? AnthropicModelParams!
+        public global::Braintrust.ModelParamsAnthropicModelParams PickAnthropicModelParams() => AnthropicModelParams is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AnthropicModelParams' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ModelParamsGoogleModelParams PickGoogleModelParams() => IsGoogleModelParams
-            ? GoogleModelParams!
+        public global::Braintrust.ModelParamsGoogleModelParams PickGoogleModelParams() => GoogleModelParams is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleModelParams' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ModelParamsWindowAIModelParams PickWindowAIModelParams() => IsWindowAIModelParams
-            ? WindowAIModelParams!
+        public global::Braintrust.ModelParamsWindowAIModelParams PickWindowAIModelParams() => WindowAIModelParams is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WindowAIModelParams' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.ModelParamsJsCompletionParams PickJsCompletionParams() => IsJsCompletionParams
-            ? JsCompletionParams!
+        public global::Braintrust.ModelParamsJsCompletionParams PickJsCompletionParams() => JsCompletionParams is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsCompletionParams' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsOpenAIModelParams && openAIModelParams != null)
+            if (OpenAIModelParams is { } __value0 && openAIModelParams != null)
             {
-                return openAIModelParams(OpenAIModelParams!);
+                return openAIModelParams(__value0);
             }
-            else if (IsAnthropicModelParams && anthropicModelParams != null)
+            else if (AnthropicModelParams is { } __value1 && anthropicModelParams != null)
             {
-                return anthropicModelParams(AnthropicModelParams!);
+                return anthropicModelParams(__value1);
             }
-            else if (IsGoogleModelParams && googleModelParams != null)
+            else if (GoogleModelParams is { } __value2 && googleModelParams != null)
             {
-                return googleModelParams(GoogleModelParams!);
+                return googleModelParams(__value2);
             }
-            else if (IsWindowAIModelParams && windowAIModelParams != null)
+            else if (WindowAIModelParams is { } __value3 && windowAIModelParams != null)
             {
-                return windowAIModelParams(WindowAIModelParams!);
+                return windowAIModelParams(__value3);
             }
-            else if (IsJsCompletionParams && jsCompletionParams != null)
+            else if (JsCompletionParams is { } __value4 && jsCompletionParams != null)
             {
-                return jsCompletionParams(JsCompletionParams!);
+                return jsCompletionParams(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsOpenAIModelParams)
+            if (OpenAIModelParams is { } __value0)
             {
-                openAIModelParams?.Invoke(OpenAIModelParams!);
+                openAIModelParams?.Invoke(__value0);
             }
-            else if (IsAnthropicModelParams)
+            else if (AnthropicModelParams is { } __value1)
             {
-                anthropicModelParams?.Invoke(AnthropicModelParams!);
+                anthropicModelParams?.Invoke(__value1);
             }
-            else if (IsGoogleModelParams)
+            else if (GoogleModelParams is { } __value2)
             {
-                googleModelParams?.Invoke(GoogleModelParams!);
+                googleModelParams?.Invoke(__value2);
             }
-            else if (IsWindowAIModelParams)
+            else if (WindowAIModelParams is { } __value3)
             {
-                windowAIModelParams?.Invoke(WindowAIModelParams!);
+                windowAIModelParams?.Invoke(__value3);
             }
-            else if (IsJsCompletionParams)
+            else if (JsCompletionParams is { } __value4)
             {
-                jsCompletionParams?.Invoke(JsCompletionParams!);
+                jsCompletionParams?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsOpenAIModelParams)
+            if (OpenAIModelParams is { } __value0)
             {
-                openAIModelParams?.Invoke(OpenAIModelParams!);
+                openAIModelParams?.Invoke(__value0);
             }
-            else if (IsAnthropicModelParams)
+            else if (AnthropicModelParams is { } __value1)
             {
-                anthropicModelParams?.Invoke(AnthropicModelParams!);
+                anthropicModelParams?.Invoke(__value1);
             }
-            else if (IsGoogleModelParams)
+            else if (GoogleModelParams is { } __value2)
             {
-                googleModelParams?.Invoke(GoogleModelParams!);
+                googleModelParams?.Invoke(__value2);
             }
-            else if (IsWindowAIModelParams)
+            else if (WindowAIModelParams is { } __value3)
             {
-                windowAIModelParams?.Invoke(WindowAIModelParams!);
+                windowAIModelParams?.Invoke(__value3);
             }
-            else if (IsJsCompletionParams)
+            else if (JsCompletionParams is { } __value4)
             {
-                jsCompletionParams?.Invoke(JsCompletionParams!);
+                jsCompletionParams?.Invoke(__value4);
             }
         }
 

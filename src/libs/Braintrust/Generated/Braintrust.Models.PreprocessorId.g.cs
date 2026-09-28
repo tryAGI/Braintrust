@@ -42,8 +42,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.PreprocessorIdFunction PickFunction() => IsFunction
-            ? Function!
+        public global::Braintrust.PreprocessorIdFunction PickFunction() => Function is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.PreprocessorIdPreprocessorGlobal PickPreprocessorGlobal() => IsPreprocessorGlobal
-            ? PreprocessorGlobal!
+        public global::Braintrust.PreprocessorIdPreprocessorGlobal PickPreprocessorGlobal() => PreprocessorGlobal is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorGlobal' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.PreprocessorIdPreprocessorInline PickPreprocessorInline() => IsPreprocessorInline
-            ? PreprocessorInline!
+        public global::Braintrust.PreprocessorIdPreprocessorInline PickPreprocessorInline() => PreprocessorInline is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorInline' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public object PickPreprocessorIdVariant4() => IsPreprocessorIdVariant4
-            ? PreprocessorIdVariant4!
+        public object PickPreprocessorIdVariant4() => PreprocessorIdVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorIdVariant4' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -284,21 +284,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction && function != null)
+            if (Function is { } __value0 && function != null)
             {
-                return function(Function!);
+                return function(__value0);
             }
-            else if (IsPreprocessorGlobal && preprocessorGlobal != null)
+            else if (PreprocessorGlobal is { } __value1 && preprocessorGlobal != null)
             {
-                return preprocessorGlobal(PreprocessorGlobal!);
+                return preprocessorGlobal(__value1);
             }
-            else if (IsPreprocessorInline && preprocessorInline != null)
+            else if (PreprocessorInline is { } __value2 && preprocessorInline != null)
             {
-                return preprocessorInline(PreprocessorInline!);
+                return preprocessorInline(__value2);
             }
-            else if (IsPreprocessorIdVariant4 && preprocessorIdVariant4 != null)
+            else if (PreprocessorIdVariant4 is { } __value3 && preprocessorIdVariant4 != null)
             {
-                return preprocessorIdVariant4(PreprocessorIdVariant4!);
+                return preprocessorIdVariant4(__value3);
             }
 
             return default(TResult);
@@ -322,21 +322,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction)
+            if (Function is { } __value0)
             {
-                function?.Invoke(Function!);
+                function?.Invoke(__value0);
             }
-            else if (IsPreprocessorGlobal)
+            else if (PreprocessorGlobal is { } __value1)
             {
-                preprocessorGlobal?.Invoke(PreprocessorGlobal!);
+                preprocessorGlobal?.Invoke(__value1);
             }
-            else if (IsPreprocessorInline)
+            else if (PreprocessorInline is { } __value2)
             {
-                preprocessorInline?.Invoke(PreprocessorInline!);
+                preprocessorInline?.Invoke(__value2);
             }
-            else if (IsPreprocessorIdVariant4)
+            else if (PreprocessorIdVariant4 is { } __value3)
             {
-                preprocessorIdVariant4?.Invoke(PreprocessorIdVariant4!);
+                preprocessorIdVariant4?.Invoke(__value3);
             }
         }
 
@@ -355,21 +355,21 @@ namespace Braintrust
                 Validate();
             }
 
-            if (IsFunction)
+            if (Function is { } __value0)
             {
-                function?.Invoke(Function!);
+                function?.Invoke(__value0);
             }
-            else if (IsPreprocessorGlobal)
+            else if (PreprocessorGlobal is { } __value1)
             {
-                preprocessorGlobal?.Invoke(PreprocessorGlobal!);
+                preprocessorGlobal?.Invoke(__value1);
             }
-            else if (IsPreprocessorInline)
+            else if (PreprocessorInline is { } __value2)
             {
-                preprocessorInline?.Invoke(PreprocessorInline!);
+                preprocessorInline?.Invoke(__value2);
             }
-            else if (IsPreprocessorIdVariant4)
+            else if (PreprocessorIdVariant4 is { } __value3)
             {
-                preprocessorIdVariant4?.Invoke(PreprocessorIdVariant4!);
+                preprocessorIdVariant4?.Invoke(__value3);
             }
         }
 

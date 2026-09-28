@@ -213,8 +213,8 @@ namespace Braintrust
                                 .AddOptionalParameter("starting_after", startingAfter?.ToString())
                                 .AddOptionalParameter("ending_before", endingBefore?.ToString())
                                 .AddOptionalParameter("ids", ids?.Match(
-                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x?.ToString()! },
-                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item.ToString()!),
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)new string?[] { x?.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString().") },
+                static x => (global::System.Collections.Generic.IEnumerable<string?>)global::System.Linq.Enumerable.Select(x, static item => item.ToString() ?? throw new global::System.InvalidOperationException("A required query parameter returned null from ToString().")),
                 validate: false), delimiter: ",", explode: true)
                                 .AddOptionalParameter("project_tag_name", projectTagName)
                                 .AddOptionalParameter("project_name", projectName)
@@ -290,7 +290,7 @@ namespace Braintrust
                                 pathTemplate: "\"/v1/project_tag\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -324,7 +324,7 @@ namespace Braintrust
                                 pathTemplate: "\"/v1/project_tag\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -365,7 +365,7 @@ namespace Braintrust
                                 pathTemplate: "\"/v1/project_tag\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -413,7 +413,7 @@ namespace Braintrust
                                 pathTemplate: "\"/v1/project_tag\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -435,7 +435,7 @@ namespace Braintrust
                                 pathTemplate: "\"/v1/project_tag\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
