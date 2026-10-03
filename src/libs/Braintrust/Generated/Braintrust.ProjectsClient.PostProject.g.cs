@@ -640,6 +640,9 @@ namespace Braintrust
         /// <param name="orgName">
         /// For nearly all users, this parameter should be unnecessary. But in the rare case that your API key belongs to multiple organizations, you may specify the name of the organization the project belongs in.
         /// </param>
+        /// <param name="projectGroupName">
+        /// Create the project within the named project group in this organization. Requires project_group:update and either project_group_projects:create on the group or org_project:create on the organization.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -647,6 +650,7 @@ namespace Braintrust
             string name,
             string? description = default,
             string? orgName = default,
+            string? projectGroupName = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -655,6 +659,7 @@ namespace Braintrust
                 Name = name,
                 Description = description,
                 OrgName = orgName,
+                ProjectGroupName = projectGroupName,
             };
 
             return await PostProjectAsync(

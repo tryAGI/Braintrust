@@ -11,6 +11,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        Logs,
+        /// <summary>
+        ///
+        /// </summary>
         Spans,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace Braintrust
         {
             return value switch
             {
+                ViewOptionsTableViewOptionsQueryShape.Logs => "logs",
                 ViewOptionsTableViewOptionsQueryShape.Spans => "spans",
                 ViewOptionsTableViewOptionsQueryShape.Topics => "topics",
                 ViewOptionsTableViewOptionsQueryShape.Traces => "traces",
@@ -47,6 +52,7 @@ namespace Braintrust
         {
             return value switch
             {
+                "logs" => ViewOptionsTableViewOptionsQueryShape.Logs,
                 "spans" => ViewOptionsTableViewOptionsQueryShape.Spans,
                 "topics" => ViewOptionsTableViewOptionsQueryShape.Topics,
                 "traces" => ViewOptionsTableViewOptionsQueryShape.Traces,
