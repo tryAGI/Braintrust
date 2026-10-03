@@ -23,11 +23,20 @@ namespace Braintrust.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
 
                 }
             }
 
             var __score0 = 0;
+            if (__jsonProps.Contains("chat_template_kwargs")) __score0++;
+            if (__jsonProps.Contains("chat_template_kwargs.enable_thinking")) __score0++;
             if (__jsonProps.Contains("frequency_penalty")) __score0++;
             if (__jsonProps.Contains("function_call")) __score0++;
             if (__jsonProps.Contains("max_completion_tokens")) __score0++;

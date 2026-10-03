@@ -59,6 +59,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        ProjectGroupProjects,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectLog,
         /// <summary>
         ///
@@ -98,6 +102,7 @@ namespace Braintrust
                 AclListOrgObjectType.Organization => "organization",
                 AclListOrgObjectType.Project => "project",
                 AclListOrgObjectType.ProjectGroup => "project_group",
+                AclListOrgObjectType.ProjectGroupProjects => "project_group_projects",
                 AclListOrgObjectType.ProjectLog => "project_log",
                 AclListOrgObjectType.Prompt => "prompt",
                 AclListOrgObjectType.PromptSession => "prompt_session",
@@ -124,6 +129,7 @@ namespace Braintrust
                 "organization" => AclListOrgObjectType.Organization,
                 "project" => AclListOrgObjectType.Project,
                 "project_group" => AclListOrgObjectType.ProjectGroup,
+                "project_group_projects" => AclListOrgObjectType.ProjectGroupProjects,
                 "project_log" => AclListOrgObjectType.ProjectLog,
                 "prompt" => AclListOrgObjectType.Prompt,
                 "prompt_session" => AclListOrgObjectType.PromptSession,

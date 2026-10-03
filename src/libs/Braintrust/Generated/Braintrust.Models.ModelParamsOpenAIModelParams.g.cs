@@ -105,6 +105,12 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("chat_template_kwargs")]
+        public global::Braintrust.ModelParamsOpenAIModelParamsChatTemplateKwargs? ChatTemplateKwargs { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verbosity")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ModelParamsOpenAIModelParamsVerbosityJsonConverter))]
         public global::Braintrust.ModelParamsOpenAIModelParamsVerbosity? Verbosity { get; set; }
@@ -135,6 +141,7 @@ namespace Braintrust
         /// <param name="n"></param>
         /// <param name="stop"></param>
         /// <param name="reasoningEffort"></param>
+        /// <param name="chatTemplateKwargs"></param>
         /// <param name="verbosity"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -155,6 +162,7 @@ namespace Braintrust
             double? n,
             global::System.Collections.Generic.IList<string>? stop,
             global::Braintrust.ModelParamsOpenAIModelParamsReasoningEffort? reasoningEffort,
+            global::Braintrust.ModelParamsOpenAIModelParamsChatTemplateKwargs? chatTemplateKwargs,
             global::Braintrust.ModelParamsOpenAIModelParamsVerbosity? verbosity)
         {
             this.UseCache = useCache;
@@ -172,6 +180,7 @@ namespace Braintrust
             this.N = n;
             this.Stop = stop;
             this.ReasoningEffort = reasoningEffort;
+            this.ChatTemplateKwargs = chatTemplateKwargs;
             this.Verbosity = verbosity;
         }
 
