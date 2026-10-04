@@ -82,43 +82,6 @@ namespace Braintrust
         public global::Braintrust.PromptBlockDataNullishCompletion PickCompletion() => Completion is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Completion' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public object? PromptBlockDataNullishVariant3 { get; init; }
-#else
-        public object? PromptBlockDataNullishVariant3 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromptBlockDataNullishVariant3))]
-#endif
-        public bool IsPromptBlockDataNullishVariant3 => PromptBlockDataNullishVariant3 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickPromptBlockDataNullishVariant3(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out object? value)
-        {
-            value = PromptBlockDataNullishVariant3;
-            return IsPromptBlockDataNullishVariant3;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public object PickPromptBlockDataNullishVariant3() => PromptBlockDataNullishVariant3 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'PromptBlockDataNullishVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -170,20 +133,17 @@ namespace Braintrust
         /// </summary>
         public PromptBlockDataNullish(
             global::Braintrust.PromptBlockDataNullishChat? chat,
-            global::Braintrust.PromptBlockDataNullishCompletion? completion,
-            object? promptBlockDataNullishVariant3
+            global::Braintrust.PromptBlockDataNullishCompletion? completion
             )
         {
             Chat = chat;
             Completion = completion;
-            PromptBlockDataNullishVariant3 = promptBlockDataNullishVariant3;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            PromptBlockDataNullishVariant3 as object ??
             Completion as object ??
             Chat as object
             ;
@@ -193,8 +153,7 @@ namespace Braintrust
         /// </summary>
         public override string? ToString() =>
             Chat?.ToString() ??
-            Completion?.ToString() ??
-            PromptBlockDataNullishVariant3?.ToString()
+            Completion?.ToString()
             ;
 
         /// <summary>
@@ -202,7 +161,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsChat || IsCompletion || IsPromptBlockDataNullishVariant3;
+            return IsChat || IsCompletion;
         }
 
         /// <summary>
@@ -211,7 +170,6 @@ namespace Braintrust
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.PromptBlockDataNullishChat, TResult>? chat = null,
             global::System.Func<global::Braintrust.PromptBlockDataNullishCompletion, TResult>? completion = null,
-            global::System.Func<object, TResult>? promptBlockDataNullishVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -227,10 +185,6 @@ namespace Braintrust
             {
                 return completion(__value1);
             }
-            else if (PromptBlockDataNullishVariant3 is { } __value2 && promptBlockDataNullishVariant3 != null)
-            {
-                return promptBlockDataNullishVariant3(__value2);
-            }
 
             return default(TResult);
         }
@@ -242,8 +196,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.PromptBlockDataNullishChat>? chat = null,
 
             global::System.Action<global::Braintrust.PromptBlockDataNullishCompletion>? completion = null,
-
-            global::System.Action<object>? promptBlockDataNullishVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -258,10 +210,6 @@ namespace Braintrust
             else if (Completion is { } __value1)
             {
                 completion?.Invoke(__value1);
-            }
-            else if (PromptBlockDataNullishVariant3 is { } __value2)
-            {
-                promptBlockDataNullishVariant3?.Invoke(__value2);
             }
         }
 
@@ -271,7 +219,6 @@ namespace Braintrust
         public void Switch(
             global::System.Action<global::Braintrust.PromptBlockDataNullishChat>? chat = null,
             global::System.Action<global::Braintrust.PromptBlockDataNullishCompletion>? completion = null,
-            global::System.Action<object>? promptBlockDataNullishVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -286,10 +233,6 @@ namespace Braintrust
             else if (Completion is { } __value1)
             {
                 completion?.Invoke(__value1);
-            }
-            else if (PromptBlockDataNullishVariant3 is { } __value2)
-            {
-                promptBlockDataNullishVariant3?.Invoke(__value2);
             }
         }
 
@@ -304,8 +247,6 @@ namespace Braintrust
                 typeof(global::Braintrust.PromptBlockDataNullishChat),
                 Completion,
                 typeof(global::Braintrust.PromptBlockDataNullishCompletion),
-                PromptBlockDataNullishVariant3,
-                typeof(object),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -323,8 +264,7 @@ namespace Braintrust
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataNullishChat?>.Default.Equals(Chat, other.Chat) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataNullishCompletion?>.Default.Equals(Completion, other.Completion) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(PromptBlockDataNullishVariant3, other.PromptBlockDataNullishVariant3)
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataNullishCompletion?>.Default.Equals(Completion, other.Completion)
                 ;
         }
 

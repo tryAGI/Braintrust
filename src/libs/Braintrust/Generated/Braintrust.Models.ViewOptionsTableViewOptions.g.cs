@@ -108,8 +108,8 @@ namespace Braintrust
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timeRangeFilter")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>))]
-        public global::Braintrust.AnyOf<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>? TimeRangeFilter { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter>))]
+        public global::Braintrust.AnyOf<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter>? TimeRangeFilter { get; set; }
 
         /// <summary>
         ///
@@ -181,7 +181,7 @@ namespace Braintrust
             global::Braintrust.ViewOptionsTableViewOptionsPointSizeMetric? pointSizeMetric,
             string? xAxisAggregation,
             global::System.Collections.Generic.IList<global::Braintrust.ViewOptionsTableViewOptionsChartAnnotation>? chartAnnotations,
-            global::Braintrust.AnyOf<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter, object>? timeRangeFilter,
+            global::Braintrust.AnyOf<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter>? timeRangeFilter,
             global::Braintrust.ViewOptionsTableViewOptionsQueryShape? queryShape,
             string? cluster,
             bool? freezeColumns)

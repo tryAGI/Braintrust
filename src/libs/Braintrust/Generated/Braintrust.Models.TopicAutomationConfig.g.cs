@@ -54,8 +54,8 @@ namespace Braintrust
         /// Execution scope for topic automation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>))]
-        public global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? Scope { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope>))]
+        public global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope>? Scope { get; set; }
 
         /// <summary>
         /// Optional data scope for topic automation.
@@ -86,8 +86,8 @@ namespace Braintrust
         /// Topic window used for classification coverage and initial backfill.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backfill_time_range")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>))]
-        public global::Braintrust.AnyOf<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>? BackfillTimeRange { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange>))]
+        public global::Braintrust.AnyOf<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange>? BackfillTimeRange { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -144,12 +144,12 @@ namespace Braintrust
             global::Braintrust.TopicAutomationConfigEventType eventType,
             global::Braintrust.AutomationStatus? status,
             global::Braintrust.TopicAutomationFacetModel? facetModel,
-            global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? scope,
+            global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope>? scope,
             global::Braintrust.TopicAutomationDataScope? dataScope,
             string? btqlFilter,
             double? rerunSeconds,
             double? relabelOverlapSeconds,
-            global::Braintrust.AnyOf<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange, object>? backfillTimeRange)
+            global::Braintrust.AnyOf<string, global::Braintrust.TopicAutomationConfigBackfillTimeRange>? backfillTimeRange)
         {
             this.EventType = eventType;
             this.Status = status;
