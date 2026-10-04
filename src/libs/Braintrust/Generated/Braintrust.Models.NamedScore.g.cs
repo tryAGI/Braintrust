@@ -19,8 +19,8 @@ namespace Braintrust
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?, object>))]
-        public global::Braintrust.AnyOf<double?, bool?, object>? Score { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>))]
+        public global::Braintrust.AnyOf<double?, bool?>? Score { get; set; }
 
         /// <summary>
         ///
@@ -45,7 +45,7 @@ namespace Braintrust
 #endif
         public NamedScore(
             string name,
-            global::Braintrust.AnyOf<double?, bool?, object>? score,
+            global::Braintrust.AnyOf<double?, bool?>? score,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

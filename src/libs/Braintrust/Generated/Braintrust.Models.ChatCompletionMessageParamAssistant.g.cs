@@ -19,8 +19,8 @@ namespace Braintrust
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>, object>))]
-        public global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>, object>? Content { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>))]
+        public global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>? Content { get; set; }
 
         /// <summary>
         ///
@@ -73,7 +73,7 @@ namespace Braintrust
 #endif
         public ChatCompletionMessageParamAssistant(
             global::Braintrust.ChatCompletionMessageParamAssistantRole role,
-            global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>, object>? content,
+            global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>? content,
             global::Braintrust.ChatCompletionMessageParamAssistantFunctionCall? functionCall,
             string? name,
             global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageToolCall>? toolCalls,

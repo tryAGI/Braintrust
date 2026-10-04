@@ -82,43 +82,6 @@ namespace Braintrust
         public global::Braintrust.SavedFunctionIdGlobal PickGlobal() => Global is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public object? SavedFunctionIdVariant3 { get; init; }
-#else
-        public object? SavedFunctionIdVariant3 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SavedFunctionIdVariant3))]
-#endif
-        public bool IsSavedFunctionIdVariant3 => SavedFunctionIdVariant3 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSavedFunctionIdVariant3(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out object? value)
-        {
-            value = SavedFunctionIdVariant3;
-            return IsSavedFunctionIdVariant3;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public object PickSavedFunctionIdVariant3() => SavedFunctionIdVariant3 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SavedFunctionIdVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -170,20 +133,17 @@ namespace Braintrust
         /// </summary>
         public SavedFunctionId(
             global::Braintrust.SavedFunctionIdFunction? function,
-            global::Braintrust.SavedFunctionIdGlobal? global,
-            object? savedFunctionIdVariant3
+            global::Braintrust.SavedFunctionIdGlobal? global
             )
         {
             Function = function;
             Global = global;
-            SavedFunctionIdVariant3 = savedFunctionIdVariant3;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            SavedFunctionIdVariant3 as object ??
             Global as object ??
             Function as object
             ;
@@ -193,8 +153,7 @@ namespace Braintrust
         /// </summary>
         public override string? ToString() =>
             Function?.ToString() ??
-            Global?.ToString() ??
-            SavedFunctionIdVariant3?.ToString()
+            Global?.ToString()
             ;
 
         /// <summary>
@@ -202,7 +161,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsFunction || IsGlobal || IsSavedFunctionIdVariant3;
+            return IsFunction || IsGlobal;
         }
 
         /// <summary>
@@ -211,7 +170,6 @@ namespace Braintrust
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.SavedFunctionIdFunction, TResult>? function = null,
             global::System.Func<global::Braintrust.SavedFunctionIdGlobal, TResult>? global = null,
-            global::System.Func<object, TResult>? savedFunctionIdVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -227,10 +185,6 @@ namespace Braintrust
             {
                 return global(__value1);
             }
-            else if (SavedFunctionIdVariant3 is { } __value2 && savedFunctionIdVariant3 != null)
-            {
-                return savedFunctionIdVariant3(__value2);
-            }
 
             return default(TResult);
         }
@@ -242,8 +196,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.SavedFunctionIdFunction>? function = null,
 
             global::System.Action<global::Braintrust.SavedFunctionIdGlobal>? global = null,
-
-            global::System.Action<object>? savedFunctionIdVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -258,10 +210,6 @@ namespace Braintrust
             else if (Global is { } __value1)
             {
                 global?.Invoke(__value1);
-            }
-            else if (SavedFunctionIdVariant3 is { } __value2)
-            {
-                savedFunctionIdVariant3?.Invoke(__value2);
             }
         }
 
@@ -271,7 +219,6 @@ namespace Braintrust
         public void Switch(
             global::System.Action<global::Braintrust.SavedFunctionIdFunction>? function = null,
             global::System.Action<global::Braintrust.SavedFunctionIdGlobal>? global = null,
-            global::System.Action<object>? savedFunctionIdVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -286,10 +233,6 @@ namespace Braintrust
             else if (Global is { } __value1)
             {
                 global?.Invoke(__value1);
-            }
-            else if (SavedFunctionIdVariant3 is { } __value2)
-            {
-                savedFunctionIdVariant3?.Invoke(__value2);
             }
         }
 
@@ -304,8 +247,6 @@ namespace Braintrust
                 typeof(global::Braintrust.SavedFunctionIdFunction),
                 Global,
                 typeof(global::Braintrust.SavedFunctionIdGlobal),
-                SavedFunctionIdVariant3,
-                typeof(object),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -323,8 +264,7 @@ namespace Braintrust
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.SavedFunctionIdFunction?>.Default.Equals(Function, other.Function) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.SavedFunctionIdGlobal?>.Default.Equals(Global, other.Global) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(SavedFunctionIdVariant3, other.SavedFunctionIdVariant3)
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.SavedFunctionIdGlobal?>.Default.Equals(Global, other.Global)
                 ;
         }
 

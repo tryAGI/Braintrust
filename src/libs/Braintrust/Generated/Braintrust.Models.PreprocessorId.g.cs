@@ -119,43 +119,6 @@ namespace Braintrust
         public global::Braintrust.PreprocessorIdPreprocessorInline PickPreprocessorInline() => PreprocessorInline is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorInline' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public object? PreprocessorIdVariant4 { get; init; }
-#else
-        public object? PreprocessorIdVariant4 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PreprocessorIdVariant4))]
-#endif
-        public bool IsPreprocessorIdVariant4 => PreprocessorIdVariant4 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickPreprocessorIdVariant4(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out object? value)
-        {
-            value = PreprocessorIdVariant4;
-            return IsPreprocessorIdVariant4;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public object PickPreprocessorIdVariant4() => PreprocessorIdVariant4 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'PreprocessorIdVariant4' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -231,21 +194,18 @@ namespace Braintrust
         public PreprocessorId(
             global::Braintrust.PreprocessorIdFunction? function,
             global::Braintrust.PreprocessorIdPreprocessorGlobal? preprocessorGlobal,
-            global::Braintrust.PreprocessorIdPreprocessorInline? preprocessorInline,
-            object? preprocessorIdVariant4
+            global::Braintrust.PreprocessorIdPreprocessorInline? preprocessorInline
             )
         {
             Function = function;
             PreprocessorGlobal = preprocessorGlobal;
             PreprocessorInline = preprocessorInline;
-            PreprocessorIdVariant4 = preprocessorIdVariant4;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            PreprocessorIdVariant4 as object ??
             PreprocessorInline as object ??
             PreprocessorGlobal as object ??
             Function as object
@@ -257,8 +217,7 @@ namespace Braintrust
         public override string? ToString() =>
             Function?.ToString() ??
             PreprocessorGlobal?.ToString() ??
-            PreprocessorInline?.ToString() ??
-            PreprocessorIdVariant4?.ToString()
+            PreprocessorInline?.ToString()
             ;
 
         /// <summary>
@@ -266,7 +225,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsFunction || IsPreprocessorGlobal || IsPreprocessorInline || IsPreprocessorIdVariant4;
+            return IsFunction || IsPreprocessorGlobal || IsPreprocessorInline;
         }
 
         /// <summary>
@@ -276,7 +235,6 @@ namespace Braintrust
             global::System.Func<global::Braintrust.PreprocessorIdFunction, TResult>? function = null,
             global::System.Func<global::Braintrust.PreprocessorIdPreprocessorGlobal, TResult>? preprocessorGlobal = null,
             global::System.Func<global::Braintrust.PreprocessorIdPreprocessorInline, TResult>? preprocessorInline = null,
-            global::System.Func<object, TResult>? preprocessorIdVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -296,10 +254,6 @@ namespace Braintrust
             {
                 return preprocessorInline(__value2);
             }
-            else if (PreprocessorIdVariant4 is { } __value3 && preprocessorIdVariant4 != null)
-            {
-                return preprocessorIdVariant4(__value3);
-            }
 
             return default(TResult);
         }
@@ -313,8 +267,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.PreprocessorIdPreprocessorGlobal>? preprocessorGlobal = null,
 
             global::System.Action<global::Braintrust.PreprocessorIdPreprocessorInline>? preprocessorInline = null,
-
-            global::System.Action<object>? preprocessorIdVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -333,10 +285,6 @@ namespace Braintrust
             else if (PreprocessorInline is { } __value2)
             {
                 preprocessorInline?.Invoke(__value2);
-            }
-            else if (PreprocessorIdVariant4 is { } __value3)
-            {
-                preprocessorIdVariant4?.Invoke(__value3);
             }
         }
 
@@ -347,7 +295,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.PreprocessorIdFunction>? function = null,
             global::System.Action<global::Braintrust.PreprocessorIdPreprocessorGlobal>? preprocessorGlobal = null,
             global::System.Action<global::Braintrust.PreprocessorIdPreprocessorInline>? preprocessorInline = null,
-            global::System.Action<object>? preprocessorIdVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -366,10 +313,6 @@ namespace Braintrust
             else if (PreprocessorInline is { } __value2)
             {
                 preprocessorInline?.Invoke(__value2);
-            }
-            else if (PreprocessorIdVariant4 is { } __value3)
-            {
-                preprocessorIdVariant4?.Invoke(__value3);
             }
         }
 
@@ -386,8 +329,6 @@ namespace Braintrust
                 typeof(global::Braintrust.PreprocessorIdPreprocessorGlobal),
                 PreprocessorInline,
                 typeof(global::Braintrust.PreprocessorIdPreprocessorInline),
-                PreprocessorIdVariant4,
-                typeof(object),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -406,8 +347,7 @@ namespace Braintrust
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.PreprocessorIdFunction?>.Default.Equals(Function, other.Function) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.PreprocessorIdPreprocessorGlobal?>.Default.Equals(PreprocessorGlobal, other.PreprocessorGlobal) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PreprocessorIdPreprocessorInline?>.Default.Equals(PreprocessorInline, other.PreprocessorInline) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(PreprocessorIdVariant4, other.PreprocessorIdVariant4)
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PreprocessorIdPreprocessorInline?>.Default.Equals(PreprocessorInline, other.PreprocessorInline)
                 ;
         }
 

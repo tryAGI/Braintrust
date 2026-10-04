@@ -57,8 +57,8 @@ namespace Braintrust
         /// The scope at which to run the functions. Defaults to span-level execution.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>))]
-        public global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? Scope { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope>))]
+        public global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope>? Scope { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -104,7 +104,7 @@ namespace Braintrust
             bool? applyToRootSpan,
             global::System.Collections.Generic.IList<string>? applyToSpanNames,
             bool? skipLogging,
-            global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope, object>? scope)
+            global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope>? scope)
         {
             this.Status = status;
             this.SamplingRate = samplingRate;

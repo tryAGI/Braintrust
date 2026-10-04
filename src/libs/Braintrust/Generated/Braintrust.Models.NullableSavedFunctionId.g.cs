@@ -82,43 +82,6 @@ namespace Braintrust
         public global::Braintrust.NullableSavedFunctionIdGlobal PickGlobal() => Global is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Global' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public object? NullableSavedFunctionIdVariant3 { get; init; }
-#else
-        public object? NullableSavedFunctionIdVariant3 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(NullableSavedFunctionIdVariant3))]
-#endif
-        public bool IsNullableSavedFunctionIdVariant3 => NullableSavedFunctionIdVariant3 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickNullableSavedFunctionIdVariant3(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out object? value)
-        {
-            value = NullableSavedFunctionIdVariant3;
-            return IsNullableSavedFunctionIdVariant3;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public object PickNullableSavedFunctionIdVariant3() => NullableSavedFunctionIdVariant3 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'NullableSavedFunctionIdVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -170,20 +133,17 @@ namespace Braintrust
         /// </summary>
         public NullableSavedFunctionId(
             global::Braintrust.NullableSavedFunctionIdFunction? function,
-            global::Braintrust.NullableSavedFunctionIdGlobal? global,
-            object? nullableSavedFunctionIdVariant3
+            global::Braintrust.NullableSavedFunctionIdGlobal? global
             )
         {
             Function = function;
             Global = global;
-            NullableSavedFunctionIdVariant3 = nullableSavedFunctionIdVariant3;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            NullableSavedFunctionIdVariant3 as object ??
             Global as object ??
             Function as object
             ;
@@ -193,8 +153,7 @@ namespace Braintrust
         /// </summary>
         public override string? ToString() =>
             Function?.ToString() ??
-            Global?.ToString() ??
-            NullableSavedFunctionIdVariant3?.ToString()
+            Global?.ToString()
             ;
 
         /// <summary>
@@ -202,7 +161,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsFunction || IsGlobal || IsNullableSavedFunctionIdVariant3;
+            return IsFunction || IsGlobal;
         }
 
         /// <summary>
@@ -211,7 +170,6 @@ namespace Braintrust
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.NullableSavedFunctionIdFunction, TResult>? function = null,
             global::System.Func<global::Braintrust.NullableSavedFunctionIdGlobal, TResult>? global = null,
-            global::System.Func<object, TResult>? nullableSavedFunctionIdVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -227,10 +185,6 @@ namespace Braintrust
             {
                 return global(__value1);
             }
-            else if (NullableSavedFunctionIdVariant3 is { } __value2 && nullableSavedFunctionIdVariant3 != null)
-            {
-                return nullableSavedFunctionIdVariant3(__value2);
-            }
 
             return default(TResult);
         }
@@ -242,8 +196,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.NullableSavedFunctionIdFunction>? function = null,
 
             global::System.Action<global::Braintrust.NullableSavedFunctionIdGlobal>? global = null,
-
-            global::System.Action<object>? nullableSavedFunctionIdVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -258,10 +210,6 @@ namespace Braintrust
             else if (Global is { } __value1)
             {
                 global?.Invoke(__value1);
-            }
-            else if (NullableSavedFunctionIdVariant3 is { } __value2)
-            {
-                nullableSavedFunctionIdVariant3?.Invoke(__value2);
             }
         }
 
@@ -271,7 +219,6 @@ namespace Braintrust
         public void Switch(
             global::System.Action<global::Braintrust.NullableSavedFunctionIdFunction>? function = null,
             global::System.Action<global::Braintrust.NullableSavedFunctionIdGlobal>? global = null,
-            global::System.Action<object>? nullableSavedFunctionIdVariant3 = null,
             bool validate = true)
         {
             if (validate)
@@ -286,10 +233,6 @@ namespace Braintrust
             else if (Global is { } __value1)
             {
                 global?.Invoke(__value1);
-            }
-            else if (NullableSavedFunctionIdVariant3 is { } __value2)
-            {
-                nullableSavedFunctionIdVariant3?.Invoke(__value2);
             }
         }
 
@@ -304,8 +247,6 @@ namespace Braintrust
                 typeof(global::Braintrust.NullableSavedFunctionIdFunction),
                 Global,
                 typeof(global::Braintrust.NullableSavedFunctionIdGlobal),
-                NullableSavedFunctionIdVariant3,
-                typeof(object),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -323,8 +264,7 @@ namespace Braintrust
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.NullableSavedFunctionIdFunction?>.Default.Equals(Function, other.Function) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.NullableSavedFunctionIdGlobal?>.Default.Equals(Global, other.Global) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(NullableSavedFunctionIdVariant3, other.NullableSavedFunctionIdVariant3)
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.NullableSavedFunctionIdGlobal?>.Default.Equals(Global, other.Global)
                 ;
         }
 

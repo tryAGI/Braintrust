@@ -156,43 +156,6 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<global::Braintrust.NamedScore> PickScoreResultVariant4() => ScoreResultVariant4 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScoreResultVariant4' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public object? ScoreResultVariant5 { get; init; }
-#else
-        public object? ScoreResultVariant5 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScoreResultVariant5))]
-#endif
-        public bool IsScoreResultVariant5 => ScoreResultVariant5 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickScoreResultVariant5(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out object? value)
-        {
-            value = ScoreResultVariant5;
-            return IsScoreResultVariant5;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public object PickScoreResultVariant5() => ScoreResultVariant5 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScoreResultVariant5' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -269,22 +232,19 @@ namespace Braintrust
             global::Braintrust.ScoreObject? objectValue,
             global::Braintrust.NamedScore? named,
             global::Braintrust.AnyOf<double?, bool?>? scoreResultVariant3,
-            global::System.Collections.Generic.IList<global::Braintrust.NamedScore>? scoreResultVariant4,
-            object? scoreResultVariant5
+            global::System.Collections.Generic.IList<global::Braintrust.NamedScore>? scoreResultVariant4
             )
         {
             ObjectValue = objectValue;
             Named = named;
             ScoreResultVariant3 = scoreResultVariant3;
             ScoreResultVariant4 = scoreResultVariant4;
-            ScoreResultVariant5 = scoreResultVariant5;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            ScoreResultVariant5 as object ??
             ScoreResultVariant4 as object ??
             ScoreResultVariant3 as object ??
             Named as object ??
@@ -298,8 +258,7 @@ namespace Braintrust
             ObjectValue?.ToString() ??
             Named?.ToString() ??
             ScoreResultVariant3?.ToString() ??
-            ScoreResultVariant4?.ToString() ??
-            ScoreResultVariant5?.ToString()
+            ScoreResultVariant4?.ToString()
             ;
 
         /// <summary>
@@ -307,7 +266,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsObjectValue || IsNamed || IsScoreResultVariant3 || IsScoreResultVariant4 || IsScoreResultVariant5;
+            return IsObjectValue || IsNamed || IsScoreResultVariant3 || IsScoreResultVariant4;
         }
 
         /// <summary>
@@ -318,7 +277,6 @@ namespace Braintrust
             global::System.Func<global::Braintrust.NamedScore, TResult>? named = null,
             global::System.Func<global::Braintrust.AnyOf<double?, bool?>?, TResult>? scoreResultVariant3 = null,
             global::System.Func<global::System.Collections.Generic.IList<global::Braintrust.NamedScore>, TResult>? scoreResultVariant4 = null,
-            global::System.Func<object, TResult>? scoreResultVariant5 = null,
             bool validate = true)
         {
             if (validate)
@@ -342,10 +300,6 @@ namespace Braintrust
             {
                 return scoreResultVariant4(__value3);
             }
-            else if (ScoreResultVariant5 is { } __value4 && scoreResultVariant5 != null)
-            {
-                return scoreResultVariant5(__value4);
-            }
 
             return default(TResult);
         }
@@ -361,8 +315,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.AnyOf<double?, bool?>?>? scoreResultVariant3 = null,
 
             global::System.Action<global::System.Collections.Generic.IList<global::Braintrust.NamedScore>>? scoreResultVariant4 = null,
-
-            global::System.Action<object>? scoreResultVariant5 = null,
             bool validate = true)
         {
             if (validate)
@@ -385,10 +337,6 @@ namespace Braintrust
             else if (ScoreResultVariant4 is { } __value3)
             {
                 scoreResultVariant4?.Invoke(__value3);
-            }
-            else if (ScoreResultVariant5 is { } __value4)
-            {
-                scoreResultVariant5?.Invoke(__value4);
             }
         }
 
@@ -400,7 +348,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.NamedScore>? named = null,
             global::System.Action<global::Braintrust.AnyOf<double?, bool?>?>? scoreResultVariant3 = null,
             global::System.Action<global::System.Collections.Generic.IList<global::Braintrust.NamedScore>>? scoreResultVariant4 = null,
-            global::System.Action<object>? scoreResultVariant5 = null,
             bool validate = true)
         {
             if (validate)
@@ -423,10 +370,6 @@ namespace Braintrust
             else if (ScoreResultVariant4 is { } __value3)
             {
                 scoreResultVariant4?.Invoke(__value3);
-            }
-            else if (ScoreResultVariant5 is { } __value4)
-            {
-                scoreResultVariant5?.Invoke(__value4);
             }
         }
 
@@ -445,8 +388,6 @@ namespace Braintrust
                 typeof(global::Braintrust.AnyOf<double?, bool?>),
                 ScoreResultVariant4,
                 typeof(global::System.Collections.Generic.IList<global::Braintrust.NamedScore>),
-                ScoreResultVariant5,
-                typeof(object),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -466,8 +407,7 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.ScoreObject?>.Default.Equals(ObjectValue, other.ObjectValue) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.NamedScore?>.Default.Equals(Named, other.Named) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.AnyOf<double?, bool?>?>.Default.Equals(ScoreResultVariant3, other.ScoreResultVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Braintrust.NamedScore>?>.Default.Equals(ScoreResultVariant4, other.ScoreResultVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(ScoreResultVariant5, other.ScoreResultVariant5)
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Braintrust.NamedScore>?>.Default.Equals(ScoreResultVariant4, other.ScoreResultVariant4)
                 ;
         }
 

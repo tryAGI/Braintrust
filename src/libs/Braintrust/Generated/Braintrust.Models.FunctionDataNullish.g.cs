@@ -341,43 +341,6 @@ namespace Braintrust
         public global::Braintrust.AllOf<global::Braintrust.TopicMapData, object> PickFunctionDataNullishVariant9() => FunctionDataNullishVariant9 is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionDataNullishVariant9' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public object? FunctionDataNullishVariant10 { get; init; }
-#else
-        public object? FunctionDataNullishVariant10 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(FunctionDataNullishVariant10))]
-#endif
-        public bool IsFunctionDataNullishVariant10 => FunctionDataNullishVariant10 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickFunctionDataNullishVariant10(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out object? value)
-        {
-            value = FunctionDataNullishVariant10;
-            return IsFunctionDataNullishVariant10;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public object PickFunctionDataNullishVariant10() => FunctionDataNullishVariant10 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'FunctionDataNullishVariant10' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -597,8 +560,7 @@ namespace Braintrust
             global::Braintrust.FacetData? facet,
             global::Braintrust.BatchedFacetData? batchedFacet,
             global::Braintrust.FunctionDataNullishParameters? parameters,
-            global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? functionDataNullishVariant9,
-            object? functionDataNullishVariant10
+            global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? functionDataNullishVariant9
             )
         {
             Prompt = prompt;
@@ -610,14 +572,12 @@ namespace Braintrust
             BatchedFacet = batchedFacet;
             Parameters = parameters;
             FunctionDataNullishVariant9 = functionDataNullishVariant9;
-            FunctionDataNullishVariant10 = functionDataNullishVariant10;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            FunctionDataNullishVariant10 as object ??
             FunctionDataNullishVariant9 as object ??
             Parameters as object ??
             BatchedFacet as object ??
@@ -641,8 +601,7 @@ namespace Braintrust
             Facet?.ToString() ??
             BatchedFacet?.ToString() ??
             Parameters?.ToString() ??
-            FunctionDataNullishVariant9?.ToString() ??
-            FunctionDataNullishVariant10?.ToString()
+            FunctionDataNullishVariant9?.ToString()
             ;
 
         /// <summary>
@@ -650,7 +609,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsPrompt || IsCode || IsGraph || IsRemoteEval || IsGlobal || IsFacet || IsBatchedFacet || IsParameters || IsFunctionDataNullishVariant9 || IsFunctionDataNullishVariant10;
+            return IsPrompt || IsCode || IsGraph || IsRemoteEval || IsGlobal || IsFacet || IsBatchedFacet || IsParameters || IsFunctionDataNullishVariant9;
         }
 
         /// <summary>
@@ -666,7 +625,6 @@ namespace Braintrust
             global::System.Func<global::Braintrust.BatchedFacetData, TResult>? batchedFacet = null,
             global::System.Func<global::Braintrust.FunctionDataNullishParameters, TResult>? parameters = null,
             global::System.Func<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?, TResult>? functionDataNullishVariant9 = null,
-            global::System.Func<object, TResult>? functionDataNullishVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -710,10 +668,6 @@ namespace Braintrust
             {
                 return functionDataNullishVariant9(__value8);
             }
-            else if (FunctionDataNullishVariant10 is { } __value9 && functionDataNullishVariant10 != null)
-            {
-                return functionDataNullishVariant10(__value9);
-            }
 
             return default(TResult);
         }
@@ -739,8 +693,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.FunctionDataNullishParameters>? parameters = null,
 
             global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataNullishVariant9 = null,
-
-            global::System.Action<object>? functionDataNullishVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -783,10 +735,6 @@ namespace Braintrust
             else if (FunctionDataNullishVariant9 is { } __value8)
             {
                 functionDataNullishVariant9?.Invoke(__value8);
-            }
-            else if (FunctionDataNullishVariant10 is { } __value9)
-            {
-                functionDataNullishVariant10?.Invoke(__value9);
             }
         }
 
@@ -803,7 +751,6 @@ namespace Braintrust
             global::System.Action<global::Braintrust.BatchedFacetData>? batchedFacet = null,
             global::System.Action<global::Braintrust.FunctionDataNullishParameters>? parameters = null,
             global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataNullishVariant9 = null,
-            global::System.Action<object>? functionDataNullishVariant10 = null,
             bool validate = true)
         {
             if (validate)
@@ -846,10 +793,6 @@ namespace Braintrust
             else if (FunctionDataNullishVariant9 is { } __value8)
             {
                 functionDataNullishVariant9?.Invoke(__value8);
-            }
-            else if (FunctionDataNullishVariant10 is { } __value9)
-            {
-                functionDataNullishVariant10?.Invoke(__value9);
             }
         }
 
@@ -878,8 +821,6 @@ namespace Braintrust
                 typeof(global::Braintrust.FunctionDataNullishParameters),
                 FunctionDataNullishVariant9,
                 typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>),
-                FunctionDataNullishVariant10,
-                typeof(object),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -904,8 +845,7 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FacetData?>.Default.Equals(Facet, other.Facet) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.BatchedFacetData?>.Default.Equals(BatchedFacet, other.BatchedFacet) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataNullishParameters?>.Default.Equals(Parameters, other.Parameters) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>.Default.Equals(FunctionDataNullishVariant9, other.FunctionDataNullishVariant9) &&
-                global::System.Collections.Generic.EqualityComparer<object?>.Default.Equals(FunctionDataNullishVariant10, other.FunctionDataNullishVariant10)
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>.Default.Equals(FunctionDataNullishVariant9, other.FunctionDataNullishVariant9)
                 ;
         }
 
