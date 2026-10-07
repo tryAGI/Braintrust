@@ -23,6 +23,12 @@ namespace Braintrust
         public required string ServiceAccountEmail { get; set; }
 
         /// <summary>
+        /// The name of a Google workload identity federation credential configured in this organization's AI providers. Supported data planes can use it regardless of hosting environment. If omitted, the data plane's GCP identity is used.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credential_name")]
+        public string? CredentialName { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -35,15 +41,20 @@ namespace Braintrust
         /// The GCP service account email to impersonate
         /// </param>
         /// <param name="type"></param>
+        /// <param name="credentialName">
+        /// The name of a Google workload identity federation credential configured in this organization's AI providers. Supported data planes can use it regardless of hosting environment. If omitted, the data plane's GCP identity is used.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectAutomationConfigVariant2CredentialsVariant2(
             string serviceAccountEmail,
-            global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2Type type)
+            global::Braintrust.CreateProjectAutomationConfigVariant2CredentialsVariant2Type type,
+            string? credentialName)
         {
             this.Type = type;
             this.ServiceAccountEmail = serviceAccountEmail ?? throw new global::System.ArgumentNullException(nameof(serviceAccountEmail));
+            this.CredentialName = credentialName;
         }
 
         /// <summary>

@@ -14,6 +14,10 @@ namespace Braintrust
         /// </summary>
         AiProvider,
         /// <summary>
+        ///
+        /// </summary>
+        AutomationIntegration,
+        /// <summary>
         /// env_var for regular environment variables, ai_provider for AI provider API keys
         /// </summary>
         EnvVar,
@@ -36,6 +40,7 @@ namespace Braintrust
             return value switch
             {
                 EnvVarSecretCategory.AiProvider => "ai_provider",
+                EnvVarSecretCategory.AutomationIntegration => "automation_integration",
                 EnvVarSecretCategory.EnvVar => "env_var",
                 EnvVarSecretCategory.SandboxProvider => "sandbox_provider",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -49,6 +54,7 @@ namespace Braintrust
             return value switch
             {
                 "ai_provider" => EnvVarSecretCategory.AiProvider,
+                "automation_integration" => EnvVarSecretCategory.AutomationIntegration,
                 "env_var" => EnvVarSecretCategory.EnvVar,
                 "sandbox_provider" => EnvVarSecretCategory.SandboxProvider,
                 _ => null,

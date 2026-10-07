@@ -40,9 +40,9 @@ namespace Braintrust
         /// The action to take when the automation rule is triggered
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant3>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2> Action { get; set; }
+        public required global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant3> Action { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -74,7 +74,7 @@ namespace Braintrust
         public PatchProjectAutomationConfigVariant1(
             string btqlFilter,
             double intervalSeconds,
-            global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2> action,
+            global::Braintrust.OneOf<global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant1, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant2, global::Braintrust.PatchProjectAutomationConfigVariant1ActionVariant3> action,
             global::Braintrust.PatchProjectAutomationConfigVariant1EventType eventType,
             global::Braintrust.AutomationStatus? status)
         {

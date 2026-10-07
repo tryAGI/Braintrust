@@ -37,14 +37,14 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<string>? AutoApproveTools { get; set; }
 
         /// <summary>
-        ///
+        /// Required when saving a Loop automation. Currently only Codex is supported.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("harness")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessJsonConverter))]
         public global::Braintrust.WindowedAutomationConfigLoopHarness? Harness { get; set; }
 
         /// <summary>
-        ///
+        /// Required when saving a Loop automation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         public string? Model { get; set; }
@@ -85,8 +85,12 @@ namespace Braintrust
         /// Write tools that may run without interactive approval<br/>
         /// Default Value: []
         /// </param>
-        /// <param name="harness"></param>
-        /// <param name="model"></param>
+        /// <param name="harness">
+        /// Required when saving a Loop automation. Currently only Codex is supported.
+        /// </param>
+        /// <param name="model">
+        /// Required when saving a Loop automation.
+        /// </param>
         /// <param name="endpointName"></param>
         /// <param name="reasoningEffort"></param>
 #if NET7_0_OR_GREATER

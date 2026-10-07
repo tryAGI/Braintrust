@@ -53,7 +53,7 @@ namespace Braintrust
         /// Default Value: []
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("actions")]
-        public global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2>>? Actions { get; set; }
+        public global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>? Actions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -94,7 +94,7 @@ namespace Braintrust
             global::Braintrust.AutomationStatus? status,
             global::Braintrust.WindowedAutomationConfigThreshold? threshold,
             global::Braintrust.WindowedAutomationConfigLoop? loop,
-            global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2>>? actions)
+            global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>? actions)
         {
             this.EventType = eventType;
             this.ProductOrigin = productOrigin;
