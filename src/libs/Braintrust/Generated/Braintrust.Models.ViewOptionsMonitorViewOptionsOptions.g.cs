@@ -11,6 +11,13 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("filterScope")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsFilterScopeJsonConverter))]
+        public global::Braintrust.ViewOptionsMonitorViewOptionsOptionsFilterScope? FilterScope { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("spanType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ViewOptionsMonitorViewOptionsOptionsSpanTypeJsonConverter))]
         public global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType? SpanType { get; set; }
@@ -73,6 +80,7 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="ViewOptionsMonitorViewOptionsOptions" /> class.
         /// </summary>
+        /// <param name="filterScope"></param>
         /// <param name="spanType"></param>
         /// <param name="rangeValue"></param>
         /// <param name="frameStart"></param>
@@ -86,6 +94,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ViewOptionsMonitorViewOptionsOptions(
+            global::Braintrust.ViewOptionsMonitorViewOptionsOptionsFilterScope? filterScope,
             global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType? spanType,
             string? rangeValue,
             string? frameStart,
@@ -96,6 +105,7 @@ namespace Braintrust
             global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType? type,
             string? groupBy)
         {
+            this.FilterScope = filterScope;
             this.SpanType = spanType;
             this.RangeValue = rangeValue;
             this.FrameStart = frameStart;

@@ -190,6 +190,11 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        public SimulatedUsersClient SimulatedUsers { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public SpanIframesClient SpanIframes { get; }
 
         /// <summary>

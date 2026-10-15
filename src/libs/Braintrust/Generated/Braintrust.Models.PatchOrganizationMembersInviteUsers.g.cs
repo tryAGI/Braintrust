@@ -57,6 +57,12 @@ namespace Braintrust
         public string? GroupName { get; set; }
 
         /// <summary>
+        /// Grants new service accounts read access to this project group. Required when a project-group Owner creates service accounts.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("project_group_id")]
+        public global::System.Guid? ProjectGroupId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -89,6 +95,9 @@ namespace Braintrust
         /// <param name="groupName">
         /// Singular form of group_names
         /// </param>
+        /// <param name="projectGroupId">
+        /// Grants new service accounts read access to this project group. Required when a project-group Owner creates service accounts.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -100,7 +109,8 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::System.Guid>? groupIds,
             global::System.Collections.Generic.IList<string>? groupNames,
             global::System.Guid? groupId,
-            string? groupName)
+            string? groupName,
+            global::System.Guid? projectGroupId)
         {
             this.Ids = ids;
             this.Emails = emails;
@@ -110,6 +120,7 @@ namespace Braintrust
             this.GroupNames = groupNames;
             this.GroupId = groupId;
             this.GroupName = groupName;
+            this.ProjectGroupId = projectGroupId;
         }
 
         /// <summary>

@@ -38,6 +38,7 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("freezeColumns")) __score0++;
             if (__jsonProps.Contains("options")) __score0++;
             if (__jsonProps.Contains("options.chartVisibility")) __score0++;
+            if (__jsonProps.Contains("options.filterScope")) __score0++;
             if (__jsonProps.Contains("options.frameEnd")) __score0++;
             if (__jsonProps.Contains("options.frameStart")) __score0++;
             if (__jsonProps.Contains("options.groupBy")) __score0++;
