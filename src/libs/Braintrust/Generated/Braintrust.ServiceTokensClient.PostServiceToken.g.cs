@@ -53,7 +53,7 @@ namespace Braintrust
         /// <summary>
         /// Create service_token<br/>
         /// Create a new service token.<br/>
-        /// When calling this endpoint, you must authenticate using a service token that has organization-owner permissions. User API keys cannot be used.
+        /// Authenticate with a service token. A service token whose service account is an organization owner can create tokens for any service account. A service token whose service account holds the Owner role on a project group can create tokens for a service account in the same organization when the target account has a permission grant on a project group it owns. The calling service account must also hold all of the target account's permissions in the organization; otherwise the request returns 403. User API keys cannot be used.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -77,7 +77,7 @@ namespace Braintrust
         /// <summary>
         /// Create service_token<br/>
         /// Create a new service token.<br/>
-        /// When calling this endpoint, you must authenticate using a service token that has organization-owner permissions. User API keys cannot be used.
+        /// Authenticate with a service token. A service token whose service account is an organization owner can create tokens for any service account. A service token whose service account holds the Owner role on a project group can create tokens for a service account in the same organization when the target account has a permission grant on a project group it owns. The calling service account must also hold all of the target account's permissions in the organization; otherwise the request returns 403. User API keys cannot be used.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -632,7 +632,7 @@ namespace Braintrust
         /// <summary>
         /// Create service_token<br/>
         /// Create a new service token.<br/>
-        /// When calling this endpoint, you must authenticate using a service token that has organization-owner permissions. User API keys cannot be used.
+        /// Authenticate with a service token. A service token whose service account is an organization owner can create tokens for any service account. A service token whose service account holds the Owner role on a project group can create tokens for a service account in the same organization when the target account has a permission grant on a project group it owns. The calling service account must also hold all of the target account's permissions in the organization; otherwise the request returns 403. User API keys cannot be used.
         /// </summary>
         /// <param name="name">
         /// Name of the service token. Does not have to be unique

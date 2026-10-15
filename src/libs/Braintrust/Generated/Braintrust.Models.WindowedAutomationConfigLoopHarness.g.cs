@@ -20,6 +20,10 @@ namespace Braintrust
         ///
         /// </summary>
         Native,
+        /// <summary>
+        ///
+        /// </summary>
+        Pi,
     }
 
     /// <summary>
@@ -37,6 +41,7 @@ namespace Braintrust
                 WindowedAutomationConfigLoopHarness.ClaudeCode => "claude-code",
                 WindowedAutomationConfigLoopHarness.Codex => "codex",
                 WindowedAutomationConfigLoopHarness.Native => "native",
+                WindowedAutomationConfigLoopHarness.Pi => "pi",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -50,6 +55,7 @@ namespace Braintrust
                 "claude-code" => WindowedAutomationConfigLoopHarness.ClaudeCode,
                 "codex" => WindowedAutomationConfigLoopHarness.Codex,
                 "native" => WindowedAutomationConfigLoopHarness.Native,
+                "pi" => WindowedAutomationConfigLoopHarness.Pi,
                 _ => null,
             };
         }

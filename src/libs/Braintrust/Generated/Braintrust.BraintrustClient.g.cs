@@ -304,6 +304,15 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        public SimulatedUsersClient SimulatedUsers => new SimulatedUsersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
         public SpanIframesClient SpanIframes => new SpanIframesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

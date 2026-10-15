@@ -19,6 +19,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        Decision,
+        /// <summary>
+        ///
+        /// </summary>
         Eval,
         /// <summary>
         ///
@@ -76,6 +80,7 @@ namespace Braintrust
             {
                 SpanType.Automation => "automation",
                 SpanType.Classifier => "classifier",
+                SpanType.Decision => "decision",
                 SpanType.Eval => "eval",
                 SpanType.Facet => "facet",
                 SpanType.Function => "function",
@@ -99,6 +104,7 @@ namespace Braintrust
             {
                 "automation" => SpanType.Automation,
                 "classifier" => SpanType.Classifier,
+                "decision" => SpanType.Decision,
                 "eval" => SpanType.Eval,
                 "facet" => SpanType.Facet,
                 "function" => SpanType.Function,

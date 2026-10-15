@@ -16,10 +16,10 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Ids), TypeInfoPropertyName = "Ids2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Guid>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.RetentionObjectType), TypeInfoPropertyName = "RetentionObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OrgAutomation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OrgAutomationConfig))]
@@ -33,9 +33,9 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GetOrgAutomationResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.OrgAutomation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Ids?), TypeInfoPropertyName = "NullableIds2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.RetentionObjectType?), TypeInfoPropertyName = "NullableRetentionObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OrgAutomationConfigEventType?), TypeInfoPropertyName = "NullableOrgAutomationConfigEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CreateOrgAutomationConfigEventType?), TypeInfoPropertyName = "NullableCreateOrgAutomationConfigEventType2")]
@@ -94,6 +94,7 @@ namespace Braintrust
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.Dictionary<string, object?>, string>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>());
             options.Converters.Add(new global::Braintrust.JsonConverters.UnixTimestampJsonConverter());
             options.Converters.Add(new LazyEnumJsonConverterFactory());

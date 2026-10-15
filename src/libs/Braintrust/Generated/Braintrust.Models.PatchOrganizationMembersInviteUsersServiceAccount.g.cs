@@ -16,7 +16,7 @@ namespace Braintrust
         public required string Name { get; set; }
 
         /// <summary>
-        /// Optional name of an initial service token to create for the new service account. This is a narrow compatibility carve-out only on PATCH /v1/organization/members. When this field is set, the request must be authenticated with a service token that has organization-owner permissions, not a user API key.
+        /// Optional name of an initial service token to create for the new service account. When set, authenticate with a UI session or service token, not a user API key. The caller must own the organization or the project group specified by invite_users.project_group_id.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("token_name")]
         public string? TokenName { get; set; }
@@ -38,7 +38,7 @@ namespace Braintrust
         /// </summary>
         /// <param name="name"></param>
         /// <param name="tokenName">
-        /// Optional name of an initial service token to create for the new service account. This is a narrow compatibility carve-out only on PATCH /v1/organization/members. When this field is set, the request must be authenticated with a service token that has organization-owner permissions, not a user API key.
+        /// Optional name of an initial service token to create for the new service account. When set, authenticate with a UI session or service token, not a user API key. The caller must own the organization or the project group specified by invite_users.project_group_id.
         /// </param>
         /// <param name="tokenExpiresInSeconds">
         /// Number of seconds from now after which the initial service token should expire. If omitted, the token never expires.
