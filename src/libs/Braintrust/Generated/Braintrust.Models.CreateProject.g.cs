@@ -28,7 +28,7 @@ namespace Braintrust
         public string? OrgName { get; set; }
 
         /// <summary>
-        /// Create the project within the named project group in this organization. Requires project_group:update and either project_group_projects:create on the group or org_project:create on the organization.
+        /// Create the project within the named project group in this organization. Requires project_group:update on the group's definition.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project_group_name")]
         public string? ProjectGroupName { get; set; }
@@ -52,7 +52,7 @@ namespace Braintrust
         /// For nearly all users, this parameter should be unnecessary. But in the rare case that your API key belongs to multiple organizations, you may specify the name of the organization the project belongs in.
         /// </param>
         /// <param name="projectGroupName">
-        /// Create the project within the named project group in this organization. Requires project_group:update and either project_group_projects:create on the group or org_project:create on the organization.
+        /// Create the project within the named project group in this organization. Requires project_group:update on the group's definition.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
