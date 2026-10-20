@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// A project group is a collection of projects which can inherit access from project-group ACLs
+    /// A project group is a collection of projects which inherit access from project_group_projects ACLs. The group's definition and membership are governed separately by project_group ACLs.
     /// </summary>
     public sealed partial class ProjectGroup
     {
@@ -55,7 +55,7 @@ namespace Braintrust
         public global::System.DateTime? DeletedAt { get; set; }
 
         /// <summary>
-        /// Sorted ids of active projects in this project group
+        /// Sorted ids of active projects in this project group. Modifying membership requires project_group:update on the group.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("member_projects")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -81,7 +81,7 @@ namespace Braintrust
         /// Name of the project group
         /// </param>
         /// <param name="memberProjects">
-        /// Sorted ids of active projects in this project group
+        /// Sorted ids of active projects in this project group. Modifying membership requires project_group:update on the group.
         /// </param>
         /// <param name="userId">
         /// Identifies the user who created the project group

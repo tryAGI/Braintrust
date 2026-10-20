@@ -63,6 +63,12 @@ namespace Braintrust
         public global::Braintrust.WindowedAutomationConfigLoopReasoningEffort? ReasoningEffort { get; set; }
 
         /// <summary>
+        /// The object this automation writes to or maintains
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        public global::Braintrust.WindowedAutomationConfigLoopTarget? Target { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -93,6 +99,9 @@ namespace Braintrust
         /// </param>
         /// <param name="endpointName"></param>
         /// <param name="reasoningEffort"></param>
+        /// <param name="target">
+        /// The object this automation writes to or maintains
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -104,7 +113,8 @@ namespace Braintrust
             global::Braintrust.WindowedAutomationConfigLoopHarness? harness,
             string? model,
             string? endpointName,
-            global::Braintrust.WindowedAutomationConfigLoopReasoningEffort? reasoningEffort)
+            global::Braintrust.WindowedAutomationConfigLoopReasoningEffort? reasoningEffort,
+            global::Braintrust.WindowedAutomationConfigLoopTarget? target)
         {
             this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
             this.IncludeTriggerInput = includeTriggerInput;
@@ -114,6 +124,7 @@ namespace Braintrust
             this.Model = model;
             this.EndpointName = endpointName;
             this.ReasoningEffort = reasoningEffort;
+            this.Target = target;
         }
 
         /// <summary>
