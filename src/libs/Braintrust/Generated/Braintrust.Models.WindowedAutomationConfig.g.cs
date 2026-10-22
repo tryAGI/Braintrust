@@ -30,6 +30,12 @@ namespace Braintrust
         public global::Braintrust.AutomationStatus? Status { get; set; }
 
         /// <summary>
+        /// Between scheduled runs, check for accumulated new work. The executor decides how to process it.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("continuous")]
+        public bool? Continuous { get; set; }
+
+        /// <summary>
         /// Optional calculation and lifecycle policy that gate scheduled delivery
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("threshold")]
@@ -74,6 +80,9 @@ namespace Braintrust
         /// <param name="status">
         /// Whether the automation is active or paused.
         /// </param>
+        /// <param name="continuous">
+        /// Between scheduled runs, check for accumulated new work. The executor decides how to process it.
+        /// </param>
         /// <param name="threshold">
         /// Optional calculation and lifecycle policy that gate scheduled delivery
         /// </param>
@@ -92,6 +101,7 @@ namespace Braintrust
             global::Braintrust.WindowedAutomationConfigEventType eventType,
             global::Braintrust.WindowedAutomationConfigProductOrigin? productOrigin,
             global::Braintrust.AutomationStatus? status,
+            bool? continuous,
             global::Braintrust.WindowedAutomationConfigThreshold? threshold,
             global::Braintrust.WindowedAutomationConfigLoop? loop,
             global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>? actions)
@@ -99,6 +109,7 @@ namespace Braintrust
             this.EventType = eventType;
             this.ProductOrigin = productOrigin;
             this.Status = status;
+            this.Continuous = continuous;
             this.Threshold = threshold;
             this.Window = window ?? throw new global::System.ArgumentNullException(nameof(window));
             this.Loop = loop;
