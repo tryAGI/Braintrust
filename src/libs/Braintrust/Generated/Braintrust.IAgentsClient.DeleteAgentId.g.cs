@@ -6,7 +6,7 @@ namespace Braintrust
     {
         /// <summary>
         /// Delete agent<br/>
-        /// Delete a agent object by its id
+        /// Delete an agent object by its id
         /// </summary>
         /// <param name="agentId">
         /// Agent id
@@ -20,7 +20,7 @@ namespace Braintrust
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete agent<br/>
-        /// Delete a agent object by its id
+        /// Delete an agent object by its id
         /// </summary>
         /// <param name="agentId">
         /// Agent id

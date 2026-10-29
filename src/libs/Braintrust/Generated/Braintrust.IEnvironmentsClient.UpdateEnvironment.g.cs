@@ -5,7 +5,8 @@ namespace Braintrust
     public partial interface IEnvironmentsClient
     {
         /// <summary>
-        /// Partially update environment
+        /// Partially update environment<br/>
+        /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="request"></param>
@@ -19,7 +20,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Partially update environment
+        /// Partially update environment<br/>
+        /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="request"></param>
@@ -33,7 +35,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Partially update environment
+        /// Partially update environment<br/>
+        /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="name">

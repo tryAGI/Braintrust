@@ -69,7 +69,7 @@ namespace Braintrust
         /// Whether the experiment should be public. Defaults to false.
         /// </param>
         /// <param name="timeout">
-        /// The maximum duration, in milliseconds, to run the evaluation. Defaults to undefined, in which case there is no timeout.
+        /// The maximum duration, in milliseconds, to run the evaluation. There is no timeout by default.
         /// </param>
         /// <param name="maxConcurrency">
         /// The maximum number of tasks/scorers that will be run concurrently. Defaults to 10. If null is provided, no max concurrency will be used.<br/>

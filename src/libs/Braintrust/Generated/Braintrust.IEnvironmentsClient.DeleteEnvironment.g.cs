@@ -5,7 +5,8 @@ namespace Braintrust
     public partial interface IEnvironmentsClient
     {
         /// <summary>
-        /// Delete environment
+        /// Delete environment<br/>
+        /// Delete an environment object by its id
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -16,7 +17,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete environment
+        /// Delete environment<br/>
+        /// Delete an environment object by its id
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

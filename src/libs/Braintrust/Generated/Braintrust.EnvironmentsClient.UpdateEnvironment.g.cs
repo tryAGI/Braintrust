@@ -53,7 +53,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Partially update environment
+        /// Partially update environment<br/>
+        /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="request"></param>
@@ -78,7 +79,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Partially update environment
+        /// Partially update environment<br/>
+        /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="request"></param>
@@ -635,7 +637,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Partially update environment
+        /// Partially update environment<br/>
+        /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="name">

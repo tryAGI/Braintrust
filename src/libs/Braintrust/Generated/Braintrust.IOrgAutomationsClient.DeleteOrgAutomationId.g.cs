@@ -6,7 +6,7 @@ namespace Braintrust
     {
         /// <summary>
         /// Delete org_automation<br/>
-        /// Delete a org_automation object by its id
+        /// Delete an org_automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id
@@ -20,7 +20,7 @@ namespace Braintrust
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete org_automation<br/>
-        /// Delete a org_automation object by its id
+        /// Delete an org_automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id

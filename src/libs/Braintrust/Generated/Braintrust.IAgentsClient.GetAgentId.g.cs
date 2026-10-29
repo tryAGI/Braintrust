@@ -6,7 +6,7 @@ namespace Braintrust
     {
         /// <summary>
         /// Get agent<br/>
-        /// Get a agent object by its id
+        /// Get an agent object by its id
         /// </summary>
         /// <param name="agentId">
         /// Agent id
@@ -20,7 +20,7 @@ namespace Braintrust
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Get agent<br/>
-        /// Get a agent object by its id
+        /// Get an agent object by its id
         /// </summary>
         /// <param name="agentId">
         /// Agent id

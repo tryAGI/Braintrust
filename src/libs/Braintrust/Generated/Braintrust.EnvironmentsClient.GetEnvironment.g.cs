@@ -51,7 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get environment
+        /// Get environment<br/>
+        /// Get an environment object by its id
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -71,7 +72,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get environment
+        /// Get environment<br/>
+        /// Get an environment object by its id
         /// </summary>
         /// <param name="environmentId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

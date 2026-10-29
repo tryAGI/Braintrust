@@ -6,7 +6,7 @@ namespace Braintrust
     {
         /// <summary>
         /// Get org_automation<br/>
-        /// Get a org_automation object by its id
+        /// Get an org_automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id
@@ -20,7 +20,7 @@ namespace Braintrust
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Get org_automation<br/>
-        /// Get a org_automation object by its id
+        /// Get an org_automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id

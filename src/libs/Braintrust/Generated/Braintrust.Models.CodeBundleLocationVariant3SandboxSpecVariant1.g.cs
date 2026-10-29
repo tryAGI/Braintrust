@@ -16,7 +16,7 @@ namespace Braintrust
         public global::Braintrust.CodeBundleLocationVariant3SandboxSpecVariant1Provider Provider { get; set; }
 
         /// <summary>
-        /// sandbox snapshot ref
+        /// The Modal snapshot to start the sandbox from
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("snapshot_ref")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,7 +32,7 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="CodeBundleLocationVariant3SandboxSpecVariant1" /> class.
         /// </summary>
         /// <param name="snapshotRef">
-        /// sandbox snapshot ref
+        /// The Modal snapshot to start the sandbox from
         /// </param>
         /// <param name="provider"></param>
 #if NET7_0_OR_GREATER
