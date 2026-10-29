@@ -39,19 +39,19 @@ namespace Braintrust
         public int? Tokens { get; set; }
 
         /// <summary>
-        /// This metric is deprecated
+        /// Deprecated. Use `context.caller_functionname` instead.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("caller_functionname")]
         public object? CallerFunctionname { get; set; }
 
         /// <summary>
-        /// This metric is deprecated
+        /// Deprecated. Use `context.caller_filename` instead.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("caller_filename")]
         public object? CallerFilename { get; set; }
 
         /// <summary>
-        /// This metric is deprecated
+        /// Deprecated. Use `context.caller_lineno` instead.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("caller_lineno")]
         public object? CallerLineno { get; set; }
@@ -81,13 +81,13 @@ namespace Braintrust
         /// The total number of tokens in the input and output of the project logs event.
         /// </param>
         /// <param name="callerFunctionname">
-        /// This metric is deprecated
+        /// Deprecated. Use `context.caller_functionname` instead.
         /// </param>
         /// <param name="callerFilename">
-        /// This metric is deprecated
+        /// Deprecated. Use `context.caller_filename` instead.
         /// </param>
         /// <param name="callerLineno">
-        /// This metric is deprecated
+        /// Deprecated. Use `context.caller_lineno` instead.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

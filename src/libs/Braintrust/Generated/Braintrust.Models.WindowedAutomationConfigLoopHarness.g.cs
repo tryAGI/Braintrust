@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// Required when saving a Loop automation. Currently only Codex is supported.
+    /// Required for an explicit model selection. Currently only Codex is supported.
     /// </summary>
     public enum WindowedAutomationConfigLoopHarness
     {

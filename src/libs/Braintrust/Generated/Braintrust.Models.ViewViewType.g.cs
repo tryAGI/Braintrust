@@ -55,6 +55,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        Patterns,
+        /// <summary>
+        ///
+        /// </summary>
         Playground,
         /// <summary>
         ///
@@ -101,6 +105,7 @@ namespace Braintrust
                 ViewViewType.Logs => "logs",
                 ViewViewType.Monitor => "monitor",
                 ViewViewType.Parameters => "parameters",
+                ViewViewType.Patterns => "patterns",
                 ViewViewType.Playground => "playground",
                 ViewViewType.Playgrounds => "playgrounds",
                 ViewViewType.Projects => "projects",
@@ -128,6 +133,7 @@ namespace Braintrust
                 "logs" => ViewViewType.Logs,
                 "monitor" => ViewViewType.Monitor,
                 "parameters" => ViewViewType.Parameters,
+                "patterns" => ViewViewType.Patterns,
                 "playground" => ViewViewType.Playground,
                 "playgrounds" => ViewViewType.Playgrounds,
                 "projects" => ViewViewType.Projects,

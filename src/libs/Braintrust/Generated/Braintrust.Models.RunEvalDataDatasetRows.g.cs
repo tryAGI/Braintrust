@@ -16,6 +16,12 @@ namespace Braintrust
         public required global::System.Collections.Generic.IList<object?> Data { get; set; }
 
         /// <summary>
+        /// The saved dataset these rows came from. Its project scopes saved simulated-user references; the caller must have read access to the dataset and source project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source_dataset_id")]
+        public string? SourceDatasetId { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -25,13 +31,18 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="RunEvalDataDatasetRows" /> class.
         /// </summary>
         /// <param name="data"></param>
+        /// <param name="sourceDatasetId">
+        /// The saved dataset these rows came from. Its project scopes saved simulated-user references; the caller must have read access to the dataset and source project.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RunEvalDataDatasetRows(
-            global::System.Collections.Generic.IList<object?> data)
+            global::System.Collections.Generic.IList<object?> data,
+            string? sourceDatasetId)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.SourceDatasetId = sourceDatasetId;
         }
 
         /// <summary>

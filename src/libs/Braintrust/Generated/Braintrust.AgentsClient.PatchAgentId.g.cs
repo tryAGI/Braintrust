@@ -54,7 +54,7 @@ namespace Braintrust
 
         /// <summary>
         /// Partially update agent<br/>
-        /// Partially update a agent object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update an agent object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="agentId">
         /// Agent id
@@ -82,7 +82,7 @@ namespace Braintrust
         }
         /// <summary>
         /// Partially update agent<br/>
-        /// Partially update a agent object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update an agent object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="agentId">
         /// Agent id
@@ -642,7 +642,7 @@ namespace Braintrust
         }
         /// <summary>
         /// Partially update agent<br/>
-        /// Partially update a agent object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update an agent object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="agentId">
         /// Agent id

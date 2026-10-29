@@ -37,14 +37,14 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<string>? AutoApproveTools { get; set; }
 
         /// <summary>
-        /// Required when saving a Loop automation. Currently only Codex is supported.
+        /// Required for an explicit model selection. Currently only Codex is supported.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("harness")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopHarnessJsonConverter))]
         public global::Braintrust.WindowedAutomationConfigLoopHarness? Harness { get; set; }
 
         /// <summary>
-        /// Required when saving a Loop automation.
+        /// Omit harness, model, and endpoint_name to inherit the organization default provider and its recommended execution settings.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         public string? Model { get; set; }
@@ -92,10 +92,10 @@ namespace Braintrust
         /// Default Value: []
         /// </param>
         /// <param name="harness">
-        /// Required when saving a Loop automation. Currently only Codex is supported.
+        /// Required for an explicit model selection. Currently only Codex is supported.
         /// </param>
         /// <param name="model">
-        /// Required when saving a Loop automation.
+        /// Omit harness, model, and endpoint_name to inherit the organization default provider and its recommended execution settings.
         /// </param>
         /// <param name="endpointName"></param>
         /// <param name="reasoningEffort"></param>
