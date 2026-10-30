@@ -5,7 +5,7 @@ namespace Braintrust
     public partial interface IServiceTokensClient
     {
         /// <summary>
-        /// List service_tokens<br/>
+        /// List service tokens<br/>
         /// List out all service tokens. They are sorted by creation date, with the most recently-created tokens coming first.<br/>
         /// To create a service token, visit [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) as an organization owner or an Owner of an active project group in the organization, or call [`POST /v1/service_token`](https://www.braintrust.dev/docs/api-reference/servicetokens/create-service_token) with a service token. Results include only service tokens you can manage.
         /// </summary>
@@ -42,7 +42,7 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List service_tokens<br/>
+        /// List service tokens<br/>
         /// List out all service tokens. They are sorted by creation date, with the most recently-created tokens coming first.<br/>
         /// To create a service token, visit [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) as an organization owner or an Owner of an active project group in the organization, or call [`POST /v1/service_token`](https://www.braintrust.dev/docs/api-reference/servicetokens/create-service_token) with a service token. Results include only service tokens you can manage.
         /// </summary>

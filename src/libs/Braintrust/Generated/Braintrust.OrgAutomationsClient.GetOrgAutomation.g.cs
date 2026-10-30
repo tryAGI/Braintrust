@@ -61,8 +61,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// List org_automations<br/>
-        /// List out all org_automations. The org_automations are sorted by creation date, with the most recently-created org_automations coming first
+        /// List org automations<br/>
+        /// List out all org automations. The org automations are sorted by creation date, with the most recently-created org automations coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -111,8 +111,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// List org_automations<br/>
-        /// List out all org_automations. The org_automations are sorted by creation date, with the most recently-created org_automations coming first
+        /// List org automations<br/>
+        /// List out all org automations. The org automations are sorted by creation date, with the most recently-created org automations coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

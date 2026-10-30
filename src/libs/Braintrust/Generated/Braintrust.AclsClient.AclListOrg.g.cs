@@ -73,8 +73,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// List org acls<br/>
-        /// List all acls in the org. This query requires the caller to have `read_acls` permission at the organization level
+        /// List org ACLs<br/>
+        /// List all ACLs in the org. This query requires the caller to have `read_acls` permission at the organization level
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -154,8 +154,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// List org acls<br/>
-        /// List all acls in the org. This query requires the caller to have `read_acls` permission at the organization level
+        /// List org ACLs<br/>
+        /// List all ACLs in the org. This query requires the caller to have `read_acls` permission at the organization level
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

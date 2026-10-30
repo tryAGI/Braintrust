@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IAiSecretsClient
     {
         /// <summary>
-        /// Create or replace ai_secret<br/>
-        /// Create or replace ai_secret. If there is an existing ai_secret with the same name as the one specified in the request, will replace the existing ai_secret with the provided fields
+        /// Create or replace AI secret<br/>
+        /// Create or replace AI secret. If there is an existing AI secret with the same name as the one specified in the request, will replace the existing AI secret with the provided fields
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -18,8 +18,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create or replace ai_secret<br/>
-        /// Create or replace ai_secret. If there is an existing ai_secret with the same name as the one specified in the request, will replace the existing ai_secret with the provided fields
+        /// Create or replace AI secret<br/>
+        /// Create or replace AI secret. If there is an existing AI secret with the same name as the one specified in the request, will replace the existing AI secret with the provided fields
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -31,8 +31,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create or replace ai_secret<br/>
-        /// Create or replace ai_secret. If there is an existing ai_secret with the same name as the one specified in the request, will replace the existing ai_secret with the provided fields
+        /// Create or replace AI secret<br/>
+        /// Create or replace AI secret. If there is an existing AI secret with the same name as the one specified in the request, will replace the existing AI secret with the provided fields
         /// </summary>
         /// <param name="name">
         /// Name of the AI secret

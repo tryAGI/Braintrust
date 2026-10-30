@@ -53,8 +53,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Partially update project_score<br/>
-        /// Partially update a project_score object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project score<br/>
+        /// Partially update a project score object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectScoreId">
         /// ProjectScore id
@@ -81,8 +81,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Partially update project_score<br/>
-        /// Partially update a project_score object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project score<br/>
+        /// Partially update a project score object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectScoreId">
         /// ProjectScore id
@@ -641,8 +641,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Partially update project_score<br/>
-        /// Partially update a project_score object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project score<br/>
+        /// Partially update a project score object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectScoreId">
         /// ProjectScore id

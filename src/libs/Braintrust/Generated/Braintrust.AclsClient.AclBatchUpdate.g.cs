@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Batch update acls<br/>
-        /// Batch update acls. This operation is idempotent, so adding acls which already exist will have no effect, and removing acls which do not exist will have no effect.
+        /// Batch update ACLs<br/>
+        /// Batch update ACLs. This operation is idempotent, so adding ACLs which already exist will have no effect, and removing ACLs which do not exist will have no effect.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Batch update acls<br/>
-        /// Batch update acls. This operation is idempotent, so adding acls which already exist will have no effect, and removing acls which do not exist will have no effect.
+        /// Batch update ACLs<br/>
+        /// Batch update ACLs. This operation is idempotent, so adding ACLs which already exist will have no effect, and removing ACLs which do not exist will have no effect.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -628,8 +628,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Batch update acls<br/>
-        /// Batch update acls. This operation is idempotent, so adding acls which already exist will have no effect, and removing acls which do not exist will have no effect.
+        /// Batch update ACLs<br/>
+        /// Batch update ACLs. This operation is idempotent, so adding ACLs which already exist will have no effect, and removing ACLs which do not exist will have no effect.
         /// </summary>
         /// <param name="addAcls"></param>
         /// <param name="removeAcls"></param>

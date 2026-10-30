@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get ai_secret<br/>
-        /// Get an ai_secret object by its id
+        /// Get AI secret<br/>
+        /// Get an AI secret object by its id
         /// </summary>
         /// <param name="aiSecretId">
         /// AiSecret id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get ai_secret<br/>
-        /// Get an ai_secret object by its id
+        /// Get AI secret<br/>
+        /// Get an AI secret object by its id
         /// </summary>
         /// <param name="aiSecretId">
         /// AiSecret id

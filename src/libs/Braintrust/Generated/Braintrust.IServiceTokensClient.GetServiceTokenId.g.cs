@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IServiceTokensClient
     {
         /// <summary>
-        /// Get service_token<br/>
-        /// Get a service_token object by its id
+        /// Get service token<br/>
+        /// Get a service token object by its id
         /// </summary>
         /// <param name="serviceTokenId">
         /// ServiceToken id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Get service_token<br/>
-        /// Get a service_token object by its id
+        /// Get service token<br/>
+        /// Get a service token object by its id
         /// </summary>
         /// <param name="serviceTokenId">
         /// ServiceToken id

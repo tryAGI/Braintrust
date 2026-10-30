@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Create project_tag<br/>
-        /// Create a new project_tag. If there is an existing project_tag in the project with the same name as the one specified in the request, will return the existing project_tag unmodified
+        /// Create project tag<br/>
+        /// Create a new project tag. If there is an existing project tag in the project with the same name as the one specified in the request, will return the existing project tag unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Create project_tag<br/>
-        /// Create a new project_tag. If there is an existing project_tag in the project with the same name as the one specified in the request, will return the existing project_tag unmodified
+        /// Create project tag<br/>
+        /// Create a new project tag. If there is an existing project tag in the project with the same name as the one specified in the request, will return the existing project tag unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -628,8 +628,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Create project_tag<br/>
-        /// Create a new project_tag. If there is an existing project_tag in the project with the same name as the one specified in the request, will return the existing project_tag unmodified
+        /// Create project tag<br/>
+        /// Create a new project tag. If there is an existing project tag in the project with the same name as the one specified in the request, will return the existing project tag unmodified
         /// </summary>
         /// <param name="projectId">
         /// Unique identifier for the project that the project tag belongs under

@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectAutomationsClient
     {
         /// <summary>
-        /// Create or replace project_automation<br/>
-        /// Create or replace project_automation. If there is an existing project_automation with the same name as the one specified in the request, will replace the existing project_automation with the provided fields
+        /// Create or replace project automation<br/>
+        /// Create or replace project automation. If there is an existing project automation with the same name as the one specified in the request, will replace the existing project automation with the provided fields
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -18,8 +18,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create or replace project_automation<br/>
-        /// Create or replace project_automation. If there is an existing project_automation with the same name as the one specified in the request, will replace the existing project_automation with the provided fields
+        /// Create or replace project automation<br/>
+        /// Create or replace project automation. If there is an existing project automation with the same name as the one specified in the request, will replace the existing project automation with the provided fields
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -31,8 +31,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create or replace project_automation<br/>
-        /// Create or replace project_automation. If there is an existing project_automation with the same name as the one specified in the request, will replace the existing project_automation with the provided fields
+        /// Create or replace project automation<br/>
+        /// Create or replace project automation. If there is an existing project automation with the same name as the one specified in the request, will replace the existing project automation with the provided fields
         /// </summary>
         /// <param name="projectId">
         /// Unique identifier for the project that the project automation belongs under

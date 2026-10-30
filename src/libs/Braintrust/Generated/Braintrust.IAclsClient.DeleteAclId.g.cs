@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IAclsClient
     {
         /// <summary>
-        /// Delete acl<br/>
-        /// Delete an acl object by its id
+        /// Delete ACL<br/>
+        /// Delete an ACL object by its id
         /// </summary>
         /// <param name="aclId">
         /// Acl id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete acl<br/>
-        /// Delete an acl object by its id
+        /// Delete ACL<br/>
+        /// Delete an ACL object by its id
         /// </summary>
         /// <param name="aclId">
         /// Acl id

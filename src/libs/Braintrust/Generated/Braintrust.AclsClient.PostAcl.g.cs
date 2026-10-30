@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Create acl<br/>
-        /// Create a new acl. If there is an existing acl with the same contents as the one specified in the request, will return the existing acl unmodified
+        /// Create ACL<br/>
+        /// Create a new ACL. If there is an existing ACL with the same contents as the one specified in the request, will return the existing ACL unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Create acl<br/>
-        /// Create a new acl. If there is an existing acl with the same contents as the one specified in the request, will return the existing acl unmodified
+        /// Create ACL<br/>
+        /// Create a new ACL. If there is an existing ACL with the same contents as the one specified in the request, will return the existing ACL unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -628,8 +628,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Create acl<br/>
-        /// Create a new acl. If there is an existing acl with the same contents as the one specified in the request, will return the existing acl unmodified
+        /// Create ACL<br/>
+        /// Create a new ACL. If there is an existing ACL with the same contents as the one specified in the request, will return the existing ACL unmodified
         /// </summary>
         /// <param name="objectType">
         /// The object type that the ACL applies to

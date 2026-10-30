@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete project_automation<br/>
-        /// Delete a project_automation object by its id
+        /// Delete project automation<br/>
+        /// Delete a project automation object by its id
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete project_automation<br/>
-        /// Delete a project_automation object by its id
+        /// Delete project automation<br/>
+        /// Delete a project automation object by its id
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id

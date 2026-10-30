@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IEnvVarsClient
     {
         /// <summary>
-        /// Create or replace env_var<br/>
-        /// Create or replace env_var. If there is an existing env_var with the same name as the one specified in the request, will replace the existing env_var with the provided fields
+        /// Create or replace env var<br/>
+        /// Create or replace env var. If there is an existing env var with the same name as the one specified in the request, will replace the existing env var with the provided fields
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -18,8 +18,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create or replace env_var<br/>
-        /// Create or replace env_var. If there is an existing env_var with the same name as the one specified in the request, will replace the existing env_var with the provided fields
+        /// Create or replace env var<br/>
+        /// Create or replace env var. If there is an existing env var with the same name as the one specified in the request, will replace the existing env var with the provided fields
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -31,8 +31,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create or replace env_var<br/>
-        /// Create or replace env_var. If there is an existing env_var with the same name as the one specified in the request, will replace the existing env_var with the provided fields
+        /// Create or replace env var<br/>
+        /// Create or replace env var. If there is an existing env var with the same name as the one specified in the request, will replace the existing env var with the provided fields
         /// </summary>
         /// <param name="objectType">
         /// The type of the object the environment variable is scoped for

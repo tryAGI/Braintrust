@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IMcpServersClient
     {
         /// <summary>
-        /// Get mcp_server<br/>
-        /// Get a mcp_server object by its id
+        /// Get MCP server<br/>
+        /// Get an MCP server object by its id
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Get mcp_server<br/>
-        /// Get a mcp_server object by its id
+        /// Get MCP server<br/>
+        /// Get an MCP server object by its id
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id

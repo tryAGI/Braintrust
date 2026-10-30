@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IAiSecretsClient
     {
         /// <summary>
-        /// Delete single ai_secret<br/>
-        /// Delete a single ai_secret
+        /// Delete single AI secret<br/>
+        /// Delete a single AI secret
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -18,8 +18,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete single ai_secret<br/>
-        /// Delete a single ai_secret
+        /// Delete single AI secret<br/>
+        /// Delete a single AI secret
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -31,8 +31,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete single ai_secret<br/>
-        /// Delete a single ai_secret
+        /// Delete single AI secret<br/>
+        /// Delete a single AI secret
         /// </summary>
         /// <param name="name">
         /// Name of the AI secret

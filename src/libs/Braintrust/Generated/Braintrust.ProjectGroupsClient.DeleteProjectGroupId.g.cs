@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete project_group<br/>
-        /// Delete a project_group object by its id
+        /// Delete project group<br/>
+        /// Delete a project group object by its id
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete project_group<br/>
-        /// Delete a project_group object by its id
+        /// Delete project group<br/>
+        /// Delete a project group object by its id
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id

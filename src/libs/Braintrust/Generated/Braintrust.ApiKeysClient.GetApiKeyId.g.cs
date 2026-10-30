@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get api_key<br/>
-        /// Get an api_key object by its id
+        /// Get API key<br/>
+        /// Get an API key object by its id
         /// </summary>
         /// <param name="apiKeyId">
         /// ApiKey id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get api_key<br/>
-        /// Get an api_key object by its id
+        /// Get API key<br/>
+        /// Get an API key object by its id
         /// </summary>
         /// <param name="apiKeyId">
         /// ApiKey id

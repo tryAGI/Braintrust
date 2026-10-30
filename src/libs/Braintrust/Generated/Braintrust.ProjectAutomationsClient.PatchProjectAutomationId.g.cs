@@ -53,8 +53,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Partially update project_automation<br/>
-        /// Partially update a project_automation object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project automation<br/>
+        /// Partially update a project automation object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id
@@ -81,8 +81,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Partially update project_automation<br/>
-        /// Partially update a project_automation object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project automation<br/>
+        /// Partially update a project automation object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id
@@ -641,8 +641,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Partially update project_automation<br/>
-        /// Partially update a project_automation object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project automation<br/>
+        /// Partially update a project automation object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id

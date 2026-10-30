@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete api_key<br/>
-        /// Delete an api_key object by its id
+        /// Delete API key<br/>
+        /// Delete an API key object by its id
         /// </summary>
         /// <param name="apiKeyId">
         /// ApiKey id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete api_key<br/>
-        /// Delete an api_key object by its id
+        /// Delete API key<br/>
+        /// Delete an API key object by its id
         /// </summary>
         /// <param name="apiKeyId">
         /// ApiKey id

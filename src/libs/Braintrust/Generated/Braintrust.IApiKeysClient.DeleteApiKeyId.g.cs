@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IApiKeysClient
     {
         /// <summary>
-        /// Delete api_key<br/>
-        /// Delete an api_key object by its id
+        /// Delete API key<br/>
+        /// Delete an API key object by its id
         /// </summary>
         /// <param name="apiKeyId">
         /// ApiKey id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete api_key<br/>
-        /// Delete an api_key object by its id
+        /// Delete API key<br/>
+        /// Delete an API key object by its id
         /// </summary>
         /// <param name="apiKeyId">
         /// ApiKey id

@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectScoresClient
     {
         /// <summary>
-        /// Get project_score<br/>
-        /// Get a project_score object by its id
+        /// Get project score<br/>
+        /// Get a project score object by its id
         /// </summary>
         /// <param name="projectScoreId">
         /// ProjectScore id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Get project_score<br/>
-        /// Get a project_score object by its id
+        /// Get project score<br/>
+        /// Get a project score object by its id
         /// </summary>
         /// <param name="projectScoreId">
         /// ProjectScore id

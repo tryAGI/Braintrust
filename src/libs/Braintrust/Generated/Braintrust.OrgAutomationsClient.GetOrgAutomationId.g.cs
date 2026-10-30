@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get org_automation<br/>
-        /// Get an org_automation object by its id
+        /// Get org automation<br/>
+        /// Get an org automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get org_automation<br/>
-        /// Get an org_automation object by its id
+        /// Get org automation<br/>
+        /// Get an org automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id

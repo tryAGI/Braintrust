@@ -63,8 +63,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// List ai_secrets<br/>
-        /// List out all ai_secrets. The ai_secrets are sorted by creation date, with the most recently-created ai_secrets coming first
+        /// List AI secrets<br/>
+        /// List out all AI secrets. The AI secrets are sorted by creation date, with the most recently-created AI secrets coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -116,8 +116,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// List ai_secrets<br/>
-        /// List out all ai_secrets. The ai_secrets are sorted by creation date, with the most recently-created ai_secrets coming first
+        /// List AI secrets<br/>
+        /// List out all AI secrets. The AI secrets are sorted by creation date, with the most recently-created AI secrets coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

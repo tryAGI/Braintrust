@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete single ai_secret<br/>
-        /// Delete a single ai_secret
+        /// Delete single AI secret<br/>
+        /// Delete a single AI secret
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete single ai_secret<br/>
-        /// Delete a single ai_secret
+        /// Delete single AI secret<br/>
+        /// Delete a single AI secret
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -628,8 +628,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Delete single ai_secret<br/>
-        /// Delete a single ai_secret
+        /// Delete single AI secret<br/>
+        /// Delete a single AI secret
         /// </summary>
         /// <param name="name">
         /// Name of the AI secret

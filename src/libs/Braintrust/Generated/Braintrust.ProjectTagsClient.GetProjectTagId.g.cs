@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get project_tag<br/>
-        /// Get a project_tag object by its id
+        /// Get project tag<br/>
+        /// Get a project tag object by its id
         /// </summary>
         /// <param name="projectTagId">
         /// ProjectTag id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get project_tag<br/>
-        /// Get a project_tag object by its id
+        /// Get project tag<br/>
+        /// Get a project tag object by its id
         /// </summary>
         /// <param name="projectTagId">
         /// ProjectTag id

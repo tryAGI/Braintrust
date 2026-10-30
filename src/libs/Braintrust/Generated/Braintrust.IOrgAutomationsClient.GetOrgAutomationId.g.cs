@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IOrgAutomationsClient
     {
         /// <summary>
-        /// Get org_automation<br/>
-        /// Get an org_automation object by its id
+        /// Get org automation<br/>
+        /// Get an org automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Get org_automation<br/>
-        /// Get an org_automation object by its id
+        /// Get org automation<br/>
+        /// Get an org automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id

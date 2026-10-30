@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IEnvVarsClient
     {
         /// <summary>
-        /// Partially update env_var<br/>
-        /// Partially update an env_var object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update env var<br/>
+        /// Partially update an env var object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id
@@ -22,8 +22,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Partially update env_var<br/>
-        /// Partially update an env_var object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update env var<br/>
+        /// Partially update an env var object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id
@@ -39,8 +39,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Partially update env_var<br/>
-        /// Partially update an env_var object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update env var<br/>
+        /// Partially update an env var object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id

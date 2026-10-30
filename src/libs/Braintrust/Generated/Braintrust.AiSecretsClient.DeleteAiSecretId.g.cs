@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete ai_secret<br/>
-        /// Delete an ai_secret object by its id
+        /// Delete AI secret<br/>
+        /// Delete an AI secret object by its id
         /// </summary>
         /// <param name="aiSecretId">
         /// AiSecret id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete ai_secret<br/>
-        /// Delete an ai_secret object by its id
+        /// Delete AI secret<br/>
+        /// Delete an AI secret object by its id
         /// </summary>
         /// <param name="aiSecretId">
         /// AiSecret id

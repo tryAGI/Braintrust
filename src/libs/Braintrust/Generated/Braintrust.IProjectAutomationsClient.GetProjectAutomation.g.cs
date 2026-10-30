@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectAutomationsClient
     {
         /// <summary>
-        /// List project_automations<br/>
-        /// List out all project_automations. The project_automations are sorted by creation date, with the most recently-created project_automations coming first
+        /// List project automations<br/>
+        /// List out all project automations. The project automations are sorted by creation date, with the most recently-created project automations coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -41,8 +41,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List project_automations<br/>
-        /// List out all project_automations. The project_automations are sorted by creation date, with the most recently-created project_automations coming first
+        /// List project automations<br/>
+        /// List out all project automations. The project automations are sorted by creation date, with the most recently-created project automations coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

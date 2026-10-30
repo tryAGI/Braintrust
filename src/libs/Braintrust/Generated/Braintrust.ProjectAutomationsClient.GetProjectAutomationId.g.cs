@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get project_automation<br/>
-        /// Get a project_automation object by its id
+        /// Get project automation<br/>
+        /// Get a project automation object by its id
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get project_automation<br/>
-        /// Get a project_automation object by its id
+        /// Get project automation<br/>
+        /// Get a project automation object by its id
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id

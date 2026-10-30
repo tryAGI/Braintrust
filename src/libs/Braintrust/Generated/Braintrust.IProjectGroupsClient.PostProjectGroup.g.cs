@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectGroupsClient
     {
         /// <summary>
-        /// Create project_group<br/>
-        /// Create a new project_group. If there is an existing project_group with the same name as the one specified in the request, will return the existing project_group unmodified
+        /// Create project group<br/>
+        /// Create a new project group. If there is an existing project group with the same name as the one specified in the request, will return the existing project group unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -18,8 +18,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create project_group<br/>
-        /// Create a new project_group. If there is an existing project_group with the same name as the one specified in the request, will return the existing project_group unmodified
+        /// Create project group<br/>
+        /// Create a new project group. If there is an existing project group with the same name as the one specified in the request, will return the existing project group unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -31,8 +31,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create project_group<br/>
-        /// Create a new project_group. If there is an existing project_group with the same name as the one specified in the request, will return the existing project_group unmodified
+        /// Create project group<br/>
+        /// Create a new project group. If there is an existing project group with the same name as the one specified in the request, will return the existing project group unmodified
         /// </summary>
         /// <param name="name">
         /// Name of the project group

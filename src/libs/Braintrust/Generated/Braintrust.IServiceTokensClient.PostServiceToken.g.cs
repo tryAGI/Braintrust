@@ -5,7 +5,7 @@ namespace Braintrust
     public partial interface IServiceTokensClient
     {
         /// <summary>
-        /// Create service_token<br/>
+        /// Create service token<br/>
         /// Create a new service token.<br/>
         /// Authenticate with a service token. A service token whose service account is an organization owner can create tokens for any service account. A service token whose service account holds the Owner role on a project group can create tokens for a service account in the same organization when the target account has a permission grant on a project group it owns. The calling service account must also hold all of the target account's permissions in the organization; otherwise the request returns 403. User API keys cannot be used.
         /// </summary>
@@ -19,7 +19,7 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create service_token<br/>
+        /// Create service token<br/>
         /// Create a new service token.<br/>
         /// Authenticate with a service token. A service token whose service account is an organization owner can create tokens for any service account. A service token whose service account holds the Owner role on a project group can create tokens for a service account in the same organization when the target account has a permission grant on a project group it owns. The calling service account must also hold all of the target account's permissions in the organization; otherwise the request returns 403. User API keys cannot be used.
         /// </summary>
@@ -33,7 +33,7 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create service_token<br/>
+        /// Create service token<br/>
         /// Create a new service token.<br/>
         /// Authenticate with a service token. A service token whose service account is an organization owner can create tokens for any service account. A service token whose service account holds the Owner role on a project group can create tokens for a service account in the same organization when the target account has a permission grant on a project group it owns. The calling service account must also hold all of the target account's permissions in the organization; otherwise the request returns 403. User API keys cannot be used.
         /// </summary>

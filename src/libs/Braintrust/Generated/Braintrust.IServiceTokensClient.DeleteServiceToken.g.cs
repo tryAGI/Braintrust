@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IServiceTokensClient
     {
         /// <summary>
-        /// Delete single service_token<br/>
-        /// Delete a single service_token
+        /// Delete single service token<br/>
+        /// Delete a single service token
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -18,8 +18,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete single service_token<br/>
-        /// Delete a single service_token
+        /// Delete single service token<br/>
+        /// Delete a single service token
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -31,8 +31,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete single service_token<br/>
-        /// Delete a single service_token
+        /// Delete single service token<br/>
+        /// Delete a single service token
         /// </summary>
         /// <param name="id">
         /// Unique identifier for the service token.

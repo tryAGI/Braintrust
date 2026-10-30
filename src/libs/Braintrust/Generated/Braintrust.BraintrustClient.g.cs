@@ -88,15 +88,6 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public CorsClient Cors => new CorsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContextProvider = JsonSerializerContextProvider,
-        };
-
-        /// <summary>
-        ///
-        /// </summary>
         public CrossObjectClient CrossObject => new CrossObjectClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

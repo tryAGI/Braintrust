@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectTagsClient
     {
         /// <summary>
-        /// Delete project_tag<br/>
-        /// Delete a project_tag object by its id
+        /// Delete project tag<br/>
+        /// Delete a project tag object by its id
         /// </summary>
         /// <param name="projectTagId">
         /// ProjectTag id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete project_tag<br/>
-        /// Delete a project_tag object by its id
+        /// Delete project tag<br/>
+        /// Delete a project tag object by its id
         /// </summary>
         /// <param name="projectTagId">
         /// ProjectTag id

@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete project_score<br/>
-        /// Delete a project_score object by its id
+        /// Delete project score<br/>
+        /// Delete a project score object by its id
         /// </summary>
         /// <param name="projectScoreId">
         /// ProjectScore id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete project_score<br/>
-        /// Delete a project_score object by its id
+        /// Delete project score<br/>
+        /// Delete a project score object by its id
         /// </summary>
         /// <param name="projectScoreId">
         /// ProjectScore id

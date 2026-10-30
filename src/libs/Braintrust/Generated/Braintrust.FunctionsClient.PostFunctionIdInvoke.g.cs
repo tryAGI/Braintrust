@@ -54,7 +54,7 @@ namespace Braintrust
 
         /// <summary>
         /// Invoke function<br/>
-        /// Invoke a function.
+        /// Run the specified function with the provided input and return its result. Use `version` to select a specific function version, `parent` to attach the call to a trace, and `stream` to receive results in the Braintrust SSE format.
         /// </summary>
         /// <param name="functionId">
         /// Function id
@@ -82,7 +82,7 @@ namespace Braintrust
         }
         /// <summary>
         /// Invoke function<br/>
-        /// Invoke a function.
+        /// Run the specified function with the provided input and return its result. Use `version` to select a specific function version, `parent` to attach the call to a trace, and `stream` to receive results in the Braintrust SSE format.
         /// </summary>
         /// <param name="functionId">
         /// Function id
@@ -453,11 +453,12 @@ namespace Braintrust
         }
         /// <summary>
         /// Invoke function<br/>
-        /// Invoke a function.
+        /// Run the specified function with the provided input and return its result. Use `version` to select a specific function version, `parent` to attach the call to a trace, and `stream` to receive results in the Braintrust SSE format.
         /// </summary>
         /// <param name="functionId">
         /// Function id
         /// </param>
+        /// <param name="requestSource"></param>
         /// <param name="input">
         /// Argument to the function, which can be any JSON serializable value
         /// </param>
@@ -502,6 +503,7 @@ namespace Braintrust
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<string> PostFunctionIdInvokeAsync(
             global::System.Guid functionId,
+            string? requestSource = default,
             object? input = default,
             object? expected = default,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
@@ -520,6 +522,7 @@ namespace Braintrust
         {
             var __request = new global::Braintrust.InvokeApi
             {
+                RequestSource = requestSource,
                 Input = input,
                 Expected = expected,
                 Metadata = metadata,

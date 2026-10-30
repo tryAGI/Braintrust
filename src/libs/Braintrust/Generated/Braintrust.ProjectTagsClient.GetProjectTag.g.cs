@@ -65,8 +65,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// List project_tags<br/>
-        /// List out all project_tags. The project_tags are sorted by creation date, with the most recently-created project_tags coming first
+        /// List project tags<br/>
+        /// List out all project tags. The project tags are sorted by creation date, with the most recently-created project tags coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -125,8 +125,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// List project_tags<br/>
-        /// List out all project_tags. The project_tags are sorted by creation date, with the most recently-created project_tags coming first
+        /// List project tags<br/>
+        /// List out all project tags. The project tags are sorted by creation date, with the most recently-created project tags coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

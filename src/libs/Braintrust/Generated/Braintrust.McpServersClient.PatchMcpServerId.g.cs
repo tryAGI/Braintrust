@@ -53,8 +53,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Partially update mcp_server<br/>
-        /// Partially update a mcp_server object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update MCP server<br/>
+        /// Partially update an MCP server object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id
@@ -81,8 +81,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Partially update mcp_server<br/>
-        /// Partially update a mcp_server object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update MCP server<br/>
+        /// Partially update an MCP server object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id
@@ -641,8 +641,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Partially update mcp_server<br/>
-        /// Partially update a mcp_server object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update MCP server<br/>
+        /// Partially update an MCP server object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id

@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectGroupsClient
     {
         /// <summary>
-        /// Partially update project_group<br/>
-        /// Partially update a project_group object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project group<br/>
+        /// Partially update a project group object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id
@@ -22,8 +22,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Partially update project_group<br/>
-        /// Partially update a project_group object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project group<br/>
+        /// Partially update a project group object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id
@@ -39,8 +39,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Partially update project_group<br/>
-        /// Partially update a project_group object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update project group<br/>
+        /// Partially update a project group object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id

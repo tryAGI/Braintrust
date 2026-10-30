@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class GetProjectAutomationResponse
     {
         /// <summary>
-        /// A list of project_automation objects
+        /// A list of project automation objects
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objects")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,7 +25,7 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="GetProjectAutomationResponse" /> class.
         /// </summary>
         /// <param name="objects">
-        /// A list of project_automation objects
+        /// A list of project automation objects
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

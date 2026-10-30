@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IOrgAutomationsClient
     {
         /// <summary>
-        /// Create org_automation<br/>
-        /// Create a new org_automation. If there is an existing org_automation with the same name as the one specified in the request, will return the existing org_automation unmodified
+        /// Create org automation<br/>
+        /// Create a new org automation. If there is an existing org automation with the same name as the one specified in the request, will return the existing org automation unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -18,8 +18,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create org_automation<br/>
-        /// Create a new org_automation. If there is an existing org_automation with the same name as the one specified in the request, will return the existing org_automation unmodified
+        /// Create org automation<br/>
+        /// Create a new org automation. If there is an existing org automation with the same name as the one specified in the request, will return the existing org automation unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -31,8 +31,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Create org_automation<br/>
-        /// Create a new org_automation. If there is an existing org_automation with the same name as the one specified in the request, will return the existing org_automation unmodified
+        /// Create org automation<br/>
+        /// Create a new org automation. If there is an existing org automation with the same name as the one specified in the request, will return the existing org automation unmodified
         /// </summary>
         /// <param name="orgId">
         /// Unique identifier for the organization that the org automation belongs under

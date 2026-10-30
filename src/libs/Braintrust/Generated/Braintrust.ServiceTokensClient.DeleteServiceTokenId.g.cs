@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete service_token<br/>
-        /// Delete a service_token object by its id
+        /// Delete service token<br/>
+        /// Delete a service token object by its id
         /// </summary>
         /// <param name="serviceTokenId">
         /// ServiceToken id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete service_token<br/>
-        /// Delete a service_token object by its id
+        /// Delete service token<br/>
+        /// Delete a service token object by its id
         /// </summary>
         /// <param name="serviceTokenId">
         /// ServiceToken id

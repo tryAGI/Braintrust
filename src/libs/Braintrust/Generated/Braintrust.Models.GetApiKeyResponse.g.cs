@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class GetApiKeyResponse
     {
         /// <summary>
-        /// A list of api_key objects
+        /// A list of API key objects
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objects")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,7 +25,7 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="GetApiKeyResponse" /> class.
         /// </summary>
         /// <param name="objects">
-        /// A list of api_key objects
+        /// A list of API key objects
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
