@@ -47,7 +47,7 @@ namespace Braintrust
 
         /// <summary>
         /// Summarize experiment<br/>
-        /// Summarize experiment
+        /// Return the experiment and project names and URLs. Set `summarize_scores=true` to include aggregate scores and metrics, with differences, improvements, and regressions relative to a comparison experiment. Use `comparison_experiment_id` to select the comparison; otherwise, the experiment's base experiment or the most recent experiment in the project is used.
         /// </summary>
         /// <param name="experimentId">
         /// Experiment id
@@ -80,7 +80,7 @@ namespace Braintrust
         }
         /// <summary>
         /// Summarize experiment<br/>
-        /// Summarize experiment
+        /// Return the experiment and project names and URLs. Set `summarize_scores=true` to include aggregate scores and metrics, with differences, improvements, and regressions relative to a comparison experiment. Use `comparison_experiment_id` to select the comparison; otherwise, the experiment's base experiment or the most recent experiment in the project is used.
         /// </summary>
         /// <param name="experimentId">
         /// Experiment id

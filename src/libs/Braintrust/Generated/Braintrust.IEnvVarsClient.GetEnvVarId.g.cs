@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IEnvVarsClient
     {
         /// <summary>
-        /// Get env_var<br/>
-        /// Get an env_var object by its id
+        /// Get env var<br/>
+        /// Get an env var object by its id
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Get env_var<br/>
-        /// Get an env_var object by its id
+        /// Get env var<br/>
+        /// Get an env var object by its id
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id

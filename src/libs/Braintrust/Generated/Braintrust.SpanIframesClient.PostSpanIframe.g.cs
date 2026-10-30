@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Create span_iframe<br/>
-        /// Create a new span_iframe. If there is an existing span_iframe with the same name as the one specified in the request, will return the existing span_iframe unmodified
+        /// Create span iframe<br/>
+        /// Create a new span iframe. If there is an existing span iframe with the same name as the one specified in the request, will return the existing span iframe unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Create span_iframe<br/>
-        /// Create a new span_iframe. If there is an existing span_iframe with the same name as the one specified in the request, will return the existing span_iframe unmodified
+        /// Create span iframe<br/>
+        /// Create a new span iframe. If there is an existing span iframe with the same name as the one specified in the request, will return the existing span iframe unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -628,8 +628,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Create span_iframe<br/>
-        /// Create a new span_iframe. If there is an existing span_iframe with the same name as the one specified in the request, will return the existing span_iframe unmodified
+        /// Create span iframe<br/>
+        /// Create a new span iframe. If there is an existing span iframe with the same name as the one specified in the request, will return the existing span iframe unmodified
         /// </summary>
         /// <param name="projectId">
         /// Unique identifier for the project that the span iframe belongs under

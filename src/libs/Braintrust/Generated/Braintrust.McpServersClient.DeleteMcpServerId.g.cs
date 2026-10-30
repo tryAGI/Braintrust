@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete mcp_server<br/>
-        /// Delete a mcp_server object by its id
+        /// Delete MCP server<br/>
+        /// Delete an MCP server object by its id
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete mcp_server<br/>
-        /// Delete a mcp_server object by its id
+        /// Delete MCP server<br/>
+        /// Delete an MCP server object by its id
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id

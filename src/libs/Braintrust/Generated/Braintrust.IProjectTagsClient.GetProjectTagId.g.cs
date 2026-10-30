@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectTagsClient
     {
         /// <summary>
-        /// Get project_tag<br/>
-        /// Get a project_tag object by its id
+        /// Get project tag<br/>
+        /// Get a project tag object by its id
         /// </summary>
         /// <param name="projectTagId">
         /// ProjectTag id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Get project_tag<br/>
-        /// Get a project_tag object by its id
+        /// Get project tag<br/>
+        /// Get a project tag object by its id
         /// </summary>
         /// <param name="projectTagId">
         /// ProjectTag id

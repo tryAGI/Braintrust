@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class GetAclResponse
     {
         /// <summary>
-        /// A list of acl objects
+        /// A list of ACL objects
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objects")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,7 +25,7 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="GetAclResponse" /> class.
         /// </summary>
         /// <param name="objects">
-        /// A list of acl objects
+        /// A list of ACL objects
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

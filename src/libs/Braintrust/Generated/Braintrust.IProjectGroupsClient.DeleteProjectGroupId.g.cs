@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectGroupsClient
     {
         /// <summary>
-        /// Delete project_group<br/>
-        /// Delete a project_group object by its id
+        /// Delete project group<br/>
+        /// Delete a project group object by its id
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete project_group<br/>
-        /// Delete a project_group object by its id
+        /// Delete project group<br/>
+        /// Delete a project group object by its id
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id

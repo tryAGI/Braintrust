@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get service_token<br/>
-        /// Get a service_token object by its id
+        /// Get service token<br/>
+        /// Get a service token object by its id
         /// </summary>
         /// <param name="serviceTokenId">
         /// ServiceToken id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get service_token<br/>
-        /// Get a service_token object by its id
+        /// Get service token<br/>
+        /// Get a service token object by its id
         /// </summary>
         /// <param name="serviceTokenId">
         /// ServiceToken id

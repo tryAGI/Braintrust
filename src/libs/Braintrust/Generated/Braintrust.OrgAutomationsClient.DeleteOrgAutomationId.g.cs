@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete org_automation<br/>
-        /// Delete an org_automation object by its id
+        /// Delete org automation<br/>
+        /// Delete an org automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete org_automation<br/>
-        /// Delete an org_automation object by its id
+        /// Delete org automation<br/>
+        /// Delete an org automation object by its id
         /// </summary>
         /// <param name="orgAutomationId">
         /// OrgAutomation id

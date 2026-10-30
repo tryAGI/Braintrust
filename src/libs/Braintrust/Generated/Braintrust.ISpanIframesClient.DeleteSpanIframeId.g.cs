@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface ISpanIframesClient
     {
         /// <summary>
-        /// Delete span_iframe<br/>
-        /// Delete a span_iframe object by its id
+        /// Delete span iframe<br/>
+        /// Delete a span iframe object by its id
         /// </summary>
         /// <param name="spanIframeId">
         /// SpanIframe id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete span_iframe<br/>
-        /// Delete a span_iframe object by its id
+        /// Delete span iframe<br/>
+        /// Delete a span iframe object by its id
         /// </summary>
         /// <param name="spanIframeId">
         /// SpanIframe id

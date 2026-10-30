@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IEnvVarsClient
     {
         /// <summary>
-        /// List env_vars<br/>
-        /// List out all env_vars. The env_vars are sorted by creation date, with the most recently-created env_vars coming first
+        /// List env vars<br/>
+        /// List out all env vars. The env vars are sorted by creation date, with the most recently-created env vars coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -35,8 +35,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List env_vars<br/>
-        /// List out all env_vars. The env_vars are sorted by creation date, with the most recently-created env_vars coming first
+        /// List env vars<br/>
+        /// List out all env vars. The env vars are sorted by creation date, with the most recently-created env vars coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

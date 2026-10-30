@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get mcp_server<br/>
-        /// Get a mcp_server object by its id
+        /// Get MCP server<br/>
+        /// Get an MCP server object by its id
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get mcp_server<br/>
-        /// Get a mcp_server object by its id
+        /// Get MCP server<br/>
+        /// Get an MCP server object by its id
         /// </summary>
         /// <param name="mcpServerId">
         /// McpServer id

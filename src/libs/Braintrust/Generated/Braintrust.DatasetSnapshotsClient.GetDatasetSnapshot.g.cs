@@ -61,8 +61,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// List dataset_snapshots<br/>
-        /// List out all dataset_snapshots. The dataset_snapshots are sorted by creation date, with the most recently-created dataset_snapshots coming first
+        /// List dataset snapshots<br/>
+        /// List out all dataset snapshots. The dataset snapshots are sorted by creation date, with the most recently-created dataset snapshots coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -111,8 +111,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// List dataset_snapshots<br/>
-        /// List out all dataset_snapshots. The dataset_snapshots are sorted by creation date, with the most recently-created dataset_snapshots coming first
+        /// List dataset snapshots<br/>
+        /// List out all dataset snapshots. The dataset snapshots are sorted by creation date, with the most recently-created dataset snapshots coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

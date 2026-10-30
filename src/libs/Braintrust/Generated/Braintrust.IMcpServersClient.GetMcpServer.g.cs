@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IMcpServersClient
     {
         /// <summary>
-        /// List mcp_servers<br/>
-        /// List out all mcp_servers. The mcp_servers are sorted by creation date, with the most recently-created mcp_servers coming first
+        /// List MCP servers<br/>
+        /// List out all MCP servers. The MCP servers are sorted by creation date, with the most recently-created MCP servers coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -41,8 +41,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List mcp_servers<br/>
-        /// List out all mcp_servers. The mcp_servers are sorted by creation date, with the most recently-created mcp_servers coming first
+        /// List MCP servers<br/>
+        /// List out all MCP servers. The MCP servers are sorted by creation date, with the most recently-created MCP servers coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

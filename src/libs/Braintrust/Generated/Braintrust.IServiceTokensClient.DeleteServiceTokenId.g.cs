@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IServiceTokensClient
     {
         /// <summary>
-        /// Delete service_token<br/>
-        /// Delete a service_token object by its id
+        /// Delete service token<br/>
+        /// Delete a service token object by its id
         /// </summary>
         /// <param name="serviceTokenId">
         /// ServiceToken id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete service_token<br/>
-        /// Delete a service_token object by its id
+        /// Delete service token<br/>
+        /// Delete a service token object by its id
         /// </summary>
         /// <param name="serviceTokenId">
         /// ServiceToken id

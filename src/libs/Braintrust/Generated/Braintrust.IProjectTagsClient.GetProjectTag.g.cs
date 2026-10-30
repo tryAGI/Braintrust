@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectTagsClient
     {
         /// <summary>
-        /// List project_tags<br/>
-        /// List out all project_tags. The project_tags are sorted by creation date, with the most recently-created project_tags coming first
+        /// List project tags<br/>
+        /// List out all project tags. The project tags are sorted by creation date, with the most recently-created project tags coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -49,8 +49,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List project_tags<br/>
-        /// List out all project_tags. The project_tags are sorted by creation date, with the most recently-created project_tags coming first
+        /// List project tags<br/>
+        /// List out all project tags. The project tags are sorted by creation date, with the most recently-created project tags coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

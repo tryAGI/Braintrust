@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectGroupsClient
     {
         /// <summary>
-        /// Get project_group<br/>
-        /// Get a project_group object by its id
+        /// Get project group<br/>
+        /// Get a project group object by its id
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Get project_group<br/>
-        /// Get a project_group object by its id
+        /// Get project group<br/>
+        /// Get a project group object by its id
         /// </summary>
         /// <param name="projectGroupId">
         /// ProjectGroup id

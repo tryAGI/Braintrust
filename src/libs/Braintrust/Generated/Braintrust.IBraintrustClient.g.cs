@@ -70,11 +70,6 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public CorsClient Cors { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
         public CrossObjectClient CrossObject { get; }
 
         /// <summary>

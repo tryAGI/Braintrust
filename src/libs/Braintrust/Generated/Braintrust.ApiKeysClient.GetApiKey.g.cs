@@ -61,7 +61,7 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// List api_keys<br/>
+        /// List API keys<br/>
         /// List out all API keys. They are sorted by creation date, with the most recently-created keys coming first.<br/>
         /// To create new API keys, visit [**Settings &gt; API keys**](https://www.braintrust.dev/app/~/configuration/org/api-keys) in the Braintrust UI.
         /// </summary>
@@ -112,7 +112,7 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// List api_keys<br/>
+        /// List API keys<br/>
         /// List out all API keys. They are sorted by creation date, with the most recently-created keys coming first.<br/>
         /// To create new API keys, visit [**Settings &gt; API keys**](https://www.braintrust.dev/app/~/configuration/org/api-keys) in the Braintrust UI.
         /// </summary>

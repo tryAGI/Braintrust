@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Create mcp_server<br/>
-        /// Create a new mcp_server. If there is an existing mcp_server with the same name as the one specified in the request, will return the existing mcp_server unmodified
+        /// Create MCP server<br/>
+        /// Create a new MCP server. If there is an existing MCP server with the same name as the one specified in the request, will return the existing MCP server unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Create mcp_server<br/>
-        /// Create a new mcp_server. If there is an existing mcp_server with the same name as the one specified in the request, will return the existing mcp_server unmodified
+        /// Create MCP server<br/>
+        /// Create a new MCP server. If there is an existing MCP server with the same name as the one specified in the request, will return the existing MCP server unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -628,8 +628,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Create mcp_server<br/>
-        /// Create a new mcp_server. If there is an existing mcp_server with the same name as the one specified in the request, will return the existing mcp_server unmodified
+        /// Create MCP server<br/>
+        /// Create a new MCP server. If there is an existing MCP server with the same name as the one specified in the request, will return the existing MCP server unmodified
         /// </summary>
         /// <param name="projectId">
         /// Unique identifier for the project that the MCP server belongs under

@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IEnvVarsClient
     {
         /// <summary>
-        /// Delete env_var<br/>
-        /// Delete an env_var object by its id
+        /// Delete env var<br/>
+        /// Delete an env var object by its id
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete env_var<br/>
-        /// Delete an env_var object by its id
+        /// Delete env var<br/>
+        /// Delete an env var object by its id
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id

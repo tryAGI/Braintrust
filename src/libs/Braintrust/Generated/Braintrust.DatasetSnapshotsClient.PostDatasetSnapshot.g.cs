@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Create dataset_snapshot<br/>
-        /// Create a new dataset_snapshot. If there is an existing dataset_snapshot with the same name as the one specified in the request, will return the existing dataset_snapshot unmodified
+        /// Create dataset snapshot<br/>
+        /// Create a new dataset snapshot. If there is an existing dataset snapshot with the same name as the one specified in the request, will return the existing dataset snapshot unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Create dataset_snapshot<br/>
-        /// Create a new dataset_snapshot. If there is an existing dataset_snapshot with the same name as the one specified in the request, will return the existing dataset_snapshot unmodified
+        /// Create dataset snapshot<br/>
+        /// Create a new dataset snapshot. If there is an existing dataset snapshot with the same name as the one specified in the request, will return the existing dataset snapshot unmodified
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -628,8 +628,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Create dataset_snapshot<br/>
-        /// Create a new dataset_snapshot. If there is an existing dataset_snapshot with the same name as the one specified in the request, will return the existing dataset_snapshot unmodified
+        /// Create dataset snapshot<br/>
+        /// Create a new dataset snapshot. If there is an existing dataset snapshot with the same name as the one specified in the request, will return the existing dataset snapshot unmodified
         /// </summary>
         /// <param name="datasetId">
         /// Unique identifier for the dataset that this snapshot belongs to

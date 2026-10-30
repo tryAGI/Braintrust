@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IAclsClient
     {
         /// <summary>
-        /// List org acls<br/>
-        /// List all acls in the org. This query requires the caller to have `read_acls` permission at the organization level
+        /// List org ACLs<br/>
+        /// List all ACLs in the org. This query requires the caller to have `read_acls` permission at the organization level
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -66,8 +66,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List org acls<br/>
-        /// List all acls in the org. This query requires the caller to have `read_acls` permission at the organization level
+        /// List org ACLs<br/>
+        /// List all ACLs in the org. This query requires the caller to have `read_acls` permission at the organization level
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

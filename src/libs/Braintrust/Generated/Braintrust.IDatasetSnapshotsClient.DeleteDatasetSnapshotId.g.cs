@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IDatasetSnapshotsClient
     {
         /// <summary>
-        /// Delete dataset_snapshot<br/>
-        /// Delete a dataset_snapshot object by its id
+        /// Delete dataset snapshot<br/>
+        /// Delete a dataset snapshot object by its id
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete dataset_snapshot<br/>
-        /// Delete a dataset_snapshot object by its id
+        /// Delete dataset snapshot<br/>
+        /// Delete a dataset snapshot object by its id
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id

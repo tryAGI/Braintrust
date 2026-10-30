@@ -45,7 +45,7 @@ namespace Braintrust
 
         /// <summary>
         /// Summarize dataset<br/>
-        /// Summarize dataset
+        /// Return the dataset and project names and URLs. Set `summarize_data=true` to include the total number of records in the dataset; otherwise, only metadata is returned.
         /// </summary>
         /// <param name="datasetId">
         /// Dataset id
@@ -73,7 +73,7 @@ namespace Braintrust
         }
         /// <summary>
         /// Summarize dataset<br/>
-        /// Summarize dataset
+        /// Return the dataset and project names and URLs. Set `summarize_data=true` to include the total number of records in the dataset; otherwise, only metadata is returned.
         /// </summary>
         /// <param name="datasetId">
         /// Dataset id

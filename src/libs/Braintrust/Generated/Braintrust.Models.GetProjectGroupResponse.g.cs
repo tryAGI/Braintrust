@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class GetProjectGroupResponse
     {
         /// <summary>
-        /// A list of project_group objects
+        /// A list of project group objects
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objects")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,7 +25,7 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="GetProjectGroupResponse" /> class.
         /// </summary>
         /// <param name="objects">
-        /// A list of project_group objects
+        /// A list of project group objects
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

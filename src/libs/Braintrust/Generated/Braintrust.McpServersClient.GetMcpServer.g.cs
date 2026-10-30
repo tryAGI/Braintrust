@@ -61,8 +61,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// List mcp_servers<br/>
-        /// List out all mcp_servers. The mcp_servers are sorted by creation date, with the most recently-created mcp_servers coming first
+        /// List MCP servers<br/>
+        /// List out all MCP servers. The MCP servers are sorted by creation date, with the most recently-created MCP servers coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -111,8 +111,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// List mcp_servers<br/>
-        /// List out all mcp_servers. The mcp_servers are sorted by creation date, with the most recently-created mcp_servers coming first
+        /// List MCP servers<br/>
+        /// List out all MCP servers. The MCP servers are sorted by creation date, with the most recently-created MCP servers coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

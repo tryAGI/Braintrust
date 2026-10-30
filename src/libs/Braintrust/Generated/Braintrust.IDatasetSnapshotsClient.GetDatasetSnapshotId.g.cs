@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IDatasetSnapshotsClient
     {
         /// <summary>
-        /// Get dataset_snapshot<br/>
-        /// Get a dataset_snapshot object by its id
+        /// Get dataset snapshot<br/>
+        /// Get a dataset snapshot object by its id
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Get dataset_snapshot<br/>
-        /// Get a dataset_snapshot object by its id
+        /// Get dataset snapshot<br/>
+        /// Get a dataset snapshot object by its id
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id

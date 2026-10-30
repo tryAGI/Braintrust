@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get env_var<br/>
-        /// Get an env_var object by its id
+        /// Get env var<br/>
+        /// Get an env var object by its id
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get env_var<br/>
-        /// Get an env_var object by its id
+        /// Get env var<br/>
+        /// Get an env var object by its id
         /// </summary>
         /// <param name="envVarId">
         /// EnvVar id

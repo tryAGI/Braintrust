@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectAutomationsClient
     {
         /// <summary>
-        /// Delete project_automation<br/>
-        /// Delete a project_automation object by its id
+        /// Delete project automation<br/>
+        /// Delete a project automation object by its id
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete project_automation<br/>
-        /// Delete a project_automation object by its id
+        /// Delete project automation<br/>
+        /// Delete a project automation object by its id
         /// </summary>
         /// <param name="projectAutomationId">
         /// ProjectAutomation id

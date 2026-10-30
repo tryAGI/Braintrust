@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get acl<br/>
-        /// Get an acl object by its id
+        /// Get ACL<br/>
+        /// Get an ACL object by its id
         /// </summary>
         /// <param name="aclId">
         /// Acl id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get acl<br/>
-        /// Get an acl object by its id
+        /// Get ACL<br/>
+        /// Get an ACL object by its id
         /// </summary>
         /// <param name="aclId">
         /// Acl id

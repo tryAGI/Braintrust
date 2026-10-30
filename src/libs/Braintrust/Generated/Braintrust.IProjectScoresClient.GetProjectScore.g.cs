@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectScoresClient
     {
         /// <summary>
-        /// List project_scores<br/>
-        /// List out all project_scores. The project_scores are sorted by creation date, with the most recently-created project_scores coming first
+        /// List project scores<br/>
+        /// List out all project scores. The project scores are sorted by creation date, with the most recently-created project scores coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -51,8 +51,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List project_scores<br/>
-        /// List out all project_scores. The project_scores are sorted by creation date, with the most recently-created project_scores coming first
+        /// List project scores<br/>
+        /// List out all project scores. The project scores are sorted by creation date, with the most recently-created project scores coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

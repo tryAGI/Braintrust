@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IProjectGroupsClient
     {
         /// <summary>
-        /// List project_groups<br/>
-        /// List out all project_groups. The project_groups are sorted by creation date, with the most recently-created project_groups coming first
+        /// List project groups<br/>
+        /// List out all project groups. The project groups are sorted by creation date, with the most recently-created project groups coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -41,8 +41,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List project_groups<br/>
-        /// List out all project_groups. The project_groups are sorted by creation date, with the most recently-created project_groups coming first
+        /// List project groups<br/>
+        /// List out all project groups. The project groups are sorted by creation date, with the most recently-created project groups coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

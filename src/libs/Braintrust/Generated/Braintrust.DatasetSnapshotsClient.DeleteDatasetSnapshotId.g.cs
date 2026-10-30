@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Delete dataset_snapshot<br/>
-        /// Delete a dataset_snapshot object by its id
+        /// Delete dataset snapshot<br/>
+        /// Delete a dataset snapshot object by its id
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Delete dataset_snapshot<br/>
-        /// Delete a dataset_snapshot object by its id
+        /// Delete dataset snapshot<br/>
+        /// Delete a dataset snapshot object by its id
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id

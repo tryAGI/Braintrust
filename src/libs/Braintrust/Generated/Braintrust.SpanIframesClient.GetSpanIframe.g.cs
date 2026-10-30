@@ -61,8 +61,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// List span_iframes<br/>
-        /// List out all span_iframes. The span_iframes are sorted by creation date, with the most recently-created span_iframes coming first
+        /// List span iframes<br/>
+        /// List out all span iframes. The span iframes are sorted by creation date, with the most recently-created span iframes coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -111,8 +111,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// List span_iframes<br/>
-        /// List out all span_iframes. The span_iframes are sorted by creation date, with the most recently-created span_iframes coming first
+        /// List span iframes<br/>
+        /// List out all span iframes. The span iframes are sorted by creation date, with the most recently-created span iframes coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

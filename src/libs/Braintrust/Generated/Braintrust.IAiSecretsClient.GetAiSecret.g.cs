@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IAiSecretsClient
     {
         /// <summary>
-        /// List ai_secrets<br/>
-        /// List out all ai_secrets. The ai_secrets are sorted by creation date, with the most recently-created ai_secrets coming first
+        /// List AI secrets<br/>
+        /// List out all AI secrets. The AI secrets are sorted by creation date, with the most recently-created AI secrets coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -43,8 +43,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List ai_secrets<br/>
-        /// List out all ai_secrets. The ai_secrets are sorted by creation date, with the most recently-created ai_secrets coming first
+        /// List AI secrets<br/>
+        /// List out all AI secrets. The AI secrets are sorted by creation date, with the most recently-created AI secrets coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return

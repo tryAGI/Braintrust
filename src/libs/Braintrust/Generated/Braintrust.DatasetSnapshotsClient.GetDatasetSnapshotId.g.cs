@@ -51,8 +51,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Get dataset_snapshot<br/>
-        /// Get a dataset_snapshot object by its id
+        /// Get dataset snapshot<br/>
+        /// Get a dataset snapshot object by its id
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id
@@ -74,8 +74,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Get dataset_snapshot<br/>
-        /// Get a dataset_snapshot object by its id
+        /// Get dataset snapshot<br/>
+        /// Get a dataset snapshot object by its id
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id

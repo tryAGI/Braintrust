@@ -9,6 +9,12 @@ namespace Braintrust
     public sealed partial class InvokeApi
     {
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("request_source")]
+        public string? RequestSource { get; set; }
+
+        /// <summary>
         /// Argument to the function, which can be any JSON serializable value
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input")]
@@ -97,6 +103,7 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="InvokeApi" /> class.
         /// </summary>
+        /// <param name="requestSource"></param>
         /// <param name="input">
         /// Argument to the function, which can be any JSON serializable value
         /// </param>
@@ -140,6 +147,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public InvokeApi(
+            string? requestSource,
             object? input,
             object? expected,
             global::System.Collections.Generic.Dictionary<string, object?>? metadata,
@@ -154,6 +162,7 @@ namespace Braintrust
             string? endpointName,
             string? version)
         {
+            this.RequestSource = requestSource;
             this.Input = input;
             this.Expected = expected;
             this.Metadata = metadata;

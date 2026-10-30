@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IAclsClient
     {
         /// <summary>
-        /// Delete single acl<br/>
-        /// Delete a single acl
+        /// Delete single ACL<br/>
+        /// Delete a single ACL
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -18,8 +18,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete single acl<br/>
-        /// Delete a single acl
+        /// Delete single ACL<br/>
+        /// Delete a single ACL
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -31,8 +31,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete single acl<br/>
-        /// Delete a single acl
+        /// Delete single ACL<br/>
+        /// Delete a single ACL
         /// </summary>
         /// <param name="objectType">
         /// The object type that the ACL applies to

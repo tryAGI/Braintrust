@@ -53,8 +53,8 @@ namespace Braintrust
             ref string content);
 
         /// <summary>
-        /// Partially update dataset_snapshot<br/>
-        /// Partially update a dataset_snapshot object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update dataset snapshot<br/>
+        /// Partially update a dataset snapshot object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id
@@ -81,8 +81,8 @@ namespace Braintrust
             return __response.Body;
         }
         /// <summary>
-        /// Partially update dataset_snapshot<br/>
-        /// Partially update a dataset_snapshot object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update dataset snapshot<br/>
+        /// Partially update a dataset snapshot object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id
@@ -641,8 +641,8 @@ namespace Braintrust
             }
         }
         /// <summary>
-        /// Partially update dataset_snapshot<br/>
-        /// Partially update a dataset_snapshot object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
+        /// Partially update dataset snapshot<br/>
+        /// Partially update a dataset snapshot object. Specify the fields to update in the payload. Any object-type fields will be deep-merged with existing content. Currently we do not support removing fields or setting them to null.
         /// </summary>
         /// <param name="datasetSnapshotId">
         /// DatasetSnapshot id

@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface IAiSecretsClient
     {
         /// <summary>
-        /// Delete ai_secret<br/>
-        /// Delete an ai_secret object by its id
+        /// Delete AI secret<br/>
+        /// Delete an AI secret object by its id
         /// </summary>
         /// <param name="aiSecretId">
         /// AiSecret id
@@ -19,8 +19,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Delete ai_secret<br/>
-        /// Delete an ai_secret object by its id
+        /// Delete AI secret<br/>
+        /// Delete an AI secret object by its id
         /// </summary>
         /// <param name="aiSecretId">
         /// AiSecret id

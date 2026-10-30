@@ -5,8 +5,8 @@ namespace Braintrust
     public partial interface ISpanIframesClient
     {
         /// <summary>
-        /// List span_iframes<br/>
-        /// List out all span_iframes. The span_iframes are sorted by creation date, with the most recently-created span_iframes coming first
+        /// List span iframes<br/>
+        /// List out all span iframes. The span iframes are sorted by creation date, with the most recently-created span iframes coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
@@ -41,8 +41,8 @@ namespace Braintrust
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// List span_iframes<br/>
-        /// List out all span_iframes. The span_iframes are sorted by creation date, with the most recently-created span_iframes coming first
+        /// List span iframes<br/>
+        /// List out all span iframes. The span iframes are sorted by creation date, with the most recently-created span iframes coming first
         /// </summary>
         /// <param name="limit">
         /// Limit the number of objects to return
