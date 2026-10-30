@@ -96,7 +96,7 @@ namespace Braintrust
             global::System.Guid? parametersId = default,
             string? parametersVersion = default,
             bool? @public = default,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
+            object? metadata = default,
             global::System.Collections.Generic.IList<string>? tags = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

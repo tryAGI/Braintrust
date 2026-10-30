@@ -32,7 +32,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("function")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, object?> Function { get; set; }
+        public required global::Braintrust.FunctionIdRef Function { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,7 +57,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GraphNodeVariant1(
-            global::System.Collections.Generic.Dictionary<string, object?> function,
+            global::Braintrust.FunctionIdRef function,
             string? description,
             global::Braintrust.GraphNodeVariant1Position? position,
             global::Braintrust.GraphNodeVariant1Type type)

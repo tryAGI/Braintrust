@@ -19,7 +19,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inline_function")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, object?> InlineFunction { get; set; }
+        public required object InlineFunction { get; set; }
 
         /// <summary>
         /// The type of global function. Defaults to 'scorer'.<br/>
@@ -57,7 +57,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FunctionIdInlineFunction(
-            global::System.Collections.Generic.Dictionary<string, object?> inlineFunction,
+            object inlineFunction,
             global::Braintrust.PromptData? inlinePrompt,
             global::Braintrust.FunctionTypeEnum? functionType,
             string? name)

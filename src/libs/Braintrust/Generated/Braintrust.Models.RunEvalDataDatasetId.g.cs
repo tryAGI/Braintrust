@@ -31,7 +31,7 @@ namespace Braintrust
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_internal_btql")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? InternalBtql { get; set; }
+        public object? InternalBtql { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,7 +57,7 @@ namespace Braintrust
             string datasetId,
             string? datasetVersion,
             string? datasetEnvironment,
-            global::System.Collections.Generic.Dictionary<string, object?>? internalBtql)
+            object? internalBtql)
         {
             this.DatasetId = datasetId ?? throw new global::System.ArgumentNullException(nameof(datasetId));
             this.DatasetVersion = datasetVersion;

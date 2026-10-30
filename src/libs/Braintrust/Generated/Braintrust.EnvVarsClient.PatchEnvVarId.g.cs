@@ -666,7 +666,7 @@ namespace Braintrust
             global::System.Guid envVarId,
             string name,
             string? value = default,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
+            object? metadata = default,
             string? secretType = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)

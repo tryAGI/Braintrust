@@ -54,20 +54,9 @@ namespace Braintrust
         /// An opaque string to be used as a cursor for the next page of results, in order from latest to earliest.<br/>
         /// The string can be obtained directly from the `cursor` property of the previous fetch query
         /// </param>
-        /// <param name="maxXactId">
-        /// DEPRECATION NOTICE: The manually-constructed pagination cursor is deprecated in favor of the explicit 'cursor' returned by object fetch requests. Please prefer the 'cursor' argument going forwards.<br/>
-        /// Together, `max_xact_id` and `max_root_span_id` form a pagination cursor<br/>
-        /// Since a paginated fetch query returns results in order from latest to earliest, the cursor for the next page can be found as the row with the minimum (earliest) value of the tuple `(_xact_id, root_span_id)`. See the documentation of `limit` for an overview of paginating fetch queries.
-        /// </param>
-        /// <param name="maxRootSpanId">
-        /// DEPRECATION NOTICE: The manually-constructed pagination cursor is deprecated in favor of the explicit 'cursor' returned by object fetch requests. Please prefer the 'cursor' argument going forwards.<br/>
-        /// Together, `max_xact_id` and `max_root_span_id` form a pagination cursor<br/>
-        /// Since a paginated fetch query returns results in order from latest to earliest, the cursor for the next page can be found as the row with the minimum (earliest) value of the tuple `(_xact_id, root_span_id)`. See the documentation of `limit` for an overview of paginating fetch queries.
-        /// </param>
-        /// <param name="version">
-        /// Retrieve a snapshot of events from a past time<br/>
-        /// The version id is essentially a filter on the latest event transaction id. You can use the `max_xact_id` returned by a past fetch as the version to reproduce that exact fetch.
-        /// </param>
+        /// <param name="maxXactId"></param>
+        /// <param name="maxRootSpanId"></param>
+        /// <param name="version"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>

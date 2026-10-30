@@ -31,7 +31,7 @@ namespace Braintrust
         /// Optional metadata associated with the classification
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// Optional function identifier that produced the classification
@@ -71,7 +71,7 @@ namespace Braintrust
             string id,
             string? label,
             double? confidence,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             global::Braintrust.SavedFunctionId? source)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

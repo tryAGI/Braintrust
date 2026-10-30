@@ -21,10 +21,9 @@ namespace Braintrust
         public string? Description { get; set; }
 
         /// <summary>
-        /// The type of the configured score
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ProjectScoreTypeJsonConverter))]
         public global::Braintrust.ProjectScoreType? ScoreType { get; set; }
 
         /// <summary>
@@ -55,9 +54,7 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the project score
         /// </param>
-        /// <param name="scoreType">
-        /// The type of the configured score
-        /// </param>
+        /// <param name="scoreType"></param>
         /// <param name="categories"></param>
         /// <param name="config"></param>
 #if NET7_0_OR_GREATER

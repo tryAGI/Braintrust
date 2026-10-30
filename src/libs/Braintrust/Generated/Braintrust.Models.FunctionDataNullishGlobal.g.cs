@@ -34,7 +34,7 @@ namespace Braintrust
         /// Configuration options to pass to the global function (e.g., for preprocessor customization)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Config { get; set; }
+        public object? Config { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,7 +61,7 @@ namespace Braintrust
             string name,
             global::Braintrust.FunctionDataNullishGlobalType type,
             global::Braintrust.FunctionTypeEnum? functionType,
-            global::System.Collections.Generic.Dictionary<string, object?>? config)
+            object? config)
         {
             this.Type = type;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

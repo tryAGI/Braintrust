@@ -58,7 +58,7 @@ namespace Braintrust
             global::System.Guid aiSecretId,
             string? name = default,
             string? type = default,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
+            object? metadata = default,
             string? secret = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

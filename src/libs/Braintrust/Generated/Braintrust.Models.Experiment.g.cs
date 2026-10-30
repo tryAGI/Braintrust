@@ -112,7 +112,7 @@ namespace Braintrust
         /// User-controlled metadata about the experiment
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// A list of tags for the experiment
@@ -203,7 +203,7 @@ namespace Braintrust
             global::System.Guid? parametersId,
             string? parametersVersion,
             global::System.Guid? userId,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             global::System.Collections.Generic.IList<string>? tags)
         {
             this.Id = id;

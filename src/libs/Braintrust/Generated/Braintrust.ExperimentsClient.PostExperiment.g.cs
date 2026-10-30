@@ -688,7 +688,7 @@ namespace Braintrust
             global::System.Guid? parametersId = default,
             string? parametersVersion = default,
             bool? @public = default,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
+            object? metadata = default,
             global::System.Collections.Generic.IList<string>? tags = default,
             bool? ensureNew = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,

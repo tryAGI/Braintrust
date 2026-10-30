@@ -33,7 +33,7 @@ namespace Braintrust
         /// Include these properties in every span created under this parent
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("propagated_event")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? PropagatedEvent { get; set; }
+        public object? PropagatedEvent { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,7 +61,7 @@ namespace Braintrust
             global::Braintrust.InvokeParentSpanParentStructObjectType objectType,
             string objectId,
             global::Braintrust.InvokeParentSpanParentStructRowIds? rowIds,
-            global::System.Collections.Generic.Dictionary<string, object?>? propagatedEvent)
+            object? propagatedEvent)
         {
             this.ObjectType = objectType;
             this.ObjectId = objectId ?? throw new global::System.ArgumentNullException(nameof(objectId));

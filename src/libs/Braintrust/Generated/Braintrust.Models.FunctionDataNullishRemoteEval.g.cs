@@ -34,7 +34,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parameters")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, object?> Parameters { get; set; }
+        public required object Parameters { get; set; }
 
         /// <summary>
         /// The version (transaction ID) of the parameters being used
@@ -64,7 +64,7 @@ namespace Braintrust
         public FunctionDataNullishRemoteEval(
             string endpoint,
             string evalName,
-            global::System.Collections.Generic.Dictionary<string, object?> parameters,
+            object parameters,
             global::Braintrust.FunctionDataNullishRemoteEvalType type,
             string? parametersVersion)
         {

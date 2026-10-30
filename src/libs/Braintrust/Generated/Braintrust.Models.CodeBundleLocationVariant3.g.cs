@@ -40,7 +40,7 @@ namespace Braintrust
         /// Parameter values for sandbox eval execution
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parameters")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Parameters { get; set; }
+        public object? Parameters { get; set; }
 
         /// <summary>
         /// Definition of current evaluator with parameters
@@ -77,7 +77,7 @@ namespace Braintrust
             string evalName,
             global::Braintrust.CodeBundleLocationVariant3Type type,
             global::System.Collections.Generic.IList<string>? entrypoints,
-            global::System.Collections.Generic.Dictionary<string, object?>? parameters,
+            object? parameters,
             object? evaluatorDefinition)
         {
             this.Type = type;

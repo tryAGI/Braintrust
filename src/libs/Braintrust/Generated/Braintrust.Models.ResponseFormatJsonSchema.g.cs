@@ -25,8 +25,8 @@ namespace Braintrust
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schema")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.Dictionary<string, object?>, string>))]
-        public global::Braintrust.AnyOf<global::System.Collections.Generic.Dictionary<string, object?>, string>? Schema { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<object, string>))]
+        public global::Braintrust.AnyOf<object, string>? Schema { get; set; }
 
         /// <summary>
         ///
@@ -53,7 +53,7 @@ namespace Braintrust
         public ResponseFormatJsonSchema(
             string name,
             string? description,
-            global::Braintrust.AnyOf<global::System.Collections.Generic.Dictionary<string, object?>, string>? schema,
+            global::Braintrust.AnyOf<object, string>? schema,
             bool? strict)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

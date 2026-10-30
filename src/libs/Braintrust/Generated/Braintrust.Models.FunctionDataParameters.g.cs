@@ -20,7 +20,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, object?> Data { get; set; }
+        public required object Data { get; set; }
 
         /// <summary>
         /// JSON Schema format for parameters
@@ -49,7 +49,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FunctionDataParameters(
-            global::System.Collections.Generic.Dictionary<string, object?> data,
+            object data,
             global::Braintrust.FunctionDataParametersSchema schema,
             global::Braintrust.FunctionDataParametersType type)
         {

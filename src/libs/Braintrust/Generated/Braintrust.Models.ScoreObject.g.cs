@@ -25,7 +25,7 @@ namespace Braintrust
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +47,7 @@ namespace Braintrust
         public ScoreObject(
             string? name,
             global::Braintrust.AnyOf<double?, bool?>? score,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata)
+            object? metadata)
         {
             this.Name = name;
             this.Score = score;

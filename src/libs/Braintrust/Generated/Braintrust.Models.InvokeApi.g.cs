@@ -30,7 +30,7 @@ namespace Braintrust
         /// Any relevant metadata. This will be logged and available as the `metadata` argument.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// Any relevant tags to log on the span.
@@ -80,7 +80,7 @@ namespace Braintrust
         /// Partial function definition to merge with the function being invoked. Fields are validated against the function type's schema at runtime. For facets: { preprocessor?, prompt?, model? }. For prompts: { model?, ... }.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("overrides")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Overrides { get; set; }
+        public object? Overrides { get; set; }
 
         /// <summary>
         /// Name of the AI provider secret to pin this invocation to.
@@ -150,7 +150,7 @@ namespace Braintrust
             string? requestSource,
             object? input,
             object? expected,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             global::System.Collections.Generic.IList<string>? tags,
             global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageParam>? messages,
             global::Braintrust.InvokeParent? parent,
@@ -158,7 +158,7 @@ namespace Braintrust
             global::Braintrust.StreamingMode? mode,
             bool? strict,
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.InvokeApiMcpAuth2>? mcpAuth,
-            global::System.Collections.Generic.Dictionary<string, object?>? overrides,
+            object? overrides,
             string? endpointName,
             string? version)
         {

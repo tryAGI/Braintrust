@@ -12,7 +12,7 @@ namespace Braintrust
         /// BTQL filter payload used to evaluate a subset of a linked dataset.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataset_filter")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? DatasetFilter { get; set; }
+        public object? DatasetFilter { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,7 +30,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PatchExperimentInternalMetadata(
-            global::System.Collections.Generic.Dictionary<string, object?>? datasetFilter)
+            object? datasetFilter)
         {
             this.DatasetFilter = datasetFilter;
         }
