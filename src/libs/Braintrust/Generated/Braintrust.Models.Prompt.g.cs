@@ -85,7 +85,7 @@ namespace Braintrust
         /// User-controlled metadata about the prompt
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         ///
@@ -155,7 +155,7 @@ namespace Braintrust
             global::System.DateTime? created,
             global::Braintrust.PromptDataNullish? promptData,
             global::System.Collections.Generic.IList<string>? tags,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             global::Braintrust.FunctionTypeEnumNullish? functionType)
         {
             this.Id = id;

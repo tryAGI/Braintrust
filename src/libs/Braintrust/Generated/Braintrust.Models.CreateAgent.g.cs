@@ -32,7 +32,7 @@ namespace Braintrust
         /// User-controlled metadata about the agent
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -62,7 +62,7 @@ namespace Braintrust
             global::System.Guid projectId,
             string name,
             string? description,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata)
+            object? metadata)
         {
             this.ProjectId = projectId;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

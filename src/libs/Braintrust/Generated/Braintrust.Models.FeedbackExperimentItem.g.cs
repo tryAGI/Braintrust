@@ -37,7 +37,7 @@ namespace Braintrust
         /// A dictionary with additional data about the feedback. If you have a `user_id`, you can log it here and access it in the Braintrust UI. Note, this metadata does not correspond to the main event itself, but rather the audit log attached to the event.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// The source of the feedback. Must be one of "external" (default), "app", or "api"
@@ -90,7 +90,7 @@ namespace Braintrust
             global::System.Collections.Generic.Dictionary<string, double?>? scores,
             object? expected,
             string? comment,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             global::Braintrust.FeedbackExperimentItemSource? source,
             global::System.Collections.Generic.IList<string>? tags)
         {

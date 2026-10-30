@@ -63,7 +63,7 @@ namespace Braintrust
         /// User-controlled metadata about the dataset
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// URL slug for the dataset. used to construct dataset URLs
@@ -124,7 +124,7 @@ namespace Braintrust
             global::System.DateTime? deletedAt,
             global::System.Guid? userId,
             global::System.Collections.Generic.IList<string>? tags,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata)
+            object? metadata)
         {
             this.Id = id;
             this.ProjectId = projectId;

@@ -18,10 +18,9 @@ namespace Braintrust
         public required global::Braintrust.Permission Permission { get; set; }
 
         /// <summary>
-        /// The object type that the ACL applies to
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("restrict_object_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AclObjectTypeJsonConverter))]
         public global::Braintrust.AclObjectType? RestrictObjectType { get; set; }
 
         /// <summary>
@@ -37,9 +36,7 @@ namespace Braintrust
         /// Each permission permits a certain type of operation on an object in the system<br/>
         /// Permissions can be assigned to to objects on an individual basis, or grouped into roles
         /// </param>
-        /// <param name="restrictObjectType">
-        /// The object type that the ACL applies to
-        /// </param>
+        /// <param name="restrictObjectType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

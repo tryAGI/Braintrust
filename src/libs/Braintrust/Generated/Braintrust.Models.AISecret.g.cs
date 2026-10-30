@@ -57,7 +57,7 @@ namespace Braintrust
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// User id of the last update to the encrypted secret value
@@ -115,7 +115,7 @@ namespace Braintrust
             global::System.DateTime? updatedAt,
             global::System.DateTime? secretUpdatedAt,
             string? type,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             global::System.Guid? secretUpdatedByUserId,
             string? previewSecret)
         {

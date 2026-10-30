@@ -47,11 +47,10 @@ namespace Braintrust
         /// Id of the group the ACL applies to. Exactly one of `user_id` and `group_id` will be provided
         /// </param>
         /// <param name="permission">
-        /// Each permission permits a certain type of operation on an object in the system<br/>
-        /// Permissions can be assigned to to objects on an individual basis, or grouped into roles
+        /// Permission the ACL grants. Exactly one of `permission` and `role_id` will be provided
         /// </param>
         /// <param name="restrictObjectType">
-        /// The object type that the ACL applies to
+        /// When setting a permission directly, optionally restricts the permission grant to just the specified object type. Cannot be set alongside a `role_id`.
         /// </param>
         /// <param name="roleId">
         /// Id of the role the ACL grants. Exactly one of `permission` and `role_id` will be provided

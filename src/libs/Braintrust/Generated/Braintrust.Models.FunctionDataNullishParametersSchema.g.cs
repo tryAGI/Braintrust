@@ -20,7 +20,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, object?>> Properties { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, object> Properties { get; set; }
 
         /// <summary>
         ///
@@ -51,7 +51,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FunctionDataNullishParametersSchema(
-            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, object?>> properties,
+            global::System.Collections.Generic.Dictionary<string, object> properties,
             global::Braintrust.FunctionDataNullishParametersSchemaType type,
             global::System.Collections.Generic.IList<string>? required,
             bool? additionalProperties)

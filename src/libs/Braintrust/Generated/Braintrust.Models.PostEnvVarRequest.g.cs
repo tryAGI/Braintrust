@@ -40,7 +40,7 @@ namespace Braintrust
         /// Optional metadata associated with the environment variable when managed via the function secrets API
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// Optional classification for the secret (for example, the AI provider name)
@@ -83,7 +83,7 @@ namespace Braintrust
             global::System.Guid objectId,
             string name,
             string? value,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             string? secretType)
         {
             this.ObjectType = objectType;

@@ -638,7 +638,7 @@ namespace Braintrust
         /// For nearly all users, this parameter should be unnecessary. But in the rare case that your API key belongs to multiple organizations, you may specify the name of the organization the Service token belongs in.
         /// </param>
         /// <param name="serviceAccountId">
-        /// The ID of the service account to which the token should belong. To create a service account, visit [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) in the Braintrust UI or call [`PATCH /v1/organization/members`](https://www.braintrust.dev/docs/api-reference/organizations/modify-organization-membership).
+        /// The ID of the service account to which the token should belong. To create a service account, visit [**Settings &gt; Service tokens**](https://www.braintrust.dev/app/~/configuration/org/service-tokens) in the Braintrust UI or call [`PATCH /v1/organization/members`](https://docs.braintrust.dev/api-reference/organizations/modify-organization-membership).
         /// </param>
         /// <param name="expiresInSeconds">
         /// Number of seconds from now after which the service token should expire. If omitted, the token never expires.

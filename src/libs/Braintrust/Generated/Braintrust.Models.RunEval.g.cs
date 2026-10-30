@@ -33,7 +33,7 @@ namespace Braintrust
         /// Values for any parameters used in the eval
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parameters")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Parameters { get; set; }
+        public object? Parameters { get; set; }
 
         /// <summary>
         /// The function to evaluate
@@ -60,7 +60,7 @@ namespace Braintrust
         /// Optional experiment-level metadata to store about the evaluation. You can later use this to slice &amp; dice across experiments.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         ///
@@ -246,9 +246,9 @@ namespace Braintrust
             global::Braintrust.FunctionId task,
             global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.FunctionId?, object>> scores,
             string? name,
-            global::System.Collections.Generic.Dictionary<string, object?>? parameters,
+            object? parameters,
             string? experimentName,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             global::Braintrust.AllOf<global::Braintrust.InvokeParent?, object>? parent,
             bool? stream,
             double? trialCount,

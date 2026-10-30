@@ -65,7 +65,7 @@ namespace Braintrust
         /// Optional metadata associated with the environment variable when managed via the function secrets API
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, object?>? Metadata { get; set; }
+        public object? Metadata { get; set; }
 
         /// <summary>
         /// Redacted preview of the stored secret value
@@ -145,7 +145,7 @@ namespace Braintrust
             global::System.DateTime? secretUpdatedAt,
             global::System.Guid? secretUpdatedByUserId,
             global::System.DateTime? used,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata,
+            object? metadata,
             string? previewSecret,
             string? secretType,
             global::Braintrust.EnvVarSecretCategory? secretCategory)

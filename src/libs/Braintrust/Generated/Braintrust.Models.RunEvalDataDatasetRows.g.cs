@@ -13,7 +13,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<object?> Data { get; set; }
+        public required global::System.Collections.Generic.IList<object> Data { get; set; }
 
         /// <summary>
         /// The saved dataset these rows came from. Its project scopes saved simulated-user references; the caller must have read access to the dataset and source project.
@@ -38,7 +38,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RunEvalDataDatasetRows(
-            global::System.Collections.Generic.IList<object?> data,
+            global::System.Collections.Generic.IList<object> data,
             string? sourceDatasetId)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));

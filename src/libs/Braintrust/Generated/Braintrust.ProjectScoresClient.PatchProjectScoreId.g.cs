@@ -653,9 +653,7 @@ namespace Braintrust
         /// <param name="description">
         /// Textual description of the project score
         /// </param>
-        /// <param name="scoreType">
-        /// The type of the configured score
-        /// </param>
+        /// <param name="scoreType"></param>
         /// <param name="categories"></param>
         /// <param name="config"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

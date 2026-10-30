@@ -51,7 +51,7 @@ namespace Braintrust
         global::System.Threading.Tasks.Task<global::Braintrust.AISecret> PostAiSecretAsync(
             string name,
             string? type = default,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
+            object? metadata = default,
             string? secret = default,
             string? orgName = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,

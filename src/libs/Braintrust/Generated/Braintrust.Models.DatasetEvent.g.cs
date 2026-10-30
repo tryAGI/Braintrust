@@ -74,7 +74,7 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<string>? Tags { get; set; }
 
         /// <summary>
-        /// A unique identifier used to link different dataset events together as part of a full trace. See the [tracing guide](https://www.braintrust.dev/docs/instrument) for full details on tracing
+        /// A unique identifier used to link different dataset events together as part of a full trace. See the [tracing guide](https://docs.braintrust.dev/instrument) for full details on tracing
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("span_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -103,13 +103,13 @@ namespace Braintrust
         /// Optional list of comments attached to this event
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("comments")]
-        public global::System.Collections.Generic.IList<object?>? Comments { get; set; }
+        public global::System.Collections.Generic.IList<object>? Comments { get; set; }
 
         /// <summary>
         /// Optional list of audit entries attached to this event
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audit_data")]
-        public global::System.Collections.Generic.IList<object?>? AuditData { get; set; }
+        public global::System.Collections.Generic.IList<object>? AuditData { get; set; }
 
         /// <summary>
         /// Facets for categorization (dictionary from facet id to value)
@@ -148,7 +148,7 @@ namespace Braintrust
         /// Unique identifier for the dataset
         /// </param>
         /// <param name="spanId">
-        /// A unique identifier used to link different dataset events together as part of a full trace. See the [tracing guide](https://www.braintrust.dev/docs/instrument) for full details on tracing
+        /// A unique identifier used to link different dataset events together as part of a full trace. See the [tracing guide](https://docs.braintrust.dev/instrument) for full details on tracing
         /// </param>
         /// <param name="rootSpanId">
         /// A unique identifier for the trace this dataset event belongs to
@@ -204,8 +204,8 @@ namespace Braintrust
             global::System.Collections.Generic.IList<string>? tags,
             bool? isRoot,
             global::Braintrust.ObjectReferenceNullish? origin,
-            global::System.Collections.Generic.IList<object?>? comments,
-            global::System.Collections.Generic.IList<object?>? auditData,
+            global::System.Collections.Generic.IList<object>? comments,
+            global::System.Collections.Generic.IList<object>? auditData,
             global::System.Collections.Generic.Dictionary<string, string?>? facets,
             global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Braintrust.DatasetEventClassification>>? classifications)
         {

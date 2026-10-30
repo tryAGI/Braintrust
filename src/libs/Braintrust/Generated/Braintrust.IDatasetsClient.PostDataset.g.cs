@@ -57,7 +57,7 @@ namespace Braintrust
             string name,
             string? description = default,
             global::System.Collections.Generic.IList<string>? tags = default,
-            global::System.Collections.Generic.Dictionary<string, object?>? metadata = default,
+            object? metadata = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
