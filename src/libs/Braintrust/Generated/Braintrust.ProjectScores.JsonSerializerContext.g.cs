@@ -45,6 +45,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectScoreCategories), TypeInfoPropertyName = "ProjectScoreCategories2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.ProjectScoreCategory>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OnlineScoreConfig))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OnlineScoreConfigServiceTier), TypeInfoPropertyName = "OnlineScoreConfigServiceTier2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>), TypeInfoPropertyName = "AllOfSavedFunctionIdAnyOfOnlineScoreConfigScorerVariant2FunctionOnlineScoreConfigScorerVariant2Global2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>), TypeInfoPropertyName = "AnyOfOnlineScoreConfigScorerVariant2FunctionOnlineScoreConfigScorerVariant2Global2")]
@@ -85,6 +86,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GroupScopePlacement?), TypeInfoPropertyName = "NullableGroupScopePlacement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope>?), TypeInfoPropertyName = "NullableAnyOfSpanScopeTraceScopeGroupScope2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectScoreCategories?), TypeInfoPropertyName = "NullableProjectScoreCategories2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OnlineScoreConfigServiceTier?), TypeInfoPropertyName = "NullableOnlineScoreConfigServiceTier2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>?), TypeInfoPropertyName = "NullableAllOfSavedFunctionIdAnyOfOnlineScoreConfigScorerVariant2FunctionOnlineScoreConfigScorerVariant2Global2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?), TypeInfoPropertyName = "NullableAnyOfOnlineScoreConfigScorerVariant2FunctionOnlineScoreConfigScorerVariant2Global2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType?), TypeInfoPropertyName = "NullableOnlineScoreConfigScorerVariant2FunctionType2")]
@@ -224,6 +226,10 @@ namespace Braintrust
 
                     || typeToConvert == typeof(global::Braintrust.GroupScopePlacement?)
 
+                    || typeToConvert == typeof(global::Braintrust.OnlineScoreConfigServiceTier)
+
+                    || typeToConvert == typeof(global::Braintrust.OnlineScoreConfigServiceTier?)
+
                     || typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType)
 
                     || typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType?)
@@ -333,6 +339,16 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.GroupScopePlacement?))
                 {
                     return new global::Braintrust.JsonConverters.GroupScopePlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.OnlineScoreConfigServiceTier))
+                {
+                    return new global::Braintrust.JsonConverters.OnlineScoreConfigServiceTierJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.OnlineScoreConfigServiceTier?))
+                {
+                    return new global::Braintrust.JsonConverters.OnlineScoreConfigServiceTierNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.OnlineScoreConfigScorerVariant2FunctionType))

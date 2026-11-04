@@ -16,6 +16,13 @@ namespace Braintrust
         public global::Braintrust.AutomationStatus? Status { get; set; }
 
         /// <summary>
+        /// Service tier for online scoring. If omitted, prompt-level service tiers are preserved.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("service_tier")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.OnlineScoreConfigServiceTierJsonConverter))]
+        public global::Braintrust.OnlineScoreConfigServiceTier? ServiceTier { get; set; }
+
+        /// <summary>
         /// The sampling rate for online scoring
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sampling_rate")]
@@ -78,6 +85,9 @@ namespace Braintrust
         /// <param name="status">
         /// Whether the automation is active or paused.
         /// </param>
+        /// <param name="serviceTier">
+        /// Service tier for online scoring. If omitted, prompt-level service tiers are preserved.
+        /// </param>
         /// <param name="btqlFilter">
         /// Filter logs using BTQL
         /// </param>
@@ -100,6 +110,7 @@ namespace Braintrust
             double samplingRate,
             global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.OnlineScoreConfigScorerVariant2Function, global::Braintrust.OnlineScoreConfigScorerVariant2Global>?>> scorers,
             global::Braintrust.AutomationStatus? status,
+            global::Braintrust.OnlineScoreConfigServiceTier? serviceTier,
             string? btqlFilter,
             bool? applyToRootSpan,
             global::System.Collections.Generic.IList<string>? applyToSpanNames,
@@ -107,6 +118,7 @@ namespace Braintrust
             global::Braintrust.AnyOf<global::Braintrust.SpanScope, global::Braintrust.TraceScope, global::Braintrust.GroupScope>? scope)
         {
             this.Status = status;
+            this.ServiceTier = serviceTier;
             this.SamplingRate = samplingRate;
             this.Scorers = scorers ?? throw new global::System.ArgumentNullException(nameof(scorers));
             this.BtqlFilter = btqlFilter;
