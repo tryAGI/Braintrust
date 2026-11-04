@@ -29,7 +29,7 @@ namespace Braintrust
         public required string Name { get; set; }
 
         /// <summary>
-        ///
+        /// Masked preview showing the token prefix and last four characters, e.g. bt-st-…AbCd.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preview_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -80,7 +80,9 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the service token
         /// </param>
-        /// <param name="previewName"></param>
+        /// <param name="previewName">
+        /// Masked preview showing the token prefix and last four characters, e.g. bt-st-…AbCd.
+        /// </param>
         /// <param name="created">
         /// Date of service token creation
         /// </param>

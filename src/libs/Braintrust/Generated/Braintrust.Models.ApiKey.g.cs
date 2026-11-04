@@ -29,7 +29,7 @@ namespace Braintrust
         public required string Name { get; set; }
 
         /// <summary>
-        ///
+        /// Masked preview showing the key prefix and last four characters, e.g. sk-…AbCd.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preview_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -86,7 +86,9 @@ namespace Braintrust
         /// <param name="name">
         /// Name of the api key
         /// </param>
-        /// <param name="previewName"></param>
+        /// <param name="previewName">
+        /// Masked preview showing the key prefix and last four characters, e.g. sk-…AbCd.
+        /// </param>
         /// <param name="created">
         /// Date of api key creation
         /// </param>

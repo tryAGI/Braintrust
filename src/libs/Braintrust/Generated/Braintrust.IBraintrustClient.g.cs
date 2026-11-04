@@ -55,11 +55,6 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public AgentsClient Agents { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
         public AiSecretsClient AiSecrets { get; }
 
         /// <summary>
@@ -71,6 +66,11 @@ namespace Braintrust
         ///
         /// </summary>
         public CrossObjectClient CrossObject { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public CustomColumnsClient CustomColumns { get; }
 
         /// <summary>
         ///
@@ -115,17 +115,17 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        public IngestKeysClient IngestKeys { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public LogsClient Logs { get; }
 
         /// <summary>
         ///
         /// </summary>
         public McpServersClient McpServers { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public OrgAutomationsClient OrgAutomations { get; }
 
         /// <summary>
         ///
