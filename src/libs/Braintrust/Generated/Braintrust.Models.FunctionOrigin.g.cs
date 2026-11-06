@@ -24,7 +24,7 @@ namespace Braintrust
         public required global::System.Guid ObjectId { get; set; }
 
         /// <summary>
-        /// The function exists for internal purposes and should not be displayed in the list of functions.
+        /// If true, the function was created for use by another Braintrust object and is hidden from function lists in the Braintrust UI.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("internal")]
         public bool? Internal { get; set; }
@@ -45,7 +45,7 @@ namespace Braintrust
         /// Id of the object the function is originating from
         /// </param>
         /// <param name="internal">
-        /// The function exists for internal purposes and should not be displayed in the list of functions.
+        /// If true, the function was created for use by another Braintrust object and is hidden from function lists in the Braintrust UI.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

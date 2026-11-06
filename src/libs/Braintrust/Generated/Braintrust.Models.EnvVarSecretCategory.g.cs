@@ -4,25 +4,25 @@
 namespace Braintrust
 {
     /// <summary>
-    /// The category of the secret: env_var for regular environment variables, ai_provider for AI provider API keys<br/>
+    /// The category of the secret: env_var for regular environment variables, ai_provider for AI provider API keys, sandbox_provider for sandbox provider credentials, automation_integration for automation delivery credentials<br/>
     /// Default Value: env_var
     /// </summary>
     public enum EnvVarSecretCategory
     {
         /// <summary>
-        /// env_var for regular environment variables, ai_provider for AI provider API keys
+        /// env_var for regular environment variables, ai_provider for AI provider API keys, sandbox_provider for sandbox provider credentials, automation_integration for automation delivery credentials
         /// </summary>
         AiProvider,
         /// <summary>
-        ///
+        /// env_var for regular environment variables, ai_provider for AI provider API keys, sandbox_provider for sandbox provider credentials, automation_integration for automation delivery credentials
         /// </summary>
         AutomationIntegration,
         /// <summary>
-        /// env_var for regular environment variables, ai_provider for AI provider API keys
+        /// env_var for regular environment variables, ai_provider for AI provider API keys, sandbox_provider for sandbox provider credentials, automation_integration for automation delivery credentials
         /// </summary>
         EnvVar,
         /// <summary>
-        ///
+        /// env_var for regular environment variables, ai_provider for AI provider API keys, sandbox_provider for sandbox provider credentials, automation_integration for automation delivery credentials
         /// </summary>
         SandboxProvider,
     }

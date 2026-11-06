@@ -45,7 +45,9 @@ namespace Braintrust
         /// <param name="functionId">
         /// Function id
         /// </param>
-        /// <param name="requestSource"></param>
+        /// <param name="requestSource">
+        /// A label identifying the caller, used to attribute usage
+        /// </param>
         /// <param name="input">
         /// Argument to the function, which can be any JSON serializable value
         /// </param>
@@ -53,7 +55,7 @@ namespace Braintrust
         /// The expected output of the function
         /// </param>
         /// <param name="metadata">
-        /// Any relevant metadata. This will be logged and available as the `metadata` argument.
+        /// Any relevant metadata to log on the span. For prompts, this is available as the `metadata` template variable. For code functions, this is passed through hooks and is not added to `input`.
         /// </param>
         /// <param name="tags">
         /// Any relevant tags to log on the span.
@@ -63,9 +65,6 @@ namespace Braintrust
         /// </param>
         /// <param name="parent">
         /// Options for tracing the function call
-        /// </param>
-        /// <param name="stream">
-        /// Whether to stream the response. If true, results will be returned in the Braintrust SSE format.
         /// </param>
         /// <param name="mode">
         /// The mode format of the returned value (defaults to 'auto')
@@ -97,7 +96,6 @@ namespace Braintrust
             global::System.Collections.Generic.IList<string>? tags = default,
             global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageParam>? messages = default,
             global::Braintrust.InvokeParent? parent = default,
-            bool? stream = default,
             global::Braintrust.StreamingMode? mode = default,
             bool? strict = default,
             global::System.Collections.Generic.Dictionary<string, global::Braintrust.InvokeApiMcpAuth2>? mcpAuth = default,

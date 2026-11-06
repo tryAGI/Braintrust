@@ -641,7 +641,7 @@ namespace Braintrust
         /// Textual description of the dataset snapshot
         /// </param>
         /// <param name="xactId">
-        /// Transaction id of the brainstore version at the time of the snapshot
+        /// Transaction ID of the dataset version at the time of the snapshot
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

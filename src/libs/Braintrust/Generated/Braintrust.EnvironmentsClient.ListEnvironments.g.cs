@@ -61,7 +61,9 @@ namespace Braintrust
         /// <param name="ids">
         /// Filter by environment IDs. Supports a single ID or multiple values.
         /// </param>
-        /// <param name="name"></param>
+        /// <param name="name">
+        /// Name of the environment to search for
+        /// </param>
         /// <param name="orgName">
         /// Filter search results to within a particular organization
         /// </param>
@@ -92,7 +94,9 @@ namespace Braintrust
         /// <param name="ids">
         /// Filter by environment IDs. Supports a single ID or multiple values.
         /// </param>
-        /// <param name="name"></param>
+        /// <param name="name">
+        /// Name of the environment to search for
+        /// </param>
         /// <param name="orgName">
         /// Filter search results to within a particular organization
         /// </param>

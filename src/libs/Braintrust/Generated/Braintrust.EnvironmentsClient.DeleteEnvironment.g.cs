@@ -54,7 +54,9 @@ namespace Braintrust
         /// Delete environment<br/>
         /// Delete an environment object by its id
         /// </summary>
-        /// <param name="environmentId"></param>
+        /// <param name="environmentId">
+        /// Environment id
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
@@ -75,7 +77,9 @@ namespace Braintrust
         /// Delete environment<br/>
         /// Delete an environment object by its id
         /// </summary>
-        /// <param name="environmentId"></param>
+        /// <param name="environmentId">
+        /// Environment id
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>

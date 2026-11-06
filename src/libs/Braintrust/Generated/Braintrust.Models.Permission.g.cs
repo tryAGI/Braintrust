@@ -5,7 +5,7 @@ namespace Braintrust
 {
     /// <summary>
     /// Each permission permits a certain type of operation on an object in the system<br/>
-    /// Permissions can be assigned to to objects on an individual basis, or grouped into roles
+    /// Permissions can be assigned to objects on an individual basis, or grouped into roles
     /// </summary>
     public enum Permission
     {

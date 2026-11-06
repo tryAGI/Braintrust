@@ -89,6 +89,33 @@ namespace Braintrust
         {
             request = request ?? throw new global::System.ArgumentNullException(nameof(request));
 
+            request = new global::Braintrust.RunEval
+            {
+                ProjectId = request.ProjectId,
+                Data = request.Data,
+                Name = request.Name,
+                Parameters = request.Parameters,
+                Task = request.Task,
+                Scores = request.Scores,
+                ExperimentName = request.ExperimentName,
+                Metadata = request.Metadata,
+                Parent = request.Parent,
+                Stream = false,
+                TrialCount = request.TrialCount,
+                IsPublic = request.IsPublic,
+                Timeout = request.Timeout,
+                MaxConcurrency = request.MaxConcurrency,
+                BaseExperimentName = request.BaseExperimentName,
+                BaseExperimentId = request.BaseExperimentId,
+                GitMetadataSettings = request.GitMetadataSettings,
+                RepoInfo = request.RepoInfo,
+                Strict = request.Strict,
+                StopToken = request.StopToken,
+                ExtraMessages = request.ExtraMessages,
+                Tags = request.Tags,
+                McpAuth = request.McpAuth,
+                EndpointName = request.EndpointName,
+            };
             PrepareArguments(
                 client: HttpClient);
             PrepareEvalLaunchArguments(
@@ -133,6 +160,10 @@ namespace Braintrust
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
                 __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
+
+                __httpRequest.Headers.TryAddWithoutValidation(
+                    "Accept",
+                    "application/json");
 
             foreach (var __authorization in __authorizations)
             {
@@ -471,9 +502,6 @@ namespace Braintrust
         /// Optional experiment-level metadata to store about the evaluation. You can later use this to slice &amp; dice across experiments.
         /// </param>
         /// <param name="parent"></param>
-        /// <param name="stream">
-        /// Whether to stream the results of the eval. If true, the request will return two events: one to indicate the experiment has started, and another upon completion. If false, the request will return the evaluation's summary upon completion.
-        /// </param>
         /// <param name="trialCount">
         /// The number of times to run the evaluator per input. This is useful for evaluating applications that have non-deterministic behavior and gives you both a stronger aggregate measure and a sense of the variance in the results.
         /// </param>
@@ -526,7 +554,6 @@ namespace Braintrust
             string? experimentName = default,
             object? metadata = default,
             global::Braintrust.AllOf<global::Braintrust.InvokeParent?, object>? parent = default,
-            bool? stream = default,
             double? trialCount = default,
             bool? isPublic = default,
             double? timeout = default,
@@ -555,7 +582,7 @@ namespace Braintrust
                 ExperimentName = experimentName,
                 Metadata = metadata,
                 Parent = parent,
-                Stream = stream,
+                Stream = false,
                 TrialCount = trialCount,
                 IsPublic = isPublic,
                 Timeout = timeout,

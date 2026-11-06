@@ -24,7 +24,7 @@ namespace Braintrust
         public required string ObjectId { get; set; }
 
         /// <summary>
-        /// Identifiers for the row to to log a subspan under
+        /// Identifiers for the row to log a subspan under
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("row_ids")]
         public global::Braintrust.InvokeParentSpanParentStructRowIds? RowIds { get; set; }
@@ -49,7 +49,7 @@ namespace Braintrust
         /// The id of the container object you are logging to
         /// </param>
         /// <param name="rowIds">
-        /// Identifiers for the row to to log a subspan under
+        /// Identifiers for the row to log a subspan under
         /// </param>
         /// <param name="propagatedEvent">
         /// Include these properties in every span created under this parent

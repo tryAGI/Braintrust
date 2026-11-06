@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    /// Identifiers for the row to to log a subspan under
+    /// Identifiers for the row to log a subspan under
     /// </summary>
     public sealed partial class InvokeParentSpanParentStructRowIds
     {

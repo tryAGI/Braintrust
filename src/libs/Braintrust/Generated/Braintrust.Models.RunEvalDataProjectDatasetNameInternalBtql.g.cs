@@ -4,7 +4,7 @@
 namespace Braintrust
 {
     /// <summary>
-    ///
+    /// Internal BTQL query overrides in parsed JSON form that select which dataset rows to evaluate. `filter` is a BTQL expression object, `sort` is an array of BTQL sort expressions, and `limit` is an integer.
     /// </summary>
     public sealed partial class RunEvalDataProjectDatasetNameInternalBtql
     {

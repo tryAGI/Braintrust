@@ -56,7 +56,9 @@ namespace Braintrust
         /// Partially update environment<br/>
         /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
-        /// <param name="environmentId"></param>
+        /// <param name="environmentId">
+        /// Environment id
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -82,7 +84,9 @@ namespace Braintrust
         /// Partially update environment<br/>
         /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
-        /// <param name="environmentId"></param>
+        /// <param name="environmentId">
+        /// Environment id
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -640,7 +644,9 @@ namespace Braintrust
         /// Partially update environment<br/>
         /// Partially update an environment object. Specify the fields to update in the payload.
         /// </summary>
-        /// <param name="environmentId"></param>
+        /// <param name="environmentId">
+        /// Environment id
+        /// </param>
         /// <param name="name">
         /// Name of the environment
         /// </param>

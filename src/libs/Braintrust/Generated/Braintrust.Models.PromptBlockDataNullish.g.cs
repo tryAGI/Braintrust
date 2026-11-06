@@ -82,6 +82,43 @@ namespace Braintrust
         public global::Braintrust.PromptBlockDataNullishCompletion PickCompletion() => Completion is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Completion' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Braintrust.PromptBlockDataNullishDecisions? Decisions { get; init; }
+#else
+        public global::Braintrust.PromptBlockDataNullishDecisions? Decisions { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Decisions))]
+#endif
+        public bool IsDecisions => Decisions != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickDecisions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Braintrust.PromptBlockDataNullishDecisions? value)
+        {
+            value = Decisions;
+            return IsDecisions;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Braintrust.PromptBlockDataNullishDecisions PickDecisions() => Decisions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Decisions' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -131,19 +168,45 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator PromptBlockDataNullish(global::Braintrust.PromptBlockDataNullishDecisions value) => new PromptBlockDataNullish((global::Braintrust.PromptBlockDataNullishDecisions?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Braintrust.PromptBlockDataNullishDecisions?(PromptBlockDataNullish @this) => @this.Decisions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public PromptBlockDataNullish(global::Braintrust.PromptBlockDataNullishDecisions? value)
+        {
+            Decisions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static PromptBlockDataNullish FromDecisions(global::Braintrust.PromptBlockDataNullishDecisions? value) => new PromptBlockDataNullish(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public PromptBlockDataNullish(
             global::Braintrust.PromptBlockDataNullishChat? chat,
-            global::Braintrust.PromptBlockDataNullishCompletion? completion
+            global::Braintrust.PromptBlockDataNullishCompletion? completion,
+            global::Braintrust.PromptBlockDataNullishDecisions? decisions
             )
         {
             Chat = chat;
             Completion = completion;
+            Decisions = decisions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            Decisions as object ??
             Completion as object ??
             Chat as object
             ;
@@ -153,7 +216,8 @@ namespace Braintrust
         /// </summary>
         public override string? ToString() =>
             Chat?.ToString() ??
-            Completion?.ToString()
+            Completion?.ToString() ??
+            Decisions?.ToString()
             ;
 
         /// <summary>
@@ -161,7 +225,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsChat || IsCompletion;
+            return IsChat || IsCompletion || IsDecisions;
         }
 
         /// <summary>
@@ -170,6 +234,7 @@ namespace Braintrust
         public TResult? Match<TResult>(
             global::System.Func<global::Braintrust.PromptBlockDataNullishChat, TResult>? chat = null,
             global::System.Func<global::Braintrust.PromptBlockDataNullishCompletion, TResult>? completion = null,
+            global::System.Func<global::Braintrust.PromptBlockDataNullishDecisions, TResult>? decisions = null,
             bool validate = true)
         {
             if (validate)
@@ -185,6 +250,10 @@ namespace Braintrust
             {
                 return completion(__value1);
             }
+            else if (Decisions is { } __value2 && decisions != null)
+            {
+                return decisions(__value2);
+            }
 
             return default(TResult);
         }
@@ -196,6 +265,8 @@ namespace Braintrust
             global::System.Action<global::Braintrust.PromptBlockDataNullishChat>? chat = null,
 
             global::System.Action<global::Braintrust.PromptBlockDataNullishCompletion>? completion = null,
+
+            global::System.Action<global::Braintrust.PromptBlockDataNullishDecisions>? decisions = null,
             bool validate = true)
         {
             if (validate)
@@ -210,6 +281,10 @@ namespace Braintrust
             else if (Completion is { } __value1)
             {
                 completion?.Invoke(__value1);
+            }
+            else if (Decisions is { } __value2)
+            {
+                decisions?.Invoke(__value2);
             }
         }
 
@@ -219,6 +294,7 @@ namespace Braintrust
         public void Switch(
             global::System.Action<global::Braintrust.PromptBlockDataNullishChat>? chat = null,
             global::System.Action<global::Braintrust.PromptBlockDataNullishCompletion>? completion = null,
+            global::System.Action<global::Braintrust.PromptBlockDataNullishDecisions>? decisions = null,
             bool validate = true)
         {
             if (validate)
@@ -233,6 +309,10 @@ namespace Braintrust
             else if (Completion is { } __value1)
             {
                 completion?.Invoke(__value1);
+            }
+            else if (Decisions is { } __value2)
+            {
+                decisions?.Invoke(__value2);
             }
         }
 
@@ -247,6 +327,8 @@ namespace Braintrust
                 typeof(global::Braintrust.PromptBlockDataNullishChat),
                 Completion,
                 typeof(global::Braintrust.PromptBlockDataNullishCompletion),
+                Decisions,
+                typeof(global::Braintrust.PromptBlockDataNullishDecisions),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -264,7 +346,8 @@ namespace Braintrust
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataNullishChat?>.Default.Equals(Chat, other.Chat) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataNullishCompletion?>.Default.Equals(Completion, other.Completion)
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataNullishCompletion?>.Default.Equals(Completion, other.Completion) &&
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.PromptBlockDataNullishDecisions?>.Default.Equals(Decisions, other.Decisions)
                 ;
         }
 

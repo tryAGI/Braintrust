@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class InvokeApi
     {
         /// <summary>
-        ///
+        /// A label identifying the caller, used to attribute usage
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("request_source")]
         public string? RequestSource { get; set; }
@@ -27,7 +27,7 @@ namespace Braintrust
         public object? Expected { get; set; }
 
         /// <summary>
-        /// Any relevant metadata. This will be logged and available as the `metadata` argument.
+        /// Any relevant metadata to log on the span. For prompts, this is available as the `metadata` template variable. For code functions, this is passed through hooks and is not added to `input`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         public object? Metadata { get; set; }
@@ -103,7 +103,9 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="InvokeApi" /> class.
         /// </summary>
-        /// <param name="requestSource"></param>
+        /// <param name="requestSource">
+        /// A label identifying the caller, used to attribute usage
+        /// </param>
         /// <param name="input">
         /// Argument to the function, which can be any JSON serializable value
         /// </param>
@@ -111,7 +113,7 @@ namespace Braintrust
         /// The expected output of the function
         /// </param>
         /// <param name="metadata">
-        /// Any relevant metadata. This will be logged and available as the `metadata` argument.
+        /// Any relevant metadata to log on the span. For prompts, this is available as the `metadata` template variable. For code functions, this is passed through hooks and is not added to `input`.
         /// </param>
         /// <param name="tags">
         /// Any relevant tags to log on the span.

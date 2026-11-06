@@ -17,7 +17,7 @@ namespace Braintrust
         /// </param>
         /// <param name="environment">
         /// Filter by environment slug. Cannot be used together with `version`.<br/>
-        /// For `GET /v1/prompt`, environment resolution currently requires the request to match a single prompt. If multiple prompts match, the endpoint returns `400` (for example when `limit=1` is not set). Use `limit=1` or other filters (for example `slug`, `project_id`) to narrow results.
+        /// For `GET /v1/prompt`, return prompts associated with the environment at their assigned versions. Pagination applies to the matching prompts.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -41,7 +41,7 @@ namespace Braintrust
         /// </param>
         /// <param name="environment">
         /// Filter by environment slug. Cannot be used together with `version`.<br/>
-        /// For `GET /v1/prompt`, environment resolution currently requires the request to match a single prompt. If multiple prompts match, the endpoint returns `400` (for example when `limit=1` is not set). Use `limit=1` or other filters (for example `slug`, `project_id`) to narrow results.
+        /// For `GET /v1/prompt`, return prompts associated with the environment at their assigned versions. Pagination applies to the matching prompts.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>

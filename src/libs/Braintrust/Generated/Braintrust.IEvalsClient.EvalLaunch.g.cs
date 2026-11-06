@@ -59,9 +59,6 @@ namespace Braintrust
         /// Optional experiment-level metadata to store about the evaluation. You can later use this to slice &amp; dice across experiments.
         /// </param>
         /// <param name="parent"></param>
-        /// <param name="stream">
-        /// Whether to stream the results of the eval. If true, the request will return two events: one to indicate the experiment has started, and another upon completion. If false, the request will return the evaluation's summary upon completion.
-        /// </param>
         /// <param name="trialCount">
         /// The number of times to run the evaluator per input. This is useful for evaluating applications that have non-deterministic behavior and gives you both a stronger aggregate measure and a sense of the variance in the results.
         /// </param>
@@ -114,7 +111,6 @@ namespace Braintrust
             string? experimentName = default,
             object? metadata = default,
             global::Braintrust.AllOf<global::Braintrust.InvokeParent?, object>? parent = default,
-            bool? stream = default,
             double? trialCount = default,
             bool? isPublic = default,
             double? timeout = default,
