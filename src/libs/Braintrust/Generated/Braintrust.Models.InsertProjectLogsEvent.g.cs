@@ -1,4 +1,6 @@
 
+#pragma warning disable CS0618 // Type or member is obsolete
+
 #nullable enable
 
 namespace Braintrust
@@ -33,7 +35,7 @@ namespace Braintrust
         public object? Error { get; set; }
 
         /// <summary>
-        /// A dictionary of numeric values (between 0 and 1) to log. The scores should give you a variety of signals that help you determine how accurate the outputs are compared to what you expect and diagnose failures. For example, a summarization app might have one score that tells you how accurate the summary is, and another that measures the word similarity between the generated and grouth truth summary. The word similarity score could help you determine whether the summarization was covering similar concepts or not. You can use these scores to help you sort, filter, and compare logs.
+        /// A dictionary of numeric values (between 0 and 1) to log. The scores should give you a variety of signals that help you determine how accurate the outputs are compared to what you expect and diagnose failures. For example, a summarization app might have one score that tells you how accurate the summary is, and another that measures the word similarity between the generated and ground truth summary. The word similarity score could help you determine whether the summarization was covering similar concepts or not. You can use these scores to help you sort, filter, and compare logs.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scores")]
         public global::System.Collections.Generic.Dictionary<string, double?>? Scores { get; set; }
@@ -107,46 +109,46 @@ namespace Braintrust
 
         /// <summary>
         /// The `_merge_paths` field allows controlling the depth of the merge, when `_is_merge=true`. `_merge_paths` is a list of paths, where each path is a list of field names. The deep merge will not descend below any of the specified merge paths.<br/>
-        /// For example, say there is an existing row in the DB `{"id": "foo", "input": {"a": {"b": 10}, "c": {"d": 20}}, "output": {"a": 20}}`. If we merge a new row as `{"_is_merge": true, "_merge_paths": [["input", "a"], ["output"]], "input": {"a": {"q": 30}, "c": {"e": 30}, "bar": "baz"}, "output": {"d": 40}}`, the new row will be `{"id": "foo": "input": {"a": {"q": 30}, "c": {"d": 20, "e": 30}, "bar": "baz"}, "output": {"d": 40}}`. In this case, due to the merge paths, we have replaced `input.a` and `output`, but have still deep-merged `input` and `input.c`.
+        /// For example, say there is an existing row in the DB `{"id": "foo", "input": {"a": {"b": 10}, "c": {"d": 20}}, "output": {"a": 20}}`. If we merge a new row as `{"id": "foo", "_is_merge": true, "_merge_paths": [["input", "a"], ["output"]], "input": {"a": {"q": 30}, "c": {"e": 30}, "bar": "baz"}, "output": {"d": 40}}`, the new row will be `{"id": "foo", "input": {"a": {"q": 30}, "c": {"d": 20, "e": 30}, "bar": "baz"}, "output": {"d": 40}}`. In this case, due to the merge paths, we have replaced `input.a` and `output`, but have still deep-merged `input` and `input.c`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_merge_paths")]
         public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? MergePaths { get; set; }
 
         /// <summary>
         /// The `_array_delete` field allows removing specific values from array fields. It is an array of objects with `path` and `delete` properties.<br/>
-        /// For example, to remove tags "foo" and "bar" from an existing row: `{"_is_merge": true, "_array_delete": [{"path": ["tags"], "delete": ["foo", "bar"]}]}`. For nested fields like `metadata.categories`, use `[{"path": ["metadata", "categories"], "delete": ["value"]}]`. This will remove those specific values from the array while preserving others.
+        /// For example, to remove tags "foo" and "bar" from an existing row with id "abc": `{"id": "abc", "_is_merge": true, "_array_delete": [{"path": ["tags"], "delete": ["foo", "bar"]}]}`. For nested fields like `metadata.categories`, use `{"id": "abc", "_is_merge": true, "_array_delete": [{"path": ["metadata", "categories"], "delete": ["value"]}]}`. This will remove those specific values from the array while preserving others.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_array_delete")]
         public global::System.Collections.Generic.IList<global::Braintrust.InsertProjectLogsEventArrayDeleteItem>? ArrayDelete { get; set; }
 
         /// <summary>
-        /// DEPRECATED: The `_parent_id` field is deprecated and should not be used. Support for `_parent_id` will be dropped in a future version of Braintrust. Log `span_id`, `root_span_id`, and `span_parents` explicitly instead.<br/>
-        /// Use the `_parent_id` field to create this row as a subspan of an existing row. Tracking hierarchical relationships are important for tracing (see the [guide](https://docs.braintrust.dev/instrument) for full details).<br/>
-        /// For example, say we have logged a row `{"id": "abc", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"_parent_id": "abc", "id": "llm_call", "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the webapp, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
+        /// Deprecated. Log `span_id`, `root_span_id`, and `span_parents` explicitly instead.<br/>
+        /// For legacy clients, `_parent_id` identifies the existing row to use as this row's parent.<br/>
         /// If the row is being merged into an existing row, this field will be ignored.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_parent_id")]
+        [global::System.Obsolete("This property marked as deprecated.")]
         public string? ParentId { get; set; }
 
         /// <summary>
-        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the a trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
-        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the webapp, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
+        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
+        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the Braintrust UI, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
         /// If the row is being merged into an existing row, this field will be ignored.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("span_id")]
         public string? SpanId { get; set; }
 
         /// <summary>
-        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the a trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
-        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the webapp, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
+        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
+        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the Braintrust UI, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
         /// If the row is being merged into an existing row, this field will be ignored.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("root_span_id")]
         public string? RootSpanId { get; set; }
 
         /// <summary>
-        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the a trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
-        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the webapp, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
+        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
+        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the Braintrust UI, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
         /// If the row is being merged into an existing row, this field will be ignored.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("span_parents")]
@@ -174,7 +176,7 @@ namespace Braintrust
         /// The error that occurred, if any.
         /// </param>
         /// <param name="scores">
-        /// A dictionary of numeric values (between 0 and 1) to log. The scores should give you a variety of signals that help you determine how accurate the outputs are compared to what you expect and diagnose failures. For example, a summarization app might have one score that tells you how accurate the summary is, and another that measures the word similarity between the generated and grouth truth summary. The word similarity score could help you determine whether the summarization was covering similar concepts or not. You can use these scores to help you sort, filter, and compare logs.
+        /// A dictionary of numeric values (between 0 and 1) to log. The scores should give you a variety of signals that help you determine how accurate the outputs are compared to what you expect and diagnose failures. For example, a summarization app might have one score that tells you how accurate the summary is, and another that measures the word similarity between the generated and ground truth summary. The word similarity score could help you determine whether the summarization was covering similar concepts or not. You can use these scores to help you sort, filter, and compare logs.
         /// </param>
         /// <param name="metadata">
         /// A dictionary with additional data about the test example, model outputs, or just about anything else that's relevant, that you can use to help find and analyze examples later. For example, you could log the `prompt`, example's `id`, or anything else that would be useful to slice/dice later. The values in `metadata` can be any JSON-serializable type, but its keys must be strings
@@ -212,31 +214,25 @@ namespace Braintrust
         /// </param>
         /// <param name="mergePaths">
         /// The `_merge_paths` field allows controlling the depth of the merge, when `_is_merge=true`. `_merge_paths` is a list of paths, where each path is a list of field names. The deep merge will not descend below any of the specified merge paths.<br/>
-        /// For example, say there is an existing row in the DB `{"id": "foo", "input": {"a": {"b": 10}, "c": {"d": 20}}, "output": {"a": 20}}`. If we merge a new row as `{"_is_merge": true, "_merge_paths": [["input", "a"], ["output"]], "input": {"a": {"q": 30}, "c": {"e": 30}, "bar": "baz"}, "output": {"d": 40}}`, the new row will be `{"id": "foo": "input": {"a": {"q": 30}, "c": {"d": 20, "e": 30}, "bar": "baz"}, "output": {"d": 40}}`. In this case, due to the merge paths, we have replaced `input.a` and `output`, but have still deep-merged `input` and `input.c`.
+        /// For example, say there is an existing row in the DB `{"id": "foo", "input": {"a": {"b": 10}, "c": {"d": 20}}, "output": {"a": 20}}`. If we merge a new row as `{"id": "foo", "_is_merge": true, "_merge_paths": [["input", "a"], ["output"]], "input": {"a": {"q": 30}, "c": {"e": 30}, "bar": "baz"}, "output": {"d": 40}}`, the new row will be `{"id": "foo", "input": {"a": {"q": 30}, "c": {"d": 20, "e": 30}, "bar": "baz"}, "output": {"d": 40}}`. In this case, due to the merge paths, we have replaced `input.a` and `output`, but have still deep-merged `input` and `input.c`.
         /// </param>
         /// <param name="arrayDelete">
         /// The `_array_delete` field allows removing specific values from array fields. It is an array of objects with `path` and `delete` properties.<br/>
-        /// For example, to remove tags "foo" and "bar" from an existing row: `{"_is_merge": true, "_array_delete": [{"path": ["tags"], "delete": ["foo", "bar"]}]}`. For nested fields like `metadata.categories`, use `[{"path": ["metadata", "categories"], "delete": ["value"]}]`. This will remove those specific values from the array while preserving others.
-        /// </param>
-        /// <param name="parentId">
-        /// DEPRECATED: The `_parent_id` field is deprecated and should not be used. Support for `_parent_id` will be dropped in a future version of Braintrust. Log `span_id`, `root_span_id`, and `span_parents` explicitly instead.<br/>
-        /// Use the `_parent_id` field to create this row as a subspan of an existing row. Tracking hierarchical relationships are important for tracing (see the [guide](https://docs.braintrust.dev/instrument) for full details).<br/>
-        /// For example, say we have logged a row `{"id": "abc", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"_parent_id": "abc", "id": "llm_call", "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the webapp, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
-        /// If the row is being merged into an existing row, this field will be ignored.
+        /// For example, to remove tags "foo" and "bar" from an existing row with id "abc": `{"id": "abc", "_is_merge": true, "_array_delete": [{"path": ["tags"], "delete": ["foo", "bar"]}]}`. For nested fields like `metadata.categories`, use `{"id": "abc", "_is_merge": true, "_array_delete": [{"path": ["metadata", "categories"], "delete": ["value"]}]}`. This will remove those specific values from the array while preserving others.
         /// </param>
         /// <param name="spanId">
-        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the a trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
-        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the webapp, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
+        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
+        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the Braintrust UI, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
         /// If the row is being merged into an existing row, this field will be ignored.
         /// </param>
         /// <param name="rootSpanId">
-        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the a trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
-        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the webapp, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
+        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
+        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the Braintrust UI, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
         /// If the row is being merged into an existing row, this field will be ignored.
         /// </param>
         /// <param name="spanParents">
-        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the a trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
-        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the webapp, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
+        /// Use `span_id`, `root_span_id`, and `span_parents` instead of `_parent_id`, which is now deprecated. The span_id is a unique identifier describing the row's place in the trace, and the root_span_id is a unique identifier for the whole trace. See the [guide](https://docs.braintrust.dev/instrument) for full details.<br/>
+        /// For example, say we have logged a row `{"id": "abc", "span_id": "span0", "root_span_id": "root_span0", "input": "foo", "output": "bar", "expected": "boo", "scores": {"correctness": 0.33}}`. We can create a sub-span of the parent row by logging `{"id": "llm_call", "span_id": "span1", "root_span_id": "root_span0", "span_parents": ["span0"], "input": {"prompt": "What comes after foo?"}, "output": "bar", "metrics": {"tokens": 1}}`. In the Braintrust UI, only the root span row `"abc"` will show up in the summary view. You can view the full trace hierarchy (in this case, the `"llm_call"` row) by clicking on the "abc" row.<br/>
         /// If the row is being merged into an existing row, this field will be ignored.
         /// </param>
 #if NET7_0_OR_GREATER
@@ -261,7 +257,6 @@ namespace Braintrust
             bool? isMerge,
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? mergePaths,
             global::System.Collections.Generic.IList<global::Braintrust.InsertProjectLogsEventArrayDeleteItem>? arrayDelete,
-            string? parentId,
             string? spanId,
             string? rootSpanId,
             global::System.Collections.Generic.IList<string>? spanParents)
@@ -284,7 +279,6 @@ namespace Braintrust
             this.IsMerge = isMerge;
             this.MergePaths = mergePaths;
             this.ArrayDelete = arrayDelete;
-            this.ParentId = parentId;
             this.SpanId = spanId;
             this.RootSpanId = rootSpanId;
             this.SpanParents = spanParents;

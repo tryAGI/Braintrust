@@ -34,13 +34,19 @@ namespace Braintrust.JsonConverters
             var __score1 = 0;
             if (__jsonProps.Contains("content")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
+            var __score2 = 0;
+            if (__jsonProps.Contains("input")) __score2++;
+            if (__jsonProps.Contains("questions")) __score2++;
+            if (__jsonProps.Contains("type")) __score2++;
             var __bestScore = 0;
             var __bestIndex = -1;
             if (__score0 > __bestScore) { __bestScore = __score0; __bestIndex = 0; }
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
+            if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
 
             global::Braintrust.PromptBlockDataChat? chat = default;
             global::Braintrust.PromptBlockDataCompletion? completion = default;
+            global::Braintrust.PromptBlockDataDecisions? decisions = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -81,9 +87,28 @@ namespace Braintrust.JsonConverters
                         // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
+                else if (__bestIndex == 2)
+                {
+                    try
+                    {
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataDecisions), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataDecisions> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataDecisions).Name}");
+                        decisions = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    }
+                    catch (global::System.Text.Json.JsonException)
+                    {
+                    }
+                    catch (global::System.InvalidOperationException)
+                    {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
+                }
             }
 
-            if (chat == null && completion == null)
+            if (chat == null && completion == null && decisions == null)
             {
                 try
                 {
@@ -104,7 +129,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (chat == null && completion == null)
+            if (chat == null && completion == null && decisions == null)
             {
                 try
                 {
@@ -125,10 +150,33 @@ namespace Braintrust.JsonConverters
                 }
             }
 
+            if (chat == null && completion == null && decisions == null)
+            {
+                try
+                {
+
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataDecisions), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataDecisions> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataDecisions).Name}");
+                    decisions = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                }
+                catch (global::System.Text.Json.JsonException)
+                {
+                }
+                catch (global::System.InvalidOperationException)
+                {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
+            }
+
             var __value = new global::Braintrust.PromptBlockData(
                 chat,
 
-                completion
+                completion,
+
+                decisions
                 );
 
             return __value;
@@ -154,6 +202,12 @@ namespace Braintrust.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataCompletion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataCompletion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataCompletion).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCompletion(), typeInfo);
+            }
+            else if (value.IsDecisions)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.PromptBlockDataDecisions), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.PromptBlockDataDecisions?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.PromptBlockDataDecisions).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickDecisions(), typeInfo);
             }
         }
     }

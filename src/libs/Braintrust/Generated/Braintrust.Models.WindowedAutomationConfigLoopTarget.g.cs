@@ -19,9 +19,8 @@ namespace Braintrust
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Guid?, global::Braintrust.WindowedAutomationConfigLoopTargetId?>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Braintrust.AnyOf<global::System.Guid?, global::Braintrust.WindowedAutomationConfigLoopTargetId?> Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.WindowedAutomationConfigLoopTargetIdJsonConverter))]
+        public global::Braintrust.WindowedAutomationConfigLoopTargetId Id { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,14 +31,14 @@ namespace Braintrust
         /// <summary>
         /// Initializes a new instance of the <see cref="WindowedAutomationConfigLoopTarget" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="type"></param>
+        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public WindowedAutomationConfigLoopTarget(
-            global::Braintrust.AnyOf<global::System.Guid?, global::Braintrust.WindowedAutomationConfigLoopTargetId?> id,
-            global::Braintrust.WindowedAutomationConfigLoopTargetType type)
+            global::Braintrust.WindowedAutomationConfigLoopTargetType type,
+            global::Braintrust.WindowedAutomationConfigLoopTargetId id)
         {
             this.Type = type;
             this.Id = id;

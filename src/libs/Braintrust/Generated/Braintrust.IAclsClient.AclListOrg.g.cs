@@ -36,7 +36,7 @@ namespace Braintrust
         /// </param>
         /// <param name="permission">
         /// Each permission permits a certain type of operation on an object in the system<br/>
-        /// Permissions can be assigned to to objects on an individual basis, or grouped into roles
+        /// Permissions can be assigned to objects on an individual basis, or grouped into roles
         /// </param>
         /// <param name="restrictObjectType">
         /// The object type that the ACL applies to
@@ -97,7 +97,7 @@ namespace Braintrust
         /// </param>
         /// <param name="permission">
         /// Each permission permits a certain type of operation on an object in the system<br/>
-        /// Permissions can be assigned to to objects on an individual basis, or grouped into roles
+        /// Permissions can be assigned to objects on an individual basis, or grouped into roles
         /// </param>
         /// <param name="restrictObjectType">
         /// The object type that the ACL applies to

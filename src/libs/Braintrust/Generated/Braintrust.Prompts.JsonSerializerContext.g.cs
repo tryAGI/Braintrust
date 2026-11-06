@@ -10,14 +10,20 @@ namespace Braintrust
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh?>), TypeInfoPropertyName = "ChatCompletionContentPartImageWithTitleImageUrlDetailHigh_e8d70c92af1da1bc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_92063f4a99fb659f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_fe2b9232a4fdf8bb")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_e023135a30ebfa9f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunction>), TypeInfoPropertyName = "ModelParamsOpenAIModelParamsToolChoiceFunction_10f78e443eec5956")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallFunction>), TypeInfoPropertyName = "ModelParamsOpenAIModelParamsFunctionCallFunction_fae5e4272e975e60")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>), TypeInfoPropertyName = "PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_011c031415cbd2fb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailAuto?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailLow?, global::Braintrust.ChatCompletionContentPartImageWithTitleImageUrlDetailHigh?>?), TypeInfoPropertyName = "ChatCompletionContentPartImageWithTitleImageUrlDetailHigh_3533da88d7ecf2d5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>?), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_b9409f5d7d42a932")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_73ad707b25e88821")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunction>?), TypeInfoPropertyName = "ModelParamsOpenAIModelParamsToolChoiceFunction_185a87e2aac60e39")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallFunction>?), TypeInfoPropertyName = "ModelParamsOpenAIModelParamsFunctionCallFunction_b998c4cffab2d96d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>?>?), TypeInfoPropertyName = "PromptDataNullishToolFunctionVariant2Global_9bd0fd9ab612ae14")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>?), TypeInfoPropertyName = "PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_d50854d224e89aa6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_70080181d1f517ce")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
@@ -104,6 +110,24 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageParam>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishCompletion))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishCompletionType), TypeInfoPropertyName = "PromptBlockDataNullishCompletionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsType), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2Item>>), TypeInfoPropertyName = "AnyOfStringIListPromptBlockDataNullishDecisionsInputVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2Item))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2ItemRole), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsInputVariant2ItemRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestion))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1Type), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Type), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Choice>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Choice))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<string, bool?>), TypeInfoPropertyName = "AnyOfStringBoolean2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Type), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Level>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Level))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ResponseFormatJsonSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<object, string>), TypeInfoPropertyName = "AnyOfObjectString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ResponseFormatNullish), TypeInfoPropertyName = "ResponseFormatNullish2")]
@@ -208,6 +232,13 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullish?), TypeInfoPropertyName = "NullablePromptBlockDataNullish2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishChatType?), TypeInfoPropertyName = "NullablePromptBlockDataNullishChatType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishCompletionType?), TypeInfoPropertyName = "NullablePromptBlockDataNullishCompletionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsType?), TypeInfoPropertyName = "NullablePromptBlockDataNullishDecisionsType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListPromptBlockDataNullishDecisionsInputVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2ItemRole?), TypeInfoPropertyName = "NullablePromptBlockDataNullishDecisionsInputVariant2ItemRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1Type?), TypeInfoPropertyName = "NullablePromptBlockDataNullishDecisionsQuestionVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Type?), TypeInfoPropertyName = "NullablePromptBlockDataNullishDecisionsQuestionVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<string, bool?>?), TypeInfoPropertyName = "NullableAnyOfStringBoolean2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Type?), TypeInfoPropertyName = "NullablePromptBlockDataNullishDecisionsQuestionVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<object, string>?), TypeInfoPropertyName = "NullableAnyOfObjectString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ResponseFormatNullish?), TypeInfoPropertyName = "NullableResponseFormatNullish2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ResponseFormatNullishJsonObjectType?), TypeInfoPropertyName = "NullableResponseFormatNullishJsonObjectType2")]
@@ -245,6 +276,10 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.ChatCompletionMessageToolCall>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.ChatCompletionMessageReasoning>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.ChatCompletionMessageParam>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<string, global::System.Collections.Generic.List<global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2Item>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Choice>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Level>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>?>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.Prompt>))]
     internal sealed partial class PromptsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -311,12 +346,19 @@ namespace Braintrust
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2Item>>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<object, string>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceAuto?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceNone?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceRequired?, global::Braintrust.ModelParamsOpenAIModelParamsToolChoiceFunction>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallAuto?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallNone?, global::Braintrust.ModelParamsOpenAIModelParamsFunctionCallFunction>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.PromptDataNullishToolFunctionVariant2Function, global::Braintrust.PromptDataNullishToolFunctionVariant2Global>());
             options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.PromptDataNullishMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataNullishMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionContentPartText>>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionTypeEnum?, object>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::System.Guid?, global::System.Collections.Generic.IList<global::System.Guid>>());
             options.Converters.Add(new global::Braintrust.JsonConverters.UnixTimestampJsonConverter());
@@ -468,6 +510,26 @@ namespace Braintrust
                     || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishCompletionType)
 
                     || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishCompletionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsType)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsType?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2ItemRole)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2ItemRole?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Type)
+
+                    || typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Type?)
 
                     || typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonObjectType)
 
@@ -884,6 +946,56 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishCompletionType?))
                 {
                     return new global::Braintrust.JsonConverters.PromptBlockDataNullishCompletionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsType))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsType?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2ItemRole))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsInputVariant2ItemRoleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsInputVariant2ItemRole?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsInputVariant2ItemRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsQuestionVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsQuestionVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsQuestionVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsQuestionVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Type))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsQuestionVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3Type?))
+                {
+                    return new global::Braintrust.JsonConverters.PromptBlockDataNullishDecisionsQuestionVariant3TypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.ResponseFormatNullishJsonObjectType))

@@ -80,7 +80,7 @@ namespace Braintrust
         public string? SecretType { get; set; }
 
         /// <summary>
-        /// The category of the secret: env_var for regular environment variables, ai_provider for AI provider API keys<br/>
+        /// The category of the secret: env_var for regular environment variables, ai_provider for AI provider API keys, sandbox_provider for sandbox provider credentials, automation_integration for automation delivery credentials<br/>
         /// Default Value: env_var
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secret_category")]
@@ -130,7 +130,7 @@ namespace Braintrust
         /// Optional classification for the secret (for example, the AI provider name)
         /// </param>
         /// <param name="secretCategory">
-        /// The category of the secret: env_var for regular environment variables, ai_provider for AI provider API keys<br/>
+        /// The category of the secret: env_var for regular environment variables, ai_provider for AI provider API keys, sandbox_provider for sandbox provider credentials, automation_integration for automation delivery credentials<br/>
         /// Default Value: env_var
         /// </param>
 #if NET7_0_OR_GREATER

@@ -1,0 +1,91 @@
+#nullable enable
+
+namespace Braintrust
+{
+    public partial interface IFunctionsClient
+    {
+        /// <summary>
+        /// Invoke function<br/>
+        /// Run the specified function with the provided input and return its result. Use `version` to select a specific function version, `parent` to attach the call to a trace, and `stream` to receive results in the Braintrust SSE format.
+        /// </summary>
+        /// <param name="functionId">
+        /// Function id
+        /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Braintrust.ApiException"></exception>
+        global::System.Collections.Generic.IAsyncEnumerable<string> PostFunctionIdInvokeAsStreamAsync(
+            global::System.Guid functionId,
+
+            global::Braintrust.InvokeApi request,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Invoke function<br/>
+        /// Run the specified function with the provided input and return its result. Use `version` to select a specific function version, `parent` to attach the call to a trace, and `stream` to receive results in the Braintrust SSE format.
+        /// </summary>
+        /// <param name="functionId">
+        /// Function id
+        /// </param>
+        /// <param name="requestSource">
+        /// A label identifying the caller, used to attribute usage
+        /// </param>
+        /// <param name="input">
+        /// Argument to the function, which can be any JSON serializable value
+        /// </param>
+        /// <param name="expected">
+        /// The expected output of the function
+        /// </param>
+        /// <param name="metadata">
+        /// Any relevant metadata to log on the span. For prompts, this is available as the `metadata` template variable. For code functions, this is passed through hooks and is not added to `input`.
+        /// </param>
+        /// <param name="tags">
+        /// Any relevant tags to log on the span.
+        /// </param>
+        /// <param name="messages">
+        /// If the function is an LLM, additional messages to pass along to it
+        /// </param>
+        /// <param name="parent">
+        /// Options for tracing the function call
+        /// </param>
+        /// <param name="mode">
+        /// The mode format of the returned value (defaults to 'auto')
+        /// </param>
+        /// <param name="strict">
+        /// If true, throw an error if one of the variables in the prompt is not present in the input
+        /// </param>
+        /// <param name="mcpAuth">
+        /// Map of MCP server URL to auth credentials
+        /// </param>
+        /// <param name="overrides">
+        /// Partial function definition to merge with the function being invoked. Fields are validated against the function type's schema at runtime. For facets: { preprocessor?, prompt?, model? }. For prompts: { model?, ... }.
+        /// </param>
+        /// <param name="endpointName">
+        /// Name of the AI provider secret to pin this invocation to.
+        /// </param>
+        /// <param name="version">
+        /// The version of the function
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Collections.Generic.IAsyncEnumerable<string> PostFunctionIdInvokeAsStreamAsync(
+            global::System.Guid functionId,
+            string? requestSource = default,
+            object? input = default,
+            object? expected = default,
+            object? metadata = default,
+            global::System.Collections.Generic.IList<string>? tags = default,
+            global::System.Collections.Generic.IList<global::Braintrust.ChatCompletionMessageParam>? messages = default,
+            global::Braintrust.InvokeParent? parent = default,
+            global::Braintrust.StreamingMode? mode = default,
+            bool? strict = default,
+            global::System.Collections.Generic.Dictionary<string, global::Braintrust.InvokeApiMcpAuth2>? mcpAuth = default,
+            object? overrides = default,
+            string? endpointName = default,
+            string? version = default,
+            global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

@@ -28,7 +28,7 @@ namespace Braintrust
         public string? DatasetEnvironment { get; set; }
 
         /// <summary>
-        ///
+        /// Internal BTQL query overrides in parsed JSON form that select which dataset rows to evaluate. `filter` is a BTQL expression object, `sort` is an array of BTQL sort expressions, and `limit` is an integer.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_internal_btql")]
         public object? InternalBtql { get; set; }
@@ -49,7 +49,9 @@ namespace Braintrust
         /// <param name="datasetEnvironment">
         /// The environment tag that resolves to the dataset version to evaluate
         /// </param>
-        /// <param name="internalBtql"></param>
+        /// <param name="internalBtql">
+        /// Internal BTQL query overrides in parsed JSON form that select which dataset rows to evaluate. `filter` is a BTQL expression object, `sort` is an array of BTQL sort expressions, and `limit` is an integer.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

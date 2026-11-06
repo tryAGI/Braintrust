@@ -36,7 +36,7 @@ namespace Braintrust
         public string? Description { get; set; }
 
         /// <summary>
-        /// Transaction id of the brainstore version at the time of the snapshot
+        /// Transaction ID of the dataset version at the time of the snapshot
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xact_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -67,7 +67,7 @@ namespace Braintrust
         /// Name of the dataset snapshot
         /// </param>
         /// <param name="xactId">
-        /// Transaction id of the brainstore version at the time of the snapshot
+        /// Transaction ID of the dataset version at the time of the snapshot
         /// </param>
         /// <param name="description"></param>
         /// <param name="created">
