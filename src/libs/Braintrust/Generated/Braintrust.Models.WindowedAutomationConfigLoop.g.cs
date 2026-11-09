@@ -16,6 +16,12 @@ namespace Braintrust
         public required string Prompt { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("digest")]
+        public global::Braintrust.WindowedAutomationConfigLoopDigest? Digest { get; set; }
+
+        /// <summary>
         /// Whether to include the automation trigger payload as input<br/>
         /// Default Value: false
         /// </summary>
@@ -83,6 +89,7 @@ namespace Braintrust
         /// <param name="agentSlug">
         /// The Loop agent to run
         /// </param>
+        /// <param name="digest"></param>
         /// <param name="includeTriggerInput">
         /// Whether to include the automation trigger payload as input<br/>
         /// Default Value: false
@@ -108,6 +115,7 @@ namespace Braintrust
         public WindowedAutomationConfigLoop(
             string prompt,
             string agentSlug,
+            global::Braintrust.WindowedAutomationConfigLoopDigest? digest,
             bool? includeTriggerInput,
             global::System.Collections.Generic.IList<string>? autoApproveTools,
             global::Braintrust.WindowedAutomationConfigLoopHarness? harness,
@@ -117,6 +125,7 @@ namespace Braintrust
             global::Braintrust.WindowedAutomationConfigLoopTarget? target)
         {
             this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
+            this.Digest = digest;
             this.IncludeTriggerInput = includeTriggerInput;
             this.AgentSlug = agentSlug ?? throw new global::System.ArgumentNullException(nameof(agentSlug));
             this.AutoApproveTools = autoApproveTools;

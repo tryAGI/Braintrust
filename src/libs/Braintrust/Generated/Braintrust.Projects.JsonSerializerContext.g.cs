@@ -9,6 +9,10 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_1e3bbb1c00bd139c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_d73a5f8b4611dee9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>?), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_fe2bfdeb88cc176b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_2a47e77ff3f8c39d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
@@ -22,6 +26,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Ids), TypeInfoPropertyName = "Ids2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Guid>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionTypeEnum), TypeInfoPropertyName = "FunctionTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionId), TypeInfoPropertyName = "NullableSavedFunctionId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionIdFunction))]
@@ -36,10 +41,21 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2), TypeInfoPropertyName = "ProjectSettingsSpanFieldOrderItemLayoutVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsRemoteEvalSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsRemoteEvalSource))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2Type), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Type), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Severity), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3Severity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Project))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CreateProject))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProject))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.ProjectSettings, object>), TypeInfoPropertyName = "AllOfProjectSettingsObject2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.ProjectSettings, global::Braintrust.PatchProjectSettings>), TypeInfoPropertyName = "AllOfProjectSettingsPatchProjectSettings2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchProjectSettings))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<string>>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<string>>), TypeInfoPropertyName = "AnyOfStringIListString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GetProjectResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.Project>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
@@ -54,10 +70,19 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1?, global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?>?), TypeInfoPropertyName = "NullableAnyOfProjectSettingsSpanFieldOrderItemLayoutVariant1ProjectSettingsSpanFieldOrderItemLayoutVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1?), TypeInfoPropertyName = "NullableProjectSettingsSpanFieldOrderItemLayoutVariant12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?), TypeInfoPropertyName = "NullableProjectSettingsSpanFieldOrderItemLayoutVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.ProjectSettings, object>?), TypeInfoPropertyName = "NullableAllOfProjectSettingsObject2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type?), TypeInfoPropertyName = "NullableProjectSettingsPatternAlertDestinationVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2Type?), TypeInfoPropertyName = "NullableProjectSettingsPatternAlertDestinationVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Type?), TypeInfoPropertyName = "NullableProjectSettingsPatternAlertDestinationVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Severity?), TypeInfoPropertyName = "NullableProjectSettingsPatternAlertDestinationVariant3Severity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.ProjectSettings, global::Braintrust.PatchProjectSettings>?), TypeInfoPropertyName = "NullableAllOfProjectSettingsPatchProjectSettings2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<string>>?), TypeInfoPropertyName = "NullableAnyOfStringIListString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Guid>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.ProjectSettingsSpanFieldOrderItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.ProjectSettingsRemoteEvalSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Collections.Generic.List<string>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AnyOf<string, global::System.Collections.Generic.List<string>>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<string, global::System.Collections.Generic.List<string>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.Project>))]
     internal sealed partial class ProjectsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
@@ -112,7 +137,9 @@ namespace Braintrust
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant1?, global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?>());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectSettings, object>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectSettings, global::Braintrust.PatchProjectSettings>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<object, string>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, bool?>());
@@ -158,7 +185,23 @@ namespace Braintrust
 
                     || typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2)
 
-                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?);
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Type)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Severity)
+
+                    || typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Severity?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -213,6 +256,46 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.ProjectSettingsSpanFieldOrderItemLayoutVariant2?))
                 {
                     return new global::Braintrust.JsonConverters.ProjectSettingsSpanFieldOrderItemLayoutVariant2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsPatternAlertDestinationVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsPatternAlertDestinationVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsPatternAlertDestinationVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsPatternAlertDestinationVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Type))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsPatternAlertDestinationVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Type?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsPatternAlertDestinationVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Severity))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsPatternAlertDestinationVariant3SeverityJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3Severity?))
+                {
+                    return new global::Braintrust.JsonConverters.ProjectSettingsPatternAlertDestinationVariant3SeverityNullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

@@ -63,6 +63,18 @@ namespace Braintrust
         public bool? RequireAllHumanReviewScores { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("user_id_fields")]
+        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? UserIdFields { get; set; }
+
+        /// <summary>
+        /// Project-wide Slack, webhook, and PagerDuty destinations for new and reactivated Pattern alerts. An empty array disables alerts.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern_alert_destinations")]
+        public global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>? PatternAlertDestinations { get; set; }
+
+        /// <summary>
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_preprocessor")]
@@ -105,6 +117,10 @@ namespace Braintrust
         /// <param name="requireAllHumanReviewScores">
         /// If true, automatically complete a review after every assigned reviewer fills all human review scores visible to them.
         /// </param>
+        /// <param name="userIdFields"></param>
+        /// <param name="patternAlertDestinations">
+        /// Project-wide Slack, webhook, and PagerDuty destinations for new and reactivated Pattern alerts. An empty array disables alerts.
+        /// </param>
         /// <param name="defaultPreprocessor">
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
         /// </param>
@@ -121,6 +137,8 @@ namespace Braintrust
             bool? codingAgentInsightsDashboard,
             bool? blindReviews,
             bool? requireAllHumanReviewScores,
+            global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? userIdFields,
+            global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>? patternAlertDestinations,
             global::Braintrust.NullableSavedFunctionId? defaultPreprocessor)
         {
             this.ComparisonKey = comparisonKey;
@@ -132,6 +150,8 @@ namespace Braintrust
             this.CodingAgentInsightsDashboard = codingAgentInsightsDashboard;
             this.BlindReviews = blindReviews;
             this.RequireAllHumanReviewScores = requireAllHumanReviewScores;
+            this.UserIdFields = userIdFields;
+            this.PatternAlertDestinations = patternAlertDestinations;
             this.DefaultPreprocessor = defaultPreprocessor;
         }
 

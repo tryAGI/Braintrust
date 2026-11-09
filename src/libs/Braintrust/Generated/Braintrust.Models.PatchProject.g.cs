@@ -27,11 +27,17 @@ namespace Braintrust
         public string? UserId { get; set; }
 
         /// <summary>
-        ///
+        /// Project settings. Patch operations replace all settings, so make sure you include all settings you want to keep.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("settings")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectSettings, object>))]
-        public global::Braintrust.AllOf<global::Braintrust.ProjectSettings, object>? Settings { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.ProjectSettings, global::Braintrust.PatchProjectSettings>))]
+        public global::Braintrust.AllOf<global::Braintrust.ProjectSettings, global::Braintrust.PatchProjectSettings>? Settings { get; set; }
+
+        /// <summary>
+        /// When provided, patch only settings.user_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("only_if_unset")]
+        public bool? OnlyIfUnset { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +53,12 @@ namespace Braintrust
         /// </param>
         /// <param name="description"></param>
         /// <param name="userId"></param>
-        /// <param name="settings"></param>
+        /// <param name="settings">
+        /// Project settings. Patch operations replace all settings, so make sure you include all settings you want to keep.
+        /// </param>
+        /// <param name="onlyIfUnset">
+        /// When provided, patch only settings.user_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -55,12 +66,14 @@ namespace Braintrust
             string? name,
             string? description,
             string? userId,
-            global::Braintrust.AllOf<global::Braintrust.ProjectSettings, object>? settings)
+            global::Braintrust.AllOf<global::Braintrust.ProjectSettings, global::Braintrust.PatchProjectSettings>? settings,
+            bool? onlyIfUnset)
         {
             this.Name = name;
             this.Description = description;
             this.UserId = userId;
             this.Settings = settings;
+            this.OnlyIfUnset = onlyIfUnset;
         }
 
         /// <summary>

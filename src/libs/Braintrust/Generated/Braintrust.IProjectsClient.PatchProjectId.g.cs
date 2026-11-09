@@ -50,7 +50,12 @@ namespace Braintrust
         /// </param>
         /// <param name="description"></param>
         /// <param name="userId"></param>
-        /// <param name="settings"></param>
+        /// <param name="settings">
+        /// Project settings. Patch operations replace all settings, so make sure you include all settings you want to keep.
+        /// </param>
+        /// <param name="onlyIfUnset">
+        /// When provided, patch only settings.user_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -59,7 +64,8 @@ namespace Braintrust
             string? name = default,
             string? description = default,
             string? userId = default,
-            global::Braintrust.AllOf<global::Braintrust.ProjectSettings, object>? settings = default,
+            global::Braintrust.AllOf<global::Braintrust.ProjectSettings, global::Braintrust.PatchProjectSettings>? settings = default,
+            bool? onlyIfUnset = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
