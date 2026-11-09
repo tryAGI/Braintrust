@@ -94,6 +94,8 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type), TypeInfoPropertyName = "WindowedAutomationConfigWindowScheduleVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoop))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopDigest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopDigestWritingStyle), TypeInfoPropertyName = "WindowedAutomationConfigLoopDigestWritingStyle2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopHarness), TypeInfoPropertyName = "WindowedAutomationConfigLoopHarness2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopReasoningEffort), TypeInfoPropertyName = "WindowedAutomationConfigLoopReasoningEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopTarget))]
@@ -282,6 +284,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1, global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2>?), TypeInfoPropertyName = "NullableOneOfWindowedAutomationConfigWindowScheduleVariant1WindowedAutomationConfigWindowScheduleVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1Type?), TypeInfoPropertyName = "NullableWindowedAutomationConfigWindowScheduleVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type?), TypeInfoPropertyName = "NullableWindowedAutomationConfigWindowScheduleVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopDigestWritingStyle?), TypeInfoPropertyName = "NullableWindowedAutomationConfigLoopDigestWritingStyle2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopHarness?), TypeInfoPropertyName = "NullableWindowedAutomationConfigLoopHarness2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopReasoningEffort?), TypeInfoPropertyName = "NullableWindowedAutomationConfigLoopReasoningEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopTargetType?), TypeInfoPropertyName = "NullableWindowedAutomationConfigLoopTargetType2")]
@@ -427,6 +430,7 @@ namespace Braintrust
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<object, string>());
             options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.WindowedAutomationConfigWindowScheduleVariant1, global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2>());
@@ -552,6 +556,10 @@ namespace Braintrust
                     || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type)
 
                     || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type?)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopDigestWritingStyle)
+
+                    || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopDigestWritingStyle?)
 
                     || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopHarness)
 
@@ -1064,6 +1072,16 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigWindowScheduleVariant2Type?))
                 {
                     return new global::Braintrust.JsonConverters.WindowedAutomationConfigWindowScheduleVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopDigestWritingStyle))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopDigestWritingStyleJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopDigestWritingStyle?))
+                {
+                    return new global::Braintrust.JsonConverters.WindowedAutomationConfigLoopDigestWritingStyleNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigLoopHarness))

@@ -15,6 +15,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        Digest,
+        /// <summary>
+        ///
+        /// </summary>
         Patterns,
     }
 
@@ -31,6 +35,7 @@ namespace Braintrust
             return value switch
             {
                 WindowedAutomationConfigProductOrigin.Dashboard => "dashboard",
+                WindowedAutomationConfigProductOrigin.Digest => "digest",
                 WindowedAutomationConfigProductOrigin.Patterns => "patterns",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -43,6 +48,7 @@ namespace Braintrust
             return value switch
             {
                 "dashboard" => WindowedAutomationConfigProductOrigin.Dashboard,
+                "digest" => WindowedAutomationConfigProductOrigin.Digest,
                 "patterns" => WindowedAutomationConfigProductOrigin.Patterns,
                 _ => null,
             };
