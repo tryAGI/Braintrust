@@ -75,6 +75,12 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>? PatternAlertDestinations { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("session_id_fields")]
+        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? SessionIdFields { get; set; }
+
+        /// <summary>
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_preprocessor")]
@@ -121,6 +127,7 @@ namespace Braintrust
         /// <param name="patternAlertDestinations">
         /// Project-wide Slack, webhook, and PagerDuty destinations for new and reactivated Pattern alerts. An empty array disables alerts.
         /// </param>
+        /// <param name="sessionIdFields"></param>
         /// <param name="defaultPreprocessor">
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
         /// </param>
@@ -139,6 +146,7 @@ namespace Braintrust
             bool? requireAllHumanReviewScores,
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? userIdFields,
             global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>? patternAlertDestinations,
+            global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? sessionIdFields,
             global::Braintrust.NullableSavedFunctionId? defaultPreprocessor)
         {
             this.ComparisonKey = comparisonKey;
@@ -152,6 +160,7 @@ namespace Braintrust
             this.RequireAllHumanReviewScores = requireAllHumanReviewScores;
             this.UserIdFields = userIdFields;
             this.PatternAlertDestinations = patternAlertDestinations;
+            this.SessionIdFields = sessionIdFields;
             this.DefaultPreprocessor = defaultPreprocessor;
         }
 

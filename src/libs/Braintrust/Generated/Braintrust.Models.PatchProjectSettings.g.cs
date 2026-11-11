@@ -15,6 +15,12 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<string>>>? UserIdFields { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("session_id_fields")]
+        public global::System.Collections.Generic.IList<global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<string>>>? SessionIdFields { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -24,13 +30,16 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="PatchProjectSettings" /> class.
         /// </summary>
         /// <param name="userIdFields"></param>
+        /// <param name="sessionIdFields"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PatchProjectSettings(
-            global::System.Collections.Generic.IList<global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<string>>>? userIdFields)
+            global::System.Collections.Generic.IList<global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<string>>>? userIdFields,
+            global::System.Collections.Generic.IList<global::Braintrust.AnyOf<string, global::System.Collections.Generic.IList<string>>>? sessionIdFields)
         {
             this.UserIdFields = userIdFields;
+            this.SessionIdFields = sessionIdFields;
         }
 
         /// <summary>

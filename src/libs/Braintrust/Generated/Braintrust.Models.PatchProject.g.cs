@@ -34,7 +34,7 @@ namespace Braintrust
         public global::Braintrust.AllOf<global::Braintrust.ProjectSettings, global::Braintrust.PatchProjectSettings>? Settings { get; set; }
 
         /// <summary>
-        /// When provided, patch only settings.user_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
+        /// When provided, patch only settings.user_id_fields or settings.session_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("only_if_unset")]
         public bool? OnlyIfUnset { get; set; }
@@ -57,7 +57,7 @@ namespace Braintrust
         /// Project settings. Patch operations replace all settings, so make sure you include all settings you want to keep.
         /// </param>
         /// <param name="onlyIfUnset">
-        /// When provided, patch only settings.user_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
+        /// When provided, patch only settings.user_id_fields or settings.session_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

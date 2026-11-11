@@ -656,7 +656,7 @@ namespace Braintrust
         /// Project settings. Patch operations replace all settings, so make sure you include all settings you want to keep.
         /// </param>
         /// <param name="onlyIfUnset">
-        /// When provided, patch only settings.user_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
+        /// When provided, patch only settings.user_id_fields or settings.session_id_fields and preserve other settings. True initializes an unset field; false explicitly overrides or clears it. Initialization requires one field path.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
