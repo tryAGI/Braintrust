@@ -19,9 +19,9 @@ namespace Braintrust
         /// The type of the object the environment variable is scoped for
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("object_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.EnvVarObjectType2JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.EnvVarObjectTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Braintrust.EnvVarObjectType2 ObjectType { get; set; }
+        public required global::Braintrust.EnvVarObjectType ObjectType { get; set; }
 
         /// <summary>
         /// The id of the object the environment variable is scoped for
@@ -138,7 +138,7 @@ namespace Braintrust
 #endif
         public EnvVar(
             global::System.Guid id,
-            global::Braintrust.EnvVarObjectType2 objectType,
+            global::Braintrust.EnvVarObjectType objectType,
             global::System.Guid objectId,
             string name,
             global::System.DateTime? created,

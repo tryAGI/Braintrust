@@ -22,7 +22,7 @@ namespace Braintrust
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Braintrust.Function2> GetFunctionIdAsync(
+        global::System.Threading.Tasks.Task<global::Braintrust.Function> GetFunctionIdAsync(
             global::System.Guid functionId,
             string? version = default,
             string? environment = default,
@@ -46,7 +46,7 @@ namespace Braintrust
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function2>> GetFunctionIdAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function>> GetFunctionIdAsResponseAsync(
             global::System.Guid functionId,
             string? version = default,
             string? environment = default,

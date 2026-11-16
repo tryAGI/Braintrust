@@ -13,7 +13,7 @@ namespace Braintrust
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objects")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Braintrust.Function2> Objects { get; set; }
+        public required global::System.Collections.Generic.IList<global::Braintrust.Function> Objects { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,7 +31,7 @@ namespace Braintrust
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetFunctionResponse(
-            global::System.Collections.Generic.IList<global::Braintrust.Function2> objects)
+            global::System.Collections.Generic.IList<global::Braintrust.Function> objects)
         {
             this.Objects = objects ?? throw new global::System.ArgumentNullException(nameof(objects));
         }
