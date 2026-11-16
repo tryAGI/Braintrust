@@ -58,7 +58,7 @@ namespace Braintrust
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Braintrust.Function2> PutFunctionAsync(
+        public async global::System.Threading.Tasks.Task<global::Braintrust.Function> PutFunctionAsync(
 
             global::Braintrust.CreateFunction request,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
@@ -81,7 +81,7 @@ namespace Braintrust
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function2>> PutFunctionAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function>> PutFunctionAsResponseAsync(
 
             global::Braintrust.CreateFunction request,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
@@ -553,9 +553,9 @@ namespace Braintrust
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Braintrust.Function2.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Braintrust.Function.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function2>(
+                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Braintrust.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -585,9 +585,9 @@ namespace Braintrust
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Braintrust.Function2.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Braintrust.Function.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function2>(
+                                    return new global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Braintrust.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -658,7 +658,7 @@ namespace Braintrust
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Braintrust.Function2> PutFunctionAsync(
+        public async global::System.Threading.Tasks.Task<global::Braintrust.Function> PutFunctionAsync(
             global::System.Guid projectId,
             string name,
             string slug,

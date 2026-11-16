@@ -21,9 +21,8 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Ids), TypeInfoPropertyName = "Ids2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Guid>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType), TypeInfoPropertyName = "EnvVarObjectType2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType), TypeInfoPropertyName = "EnvVarObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVar))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType2), TypeInfoPropertyName = "EnvVarObjectType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarSecretCategory), TypeInfoPropertyName = "EnvVarSecretCategory2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PostEnvVarRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PostEnvVarRequestObjectType), TypeInfoPropertyName = "PostEnvVarRequestObjectType2")]
@@ -36,8 +35,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Ids?), TypeInfoPropertyName = "NullableIds2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType?), TypeInfoPropertyName = "NullableEnvVarObjectType2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType2?), TypeInfoPropertyName = "NullableEnvVarObjectType22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType?), TypeInfoPropertyName = "NullableEnvVarObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarSecretCategory?), TypeInfoPropertyName = "NullableEnvVarSecretCategory2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PostEnvVarRequestObjectType?), TypeInfoPropertyName = "NullablePostEnvVarRequestObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PutEnvVarRequestObjectType?), TypeInfoPropertyName = "NullablePutEnvVarRequestObjectType2")]
@@ -126,10 +124,6 @@ namespace Braintrust
 
                     || typeToConvert == typeof(global::Braintrust.EnvVarObjectType?)
 
-                    || typeToConvert == typeof(global::Braintrust.EnvVarObjectType2)
-
-                    || typeToConvert == typeof(global::Braintrust.EnvVarObjectType2?)
-
                     || typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory)
 
                     || typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory?)
@@ -155,16 +149,6 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType?))
                 {
                     return new global::Braintrust.JsonConverters.EnvVarObjectTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType2))
-                {
-                    return new global::Braintrust.JsonConverters.EnvVarObjectType2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType2?))
-                {
-                    return new global::Braintrust.JsonConverters.EnvVarObjectType2NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory))

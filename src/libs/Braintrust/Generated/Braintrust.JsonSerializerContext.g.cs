@@ -115,7 +115,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AclListRestrictObjectType), TypeInfoPropertyName = "AclListRestrictObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectScoreType), TypeInfoPropertyName = "ProjectScoreType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AISecretType), TypeInfoPropertyName = "AISecretType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType), TypeInfoPropertyName = "EnvVarObjectType2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType), TypeInfoPropertyName = "EnvVarObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionTypeEnum), TypeInfoPropertyName = "FunctionTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionIdFunction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionIdGlobal))]
@@ -859,7 +859,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Type), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant2AgentVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Permissions), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant2AgentVariant2Permissions2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Function2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Function))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionLogId), TypeInfoPropertyName = "FunctionLogId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionOrigin))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionFunctionSchema))]
@@ -972,7 +972,6 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.DeleteAISecret))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchAISecret))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVar))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType2), TypeInfoPropertyName = "EnvVarObjectType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarSecretCategory), TypeInfoPropertyName = "EnvVarSecretCategory2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.MCPServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CreateMCPServer))]
@@ -1019,6 +1018,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataOrigin))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionId), TypeInfoPropertyName = "FunctionId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdFunctionId1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdProjectSlug))]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1105,7 +1105,6 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>), TypeInfoPropertyName = "WindowedAutomationConfigActionVariant3_72525ed3ff81bad3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>>), TypeInfoPropertyName = "TopicAutomationConfigFacetFunctionVariant2Global_0de25e7b7f3aebf4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9ea3f82706abd655")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdProjectSlug))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdGlobalFunction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdPromptSessionId))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdInlineCode))]
@@ -1173,7 +1172,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GetSpanIframeResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.SpanIFrame>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GetFunctionResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.Function2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.Function>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GetViewResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.View>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GetOrganizationResponse))]
@@ -1220,7 +1219,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AclListRestrictObjectType?), TypeInfoPropertyName = "NullableAclListRestrictObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectScoreType?), TypeInfoPropertyName = "NullableProjectScoreType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AISecretType?), TypeInfoPropertyName = "NullableAISecretType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType?), TypeInfoPropertyName = "NullableEnvVarObjectType2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType?), TypeInfoPropertyName = "NullableEnvVarObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionTypeEnum?), TypeInfoPropertyName = "NullableFunctionTypeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionId?), TypeInfoPropertyName = "NullableNullableSavedFunctionId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.NullableSavedFunctionIdFunctionType?), TypeInfoPropertyName = "NullableNullableSavedFunctionIdFunctionType2")]
@@ -1529,6 +1528,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsFilterScope?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsOptionsFilterScope2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsOptionsSpanType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsOptionsType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsExcludedMeasureType2")]
     internal sealed partial class SourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1615,7 +1615,6 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>), TypeInfoPropertyName = "WindowedAutomationConfigActionVariant3_72525ed3ff81bad3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>>), TypeInfoPropertyName = "TopicAutomationConfigFacetFunctionVariant2Global_0de25e7b7f3aebf4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9ea3f82706abd655")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsExcludedMeasureType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsYMetricType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsYMetricType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsXAxisType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsXAxisType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsSymbolGroupingType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsSymbolGroupingType2")]
@@ -1627,7 +1626,6 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchViewViewType?), TypeInfoPropertyName = "NullablePatchViewViewType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ImageRenderingMode?), TypeInfoPropertyName = "NullableImageRenderingMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchOrganizationMembersOutputStatus?), TypeInfoPropertyName = "NullablePatchOrganizationMembersOutputStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarObjectType2?), TypeInfoPropertyName = "NullableEnvVarObjectType22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.EnvVarSecretCategory?), TypeInfoPropertyName = "NullableEnvVarSecretCategory2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.CustomColumnVariant?), TypeInfoPropertyName = "NullableCustomColumnVariant2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.AclObjectType?, global::Braintrust.CustomColumnSubtype?>?), TypeInfoPropertyName = "NullableAnyOfAclObjectTypeCustomColumnSubtype2")]
@@ -1739,7 +1737,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.ProjectScore>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.ProjectTag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.SpanIFrame>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.Function2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.Function>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.View>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.Organization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.ApiKey>))]
@@ -3061,10 +3059,6 @@ namespace Braintrust
                     || typeToConvert == typeof(global::Braintrust.PatchOrganizationMembersOutputStatus)
 
                     || typeToConvert == typeof(global::Braintrust.PatchOrganizationMembersOutputStatus?)
-
-                    || typeToConvert == typeof(global::Braintrust.EnvVarObjectType2)
-
-                    || typeToConvert == typeof(global::Braintrust.EnvVarObjectType2?)
 
                     || typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory)
 
@@ -5963,16 +5957,6 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.PatchOrganizationMembersOutputStatus?))
                 {
                     return new global::Braintrust.JsonConverters.PatchOrganizationMembersOutputStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType2))
-                {
-                    return new global::Braintrust.JsonConverters.EnvVarObjectType2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Braintrust.EnvVarObjectType2?))
-                {
-                    return new global::Braintrust.JsonConverters.EnvVarObjectType2NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.EnvVarSecretCategory))

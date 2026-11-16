@@ -15,7 +15,7 @@ namespace Braintrust
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Braintrust.Function2> PatchFunctionIdAsync(
+        global::System.Threading.Tasks.Task<global::Braintrust.Function> PatchFunctionIdAsync(
             global::System.Guid functionId,
 
             global::Braintrust.PatchFunction request,
@@ -32,7 +32,7 @@ namespace Braintrust
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Braintrust.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function2>> PatchFunctionIdAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Braintrust.AutoSDKHttpResponse<global::Braintrust.Function>> PatchFunctionIdAsResponseAsync(
             global::System.Guid functionId,
 
             global::Braintrust.PatchFunction request,
@@ -61,7 +61,7 @@ namespace Braintrust
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Braintrust.Function2> PatchFunctionIdAsync(
+        global::System.Threading.Tasks.Task<global::Braintrust.Function> PatchFunctionIdAsync(
             global::System.Guid functionId,
             string? name = default,
             string? description = default,
