@@ -100,7 +100,7 @@ namespace Braintrust.JsonConverters
             global::Braintrust.BatchedFacetData? batchedFacet = default;
             global::Braintrust.FunctionDataParameters? parameters = default;
             global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? functionDataVariant9 = default;
-            global::Braintrust.FunctionDataSimulation? simulation = default;
+            global::Braintrust.FunctionDataConversation? conversation = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -278,9 +278,9 @@ namespace Braintrust.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataSimulation), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataSimulation> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataSimulation).Name}");
-                        simulation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataConversation), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataConversation> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataConversation).Name}");
+                        conversation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -295,7 +295,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -316,7 +316,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -337,7 +337,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -358,7 +358,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -379,7 +379,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -400,7 +400,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -421,7 +421,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -442,7 +442,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -463,7 +463,7 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
@@ -484,14 +484,14 @@ namespace Braintrust.JsonConverters
                 }
             }
 
-            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && simulation == null)
+            if (prompt == null && code == null && graph == null && remoteEval == null && global == null && facet == null && batchedFacet == null && parameters == null && functionDataVariant9 == null && conversation == null)
             {
                 try
                 {
 
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataSimulation), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataSimulation> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataSimulation).Name}");
-                    simulation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataConversation), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataConversation> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataConversation).Name}");
+                    conversation = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -524,7 +524,7 @@ namespace Braintrust.JsonConverters
 
                 functionDataVariant9,
 
-                simulation
+                conversation
                 );
 
             return __value;
@@ -593,11 +593,11 @@ namespace Braintrust.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickFunctionDataVariant9(), typeInfo);
             }
-            else if (value.IsSimulation)
+            else if (value.IsConversation)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataSimulation), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataSimulation?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataSimulation).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSimulation(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Braintrust.FunctionDataConversation), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Braintrust.FunctionDataConversation?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Braintrust.FunctionDataConversation).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickConversation(), typeInfo);
             }
         }
     }

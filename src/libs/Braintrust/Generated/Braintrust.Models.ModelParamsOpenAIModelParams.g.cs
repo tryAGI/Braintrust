@@ -116,6 +116,12 @@ namespace Braintrust
         public global::Braintrust.ModelParamsOpenAIModelParamsVerbosity? Verbosity { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("service_tier")]
+        public string? ServiceTier { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -143,6 +149,7 @@ namespace Braintrust
         /// <param name="reasoningEffort"></param>
         /// <param name="chatTemplateKwargs"></param>
         /// <param name="verbosity"></param>
+        /// <param name="serviceTier"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -163,7 +170,8 @@ namespace Braintrust
             global::System.Collections.Generic.IList<string>? stop,
             global::Braintrust.ModelParamsOpenAIModelParamsReasoningEffort? reasoningEffort,
             global::Braintrust.ModelParamsOpenAIModelParamsChatTemplateKwargs? chatTemplateKwargs,
-            global::Braintrust.ModelParamsOpenAIModelParamsVerbosity? verbosity)
+            global::Braintrust.ModelParamsOpenAIModelParamsVerbosity? verbosity,
+            string? serviceTier)
         {
             this.UseCache = useCache;
             this.ReasoningEnabled = reasoningEnabled;
@@ -182,6 +190,7 @@ namespace Braintrust
             this.ReasoningEffort = reasoningEffort;
             this.ChatTemplateKwargs = chatTemplateKwargs;
             this.Verbosity = verbosity;
+            this.ServiceTier = serviceTier;
         }
 
         /// <summary>

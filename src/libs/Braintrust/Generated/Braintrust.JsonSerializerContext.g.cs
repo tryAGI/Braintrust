@@ -41,8 +41,9 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_ab59a7b2d156fd8e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_f9ca13fd8a6199cb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9e54431aeb8e630a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3_fca7f21d755e6533")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3_d0bf9a195592eadc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3_affd963b40cdaf4c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3_22d8502ed9adc30a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2_cc0fc477fb66b5d1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_5dbc7250a4b23b86")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>?), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_fe2bfdeb88cc176b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedFunctionId?), TypeInfoPropertyName = "NullableSavedFunctionId_Braintrust_SavedFunctionId")]
@@ -76,9 +77,9 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>?), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_e761b6c8e6b0d722")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_db0df4982e176852")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Function, global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Global>?>?), TypeInfoPropertyName = "TopicMapDataSourceFacetFunctionVariant2Global_601624aac81dbccb")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3_5c20819771554a8f")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3_fd6ea1bd60727a1d")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2AgentVariant2_b7610c22fa2156b3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3_7ac7dfe034dec4ac")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3_4d0c308d913657d1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2_2989eaa60862c9af")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>?), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_2c2424cd8ae0cdf5")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_2a47e77ff3f8c39d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_70080181d1f517ce")]
@@ -128,6 +129,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsRemoteEvalSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsRemoteEvalSource))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertMention))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2))]
@@ -507,8 +509,6 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant3EventType), TypeInfoPropertyName = "ProjectAutomationConfigVariant3EventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant3ObjectType), TypeInfoPropertyName = "ProjectAutomationConfigVariant3ObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant3Format), TypeInfoPropertyName = "ProjectAutomationConfigVariant3Format2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant4EventType), TypeInfoPropertyName = "ProjectAutomationConfigVariant4EventType2")]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -551,8 +551,9 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_ab59a7b2d156fd8e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_f9ca13fd8a6199cb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9e54431aeb8e630a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3_fca7f21d755e6533")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3_d0bf9a195592eadc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3_affd963b40cdaf4c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3_22d8502ed9adc30a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2_cc0fc477fb66b5d1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_5dbc7250a4b23b86")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>?), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_fe2bfdeb88cc176b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedFunctionId?), TypeInfoPropertyName = "NullableSavedFunctionId_Braintrust_SavedFunctionId")]
@@ -586,15 +587,17 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>?), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_e761b6c8e6b0d722")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_db0df4982e176852")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Function, global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Global>?>?), TypeInfoPropertyName = "TopicMapDataSourceFacetFunctionVariant2Global_601624aac81dbccb")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3_5c20819771554a8f")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3_fd6ea1bd60727a1d")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2AgentVariant2_b7610c22fa2156b3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3_7ac7dfe034dec4ac")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3_4d0c308d913657d1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2_2989eaa60862c9af")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>?), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_2c2424cd8ae0cdf5")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_2a47e77ff3f8c39d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_70080181d1f517ce")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>), TypeInfoPropertyName = "WindowedAutomationConfigActionVariant3_72525ed3ff81bad3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>>), TypeInfoPropertyName = "TopicAutomationConfigFacetFunctionVariant2Global_0de25e7b7f3aebf4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9ea3f82706abd655")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant4EventType), TypeInfoPropertyName = "ProjectAutomationConfigVariant4EventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant5))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant5EventType), TypeInfoPropertyName = "ProjectAutomationConfigVariant5EventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectAutomationConfigVariant5ActionVariant1))]
@@ -838,27 +841,27 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataParametersSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataParametersSchemaType), TypeInfoPropertyName = "FunctionDataParametersSchemaType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>), TypeInfoPropertyName = "AllOfTopicMapDataObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulation))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationType), TypeInfoPropertyName = "FunctionDataSimulationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.FunctionDataSimulationConfigVariant1, global::Braintrust.FunctionDataSimulationConfigVariant2>), TypeInfoPropertyName = "AnyOfFunctionDataSimulationConfigVariant1FunctionDataSimulationConfigVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Initiator), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1Initiator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Modality), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1Modality2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1Type), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2Type), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3Type), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Initiator), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant2Initiator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Modality), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant2Modality2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2>), TypeInfoPropertyName = "OneOfFunctionDataSimulationConfigVariant2AgentVariant1FunctionDataSimulationConfigVariant2AgentVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1Type), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant2AgentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Type), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant2AgentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Permissions), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant2AgentVariant2Permissions2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversation))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationType), TypeInfoPropertyName = "FunctionDataConversationType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.FunctionDataConversationConfigVariant1, global::Braintrust.FunctionDataConversationConfigVariant2>), TypeInfoPropertyName = "AnyOfFunctionDataConversationConfigVariant1FunctionDataConversationConfigVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1Initiator), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1Initiator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1Modality), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1Modality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1Type), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2Type), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3Type), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2Initiator), TypeInfoPropertyName = "FunctionDataConversationConfigVariant2Initiator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2Modality), TypeInfoPropertyName = "FunctionDataConversationConfigVariant2Modality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2>), TypeInfoPropertyName = "OneOfFunctionDataConversationConfigVariant2AgentVariant1FunctionDataConversationConfigVariant2AgentVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1Type), TypeInfoPropertyName = "FunctionDataConversationConfigVariant2AgentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Type), TypeInfoPropertyName = "FunctionDataConversationConfigVariant2AgentVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Permissions), TypeInfoPropertyName = "FunctionDataConversationConfigVariant2AgentVariant2Permissions2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.Function))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionLogId), TypeInfoPropertyName = "FunctionLogId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionOrigin))]
@@ -887,27 +890,26 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishParametersType), TypeInfoPropertyName = "FunctionDataNullishParametersType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishParametersSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishParametersSchemaType), TypeInfoPropertyName = "FunctionDataNullishParametersSchemaType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulation))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationType), TypeInfoPropertyName = "FunctionDataNullishSimulationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2>), TypeInfoPropertyName = "AnyOfFunctionDataNullishSimulationConfigVariant1FunctionDataNullishSimulationConfigVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Initiator), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1Initiator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Modality), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1Modality2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1Type), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2Type), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3Type), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Initiator), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2Initiator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Modality), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2Modality2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2>), TypeInfoPropertyName = "OneOfFunctionDataNullishSimulationConfigVariant2AgentVariant1FunctionDataNullishSimulationConfigVariant2AgentVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1Type), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2AgentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Type), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2AgentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Permissions), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2AgentVariant2Permissions2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversation))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationType), TypeInfoPropertyName = "FunctionDataNullishConversationType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2>), TypeInfoPropertyName = "AnyOfFunctionDataNullishConversationConfigVariant1FunctionDataNullishConversationConfigVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Initiator), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1Initiator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Modality), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1Modality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1Type), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2Type), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3Type), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Initiator), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2Initiator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Modality), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2Modality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1Type), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Type), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Permissions), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2Permissions2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PatchFunction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.InvokeParent), TypeInfoPropertyName = "InvokeParent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.InvokeParentSpanParentStruct))]
@@ -1017,8 +1019,6 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServersType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.PromptDataOrigin))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionId), TypeInfoPropertyName = "FunctionId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdFunctionId1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdProjectSlug))]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1061,8 +1061,9 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_ab59a7b2d156fd8e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_f9ca13fd8a6199cb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9e54431aeb8e630a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3_fca7f21d755e6533")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3_d0bf9a195592eadc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3_affd963b40cdaf4c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3_22d8502ed9adc30a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2_cc0fc477fb66b5d1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_5dbc7250a4b23b86")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>?), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_fe2bfdeb88cc176b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedFunctionId?), TypeInfoPropertyName = "NullableSavedFunctionId_Braintrust_SavedFunctionId")]
@@ -1096,15 +1097,17 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>?), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_e761b6c8e6b0d722")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_db0df4982e176852")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Function, global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Global>?>?), TypeInfoPropertyName = "TopicMapDataSourceFacetFunctionVariant2Global_601624aac81dbccb")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3_5c20819771554a8f")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3_fd6ea1bd60727a1d")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2AgentVariant2_b7610c22fa2156b3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3_7ac7dfe034dec4ac")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3_4d0c308d913657d1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2_2989eaa60862c9af")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>?), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_2c2424cd8ae0cdf5")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_2a47e77ff3f8c39d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_70080181d1f517ce")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>), TypeInfoPropertyName = "WindowedAutomationConfigActionVariant3_72525ed3ff81bad3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>>), TypeInfoPropertyName = "TopicAutomationConfigFacetFunctionVariant2Global_0de25e7b7f3aebf4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9ea3f82706abd655")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdFunctionId1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdProjectSlug))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdGlobalFunction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdPromptSessionId))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionIdInlineCode))]
@@ -1482,19 +1485,19 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataParametersType?), TypeInfoPropertyName = "NullableFunctionDataParametersType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataParametersSchemaType?), TypeInfoPropertyName = "NullableFunctionDataParametersSchemaType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?), TypeInfoPropertyName = "NullableAllOfTopicMapDataObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationType?), TypeInfoPropertyName = "NullableFunctionDataSimulationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.FunctionDataSimulationConfigVariant1, global::Braintrust.FunctionDataSimulationConfigVariant2>?), TypeInfoPropertyName = "NullableAnyOfFunctionDataSimulationConfigVariant1FunctionDataSimulationConfigVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Initiator?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant1Initiator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Modality?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant1Modality2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1Type?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant1AgentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2Type?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant1AgentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3Type?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant1AgentVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Initiator?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant2Initiator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Modality?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant2Modality2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "NullableOneOfFunctionDataSimulationConfigVariant2AgentVariant1FunctionDataSimulationConfigVariant2AgentVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1Type?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant2AgentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Type?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant2AgentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Permissions?), TypeInfoPropertyName = "NullableFunctionDataSimulationConfigVariant2AgentVariant2Permissions2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationType?), TypeInfoPropertyName = "NullableFunctionDataConversationType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.FunctionDataConversationConfigVariant1, global::Braintrust.FunctionDataConversationConfigVariant2>?), TypeInfoPropertyName = "NullableAnyOfFunctionDataConversationConfigVariant1FunctionDataConversationConfigVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1Initiator?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant1Initiator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1Modality?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant1Modality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1Type?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant1AgentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2Type?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant1AgentVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3Type?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant1AgentVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2Initiator?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant2Initiator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2Modality?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant2Modality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "NullableOneOfFunctionDataConversationConfigVariant2AgentVariant1FunctionDataConversationConfigVariant2AgentVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1Type?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant2AgentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Type?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant2AgentVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Permissions?), TypeInfoPropertyName = "NullableFunctionDataConversationConfigVariant2AgentVariant2Permissions2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionLogId?), TypeInfoPropertyName = "NullableFunctionLogId2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullish?), TypeInfoPropertyName = "NullableFunctionDataNullish2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishPromptType?), TypeInfoPropertyName = "NullableFunctionDataNullishPromptType2")]
@@ -1508,27 +1511,24 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishGlobalType?), TypeInfoPropertyName = "NullableFunctionDataNullishGlobalType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishParametersType?), TypeInfoPropertyName = "NullableFunctionDataNullishParametersType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishParametersSchemaType?), TypeInfoPropertyName = "NullableFunctionDataNullishParametersSchemaType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationType?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2>?), TypeInfoPropertyName = "NullableAnyOfFunctionDataNullishSimulationConfigVariant1FunctionDataNullishSimulationConfigVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Initiator?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant1Initiator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Modality?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant1Modality2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1Type?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant1AgentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2Type?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant1AgentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3Type?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant1AgentVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Initiator?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant2Initiator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Modality?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant2Modality2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1Type?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant2AgentVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Type?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant2AgentVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Permissions?), TypeInfoPropertyName = "NullableFunctionDataNullishSimulationConfigVariant2AgentVariant2Permissions2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationType?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AnyOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2>?), TypeInfoPropertyName = "NullableAnyOfFunctionDataNullishConversationConfigVariant1FunctionDataNullishConversationConfigVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Initiator?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant1Initiator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Modality?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant1Modality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1Type?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant1AgentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2Type?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant1AgentVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3Type?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant1AgentVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Initiator?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant2Initiator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Modality?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant2Modality2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1Type?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant2AgentVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Type?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant2AgentVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Permissions?), TypeInfoPropertyName = "NullableFunctionDataNullishConversationConfigVariant2AgentVariant2Permissions2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.InvokeParent?), TypeInfoPropertyName = "NullableInvokeParent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.InvokeParentSpanParentStructObjectType?), TypeInfoPropertyName = "NullableInvokeParentSpanParentStructObjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.StreamingMode?), TypeInfoPropertyName = "NullableStreamingMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptions?), TypeInfoPropertyName = "NullableViewOptions2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsViewType?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsViewType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsFilterScope?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsOptionsFilterScope2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsOptionsSpanType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsOptionsType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsExcludedMeasureType2")]
     internal sealed partial class SourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1571,8 +1571,9 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_ab59a7b2d156fd8e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_f9ca13fd8a6199cb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9e54431aeb8e630a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3_fca7f21d755e6533")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3_d0bf9a195592eadc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3_affd963b40cdaf4c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3_22d8502ed9adc30a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2_cc0fc477fb66b5d1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_5dbc7250a4b23b86")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>?), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_fe2bfdeb88cc176b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedFunctionId?), TypeInfoPropertyName = "NullableSavedFunctionId_Braintrust_SavedFunctionId")]
@@ -1606,15 +1607,18 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>?), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_e761b6c8e6b0d722")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_db0df4982e176852")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Function, global::Braintrust.TopicMapDataSourceFacetFunctionVariant2Global>?>?), TypeInfoPropertyName = "TopicMapDataSourceFacetFunctionVariant2Global_601624aac81dbccb")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataSimulationConfigVariant1AgentVariant3_5c20819771554a8f")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant1AgentVariant3_fd6ea1bd60727a1d")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "FunctionDataNullishSimulationConfigVariant2AgentVariant2_b7610c22fa2156b3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataConversationConfigVariant1AgentVariant3_7ac7dfe034dec4ac")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>?), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant1AgentVariant3_4d0c308d913657d1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>?), TypeInfoPropertyName = "FunctionDataNullishConversationConfigVariant2AgentVariant2_2989eaa60862c9af")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.PromptDataMcpMcpServerIdThisIsUsedForProjectLevelMcpServerDefinitions, global::Braintrust.PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers>?), TypeInfoPropertyName = "PromptDataMcpMcpServerUrlThisIsUsedForInlineDefinitionsOfMcpServers_2c2424cd8ae0cdf5")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant3_2a47e77ff3f8c39d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataNullishDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataNullishDecisionsQuestionVariant3_70080181d1f517ce")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>), TypeInfoPropertyName = "WindowedAutomationConfigActionVariant3_72525ed3ff81bad3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.SavedFunctionId?, global::Braintrust.AnyOf<global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Function, global::Braintrust.TopicAutomationConfigFacetFunctionVariant2Global>?>>), TypeInfoPropertyName = "TopicAutomationConfigFacetFunctionVariant2Global_0de25e7b7f3aebf4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Braintrust.AllOf<global::Braintrust.PromptBlockDataDecisionsQuestion, global::Braintrust.OneOf<global::Braintrust.PromptBlockDataDecisionsQuestionVariant1, global::Braintrust.PromptBlockDataDecisionsQuestionVariant2, global::Braintrust.PromptBlockDataDecisionsQuestionVariant3>?>>), TypeInfoPropertyName = "PromptBlockDataDecisionsQuestionVariant3_9ea3f82706abd655")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsSpanType?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsOptionsSpanType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsMonitorViewOptionsOptionsType?), TypeInfoPropertyName = "NullableViewOptionsMonitorViewOptionsOptionsType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsExcludedMeasureType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsExcludedMeasureType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsYMetricType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsYMetricType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsXAxisType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsXAxisType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ViewOptionsTableViewOptionsSymbolGroupingType?), TypeInfoPropertyName = "NullableViewOptionsTableViewOptionsSymbolGroupingType2")]
@@ -1877,15 +1881,15 @@ namespace Braintrust
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AllOf<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataCodeData2>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionDataCodeData, global::Braintrust.CodeBundle>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.TopicMapData, object>());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.FunctionDataSimulationConfigVariant1, global::Braintrust.FunctionDataSimulationConfigVariant2>());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3>());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.FunctionDataConversationConfigVariant1, global::Braintrust.FunctionDataConversationConfigVariant2>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AllOf<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>?, global::Braintrust.FunctionDataNullishCodeData2>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.FunctionDataNullishCodeData, global::Braintrust.CodeBundle>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.TopicMapData, object>());
-            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.FunctionDataNullishSimulationConfigVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2>());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3>());
-            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.FunctionDataNullishConversationConfigVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2, global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3>());
+            options.Converters.Add(new global::Braintrust.JsonConverters.OneOfJsonConverter<global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1, global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<string, global::Braintrust.ViewOptionsTableViewOptionsTimeRangeFilter>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<global::Braintrust.AclObjectType?, global::Braintrust.CustomColumnSubtype?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AllOfJsonConverter<global::Braintrust.AclObjectType?, object>());
@@ -2864,49 +2868,49 @@ namespace Braintrust
 
                     || typeToConvert == typeof(global::Braintrust.FunctionDataParametersSchemaType?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationType)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationType)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationType?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationType?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Initiator)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1Initiator)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Initiator?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1Initiator?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Modality)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1Modality)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Modality?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1Modality?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Initiator)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2Initiator)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Initiator?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2Initiator?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Modality)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2Modality)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Modality?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2Modality?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Permissions)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Permissions)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Permissions?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Permissions?)
 
                     || typeToConvert == typeof(global::Braintrust.FunctionLogId)
 
@@ -2948,49 +2952,49 @@ namespace Braintrust
 
                     || typeToConvert == typeof(global::Braintrust.FunctionDataNullishParametersSchemaType?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationType)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationType)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationType?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationType?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Initiator)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Initiator)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Initiator?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Initiator?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Modality)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Modality)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Modality?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Modality?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Initiator)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Initiator)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Initiator?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Initiator?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Modality)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Modality)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Modality?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Modality?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Type)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Type)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Type?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Type?)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Permissions)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Permissions)
 
-                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Permissions?)
+                    || typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Permissions?)
 
                     || typeToConvert == typeof(global::Braintrust.InvokeParentSpanParentStructObjectType)
 
@@ -5469,114 +5473,114 @@ namespace Braintrust
                     return new global::Braintrust.JsonConverters.FunctionDataParametersSchemaTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationType))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationType))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationTypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationType?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationType?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationTypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Initiator))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1Initiator))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1InitiatorJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1InitiatorJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Initiator?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1Initiator?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1InitiatorNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1InitiatorNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Modality))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1Modality))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1ModalityJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1ModalityJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1Modality?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1Modality?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1ModalityNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1ModalityNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1AgentVariant1TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1AgentVariant1TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant1Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant1Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1AgentVariant1TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1AgentVariant1TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1AgentVariant2TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1AgentVariant2TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant2Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant2Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1AgentVariant2TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1AgentVariant2TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1AgentVariant3TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1AgentVariant3TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant1AgentVariant3Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant1AgentVariant3Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant1AgentVariant3TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant1AgentVariant3TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Initiator))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2Initiator))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2InitiatorJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2InitiatorJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Initiator?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2Initiator?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2InitiatorNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2InitiatorNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Modality))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2Modality))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2ModalityJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2ModalityJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2Modality?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2Modality?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2ModalityNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2ModalityNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2AgentVariant1TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2AgentVariant1TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant1Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant1Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2AgentVariant1TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2AgentVariant1TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2AgentVariant2TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2AgentVariant2TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2AgentVariant2TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2AgentVariant2TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Permissions))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Permissions))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2AgentVariant2PermissionsJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2AgentVariant2PermissionsJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataSimulationConfigVariant2AgentVariant2Permissions?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataConversationConfigVariant2AgentVariant2Permissions?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataSimulationConfigVariant2AgentVariant2PermissionsNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataConversationConfigVariant2AgentVariant2PermissionsNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.FunctionLogId))
@@ -5679,114 +5683,114 @@ namespace Braintrust
                     return new global::Braintrust.JsonConverters.FunctionDataNullishParametersSchemaTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationType))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationType))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationTypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationType?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationType?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationTypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Initiator))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Initiator))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1InitiatorJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1InitiatorJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Initiator?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Initiator?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1InitiatorNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1InitiatorNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Modality))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Modality))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1ModalityJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1ModalityJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1Modality?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1Modality?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1ModalityNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1ModalityNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1AgentVariant1TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1AgentVariant1TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant1Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant1Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1AgentVariant1TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1AgentVariant1TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1AgentVariant2TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1AgentVariant2TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant2Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant2Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1AgentVariant2TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1AgentVariant2TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1AgentVariant3TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1AgentVariant3TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant1AgentVariant3Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant1AgentVariant3Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant1AgentVariant3TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant1AgentVariant3TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Initiator))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Initiator))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2InitiatorJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2InitiatorJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Initiator?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Initiator?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2InitiatorNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2InitiatorNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Modality))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Modality))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2ModalityJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2ModalityJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2Modality?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2Modality?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2ModalityNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2ModalityNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2AgentVariant1TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2AgentVariant1TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant1Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant1Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2AgentVariant1TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2AgentVariant1TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Type))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Type))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2AgentVariant2TypeJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2AgentVariant2TypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Type?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Type?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2AgentVariant2TypeNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2AgentVariant2TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Permissions))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Permissions))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2AgentVariant2PermissionsJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2AgentVariant2PermissionsJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishSimulationConfigVariant2AgentVariant2Permissions?))
+                if (typeToConvert == typeof(global::Braintrust.FunctionDataNullishConversationConfigVariant2AgentVariant2Permissions?))
                 {
-                    return new global::Braintrust.JsonConverters.FunctionDataNullishSimulationConfigVariant2AgentVariant2PermissionsNullableJsonConverter();
+                    return new global::Braintrust.JsonConverters.FunctionDataNullishConversationConfigVariant2AgentVariant2PermissionsNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.InvokeParentSpanParentStructObjectType))

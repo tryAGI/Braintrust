@@ -346,38 +346,38 @@ namespace Braintrust
         /// A task function that runs a conversation between an agent and a simulated user.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Braintrust.FunctionDataNullishSimulation? Simulation { get; init; }
+        public global::Braintrust.FunctionDataNullishConversation? Conversation { get; init; }
 #else
-        public global::Braintrust.FunctionDataNullishSimulation? Simulation { get; }
+        public global::Braintrust.FunctionDataNullishConversation? Conversation { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Simulation))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Conversation))]
 #endif
-        public bool IsSimulation => Simulation != null;
+        public bool IsConversation => Conversation != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSimulation(
+        public bool TryPickConversation(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::Braintrust.FunctionDataNullishSimulation? value)
+            out global::Braintrust.FunctionDataNullishConversation? value)
         {
-            value = Simulation;
-            return IsSimulation;
+            value = Conversation;
+            return IsConversation;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionDataNullishSimulation PickSimulation() => Simulation is { } value
+        public global::Braintrust.FunctionDataNullishConversation PickConversation() => Conversation is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Simulation' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Conversation' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -588,25 +588,25 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator FunctionDataNullish(global::Braintrust.FunctionDataNullishSimulation value) => new FunctionDataNullish((global::Braintrust.FunctionDataNullishSimulation?)value);
+        public static implicit operator FunctionDataNullish(global::Braintrust.FunctionDataNullishConversation value) => new FunctionDataNullish((global::Braintrust.FunctionDataNullishConversation?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Braintrust.FunctionDataNullishSimulation?(FunctionDataNullish @this) => @this.Simulation;
+        public static implicit operator global::Braintrust.FunctionDataNullishConversation?(FunctionDataNullish @this) => @this.Conversation;
 
         /// <summary>
         ///
         /// </summary>
-        public FunctionDataNullish(global::Braintrust.FunctionDataNullishSimulation? value)
+        public FunctionDataNullish(global::Braintrust.FunctionDataNullishConversation? value)
         {
-            Simulation = value;
+            Conversation = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static FunctionDataNullish FromSimulation(global::Braintrust.FunctionDataNullishSimulation? value) => new FunctionDataNullish(value);
+        public static FunctionDataNullish FromConversation(global::Braintrust.FunctionDataNullishConversation? value) => new FunctionDataNullish(value);
 
         /// <summary>
         ///
@@ -621,7 +621,7 @@ namespace Braintrust
             global::Braintrust.BatchedFacetData? batchedFacet,
             global::Braintrust.FunctionDataNullishParameters? parameters,
             global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? functionDataNullishVariant9,
-            global::Braintrust.FunctionDataNullishSimulation? simulation
+            global::Braintrust.FunctionDataNullishConversation? conversation
             )
         {
             Prompt = prompt;
@@ -633,14 +633,14 @@ namespace Braintrust
             BatchedFacet = batchedFacet;
             Parameters = parameters;
             FunctionDataNullishVariant9 = functionDataNullishVariant9;
-            Simulation = simulation;
+            Conversation = conversation;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Simulation as object ??
+            Conversation as object ??
             FunctionDataNullishVariant9 as object ??
             Parameters as object ??
             BatchedFacet as object ??
@@ -665,7 +665,7 @@ namespace Braintrust
             BatchedFacet?.ToString() ??
             Parameters?.ToString() ??
             FunctionDataNullishVariant9?.ToString() ??
-            Simulation?.ToString()
+            Conversation?.ToString()
             ;
 
         /// <summary>
@@ -673,7 +673,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsPrompt || IsCode || IsGraph || IsRemoteEval || IsGlobal || IsFacet || IsBatchedFacet || IsParameters || IsFunctionDataNullishVariant9 || IsSimulation;
+            return IsPrompt || IsCode || IsGraph || IsRemoteEval || IsGlobal || IsFacet || IsBatchedFacet || IsParameters || IsFunctionDataNullishVariant9 || IsConversation;
         }
 
         /// <summary>
@@ -689,7 +689,7 @@ namespace Braintrust
             global::System.Func<global::Braintrust.BatchedFacetData, TResult>? batchedFacet = null,
             global::System.Func<global::Braintrust.FunctionDataNullishParameters, TResult>? parameters = null,
             global::System.Func<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?, TResult>? functionDataNullishVariant9 = null,
-            global::System.Func<global::Braintrust.FunctionDataNullishSimulation, TResult>? simulation = null,
+            global::System.Func<global::Braintrust.FunctionDataNullishConversation, TResult>? conversation = null,
             bool validate = true)
         {
             if (validate)
@@ -733,9 +733,9 @@ namespace Braintrust
             {
                 return functionDataNullishVariant9(__value8);
             }
-            else if (Simulation is { } __value9 && simulation != null)
+            else if (Conversation is { } __value9 && conversation != null)
             {
-                return simulation(__value9);
+                return conversation(__value9);
             }
 
             return default(TResult);
@@ -763,7 +763,7 @@ namespace Braintrust
 
             global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataNullishVariant9 = null,
 
-            global::System.Action<global::Braintrust.FunctionDataNullishSimulation>? simulation = null,
+            global::System.Action<global::Braintrust.FunctionDataNullishConversation>? conversation = null,
             bool validate = true)
         {
             if (validate)
@@ -807,9 +807,9 @@ namespace Braintrust
             {
                 functionDataNullishVariant9?.Invoke(__value8);
             }
-            else if (Simulation is { } __value9)
+            else if (Conversation is { } __value9)
             {
-                simulation?.Invoke(__value9);
+                conversation?.Invoke(__value9);
             }
         }
 
@@ -826,7 +826,7 @@ namespace Braintrust
             global::System.Action<global::Braintrust.BatchedFacetData>? batchedFacet = null,
             global::System.Action<global::Braintrust.FunctionDataNullishParameters>? parameters = null,
             global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataNullishVariant9 = null,
-            global::System.Action<global::Braintrust.FunctionDataNullishSimulation>? simulation = null,
+            global::System.Action<global::Braintrust.FunctionDataNullishConversation>? conversation = null,
             bool validate = true)
         {
             if (validate)
@@ -870,9 +870,9 @@ namespace Braintrust
             {
                 functionDataNullishVariant9?.Invoke(__value8);
             }
-            else if (Simulation is { } __value9)
+            else if (Conversation is { } __value9)
             {
-                simulation?.Invoke(__value9);
+                conversation?.Invoke(__value9);
             }
         }
 
@@ -901,8 +901,8 @@ namespace Braintrust
                 typeof(global::Braintrust.FunctionDataNullishParameters),
                 FunctionDataNullishVariant9,
                 typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>),
-                Simulation,
-                typeof(global::Braintrust.FunctionDataNullishSimulation),
+                Conversation,
+                typeof(global::Braintrust.FunctionDataNullishConversation),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -928,7 +928,7 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.BatchedFacetData?>.Default.Equals(BatchedFacet, other.BatchedFacet) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataNullishParameters?>.Default.Equals(Parameters, other.Parameters) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>.Default.Equals(FunctionDataNullishVariant9, other.FunctionDataNullishVariant9) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataNullishSimulation?>.Default.Equals(Simulation, other.Simulation)
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataNullishConversation?>.Default.Equals(Conversation, other.Conversation)
                 ;
         }
 

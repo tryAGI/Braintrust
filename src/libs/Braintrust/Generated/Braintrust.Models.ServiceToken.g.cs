@@ -60,6 +60,12 @@ namespace Braintrust
         public global::System.Guid? OrgId { get; set; }
 
         /// <summary>
+        /// Approximate time this credential was last used to authenticate. Updates are limited to once every 10 minutes and may be delayed by authorization caches. If null, no usage has been recorded.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("last_used_at")]
+        public global::System.DateTime? LastUsedAt { get; set; }
+
+        /// <summary>
         /// Date and time at which the service token expires. If null, the token never expires.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expires_at")]
@@ -98,6 +104,9 @@ namespace Braintrust
         /// <param name="orgId">
         /// Unique identifier for the organization
         /// </param>
+        /// <param name="lastUsedAt">
+        /// Approximate time this credential was last used to authenticate. Updates are limited to once every 10 minutes and may be delayed by authorization caches. If null, no usage has been recorded.
+        /// </param>
         /// <param name="expiresAt">
         /// Date and time at which the service token expires. If null, the token never expires.
         /// </param>
@@ -113,6 +122,7 @@ namespace Braintrust
             string? serviceAccountEmail,
             string? serviceAccountName,
             global::System.Guid? orgId,
+            global::System.DateTime? lastUsedAt,
             global::System.DateTime? expiresAt)
         {
             this.Id = id;
@@ -123,6 +133,7 @@ namespace Braintrust
             this.ServiceAccountEmail = serviceAccountEmail;
             this.ServiceAccountName = serviceAccountName;
             this.OrgId = orgId;
+            this.LastUsedAt = lastUsedAt;
             this.ExpiresAt = expiresAt;
         }
 

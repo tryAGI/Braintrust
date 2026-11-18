@@ -47,6 +47,7 @@ namespace Braintrust.JsonConverters
             if (__jsonProps.Contains("reasoning_effort")) __score0++;
             if (__jsonProps.Contains("reasoning_enabled")) __score0++;
             if (__jsonProps.Contains("response_format")) __score0++;
+            if (__jsonProps.Contains("service_tier")) __score0++;
             if (__jsonProps.Contains("stop")) __score0++;
             if (__jsonProps.Contains("temperature")) __score0++;
             if (__jsonProps.Contains("tool_choice")) __score0++;
