@@ -346,38 +346,38 @@ namespace Braintrust
         /// A task function that runs a conversation between an agent and a simulated user.
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Braintrust.FunctionDataSimulation? Simulation { get; init; }
+        public global::Braintrust.FunctionDataConversation? Conversation { get; init; }
 #else
-        public global::Braintrust.FunctionDataSimulation? Simulation { get; }
+        public global::Braintrust.FunctionDataConversation? Conversation { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Simulation))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Conversation))]
 #endif
-        public bool IsSimulation => Simulation != null;
+        public bool IsConversation => Conversation != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSimulation(
+        public bool TryPickConversation(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::Braintrust.FunctionDataSimulation? value)
+            out global::Braintrust.FunctionDataConversation? value)
         {
-            value = Simulation;
-            return IsSimulation;
+            value = Conversation;
+            return IsConversation;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Braintrust.FunctionDataSimulation PickSimulation() => Simulation is { } value
+        public global::Braintrust.FunctionDataConversation PickConversation() => Conversation is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Simulation' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Conversation' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -588,25 +588,25 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator FunctionData(global::Braintrust.FunctionDataSimulation value) => new FunctionData((global::Braintrust.FunctionDataSimulation?)value);
+        public static implicit operator FunctionData(global::Braintrust.FunctionDataConversation value) => new FunctionData((global::Braintrust.FunctionDataConversation?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Braintrust.FunctionDataSimulation?(FunctionData @this) => @this.Simulation;
+        public static implicit operator global::Braintrust.FunctionDataConversation?(FunctionData @this) => @this.Conversation;
 
         /// <summary>
         ///
         /// </summary>
-        public FunctionData(global::Braintrust.FunctionDataSimulation? value)
+        public FunctionData(global::Braintrust.FunctionDataConversation? value)
         {
-            Simulation = value;
+            Conversation = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static FunctionData FromSimulation(global::Braintrust.FunctionDataSimulation? value) => new FunctionData(value);
+        public static FunctionData FromConversation(global::Braintrust.FunctionDataConversation? value) => new FunctionData(value);
 
         /// <summary>
         ///
@@ -621,7 +621,7 @@ namespace Braintrust
             global::Braintrust.BatchedFacetData? batchedFacet,
             global::Braintrust.FunctionDataParameters? parameters,
             global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>? functionDataVariant9,
-            global::Braintrust.FunctionDataSimulation? simulation
+            global::Braintrust.FunctionDataConversation? conversation
             )
         {
             Prompt = prompt;
@@ -633,14 +633,14 @@ namespace Braintrust
             BatchedFacet = batchedFacet;
             Parameters = parameters;
             FunctionDataVariant9 = functionDataVariant9;
-            Simulation = simulation;
+            Conversation = conversation;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Simulation as object ??
+            Conversation as object ??
             FunctionDataVariant9 as object ??
             Parameters as object ??
             BatchedFacet as object ??
@@ -665,7 +665,7 @@ namespace Braintrust
             BatchedFacet?.ToString() ??
             Parameters?.ToString() ??
             FunctionDataVariant9?.ToString() ??
-            Simulation?.ToString()
+            Conversation?.ToString()
             ;
 
         /// <summary>
@@ -673,7 +673,7 @@ namespace Braintrust
         /// </summary>
         public bool Validate()
         {
-            return IsPrompt || IsCode || IsGraph || IsRemoteEval || IsGlobal || IsFacet || IsBatchedFacet || IsParameters || IsFunctionDataVariant9 || IsSimulation;
+            return IsPrompt || IsCode || IsGraph || IsRemoteEval || IsGlobal || IsFacet || IsBatchedFacet || IsParameters || IsFunctionDataVariant9 || IsConversation;
         }
 
         /// <summary>
@@ -689,7 +689,7 @@ namespace Braintrust
             global::System.Func<global::Braintrust.BatchedFacetData, TResult>? batchedFacet = null,
             global::System.Func<global::Braintrust.FunctionDataParameters, TResult>? parameters = null,
             global::System.Func<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?, TResult>? functionDataVariant9 = null,
-            global::System.Func<global::Braintrust.FunctionDataSimulation, TResult>? simulation = null,
+            global::System.Func<global::Braintrust.FunctionDataConversation, TResult>? conversation = null,
             bool validate = true)
         {
             if (validate)
@@ -733,9 +733,9 @@ namespace Braintrust
             {
                 return functionDataVariant9(__value8);
             }
-            else if (Simulation is { } __value9 && simulation != null)
+            else if (Conversation is { } __value9 && conversation != null)
             {
-                return simulation(__value9);
+                return conversation(__value9);
             }
 
             return default(TResult);
@@ -763,7 +763,7 @@ namespace Braintrust
 
             global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataVariant9 = null,
 
-            global::System.Action<global::Braintrust.FunctionDataSimulation>? simulation = null,
+            global::System.Action<global::Braintrust.FunctionDataConversation>? conversation = null,
             bool validate = true)
         {
             if (validate)
@@ -807,9 +807,9 @@ namespace Braintrust
             {
                 functionDataVariant9?.Invoke(__value8);
             }
-            else if (Simulation is { } __value9)
+            else if (Conversation is { } __value9)
             {
-                simulation?.Invoke(__value9);
+                conversation?.Invoke(__value9);
             }
         }
 
@@ -826,7 +826,7 @@ namespace Braintrust
             global::System.Action<global::Braintrust.BatchedFacetData>? batchedFacet = null,
             global::System.Action<global::Braintrust.FunctionDataParameters>? parameters = null,
             global::System.Action<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>? functionDataVariant9 = null,
-            global::System.Action<global::Braintrust.FunctionDataSimulation>? simulation = null,
+            global::System.Action<global::Braintrust.FunctionDataConversation>? conversation = null,
             bool validate = true)
         {
             if (validate)
@@ -870,9 +870,9 @@ namespace Braintrust
             {
                 functionDataVariant9?.Invoke(__value8);
             }
-            else if (Simulation is { } __value9)
+            else if (Conversation is { } __value9)
             {
-                simulation?.Invoke(__value9);
+                conversation?.Invoke(__value9);
             }
         }
 
@@ -901,8 +901,8 @@ namespace Braintrust
                 typeof(global::Braintrust.FunctionDataParameters),
                 FunctionDataVariant9,
                 typeof(global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>),
-                Simulation,
-                typeof(global::Braintrust.FunctionDataSimulation),
+                Conversation,
+                typeof(global::Braintrust.FunctionDataConversation),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -928,7 +928,7 @@ namespace Braintrust
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.BatchedFacetData?>.Default.Equals(BatchedFacet, other.BatchedFacet) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataParameters?>.Default.Equals(Parameters, other.Parameters) &&
                 global::System.Collections.Generic.EqualityComparer<global::Braintrust.AllOf<global::Braintrust.TopicMapData, object>?>.Default.Equals(FunctionDataVariant9, other.FunctionDataVariant9) &&
-                global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataSimulation?>.Default.Equals(Simulation, other.Simulation)
+                global::System.Collections.Generic.EqualityComparer<global::Braintrust.FunctionDataConversation?>.Default.Equals(Conversation, other.Conversation)
                 ;
         }
 

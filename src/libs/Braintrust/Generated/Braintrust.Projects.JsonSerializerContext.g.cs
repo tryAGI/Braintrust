@@ -42,6 +42,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsRemoteEvalSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsRemoteEvalSource))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertMention))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type), TypeInfoPropertyName = "ProjectSettingsPatternAlertDestinationVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2))]

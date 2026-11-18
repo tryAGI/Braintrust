@@ -69,6 +69,12 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? UserIdFields { get; set; }
 
         /// <summary>
+        /// Project-wide Slack user or agent and prompt for Pattern alert threads. Applies only to destinations in the selected workspace. Unset or null disables mentions.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern_alert_mention")]
+        public global::Braintrust.ProjectSettingsPatternAlertMention? PatternAlertMention { get; set; }
+
+        /// <summary>
         /// Project-wide Slack, webhook, and PagerDuty destinations for new and reactivated Pattern alerts. An empty array disables alerts.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pattern_alert_destinations")]
@@ -124,6 +130,9 @@ namespace Braintrust
         /// If true, automatically complete a review after every assigned reviewer fills all human review scores visible to them.
         /// </param>
         /// <param name="userIdFields"></param>
+        /// <param name="patternAlertMention">
+        /// Project-wide Slack user or agent and prompt for Pattern alert threads. Applies only to destinations in the selected workspace. Unset or null disables mentions.
+        /// </param>
         /// <param name="patternAlertDestinations">
         /// Project-wide Slack, webhook, and PagerDuty destinations for new and reactivated Pattern alerts. An empty array disables alerts.
         /// </param>
@@ -145,6 +154,7 @@ namespace Braintrust
             bool? blindReviews,
             bool? requireAllHumanReviewScores,
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? userIdFields,
+            global::Braintrust.ProjectSettingsPatternAlertMention? patternAlertMention,
             global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>? patternAlertDestinations,
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? sessionIdFields,
             global::Braintrust.NullableSavedFunctionId? defaultPreprocessor)
@@ -159,6 +169,7 @@ namespace Braintrust
             this.BlindReviews = blindReviews;
             this.RequireAllHumanReviewScores = requireAllHumanReviewScores;
             this.UserIdFields = userIdFields;
+            this.PatternAlertMention = patternAlertMention;
             this.PatternAlertDestinations = patternAlertDestinations;
             this.SessionIdFields = sessionIdFields;
             this.DefaultPreprocessor = defaultPreprocessor;
