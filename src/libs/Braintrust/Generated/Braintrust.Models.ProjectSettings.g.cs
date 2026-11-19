@@ -81,6 +81,25 @@ namespace Braintrust
         public global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>? PatternAlertDestinations { get; set; }
 
         /// <summary>
+        /// Lowest severity that sends Pattern alerts: `low`, `medium`, or `high`. New and reactivated Patterns below it don't send alerts, and raising an active Pattern's severity to it or above sends one. Patterns without a severity count as low. Informational Patterns follow `pattern_alert_informational` instead. Unset or null uses medium.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern_alert_min_severity")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Braintrust.JsonConverters.ProjectSettingsPatternAlertMinSeverityJsonConverter))]
+        public global::Braintrust.ProjectSettingsPatternAlertMinSeverity? PatternAlertMinSeverity { get; set; }
+
+        /// <summary>
+        /// Whether new and reactivated informational Patterns send alerts, independent of `pattern_alert_min_severity`. Unset or null sends them.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern_alert_informational")]
+        public bool? PatternAlertInformational { get; set; }
+
+        /// <summary>
+        /// Patterns rubric categories this project turned off. Patterns doesn't look for or assign them.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern_excluded_categories")]
+        public global::System.Collections.Generic.IList<string>? PatternExcludedCategories { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("session_id_fields")]
@@ -136,6 +155,15 @@ namespace Braintrust
         /// <param name="patternAlertDestinations">
         /// Project-wide Slack, webhook, and PagerDuty destinations for new and reactivated Pattern alerts. An empty array disables alerts.
         /// </param>
+        /// <param name="patternAlertMinSeverity">
+        /// Lowest severity that sends Pattern alerts: `low`, `medium`, or `high`. New and reactivated Patterns below it don't send alerts, and raising an active Pattern's severity to it or above sends one. Patterns without a severity count as low. Informational Patterns follow `pattern_alert_informational` instead. Unset or null uses medium.
+        /// </param>
+        /// <param name="patternAlertInformational">
+        /// Whether new and reactivated informational Patterns send alerts, independent of `pattern_alert_min_severity`. Unset or null sends them.
+        /// </param>
+        /// <param name="patternExcludedCategories">
+        /// Patterns rubric categories this project turned off. Patterns doesn't look for or assign them.
+        /// </param>
         /// <param name="sessionIdFields"></param>
         /// <param name="defaultPreprocessor">
         /// Default preprocessor for this project. When set, functions that use preprocessors will use this instead of their built-in default.
@@ -156,6 +184,9 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? userIdFields,
             global::Braintrust.ProjectSettingsPatternAlertMention? patternAlertMention,
             global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>? patternAlertDestinations,
+            global::Braintrust.ProjectSettingsPatternAlertMinSeverity? patternAlertMinSeverity,
+            bool? patternAlertInformational,
+            global::System.Collections.Generic.IList<string>? patternExcludedCategories,
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? sessionIdFields,
             global::Braintrust.NullableSavedFunctionId? defaultPreprocessor)
         {
@@ -171,6 +202,9 @@ namespace Braintrust
             this.UserIdFields = userIdFields;
             this.PatternAlertMention = patternAlertMention;
             this.PatternAlertDestinations = patternAlertDestinations;
+            this.PatternAlertMinSeverity = patternAlertMinSeverity;
+            this.PatternAlertInformational = patternAlertInformational;
+            this.PatternExcludedCategories = patternExcludedCategories;
             this.SessionIdFields = sessionIdFields;
             this.DefaultPreprocessor = defaultPreprocessor;
         }
