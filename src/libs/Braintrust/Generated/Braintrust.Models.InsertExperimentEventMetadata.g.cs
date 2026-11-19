@@ -15,6 +15,18 @@ namespace Braintrust
         public string? Model { get; set; }
 
         /// <summary>
+        /// The service tier requested for this LLM call
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requested_service_tier")]
+        public string? RequestedServiceTier { get; set; }
+
+        /// <summary>
+        /// The service tier that served this LLM call
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("served_service_tier")]
+        public string? ServedServiceTier { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -26,13 +38,23 @@ namespace Braintrust
         /// <param name="model">
         /// The model used for this example
         /// </param>
+        /// <param name="requestedServiceTier">
+        /// The service tier requested for this LLM call
+        /// </param>
+        /// <param name="servedServiceTier">
+        /// The service tier that served this LLM call
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public InsertExperimentEventMetadata(
-            string? model)
+            string? model,
+            string? requestedServiceTier,
+            string? servedServiceTier)
         {
             this.Model = model;
+            this.RequestedServiceTier = requestedServiceTier;
+            this.ServedServiceTier = servedServiceTier;
         }
 
         /// <summary>

@@ -43,6 +43,7 @@ namespace Braintrust
             ref string? experimentName,
             ref string? projectName,
             ref global::System.Guid? projectId,
+            ref string? metadata,
             ref string? orgName);
         partial void PrepareGetExperimentRequest(
             global::System.Net.Http.HttpClient httpClient,
@@ -54,6 +55,7 @@ namespace Braintrust
             string? experimentName,
             string? projectName,
             global::System.Guid? projectId,
+            string? metadata,
             string? orgName);
         partial void ProcessGetExperimentResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -92,6 +94,9 @@ namespace Braintrust
         /// <param name="projectId">
         /// Project id
         /// </param>
+        /// <param name="metadata">
+        /// Filter experiments by metadata. Pass a JSON-serialized object, such as `{"model":"gpt-5","config":{"temperature":0}}`. Only experiments whose metadata matches all specified filter keys and values are returned. Nested object values filter on nested keys. Array values are not supported. The object must contain at least one key; an empty object (`{}`) matches no experiments.
+        /// </param>
         /// <param name="orgName">
         /// Filter search results to within a particular organization
         /// </param>
@@ -106,6 +111,7 @@ namespace Braintrust
             string? experimentName = default,
             string? projectName = default,
             global::System.Guid? projectId = default,
+            string? metadata = default,
             string? orgName = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -118,6 +124,7 @@ namespace Braintrust
                 experimentName: experimentName,
                 projectName: projectName,
                 projectId: projectId,
+                metadata: metadata,
                 orgName: orgName,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
@@ -153,6 +160,9 @@ namespace Braintrust
         /// <param name="projectId">
         /// Project id
         /// </param>
+        /// <param name="metadata">
+        /// Filter experiments by metadata. Pass a JSON-serialized object, such as `{"model":"gpt-5","config":{"temperature":0}}`. Only experiments whose metadata matches all specified filter keys and values are returned. Nested object values filter on nested keys. Array values are not supported. The object must contain at least one key; an empty object (`{}`) matches no experiments.
+        /// </param>
         /// <param name="orgName">
         /// Filter search results to within a particular organization
         /// </param>
@@ -167,6 +177,7 @@ namespace Braintrust
             string? experimentName = default,
             string? projectName = default,
             global::System.Guid? projectId = default,
+            string? metadata = default,
             string? orgName = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -182,6 +193,7 @@ namespace Braintrust
                 experimentName: ref experimentName,
                 projectName: ref projectName,
                 projectId: ref projectId,
+                metadata: ref metadata,
                 orgName: ref orgName);
 
 
@@ -221,6 +233,7 @@ namespace Braintrust
                                 .AddOptionalParameter("experiment_name", experimentName)
                                 .AddOptionalParameter("project_name", projectName)
                                 .AddOptionalParameter("project_id", projectId?.ToString())
+                                .AddOptionalParameter("metadata", metadata)
                                 .AddOptionalParameter("org_name", orgName)
                                 ;
                             var __path = __pathBuilder.ToString();
@@ -270,6 +283,7 @@ namespace Braintrust
                     experimentName: experimentName,
                     projectName: projectName,
                     projectId: projectId,
+                    metadata: metadata,
                     orgName: orgName);
 
                 return __httpRequest;

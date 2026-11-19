@@ -32,6 +32,9 @@ namespace Braintrust
         /// <param name="projectId">
         /// Project id
         /// </param>
+        /// <param name="metadata">
+        /// Filter experiments by metadata. Pass a JSON-serialized object, such as `{"model":"gpt-5","config":{"temperature":0}}`. Only experiments whose metadata matches all specified filter keys and values are returned. Nested object values filter on nested keys. Array values are not supported. The object must contain at least one key; an empty object (`{}`) matches no experiments.
+        /// </param>
         /// <param name="orgName">
         /// Filter search results to within a particular organization
         /// </param>
@@ -46,6 +49,7 @@ namespace Braintrust
             string? experimentName = default,
             string? projectName = default,
             global::System.Guid? projectId = default,
+            string? metadata = default,
             string? orgName = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -77,6 +81,9 @@ namespace Braintrust
         /// <param name="projectId">
         /// Project id
         /// </param>
+        /// <param name="metadata">
+        /// Filter experiments by metadata. Pass a JSON-serialized object, such as `{"model":"gpt-5","config":{"temperature":0}}`. Only experiments whose metadata matches all specified filter keys and values are returned. Nested object values filter on nested keys. Array values are not supported. The object must contain at least one key; an empty object (`{}`) matches no experiments.
+        /// </param>
         /// <param name="orgName">
         /// Filter search results to within a particular organization
         /// </param>
@@ -91,6 +98,7 @@ namespace Braintrust
             string? experimentName = default,
             string? projectName = default,
             global::System.Guid? projectId = default,
+            string? metadata = default,
             string? orgName = default,
             global::Braintrust.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

@@ -23,6 +23,12 @@ namespace Braintrust
         public required string Url { get; set; }
 
         /// <summary>
+        /// Custom HTTP headers to send with the webhook request
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("headers")]
+        public global::System.Collections.Generic.IList<global::Braintrust.AnyOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1HeaderVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1HeaderVariant2>>? Headers { get; set; }
+
+        /// <summary>
         /// Instructions for Loop to format content sent to this destination
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("formatting_prompt")]
@@ -43,6 +49,9 @@ namespace Braintrust
         /// <param name="type">
         /// The type of action to take
         /// </param>
+        /// <param name="headers">
+        /// Custom HTTP headers to send with the webhook request
+        /// </param>
         /// <param name="formattingPrompt">
         /// Instructions for Loop to format content sent to this destination
         /// </param>
@@ -52,10 +61,12 @@ namespace Braintrust
         public ProjectSettingsPatternAlertDestinationVariant1(
             string url,
             global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1Type type,
+            global::System.Collections.Generic.IList<global::Braintrust.AnyOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1HeaderVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1HeaderVariant2>>? headers,
             string? formattingPrompt)
         {
             this.Type = type;
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Headers = headers;
             this.FormattingPrompt = formattingPrompt;
         }
 
