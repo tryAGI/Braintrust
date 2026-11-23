@@ -88,13 +88,19 @@ namespace Braintrust
         public global::Braintrust.ProjectSettingsPatternAlertMinSeverity? PatternAlertMinSeverity { get; set; }
 
         /// <summary>
-        /// Whether new and reactivated informational Patterns send alerts, independent of `pattern_alert_min_severity`. Unset or null sends them.
+        /// Whether new and reactivated informational Patterns send alerts, independent of `pattern_alert_min_severity`. Unset or null sends alerts for informational Patterns.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pattern_alert_informational")]
         public bool? PatternAlertInformational { get; set; }
 
         /// <summary>
-        /// Patterns rubric categories this project turned off. Patterns doesn't look for or assign them.
+        /// Sources outside Braintrust that Patterns reads alongside this project's logs, each through a project MCP server.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern_sources")]
+        public global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsPatternSource>? PatternSources { get; set; }
+
+        /// <summary>
+        /// Patterns rubric categories that are turned off for this project. Patterns doesn't look for or assign them.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pattern_excluded_categories")]
         public global::System.Collections.Generic.IList<string>? PatternExcludedCategories { get; set; }
@@ -159,10 +165,13 @@ namespace Braintrust
         /// Lowest severity that sends Pattern alerts: `low`, `medium`, or `high`. New and reactivated Patterns below it don't send alerts, and raising an active Pattern's severity to it or above sends one. Patterns without a severity count as low. Informational Patterns follow `pattern_alert_informational` instead. Unset or null uses medium.
         /// </param>
         /// <param name="patternAlertInformational">
-        /// Whether new and reactivated informational Patterns send alerts, independent of `pattern_alert_min_severity`. Unset or null sends them.
+        /// Whether new and reactivated informational Patterns send alerts, independent of `pattern_alert_min_severity`. Unset or null sends alerts for informational Patterns.
+        /// </param>
+        /// <param name="patternSources">
+        /// Sources outside Braintrust that Patterns reads alongside this project's logs, each through a project MCP server.
         /// </param>
         /// <param name="patternExcludedCategories">
-        /// Patterns rubric categories this project turned off. Patterns doesn't look for or assign them.
+        /// Patterns rubric categories that are turned off for this project. Patterns doesn't look for or assign them.
         /// </param>
         /// <param name="sessionIdFields"></param>
         /// <param name="defaultPreprocessor">
@@ -186,6 +195,7 @@ namespace Braintrust
             global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.ProjectSettingsPatternAlertDestinationVariant1, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant2, global::Braintrust.ProjectSettingsPatternAlertDestinationVariant3>>? patternAlertDestinations,
             global::Braintrust.ProjectSettingsPatternAlertMinSeverity? patternAlertMinSeverity,
             bool? patternAlertInformational,
+            global::System.Collections.Generic.IList<global::Braintrust.ProjectSettingsPatternSource>? patternSources,
             global::System.Collections.Generic.IList<string>? patternExcludedCategories,
             global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<string>>? sessionIdFields,
             global::Braintrust.NullableSavedFunctionId? defaultPreprocessor)
@@ -204,6 +214,7 @@ namespace Braintrust
             this.PatternAlertDestinations = patternAlertDestinations;
             this.PatternAlertMinSeverity = patternAlertMinSeverity;
             this.PatternAlertInformational = patternAlertInformational;
+            this.PatternSources = patternSources;
             this.PatternExcludedCategories = patternExcludedCategories;
             this.SessionIdFields = sessionIdFields;
             this.DefaultPreprocessor = defaultPreprocessor;

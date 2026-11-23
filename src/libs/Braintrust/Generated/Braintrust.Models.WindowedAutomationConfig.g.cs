@@ -55,6 +55,12 @@ namespace Braintrust
         public global::Braintrust.WindowedAutomationConfigLoop? Loop { get; set; }
 
         /// <summary>
+        /// Settings of the Patterns automation
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("patterns")]
+        public global::Braintrust.WindowedAutomationConfigPatterns? Patterns { get; set; }
+
+        /// <summary>
         /// Delivery actions exposed to Loop as tools, or run directly when Loop is not configured<br/>
         /// Default Value: []
         /// </summary>
@@ -89,6 +95,9 @@ namespace Braintrust
         /// <param name="loop">
         /// Optional Loop agent to run for each triggered window
         /// </param>
+        /// <param name="patterns">
+        /// Settings of the Patterns automation
+        /// </param>
         /// <param name="actions">
         /// Delivery actions exposed to Loop as tools, or run directly when Loop is not configured<br/>
         /// Default Value: []
@@ -104,6 +113,7 @@ namespace Braintrust
             bool? continuous,
             global::Braintrust.WindowedAutomationConfigThreshold? threshold,
             global::Braintrust.WindowedAutomationConfigLoop? loop,
+            global::Braintrust.WindowedAutomationConfigPatterns? patterns,
             global::System.Collections.Generic.IList<global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>>? actions)
         {
             this.EventType = eventType;
@@ -113,6 +123,7 @@ namespace Braintrust
             this.Threshold = threshold;
             this.Window = window ?? throw new global::System.ArgumentNullException(nameof(window));
             this.Loop = loop;
+            this.Patterns = patterns;
             this.Actions = actions;
         }
 
