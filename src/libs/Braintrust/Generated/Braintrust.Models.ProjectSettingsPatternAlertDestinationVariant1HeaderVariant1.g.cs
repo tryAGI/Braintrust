@@ -9,7 +9,7 @@ namespace Braintrust
     public sealed partial class ProjectSettingsPatternAlertDestinationVariant1HeaderVariant1
     {
         /// <summary>
-        /// The HTTP header name
+        /// The HTTP header name. Connection, Content-Length, Content-Type, Expect, Host, Idempotency-Key, Keep-Alive, Transfer-Encoding, and Upgrade are reserved and can't be used.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,7 +32,7 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="ProjectSettingsPatternAlertDestinationVariant1HeaderVariant1" /> class.
         /// </summary>
         /// <param name="name">
-        /// The HTTP header name
+        /// The HTTP header name. Connection, Content-Length, Content-Type, Expect, Host, Idempotency-Key, Keep-Alive, Transfer-Encoding, and Upgrade are reserved and can't be used.
         /// </param>
         /// <param name="value">
         /// The HTTP header value

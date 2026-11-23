@@ -98,6 +98,12 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GroupScopeType), TypeInfoPropertyName = "GroupScopeType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GroupScopePlacement), TypeInfoPropertyName = "GroupScopePlacement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.RetentionObjectType), TypeInfoPropertyName = "RetentionObjectType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorId), TypeInfoPropertyName = "SavedPreprocessorId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorIdFunction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorIdFunctionType), TypeInfoPropertyName = "SavedPreprocessorIdFunctionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobal))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalType), TypeInfoPropertyName = "SavedPreprocessorIdPreprocessorGlobalType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalFunctionType), TypeInfoPropertyName = "SavedPreprocessorIdPreprocessorGlobalFunctionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigEventType), TypeInfoPropertyName = "WindowedAutomationConfigEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigProductOrigin), TypeInfoPropertyName = "WindowedAutomationConfigProductOrigin2")]
@@ -125,6 +131,7 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopTarget))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopTargetType), TypeInfoPropertyName = "WindowedAutomationConfigLoopTargetType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigLoopTargetId), TypeInfoPropertyName = "WindowedAutomationConfigLoopTargetId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigPatterns))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.OneOf<global::Braintrust.WindowedAutomationConfigActionVariant1, global::Braintrust.WindowedAutomationConfigActionVariant2, global::Braintrust.WindowedAutomationConfigActionVariant3>), TypeInfoPropertyName = "OneOfWindowedAutomationConfigActionVariant1WindowedAutomationConfigActionVariant2WindowedAutomationConfigActionVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigActionVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigActionVariant1Type), TypeInfoPropertyName = "WindowedAutomationConfigActionVariant1Type2")]
@@ -314,6 +321,10 @@ namespace Braintrust
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GroupScopeType?), TypeInfoPropertyName = "NullableGroupScopeType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.GroupScopePlacement?), TypeInfoPropertyName = "NullableGroupScopePlacement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.RetentionObjectType?), TypeInfoPropertyName = "NullableRetentionObjectType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorId?), TypeInfoPropertyName = "NullableSavedPreprocessorId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorIdFunctionType?), TypeInfoPropertyName = "NullableSavedPreprocessorIdFunctionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalType?), TypeInfoPropertyName = "NullableSavedPreprocessorIdPreprocessorGlobalType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalFunctionType?), TypeInfoPropertyName = "NullableSavedPreprocessorIdPreprocessorGlobalFunctionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigEventType?), TypeInfoPropertyName = "NullableWindowedAutomationConfigEventType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigProductOrigin?), TypeInfoPropertyName = "NullableWindowedAutomationConfigProductOrigin2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Braintrust.WindowedAutomationConfigThresholdCalculationType?), TypeInfoPropertyName = "NullableWindowedAutomationConfigThresholdCalculationType2")]
@@ -468,6 +479,7 @@ namespace Braintrust
         {
             options.Converters.Add(new global::Braintrust.JsonConverters.IdsJsonConverter());
             options.Converters.Add(new global::Braintrust.JsonConverters.SavedFunctionIdJsonConverter());
+            options.Converters.Add(new global::Braintrust.JsonConverters.SavedPreprocessorIdJsonConverter());
             options.Converters.Add(new global::Braintrust.JsonConverters.TopicAutomationDataScopeJsonConverter());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Braintrust.JsonConverters.AnyOfJsonConverter<double?, bool?>());
@@ -570,6 +582,18 @@ namespace Braintrust
                     || typeToConvert == typeof(global::Braintrust.RetentionObjectType)
 
                     || typeToConvert == typeof(global::Braintrust.RetentionObjectType?)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdFunctionType?)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalType)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalType?)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalFunctionType)
+
+                    || typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalFunctionType?)
 
                     || typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigEventType)
 
@@ -1032,6 +1056,36 @@ namespace Braintrust
                 if (typeToConvert == typeof(global::Braintrust.RetentionObjectType?))
                 {
                     return new global::Braintrust.JsonConverters.RetentionObjectTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.SavedPreprocessorIdFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.SavedPreprocessorIdFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalType))
+                {
+                    return new global::Braintrust.JsonConverters.SavedPreprocessorIdPreprocessorGlobalTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalType?))
+                {
+                    return new global::Braintrust.JsonConverters.SavedPreprocessorIdPreprocessorGlobalTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalFunctionType))
+                {
+                    return new global::Braintrust.JsonConverters.SavedPreprocessorIdPreprocessorGlobalFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Braintrust.SavedPreprocessorIdPreprocessorGlobalFunctionType?))
+                {
+                    return new global::Braintrust.JsonConverters.SavedPreprocessorIdPreprocessorGlobalFunctionTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Braintrust.WindowedAutomationConfigEventType))

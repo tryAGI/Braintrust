@@ -9,14 +9,14 @@ namespace Braintrust
     public sealed partial class WindowedAutomationConfigActionVariant1HeaderVariant2
     {
         /// <summary>
-        /// The HTTP header name
+        /// The HTTP header name. Connection, Content-Length, Content-Type, Expect, Host, Idempotency-Key, Keep-Alive, Transfer-Encoding, and Upgrade are reserved and can't be used.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// The data-plane secret containing the header value, bound to the webhook URL it was saved for
+        /// The data-plane secret that holds the header value. The secret only works with the webhook URL it was saved for.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secret_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,10 +32,10 @@ namespace Braintrust
         /// Initializes a new instance of the <see cref="WindowedAutomationConfigActionVariant1HeaderVariant2" /> class.
         /// </summary>
         /// <param name="name">
-        /// The HTTP header name
+        /// The HTTP header name. Connection, Content-Length, Content-Type, Expect, Host, Idempotency-Key, Keep-Alive, Transfer-Encoding, and Upgrade are reserved and can't be used.
         /// </param>
         /// <param name="secretName">
-        /// The data-plane secret containing the header value, bound to the webhook URL it was saved for
+        /// The data-plane secret that holds the header value. The secret only works with the webhook URL it was saved for.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
