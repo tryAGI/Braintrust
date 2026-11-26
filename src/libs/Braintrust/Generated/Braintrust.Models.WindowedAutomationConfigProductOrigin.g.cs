@@ -19,6 +19,10 @@ namespace Braintrust
         /// <summary>
         ///
         /// </summary>
+        PatternAlerts,
+        /// <summary>
+        ///
+        /// </summary>
         Patterns,
     }
 
@@ -36,6 +40,7 @@ namespace Braintrust
             {
                 WindowedAutomationConfigProductOrigin.Dashboard => "dashboard",
                 WindowedAutomationConfigProductOrigin.Digest => "digest",
+                WindowedAutomationConfigProductOrigin.PatternAlerts => "pattern_alerts",
                 WindowedAutomationConfigProductOrigin.Patterns => "patterns",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -49,6 +54,7 @@ namespace Braintrust
             {
                 "dashboard" => WindowedAutomationConfigProductOrigin.Dashboard,
                 "digest" => WindowedAutomationConfigProductOrigin.Digest,
+                "pattern_alerts" => WindowedAutomationConfigProductOrigin.PatternAlerts,
                 "patterns" => WindowedAutomationConfigProductOrigin.Patterns,
                 _ => null,
             };
